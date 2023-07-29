@@ -127,6 +127,7 @@ jobs:
           # TODO checksum verification ("checksums.txt")
           tar -xvf crane.tgz -C .gha-bin "crane$ext"
           rm crane.tgz
+          ".gha-bin/crane$ext" version
       - name: Check
         run: |
           img="$(jq <<<"$json" -r '.build.img')"
