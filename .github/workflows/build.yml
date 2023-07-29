@@ -94,9 +94,20 @@ jobs:
             ext='.exe'
           fi
 
+          _download() {
+            # prefer wget, but "windows-2019" doesn't have it, so fall back to curl
+            local target="$1"; shift
+            local url="$1"; shift
+            if command -v wget > /dev/null; then
+              wget -O "$target" "$url" --progress=dot:giga
+            else
+              curl -fL -o "$target" "$url"
+            fi
+          }
+
           # https://github.com/docker-library/bashbrew/releases
           [ -n "$BASHBREW_VERSION" ]
-          wget -O ".gha-bin/bashbrew$ext" "https://github.com/docker-library/bashbrew/releases/download/$BASHBREW_VERSION/bashbrew-$BASHBREW_ARCH$ext" --progress=dot:giga
+          _download ".gha-bin/bashbrew$ext" "https://github.com/docker-library/bashbrew/releases/download/$BASHBREW_VERSION/bashbrew-$BASHBREW_ARCH$ext"
           chmod +x ".gha-bin/bashbrew$ext"
           ".gha-bin/bashbrew$ext" --version
 
@@ -112,7 +123,7 @@ jobs:
             windows-amd64) craneTar='go-containerregistry_Windows_x86_64.tar.gz' ;;
             *) echo >&2 "error: unsupported arch: $BASHBREW_ARCH"; exit 1 ;;
           esac
-          wget -O crane.tgz "https://github.com/google/go-containerregistry/releases/download/v0.15.2/go-containerregistry_Linux_x86_64.tar.gz" --progress=dot:giga
+          _download crane.tgz "https://github.com/google/go-containerregistry/releases/download/v0.15.2/go-containerregistry_Linux_x86_64.tar.gz"
           # TODO checksum verification ("checksums.txt")
           tar -xvf crane.tgz -C .gha-bin "crane$ext"
           rm crane.tgz
