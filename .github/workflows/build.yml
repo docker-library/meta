@@ -143,7 +143,7 @@ jobs:
           if grep <<<"$shell" -q ' buildx '; then
             if grep <<<"$shell" -qE ' --provenance=|BASHBREW_BUILDKIT_SBOM_GENERATOR'; then
               # TODO remove this hackiness and fix this correctly (fix the upstream script)
-              sed -i -e 's!nope!'"$BASHBREW_ARCH"'!g' ../.doi/.bin/bashbrew-buildkit-env-setup.sh
+              patch -p1 --input="$PWD/../.scripts/doi-buildkit.patch" --directory=../.doi
             fi
             bk="$(../.doi/.bin/bashbrew-buildkit-env-setup.sh)"
             bk="$(jq <<<"$bk" -r 'to_entries | map(.key + "=" + .value | @sh) | "export " + join(" ")')"
