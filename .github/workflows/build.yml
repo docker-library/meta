@@ -60,11 +60,7 @@ jobs:
               include "meta";
               .[env.BUILD_ID]
               | select(needs_build and .build.arch == env.BASHBREW_ARCH) # sanity check
-              | .commands = {
-                pull: pull_command,
-                build: build_command,
-                push: push_command,
-              }
+              | .commands = commands
             ' builds.json
           )"
           [ -n "$json" ]
