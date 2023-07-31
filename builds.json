@@ -256,7 +256,34 @@
     "buildId": "2c6e23ffd16c640f4283418995950c3a10f03a7149a49f7b42727f002e82d50a",
     "build": {
       "img": "oisupport/staging-amd64:2c6e23ffd16c640f4283418995950c3a10f03a7149a49f7b42727f002e82d50a",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "oisupport/staging-amd64:2c6e23ffd16c640f4283418995950c3a10f03a7149a49f7b42727f002e82d50a@sha256:bbc57559ea5f6d7359f53c92bdfd386df0b1b0384591a24b7a6cf40b77343a4a",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:bbc57559ea5f6d7359f53c92bdfd386df0b1b0384591a24b7a6cf40b77343a4a",
+            "size": 3327,
+            "annotations": {
+              "org.opencontainers.image.revision": "f6bb49f0c0e7ed0ab489df14b53e26cc65c294d6",
+              "org.opencontainers.image.source": "https://github.com/docker-library/docker.git#f6bb49f0c0e7ed0ab489df14b53e26cc65c294d6:24/dind",
+              "org.opencontainers.image.url": "https://hub.docker.com/_/docker",
+              "org.opencontainers.image.version": "24.0.5-dind"
+            },
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          }
+        },
+        "index": {
+          "ref": "oisupport/staging-amd64:2c6e23ffd16c640f4283418995950c3a10f03a7149a49f7b42727f002e82d50a@sha256:8aeda03bef78e83cca4e6e849930ce51ced5e94a50ecff76314922e62a42ae17",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:8aeda03bef78e83cca4e6e849930ce51ced5e94a50ecff76314922e62a42ae17",
+            "size": 1250
+          }
+        }
+      },
       "sourceId": "dda380dd4bc77496d791f09666317df3180a5ab763502b0b099582a5d534bd4e",
       "arch": "amd64",
       "parents": {
@@ -540,6 +567,105 @@
       }
     }
   },
+  "3a4070d8a92c4dfe85b2169a0ea3de316a88b041b4e816ed3221998af66c2c21": {
+    "buildId": "3a4070d8a92c4dfe85b2169a0ea3de316a88b041b4e816ed3221998af66c2c21",
+    "build": {
+      "img": "oisupport/staging-amd64:3a4070d8a92c4dfe85b2169a0ea3de316a88b041b4e816ed3221998af66c2c21",
+      "resolved": null,
+      "sourceId": "76d9ec714c6b57b93b77bdbd002b06d37dd020581a877cf6e9c672a26374ed6a",
+      "arch": "amd64",
+      "parents": {
+        "docker:24-dind": "sha256:bbc57559ea5f6d7359f53c92bdfd386df0b1b0384591a24b7a6cf40b77343a4a"
+      },
+      "resolvedParents": {
+        "docker:24-dind": {
+          "manifest": {
+            "ref": "oisupport/staging-amd64:2c6e23ffd16c640f4283418995950c3a10f03a7149a49f7b42727f002e82d50a@sha256:bbc57559ea5f6d7359f53c92bdfd386df0b1b0384591a24b7a6cf40b77343a4a",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.manifest.v1+json",
+              "digest": "sha256:bbc57559ea5f6d7359f53c92bdfd386df0b1b0384591a24b7a6cf40b77343a4a",
+              "size": 3327,
+              "annotations": {
+                "org.opencontainers.image.revision": "f6bb49f0c0e7ed0ab489df14b53e26cc65c294d6",
+                "org.opencontainers.image.source": "https://github.com/docker-library/docker.git#f6bb49f0c0e7ed0ab489df14b53e26cc65c294d6:24/dind",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/docker",
+                "org.opencontainers.image.version": "24.0.5-dind"
+              },
+              "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+              }
+            }
+          },
+          "index": {
+            "ref": "oisupport/staging-amd64:2c6e23ffd16c640f4283418995950c3a10f03a7149a49f7b42727f002e82d50a@sha256:8aeda03bef78e83cca4e6e849930ce51ced5e94a50ecff76314922e62a42ae17",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.index.v1+json",
+              "digest": "sha256:8aeda03bef78e83cca4e6e849930ce51ced5e94a50ecff76314922e62a42ae17",
+              "size": 1250
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "sourceId": "76d9ec714c6b57b93b77bdbd002b06d37dd020581a877cf6e9c672a26374ed6a",
+      "reproducibleGitChecksum": "c8a560db6f89c1fb2403096b97a1e929262956986d9b1d089757d6cb75a88f7e",
+      "allTags": [
+        "docker:24.0.5-dind-rootless",
+        "docker:24.0-dind-rootless",
+        "docker:24-dind-rootless",
+        "docker:dind-rootless",
+        "amd64/docker:24.0.5-dind-rootless",
+        "amd64/docker:24.0-dind-rootless",
+        "amd64/docker:24-dind-rootless",
+        "amd64/docker:dind-rootless",
+        "arm64v8/docker:24.0.5-dind-rootless",
+        "arm64v8/docker:24.0-dind-rootless",
+        "arm64v8/docker:24-dind-rootless",
+        "arm64v8/docker:dind-rootless"
+      ],
+      "entry": {
+        "GitRepo": "https://github.com/docker-library/docker.git",
+        "GitFetch": "refs/heads/master",
+        "GitCommit": "f6bb49f0c0e7ed0ab489df14b53e26cc65c294d6",
+        "Directory": "24/dind-rootless",
+        "File": "Dockerfile",
+        "Builder": "buildkit",
+        "SOURCE_DATE_EPOCH": 1690215459
+      },
+      "arches": {
+        "amd64": {
+          "tags": [
+            "docker:24.0.5-dind-rootless",
+            "docker:24.0-dind-rootless",
+            "docker:24-dind-rootless",
+            "docker:dind-rootless"
+          ],
+          "archTags": [
+            "amd64/docker:24.0.5-dind-rootless",
+            "amd64/docker:24.0-dind-rootless",
+            "amd64/docker:24-dind-rootless",
+            "amd64/docker:dind-rootless"
+          ],
+          "froms": [
+            "docker:24-dind"
+          ],
+          "platformString": "linux/amd64",
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          },
+          "parents": {
+            "docker:24-dind": {
+              "sourceId": "dda380dd4bc77496d791f09666317df3180a5ab763502b0b099582a5d534bd4e",
+              "pin": null
+            }
+          }
+        }
+      }
+    }
+  },
   "a64abee3886a05ea1db9325e6ebf49ca21353db21f1288c688b983230d1ad888": {
     "buildId": "a64abee3886a05ea1db9325e6ebf49ca21353db21f1288c688b983230d1ad888",
     "build": {
@@ -658,6 +784,105 @@
             "architecture": "arm64",
             "os": "linux",
             "variant": "v8"
+          },
+          "parents": {
+            "docker:24-dind": {
+              "sourceId": "dda380dd4bc77496d791f09666317df3180a5ab763502b0b099582a5d534bd4e",
+              "pin": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "7d0046d57fabd9ed9ea3ccb5f98e22aff68e829b5f8e3322a815a1fa722b32a7": {
+    "buildId": "7d0046d57fabd9ed9ea3ccb5f98e22aff68e829b5f8e3322a815a1fa722b32a7",
+    "build": {
+      "img": "oisupport/staging-amd64:7d0046d57fabd9ed9ea3ccb5f98e22aff68e829b5f8e3322a815a1fa722b32a7",
+      "resolved": null,
+      "sourceId": "857e7d78797a6368eeb42d126360042cf6531f7fca6d17e0e8ae971ad2f9a320",
+      "arch": "amd64",
+      "parents": {
+        "docker:24-dind": "sha256:bbc57559ea5f6d7359f53c92bdfd386df0b1b0384591a24b7a6cf40b77343a4a"
+      },
+      "resolvedParents": {
+        "docker:24-dind": {
+          "manifest": {
+            "ref": "oisupport/staging-amd64:2c6e23ffd16c640f4283418995950c3a10f03a7149a49f7b42727f002e82d50a@sha256:bbc57559ea5f6d7359f53c92bdfd386df0b1b0384591a24b7a6cf40b77343a4a",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.manifest.v1+json",
+              "digest": "sha256:bbc57559ea5f6d7359f53c92bdfd386df0b1b0384591a24b7a6cf40b77343a4a",
+              "size": 3327,
+              "annotations": {
+                "org.opencontainers.image.revision": "f6bb49f0c0e7ed0ab489df14b53e26cc65c294d6",
+                "org.opencontainers.image.source": "https://github.com/docker-library/docker.git#f6bb49f0c0e7ed0ab489df14b53e26cc65c294d6:24/dind",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/docker",
+                "org.opencontainers.image.version": "24.0.5-dind"
+              },
+              "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+              }
+            }
+          },
+          "index": {
+            "ref": "oisupport/staging-amd64:2c6e23ffd16c640f4283418995950c3a10f03a7149a49f7b42727f002e82d50a@sha256:8aeda03bef78e83cca4e6e849930ce51ced5e94a50ecff76314922e62a42ae17",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.index.v1+json",
+              "digest": "sha256:8aeda03bef78e83cca4e6e849930ce51ced5e94a50ecff76314922e62a42ae17",
+              "size": 1250
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "sourceId": "857e7d78797a6368eeb42d126360042cf6531f7fca6d17e0e8ae971ad2f9a320",
+      "reproducibleGitChecksum": "f8ea2c910b7c218a911b84a94835e874848ab2e957fdf7fc2455e1f5537c76b7",
+      "allTags": [
+        "docker:24.0.5-git",
+        "docker:24.0-git",
+        "docker:24-git",
+        "docker:git",
+        "amd64/docker:24.0.5-git",
+        "amd64/docker:24.0-git",
+        "amd64/docker:24-git",
+        "amd64/docker:git",
+        "arm64v8/docker:24.0.5-git",
+        "arm64v8/docker:24.0-git",
+        "arm64v8/docker:24-git",
+        "arm64v8/docker:git"
+      ],
+      "entry": {
+        "GitRepo": "https://github.com/docker-library/docker.git",
+        "GitFetch": "refs/heads/master",
+        "GitCommit": "6964fd52030c2e6e9e0943eaac07d78c9841fbb3",
+        "Directory": "24/git",
+        "File": "Dockerfile",
+        "Builder": "buildkit",
+        "SOURCE_DATE_EPOCH": 1684259978
+      },
+      "arches": {
+        "amd64": {
+          "tags": [
+            "docker:24.0.5-git",
+            "docker:24.0-git",
+            "docker:24-git",
+            "docker:git"
+          ],
+          "archTags": [
+            "amd64/docker:24.0.5-git",
+            "amd64/docker:24.0-git",
+            "amd64/docker:24-git",
+            "amd64/docker:git"
+          ],
+          "froms": [
+            "docker:24-dind"
+          ],
+          "platformString": "linux/amd64",
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
           },
           "parents": {
             "docker:24-dind": {
@@ -1048,7 +1273,34 @@
     "buildId": "0e513e9ca8eaab563ce534c0559db6a7c418c12c876a1451d0719802fc8f832d",
     "build": {
       "img": "oisupport/staging-amd64:0e513e9ca8eaab563ce534c0559db6a7c418c12c876a1451d0719802fc8f832d",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "oisupport/staging-amd64:0e513e9ca8eaab563ce534c0559db6a7c418c12c876a1451d0719802fc8f832d@sha256:16737a2ba8f12e0289bf6b727e6ac377380e4667a6e5707b7963fced434e5e25",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:16737a2ba8f12e0289bf6b727e6ac377380e4667a6e5707b7963fced434e5e25",
+            "size": 2372,
+            "annotations": {
+              "org.opencontainers.image.revision": "cb48c20d320555c4486a1211b485ccf1f100a829",
+              "org.opencontainers.image.source": "https://github.com/docker-library/docker.git#cb48c20d320555c4486a1211b485ccf1f100a829:23/cli",
+              "org.opencontainers.image.url": "https://hub.docker.com/_/docker",
+              "org.opencontainers.image.version": "23.0.6-cli"
+            },
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          }
+        },
+        "index": {
+          "ref": "oisupport/staging-amd64:0e513e9ca8eaab563ce534c0559db6a7c418c12c876a1451d0719802fc8f832d@sha256:310d9eb92ff663ec15a2f291d6f96fc60cece05517fde02460724e24a58c1c15",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:310d9eb92ff663ec15a2f291d6f96fc60cece05517fde02460724e24a58c1c15",
+            "size": 1248
+          }
+        }
+      },
       "sourceId": "6475e9ddabf3a1a1d0516cd676b3c9ee74d481f2a4eeddac23622c5c34af6f46",
       "arch": "amd64",
       "parents": {
@@ -1253,6 +1505,125 @@
           "parents": {
             "alpine:3.18": {
               "sourceId": null,
+              "pin": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "953284f6dae2fc2600ba89e0f80c5ba3ca2aa55217ccb5406b1ebacd491941d5": {
+    "buildId": "953284f6dae2fc2600ba89e0f80c5ba3ca2aa55217ccb5406b1ebacd491941d5",
+    "build": {
+      "img": "oisupport/staging-amd64:953284f6dae2fc2600ba89e0f80c5ba3ca2aa55217ccb5406b1ebacd491941d5",
+      "resolved": null,
+      "sourceId": "a4a56db42b3eddb7af28e30e240806d086fe0926ba1be0c31510707cfa277367",
+      "arch": "amd64",
+      "parents": {
+        "docker:23-cli": "sha256:16737a2ba8f12e0289bf6b727e6ac377380e4667a6e5707b7963fced434e5e25"
+      },
+      "resolvedParents": {
+        "docker:23-cli": {
+          "manifest": {
+            "ref": "oisupport/staging-amd64:0e513e9ca8eaab563ce534c0559db6a7c418c12c876a1451d0719802fc8f832d@sha256:16737a2ba8f12e0289bf6b727e6ac377380e4667a6e5707b7963fced434e5e25",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.manifest.v1+json",
+              "digest": "sha256:16737a2ba8f12e0289bf6b727e6ac377380e4667a6e5707b7963fced434e5e25",
+              "size": 2372,
+              "annotations": {
+                "org.opencontainers.image.revision": "cb48c20d320555c4486a1211b485ccf1f100a829",
+                "org.opencontainers.image.source": "https://github.com/docker-library/docker.git#cb48c20d320555c4486a1211b485ccf1f100a829:23/cli",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/docker",
+                "org.opencontainers.image.version": "23.0.6-cli"
+              },
+              "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+              }
+            }
+          },
+          "index": {
+            "ref": "oisupport/staging-amd64:0e513e9ca8eaab563ce534c0559db6a7c418c12c876a1451d0719802fc8f832d@sha256:310d9eb92ff663ec15a2f291d6f96fc60cece05517fde02460724e24a58c1c15",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.index.v1+json",
+              "digest": "sha256:310d9eb92ff663ec15a2f291d6f96fc60cece05517fde02460724e24a58c1c15",
+              "size": 1248
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "sourceId": "a4a56db42b3eddb7af28e30e240806d086fe0926ba1be0c31510707cfa277367",
+      "reproducibleGitChecksum": "d977f705322f636ee672309a63aa9f637160a19630043d138872d97d7e9c0205",
+      "allTags": [
+        "docker:23.0.6-dind",
+        "docker:23.0-dind",
+        "docker:23-dind",
+        "docker:23.0.6-dind-alpine3.18",
+        "docker:23.0.6",
+        "docker:23.0",
+        "docker:23",
+        "docker:23.0.6-alpine3.18",
+        "amd64/docker:23.0.6-dind",
+        "amd64/docker:23.0-dind",
+        "amd64/docker:23-dind",
+        "amd64/docker:23.0.6-dind-alpine3.18",
+        "amd64/docker:23.0.6",
+        "amd64/docker:23.0",
+        "amd64/docker:23",
+        "amd64/docker:23.0.6-alpine3.18",
+        "arm64v8/docker:23.0.6-dind",
+        "arm64v8/docker:23.0-dind",
+        "arm64v8/docker:23-dind",
+        "arm64v8/docker:23.0.6-dind-alpine3.18",
+        "arm64v8/docker:23.0.6",
+        "arm64v8/docker:23.0",
+        "arm64v8/docker:23",
+        "arm64v8/docker:23.0.6-alpine3.18"
+      ],
+      "entry": {
+        "GitRepo": "https://github.com/docker-library/docker.git",
+        "GitFetch": "refs/heads/master",
+        "GitCommit": "09a8b6a03e9ab630f0f62cce43df38a285f80826",
+        "Directory": "23/dind",
+        "File": "Dockerfile",
+        "Builder": "buildkit",
+        "SOURCE_DATE_EPOCH": 1685487852
+      },
+      "arches": {
+        "amd64": {
+          "tags": [
+            "docker:23.0.6-dind",
+            "docker:23.0-dind",
+            "docker:23-dind",
+            "docker:23.0.6-dind-alpine3.18",
+            "docker:23.0.6",
+            "docker:23.0",
+            "docker:23",
+            "docker:23.0.6-alpine3.18"
+          ],
+          "archTags": [
+            "amd64/docker:23.0.6-dind",
+            "amd64/docker:23.0-dind",
+            "amd64/docker:23-dind",
+            "amd64/docker:23.0.6-dind-alpine3.18",
+            "amd64/docker:23.0.6",
+            "amd64/docker:23.0",
+            "amd64/docker:23",
+            "amd64/docker:23.0.6-alpine3.18"
+          ],
+          "froms": [
+            "docker:23-cli"
+          ],
+          "platformString": "linux/amd64",
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          },
+          "parents": {
+            "docker:23-cli": {
+              "sourceId": "6475e9ddabf3a1a1d0516cd676b3c9ee74d481f2a4eeddac23622c5c34af6f46",
               "pin": null
             }
           }
@@ -1661,7 +2032,21 @@
     "buildId": "c240fdc2425ba7a36f600f01f8763d635babdc651fec331a83170973297f0814",
     "build": {
       "img": "oisupport/staging-windows-amd64:c240fdc2425ba7a36f600f01f8763d635babdc651fec331a83170973297f0814",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "oisupport/staging-windows-amd64:c240fdc2425ba7a36f600f01f8763d635babdc651fec331a83170973297f0814@sha256:493c97e33ed60cbbe80faa8914494b46670575e070b6f43b7f46964dc1088fc1",
+          "desc": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:493c97e33ed60cbbe80faa8914494b46670575e070b6f43b7f46964dc1088fc1",
+            "size": 3462,
+            "platform": {
+              "architecture": "amd64",
+              "os": "windows",
+              "os.version": "10.0.20348.1850"
+            }
+          }
+        }
+      },
       "sourceId": "3c79e15de7759910f0148767fad4c5d7100cd7b7685ca8aff78777222cc86df9",
       "arch": "windows-amd64",
       "parents": {
@@ -1762,7 +2147,21 @@
     "buildId": "871532253d65b589f6426fc4c229d1271311941d835dc9be7f54f31a4d87585c",
     "build": {
       "img": "oisupport/staging-windows-amd64:871532253d65b589f6426fc4c229d1271311941d835dc9be7f54f31a4d87585c",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "oisupport/staging-windows-amd64:871532253d65b589f6426fc4c229d1271311941d835dc9be7f54f31a4d87585c@sha256:e4702223ac476ee324ad87a51189751a1adbb7e89594850c58e5d55cc4243cd2",
+          "desc": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:e4702223ac476ee324ad87a51189751a1adbb7e89594850c58e5d55cc4243cd2",
+            "size": 3462,
+            "platform": {
+              "architecture": "amd64",
+              "os": "windows",
+              "os.version": "10.0.17763.4645"
+            }
+          }
+        }
+      },
       "sourceId": "7e92f5a7e638f9b6dc58baf77ab38bb0d6bae2676fdb9e4feb6a014609da6b0e",
       "arch": "windows-amd64",
       "parents": {
