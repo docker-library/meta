@@ -107,22 +107,10 @@ jobs:
           chmod +x ".gha-bin/bashbrew$ext"
           ".gha-bin/bashbrew$ext" --version
 
-          # https://github.com/google/go-containerregistry/releases
-          craneVersion='v0.15.2'
-          case "$BASHBREW_ARCH" in
-            amd64) craneTar='go-containerregistry_Linux_x86_64.tar.gz' ;;
-            arm32v[67]) craneTar='go-containerregistry_Linux_armv6.tar.gz' ;;
-            arm64v8) craneTar='go-containerregistry_Linux_arm64.tar.gz' ;;
-            i386) craneTar='go-containerregistry_Linux_i386.tar.gz' ;;
-            ppc64le) craneTar='go-containerregistry_Linux_ppc64le.tar.gz' ;;
-            s390x) craneTar='go-containerregistry_Linux_s390x.tar.gz' ;;
-            windows-amd64) craneTar='go-containerregistry_Windows_x86_64.tar.gz' ;;
-            *) echo >&2 "error: unsupported arch: $BASHBREW_ARCH"; exit 1 ;;
-          esac
-          _download crane.tgz "https://github.com/google/go-containerregistry/releases/download/$craneVersion/$craneTar"
+          # https://doi-janky.infosiftr.net/job/wip/job/crane
+          _download ".gha-bin/crane$ext" "https://doi-janky.infosiftr.net/job/wip/job/crane/lastSuccessfulBuild/artifact/crane-$BASHBREW_ARCH$ext"
           # TODO checksum verification ("checksums.txt")
-          tar -xvf crane.tgz -C .gha-bin "crane$ext"
-          rm crane.tgz
+          chmod +x ".gha-bin/crane$ext"
           ".gha-bin/crane$ext" version
       - name: Check
         run: |
