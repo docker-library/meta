@@ -2351,6 +2351,121 @@
       }
     }
   },
+  "56f380d03991be42a6286a7801cb685a63a4016394f0a1ad759b67670af510c4": {
+    "buildId": "56f380d03991be42a6286a7801cb685a63a4016394f0a1ad759b67670af510c4",
+    "build": {
+      "img": "oisupport/staging-windows-amd64:56f380d03991be42a6286a7801cb685a63a4016394f0a1ad759b67670af510c4",
+      "resolved": {
+        "manifest": {
+          "ref": "oisupport/staging-windows-amd64:56f380d03991be42a6286a7801cb685a63a4016394f0a1ad759b67670af510c4@sha256:cc571fbf29397d738753914ef8f19aff3dea1939596a20c5e27abc1e16bd8ba5",
+          "desc": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:cc571fbf29397d738753914ef8f19aff3dea1939596a20c5e27abc1e16bd8ba5",
+            "size": 3462,
+            "platform": {
+              "architecture": "amd64",
+              "os": "windows",
+              "os.version": "10.0.20348.1906"
+            }
+          }
+        }
+      },
+      "sourceId": "3c79e15de7759910f0148767fad4c5d7100cd7b7685ca8aff78777222cc86df9",
+      "arch": "windows-amd64",
+      "parents": {
+        "mcr.microsoft.com/windows/servercore:ltsc2022": "sha256:caee57a29f215023faa23955bd385af395b9c740182324f8acf38ec474631284"
+      },
+      "resolvedParents": {
+        "mcr.microsoft.com/windows/servercore:ltsc2022": {
+          "manifest": {
+            "ref": "mcr.microsoft.com/windows/servercore:ltsc2022@sha256:caee57a29f215023faa23955bd385af395b9c740182324f8acf38ec474631284",
+            "desc": {
+              "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+              "digest": "sha256:caee57a29f215023faa23955bd385af395b9c740182324f8acf38ec474631284",
+              "size": 596,
+              "platform": {
+                "architecture": "amd64",
+                "os": "windows",
+                "os.version": "10.0.20348.1906",
+                "os.features": [
+                  "win32k"
+                ]
+              }
+            }
+          },
+          "index": {
+            "ref": "mcr.microsoft.com/windows/servercore:ltsc2022@sha256:f1974546e8a73746e6c60781895341dd7a6760e28534d3d0cc5f3c88c1f5825a",
+            "desc": {
+              "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+              "digest": "sha256:f1974546e8a73746e6c60781895341dd7a6760e28534d3d0cc5f3c88c1f5825a",
+              "size": 375
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "sourceId": "3c79e15de7759910f0148767fad4c5d7100cd7b7685ca8aff78777222cc86df9",
+      "reproducibleGitChecksum": "9d3eac355538a4c7fbc54f635bffbb16caedb5bc287fd32be485108bb26736b5",
+      "allTags": [
+        "docker:23.0.6-windowsservercore-ltsc2022",
+        "docker:23.0-windowsservercore-ltsc2022",
+        "docker:23-windowsservercore-ltsc2022",
+        "docker:23.0.6-windowsservercore",
+        "docker:23.0-windowsservercore",
+        "docker:23-windowsservercore",
+        "winamd64/docker:23.0.6-windowsservercore-ltsc2022",
+        "winamd64/docker:23.0-windowsservercore-ltsc2022",
+        "winamd64/docker:23-windowsservercore-ltsc2022",
+        "winamd64/docker:23.0.6-windowsservercore",
+        "winamd64/docker:23.0-windowsservercore",
+        "winamd64/docker:23-windowsservercore"
+      ],
+      "entry": {
+        "GitRepo": "https://github.com/docker-library/docker.git",
+        "GitFetch": "refs/heads/master",
+        "GitCommit": "cb48c20d320555c4486a1211b485ccf1f100a829",
+        "Directory": "23/windows/windowsservercore-ltsc2022",
+        "File": "Dockerfile",
+        "Builder": "classic",
+        "SOURCE_DATE_EPOCH": 1689786256
+      },
+      "arches": {
+        "windows-amd64": {
+          "tags": [
+            "docker:23.0.6-windowsservercore-ltsc2022",
+            "docker:23.0-windowsservercore-ltsc2022",
+            "docker:23-windowsservercore-ltsc2022",
+            "docker:23.0.6-windowsservercore",
+            "docker:23.0-windowsservercore",
+            "docker:23-windowsservercore"
+          ],
+          "archTags": [
+            "winamd64/docker:23.0.6-windowsservercore-ltsc2022",
+            "winamd64/docker:23.0-windowsservercore-ltsc2022",
+            "winamd64/docker:23-windowsservercore-ltsc2022",
+            "winamd64/docker:23.0.6-windowsservercore",
+            "winamd64/docker:23.0-windowsservercore",
+            "winamd64/docker:23-windowsservercore"
+          ],
+          "froms": [
+            "mcr.microsoft.com/windows/servercore:ltsc2022"
+          ],
+          "platformString": "windows/amd64",
+          "platform": {
+            "architecture": "amd64",
+            "os": "windows"
+          },
+          "parents": {
+            "mcr.microsoft.com/windows/servercore:ltsc2022": {
+              "sourceId": null,
+              "pin": "sha256:f1974546e8a73746e6c60781895341dd7a6760e28534d3d0cc5f3c88c1f5825a"
+            }
+          }
+        }
+      }
+    }
+  },
   "4ae982a89599eadb055669791d163258f93c8d7316d4fbe53bbab9583f978ff9": {
     "buildId": "4ae982a89599eadb055669791d163258f93c8d7316d4fbe53bbab9583f978ff9",
     "build": {
