@@ -12907,7 +12907,35 @@
     "buildId": "adeadca118e56ffd07305f022f4e85d923e648f44d1a17c6c9c8eb5ddfd2b10b",
     "build": {
       "img": "oisupport/staging-arm64v8:adeadca118e56ffd07305f022f4e85d923e648f44d1a17c6c9c8eb5ddfd2b10b",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "oisupport/staging-arm64v8:adeadca118e56ffd07305f022f4e85d923e648f44d1a17c6c9c8eb5ddfd2b10b@sha256:f362e5733e6fa38a410963cf5ec72be524baca6b8692fe362f9cb7b41974f7ba",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:f362e5733e6fa38a410963cf5ec72be524baca6b8692fe362f9cb7b41974f7ba",
+            "size": 2565,
+            "annotations": {
+              "org.opencontainers.image.revision": "2a34299995bd94fa478bb688ec6ea1ca0dfb3f76",
+              "org.opencontainers.image.source": "https://github.com/docker-library/rabbitmq.git#2a34299995bd94fa478bb688ec6ea1ca0dfb3f76:3.10/ubuntu",
+              "org.opencontainers.image.url": "https://hub.docker.com/_/rabbitmq",
+              "org.opencontainers.image.version": "3.10.25"
+            },
+            "platform": {
+              "architecture": "arm64",
+              "os": "linux",
+              "variant": "v8"
+            }
+          }
+        },
+        "index": {
+          "ref": "oisupport/staging-arm64v8:adeadca118e56ffd07305f022f4e85d923e648f44d1a17c6c9c8eb5ddfd2b10b@sha256:3a33dfe2a27fb6c52bac1d9f9d10bb251705a919eb17850673ce4826aa7e6bcb",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:3a33dfe2a27fb6c52bac1d9f9d10bb251705a919eb17850673ce4826aa7e6bcb",
+            "size": 1254
+          }
+        }
+      },
       "sourceId": "3a20486bc4a359fe4aef6b11403151e2ba1f353691feb35bc65090a3cfabc789",
       "arch": "arm64v8",
       "parents": {
@@ -13328,6 +13356,103 @@
           "platform": {
             "architecture": "amd64",
             "os": "linux"
+          },
+          "parents": {
+            "rabbitmq:3.10": {
+              "sourceId": "3a20486bc4a359fe4aef6b11403151e2ba1f353691feb35bc65090a3cfabc789",
+              "pin": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "1731e2ca62dedce14219831ed70233472effcc5c6dcb305270d8f0faac917a4d": {
+    "buildId": "1731e2ca62dedce14219831ed70233472effcc5c6dcb305270d8f0faac917a4d",
+    "build": {
+      "img": "oisupport/staging-arm64v8:1731e2ca62dedce14219831ed70233472effcc5c6dcb305270d8f0faac917a4d",
+      "resolved": null,
+      "sourceId": "e5270da81a4427ad557356f5206a703d7cc10bb6385a823017c804829dcd7277",
+      "arch": "arm64v8",
+      "parents": {
+        "rabbitmq:3.10": "sha256:f362e5733e6fa38a410963cf5ec72be524baca6b8692fe362f9cb7b41974f7ba"
+      },
+      "resolvedParents": {
+        "rabbitmq:3.10": {
+          "manifest": {
+            "ref": "oisupport/staging-arm64v8:adeadca118e56ffd07305f022f4e85d923e648f44d1a17c6c9c8eb5ddfd2b10b@sha256:f362e5733e6fa38a410963cf5ec72be524baca6b8692fe362f9cb7b41974f7ba",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.manifest.v1+json",
+              "digest": "sha256:f362e5733e6fa38a410963cf5ec72be524baca6b8692fe362f9cb7b41974f7ba",
+              "size": 2565,
+              "annotations": {
+                "org.opencontainers.image.revision": "2a34299995bd94fa478bb688ec6ea1ca0dfb3f76",
+                "org.opencontainers.image.source": "https://github.com/docker-library/rabbitmq.git#2a34299995bd94fa478bb688ec6ea1ca0dfb3f76:3.10/ubuntu",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/rabbitmq",
+                "org.opencontainers.image.version": "3.10.25"
+              },
+              "platform": {
+                "architecture": "arm64",
+                "os": "linux",
+                "variant": "v8"
+              }
+            }
+          },
+          "index": {
+            "ref": "oisupport/staging-arm64v8:adeadca118e56ffd07305f022f4e85d923e648f44d1a17c6c9c8eb5ddfd2b10b@sha256:3a33dfe2a27fb6c52bac1d9f9d10bb251705a919eb17850673ce4826aa7e6bcb",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.index.v1+json",
+              "digest": "sha256:3a33dfe2a27fb6c52bac1d9f9d10bb251705a919eb17850673ce4826aa7e6bcb",
+              "size": 1254
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "sourceId": "e5270da81a4427ad557356f5206a703d7cc10bb6385a823017c804829dcd7277",
+      "reproducibleGitChecksum": "69621854eec32d0a66368d9e9ae5d29d284c8b93f76ef024b3c4281140ea4d0d",
+      "allTags": [
+        "rabbitmq:3.10.25-management",
+        "rabbitmq:3.10-management",
+        "amd64/rabbitmq:3.10.25-management",
+        "amd64/rabbitmq:3.10-management",
+        "arm32v7/rabbitmq:3.10.25-management",
+        "arm32v7/rabbitmq:3.10-management",
+        "arm64v8/rabbitmq:3.10.25-management",
+        "arm64v8/rabbitmq:3.10-management",
+        "ppc64le/rabbitmq:3.10.25-management",
+        "ppc64le/rabbitmq:3.10-management",
+        "s390x/rabbitmq:3.10.25-management",
+        "s390x/rabbitmq:3.10-management"
+      ],
+      "entry": {
+        "GitRepo": "https://github.com/docker-library/rabbitmq.git",
+        "GitFetch": "refs/heads/master",
+        "GitCommit": "b41c10aaddc91da62f96994ab62e9d1ea590c455",
+        "Directory": "3.10/ubuntu/management",
+        "File": "Dockerfile",
+        "Builder": "buildkit",
+        "SOURCE_DATE_EPOCH": 1679683507
+      },
+      "arches": {
+        "arm64v8": {
+          "tags": [
+            "rabbitmq:3.10.25-management",
+            "rabbitmq:3.10-management"
+          ],
+          "archTags": [
+            "arm64v8/rabbitmq:3.10.25-management",
+            "arm64v8/rabbitmq:3.10-management"
+          ],
+          "froms": [
+            "rabbitmq:3.10"
+          ],
+          "platformString": "linux/arm64/v8",
+          "platform": {
+            "architecture": "arm64",
+            "os": "linux",
+            "variant": "v8"
           },
           "parents": {
             "rabbitmq:3.10": {
