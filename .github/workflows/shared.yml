@@ -1,0 +1,146 @@
+name: Shared Build
+on:
+  workflow_call:
+    inputs:
+      buildId:
+        description: Build Id
+        required: true
+        type: string
+      bashbrewArch:
+        description: Bashbrew Architecture
+        required: true
+        type: string
+      firstTag: # informational only, because "run-name" can't be set to a useful value otherwise
+        description: First Tag
+        type: string
+      windowsVersion:
+        description: Windows Versions
+        type: string
+    secrets:
+      SSH_KEY_PRIVATE:
+        required: true
+      DOCKER_HUB_USERNAME:
+        required: true
+      DOCKER_HUB_PASSWORD:
+        required: true
+
+jobs:
+  build:
+    name: Build ${{ inputs.buildId }}
+    runs-on: ${{ inputs.bashbrewArch == 'windows-amd64' && format('windows-{0}', inputs.windowsVersion) || 'ubuntu-latest' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: false # see SSH key dancing below 🙃
+      - name: Submodules
+        # https://github.com/actions/checkout/issues/287 ....... 🤬
+        env:
+          SSH_KEY_PRIVATE: ${{ secrets.SSH_KEY_PRIVATE }}
+        run: |
+          agent="$(ssh-agent -s)"
+          eval "$agent"
+          ssh-add - <<<"$SSH_KEY_PRIVATE"
+          mkdir -p ~/.ssh && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts # ....... (shouldn't this already exist in GitHub's runner images?? it fails on Windows 🙃)
+          git submodule update --init
+          kill="$(ssh-agent -k)"
+          eval "$kill"
+      - name: JSON
+        run: |
+          json="$(
+            jq -L.scripts '
+              include "meta";
+              .[env.BUILD_ID]
+              | select(needs_build and .build.arch == env.BASHBREW_ARCH) # sanity check
+              | .commands = commands
+            ' builds.json
+          )"
+          [ -n "$json" ]
+
+          {
+            EOJSON="EOJSON-$RANDOM-$RANDOM-$RANDOM"
+            echo "json<<$EOJSON"
+            cat <<<"$json"
+            echo "$EOJSON"
+          } >> "$GITHUB_ENV"
+
+          mkdir build
+      # TODO on Linux, install Tianon's Docker builds (switch off "ubuntu-latest" to pin to something closer to something we publish Debian builds for OR just run Docker-in-Docker and use GITHUB_ENV to set DOCKER_HOST to a suitable value)
+      # TODO on Windows, configure the daemon to push foreign layers too (although recent Windows layers are no longer foreign, so this actually probably does not matter)
+      - uses: ./.doi/.github/workflows/.bashbrew
+        with:
+          # avoid building because we want to skip the build and download a release instead (which will be way faster)
+          build: none # this will set BASHBREW_VERSION for us
+          # TODO improve the bashbrew action to download a release binary instead of building from source ("build: download", perhaps?)
+      - name: Tools
+        run: |
+          mkdir .gha-bin
+          echo "$PWD/.gha-bin" >> "$GITHUB_PATH"
+
+          ext=''
+          if [ "$BASHBREW_ARCH" = 'windows-amd64' ]; then # TODO should we run "bashbrew-host-arch.sh" here instead?
+            ext='.exe'
+          fi
+
+          _download() {
+            # prefer wget, but "windows-2019" doesn't have it, so fall back to curl
+            local target="$1"; shift
+            local url="$1"; shift
+            if command -v wget > /dev/null; then
+              wget -O "$target" "$url" --progress=dot:giga
+            else
+              curl -fL -o "$target" "$url"
+            fi
+          }
+
+          # https://github.com/docker-library/bashbrew/releases
+          [ -n "$BASHBREW_VERSION" ]
+          _download ".gha-bin/bashbrew$ext" "https://github.com/docker-library/bashbrew/releases/download/$BASHBREW_VERSION/bashbrew-$BASHBREW_ARCH$ext"
+          chmod +x ".gha-bin/bashbrew$ext"
+          ".gha-bin/bashbrew$ext" --version
+
+          # https://doi-janky.infosiftr.net/job/wip/job/crane
+          _download ".gha-bin/crane$ext" "https://doi-janky.infosiftr.net/job/wip/job/crane/lastSuccessfulBuild/artifact/crane-$BASHBREW_ARCH$ext"
+          # TODO checksum verification ("checksums.txt")
+          chmod +x ".gha-bin/crane$ext"
+          ".gha-bin/crane$ext" version
+      - name: Check
+        run: |
+          img="$(jq <<<"$json" -r '.build.img')"
+          if crane digest "$img"; then
+            echo >&2 "error: '$img' already exists! cowardly refusing to overwrite it"
+            exit 1
+          fi
+      - name: Pull
+        run: |
+          cd build
+          shell="$(jq <<<"$json" -r '.commands.pull')"
+          eval "$shell"
+      - name: Build
+        run: |
+          cd build
+          shell="$(jq <<<"$json" -r '.commands.build')"
+          if grep <<<"$shell" -q ' buildx '; then
+            if grep <<<"$shell" -qE ' --provenance=|BASHBREW_BUILDKIT_SBOM_GENERATOR'; then
+              # TODO remove this hackiness and fix this correctly (fix the upstream script)
+              patch -p1 --input="$PWD/../.scripts/doi-buildkit.patch" --directory=../.doi
+            fi
+            bk="$(../.doi/.bin/bashbrew-buildkit-env-setup.sh)"
+            bk="$(jq <<<"$bk" -r 'to_entries | map(.key + "=" + .value | @sh) | "export " + join(" ")')"
+            eval "$bk"
+          fi
+          eval "$shell"
+      - name: Push
+        env:
+          DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
+          DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
+        run: |
+          export DOCKER_CONFIG="$PWD/.docker"
+          mkdir "$DOCKER_CONFIG"
+          trap 'rm -rf "$DOCKER_CONFIG"' EXIT
+          docker login --username "$DOCKER_HUB_USERNAME" --password-stdin <<<"$DOCKER_HUB_PASSWORD"
+          unset DOCKER_HUB_USERNAME DOCKER_HUB_PASSWORD
+
+          cd build
+          shell="$(jq <<<"$json" -r '.commands.push')"
+          eval "$shell"

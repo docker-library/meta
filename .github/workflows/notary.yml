@@ -1,5 +1,4 @@
-# For backwards compatibility. Remove when builds are fully seperate
-name: Build
+name: notary
 on:
   workflow_dispatch:
     inputs:
@@ -25,7 +24,6 @@ on:
           - '' # without this, it's technically "required" 🙃
           - '2022'
           - '2019'
-
 run-name: '${{ inputs.bashbrewArch }}: ${{ inputs.firstTag }} (${{ inputs.buildId }})'
 
 concurrency:
