@@ -28753,7 +28753,34 @@
     "buildId": "1fb685962bd26a0c5f732825b9abf63f1763d4086630663295d8c986544674ed",
     "build": {
       "img": "oisupport/staging-s390x:1fb685962bd26a0c5f732825b9abf63f1763d4086630663295d8c986544674ed",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "oisupport/staging-s390x:1fb685962bd26a0c5f732825b9abf63f1763d4086630663295d8c986544674ed@sha256:0219ecfd28d000e7c47b00874bbadd7b4f0d9173f2d030e1a4daba8f18556379",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:0219ecfd28d000e7c47b00874bbadd7b4f0d9173f2d030e1a4daba8f18556379",
+            "size": 2385,
+            "annotations": {
+              "org.opencontainers.image.revision": "ced055dcc013310157788d8e5a710f231bb7cdba",
+              "org.opencontainers.image.source": "https://github.com/docker-library/rabbitmq.git#ced055dcc013310157788d8e5a710f231bb7cdba:3.13-rc/ubuntu",
+              "org.opencontainers.image.url": "https://hub.docker.com/_/rabbitmq",
+              "org.opencontainers.image.version": "3.13.0-beta.6"
+            },
+            "platform": {
+              "architecture": "s390x",
+              "os": "linux"
+            }
+          }
+        },
+        "index": {
+          "ref": "oisupport/staging-s390x:1fb685962bd26a0c5f732825b9abf63f1763d4086630663295d8c986544674ed@sha256:85fcf74b592264f1894267f27bf1a4575cada37d997b8b514345697fa9743051",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:85fcf74b592264f1894267f27bf1a4575cada37d997b8b514345697fa9743051",
+            "size": 1263
+          }
+        }
+      },
       "sourceId": "54e8d3b94a631620211ab6c1413b49caccd059679a0e74593303d3d72cb318d0",
       "arch": "s390x",
       "parents": {
@@ -29094,7 +29121,35 @@
     "buildId": "fb6ebee05c3d505cc057be21831bee406aa64398915351965691f9e9f77ee1f5",
     "build": {
       "img": "oisupport/staging-arm64v8:fb6ebee05c3d505cc057be21831bee406aa64398915351965691f9e9f77ee1f5",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "oisupport/staging-arm64v8:fb6ebee05c3d505cc057be21831bee406aa64398915351965691f9e9f77ee1f5@sha256:6f37350f035076a48e251cccff11dcb543d2a40a71a3c639bd470d695e58764f",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:6f37350f035076a48e251cccff11dcb543d2a40a71a3c639bd470d695e58764f",
+            "size": 2600,
+            "annotations": {
+              "org.opencontainers.image.revision": "80011d74327aea3ddd460b189c6533c1f177f48f",
+              "org.opencontainers.image.source": "https://github.com/docker-library/rabbitmq.git#80011d74327aea3ddd460b189c6533c1f177f48f:3.13-rc/ubuntu/management",
+              "org.opencontainers.image.url": "https://hub.docker.com/_/rabbitmq",
+              "org.opencontainers.image.version": "3.13.0-beta.6-management"
+            },
+            "platform": {
+              "architecture": "arm64",
+              "os": "linux",
+              "variant": "v8"
+            }
+          }
+        },
+        "index": {
+          "ref": "oisupport/staging-arm64v8:fb6ebee05c3d505cc057be21831bee406aa64398915351965691f9e9f77ee1f5@sha256:38dae3f8ccb87368a1a4eae5db6cea70c1569ce34c6b8f092122a3589783d230",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:38dae3f8ccb87368a1a4eae5db6cea70c1569ce34c6b8f092122a3589783d230",
+            "size": 1285
+          }
+        }
+      },
       "sourceId": "b820b0d7ab13095e38778cd332515c674a37d7c3ab44cae211c40b3586b75b5f",
       "arch": "arm64v8",
       "parents": {
@@ -29297,6 +29352,101 @@
           "platformString": "linux/ppc64le",
           "platform": {
             "architecture": "ppc64le",
+            "os": "linux"
+          },
+          "parents": {
+            "rabbitmq:3.13-rc": {
+              "sourceId": "54e8d3b94a631620211ab6c1413b49caccd059679a0e74593303d3d72cb318d0",
+              "pin": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "74bbf88a5db7f326dc2ecee9eeac27971dc3008b245567053801cc5844b703b6": {
+    "buildId": "74bbf88a5db7f326dc2ecee9eeac27971dc3008b245567053801cc5844b703b6",
+    "build": {
+      "img": "oisupport/staging-s390x:74bbf88a5db7f326dc2ecee9eeac27971dc3008b245567053801cc5844b703b6",
+      "resolved": null,
+      "sourceId": "b820b0d7ab13095e38778cd332515c674a37d7c3ab44cae211c40b3586b75b5f",
+      "arch": "s390x",
+      "parents": {
+        "rabbitmq:3.13-rc": "sha256:0219ecfd28d000e7c47b00874bbadd7b4f0d9173f2d030e1a4daba8f18556379"
+      },
+      "resolvedParents": {
+        "rabbitmq:3.13-rc": {
+          "manifest": {
+            "ref": "oisupport/staging-s390x:1fb685962bd26a0c5f732825b9abf63f1763d4086630663295d8c986544674ed@sha256:0219ecfd28d000e7c47b00874bbadd7b4f0d9173f2d030e1a4daba8f18556379",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.manifest.v1+json",
+              "digest": "sha256:0219ecfd28d000e7c47b00874bbadd7b4f0d9173f2d030e1a4daba8f18556379",
+              "size": 2385,
+              "annotations": {
+                "org.opencontainers.image.revision": "ced055dcc013310157788d8e5a710f231bb7cdba",
+                "org.opencontainers.image.source": "https://github.com/docker-library/rabbitmq.git#ced055dcc013310157788d8e5a710f231bb7cdba:3.13-rc/ubuntu",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/rabbitmq",
+                "org.opencontainers.image.version": "3.13.0-beta.6"
+              },
+              "platform": {
+                "architecture": "s390x",
+                "os": "linux"
+              }
+            }
+          },
+          "index": {
+            "ref": "oisupport/staging-s390x:1fb685962bd26a0c5f732825b9abf63f1763d4086630663295d8c986544674ed@sha256:85fcf74b592264f1894267f27bf1a4575cada37d997b8b514345697fa9743051",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.index.v1+json",
+              "digest": "sha256:85fcf74b592264f1894267f27bf1a4575cada37d997b8b514345697fa9743051",
+              "size": 1263
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "sourceId": "b820b0d7ab13095e38778cd332515c674a37d7c3ab44cae211c40b3586b75b5f",
+      "reproducibleGitChecksum": "a3ec56f216cd755509da9be6f12758e8a10ee19c21792503ef45af3b77d36682",
+      "allTags": [
+        "rabbitmq:3.13.0-beta.6-management",
+        "rabbitmq:3.13-rc-management",
+        "amd64/rabbitmq:3.13.0-beta.6-management",
+        "amd64/rabbitmq:3.13-rc-management",
+        "arm32v7/rabbitmq:3.13.0-beta.6-management",
+        "arm32v7/rabbitmq:3.13-rc-management",
+        "arm64v8/rabbitmq:3.13.0-beta.6-management",
+        "arm64v8/rabbitmq:3.13-rc-management",
+        "ppc64le/rabbitmq:3.13.0-beta.6-management",
+        "ppc64le/rabbitmq:3.13-rc-management",
+        "s390x/rabbitmq:3.13.0-beta.6-management",
+        "s390x/rabbitmq:3.13-rc-management"
+      ],
+      "entry": {
+        "GitRepo": "https://github.com/docker-library/rabbitmq.git",
+        "GitFetch": "refs/heads/master",
+        "GitCommit": "80011d74327aea3ddd460b189c6533c1f177f48f",
+        "Directory": "3.13-rc/ubuntu/management",
+        "File": "Dockerfile",
+        "Builder": "buildkit",
+        "SOURCE_DATE_EPOCH": 1689795703
+      },
+      "arches": {
+        "s390x": {
+          "tags": [
+            "rabbitmq:3.13.0-beta.6-management",
+            "rabbitmq:3.13-rc-management"
+          ],
+          "archTags": [
+            "s390x/rabbitmq:3.13.0-beta.6-management",
+            "s390x/rabbitmq:3.13-rc-management"
+          ],
+          "froms": [
+            "rabbitmq:3.13-rc"
+          ],
+          "platformString": "linux/s390x",
+          "platform": {
+            "architecture": "s390x",
             "os": "linux"
           },
           "parents": {
