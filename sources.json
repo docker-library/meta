@@ -1,7 +1,7 @@
 {
-  "3217952acb5bdfa253e1914dbff61d0b3ee6aa6f6573419d71128886224601ec": {
-    "sourceId": "3217952acb5bdfa253e1914dbff61d0b3ee6aa6f6573419d71128886224601ec",
-    "reproducibleGitChecksum": "cf2c68ba5bf8963480e889bbb750e4eb7f350d288b0cd2524a77f6a2b609d432",
+  "4a60085af7eb198618ed9bebdbf1a714551ca94d64d33a4b66ca8da713d18c04": {
+    "sourceId": "4a60085af7eb198618ed9bebdbf1a714551ca94d64d33a4b66ca8da713d18c04",
+    "reproducibleGitChecksum": "b5206ea395f6d8d19fcab443293ed84ec9d29ab8b3e18e6be6fafcf3f6fcc7dd",
     "allTags": [
       "docker:24.0.6-cli",
       "docker:24.0-cli",
@@ -13,6 +13,16 @@
       "amd64/docker:24-cli",
       "amd64/docker:cli",
       "amd64/docker:24.0.6-cli-alpine3.18",
+      "arm32v6/docker:24.0.6-cli",
+      "arm32v6/docker:24.0-cli",
+      "arm32v6/docker:24-cli",
+      "arm32v6/docker:cli",
+      "arm32v6/docker:24.0.6-cli-alpine3.18",
+      "arm32v7/docker:24.0.6-cli",
+      "arm32v7/docker:24.0-cli",
+      "arm32v7/docker:24-cli",
+      "arm32v7/docker:cli",
+      "arm32v7/docker:24.0.6-cli-alpine3.18",
       "arm64v8/docker:24.0.6-cli",
       "arm64v8/docker:24.0-cli",
       "arm64v8/docker:24-cli",
@@ -22,11 +32,11 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "112eb0209e4ce46e18059a9bd1b3b63f9409d360",
+      "GitCommit": "ff78b7b5f1f0830aa327380eb396dea53380b517",
       "Directory": "24/cli",
       "File": "Dockerfile",
       "Builder": "buildkit",
-      "SOURCE_DATE_EPOCH": 1695315955
+      "SOURCE_DATE_EPOCH": 1696011725
     },
     "arches": {
       "amd64": {
@@ -51,6 +61,68 @@
         "platform": {
           "architecture": "amd64",
           "os": "linux"
+        },
+        "parents": {
+          "alpine:3.18": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v6": {
+        "tags": [
+          "docker:24.0.6-cli",
+          "docker:24.0-cli",
+          "docker:24-cli",
+          "docker:cli",
+          "docker:24.0.6-cli-alpine3.18"
+        ],
+        "archTags": [
+          "arm32v6/docker:24.0.6-cli",
+          "arm32v6/docker:24.0-cli",
+          "arm32v6/docker:24-cli",
+          "arm32v6/docker:cli",
+          "arm32v6/docker:24.0.6-cli-alpine3.18"
+        ],
+        "froms": [
+          "alpine:3.18"
+        ],
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "alpine:3.18": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "docker:24.0.6-cli",
+          "docker:24.0-cli",
+          "docker:24-cli",
+          "docker:cli",
+          "docker:24.0.6-cli-alpine3.18"
+        ],
+        "archTags": [
+          "arm32v7/docker:24.0.6-cli",
+          "arm32v7/docker:24.0-cli",
+          "arm32v7/docker:24-cli",
+          "arm32v7/docker:cli",
+          "arm32v7/docker:24.0.6-cli-alpine3.18"
+        ],
+        "froms": [
+          "alpine:3.18"
+        ],
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
         },
         "parents": {
           "alpine:3.18": {
@@ -116,6 +188,26 @@
       "amd64/docker:24",
       "amd64/docker:latest",
       "amd64/docker:24.0.6-alpine3.18",
+      "arm32v6/docker:24.0.6-dind",
+      "arm32v6/docker:24.0-dind",
+      "arm32v6/docker:24-dind",
+      "arm32v6/docker:dind",
+      "arm32v6/docker:24.0.6-dind-alpine3.18",
+      "arm32v6/docker:24.0.6",
+      "arm32v6/docker:24.0",
+      "arm32v6/docker:24",
+      "arm32v6/docker:latest",
+      "arm32v6/docker:24.0.6-alpine3.18",
+      "arm32v7/docker:24.0.6-dind",
+      "arm32v7/docker:24.0-dind",
+      "arm32v7/docker:24-dind",
+      "arm32v7/docker:dind",
+      "arm32v7/docker:24.0.6-dind-alpine3.18",
+      "arm32v7/docker:24.0.6",
+      "arm32v7/docker:24.0",
+      "arm32v7/docker:24",
+      "arm32v7/docker:latest",
+      "arm32v7/docker:24.0.6-alpine3.18",
       "arm64v8/docker:24.0.6-dind",
       "arm64v8/docker:24.0-dind",
       "arm64v8/docker:24-dind",
@@ -172,7 +264,89 @@
         },
         "parents": {
           "docker:24-cli": {
-            "sourceId": "3217952acb5bdfa253e1914dbff61d0b3ee6aa6f6573419d71128886224601ec",
+            "sourceId": "4a60085af7eb198618ed9bebdbf1a714551ca94d64d33a4b66ca8da713d18c04",
+            "pin": null
+          }
+        }
+      },
+      "arm32v6": {
+        "tags": [
+          "docker:24.0.6-dind",
+          "docker:24.0-dind",
+          "docker:24-dind",
+          "docker:dind",
+          "docker:24.0.6-dind-alpine3.18",
+          "docker:24.0.6",
+          "docker:24.0",
+          "docker:24",
+          "docker:latest",
+          "docker:24.0.6-alpine3.18"
+        ],
+        "archTags": [
+          "arm32v6/docker:24.0.6-dind",
+          "arm32v6/docker:24.0-dind",
+          "arm32v6/docker:24-dind",
+          "arm32v6/docker:dind",
+          "arm32v6/docker:24.0.6-dind-alpine3.18",
+          "arm32v6/docker:24.0.6",
+          "arm32v6/docker:24.0",
+          "arm32v6/docker:24",
+          "arm32v6/docker:latest",
+          "arm32v6/docker:24.0.6-alpine3.18"
+        ],
+        "froms": [
+          "docker:24-cli"
+        ],
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "docker:24-cli": {
+            "sourceId": "4a60085af7eb198618ed9bebdbf1a714551ca94d64d33a4b66ca8da713d18c04",
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "docker:24.0.6-dind",
+          "docker:24.0-dind",
+          "docker:24-dind",
+          "docker:dind",
+          "docker:24.0.6-dind-alpine3.18",
+          "docker:24.0.6",
+          "docker:24.0",
+          "docker:24",
+          "docker:latest",
+          "docker:24.0.6-alpine3.18"
+        ],
+        "archTags": [
+          "arm32v7/docker:24.0.6-dind",
+          "arm32v7/docker:24.0-dind",
+          "arm32v7/docker:24-dind",
+          "arm32v7/docker:dind",
+          "arm32v7/docker:24.0.6-dind-alpine3.18",
+          "arm32v7/docker:24.0.6",
+          "arm32v7/docker:24.0",
+          "arm32v7/docker:24",
+          "arm32v7/docker:latest",
+          "arm32v7/docker:24.0.6-alpine3.18"
+        ],
+        "froms": [
+          "docker:24-cli"
+        ],
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "docker:24-cli": {
+            "sourceId": "4a60085af7eb198618ed9bebdbf1a714551ca94d64d33a4b66ca8da713d18c04",
             "pin": null
           }
         }
@@ -213,7 +387,7 @@
         },
         "parents": {
           "docker:24-cli": {
-            "sourceId": "3217952acb5bdfa253e1914dbff61d0b3ee6aa6f6573419d71128886224601ec",
+            "sourceId": "4a60085af7eb198618ed9bebdbf1a714551ca94d64d33a4b66ca8da713d18c04",
             "pin": null
           }
         }
@@ -318,6 +492,14 @@
       "amd64/docker:24.0-git",
       "amd64/docker:24-git",
       "amd64/docker:git",
+      "arm32v6/docker:24.0.6-git",
+      "arm32v6/docker:24.0-git",
+      "arm32v6/docker:24-git",
+      "arm32v6/docker:git",
+      "arm32v7/docker:24.0.6-git",
+      "arm32v7/docker:24.0-git",
+      "arm32v7/docker:24-git",
+      "arm32v7/docker:git",
       "arm64v8/docker:24.0.6-git",
       "arm64v8/docker:24.0-git",
       "arm64v8/docker:24-git",
@@ -353,6 +535,64 @@
         "platform": {
           "architecture": "amd64",
           "os": "linux"
+        },
+        "parents": {
+          "docker:24-dind": {
+            "sourceId": "b75a5a891e35f615d98180506ba0d6a833cd74753451085c8226fd7837f43477",
+            "pin": null
+          }
+        }
+      },
+      "arm32v6": {
+        "tags": [
+          "docker:24.0.6-git",
+          "docker:24.0-git",
+          "docker:24-git",
+          "docker:git"
+        ],
+        "archTags": [
+          "arm32v6/docker:24.0.6-git",
+          "arm32v6/docker:24.0-git",
+          "arm32v6/docker:24-git",
+          "arm32v6/docker:git"
+        ],
+        "froms": [
+          "docker:24-dind"
+        ],
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "docker:24-dind": {
+            "sourceId": "b75a5a891e35f615d98180506ba0d6a833cd74753451085c8226fd7837f43477",
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "docker:24.0.6-git",
+          "docker:24.0-git",
+          "docker:24-git",
+          "docker:git"
+        ],
+        "archTags": [
+          "arm32v7/docker:24.0.6-git",
+          "arm32v7/docker:24.0-git",
+          "arm32v7/docker:24-git",
+          "arm32v7/docker:git"
+        ],
+        "froms": [
+          "docker:24-dind"
+        ],
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
         },
         "parents": {
           "docker:24-dind": {
@@ -512,486 +752,6 @@
           "winamd64/docker:24.0-windowsservercore",
           "winamd64/docker:24-windowsservercore",
           "winamd64/docker:windowsservercore"
-        ],
-        "froms": [
-          "mcr.microsoft.com/windows/servercore:1809"
-        ],
-        "platformString": "windows/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "windows"
-        },
-        "parents": {
-          "mcr.microsoft.com/windows/servercore:1809": {
-            "sourceId": null,
-            "pin": "sha256:3cba12bffca83466997158c8a0d38f20a18fb14f5ec62cd6454dfdd328278d87"
-          }
-        }
-      }
-    }
-  },
-  "4d940b46e52e9c1518822cc3367f243cadb41e343e38482c21866b405ad51b2e": {
-    "sourceId": "4d940b46e52e9c1518822cc3367f243cadb41e343e38482c21866b405ad51b2e",
-    "reproducibleGitChecksum": "880eb1ece276b711e547f454719bf0d408723cc592d18e5f3dff9ed12f2bbcb7",
-    "allTags": [
-      "docker:23.0.6-cli",
-      "docker:23.0-cli",
-      "docker:23-cli",
-      "docker:23.0.6-cli-alpine3.18",
-      "amd64/docker:23.0.6-cli",
-      "amd64/docker:23.0-cli",
-      "amd64/docker:23-cli",
-      "amd64/docker:23.0.6-cli-alpine3.18",
-      "arm64v8/docker:23.0.6-cli",
-      "arm64v8/docker:23.0-cli",
-      "arm64v8/docker:23-cli",
-      "arm64v8/docker:23.0.6-cli-alpine3.18"
-    ],
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/docker.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "134b3a2752690da62402fb33fe8db929e29d1434",
-      "Directory": "23/cli",
-      "File": "Dockerfile",
-      "Builder": "buildkit",
-      "SOURCE_DATE_EPOCH": 1695315854
-    },
-    "arches": {
-      "amd64": {
-        "tags": [
-          "docker:23.0.6-cli",
-          "docker:23.0-cli",
-          "docker:23-cli",
-          "docker:23.0.6-cli-alpine3.18"
-        ],
-        "archTags": [
-          "amd64/docker:23.0.6-cli",
-          "amd64/docker:23.0-cli",
-          "amd64/docker:23-cli",
-          "amd64/docker:23.0.6-cli-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "tags": [
-          "docker:23.0.6-cli",
-          "docker:23.0-cli",
-          "docker:23-cli",
-          "docker:23.0.6-cli-alpine3.18"
-        ],
-        "archTags": [
-          "arm64v8/docker:23.0.6-cli",
-          "arm64v8/docker:23.0-cli",
-          "arm64v8/docker:23-cli",
-          "arm64v8/docker:23.0.6-cli-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "a4a56db42b3eddb7af28e30e240806d086fe0926ba1be0c31510707cfa277367": {
-    "sourceId": "a4a56db42b3eddb7af28e30e240806d086fe0926ba1be0c31510707cfa277367",
-    "reproducibleGitChecksum": "d977f705322f636ee672309a63aa9f637160a19630043d138872d97d7e9c0205",
-    "allTags": [
-      "docker:23.0.6-dind",
-      "docker:23.0-dind",
-      "docker:23-dind",
-      "docker:23.0.6-dind-alpine3.18",
-      "docker:23.0.6",
-      "docker:23.0",
-      "docker:23",
-      "docker:23.0.6-alpine3.18",
-      "amd64/docker:23.0.6-dind",
-      "amd64/docker:23.0-dind",
-      "amd64/docker:23-dind",
-      "amd64/docker:23.0.6-dind-alpine3.18",
-      "amd64/docker:23.0.6",
-      "amd64/docker:23.0",
-      "amd64/docker:23",
-      "amd64/docker:23.0.6-alpine3.18",
-      "arm64v8/docker:23.0.6-dind",
-      "arm64v8/docker:23.0-dind",
-      "arm64v8/docker:23-dind",
-      "arm64v8/docker:23.0.6-dind-alpine3.18",
-      "arm64v8/docker:23.0.6",
-      "arm64v8/docker:23.0",
-      "arm64v8/docker:23",
-      "arm64v8/docker:23.0.6-alpine3.18"
-    ],
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/docker.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "09a8b6a03e9ab630f0f62cce43df38a285f80826",
-      "Directory": "23/dind",
-      "File": "Dockerfile",
-      "Builder": "buildkit",
-      "SOURCE_DATE_EPOCH": 1685487852
-    },
-    "arches": {
-      "amd64": {
-        "tags": [
-          "docker:23.0.6-dind",
-          "docker:23.0-dind",
-          "docker:23-dind",
-          "docker:23.0.6-dind-alpine3.18",
-          "docker:23.0.6",
-          "docker:23.0",
-          "docker:23",
-          "docker:23.0.6-alpine3.18"
-        ],
-        "archTags": [
-          "amd64/docker:23.0.6-dind",
-          "amd64/docker:23.0-dind",
-          "amd64/docker:23-dind",
-          "amd64/docker:23.0.6-dind-alpine3.18",
-          "amd64/docker:23.0.6",
-          "amd64/docker:23.0",
-          "amd64/docker:23",
-          "amd64/docker:23.0.6-alpine3.18"
-        ],
-        "froms": [
-          "docker:23-cli"
-        ],
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "docker:23-cli": {
-            "sourceId": "4d940b46e52e9c1518822cc3367f243cadb41e343e38482c21866b405ad51b2e",
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "tags": [
-          "docker:23.0.6-dind",
-          "docker:23.0-dind",
-          "docker:23-dind",
-          "docker:23.0.6-dind-alpine3.18",
-          "docker:23.0.6",
-          "docker:23.0",
-          "docker:23",
-          "docker:23.0.6-alpine3.18"
-        ],
-        "archTags": [
-          "arm64v8/docker:23.0.6-dind",
-          "arm64v8/docker:23.0-dind",
-          "arm64v8/docker:23-dind",
-          "arm64v8/docker:23.0.6-dind-alpine3.18",
-          "arm64v8/docker:23.0.6",
-          "arm64v8/docker:23.0",
-          "arm64v8/docker:23",
-          "arm64v8/docker:23.0.6-alpine3.18"
-        ],
-        "froms": [
-          "docker:23-cli"
-        ],
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "docker:23-cli": {
-            "sourceId": "4d940b46e52e9c1518822cc3367f243cadb41e343e38482c21866b405ad51b2e",
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "699f643b3d3c5984f7909cba9114306c8c95282225d99c9bb5c60431b2a6dfae": {
-    "sourceId": "699f643b3d3c5984f7909cba9114306c8c95282225d99c9bb5c60431b2a6dfae",
-    "reproducibleGitChecksum": "3b578bff367a1218003933b95e6e0f572cb821d73fcb0d9c75bb78658a315ba5",
-    "allTags": [
-      "docker:23.0.6-dind-rootless",
-      "docker:23.0-dind-rootless",
-      "docker:23-dind-rootless",
-      "amd64/docker:23.0.6-dind-rootless",
-      "amd64/docker:23.0-dind-rootless",
-      "amd64/docker:23-dind-rootless",
-      "arm64v8/docker:23.0.6-dind-rootless",
-      "arm64v8/docker:23.0-dind-rootless",
-      "arm64v8/docker:23-dind-rootless"
-    ],
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/docker.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "6964fd52030c2e6e9e0943eaac07d78c9841fbb3",
-      "Directory": "23/dind-rootless",
-      "File": "Dockerfile",
-      "Builder": "buildkit",
-      "SOURCE_DATE_EPOCH": 1684259978
-    },
-    "arches": {
-      "amd64": {
-        "tags": [
-          "docker:23.0.6-dind-rootless",
-          "docker:23.0-dind-rootless",
-          "docker:23-dind-rootless"
-        ],
-        "archTags": [
-          "amd64/docker:23.0.6-dind-rootless",
-          "amd64/docker:23.0-dind-rootless",
-          "amd64/docker:23-dind-rootless"
-        ],
-        "froms": [
-          "docker:23-dind"
-        ],
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "docker:23-dind": {
-            "sourceId": "a4a56db42b3eddb7af28e30e240806d086fe0926ba1be0c31510707cfa277367",
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "tags": [
-          "docker:23.0.6-dind-rootless",
-          "docker:23.0-dind-rootless",
-          "docker:23-dind-rootless"
-        ],
-        "archTags": [
-          "arm64v8/docker:23.0.6-dind-rootless",
-          "arm64v8/docker:23.0-dind-rootless",
-          "arm64v8/docker:23-dind-rootless"
-        ],
-        "froms": [
-          "docker:23-dind"
-        ],
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "docker:23-dind": {
-            "sourceId": "a4a56db42b3eddb7af28e30e240806d086fe0926ba1be0c31510707cfa277367",
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "3b97d071da3d0878b31528c565e6f65f80eeae84a81e4cb2776e7fe37d75a428": {
-    "sourceId": "3b97d071da3d0878b31528c565e6f65f80eeae84a81e4cb2776e7fe37d75a428",
-    "reproducibleGitChecksum": "1960405bb238abda1347221c9cf1be73c4a17dfaab835e345f512200ace0be5b",
-    "allTags": [
-      "docker:23.0.6-git",
-      "docker:23.0-git",
-      "docker:23-git",
-      "amd64/docker:23.0.6-git",
-      "amd64/docker:23.0-git",
-      "amd64/docker:23-git",
-      "arm64v8/docker:23.0.6-git",
-      "arm64v8/docker:23.0-git",
-      "arm64v8/docker:23-git"
-    ],
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/docker.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "6964fd52030c2e6e9e0943eaac07d78c9841fbb3",
-      "Directory": "23/git",
-      "File": "Dockerfile",
-      "Builder": "buildkit",
-      "SOURCE_DATE_EPOCH": 1684259978
-    },
-    "arches": {
-      "amd64": {
-        "tags": [
-          "docker:23.0.6-git",
-          "docker:23.0-git",
-          "docker:23-git"
-        ],
-        "archTags": [
-          "amd64/docker:23.0.6-git",
-          "amd64/docker:23.0-git",
-          "amd64/docker:23-git"
-        ],
-        "froms": [
-          "docker:23-dind"
-        ],
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "docker:23-dind": {
-            "sourceId": "a4a56db42b3eddb7af28e30e240806d086fe0926ba1be0c31510707cfa277367",
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "tags": [
-          "docker:23.0.6-git",
-          "docker:23.0-git",
-          "docker:23-git"
-        ],
-        "archTags": [
-          "arm64v8/docker:23.0.6-git",
-          "arm64v8/docker:23.0-git",
-          "arm64v8/docker:23-git"
-        ],
-        "froms": [
-          "docker:23-dind"
-        ],
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "docker:23-dind": {
-            "sourceId": "a4a56db42b3eddb7af28e30e240806d086fe0926ba1be0c31510707cfa277367",
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "9a40c5b10f725adeb1207f6d7c598266400423eb16fde7d9be9af0a611c595d0": {
-    "sourceId": "9a40c5b10f725adeb1207f6d7c598266400423eb16fde7d9be9af0a611c595d0",
-    "reproducibleGitChecksum": "d7a1d82caf41467bd48329c934d09fe3e7dd7bf0fbc22a44cd3d709cb31557ae",
-    "allTags": [
-      "docker:23.0.6-windowsservercore-ltsc2022",
-      "docker:23.0-windowsservercore-ltsc2022",
-      "docker:23-windowsservercore-ltsc2022",
-      "docker:23.0.6-windowsservercore",
-      "docker:23.0-windowsservercore",
-      "docker:23-windowsservercore",
-      "winamd64/docker:23.0.6-windowsservercore-ltsc2022",
-      "winamd64/docker:23.0-windowsservercore-ltsc2022",
-      "winamd64/docker:23-windowsservercore-ltsc2022",
-      "winamd64/docker:23.0.6-windowsservercore",
-      "winamd64/docker:23.0-windowsservercore",
-      "winamd64/docker:23-windowsservercore"
-    ],
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/docker.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "134b3a2752690da62402fb33fe8db929e29d1434",
-      "Directory": "23/windows/windowsservercore-ltsc2022",
-      "File": "Dockerfile",
-      "Builder": "classic",
-      "SOURCE_DATE_EPOCH": 1695315854
-    },
-    "arches": {
-      "windows-amd64": {
-        "tags": [
-          "docker:23.0.6-windowsservercore-ltsc2022",
-          "docker:23.0-windowsservercore-ltsc2022",
-          "docker:23-windowsservercore-ltsc2022",
-          "docker:23.0.6-windowsservercore",
-          "docker:23.0-windowsservercore",
-          "docker:23-windowsservercore"
-        ],
-        "archTags": [
-          "winamd64/docker:23.0.6-windowsservercore-ltsc2022",
-          "winamd64/docker:23.0-windowsservercore-ltsc2022",
-          "winamd64/docker:23-windowsservercore-ltsc2022",
-          "winamd64/docker:23.0.6-windowsservercore",
-          "winamd64/docker:23.0-windowsservercore",
-          "winamd64/docker:23-windowsservercore"
-        ],
-        "froms": [
-          "mcr.microsoft.com/windows/servercore:ltsc2022"
-        ],
-        "platformString": "windows/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "windows"
-        },
-        "parents": {
-          "mcr.microsoft.com/windows/servercore:ltsc2022": {
-            "sourceId": null,
-            "pin": "sha256:d227d7ab11f4aa0da7779adc31616924cf0b15846a10313d83a644541208f80b"
-          }
-        }
-      }
-    }
-  },
-  "046cc7b370a9ff1ce35408c4adce46db364857e907fc9ee66800c8fda2583320": {
-    "sourceId": "046cc7b370a9ff1ce35408c4adce46db364857e907fc9ee66800c8fda2583320",
-    "reproducibleGitChecksum": "85e3a9cbbfc647a0406c4fc7b2ce1d997a349971830e9491855b8a907e4888a5",
-    "allTags": [
-      "docker:23.0.6-windowsservercore-1809",
-      "docker:23.0-windowsservercore-1809",
-      "docker:23-windowsservercore-1809",
-      "docker:23.0.6-windowsservercore",
-      "docker:23.0-windowsservercore",
-      "docker:23-windowsservercore",
-      "winamd64/docker:23.0.6-windowsservercore-1809",
-      "winamd64/docker:23.0-windowsservercore-1809",
-      "winamd64/docker:23-windowsservercore-1809",
-      "winamd64/docker:23.0.6-windowsservercore",
-      "winamd64/docker:23.0-windowsservercore",
-      "winamd64/docker:23-windowsservercore"
-    ],
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/docker.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "134b3a2752690da62402fb33fe8db929e29d1434",
-      "Directory": "23/windows/windowsservercore-1809",
-      "File": "Dockerfile",
-      "Builder": "classic",
-      "SOURCE_DATE_EPOCH": 1695315854
-    },
-    "arches": {
-      "windows-amd64": {
-        "tags": [
-          "docker:23.0.6-windowsservercore-1809",
-          "docker:23.0-windowsservercore-1809",
-          "docker:23-windowsservercore-1809",
-          "docker:23.0.6-windowsservercore",
-          "docker:23.0-windowsservercore",
-          "docker:23-windowsservercore"
-        ],
-        "archTags": [
-          "winamd64/docker:23.0.6-windowsservercore-1809",
-          "winamd64/docker:23.0-windowsservercore-1809",
-          "winamd64/docker:23-windowsservercore-1809",
-          "winamd64/docker:23.0.6-windowsservercore",
-          "winamd64/docker:23.0-windowsservercore",
-          "winamd64/docker:23-windowsservercore"
         ],
         "froms": [
           "mcr.microsoft.com/windows/servercore:1809"
