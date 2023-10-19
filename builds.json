@@ -686,7 +686,21 @@
     "buildId": "8775283a8e0e6056c76cd2b12263e84a44a93dbdc946aeaa34172de007b23427",
     "build": {
       "img": "oisupport/staging-arm32v6:8775283a8e0e6056c76cd2b12263e84a44a93dbdc946aeaa34172de007b23427",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "oisupport/staging-arm32v6:8775283a8e0e6056c76cd2b12263e84a44a93dbdc946aeaa34172de007b23427@sha256:3b9c201a958ca8287e09b71e46d225852effd86c080dbf9bf4bd8887c96bb393",
+          "desc": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:3b9c201a958ca8287e09b71e46d225852effd86c080dbf9bf4bd8887c96bb393",
+            "size": 3251,
+            "platform": {
+              "architecture": "arm",
+              "os": "linux",
+              "variant": "v6"
+            }
+          }
+        }
+      },
       "sourceId": "b75a5a891e35f615d98180506ba0d6a833cd74753451085c8226fd7837f43477",
       "arch": "arm32v6",
       "parents": {
@@ -1219,6 +1233,101 @@
           "platform": {
             "architecture": "amd64",
             "os": "linux"
+          },
+          "parents": {
+            "docker:24-dind": {
+              "sourceId": "b75a5a891e35f615d98180506ba0d6a833cd74753451085c8226fd7837f43477",
+              "pin": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "85ab75b68fb46d389bf8d7ec23f9e5af395a3869fdbbf1b9984a0dd70563f8b7": {
+    "buildId": "85ab75b68fb46d389bf8d7ec23f9e5af395a3869fdbbf1b9984a0dd70563f8b7",
+    "build": {
+      "img": "oisupport/staging-arm32v6:85ab75b68fb46d389bf8d7ec23f9e5af395a3869fdbbf1b9984a0dd70563f8b7",
+      "resolved": null,
+      "sourceId": "857e7d78797a6368eeb42d126360042cf6531f7fca6d17e0e8ae971ad2f9a320",
+      "arch": "arm32v6",
+      "parents": {
+        "docker:24-dind": "sha256:3b9c201a958ca8287e09b71e46d225852effd86c080dbf9bf4bd8887c96bb393"
+      },
+      "resolvedParents": {
+        "docker:24-dind": {
+          "manifest": {
+            "ref": "oisupport/staging-arm32v6:8775283a8e0e6056c76cd2b12263e84a44a93dbdc946aeaa34172de007b23427@sha256:3b9c201a958ca8287e09b71e46d225852effd86c080dbf9bf4bd8887c96bb393",
+            "desc": {
+              "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+              "digest": "sha256:3b9c201a958ca8287e09b71e46d225852effd86c080dbf9bf4bd8887c96bb393",
+              "size": 3251,
+              "platform": {
+                "architecture": "arm",
+                "os": "linux",
+                "variant": "v6"
+              }
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "sourceId": "857e7d78797a6368eeb42d126360042cf6531f7fca6d17e0e8ae971ad2f9a320",
+      "reproducibleGitChecksum": "f8ea2c910b7c218a911b84a94835e874848ab2e957fdf7fc2455e1f5537c76b7",
+      "allTags": [
+        "docker:24.0.6-git",
+        "docker:24.0-git",
+        "docker:24-git",
+        "docker:git",
+        "amd64/docker:24.0.6-git",
+        "amd64/docker:24.0-git",
+        "amd64/docker:24-git",
+        "amd64/docker:git",
+        "arm32v6/docker:24.0.6-git",
+        "arm32v6/docker:24.0-git",
+        "arm32v6/docker:24-git",
+        "arm32v6/docker:git",
+        "arm32v7/docker:24.0.6-git",
+        "arm32v7/docker:24.0-git",
+        "arm32v7/docker:24-git",
+        "arm32v7/docker:git",
+        "arm64v8/docker:24.0.6-git",
+        "arm64v8/docker:24.0-git",
+        "arm64v8/docker:24-git",
+        "arm64v8/docker:git"
+      ],
+      "entry": {
+        "GitRepo": "https://github.com/docker-library/docker.git",
+        "GitFetch": "refs/heads/master",
+        "GitCommit": "6964fd52030c2e6e9e0943eaac07d78c9841fbb3",
+        "Directory": "24/git",
+        "File": "Dockerfile",
+        "Builder": "buildkit",
+        "SOURCE_DATE_EPOCH": 1684259978
+      },
+      "arches": {
+        "arm32v6": {
+          "tags": [
+            "docker:24.0.6-git",
+            "docker:24.0-git",
+            "docker:24-git",
+            "docker:git"
+          ],
+          "archTags": [
+            "arm32v6/docker:24.0.6-git",
+            "arm32v6/docker:24.0-git",
+            "arm32v6/docker:24-git",
+            "arm32v6/docker:git"
+          ],
+          "froms": [
+            "docker:24-dind"
+          ],
+          "platformString": "linux/arm/v6",
+          "platform": {
+            "architecture": "arm",
+            "os": "linux",
+            "variant": "v6"
           },
           "parents": {
             "docker:24-dind": {
@@ -35763,7 +35872,21 @@
     "buildId": "609c786b5b8f8ffa5d55b96b0e625c5fc47e999bc51ea3d333028ffd659a9634",
     "build": {
       "img": "oisupport/staging-arm32v6:609c786b5b8f8ffa5d55b96b0e625c5fc47e999bc51ea3d333028ffd659a9634",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "oisupport/staging-arm32v6:609c786b5b8f8ffa5d55b96b0e625c5fc47e999bc51ea3d333028ffd659a9634@sha256:1692b25d433d2f8d2e1a0f197a67cb36b59aad4cfb358bc438fe4271fd4486a8",
+          "desc": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:1692b25d433d2f8d2e1a0f197a67cb36b59aad4cfb358bc438fe4271fd4486a8",
+            "size": 2829,
+            "platform": {
+              "architecture": "arm",
+              "os": "linux",
+              "variant": "v6"
+            }
+          }
+        }
+      },
       "sourceId": "27cbeecf8243506e39c0b11624344ff30c0292d2a150cf996f5cf1d6d6049b7b",
       "arch": "arm32v6",
       "parents": {
@@ -38182,7 +38305,21 @@
     "buildId": "41a8225b0832bed1f9e1717e738bb20e2748948458c6e7fc94a40493f78ec63f",
     "build": {
       "img": "oisupport/staging-arm32v6:41a8225b0832bed1f9e1717e738bb20e2748948458c6e7fc94a40493f78ec63f",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "oisupport/staging-arm32v6:41a8225b0832bed1f9e1717e738bb20e2748948458c6e7fc94a40493f78ec63f@sha256:0470d33926370217976fb819bc0d709d9463ddb0b3952e3be5517312564101f3",
+          "desc": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:0470d33926370217976fb819bc0d709d9463ddb0b3952e3be5517312564101f3",
+            "size": 2829,
+            "platform": {
+              "architecture": "arm",
+              "os": "linux",
+              "variant": "v6"
+            }
+          }
+        }
+      },
       "sourceId": "2e12774856cdf44e7b425fe996d61e3fd99d74a430d95700f8e1674b0a75edd6",
       "arch": "arm32v6",
       "parents": {
