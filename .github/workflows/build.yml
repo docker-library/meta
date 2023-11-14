@@ -40,19 +40,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          submodules: false # see SSH key dancing below 🙃
-      - name: Submodules
-        # https://github.com/actions/checkout/issues/287 ....... 🤬
-        env:
-          SSH_KEY_PRIVATE: ${{ secrets.SSH_KEY_PRIVATE }}
-        run: |
-          agent="$(ssh-agent -s)"
-          eval "$agent"
-          ssh-add - <<<"$SSH_KEY_PRIVATE"
-          mkdir -p ~/.ssh && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts # ....... (shouldn't this already exist in GitHub's runner images?? it fails on Windows 🙃)
-          git submodule update --init
-          kill="$(ssh-agent -k)"
-          eval "$kill"
+          submodules: true
       - name: JSON
         run: |
           json="$(
