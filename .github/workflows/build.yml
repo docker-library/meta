@@ -23,6 +23,7 @@ on:
 run-name: '${{ inputs.bashbrewArch }}: ${{ inputs.firstTag }} (${{ inputs.buildId }})'
 permissions:
   contents: read
+  actions: write # for https://github.com/andymckay/cancel-action (see usage below)
 concurrency:
   group: ${{ github.event.inputs.buildId }}
   cancel-in-progress: false
@@ -105,8 +106,23 @@ jobs:
           img="$(jq <<<"$json" -r '.build.img')"
           if crane digest "$img"; then
             echo >&2 "error: '$img' already exists! cowardly refusing to overwrite it"
-            exit 1
+            echo 'cancel=exists' >> "$GITHUB_OUTPUT"
+          else
+            echo 'cancel=' >> "$GITHUB_OUTPUT"
           fi
+        id: check
+      - name: Cancel If Built
+        if: steps.check.outputs.cancel == 'exists'
+        uses: andymckay/cancel-action@435124153eb37d6a62a29d053a7e449652f89d51 # https://github.com/andymckay/cancel-action/commits/HEAD
+        # https://github.com/andymckay/cancel-action/issues/12
+      - name: Spin Wheels If Built (waiting for cancellation)
+        if: steps.check.outputs.cancel == 'exists'
+        run: |
+          while true; do
+            echo 'Waiting for build cancellation...'
+            sleep 30
+          done
+          exit 1
       - name: Pull
         run: |
           cd build
