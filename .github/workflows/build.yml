@@ -38,32 +38,14 @@ jobs:
     name: Build ${{ inputs.buildId }}
     runs-on: ${{ inputs.bashbrewArch == 'windows-amd64' && format('windows-{0}', inputs.windowsVersion) || 'ubuntu-latest' }}
     steps:
+
       - name: Checkout
         uses: actions/checkout@v3
         with:
           submodules: true
-      - name: JSON
-        run: |
-          json="$(
-            jq -L.scripts '
-              include "meta";
-              .[env.BUILD_ID]
-              | select(needs_build and .build.arch == env.BASHBREW_ARCH) # sanity check
-              | .commands = commands
-            ' builds.json
-          )"
-          [ -n "$json" ]
 
-          {
-            EOJSON="EOJSON-$RANDOM-$RANDOM-$RANDOM"
-            echo "json<<$EOJSON"
-            cat <<<"$json"
-            echo "$EOJSON"
-          } >> "$GITHUB_ENV"
-
-          mkdir build
       # TODO on Linux, install Tianon's Docker builds (switch off "ubuntu-latest" to pin to something closer to something we publish Debian builds for OR just run Docker-in-Docker and use GITHUB_ENV to set DOCKER_HOST to a suitable value)
-      # TODO on Windows, configure the daemon to push foreign layers too (although recent Windows layers are no longer foreign, so this actually probably does not matter)
+
       - uses: ./.doi/.github/workflows/.bashbrew
         with:
           # avoid building because we want to skip the build and download a release instead (which will be way faster)
@@ -101,6 +83,28 @@ jobs:
           # TODO checksum verification ("checksums.txt")
           chmod +x ".gha-bin/crane$ext"
           ".gha-bin/crane$ext" version
+
+      - name: JSON
+        run: |
+          json="$(
+            jq -L.scripts '
+              include "meta";
+              .[env.BUILD_ID]
+              | select(needs_build and .build.arch == env.BASHBREW_ARCH) # sanity check
+              | .commands = commands
+            ' builds.json
+          )"
+          [ -n "$json" ]
+
+          {
+            EOJSON="EOJSON-$RANDOM-$RANDOM-$RANDOM"
+            echo "json<<$EOJSON"
+            cat <<<"$json"
+            echo "$EOJSON"
+          } >> "$GITHUB_ENV"
+
+          mkdir build
+
       - name: Check
         run: |
           img="$(jq <<<"$json" -r '.build.img')"
@@ -123,11 +127,13 @@ jobs:
             sleep 30
           done
           exit 1
+
       - name: Pull
         run: |
           cd build
           shell="$(jq <<<"$json" -r '.commands.pull')"
           eval "$shell"
+
       - name: Build
         run: |
           cd build
@@ -138,6 +144,7 @@ jobs:
             eval "$bk"
           fi
           eval "$shell"
+
       - name: Push
         env:
           DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
@@ -145,7 +152,7 @@ jobs:
         run: |
           export DOCKER_CONFIG="$PWD/.docker"
           mkdir "$DOCKER_CONFIG"
-          trap 'rm -rf "$DOCKER_CONFIG"' EXIT
+          trap 'find "$DOCKER_CONFIG" -type f -exec shred -fuvz "{}" + || :; rm -rf "$DOCKER_CONFIG"' EXIT
           docker login --username "$DOCKER_HUB_USERNAME" --password-stdin <<<"$DOCKER_HUB_PASSWORD"
           unset DOCKER_HUB_USERNAME DOCKER_HUB_PASSWORD
 
