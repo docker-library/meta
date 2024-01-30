@@ -247,9 +247,12 @@ jobs:
             --mount "type=bind,src=$PWD/temp,dst=/doi-build/unsigned" # TODO this currently assumes normalized_builder == "buildkit" and !should_use_docker_buildx_driver -- we need to factor that in later (although this signs the attestations, not the image, so buildkit/buildx is the only builder whose output we *can* sign right now)
             --mount "type=bind,src=$PWD/signed,dst=/doi-build/signed"
 
-            docker/image-signer-verifier:0.3.2@sha256:7f5b2da65febf32d88ef6283b36c6af79e05df6e2bb7a7a930d6ea81f58b3757
+            # https://explore.ggcr.dev/?repo=docker/image-signer-verifier
+            docker/image-signer-verifier:0.3.3@sha256:a5351e6495596429bacea85fbf8f41a77ce7237c26c74fd7c3b94c3e6d409c82
 
             sign
+
+            --envelope-style oci-content-descriptor
 
             --aws_region "$AWS_KMS_REGION"
             --aws_arn "awskms:///$AWS_KMS_KEY_ARN"
