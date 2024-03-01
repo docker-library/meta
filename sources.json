@@ -40091,31 +40091,363 @@
       }
     }
   },
-  "4cacb79952f5e7b19fc937d5709543504cda7e4a35a672139ccd1cc3d10effcf": {
-    "sourceId": "4cacb79952f5e7b19fc937d5709543504cda7e4a35a672139ccd1cc3d10effcf",
-    "reproducibleGitChecksum": "1177a044fcb18e10ad3f2e3c02ba566234e928882a68d10d192f9c80044f8b80",
+  "74a76d20faab621745d993c8ca64e1f78174fba08dfda48b9b4d5364c8149548": {
+    "sourceId": "74a76d20faab621745d993c8ca64e1f78174fba08dfda48b9b4d5364c8149548",
+    "reproducibleGitChecksum": "7a58a47523ca62eb5b862b8459583c4bdf9a4bbcaa746d9778d7c2707d8d1e1f",
     "allTags": [
-      "mongo:7.0.5-jammy",
+      "mongo:7.0.7-rc0-jammy",
+      "mongo:7.0-rc-jammy",
+      "mongo:7.0.7-rc0",
+      "mongo:7.0-rc",
+      "amd64/mongo:7.0.7-rc0-jammy",
+      "amd64/mongo:7.0-rc-jammy",
+      "amd64/mongo:7.0.7-rc0",
+      "amd64/mongo:7.0-rc",
+      "arm64v8/mongo:7.0.7-rc0-jammy",
+      "arm64v8/mongo:7.0-rc-jammy",
+      "arm64v8/mongo:7.0.7-rc0",
+      "arm64v8/mongo:7.0-rc"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/mongo.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "e25e8bdea4abab40f597e71b029ab85191fa75fe",
+      "Directory": "7.0-rc",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1709249789
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "mongo:7.0.7-rc0-jammy",
+          "mongo:7.0-rc-jammy",
+          "mongo:7.0.7-rc0",
+          "mongo:7.0-rc"
+        ],
+        "archTags": [
+          "amd64/mongo:7.0.7-rc0-jammy",
+          "amd64/mongo:7.0-rc-jammy",
+          "amd64/mongo:7.0.7-rc0",
+          "amd64/mongo:7.0-rc"
+        ],
+        "froms": [
+          "ubuntu:jammy"
+        ],
+        "lastStageFrom": "ubuntu:jammy",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "ubuntu:jammy": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "mongo:7.0.7-rc0-jammy",
+          "mongo:7.0-rc-jammy",
+          "mongo:7.0.7-rc0",
+          "mongo:7.0-rc"
+        ],
+        "archTags": [
+          "arm64v8/mongo:7.0.7-rc0-jammy",
+          "arm64v8/mongo:7.0-rc-jammy",
+          "arm64v8/mongo:7.0.7-rc0",
+          "arm64v8/mongo:7.0-rc"
+        ],
+        "froms": [
+          "ubuntu:jammy"
+        ],
+        "lastStageFrom": "ubuntu:jammy",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "ubuntu:jammy": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "7bdb87b62a7de3b66d2aeb40906129d514d23b08200d862e3f0afabd448279d0": {
+    "sourceId": "7bdb87b62a7de3b66d2aeb40906129d514d23b08200d862e3f0afabd448279d0",
+    "reproducibleGitChecksum": "e44a683addc44a20478cbb3843db6502bd5ab33a70d3f68c0e61e8078e4a287d",
+    "allTags": [
+      "mongo:7.0.7-rc0-windowsservercore-ltsc2022",
+      "mongo:7.0-rc-windowsservercore-ltsc2022",
+      "mongo:7.0.7-rc0-windowsservercore",
+      "mongo:7.0-rc-windowsservercore",
+      "mongo:7.0.7-rc0",
+      "mongo:7.0-rc",
+      "winamd64/mongo:7.0.7-rc0-windowsservercore-ltsc2022",
+      "winamd64/mongo:7.0-rc-windowsservercore-ltsc2022",
+      "winamd64/mongo:7.0.7-rc0-windowsservercore",
+      "winamd64/mongo:7.0-rc-windowsservercore",
+      "winamd64/mongo:7.0.7-rc0",
+      "winamd64/mongo:7.0-rc"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/mongo.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "e25e8bdea4abab40f597e71b029ab85191fa75fe",
+      "Directory": "7.0-rc/windows/windowsservercore-ltsc2022",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1709249789
+    },
+    "arches": {
+      "windows-amd64": {
+        "tags": [
+          "mongo:7.0.7-rc0-windowsservercore-ltsc2022",
+          "mongo:7.0-rc-windowsservercore-ltsc2022",
+          "mongo:7.0.7-rc0-windowsservercore",
+          "mongo:7.0-rc-windowsservercore",
+          "mongo:7.0.7-rc0",
+          "mongo:7.0-rc"
+        ],
+        "archTags": [
+          "winamd64/mongo:7.0.7-rc0-windowsservercore-ltsc2022",
+          "winamd64/mongo:7.0-rc-windowsservercore-ltsc2022",
+          "winamd64/mongo:7.0.7-rc0-windowsservercore",
+          "winamd64/mongo:7.0-rc-windowsservercore",
+          "winamd64/mongo:7.0.7-rc0",
+          "winamd64/mongo:7.0-rc"
+        ],
+        "froms": [
+          "mcr.microsoft.com/windows/servercore:ltsc2022"
+        ],
+        "lastStageFrom": "mcr.microsoft.com/windows/servercore:ltsc2022",
+        "platformString": "windows/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "windows"
+        },
+        "parents": {
+          "mcr.microsoft.com/windows/servercore:ltsc2022": {
+            "sourceId": null,
+            "pin": "sha256:8a75266be74ad7a904470e18057f6fd62055cf7028172307fefc67aff37dfd10"
+          }
+        }
+      }
+    }
+  },
+  "e2369e7a6ffb5114c6d4324d4658ab4490ab1b94a7b1cb83a01294a0576b9391": {
+    "sourceId": "e2369e7a6ffb5114c6d4324d4658ab4490ab1b94a7b1cb83a01294a0576b9391",
+    "reproducibleGitChecksum": "0085e9a8f4daf86797fed3fdd99b748e21d968036ebeb52a27b349016c35a8f3",
+    "allTags": [
+      "mongo:7.0.7-rc0-windowsservercore-1809",
+      "mongo:7.0-rc-windowsservercore-1809",
+      "mongo:7.0.7-rc0-windowsservercore",
+      "mongo:7.0-rc-windowsservercore",
+      "mongo:7.0.7-rc0",
+      "mongo:7.0-rc",
+      "winamd64/mongo:7.0.7-rc0-windowsservercore-1809",
+      "winamd64/mongo:7.0-rc-windowsservercore-1809",
+      "winamd64/mongo:7.0.7-rc0-windowsservercore",
+      "winamd64/mongo:7.0-rc-windowsservercore",
+      "winamd64/mongo:7.0.7-rc0",
+      "winamd64/mongo:7.0-rc"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/mongo.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "e25e8bdea4abab40f597e71b029ab85191fa75fe",
+      "Directory": "7.0-rc/windows/windowsservercore-1809",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1709249789
+    },
+    "arches": {
+      "windows-amd64": {
+        "tags": [
+          "mongo:7.0.7-rc0-windowsservercore-1809",
+          "mongo:7.0-rc-windowsservercore-1809",
+          "mongo:7.0.7-rc0-windowsservercore",
+          "mongo:7.0-rc-windowsservercore",
+          "mongo:7.0.7-rc0",
+          "mongo:7.0-rc"
+        ],
+        "archTags": [
+          "winamd64/mongo:7.0.7-rc0-windowsservercore-1809",
+          "winamd64/mongo:7.0-rc-windowsservercore-1809",
+          "winamd64/mongo:7.0.7-rc0-windowsservercore",
+          "winamd64/mongo:7.0-rc-windowsservercore",
+          "winamd64/mongo:7.0.7-rc0",
+          "winamd64/mongo:7.0-rc"
+        ],
+        "froms": [
+          "mcr.microsoft.com/windows/servercore:1809"
+        ],
+        "lastStageFrom": "mcr.microsoft.com/windows/servercore:1809",
+        "platformString": "windows/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "windows"
+        },
+        "parents": {
+          "mcr.microsoft.com/windows/servercore:1809": {
+            "sourceId": null,
+            "pin": "sha256:035894dc32a667c5f6f40054a4e92e208a60691438958c68696084fcce709ed5"
+          }
+        }
+      }
+    }
+  },
+  "070546ad33b576a409c054fe07f53d1c677728bca48133a00c84a269b2e1f867": {
+    "sourceId": "070546ad33b576a409c054fe07f53d1c677728bca48133a00c84a269b2e1f867",
+    "reproducibleGitChecksum": "ff454eb778dd5b4cce8da1266699679fb39cf00cadae2c3907b6968bd0115f12",
+    "allTags": [
+      "mongo:7.0.7-rc0-nanoserver-ltsc2022",
+      "mongo:7.0-rc-nanoserver-ltsc2022",
+      "mongo:7.0.7-rc0-nanoserver",
+      "mongo:7.0-rc-nanoserver",
+      "winamd64/mongo:7.0.7-rc0-nanoserver-ltsc2022",
+      "winamd64/mongo:7.0-rc-nanoserver-ltsc2022",
+      "winamd64/mongo:7.0.7-rc0-nanoserver",
+      "winamd64/mongo:7.0-rc-nanoserver"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/mongo.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "e25e8bdea4abab40f597e71b029ab85191fa75fe",
+      "Directory": "7.0-rc/windows/nanoserver-ltsc2022",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1709249789
+    },
+    "arches": {
+      "windows-amd64": {
+        "tags": [
+          "mongo:7.0.7-rc0-nanoserver-ltsc2022",
+          "mongo:7.0-rc-nanoserver-ltsc2022",
+          "mongo:7.0.7-rc0-nanoserver",
+          "mongo:7.0-rc-nanoserver"
+        ],
+        "archTags": [
+          "winamd64/mongo:7.0.7-rc0-nanoserver-ltsc2022",
+          "winamd64/mongo:7.0-rc-nanoserver-ltsc2022",
+          "winamd64/mongo:7.0.7-rc0-nanoserver",
+          "winamd64/mongo:7.0-rc-nanoserver"
+        ],
+        "froms": [
+          "mcr.microsoft.com/windows/nanoserver:ltsc2022",
+          "mongo:7.0.7-rc0-windowsservercore-ltsc2022",
+          "mongo:7.0.7-rc0-windowsservercore-ltsc2022"
+        ],
+        "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2022",
+        "platformString": "windows/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "windows"
+        },
+        "parents": {
+          "mcr.microsoft.com/windows/nanoserver:ltsc2022": {
+            "sourceId": null,
+            "pin": "sha256:64b22e42a69ebcdb86e49bf50780b64156431a508f7f06ac3050c71920fe57b7"
+          },
+          "mongo:7.0.7-rc0-windowsservercore-ltsc2022": {
+            "sourceId": "7bdb87b62a7de3b66d2aeb40906129d514d23b08200d862e3f0afabd448279d0",
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "deb4de5acd4fce480241d844e709ed35504ac9db79e030957dd6102b2d5e76be": {
+    "sourceId": "deb4de5acd4fce480241d844e709ed35504ac9db79e030957dd6102b2d5e76be",
+    "reproducibleGitChecksum": "0dff8770e0ba5e262d51a9953d19c82a3b79652a6d0799347a4581f13f8b6d45",
+    "allTags": [
+      "mongo:7.0.7-rc0-nanoserver-1809",
+      "mongo:7.0-rc-nanoserver-1809",
+      "mongo:7.0.7-rc0-nanoserver",
+      "mongo:7.0-rc-nanoserver",
+      "winamd64/mongo:7.0.7-rc0-nanoserver-1809",
+      "winamd64/mongo:7.0-rc-nanoserver-1809",
+      "winamd64/mongo:7.0.7-rc0-nanoserver",
+      "winamd64/mongo:7.0-rc-nanoserver"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/mongo.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "e25e8bdea4abab40f597e71b029ab85191fa75fe",
+      "Directory": "7.0-rc/windows/nanoserver-1809",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1709249789
+    },
+    "arches": {
+      "windows-amd64": {
+        "tags": [
+          "mongo:7.0.7-rc0-nanoserver-1809",
+          "mongo:7.0-rc-nanoserver-1809",
+          "mongo:7.0.7-rc0-nanoserver",
+          "mongo:7.0-rc-nanoserver"
+        ],
+        "archTags": [
+          "winamd64/mongo:7.0.7-rc0-nanoserver-1809",
+          "winamd64/mongo:7.0-rc-nanoserver-1809",
+          "winamd64/mongo:7.0.7-rc0-nanoserver",
+          "winamd64/mongo:7.0-rc-nanoserver"
+        ],
+        "froms": [
+          "mcr.microsoft.com/windows/nanoserver:1809",
+          "mongo:7.0.7-rc0-windowsservercore-1809",
+          "mongo:7.0.7-rc0-windowsservercore-1809"
+        ],
+        "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:1809",
+        "platformString": "windows/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "windows"
+        },
+        "parents": {
+          "mcr.microsoft.com/windows/nanoserver:1809": {
+            "sourceId": null,
+            "pin": "sha256:0bd2e8d6d5cdb26eac9ebb0ef939a3b6362af71f3c1ac257fd5f0c53d1fc1388"
+          },
+          "mongo:7.0.7-rc0-windowsservercore-1809": {
+            "sourceId": "e2369e7a6ffb5114c6d4324d4658ab4490ab1b94a7b1cb83a01294a0576b9391",
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "d9843b378673b382c94fb4904493c72535eb5b086dcb6762278a658facc1657c": {
+    "sourceId": "d9843b378673b382c94fb4904493c72535eb5b086dcb6762278a658facc1657c",
+    "reproducibleGitChecksum": "379499504adf7feeabff3e8d88047561e00bffebb4fae8389092f10e87bf4dca",
+    "allTags": [
+      "mongo:7.0.6-jammy",
       "mongo:7.0-jammy",
       "mongo:7-jammy",
       "mongo:jammy",
-      "mongo:7.0.5",
+      "mongo:7.0.6",
       "mongo:7.0",
       "mongo:7",
       "mongo:latest",
-      "amd64/mongo:7.0.5-jammy",
+      "amd64/mongo:7.0.6-jammy",
       "amd64/mongo:7.0-jammy",
       "amd64/mongo:7-jammy",
       "amd64/mongo:jammy",
-      "amd64/mongo:7.0.5",
+      "amd64/mongo:7.0.6",
       "amd64/mongo:7.0",
       "amd64/mongo:7",
       "amd64/mongo:latest",
-      "arm64v8/mongo:7.0.5-jammy",
+      "arm64v8/mongo:7.0.6-jammy",
       "arm64v8/mongo:7.0-jammy",
       "arm64v8/mongo:7-jammy",
       "arm64v8/mongo:jammy",
-      "arm64v8/mongo:7.0.5",
+      "arm64v8/mongo:7.0.6",
       "arm64v8/mongo:7.0",
       "arm64v8/mongo:7",
       "arm64v8/mongo:latest"
@@ -40123,30 +40455,30 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "12fc21f8786d0ec14c01ce40a1487d893ef512b9",
+      "GitCommit": "cd60b60bd5145aaa295326e14d30f03829618803",
       "Directory": "7.0",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1707267543
+      "SOURCE_DATE_EPOCH": 1709249596
     },
     "arches": {
       "amd64": {
         "tags": [
-          "mongo:7.0.5-jammy",
+          "mongo:7.0.6-jammy",
           "mongo:7.0-jammy",
           "mongo:7-jammy",
           "mongo:jammy",
-          "mongo:7.0.5",
+          "mongo:7.0.6",
           "mongo:7.0",
           "mongo:7",
           "mongo:latest"
         ],
         "archTags": [
-          "amd64/mongo:7.0.5-jammy",
+          "amd64/mongo:7.0.6-jammy",
           "amd64/mongo:7.0-jammy",
           "amd64/mongo:7-jammy",
           "amd64/mongo:jammy",
-          "amd64/mongo:7.0.5",
+          "amd64/mongo:7.0.6",
           "amd64/mongo:7.0",
           "amd64/mongo:7",
           "amd64/mongo:latest"
@@ -40169,21 +40501,21 @@
       },
       "arm64v8": {
         "tags": [
-          "mongo:7.0.5-jammy",
+          "mongo:7.0.6-jammy",
           "mongo:7.0-jammy",
           "mongo:7-jammy",
           "mongo:jammy",
-          "mongo:7.0.5",
+          "mongo:7.0.6",
           "mongo:7.0",
           "mongo:7",
           "mongo:latest"
         ],
         "archTags": [
-          "arm64v8/mongo:7.0.5-jammy",
+          "arm64v8/mongo:7.0.6-jammy",
           "arm64v8/mongo:7.0-jammy",
           "arm64v8/mongo:7-jammy",
           "arm64v8/mongo:jammy",
-          "arm64v8/mongo:7.0.5",
+          "arm64v8/mongo:7.0.6",
           "arm64v8/mongo:7.0",
           "arm64v8/mongo:7",
           "arm64v8/mongo:latest"
@@ -40207,31 +40539,31 @@
       }
     }
   },
-  "31c2f992b7c7d6b89eaacfbf67694c4a079ab04d1e4b142fb1572e49b23cd902": {
-    "sourceId": "31c2f992b7c7d6b89eaacfbf67694c4a079ab04d1e4b142fb1572e49b23cd902",
-    "reproducibleGitChecksum": "452d9dd5e599be8c7bec12a8b7809e0c46ac8991e85b6bfd8e2e31653a8c47fd",
+  "6f036092602c3ac4a4d2f63078a6514f9362e01785444e79edcdb00ae80787c8": {
+    "sourceId": "6f036092602c3ac4a4d2f63078a6514f9362e01785444e79edcdb00ae80787c8",
+    "reproducibleGitChecksum": "53adb4fe0d01e0a284e739ec256b3beb9bee15e14e4ca13d1ff066977ad8e4b3",
     "allTags": [
-      "mongo:7.0.5-windowsservercore-ltsc2022",
+      "mongo:7.0.6-windowsservercore-ltsc2022",
       "mongo:7.0-windowsservercore-ltsc2022",
       "mongo:7-windowsservercore-ltsc2022",
       "mongo:windowsservercore-ltsc2022",
-      "mongo:7.0.5-windowsservercore",
+      "mongo:7.0.6-windowsservercore",
       "mongo:7.0-windowsservercore",
       "mongo:7-windowsservercore",
       "mongo:windowsservercore",
-      "mongo:7.0.5",
+      "mongo:7.0.6",
       "mongo:7.0",
       "mongo:7",
       "mongo:latest",
-      "winamd64/mongo:7.0.5-windowsservercore-ltsc2022",
+      "winamd64/mongo:7.0.6-windowsservercore-ltsc2022",
       "winamd64/mongo:7.0-windowsservercore-ltsc2022",
       "winamd64/mongo:7-windowsservercore-ltsc2022",
       "winamd64/mongo:windowsservercore-ltsc2022",
-      "winamd64/mongo:7.0.5-windowsservercore",
+      "winamd64/mongo:7.0.6-windowsservercore",
       "winamd64/mongo:7.0-windowsservercore",
       "winamd64/mongo:7-windowsservercore",
       "winamd64/mongo:windowsservercore",
-      "winamd64/mongo:7.0.5",
+      "winamd64/mongo:7.0.6",
       "winamd64/mongo:7.0",
       "winamd64/mongo:7",
       "winamd64/mongo:latest"
@@ -40239,38 +40571,38 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "584303f66286a7dc46ccc0c9157db10c9971a85f",
+      "GitCommit": "cd60b60bd5145aaa295326e14d30f03829618803",
       "Directory": "7.0/windows/windowsservercore-ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1704517643
+      "SOURCE_DATE_EPOCH": 1709249596
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:7.0.5-windowsservercore-ltsc2022",
+          "mongo:7.0.6-windowsservercore-ltsc2022",
           "mongo:7.0-windowsservercore-ltsc2022",
           "mongo:7-windowsservercore-ltsc2022",
           "mongo:windowsservercore-ltsc2022",
-          "mongo:7.0.5-windowsservercore",
+          "mongo:7.0.6-windowsservercore",
           "mongo:7.0-windowsservercore",
           "mongo:7-windowsservercore",
           "mongo:windowsservercore",
-          "mongo:7.0.5",
+          "mongo:7.0.6",
           "mongo:7.0",
           "mongo:7",
           "mongo:latest"
         ],
         "archTags": [
-          "winamd64/mongo:7.0.5-windowsservercore-ltsc2022",
+          "winamd64/mongo:7.0.6-windowsservercore-ltsc2022",
           "winamd64/mongo:7.0-windowsservercore-ltsc2022",
           "winamd64/mongo:7-windowsservercore-ltsc2022",
           "winamd64/mongo:windowsservercore-ltsc2022",
-          "winamd64/mongo:7.0.5-windowsservercore",
+          "winamd64/mongo:7.0.6-windowsservercore",
           "winamd64/mongo:7.0-windowsservercore",
           "winamd64/mongo:7-windowsservercore",
           "winamd64/mongo:windowsservercore",
-          "winamd64/mongo:7.0.5",
+          "winamd64/mongo:7.0.6",
           "winamd64/mongo:7.0",
           "winamd64/mongo:7",
           "winamd64/mongo:latest"
@@ -40293,31 +40625,31 @@
       }
     }
   },
-  "2b6a9174c0a63019e2895139cdae76a61837d5d9a9dfc9936039881e23ac5962": {
-    "sourceId": "2b6a9174c0a63019e2895139cdae76a61837d5d9a9dfc9936039881e23ac5962",
-    "reproducibleGitChecksum": "26f0e0e4de3982dbf7208bb61d7f4c665e73e093b8d29ef5509cdb770eda6212",
+  "99d553c2c12882a9ba439cb5b0f10905697ed83f34342fd69e56b95b4b971f6e": {
+    "sourceId": "99d553c2c12882a9ba439cb5b0f10905697ed83f34342fd69e56b95b4b971f6e",
+    "reproducibleGitChecksum": "db329f2f6fc3fcc45d83f058217430022630ad394b0860a7e710437668d787e8",
     "allTags": [
-      "mongo:7.0.5-windowsservercore-1809",
+      "mongo:7.0.6-windowsservercore-1809",
       "mongo:7.0-windowsservercore-1809",
       "mongo:7-windowsservercore-1809",
       "mongo:windowsservercore-1809",
-      "mongo:7.0.5-windowsservercore",
+      "mongo:7.0.6-windowsservercore",
       "mongo:7.0-windowsservercore",
       "mongo:7-windowsservercore",
       "mongo:windowsservercore",
-      "mongo:7.0.5",
+      "mongo:7.0.6",
       "mongo:7.0",
       "mongo:7",
       "mongo:latest",
-      "winamd64/mongo:7.0.5-windowsservercore-1809",
+      "winamd64/mongo:7.0.6-windowsservercore-1809",
       "winamd64/mongo:7.0-windowsservercore-1809",
       "winamd64/mongo:7-windowsservercore-1809",
       "winamd64/mongo:windowsservercore-1809",
-      "winamd64/mongo:7.0.5-windowsservercore",
+      "winamd64/mongo:7.0.6-windowsservercore",
       "winamd64/mongo:7.0-windowsservercore",
       "winamd64/mongo:7-windowsservercore",
       "winamd64/mongo:windowsservercore",
-      "winamd64/mongo:7.0.5",
+      "winamd64/mongo:7.0.6",
       "winamd64/mongo:7.0",
       "winamd64/mongo:7",
       "winamd64/mongo:latest"
@@ -40325,38 +40657,38 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "584303f66286a7dc46ccc0c9157db10c9971a85f",
+      "GitCommit": "cd60b60bd5145aaa295326e14d30f03829618803",
       "Directory": "7.0/windows/windowsservercore-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1704517643
+      "SOURCE_DATE_EPOCH": 1709249596
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:7.0.5-windowsservercore-1809",
+          "mongo:7.0.6-windowsservercore-1809",
           "mongo:7.0-windowsservercore-1809",
           "mongo:7-windowsservercore-1809",
           "mongo:windowsservercore-1809",
-          "mongo:7.0.5-windowsservercore",
+          "mongo:7.0.6-windowsservercore",
           "mongo:7.0-windowsservercore",
           "mongo:7-windowsservercore",
           "mongo:windowsservercore",
-          "mongo:7.0.5",
+          "mongo:7.0.6",
           "mongo:7.0",
           "mongo:7",
           "mongo:latest"
         ],
         "archTags": [
-          "winamd64/mongo:7.0.5-windowsservercore-1809",
+          "winamd64/mongo:7.0.6-windowsservercore-1809",
           "winamd64/mongo:7.0-windowsservercore-1809",
           "winamd64/mongo:7-windowsservercore-1809",
           "winamd64/mongo:windowsservercore-1809",
-          "winamd64/mongo:7.0.5-windowsservercore",
+          "winamd64/mongo:7.0.6-windowsservercore",
           "winamd64/mongo:7.0-windowsservercore",
           "winamd64/mongo:7-windowsservercore",
           "winamd64/mongo:windowsservercore",
-          "winamd64/mongo:7.0.5",
+          "winamd64/mongo:7.0.6",
           "winamd64/mongo:7.0",
           "winamd64/mongo:7",
           "winamd64/mongo:latest"
@@ -40379,23 +40711,23 @@
       }
     }
   },
-  "edf09cbe9216236eeecf77ad350ff807e8d2673c14d230c7b0adbaffa8661e20": {
-    "sourceId": "edf09cbe9216236eeecf77ad350ff807e8d2673c14d230c7b0adbaffa8661e20",
-    "reproducibleGitChecksum": "d665adb8e1d46616469a2c4332f108c49b0ed2b7808ef9542d4016011ae4fc78",
+  "aa15ec7178e7d85e2f1d32500c4c799b0a21877283e5fcbcdf3d870b3e1ede94": {
+    "sourceId": "aa15ec7178e7d85e2f1d32500c4c799b0a21877283e5fcbcdf3d870b3e1ede94",
+    "reproducibleGitChecksum": "e8d9ec3441a4b36e2ece7843a2ae46f212ba0337305f8b4bdc222c9166bede00",
     "allTags": [
-      "mongo:7.0.5-nanoserver-ltsc2022",
+      "mongo:7.0.6-nanoserver-ltsc2022",
       "mongo:7.0-nanoserver-ltsc2022",
       "mongo:7-nanoserver-ltsc2022",
       "mongo:nanoserver-ltsc2022",
-      "mongo:7.0.5-nanoserver",
+      "mongo:7.0.6-nanoserver",
       "mongo:7.0-nanoserver",
       "mongo:7-nanoserver",
       "mongo:nanoserver",
-      "winamd64/mongo:7.0.5-nanoserver-ltsc2022",
+      "winamd64/mongo:7.0.6-nanoserver-ltsc2022",
       "winamd64/mongo:7.0-nanoserver-ltsc2022",
       "winamd64/mongo:7-nanoserver-ltsc2022",
       "winamd64/mongo:nanoserver-ltsc2022",
-      "winamd64/mongo:7.0.5-nanoserver",
+      "winamd64/mongo:7.0.6-nanoserver",
       "winamd64/mongo:7.0-nanoserver",
       "winamd64/mongo:7-nanoserver",
       "winamd64/mongo:nanoserver"
@@ -40403,38 +40735,38 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "584303f66286a7dc46ccc0c9157db10c9971a85f",
+      "GitCommit": "cd60b60bd5145aaa295326e14d30f03829618803",
       "Directory": "7.0/windows/nanoserver-ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1704517643
+      "SOURCE_DATE_EPOCH": 1709249596
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:7.0.5-nanoserver-ltsc2022",
+          "mongo:7.0.6-nanoserver-ltsc2022",
           "mongo:7.0-nanoserver-ltsc2022",
           "mongo:7-nanoserver-ltsc2022",
           "mongo:nanoserver-ltsc2022",
-          "mongo:7.0.5-nanoserver",
+          "mongo:7.0.6-nanoserver",
           "mongo:7.0-nanoserver",
           "mongo:7-nanoserver",
           "mongo:nanoserver"
         ],
         "archTags": [
-          "winamd64/mongo:7.0.5-nanoserver-ltsc2022",
+          "winamd64/mongo:7.0.6-nanoserver-ltsc2022",
           "winamd64/mongo:7.0-nanoserver-ltsc2022",
           "winamd64/mongo:7-nanoserver-ltsc2022",
           "winamd64/mongo:nanoserver-ltsc2022",
-          "winamd64/mongo:7.0.5-nanoserver",
+          "winamd64/mongo:7.0.6-nanoserver",
           "winamd64/mongo:7.0-nanoserver",
           "winamd64/mongo:7-nanoserver",
           "winamd64/mongo:nanoserver"
         ],
         "froms": [
           "mcr.microsoft.com/windows/nanoserver:ltsc2022",
-          "mongo:7.0.5-windowsservercore-ltsc2022",
-          "mongo:7.0.5-windowsservercore-ltsc2022"
+          "mongo:7.0.6-windowsservercore-ltsc2022",
+          "mongo:7.0.6-windowsservercore-ltsc2022"
         ],
         "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2022",
         "platformString": "windows/amd64",
@@ -40447,31 +40779,31 @@
             "sourceId": null,
             "pin": "sha256:64b22e42a69ebcdb86e49bf50780b64156431a508f7f06ac3050c71920fe57b7"
           },
-          "mongo:7.0.5-windowsservercore-ltsc2022": {
-            "sourceId": "31c2f992b7c7d6b89eaacfbf67694c4a079ab04d1e4b142fb1572e49b23cd902",
+          "mongo:7.0.6-windowsservercore-ltsc2022": {
+            "sourceId": "6f036092602c3ac4a4d2f63078a6514f9362e01785444e79edcdb00ae80787c8",
             "pin": null
           }
         }
       }
     }
   },
-  "365f688879f4a663a842b8e4c82b7b3c6e9f75bd61b1d5bbfe6beed446b3514f": {
-    "sourceId": "365f688879f4a663a842b8e4c82b7b3c6e9f75bd61b1d5bbfe6beed446b3514f",
-    "reproducibleGitChecksum": "606d902913b60309f08ebbbb332f985bf195e0bdcf38ab54d41bb15ef6f0cfb4",
+  "4dbd68020b6439011e3df50b522d6b53226d70b31796fa80bff6360549fa4954": {
+    "sourceId": "4dbd68020b6439011e3df50b522d6b53226d70b31796fa80bff6360549fa4954",
+    "reproducibleGitChecksum": "bcd2562c480cc2835f55be038cded167588ef27026f15e644f1ea4f52a5a35eb",
     "allTags": [
-      "mongo:7.0.5-nanoserver-1809",
+      "mongo:7.0.6-nanoserver-1809",
       "mongo:7.0-nanoserver-1809",
       "mongo:7-nanoserver-1809",
       "mongo:nanoserver-1809",
-      "mongo:7.0.5-nanoserver",
+      "mongo:7.0.6-nanoserver",
       "mongo:7.0-nanoserver",
       "mongo:7-nanoserver",
       "mongo:nanoserver",
-      "winamd64/mongo:7.0.5-nanoserver-1809",
+      "winamd64/mongo:7.0.6-nanoserver-1809",
       "winamd64/mongo:7.0-nanoserver-1809",
       "winamd64/mongo:7-nanoserver-1809",
       "winamd64/mongo:nanoserver-1809",
-      "winamd64/mongo:7.0.5-nanoserver",
+      "winamd64/mongo:7.0.6-nanoserver",
       "winamd64/mongo:7.0-nanoserver",
       "winamd64/mongo:7-nanoserver",
       "winamd64/mongo:nanoserver"
@@ -40479,38 +40811,38 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "584303f66286a7dc46ccc0c9157db10c9971a85f",
+      "GitCommit": "cd60b60bd5145aaa295326e14d30f03829618803",
       "Directory": "7.0/windows/nanoserver-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1704517643
+      "SOURCE_DATE_EPOCH": 1709249596
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:7.0.5-nanoserver-1809",
+          "mongo:7.0.6-nanoserver-1809",
           "mongo:7.0-nanoserver-1809",
           "mongo:7-nanoserver-1809",
           "mongo:nanoserver-1809",
-          "mongo:7.0.5-nanoserver",
+          "mongo:7.0.6-nanoserver",
           "mongo:7.0-nanoserver",
           "mongo:7-nanoserver",
           "mongo:nanoserver"
         ],
         "archTags": [
-          "winamd64/mongo:7.0.5-nanoserver-1809",
+          "winamd64/mongo:7.0.6-nanoserver-1809",
           "winamd64/mongo:7.0-nanoserver-1809",
           "winamd64/mongo:7-nanoserver-1809",
           "winamd64/mongo:nanoserver-1809",
-          "winamd64/mongo:7.0.5-nanoserver",
+          "winamd64/mongo:7.0.6-nanoserver",
           "winamd64/mongo:7.0-nanoserver",
           "winamd64/mongo:7-nanoserver",
           "winamd64/mongo:nanoserver"
         ],
         "froms": [
           "mcr.microsoft.com/windows/nanoserver:1809",
-          "mongo:7.0.5-windowsservercore-1809",
-          "mongo:7.0.5-windowsservercore-1809"
+          "mongo:7.0.6-windowsservercore-1809",
+          "mongo:7.0.6-windowsservercore-1809"
         ],
         "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:1809",
         "platformString": "windows/amd64",
@@ -40523,61 +40855,61 @@
             "sourceId": null,
             "pin": "sha256:0bd2e8d6d5cdb26eac9ebb0ef939a3b6362af71f3c1ac257fd5f0c53d1fc1388"
           },
-          "mongo:7.0.5-windowsservercore-1809": {
-            "sourceId": "2b6a9174c0a63019e2895139cdae76a61837d5d9a9dfc9936039881e23ac5962",
+          "mongo:7.0.6-windowsservercore-1809": {
+            "sourceId": "99d553c2c12882a9ba439cb5b0f10905697ed83f34342fd69e56b95b4b971f6e",
             "pin": null
           }
         }
       }
     }
   },
-  "3c11b59a1990155d207e0fc11971ae2912eaa260a6acc4795107c255ad7f36a7": {
-    "sourceId": "3c11b59a1990155d207e0fc11971ae2912eaa260a6acc4795107c255ad7f36a7",
-    "reproducibleGitChecksum": "20148f44a9f0750262392a98805de5d3046e67af0bc94af1ae1b30005f477fbc",
+  "a1aa829655fbef523304a0b45d648ac30651df44982a5720690e5067b9482358": {
+    "sourceId": "a1aa829655fbef523304a0b45d648ac30651df44982a5720690e5067b9482358",
+    "reproducibleGitChecksum": "7c6230d68edd76fe720aecc04f9ea8e8ffff3d21b488fc17312ad2726cdb5172",
     "allTags": [
-      "mongo:6.0.13-jammy",
+      "mongo:6.0.14-jammy",
       "mongo:6.0-jammy",
       "mongo:6-jammy",
-      "mongo:6.0.13",
+      "mongo:6.0.14",
       "mongo:6.0",
       "mongo:6",
-      "amd64/mongo:6.0.13-jammy",
+      "amd64/mongo:6.0.14-jammy",
       "amd64/mongo:6.0-jammy",
       "amd64/mongo:6-jammy",
-      "amd64/mongo:6.0.13",
+      "amd64/mongo:6.0.14",
       "amd64/mongo:6.0",
       "amd64/mongo:6",
-      "arm64v8/mongo:6.0.13-jammy",
+      "arm64v8/mongo:6.0.14-jammy",
       "arm64v8/mongo:6.0-jammy",
       "arm64v8/mongo:6-jammy",
-      "arm64v8/mongo:6.0.13",
+      "arm64v8/mongo:6.0.14",
       "arm64v8/mongo:6.0",
       "arm64v8/mongo:6"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "12fc21f8786d0ec14c01ce40a1487d893ef512b9",
+      "GitCommit": "39c6083702fb2ff810e7a6a916b1eadf54825acd",
       "Directory": "6.0",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1707267543
+      "SOURCE_DATE_EPOCH": 1709249403
     },
     "arches": {
       "amd64": {
         "tags": [
-          "mongo:6.0.13-jammy",
+          "mongo:6.0.14-jammy",
           "mongo:6.0-jammy",
           "mongo:6-jammy",
-          "mongo:6.0.13",
+          "mongo:6.0.14",
           "mongo:6.0",
           "mongo:6"
         ],
         "archTags": [
-          "amd64/mongo:6.0.13-jammy",
+          "amd64/mongo:6.0.14-jammy",
           "amd64/mongo:6.0-jammy",
           "amd64/mongo:6-jammy",
-          "amd64/mongo:6.0.13",
+          "amd64/mongo:6.0.14",
           "amd64/mongo:6.0",
           "amd64/mongo:6"
         ],
@@ -40599,18 +40931,18 @@
       },
       "arm64v8": {
         "tags": [
-          "mongo:6.0.13-jammy",
+          "mongo:6.0.14-jammy",
           "mongo:6.0-jammy",
           "mongo:6-jammy",
-          "mongo:6.0.13",
+          "mongo:6.0.14",
           "mongo:6.0",
           "mongo:6"
         ],
         "archTags": [
-          "arm64v8/mongo:6.0.13-jammy",
+          "arm64v8/mongo:6.0.14-jammy",
           "arm64v8/mongo:6.0-jammy",
           "arm64v8/mongo:6-jammy",
-          "arm64v8/mongo:6.0.13",
+          "arm64v8/mongo:6.0.14",
           "arm64v8/mongo:6.0",
           "arm64v8/mongo:6"
         ],
@@ -40633,59 +40965,59 @@
       }
     }
   },
-  "8a0fbdc9cde8041cc7797e02ab1e00b8183a5b9223aaa19e4e0d5c18680bd49d": {
-    "sourceId": "8a0fbdc9cde8041cc7797e02ab1e00b8183a5b9223aaa19e4e0d5c18680bd49d",
-    "reproducibleGitChecksum": "39d09076eac6e4a34bcc68590f672a0ba24edc2ab92e4d46c069c950e6ccabc9",
+  "f5482b3965752042c33c0710ac2979b1266751f24d5bd85be8eddc2aac9717f2": {
+    "sourceId": "f5482b3965752042c33c0710ac2979b1266751f24d5bd85be8eddc2aac9717f2",
+    "reproducibleGitChecksum": "f33e308b516fb8ba27571cb95b76fe3a0b18cbd91cc4f83185dc10ba0ce9476f",
     "allTags": [
-      "mongo:6.0.13-windowsservercore-ltsc2022",
+      "mongo:6.0.14-windowsservercore-ltsc2022",
       "mongo:6.0-windowsservercore-ltsc2022",
       "mongo:6-windowsservercore-ltsc2022",
-      "mongo:6.0.13-windowsservercore",
+      "mongo:6.0.14-windowsservercore",
       "mongo:6.0-windowsservercore",
       "mongo:6-windowsservercore",
-      "mongo:6.0.13",
+      "mongo:6.0.14",
       "mongo:6.0",
       "mongo:6",
-      "winamd64/mongo:6.0.13-windowsservercore-ltsc2022",
+      "winamd64/mongo:6.0.14-windowsservercore-ltsc2022",
       "winamd64/mongo:6.0-windowsservercore-ltsc2022",
       "winamd64/mongo:6-windowsservercore-ltsc2022",
-      "winamd64/mongo:6.0.13-windowsservercore",
+      "winamd64/mongo:6.0.14-windowsservercore",
       "winamd64/mongo:6.0-windowsservercore",
       "winamd64/mongo:6-windowsservercore",
-      "winamd64/mongo:6.0.13",
+      "winamd64/mongo:6.0.14",
       "winamd64/mongo:6.0",
       "winamd64/mongo:6"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "9a25071bffcf8d859d24826b5067a414961e3599",
+      "GitCommit": "39c6083702fb2ff810e7a6a916b1eadf54825acd",
       "Directory": "6.0/windows/windowsservercore-ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597737
+      "SOURCE_DATE_EPOCH": 1709249403
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:6.0.13-windowsservercore-ltsc2022",
+          "mongo:6.0.14-windowsservercore-ltsc2022",
           "mongo:6.0-windowsservercore-ltsc2022",
           "mongo:6-windowsservercore-ltsc2022",
-          "mongo:6.0.13-windowsservercore",
+          "mongo:6.0.14-windowsservercore",
           "mongo:6.0-windowsservercore",
           "mongo:6-windowsservercore",
-          "mongo:6.0.13",
+          "mongo:6.0.14",
           "mongo:6.0",
           "mongo:6"
         ],
         "archTags": [
-          "winamd64/mongo:6.0.13-windowsservercore-ltsc2022",
+          "winamd64/mongo:6.0.14-windowsservercore-ltsc2022",
           "winamd64/mongo:6.0-windowsservercore-ltsc2022",
           "winamd64/mongo:6-windowsservercore-ltsc2022",
-          "winamd64/mongo:6.0.13-windowsservercore",
+          "winamd64/mongo:6.0.14-windowsservercore",
           "winamd64/mongo:6.0-windowsservercore",
           "winamd64/mongo:6-windowsservercore",
-          "winamd64/mongo:6.0.13",
+          "winamd64/mongo:6.0.14",
           "winamd64/mongo:6.0",
           "winamd64/mongo:6"
         ],
@@ -40707,59 +41039,59 @@
       }
     }
   },
-  "10982f1ca131bd9766f55db568e9a09e0c6132efd85458f800fc6998e9043743": {
-    "sourceId": "10982f1ca131bd9766f55db568e9a09e0c6132efd85458f800fc6998e9043743",
-    "reproducibleGitChecksum": "38e29fba5d1044039834fcfaa0f35e764ad216b818def1f443c2a562147ccb7b",
+  "2fa087cae31eefa6c8fc555c34976a074eaa05e1d0c74e4b007f4756337d562b": {
+    "sourceId": "2fa087cae31eefa6c8fc555c34976a074eaa05e1d0c74e4b007f4756337d562b",
+    "reproducibleGitChecksum": "17c5855542034d6419e58aab8c85d9e96c32c5383b9a9e42c85e57ca78aad6a0",
     "allTags": [
-      "mongo:6.0.13-windowsservercore-1809",
+      "mongo:6.0.14-windowsservercore-1809",
       "mongo:6.0-windowsservercore-1809",
       "mongo:6-windowsservercore-1809",
-      "mongo:6.0.13-windowsservercore",
+      "mongo:6.0.14-windowsservercore",
       "mongo:6.0-windowsservercore",
       "mongo:6-windowsservercore",
-      "mongo:6.0.13",
+      "mongo:6.0.14",
       "mongo:6.0",
       "mongo:6",
-      "winamd64/mongo:6.0.13-windowsservercore-1809",
+      "winamd64/mongo:6.0.14-windowsservercore-1809",
       "winamd64/mongo:6.0-windowsservercore-1809",
       "winamd64/mongo:6-windowsservercore-1809",
-      "winamd64/mongo:6.0.13-windowsservercore",
+      "winamd64/mongo:6.0.14-windowsservercore",
       "winamd64/mongo:6.0-windowsservercore",
       "winamd64/mongo:6-windowsservercore",
-      "winamd64/mongo:6.0.13",
+      "winamd64/mongo:6.0.14",
       "winamd64/mongo:6.0",
       "winamd64/mongo:6"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "9a25071bffcf8d859d24826b5067a414961e3599",
+      "GitCommit": "39c6083702fb2ff810e7a6a916b1eadf54825acd",
       "Directory": "6.0/windows/windowsservercore-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597737
+      "SOURCE_DATE_EPOCH": 1709249403
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:6.0.13-windowsservercore-1809",
+          "mongo:6.0.14-windowsservercore-1809",
           "mongo:6.0-windowsservercore-1809",
           "mongo:6-windowsservercore-1809",
-          "mongo:6.0.13-windowsservercore",
+          "mongo:6.0.14-windowsservercore",
           "mongo:6.0-windowsservercore",
           "mongo:6-windowsservercore",
-          "mongo:6.0.13",
+          "mongo:6.0.14",
           "mongo:6.0",
           "mongo:6"
         ],
         "archTags": [
-          "winamd64/mongo:6.0.13-windowsservercore-1809",
+          "winamd64/mongo:6.0.14-windowsservercore-1809",
           "winamd64/mongo:6.0-windowsservercore-1809",
           "winamd64/mongo:6-windowsservercore-1809",
-          "winamd64/mongo:6.0.13-windowsservercore",
+          "winamd64/mongo:6.0.14-windowsservercore",
           "winamd64/mongo:6.0-windowsservercore",
           "winamd64/mongo:6-windowsservercore",
-          "winamd64/mongo:6.0.13",
+          "winamd64/mongo:6.0.14",
           "winamd64/mongo:6.0",
           "winamd64/mongo:6"
         ],
@@ -40781,54 +41113,54 @@
       }
     }
   },
-  "3f017be3d166ee960273d3a97d3ca41cf190133e1489f4f4a7a7f23b301fd241": {
-    "sourceId": "3f017be3d166ee960273d3a97d3ca41cf190133e1489f4f4a7a7f23b301fd241",
-    "reproducibleGitChecksum": "1aff1f9aaa45f70bf1161ea28b00323ed5b89cdd65838f8f4a65da71d4c08bc9",
+  "f6e3e67bbba091eddd28c048a78f79966a63dbf8c2f61b5e753f7c4f298ac852": {
+    "sourceId": "f6e3e67bbba091eddd28c048a78f79966a63dbf8c2f61b5e753f7c4f298ac852",
+    "reproducibleGitChecksum": "3b8e92899fdfce649a6e97af7c43c722196e57cc44c6962fd3d9a7073ccbb8af",
     "allTags": [
-      "mongo:6.0.13-nanoserver-ltsc2022",
+      "mongo:6.0.14-nanoserver-ltsc2022",
       "mongo:6.0-nanoserver-ltsc2022",
       "mongo:6-nanoserver-ltsc2022",
-      "mongo:6.0.13-nanoserver",
+      "mongo:6.0.14-nanoserver",
       "mongo:6.0-nanoserver",
       "mongo:6-nanoserver",
-      "winamd64/mongo:6.0.13-nanoserver-ltsc2022",
+      "winamd64/mongo:6.0.14-nanoserver-ltsc2022",
       "winamd64/mongo:6.0-nanoserver-ltsc2022",
       "winamd64/mongo:6-nanoserver-ltsc2022",
-      "winamd64/mongo:6.0.13-nanoserver",
+      "winamd64/mongo:6.0.14-nanoserver",
       "winamd64/mongo:6.0-nanoserver",
       "winamd64/mongo:6-nanoserver"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "9a25071bffcf8d859d24826b5067a414961e3599",
+      "GitCommit": "39c6083702fb2ff810e7a6a916b1eadf54825acd",
       "Directory": "6.0/windows/nanoserver-ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597737
+      "SOURCE_DATE_EPOCH": 1709249403
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:6.0.13-nanoserver-ltsc2022",
+          "mongo:6.0.14-nanoserver-ltsc2022",
           "mongo:6.0-nanoserver-ltsc2022",
           "mongo:6-nanoserver-ltsc2022",
-          "mongo:6.0.13-nanoserver",
+          "mongo:6.0.14-nanoserver",
           "mongo:6.0-nanoserver",
           "mongo:6-nanoserver"
         ],
         "archTags": [
-          "winamd64/mongo:6.0.13-nanoserver-ltsc2022",
+          "winamd64/mongo:6.0.14-nanoserver-ltsc2022",
           "winamd64/mongo:6.0-nanoserver-ltsc2022",
           "winamd64/mongo:6-nanoserver-ltsc2022",
-          "winamd64/mongo:6.0.13-nanoserver",
+          "winamd64/mongo:6.0.14-nanoserver",
           "winamd64/mongo:6.0-nanoserver",
           "winamd64/mongo:6-nanoserver"
         ],
         "froms": [
           "mcr.microsoft.com/windows/nanoserver:ltsc2022",
-          "mongo:6.0.13-windowsservercore-ltsc2022",
-          "mongo:6.0.13-windowsservercore-ltsc2022"
+          "mongo:6.0.14-windowsservercore-ltsc2022",
+          "mongo:6.0.14-windowsservercore-ltsc2022"
         ],
         "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2022",
         "platformString": "windows/amd64",
@@ -40841,62 +41173,62 @@
             "sourceId": null,
             "pin": "sha256:64b22e42a69ebcdb86e49bf50780b64156431a508f7f06ac3050c71920fe57b7"
           },
-          "mongo:6.0.13-windowsservercore-ltsc2022": {
-            "sourceId": "8a0fbdc9cde8041cc7797e02ab1e00b8183a5b9223aaa19e4e0d5c18680bd49d",
+          "mongo:6.0.14-windowsservercore-ltsc2022": {
+            "sourceId": "f5482b3965752042c33c0710ac2979b1266751f24d5bd85be8eddc2aac9717f2",
             "pin": null
           }
         }
       }
     }
   },
-  "c5e10cc460cd7b09e3c293b718f34ecafb5ee31402e8551501beeffa64317957": {
-    "sourceId": "c5e10cc460cd7b09e3c293b718f34ecafb5ee31402e8551501beeffa64317957",
-    "reproducibleGitChecksum": "6ef70c901a6ee2d39c8982b5f3adc2ed77b2c64d7d58404ca069cb4f4a556ec8",
+  "af41ec802cf294247dc32d756db3b03bcb99d964c92c723b17a1adc2a7563562": {
+    "sourceId": "af41ec802cf294247dc32d756db3b03bcb99d964c92c723b17a1adc2a7563562",
+    "reproducibleGitChecksum": "4b4d15bdecd69c9acd540cf0955a35d3bc0d23bba8a806377ac54d3a9e7bc9aa",
     "allTags": [
-      "mongo:6.0.13-nanoserver-1809",
+      "mongo:6.0.14-nanoserver-1809",
       "mongo:6.0-nanoserver-1809",
       "mongo:6-nanoserver-1809",
-      "mongo:6.0.13-nanoserver",
+      "mongo:6.0.14-nanoserver",
       "mongo:6.0-nanoserver",
       "mongo:6-nanoserver",
-      "winamd64/mongo:6.0.13-nanoserver-1809",
+      "winamd64/mongo:6.0.14-nanoserver-1809",
       "winamd64/mongo:6.0-nanoserver-1809",
       "winamd64/mongo:6-nanoserver-1809",
-      "winamd64/mongo:6.0.13-nanoserver",
+      "winamd64/mongo:6.0.14-nanoserver",
       "winamd64/mongo:6.0-nanoserver",
       "winamd64/mongo:6-nanoserver"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "9a25071bffcf8d859d24826b5067a414961e3599",
+      "GitCommit": "39c6083702fb2ff810e7a6a916b1eadf54825acd",
       "Directory": "6.0/windows/nanoserver-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597737
+      "SOURCE_DATE_EPOCH": 1709249403
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:6.0.13-nanoserver-1809",
+          "mongo:6.0.14-nanoserver-1809",
           "mongo:6.0-nanoserver-1809",
           "mongo:6-nanoserver-1809",
-          "mongo:6.0.13-nanoserver",
+          "mongo:6.0.14-nanoserver",
           "mongo:6.0-nanoserver",
           "mongo:6-nanoserver"
         ],
         "archTags": [
-          "winamd64/mongo:6.0.13-nanoserver-1809",
+          "winamd64/mongo:6.0.14-nanoserver-1809",
           "winamd64/mongo:6.0-nanoserver-1809",
           "winamd64/mongo:6-nanoserver-1809",
-          "winamd64/mongo:6.0.13-nanoserver",
+          "winamd64/mongo:6.0.14-nanoserver",
           "winamd64/mongo:6.0-nanoserver",
           "winamd64/mongo:6-nanoserver"
         ],
         "froms": [
           "mcr.microsoft.com/windows/nanoserver:1809",
-          "mongo:6.0.13-windowsservercore-1809",
-          "mongo:6.0.13-windowsservercore-1809"
+          "mongo:6.0.14-windowsservercore-1809",
+          "mongo:6.0.14-windowsservercore-1809"
         ],
         "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:1809",
         "platformString": "windows/amd64",
@@ -40909,61 +41241,61 @@
             "sourceId": null,
             "pin": "sha256:0bd2e8d6d5cdb26eac9ebb0ef939a3b6362af71f3c1ac257fd5f0c53d1fc1388"
           },
-          "mongo:6.0.13-windowsservercore-1809": {
-            "sourceId": "10982f1ca131bd9766f55db568e9a09e0c6132efd85458f800fc6998e9043743",
+          "mongo:6.0.14-windowsservercore-1809": {
+            "sourceId": "2fa087cae31eefa6c8fc555c34976a074eaa05e1d0c74e4b007f4756337d562b",
             "pin": null
           }
         }
       }
     }
   },
-  "982f72db7d9dcac28c9873023a55a8173b6d0574a249e1ce9c21f840176e41a6": {
-    "sourceId": "982f72db7d9dcac28c9873023a55a8173b6d0574a249e1ce9c21f840176e41a6",
-    "reproducibleGitChecksum": "e7ef65c136d22fd7ab2c623f67041961ff256b909db377652a0fd32fb643d6c2",
+  "61e865c6b975aa52a97aa674ed9b9adcfa7c7ce19459218cc9d2ccaec84de043": {
+    "sourceId": "61e865c6b975aa52a97aa674ed9b9adcfa7c7ce19459218cc9d2ccaec84de043",
+    "reproducibleGitChecksum": "a7b6694aeb81f8943791daf45191ce99894e54187fbd78ede81b89778095940e",
     "allTags": [
-      "mongo:5.0.24-focal",
+      "mongo:5.0.25-focal",
       "mongo:5.0-focal",
       "mongo:5-focal",
-      "mongo:5.0.24",
+      "mongo:5.0.25",
       "mongo:5.0",
       "mongo:5",
-      "amd64/mongo:5.0.24-focal",
+      "amd64/mongo:5.0.25-focal",
       "amd64/mongo:5.0-focal",
       "amd64/mongo:5-focal",
-      "amd64/mongo:5.0.24",
+      "amd64/mongo:5.0.25",
       "amd64/mongo:5.0",
       "amd64/mongo:5",
-      "arm64v8/mongo:5.0.24-focal",
+      "arm64v8/mongo:5.0.25-focal",
       "arm64v8/mongo:5.0-focal",
       "arm64v8/mongo:5-focal",
-      "arm64v8/mongo:5.0.24",
+      "arm64v8/mongo:5.0.25",
       "arm64v8/mongo:5.0",
       "arm64v8/mongo:5"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "12fc21f8786d0ec14c01ce40a1487d893ef512b9",
+      "GitCommit": "9fb831dc00214e99727a8d144ce9b18cf59fd546",
       "Directory": "5.0",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1707267543
+      "SOURCE_DATE_EPOCH": 1709249228
     },
     "arches": {
       "amd64": {
         "tags": [
-          "mongo:5.0.24-focal",
+          "mongo:5.0.25-focal",
           "mongo:5.0-focal",
           "mongo:5-focal",
-          "mongo:5.0.24",
+          "mongo:5.0.25",
           "mongo:5.0",
           "mongo:5"
         ],
         "archTags": [
-          "amd64/mongo:5.0.24-focal",
+          "amd64/mongo:5.0.25-focal",
           "amd64/mongo:5.0-focal",
           "amd64/mongo:5-focal",
-          "amd64/mongo:5.0.24",
+          "amd64/mongo:5.0.25",
           "amd64/mongo:5.0",
           "amd64/mongo:5"
         ],
@@ -40985,18 +41317,18 @@
       },
       "arm64v8": {
         "tags": [
-          "mongo:5.0.24-focal",
+          "mongo:5.0.25-focal",
           "mongo:5.0-focal",
           "mongo:5-focal",
-          "mongo:5.0.24",
+          "mongo:5.0.25",
           "mongo:5.0",
           "mongo:5"
         ],
         "archTags": [
-          "arm64v8/mongo:5.0.24-focal",
+          "arm64v8/mongo:5.0.25-focal",
           "arm64v8/mongo:5.0-focal",
           "arm64v8/mongo:5-focal",
-          "arm64v8/mongo:5.0.24",
+          "arm64v8/mongo:5.0.25",
           "arm64v8/mongo:5.0",
           "arm64v8/mongo:5"
         ],
@@ -41019,59 +41351,59 @@
       }
     }
   },
-  "7d52d3f42b36d49e9f93cb8ea6588946ca98d7c4c0cd42ceab7586b422fb55fe": {
-    "sourceId": "7d52d3f42b36d49e9f93cb8ea6588946ca98d7c4c0cd42ceab7586b422fb55fe",
-    "reproducibleGitChecksum": "d60acffd219b0290c3d8167471cfbee527b2b587537bcc2b6cdbb73ab1bf04f0",
+  "e50c2d418f77ae1ad273f9c072256b4afbf9a06b2c8b88081561a6fdb8584bbb": {
+    "sourceId": "e50c2d418f77ae1ad273f9c072256b4afbf9a06b2c8b88081561a6fdb8584bbb",
+    "reproducibleGitChecksum": "3f600599334e2f7e16dad7ffb9b7bd10580008eb05db76d35613cec53a2a48c7",
     "allTags": [
-      "mongo:5.0.24-windowsservercore-ltsc2022",
+      "mongo:5.0.25-windowsservercore-ltsc2022",
       "mongo:5.0-windowsservercore-ltsc2022",
       "mongo:5-windowsservercore-ltsc2022",
-      "mongo:5.0.24-windowsservercore",
+      "mongo:5.0.25-windowsservercore",
       "mongo:5.0-windowsservercore",
       "mongo:5-windowsservercore",
-      "mongo:5.0.24",
+      "mongo:5.0.25",
       "mongo:5.0",
       "mongo:5",
-      "winamd64/mongo:5.0.24-windowsservercore-ltsc2022",
+      "winamd64/mongo:5.0.25-windowsservercore-ltsc2022",
       "winamd64/mongo:5.0-windowsservercore-ltsc2022",
       "winamd64/mongo:5-windowsservercore-ltsc2022",
-      "winamd64/mongo:5.0.24-windowsservercore",
+      "winamd64/mongo:5.0.25-windowsservercore",
       "winamd64/mongo:5.0-windowsservercore",
       "winamd64/mongo:5-windowsservercore",
-      "winamd64/mongo:5.0.24",
+      "winamd64/mongo:5.0.25",
       "winamd64/mongo:5.0",
       "winamd64/mongo:5"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "196f787174d347bda3b5d3954c0b3ef73290d1f8",
+      "GitCommit": "9fb831dc00214e99727a8d144ce9b18cf59fd546",
       "Directory": "5.0/windows/windowsservercore-ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597496
+      "SOURCE_DATE_EPOCH": 1709249228
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:5.0.24-windowsservercore-ltsc2022",
+          "mongo:5.0.25-windowsservercore-ltsc2022",
           "mongo:5.0-windowsservercore-ltsc2022",
           "mongo:5-windowsservercore-ltsc2022",
-          "mongo:5.0.24-windowsservercore",
+          "mongo:5.0.25-windowsservercore",
           "mongo:5.0-windowsservercore",
           "mongo:5-windowsservercore",
-          "mongo:5.0.24",
+          "mongo:5.0.25",
           "mongo:5.0",
           "mongo:5"
         ],
         "archTags": [
-          "winamd64/mongo:5.0.24-windowsservercore-ltsc2022",
+          "winamd64/mongo:5.0.25-windowsservercore-ltsc2022",
           "winamd64/mongo:5.0-windowsservercore-ltsc2022",
           "winamd64/mongo:5-windowsservercore-ltsc2022",
-          "winamd64/mongo:5.0.24-windowsservercore",
+          "winamd64/mongo:5.0.25-windowsservercore",
           "winamd64/mongo:5.0-windowsservercore",
           "winamd64/mongo:5-windowsservercore",
-          "winamd64/mongo:5.0.24",
+          "winamd64/mongo:5.0.25",
           "winamd64/mongo:5.0",
           "winamd64/mongo:5"
         ],
@@ -41093,59 +41425,59 @@
       }
     }
   },
-  "7195b379c8c6a84b9a3c4398690441de11530dd1a6665797db4c4b8de34d0f97": {
-    "sourceId": "7195b379c8c6a84b9a3c4398690441de11530dd1a6665797db4c4b8de34d0f97",
-    "reproducibleGitChecksum": "65e2e91d97706fad1db1ca7b8473cce455956bcc1f2d1c848b6e37a168d76289",
+  "8e7c07257c0f274f059092330436bf3f4db01e53520aebde2caef5fb1ae9e637": {
+    "sourceId": "8e7c07257c0f274f059092330436bf3f4db01e53520aebde2caef5fb1ae9e637",
+    "reproducibleGitChecksum": "ba7c1a9ca8f9fd23a24827a1add9a67f38edbe4c87e10e270d9c21b7a5356ac9",
     "allTags": [
-      "mongo:5.0.24-windowsservercore-1809",
+      "mongo:5.0.25-windowsservercore-1809",
       "mongo:5.0-windowsservercore-1809",
       "mongo:5-windowsservercore-1809",
-      "mongo:5.0.24-windowsservercore",
+      "mongo:5.0.25-windowsservercore",
       "mongo:5.0-windowsservercore",
       "mongo:5-windowsservercore",
-      "mongo:5.0.24",
+      "mongo:5.0.25",
       "mongo:5.0",
       "mongo:5",
-      "winamd64/mongo:5.0.24-windowsservercore-1809",
+      "winamd64/mongo:5.0.25-windowsservercore-1809",
       "winamd64/mongo:5.0-windowsservercore-1809",
       "winamd64/mongo:5-windowsservercore-1809",
-      "winamd64/mongo:5.0.24-windowsservercore",
+      "winamd64/mongo:5.0.25-windowsservercore",
       "winamd64/mongo:5.0-windowsservercore",
       "winamd64/mongo:5-windowsservercore",
-      "winamd64/mongo:5.0.24",
+      "winamd64/mongo:5.0.25",
       "winamd64/mongo:5.0",
       "winamd64/mongo:5"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "196f787174d347bda3b5d3954c0b3ef73290d1f8",
+      "GitCommit": "9fb831dc00214e99727a8d144ce9b18cf59fd546",
       "Directory": "5.0/windows/windowsservercore-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597496
+      "SOURCE_DATE_EPOCH": 1709249228
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:5.0.24-windowsservercore-1809",
+          "mongo:5.0.25-windowsservercore-1809",
           "mongo:5.0-windowsservercore-1809",
           "mongo:5-windowsservercore-1809",
-          "mongo:5.0.24-windowsservercore",
+          "mongo:5.0.25-windowsservercore",
           "mongo:5.0-windowsservercore",
           "mongo:5-windowsservercore",
-          "mongo:5.0.24",
+          "mongo:5.0.25",
           "mongo:5.0",
           "mongo:5"
         ],
         "archTags": [
-          "winamd64/mongo:5.0.24-windowsservercore-1809",
+          "winamd64/mongo:5.0.25-windowsservercore-1809",
           "winamd64/mongo:5.0-windowsservercore-1809",
           "winamd64/mongo:5-windowsservercore-1809",
-          "winamd64/mongo:5.0.24-windowsservercore",
+          "winamd64/mongo:5.0.25-windowsservercore",
           "winamd64/mongo:5.0-windowsservercore",
           "winamd64/mongo:5-windowsservercore",
-          "winamd64/mongo:5.0.24",
+          "winamd64/mongo:5.0.25",
           "winamd64/mongo:5.0",
           "winamd64/mongo:5"
         ],
@@ -41167,54 +41499,54 @@
       }
     }
   },
-  "8c0d6750da766a62ab894d1f27c8f16a1498082b1086d05548f1cfd02090e585": {
-    "sourceId": "8c0d6750da766a62ab894d1f27c8f16a1498082b1086d05548f1cfd02090e585",
-    "reproducibleGitChecksum": "b77d7afd75edac98940270a5638711a1ba319a072f2d85672f0858c690d6a4fc",
+  "89a958bd74c888397286dbbdea5d0d834bbb2284d4b65827713f90e298637a25": {
+    "sourceId": "89a958bd74c888397286dbbdea5d0d834bbb2284d4b65827713f90e298637a25",
+    "reproducibleGitChecksum": "f797adb4373768c221bc1134401e9db5b0749c5806c52e42d0393bd1bc2fb0c1",
     "allTags": [
-      "mongo:5.0.24-nanoserver-ltsc2022",
+      "mongo:5.0.25-nanoserver-ltsc2022",
       "mongo:5.0-nanoserver-ltsc2022",
       "mongo:5-nanoserver-ltsc2022",
-      "mongo:5.0.24-nanoserver",
+      "mongo:5.0.25-nanoserver",
       "mongo:5.0-nanoserver",
       "mongo:5-nanoserver",
-      "winamd64/mongo:5.0.24-nanoserver-ltsc2022",
+      "winamd64/mongo:5.0.25-nanoserver-ltsc2022",
       "winamd64/mongo:5.0-nanoserver-ltsc2022",
       "winamd64/mongo:5-nanoserver-ltsc2022",
-      "winamd64/mongo:5.0.24-nanoserver",
+      "winamd64/mongo:5.0.25-nanoserver",
       "winamd64/mongo:5.0-nanoserver",
       "winamd64/mongo:5-nanoserver"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "196f787174d347bda3b5d3954c0b3ef73290d1f8",
+      "GitCommit": "9fb831dc00214e99727a8d144ce9b18cf59fd546",
       "Directory": "5.0/windows/nanoserver-ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597496
+      "SOURCE_DATE_EPOCH": 1709249228
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:5.0.24-nanoserver-ltsc2022",
+          "mongo:5.0.25-nanoserver-ltsc2022",
           "mongo:5.0-nanoserver-ltsc2022",
           "mongo:5-nanoserver-ltsc2022",
-          "mongo:5.0.24-nanoserver",
+          "mongo:5.0.25-nanoserver",
           "mongo:5.0-nanoserver",
           "mongo:5-nanoserver"
         ],
         "archTags": [
-          "winamd64/mongo:5.0.24-nanoserver-ltsc2022",
+          "winamd64/mongo:5.0.25-nanoserver-ltsc2022",
           "winamd64/mongo:5.0-nanoserver-ltsc2022",
           "winamd64/mongo:5-nanoserver-ltsc2022",
-          "winamd64/mongo:5.0.24-nanoserver",
+          "winamd64/mongo:5.0.25-nanoserver",
           "winamd64/mongo:5.0-nanoserver",
           "winamd64/mongo:5-nanoserver"
         ],
         "froms": [
           "mcr.microsoft.com/windows/nanoserver:ltsc2022",
-          "mongo:5.0.24-windowsservercore-ltsc2022",
-          "mongo:5.0.24-windowsservercore-ltsc2022"
+          "mongo:5.0.25-windowsservercore-ltsc2022",
+          "mongo:5.0.25-windowsservercore-ltsc2022"
         ],
         "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2022",
         "platformString": "windows/amd64",
@@ -41227,62 +41559,62 @@
             "sourceId": null,
             "pin": "sha256:64b22e42a69ebcdb86e49bf50780b64156431a508f7f06ac3050c71920fe57b7"
           },
-          "mongo:5.0.24-windowsservercore-ltsc2022": {
-            "sourceId": "7d52d3f42b36d49e9f93cb8ea6588946ca98d7c4c0cd42ceab7586b422fb55fe",
+          "mongo:5.0.25-windowsservercore-ltsc2022": {
+            "sourceId": "e50c2d418f77ae1ad273f9c072256b4afbf9a06b2c8b88081561a6fdb8584bbb",
             "pin": null
           }
         }
       }
     }
   },
-  "3cd372005db5f182ee97cbfbf29a84142c475a700d096f49c26a912b9e6e2002": {
-    "sourceId": "3cd372005db5f182ee97cbfbf29a84142c475a700d096f49c26a912b9e6e2002",
-    "reproducibleGitChecksum": "4debd515975bbafc85276de2c39868bd69266a30de2731f3b1698e0bc8239ccc",
+  "1116acfe266d6129afdf7fc18455b3ccd52f8b225456ff011ca83440cd811c1b": {
+    "sourceId": "1116acfe266d6129afdf7fc18455b3ccd52f8b225456ff011ca83440cd811c1b",
+    "reproducibleGitChecksum": "2cde99d3350537eb74112df72d3d528dd9eef630d2a0bd2e6611e2ecb3533754",
     "allTags": [
-      "mongo:5.0.24-nanoserver-1809",
+      "mongo:5.0.25-nanoserver-1809",
       "mongo:5.0-nanoserver-1809",
       "mongo:5-nanoserver-1809",
-      "mongo:5.0.24-nanoserver",
+      "mongo:5.0.25-nanoserver",
       "mongo:5.0-nanoserver",
       "mongo:5-nanoserver",
-      "winamd64/mongo:5.0.24-nanoserver-1809",
+      "winamd64/mongo:5.0.25-nanoserver-1809",
       "winamd64/mongo:5.0-nanoserver-1809",
       "winamd64/mongo:5-nanoserver-1809",
-      "winamd64/mongo:5.0.24-nanoserver",
+      "winamd64/mongo:5.0.25-nanoserver",
       "winamd64/mongo:5.0-nanoserver",
       "winamd64/mongo:5-nanoserver"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "196f787174d347bda3b5d3954c0b3ef73290d1f8",
+      "GitCommit": "9fb831dc00214e99727a8d144ce9b18cf59fd546",
       "Directory": "5.0/windows/nanoserver-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597496
+      "SOURCE_DATE_EPOCH": 1709249228
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:5.0.24-nanoserver-1809",
+          "mongo:5.0.25-nanoserver-1809",
           "mongo:5.0-nanoserver-1809",
           "mongo:5-nanoserver-1809",
-          "mongo:5.0.24-nanoserver",
+          "mongo:5.0.25-nanoserver",
           "mongo:5.0-nanoserver",
           "mongo:5-nanoserver"
         ],
         "archTags": [
-          "winamd64/mongo:5.0.24-nanoserver-1809",
+          "winamd64/mongo:5.0.25-nanoserver-1809",
           "winamd64/mongo:5.0-nanoserver-1809",
           "winamd64/mongo:5-nanoserver-1809",
-          "winamd64/mongo:5.0.24-nanoserver",
+          "winamd64/mongo:5.0.25-nanoserver",
           "winamd64/mongo:5.0-nanoserver",
           "winamd64/mongo:5-nanoserver"
         ],
         "froms": [
           "mcr.microsoft.com/windows/nanoserver:1809",
-          "mongo:5.0.24-windowsservercore-1809",
-          "mongo:5.0.24-windowsservercore-1809"
+          "mongo:5.0.25-windowsservercore-1809",
+          "mongo:5.0.25-windowsservercore-1809"
         ],
         "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:1809",
         "platformString": "windows/amd64",
@@ -41295,61 +41627,61 @@
             "sourceId": null,
             "pin": "sha256:0bd2e8d6d5cdb26eac9ebb0ef939a3b6362af71f3c1ac257fd5f0c53d1fc1388"
           },
-          "mongo:5.0.24-windowsservercore-1809": {
-            "sourceId": "7195b379c8c6a84b9a3c4398690441de11530dd1a6665797db4c4b8de34d0f97",
+          "mongo:5.0.25-windowsservercore-1809": {
+            "sourceId": "8e7c07257c0f274f059092330436bf3f4db01e53520aebde2caef5fb1ae9e637",
             "pin": null
           }
         }
       }
     }
   },
-  "b270f36e8dc53709d446feeeb93fb8eeb1e77d5dd8e76fa9185f2ef68c68433f": {
-    "sourceId": "b270f36e8dc53709d446feeeb93fb8eeb1e77d5dd8e76fa9185f2ef68c68433f",
-    "reproducibleGitChecksum": "4321dcc4530cb9629e26279732247bd5e8ad3eb000ef7c69385e109bbbc9fb1e",
+  "5c0dd3e37d49e38fd70a159c2547dc246658502cc5cfdc5787b33e53a016b348": {
+    "sourceId": "5c0dd3e37d49e38fd70a159c2547dc246658502cc5cfdc5787b33e53a016b348",
+    "reproducibleGitChecksum": "301897299b93d8d3450c5a03a1e805f676e8173a09a2ae4b3e73f4c78d486fd9",
     "allTags": [
-      "mongo:4.4.28-focal",
+      "mongo:4.4.29-focal",
       "mongo:4.4-focal",
       "mongo:4-focal",
-      "mongo:4.4.28",
+      "mongo:4.4.29",
       "mongo:4.4",
       "mongo:4",
-      "amd64/mongo:4.4.28-focal",
+      "amd64/mongo:4.4.29-focal",
       "amd64/mongo:4.4-focal",
       "amd64/mongo:4-focal",
-      "amd64/mongo:4.4.28",
+      "amd64/mongo:4.4.29",
       "amd64/mongo:4.4",
       "amd64/mongo:4",
-      "arm64v8/mongo:4.4.28-focal",
+      "arm64v8/mongo:4.4.29-focal",
       "arm64v8/mongo:4.4-focal",
       "arm64v8/mongo:4-focal",
-      "arm64v8/mongo:4.4.28",
+      "arm64v8/mongo:4.4.29",
       "arm64v8/mongo:4.4",
       "arm64v8/mongo:4"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "12fc21f8786d0ec14c01ce40a1487d893ef512b9",
+      "GitCommit": "2ce02fe52826bae7c03f3f20817370396052c925",
       "Directory": "4.4",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1707267543
+      "SOURCE_DATE_EPOCH": 1709249119
     },
     "arches": {
       "amd64": {
         "tags": [
-          "mongo:4.4.28-focal",
+          "mongo:4.4.29-focal",
           "mongo:4.4-focal",
           "mongo:4-focal",
-          "mongo:4.4.28",
+          "mongo:4.4.29",
           "mongo:4.4",
           "mongo:4"
         ],
         "archTags": [
-          "amd64/mongo:4.4.28-focal",
+          "amd64/mongo:4.4.29-focal",
           "amd64/mongo:4.4-focal",
           "amd64/mongo:4-focal",
-          "amd64/mongo:4.4.28",
+          "amd64/mongo:4.4.29",
           "amd64/mongo:4.4",
           "amd64/mongo:4"
         ],
@@ -41371,18 +41703,18 @@
       },
       "arm64v8": {
         "tags": [
-          "mongo:4.4.28-focal",
+          "mongo:4.4.29-focal",
           "mongo:4.4-focal",
           "mongo:4-focal",
-          "mongo:4.4.28",
+          "mongo:4.4.29",
           "mongo:4.4",
           "mongo:4"
         ],
         "archTags": [
-          "arm64v8/mongo:4.4.28-focal",
+          "arm64v8/mongo:4.4.29-focal",
           "arm64v8/mongo:4.4-focal",
           "arm64v8/mongo:4-focal",
-          "arm64v8/mongo:4.4.28",
+          "arm64v8/mongo:4.4.29",
           "arm64v8/mongo:4.4",
           "arm64v8/mongo:4"
         ],
@@ -41405,59 +41737,59 @@
       }
     }
   },
-  "c0623f8b842a49550ed19bdaabb96d1317dcf7f7f799fd0b55aa289c6756f098": {
-    "sourceId": "c0623f8b842a49550ed19bdaabb96d1317dcf7f7f799fd0b55aa289c6756f098",
-    "reproducibleGitChecksum": "157c21321ba971463ac2430ec384a6f3ee4e7253b4990fad8a9a5f39a660298c",
+  "6b4d0a24635be509b901834d4aa34c61fffa29d484b6ab92d65f381533f97519": {
+    "sourceId": "6b4d0a24635be509b901834d4aa34c61fffa29d484b6ab92d65f381533f97519",
+    "reproducibleGitChecksum": "2b14fc99e7c3226e31b39a94d02e50464ae239170ed91d27f71b1254dde49e6b",
     "allTags": [
-      "mongo:4.4.28-windowsservercore-ltsc2022",
+      "mongo:4.4.29-windowsservercore-ltsc2022",
       "mongo:4.4-windowsservercore-ltsc2022",
       "mongo:4-windowsservercore-ltsc2022",
-      "mongo:4.4.28-windowsservercore",
+      "mongo:4.4.29-windowsservercore",
       "mongo:4.4-windowsservercore",
       "mongo:4-windowsservercore",
-      "mongo:4.4.28",
+      "mongo:4.4.29",
       "mongo:4.4",
       "mongo:4",
-      "winamd64/mongo:4.4.28-windowsservercore-ltsc2022",
+      "winamd64/mongo:4.4.29-windowsservercore-ltsc2022",
       "winamd64/mongo:4.4-windowsservercore-ltsc2022",
       "winamd64/mongo:4-windowsservercore-ltsc2022",
-      "winamd64/mongo:4.4.28-windowsservercore",
+      "winamd64/mongo:4.4.29-windowsservercore",
       "winamd64/mongo:4.4-windowsservercore",
       "winamd64/mongo:4-windowsservercore",
-      "winamd64/mongo:4.4.28",
+      "winamd64/mongo:4.4.29",
       "winamd64/mongo:4.4",
       "winamd64/mongo:4"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "a21ca6be5682be9da5027836fbed23c45b5d1101",
+      "GitCommit": "2ce02fe52826bae7c03f3f20817370396052c925",
       "Directory": "4.4/windows/windowsservercore-ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597271
+      "SOURCE_DATE_EPOCH": 1709249119
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:4.4.28-windowsservercore-ltsc2022",
+          "mongo:4.4.29-windowsservercore-ltsc2022",
           "mongo:4.4-windowsservercore-ltsc2022",
           "mongo:4-windowsservercore-ltsc2022",
-          "mongo:4.4.28-windowsservercore",
+          "mongo:4.4.29-windowsservercore",
           "mongo:4.4-windowsservercore",
           "mongo:4-windowsservercore",
-          "mongo:4.4.28",
+          "mongo:4.4.29",
           "mongo:4.4",
           "mongo:4"
         ],
         "archTags": [
-          "winamd64/mongo:4.4.28-windowsservercore-ltsc2022",
+          "winamd64/mongo:4.4.29-windowsservercore-ltsc2022",
           "winamd64/mongo:4.4-windowsservercore-ltsc2022",
           "winamd64/mongo:4-windowsservercore-ltsc2022",
-          "winamd64/mongo:4.4.28-windowsservercore",
+          "winamd64/mongo:4.4.29-windowsservercore",
           "winamd64/mongo:4.4-windowsservercore",
           "winamd64/mongo:4-windowsservercore",
-          "winamd64/mongo:4.4.28",
+          "winamd64/mongo:4.4.29",
           "winamd64/mongo:4.4",
           "winamd64/mongo:4"
         ],
@@ -41479,59 +41811,59 @@
       }
     }
   },
-  "ceb2fc1a96ff3e661bf8a070597d9c640fad5fddd4f39e5afd8a6431f238a9bb": {
-    "sourceId": "ceb2fc1a96ff3e661bf8a070597d9c640fad5fddd4f39e5afd8a6431f238a9bb",
-    "reproducibleGitChecksum": "42391a8bdbc46cc2d59d4f5fc167058c7e7ba8318e5ec7d2433997ac7c302345",
+  "0dc87bffba86b55503e363da8dbc4fbaf994a4adb562990ef0dee1338f639176": {
+    "sourceId": "0dc87bffba86b55503e363da8dbc4fbaf994a4adb562990ef0dee1338f639176",
+    "reproducibleGitChecksum": "7dad008075db78960061b70314291b9f113d08e409cc4c24cb1d7d7c888db6cc",
     "allTags": [
-      "mongo:4.4.28-windowsservercore-1809",
+      "mongo:4.4.29-windowsservercore-1809",
       "mongo:4.4-windowsservercore-1809",
       "mongo:4-windowsservercore-1809",
-      "mongo:4.4.28-windowsservercore",
+      "mongo:4.4.29-windowsservercore",
       "mongo:4.4-windowsservercore",
       "mongo:4-windowsservercore",
-      "mongo:4.4.28",
+      "mongo:4.4.29",
       "mongo:4.4",
       "mongo:4",
-      "winamd64/mongo:4.4.28-windowsservercore-1809",
+      "winamd64/mongo:4.4.29-windowsservercore-1809",
       "winamd64/mongo:4.4-windowsservercore-1809",
       "winamd64/mongo:4-windowsservercore-1809",
-      "winamd64/mongo:4.4.28-windowsservercore",
+      "winamd64/mongo:4.4.29-windowsservercore",
       "winamd64/mongo:4.4-windowsservercore",
       "winamd64/mongo:4-windowsservercore",
-      "winamd64/mongo:4.4.28",
+      "winamd64/mongo:4.4.29",
       "winamd64/mongo:4.4",
       "winamd64/mongo:4"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "a21ca6be5682be9da5027836fbed23c45b5d1101",
+      "GitCommit": "2ce02fe52826bae7c03f3f20817370396052c925",
       "Directory": "4.4/windows/windowsservercore-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597271
+      "SOURCE_DATE_EPOCH": 1709249119
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:4.4.28-windowsservercore-1809",
+          "mongo:4.4.29-windowsservercore-1809",
           "mongo:4.4-windowsservercore-1809",
           "mongo:4-windowsservercore-1809",
-          "mongo:4.4.28-windowsservercore",
+          "mongo:4.4.29-windowsservercore",
           "mongo:4.4-windowsservercore",
           "mongo:4-windowsservercore",
-          "mongo:4.4.28",
+          "mongo:4.4.29",
           "mongo:4.4",
           "mongo:4"
         ],
         "archTags": [
-          "winamd64/mongo:4.4.28-windowsservercore-1809",
+          "winamd64/mongo:4.4.29-windowsservercore-1809",
           "winamd64/mongo:4.4-windowsservercore-1809",
           "winamd64/mongo:4-windowsservercore-1809",
-          "winamd64/mongo:4.4.28-windowsservercore",
+          "winamd64/mongo:4.4.29-windowsservercore",
           "winamd64/mongo:4.4-windowsservercore",
           "winamd64/mongo:4-windowsservercore",
-          "winamd64/mongo:4.4.28",
+          "winamd64/mongo:4.4.29",
           "winamd64/mongo:4.4",
           "winamd64/mongo:4"
         ],
@@ -41553,54 +41885,54 @@
       }
     }
   },
-  "ebbb5995b7e7518e8eee88e20b03c9651af7594f29c397e4717e8ab36b49fde0": {
-    "sourceId": "ebbb5995b7e7518e8eee88e20b03c9651af7594f29c397e4717e8ab36b49fde0",
-    "reproducibleGitChecksum": "7a8f75cd6ea70c4ae661cc0f00a63c81407ebdb92af90dee4eccfe0aa45e4a54",
+  "e9910ef9bc637d49ae99970d0657343ae5d7f4466cdb1d607fea0b1d41db5f66": {
+    "sourceId": "e9910ef9bc637d49ae99970d0657343ae5d7f4466cdb1d607fea0b1d41db5f66",
+    "reproducibleGitChecksum": "b116ad09c0f04462759470369961eba55e2b6cc0ab0b021afc0834fc1f10cf4d",
     "allTags": [
-      "mongo:4.4.28-nanoserver-ltsc2022",
+      "mongo:4.4.29-nanoserver-ltsc2022",
       "mongo:4.4-nanoserver-ltsc2022",
       "mongo:4-nanoserver-ltsc2022",
-      "mongo:4.4.28-nanoserver",
+      "mongo:4.4.29-nanoserver",
       "mongo:4.4-nanoserver",
       "mongo:4-nanoserver",
-      "winamd64/mongo:4.4.28-nanoserver-ltsc2022",
+      "winamd64/mongo:4.4.29-nanoserver-ltsc2022",
       "winamd64/mongo:4.4-nanoserver-ltsc2022",
       "winamd64/mongo:4-nanoserver-ltsc2022",
-      "winamd64/mongo:4.4.28-nanoserver",
+      "winamd64/mongo:4.4.29-nanoserver",
       "winamd64/mongo:4.4-nanoserver",
       "winamd64/mongo:4-nanoserver"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "a21ca6be5682be9da5027836fbed23c45b5d1101",
+      "GitCommit": "2ce02fe52826bae7c03f3f20817370396052c925",
       "Directory": "4.4/windows/nanoserver-ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597271
+      "SOURCE_DATE_EPOCH": 1709249119
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:4.4.28-nanoserver-ltsc2022",
+          "mongo:4.4.29-nanoserver-ltsc2022",
           "mongo:4.4-nanoserver-ltsc2022",
           "mongo:4-nanoserver-ltsc2022",
-          "mongo:4.4.28-nanoserver",
+          "mongo:4.4.29-nanoserver",
           "mongo:4.4-nanoserver",
           "mongo:4-nanoserver"
         ],
         "archTags": [
-          "winamd64/mongo:4.4.28-nanoserver-ltsc2022",
+          "winamd64/mongo:4.4.29-nanoserver-ltsc2022",
           "winamd64/mongo:4.4-nanoserver-ltsc2022",
           "winamd64/mongo:4-nanoserver-ltsc2022",
-          "winamd64/mongo:4.4.28-nanoserver",
+          "winamd64/mongo:4.4.29-nanoserver",
           "winamd64/mongo:4.4-nanoserver",
           "winamd64/mongo:4-nanoserver"
         ],
         "froms": [
           "mcr.microsoft.com/windows/nanoserver:ltsc2022",
-          "mongo:4.4.28-windowsservercore-ltsc2022",
-          "mongo:4.4.28-windowsservercore-ltsc2022"
+          "mongo:4.4.29-windowsservercore-ltsc2022",
+          "mongo:4.4.29-windowsservercore-ltsc2022"
         ],
         "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2022",
         "platformString": "windows/amd64",
@@ -41613,62 +41945,62 @@
             "sourceId": null,
             "pin": "sha256:64b22e42a69ebcdb86e49bf50780b64156431a508f7f06ac3050c71920fe57b7"
           },
-          "mongo:4.4.28-windowsservercore-ltsc2022": {
-            "sourceId": "c0623f8b842a49550ed19bdaabb96d1317dcf7f7f799fd0b55aa289c6756f098",
+          "mongo:4.4.29-windowsservercore-ltsc2022": {
+            "sourceId": "6b4d0a24635be509b901834d4aa34c61fffa29d484b6ab92d65f381533f97519",
             "pin": null
           }
         }
       }
     }
   },
-  "e3a0775d9f6e1cd60efb3fd214d93c89bb56d92847d403472fb37d093df3f498": {
-    "sourceId": "e3a0775d9f6e1cd60efb3fd214d93c89bb56d92847d403472fb37d093df3f498",
-    "reproducibleGitChecksum": "0d3ad0245ad158e1c4f2b8df6cb5a912f87d1e870ba77c0de11a63aac21185b6",
+  "db6b9a13ee19c1e8240b2527112b7513e7b54f0673ec4c00c435c84d880529f2": {
+    "sourceId": "db6b9a13ee19c1e8240b2527112b7513e7b54f0673ec4c00c435c84d880529f2",
+    "reproducibleGitChecksum": "9fad1d1203727e6cebf63ae1ba77db387887b7113633e9e1abcb7264d85c4d58",
     "allTags": [
-      "mongo:4.4.28-nanoserver-1809",
+      "mongo:4.4.29-nanoserver-1809",
       "mongo:4.4-nanoserver-1809",
       "mongo:4-nanoserver-1809",
-      "mongo:4.4.28-nanoserver",
+      "mongo:4.4.29-nanoserver",
       "mongo:4.4-nanoserver",
       "mongo:4-nanoserver",
-      "winamd64/mongo:4.4.28-nanoserver-1809",
+      "winamd64/mongo:4.4.29-nanoserver-1809",
       "winamd64/mongo:4.4-nanoserver-1809",
       "winamd64/mongo:4-nanoserver-1809",
-      "winamd64/mongo:4.4.28-nanoserver",
+      "winamd64/mongo:4.4.29-nanoserver",
       "winamd64/mongo:4.4-nanoserver",
       "winamd64/mongo:4-nanoserver"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "a21ca6be5682be9da5027836fbed23c45b5d1101",
+      "GitCommit": "2ce02fe52826bae7c03f3f20817370396052c925",
       "Directory": "4.4/windows/nanoserver-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1705597271
+      "SOURCE_DATE_EPOCH": 1709249119
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "mongo:4.4.28-nanoserver-1809",
+          "mongo:4.4.29-nanoserver-1809",
           "mongo:4.4-nanoserver-1809",
           "mongo:4-nanoserver-1809",
-          "mongo:4.4.28-nanoserver",
+          "mongo:4.4.29-nanoserver",
           "mongo:4.4-nanoserver",
           "mongo:4-nanoserver"
         ],
         "archTags": [
-          "winamd64/mongo:4.4.28-nanoserver-1809",
+          "winamd64/mongo:4.4.29-nanoserver-1809",
           "winamd64/mongo:4.4-nanoserver-1809",
           "winamd64/mongo:4-nanoserver-1809",
-          "winamd64/mongo:4.4.28-nanoserver",
+          "winamd64/mongo:4.4.29-nanoserver",
           "winamd64/mongo:4.4-nanoserver",
           "winamd64/mongo:4-nanoserver"
         ],
         "froms": [
           "mcr.microsoft.com/windows/nanoserver:1809",
-          "mongo:4.4.28-windowsservercore-1809",
-          "mongo:4.4.28-windowsservercore-1809"
+          "mongo:4.4.29-windowsservercore-1809",
+          "mongo:4.4.29-windowsservercore-1809"
         ],
         "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:1809",
         "platformString": "windows/amd64",
@@ -41681,8 +42013,8 @@
             "sourceId": null,
             "pin": "sha256:0bd2e8d6d5cdb26eac9ebb0ef939a3b6362af71f3c1ac257fd5f0c53d1fc1388"
           },
-          "mongo:4.4.28-windowsservercore-1809": {
-            "sourceId": "ceb2fc1a96ff3e661bf8a070597d9c640fad5fddd4f39e5afd8a6431f238a9bb",
+          "mongo:4.4.29-windowsservercore-1809": {
+            "sourceId": "0dc87bffba86b55503e363da8dbc4fbaf994a4adb562990ef0dee1338f639176",
             "pin": null
           }
         }
