@@ -36587,39 +36587,620 @@
       }
     }
   },
-  "602880d5c06a6b509ba0524fb2abc0d6601ce5312d40209df82ccba4c9ec4546": {
-    "sourceId": "602880d5c06a6b509ba0524fb2abc0d6601ce5312d40209df82ccba4c9ec4546",
-    "reproducibleGitChecksum": "7547ae297efa1c30ef26ccc60cd198ccd7354def4a92d0bb3269722e80c14d03",
+  "a275437d6c95322045bde70749472f9c6f910f5c2c14c9b9c31fcc87c9101046": {
+    "sourceId": "a275437d6c95322045bde70749472f9c6f910f5c2c14c9b9c31fcc87c9101046",
+    "reproducibleGitChecksum": "f976b35d90c58303b0275ea40761a0b1bf4d41371b99f2d83ed3fee72c84401d",
     "allTags": [
-      "julia:1.10.1-bookworm",
+      "julia:1.11.0-alpha1-bookworm",
+      "julia:1.11-rc-bookworm",
+      "julia:rc-bookworm",
+      "julia:1.11.0-alpha1",
+      "julia:1.11-rc",
+      "julia:rc",
+      "amd64/julia:1.11.0-alpha1-bookworm",
+      "amd64/julia:1.11-rc-bookworm",
+      "amd64/julia:rc-bookworm",
+      "amd64/julia:1.11.0-alpha1",
+      "amd64/julia:1.11-rc",
+      "amd64/julia:rc",
+      "arm64v8/julia:1.11.0-alpha1-bookworm",
+      "arm64v8/julia:1.11-rc-bookworm",
+      "arm64v8/julia:rc-bookworm",
+      "arm64v8/julia:1.11.0-alpha1",
+      "arm64v8/julia:1.11-rc",
+      "arm64v8/julia:rc",
+      "i386/julia:1.11.0-alpha1-bookworm",
+      "i386/julia:1.11-rc-bookworm",
+      "i386/julia:rc-bookworm",
+      "i386/julia:1.11.0-alpha1",
+      "i386/julia:1.11-rc",
+      "i386/julia:rc",
+      "ppc64le/julia:1.11.0-alpha1-bookworm",
+      "ppc64le/julia:1.11-rc-bookworm",
+      "ppc64le/julia:rc-bookworm",
+      "ppc64le/julia:1.11.0-alpha1",
+      "ppc64le/julia:1.11-rc",
+      "ppc64le/julia:rc"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/julia.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "433c7947c2af4ccd9788e9cae7230429d63d8669",
+      "Directory": "1.11-rc/bookworm",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1709587288
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "julia:1.11.0-alpha1-bookworm",
+          "julia:1.11-rc-bookworm",
+          "julia:rc-bookworm",
+          "julia:1.11.0-alpha1",
+          "julia:1.11-rc",
+          "julia:rc"
+        ],
+        "archTags": [
+          "amd64/julia:1.11.0-alpha1-bookworm",
+          "amd64/julia:1.11-rc-bookworm",
+          "amd64/julia:rc-bookworm",
+          "amd64/julia:1.11.0-alpha1",
+          "amd64/julia:1.11-rc",
+          "amd64/julia:rc"
+        ],
+        "froms": [
+          "debian:bookworm-slim"
+        ],
+        "lastStageFrom": "debian:bookworm-slim",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "debian:bookworm-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "julia:1.11.0-alpha1-bookworm",
+          "julia:1.11-rc-bookworm",
+          "julia:rc-bookworm",
+          "julia:1.11.0-alpha1",
+          "julia:1.11-rc",
+          "julia:rc"
+        ],
+        "archTags": [
+          "arm64v8/julia:1.11.0-alpha1-bookworm",
+          "arm64v8/julia:1.11-rc-bookworm",
+          "arm64v8/julia:rc-bookworm",
+          "arm64v8/julia:1.11.0-alpha1",
+          "arm64v8/julia:1.11-rc",
+          "arm64v8/julia:rc"
+        ],
+        "froms": [
+          "debian:bookworm-slim"
+        ],
+        "lastStageFrom": "debian:bookworm-slim",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "debian:bookworm-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "julia:1.11.0-alpha1-bookworm",
+          "julia:1.11-rc-bookworm",
+          "julia:rc-bookworm",
+          "julia:1.11.0-alpha1",
+          "julia:1.11-rc",
+          "julia:rc"
+        ],
+        "archTags": [
+          "i386/julia:1.11.0-alpha1-bookworm",
+          "i386/julia:1.11-rc-bookworm",
+          "i386/julia:rc-bookworm",
+          "i386/julia:1.11.0-alpha1",
+          "i386/julia:1.11-rc",
+          "i386/julia:rc"
+        ],
+        "froms": [
+          "debian:bookworm-slim"
+        ],
+        "lastStageFrom": "debian:bookworm-slim",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "debian:bookworm-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "julia:1.11.0-alpha1-bookworm",
+          "julia:1.11-rc-bookworm",
+          "julia:rc-bookworm",
+          "julia:1.11.0-alpha1",
+          "julia:1.11-rc",
+          "julia:rc"
+        ],
+        "archTags": [
+          "ppc64le/julia:1.11.0-alpha1-bookworm",
+          "ppc64le/julia:1.11-rc-bookworm",
+          "ppc64le/julia:rc-bookworm",
+          "ppc64le/julia:1.11.0-alpha1",
+          "ppc64le/julia:1.11-rc",
+          "ppc64le/julia:rc"
+        ],
+        "froms": [
+          "debian:bookworm-slim"
+        ],
+        "lastStageFrom": "debian:bookworm-slim",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "debian:bookworm-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "812034160d8d30fb5c116e2d0fa22dae15dff9842b454f68397171c2c804cebd": {
+    "sourceId": "812034160d8d30fb5c116e2d0fa22dae15dff9842b454f68397171c2c804cebd",
+    "reproducibleGitChecksum": "ada683e6da83ca6b5a03b54a1bf874f17c59401ab6f3b882cde6026962d31876",
+    "allTags": [
+      "julia:1.11.0-alpha1-bullseye",
+      "julia:1.11-rc-bullseye",
+      "julia:rc-bullseye",
+      "amd64/julia:1.11.0-alpha1-bullseye",
+      "amd64/julia:1.11-rc-bullseye",
+      "amd64/julia:rc-bullseye",
+      "arm64v8/julia:1.11.0-alpha1-bullseye",
+      "arm64v8/julia:1.11-rc-bullseye",
+      "arm64v8/julia:rc-bullseye",
+      "i386/julia:1.11.0-alpha1-bullseye",
+      "i386/julia:1.11-rc-bullseye",
+      "i386/julia:rc-bullseye",
+      "ppc64le/julia:1.11.0-alpha1-bullseye",
+      "ppc64le/julia:1.11-rc-bullseye",
+      "ppc64le/julia:rc-bullseye"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/julia.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "433c7947c2af4ccd9788e9cae7230429d63d8669",
+      "Directory": "1.11-rc/bullseye",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1709587288
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "julia:1.11.0-alpha1-bullseye",
+          "julia:1.11-rc-bullseye",
+          "julia:rc-bullseye"
+        ],
+        "archTags": [
+          "amd64/julia:1.11.0-alpha1-bullseye",
+          "amd64/julia:1.11-rc-bullseye",
+          "amd64/julia:rc-bullseye"
+        ],
+        "froms": [
+          "debian:bullseye-slim"
+        ],
+        "lastStageFrom": "debian:bullseye-slim",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "debian:bullseye-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "julia:1.11.0-alpha1-bullseye",
+          "julia:1.11-rc-bullseye",
+          "julia:rc-bullseye"
+        ],
+        "archTags": [
+          "arm64v8/julia:1.11.0-alpha1-bullseye",
+          "arm64v8/julia:1.11-rc-bullseye",
+          "arm64v8/julia:rc-bullseye"
+        ],
+        "froms": [
+          "debian:bullseye-slim"
+        ],
+        "lastStageFrom": "debian:bullseye-slim",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "debian:bullseye-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "julia:1.11.0-alpha1-bullseye",
+          "julia:1.11-rc-bullseye",
+          "julia:rc-bullseye"
+        ],
+        "archTags": [
+          "i386/julia:1.11.0-alpha1-bullseye",
+          "i386/julia:1.11-rc-bullseye",
+          "i386/julia:rc-bullseye"
+        ],
+        "froms": [
+          "debian:bullseye-slim"
+        ],
+        "lastStageFrom": "debian:bullseye-slim",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "debian:bullseye-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "julia:1.11.0-alpha1-bullseye",
+          "julia:1.11-rc-bullseye",
+          "julia:rc-bullseye"
+        ],
+        "archTags": [
+          "ppc64le/julia:1.11.0-alpha1-bullseye",
+          "ppc64le/julia:1.11-rc-bullseye",
+          "ppc64le/julia:rc-bullseye"
+        ],
+        "froms": [
+          "debian:bullseye-slim"
+        ],
+        "lastStageFrom": "debian:bullseye-slim",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "debian:bullseye-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "10f61beb08aa2bbf98b9a4012e3172374bfbf14b51b9e51f1e273341f7694283": {
+    "sourceId": "10f61beb08aa2bbf98b9a4012e3172374bfbf14b51b9e51f1e273341f7694283",
+    "reproducibleGitChecksum": "317db32bb2b7936dc2c96f97eae9b2c54c39cf18eeacb51d4c56427b82503176",
+    "allTags": [
+      "julia:1.11.0-alpha1-alpine3.19",
+      "julia:1.11-rc-alpine3.19",
+      "julia:rc-alpine3.19",
+      "julia:1.11.0-alpha1-alpine",
+      "julia:1.11-rc-alpine",
+      "julia:rc-alpine",
+      "amd64/julia:1.11.0-alpha1-alpine3.19",
+      "amd64/julia:1.11-rc-alpine3.19",
+      "amd64/julia:rc-alpine3.19",
+      "amd64/julia:1.11.0-alpha1-alpine",
+      "amd64/julia:1.11-rc-alpine",
+      "amd64/julia:rc-alpine"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/julia.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "433c7947c2af4ccd9788e9cae7230429d63d8669",
+      "Directory": "1.11-rc/alpine3.19",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1709587288
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "julia:1.11.0-alpha1-alpine3.19",
+          "julia:1.11-rc-alpine3.19",
+          "julia:rc-alpine3.19",
+          "julia:1.11.0-alpha1-alpine",
+          "julia:1.11-rc-alpine",
+          "julia:rc-alpine"
+        ],
+        "archTags": [
+          "amd64/julia:1.11.0-alpha1-alpine3.19",
+          "amd64/julia:1.11-rc-alpine3.19",
+          "amd64/julia:rc-alpine3.19",
+          "amd64/julia:1.11.0-alpha1-alpine",
+          "amd64/julia:1.11-rc-alpine",
+          "amd64/julia:rc-alpine"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "0c51eedfd76b4af23eb172b8b0064899ce985e4b34312d1a0f6b592beeea9831": {
+    "sourceId": "0c51eedfd76b4af23eb172b8b0064899ce985e4b34312d1a0f6b592beeea9831",
+    "reproducibleGitChecksum": "1c8e2c84d666a69d5bb28db200d959c428d5ecd1c930ebe9ae5e468ca1c371e5",
+    "allTags": [
+      "julia:1.11.0-alpha1-alpine3.18",
+      "julia:1.11-rc-alpine3.18",
+      "julia:rc-alpine3.18",
+      "amd64/julia:1.11.0-alpha1-alpine3.18",
+      "amd64/julia:1.11-rc-alpine3.18",
+      "amd64/julia:rc-alpine3.18"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/julia.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "433c7947c2af4ccd9788e9cae7230429d63d8669",
+      "Directory": "1.11-rc/alpine3.18",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1709587288
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "julia:1.11.0-alpha1-alpine3.18",
+          "julia:1.11-rc-alpine3.18",
+          "julia:rc-alpine3.18"
+        ],
+        "archTags": [
+          "amd64/julia:1.11.0-alpha1-alpine3.18",
+          "amd64/julia:1.11-rc-alpine3.18",
+          "amd64/julia:rc-alpine3.18"
+        ],
+        "froms": [
+          "alpine:3.18"
+        ],
+        "lastStageFrom": "alpine:3.18",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.18": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "42ccc506b64bbd3c3b1e820464caac99aa7baa236b7905f33e5a00e8372673c2": {
+    "sourceId": "42ccc506b64bbd3c3b1e820464caac99aa7baa236b7905f33e5a00e8372673c2",
+    "reproducibleGitChecksum": "a3a6c626fe2743b566fea21899aa72e6b58b6624e43ebe532f3f99a3d1474fe1",
+    "allTags": [
+      "julia:1.11.0-alpha1-windowsservercore-ltsc2022",
+      "julia:1.11-rc-windowsservercore-ltsc2022",
+      "julia:rc-windowsservercore-ltsc2022",
+      "julia:1.11.0-alpha1",
+      "julia:1.11-rc",
+      "julia:rc",
+      "julia:1.11.0-alpha1-windowsservercore",
+      "julia:1.11-rc-windowsservercore",
+      "julia:rc-windowsservercore",
+      "winamd64/julia:1.11.0-alpha1-windowsservercore-ltsc2022",
+      "winamd64/julia:1.11-rc-windowsservercore-ltsc2022",
+      "winamd64/julia:rc-windowsservercore-ltsc2022",
+      "winamd64/julia:1.11.0-alpha1",
+      "winamd64/julia:1.11-rc",
+      "winamd64/julia:rc",
+      "winamd64/julia:1.11.0-alpha1-windowsservercore",
+      "winamd64/julia:1.11-rc-windowsservercore",
+      "winamd64/julia:rc-windowsservercore"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/julia.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "433c7947c2af4ccd9788e9cae7230429d63d8669",
+      "Directory": "1.11-rc/windows/windowsservercore-ltsc2022",
+      "File": "Dockerfile",
+      "Builder": "classic",
+      "SOURCE_DATE_EPOCH": 1709587288
+    },
+    "arches": {
+      "windows-amd64": {
+        "tags": [
+          "julia:1.11.0-alpha1-windowsservercore-ltsc2022",
+          "julia:1.11-rc-windowsservercore-ltsc2022",
+          "julia:rc-windowsservercore-ltsc2022",
+          "julia:1.11.0-alpha1",
+          "julia:1.11-rc",
+          "julia:rc",
+          "julia:1.11.0-alpha1-windowsservercore",
+          "julia:1.11-rc-windowsservercore",
+          "julia:rc-windowsservercore"
+        ],
+        "archTags": [
+          "winamd64/julia:1.11.0-alpha1-windowsservercore-ltsc2022",
+          "winamd64/julia:1.11-rc-windowsservercore-ltsc2022",
+          "winamd64/julia:rc-windowsservercore-ltsc2022",
+          "winamd64/julia:1.11.0-alpha1",
+          "winamd64/julia:1.11-rc",
+          "winamd64/julia:rc",
+          "winamd64/julia:1.11.0-alpha1-windowsservercore",
+          "winamd64/julia:1.11-rc-windowsservercore",
+          "winamd64/julia:rc-windowsservercore"
+        ],
+        "froms": [
+          "mcr.microsoft.com/windows/servercore:ltsc2022"
+        ],
+        "lastStageFrom": "mcr.microsoft.com/windows/servercore:ltsc2022",
+        "platformString": "windows/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "windows"
+        },
+        "parents": {
+          "mcr.microsoft.com/windows/servercore:ltsc2022": {
+            "sourceId": null,
+            "pin": "sha256:8a75266be74ad7a904470e18057f6fd62055cf7028172307fefc67aff37dfd10"
+          }
+        }
+      }
+    }
+  },
+  "b43969ce7de1f18e5ca994ad4074b1c0fc03e83ae53e6363f3428a670ed03f18": {
+    "sourceId": "b43969ce7de1f18e5ca994ad4074b1c0fc03e83ae53e6363f3428a670ed03f18",
+    "reproducibleGitChecksum": "b333bd076e56847210793ad78adf70dd26b34521442eac06812e623847811316",
+    "allTags": [
+      "julia:1.11.0-alpha1-windowsservercore-1809",
+      "julia:1.11-rc-windowsservercore-1809",
+      "julia:rc-windowsservercore-1809",
+      "julia:1.11.0-alpha1",
+      "julia:1.11-rc",
+      "julia:rc",
+      "julia:1.11.0-alpha1-windowsservercore",
+      "julia:1.11-rc-windowsservercore",
+      "julia:rc-windowsservercore",
+      "winamd64/julia:1.11.0-alpha1-windowsservercore-1809",
+      "winamd64/julia:1.11-rc-windowsservercore-1809",
+      "winamd64/julia:rc-windowsservercore-1809",
+      "winamd64/julia:1.11.0-alpha1",
+      "winamd64/julia:1.11-rc",
+      "winamd64/julia:rc",
+      "winamd64/julia:1.11.0-alpha1-windowsservercore",
+      "winamd64/julia:1.11-rc-windowsservercore",
+      "winamd64/julia:rc-windowsservercore"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/julia.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "433c7947c2af4ccd9788e9cae7230429d63d8669",
+      "Directory": "1.11-rc/windows/windowsservercore-1809",
+      "File": "Dockerfile",
+      "Builder": "classic",
+      "SOURCE_DATE_EPOCH": 1709587288
+    },
+    "arches": {
+      "windows-amd64": {
+        "tags": [
+          "julia:1.11.0-alpha1-windowsservercore-1809",
+          "julia:1.11-rc-windowsservercore-1809",
+          "julia:rc-windowsservercore-1809",
+          "julia:1.11.0-alpha1",
+          "julia:1.11-rc",
+          "julia:rc",
+          "julia:1.11.0-alpha1-windowsservercore",
+          "julia:1.11-rc-windowsservercore",
+          "julia:rc-windowsservercore"
+        ],
+        "archTags": [
+          "winamd64/julia:1.11.0-alpha1-windowsservercore-1809",
+          "winamd64/julia:1.11-rc-windowsservercore-1809",
+          "winamd64/julia:rc-windowsservercore-1809",
+          "winamd64/julia:1.11.0-alpha1",
+          "winamd64/julia:1.11-rc",
+          "winamd64/julia:rc",
+          "winamd64/julia:1.11.0-alpha1-windowsservercore",
+          "winamd64/julia:1.11-rc-windowsservercore",
+          "winamd64/julia:rc-windowsservercore"
+        ],
+        "froms": [
+          "mcr.microsoft.com/windows/servercore:1809"
+        ],
+        "lastStageFrom": "mcr.microsoft.com/windows/servercore:1809",
+        "platformString": "windows/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "windows"
+        },
+        "parents": {
+          "mcr.microsoft.com/windows/servercore:1809": {
+            "sourceId": null,
+            "pin": "sha256:035894dc32a667c5f6f40054a4e92e208a60691438958c68696084fcce709ed5"
+          }
+        }
+      }
+    }
+  },
+  "c46e661d366a2eec5ece5e47ad7ccfe0af0694231da6cc506a1f0a604d3b9639": {
+    "sourceId": "c46e661d366a2eec5ece5e47ad7ccfe0af0694231da6cc506a1f0a604d3b9639",
+    "reproducibleGitChecksum": "98b89373aad8316280d07ecc67bbc25a6191737295a16474b1ea4295c7b76a19",
+    "allTags": [
+      "julia:1.10.2-bookworm",
       "julia:1.10-bookworm",
       "julia:1-bookworm",
       "julia:bookworm",
-      "julia:1.10.1",
+      "julia:1.10.2",
       "julia:1.10",
       "julia:1",
       "julia:latest",
-      "amd64/julia:1.10.1-bookworm",
+      "amd64/julia:1.10.2-bookworm",
       "amd64/julia:1.10-bookworm",
       "amd64/julia:1-bookworm",
       "amd64/julia:bookworm",
-      "amd64/julia:1.10.1",
+      "amd64/julia:1.10.2",
       "amd64/julia:1.10",
       "amd64/julia:1",
       "amd64/julia:latest",
-      "arm64v8/julia:1.10.1-bookworm",
+      "arm64v8/julia:1.10.2-bookworm",
       "arm64v8/julia:1.10-bookworm",
       "arm64v8/julia:1-bookworm",
       "arm64v8/julia:bookworm",
-      "arm64v8/julia:1.10.1",
+      "arm64v8/julia:1.10.2",
       "arm64v8/julia:1.10",
       "arm64v8/julia:1",
       "arm64v8/julia:latest",
-      "i386/julia:1.10.1-bookworm",
+      "i386/julia:1.10.2-bookworm",
       "i386/julia:1.10-bookworm",
       "i386/julia:1-bookworm",
       "i386/julia:bookworm",
-      "i386/julia:1.10.1",
+      "i386/julia:1.10.2",
       "i386/julia:1.10",
       "i386/julia:1",
       "i386/julia:latest"
@@ -36627,30 +37208,30 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/julia.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "488218e5607ad811decac17862f06147d916c480",
+      "GitCommit": "8412fce8b8c25f568f809f9312e83a17e89f763a",
       "Directory": "1.10/bookworm",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1707958755
+      "SOURCE_DATE_EPOCH": 1709362755
     },
     "arches": {
       "amd64": {
         "tags": [
-          "julia:1.10.1-bookworm",
+          "julia:1.10.2-bookworm",
           "julia:1.10-bookworm",
           "julia:1-bookworm",
           "julia:bookworm",
-          "julia:1.10.1",
+          "julia:1.10.2",
           "julia:1.10",
           "julia:1",
           "julia:latest"
         ],
         "archTags": [
-          "amd64/julia:1.10.1-bookworm",
+          "amd64/julia:1.10.2-bookworm",
           "amd64/julia:1.10-bookworm",
           "amd64/julia:1-bookworm",
           "amd64/julia:bookworm",
-          "amd64/julia:1.10.1",
+          "amd64/julia:1.10.2",
           "amd64/julia:1.10",
           "amd64/julia:1",
           "amd64/julia:latest"
@@ -36673,21 +37254,21 @@
       },
       "arm64v8": {
         "tags": [
-          "julia:1.10.1-bookworm",
+          "julia:1.10.2-bookworm",
           "julia:1.10-bookworm",
           "julia:1-bookworm",
           "julia:bookworm",
-          "julia:1.10.1",
+          "julia:1.10.2",
           "julia:1.10",
           "julia:1",
           "julia:latest"
         ],
         "archTags": [
-          "arm64v8/julia:1.10.1-bookworm",
+          "arm64v8/julia:1.10.2-bookworm",
           "arm64v8/julia:1.10-bookworm",
           "arm64v8/julia:1-bookworm",
           "arm64v8/julia:bookworm",
-          "arm64v8/julia:1.10.1",
+          "arm64v8/julia:1.10.2",
           "arm64v8/julia:1.10",
           "arm64v8/julia:1",
           "arm64v8/julia:latest"
@@ -36711,21 +37292,21 @@
       },
       "i386": {
         "tags": [
-          "julia:1.10.1-bookworm",
+          "julia:1.10.2-bookworm",
           "julia:1.10-bookworm",
           "julia:1-bookworm",
           "julia:bookworm",
-          "julia:1.10.1",
+          "julia:1.10.2",
           "julia:1.10",
           "julia:1",
           "julia:latest"
         ],
         "archTags": [
-          "i386/julia:1.10.1-bookworm",
+          "i386/julia:1.10.2-bookworm",
           "i386/julia:1.10-bookworm",
           "i386/julia:1-bookworm",
           "i386/julia:bookworm",
-          "i386/julia:1.10.1",
+          "i386/julia:1.10.2",
           "i386/julia:1.10",
           "i386/julia:1",
           "i386/julia:latest"
@@ -36748,23 +37329,23 @@
       }
     }
   },
-  "6cab065e259ac290547843c35b5dc1bc4d650436b78e2ff1b3e971b2c9644ea8": {
-    "sourceId": "6cab065e259ac290547843c35b5dc1bc4d650436b78e2ff1b3e971b2c9644ea8",
-    "reproducibleGitChecksum": "a224979c81ec0a530d157c8a05d6c2a240bc906a1774d66ca49b3b1d8b94eba2",
+  "c9b7249c732b9e0911f58af91c56474c6a0ea5bd57fb3770cb8eca264eb92c11": {
+    "sourceId": "c9b7249c732b9e0911f58af91c56474c6a0ea5bd57fb3770cb8eca264eb92c11",
+    "reproducibleGitChecksum": "8a108dacbe9f548868812d46be9f4ab6bc2616e02e180cb35c65c96be37c4ad8",
     "allTags": [
-      "julia:1.10.1-bullseye",
+      "julia:1.10.2-bullseye",
       "julia:1.10-bullseye",
       "julia:1-bullseye",
       "julia:bullseye",
-      "amd64/julia:1.10.1-bullseye",
+      "amd64/julia:1.10.2-bullseye",
       "amd64/julia:1.10-bullseye",
       "amd64/julia:1-bullseye",
       "amd64/julia:bullseye",
-      "arm64v8/julia:1.10.1-bullseye",
+      "arm64v8/julia:1.10.2-bullseye",
       "arm64v8/julia:1.10-bullseye",
       "arm64v8/julia:1-bullseye",
       "arm64v8/julia:bullseye",
-      "i386/julia:1.10.1-bullseye",
+      "i386/julia:1.10.2-bullseye",
       "i386/julia:1.10-bullseye",
       "i386/julia:1-bullseye",
       "i386/julia:bullseye"
@@ -36772,22 +37353,22 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/julia.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "488218e5607ad811decac17862f06147d916c480",
+      "GitCommit": "8412fce8b8c25f568f809f9312e83a17e89f763a",
       "Directory": "1.10/bullseye",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1707958755
+      "SOURCE_DATE_EPOCH": 1709362755
     },
     "arches": {
       "amd64": {
         "tags": [
-          "julia:1.10.1-bullseye",
+          "julia:1.10.2-bullseye",
           "julia:1.10-bullseye",
           "julia:1-bullseye",
           "julia:bullseye"
         ],
         "archTags": [
-          "amd64/julia:1.10.1-bullseye",
+          "amd64/julia:1.10.2-bullseye",
           "amd64/julia:1.10-bullseye",
           "amd64/julia:1-bullseye",
           "amd64/julia:bullseye"
@@ -36810,13 +37391,13 @@
       },
       "arm64v8": {
         "tags": [
-          "julia:1.10.1-bullseye",
+          "julia:1.10.2-bullseye",
           "julia:1.10-bullseye",
           "julia:1-bullseye",
           "julia:bullseye"
         ],
         "archTags": [
-          "arm64v8/julia:1.10.1-bullseye",
+          "arm64v8/julia:1.10.2-bullseye",
           "arm64v8/julia:1.10-bullseye",
           "arm64v8/julia:1-bullseye",
           "arm64v8/julia:bullseye"
@@ -36840,13 +37421,13 @@
       },
       "i386": {
         "tags": [
-          "julia:1.10.1-bullseye",
+          "julia:1.10.2-bullseye",
           "julia:1.10-bullseye",
           "julia:1-bullseye",
           "julia:bullseye"
         ],
         "archTags": [
-          "i386/julia:1.10.1-bullseye",
+          "i386/julia:1.10.2-bullseye",
           "i386/julia:1.10-bullseye",
           "i386/julia:1-bullseye",
           "i386/julia:bullseye"
@@ -36869,23 +37450,23 @@
       }
     }
   },
-  "5def080afba051489fc873a33407efd805ed01d448aea02861fbe02dde33f336": {
-    "sourceId": "5def080afba051489fc873a33407efd805ed01d448aea02861fbe02dde33f336",
-    "reproducibleGitChecksum": "e94487a62a61f4d192b146a6fcea1f8ed8499b2424e0f58a47dd0370df57a4eb",
+  "3a2f4c3fca48eb128b067100068e6a8537af691ebf8f07d570e04363dda48ad4": {
+    "sourceId": "3a2f4c3fca48eb128b067100068e6a8537af691ebf8f07d570e04363dda48ad4",
+    "reproducibleGitChecksum": "9be9979f54cf0a31d0b452712f83a5eb6d497be3953c576a8cacaa6acdb7de2a",
     "allTags": [
-      "julia:1.10.1-alpine3.19",
+      "julia:1.10.2-alpine3.19",
       "julia:1.10-alpine3.19",
       "julia:1-alpine3.19",
       "julia:alpine3.19",
-      "julia:1.10.1-alpine",
+      "julia:1.10.2-alpine",
       "julia:1.10-alpine",
       "julia:1-alpine",
       "julia:alpine",
-      "amd64/julia:1.10.1-alpine3.19",
+      "amd64/julia:1.10.2-alpine3.19",
       "amd64/julia:1.10-alpine3.19",
       "amd64/julia:1-alpine3.19",
       "amd64/julia:alpine3.19",
-      "amd64/julia:1.10.1-alpine",
+      "amd64/julia:1.10.2-alpine",
       "amd64/julia:1.10-alpine",
       "amd64/julia:1-alpine",
       "amd64/julia:alpine"
@@ -36893,30 +37474,30 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/julia.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "488218e5607ad811decac17862f06147d916c480",
+      "GitCommit": "8412fce8b8c25f568f809f9312e83a17e89f763a",
       "Directory": "1.10/alpine3.19",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1707958755
+      "SOURCE_DATE_EPOCH": 1709362755
     },
     "arches": {
       "amd64": {
         "tags": [
-          "julia:1.10.1-alpine3.19",
+          "julia:1.10.2-alpine3.19",
           "julia:1.10-alpine3.19",
           "julia:1-alpine3.19",
           "julia:alpine3.19",
-          "julia:1.10.1-alpine",
+          "julia:1.10.2-alpine",
           "julia:1.10-alpine",
           "julia:1-alpine",
           "julia:alpine"
         ],
         "archTags": [
-          "amd64/julia:1.10.1-alpine3.19",
+          "amd64/julia:1.10.2-alpine3.19",
           "amd64/julia:1.10-alpine3.19",
           "amd64/julia:1-alpine3.19",
           "amd64/julia:alpine3.19",
-          "amd64/julia:1.10.1-alpine",
+          "amd64/julia:1.10.2-alpine",
           "amd64/julia:1.10-alpine",
           "amd64/julia:1-alpine",
           "amd64/julia:alpine"
@@ -36939,15 +37520,15 @@
       }
     }
   },
-  "110ec47d411bcbe6e8f67294fcb881a5c3c3c12e286dd43abe6fe5bc62ea12d2": {
-    "sourceId": "110ec47d411bcbe6e8f67294fcb881a5c3c3c12e286dd43abe6fe5bc62ea12d2",
-    "reproducibleGitChecksum": "52d84b1e062ae2f68973795ef78e2cfdb22645cbfc47dcbf27cec3c96c5a60ac",
+  "972567cfeecc54167150dfaf229ae051d015262828ecd8ed4c6f837bd1ac6881": {
+    "sourceId": "972567cfeecc54167150dfaf229ae051d015262828ecd8ed4c6f837bd1ac6881",
+    "reproducibleGitChecksum": "77cdb7b0385c8bd5783e4ee2a09553a8f00fd70e3d2d055b0c5ba3c482d6a7f7",
     "allTags": [
-      "julia:1.10.1-alpine3.18",
+      "julia:1.10.2-alpine3.18",
       "julia:1.10-alpine3.18",
       "julia:1-alpine3.18",
       "julia:alpine3.18",
-      "amd64/julia:1.10.1-alpine3.18",
+      "amd64/julia:1.10.2-alpine3.18",
       "amd64/julia:1.10-alpine3.18",
       "amd64/julia:1-alpine3.18",
       "amd64/julia:alpine3.18"
@@ -36955,22 +37536,22 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/julia.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "488218e5607ad811decac17862f06147d916c480",
+      "GitCommit": "8412fce8b8c25f568f809f9312e83a17e89f763a",
       "Directory": "1.10/alpine3.18",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1707958755
+      "SOURCE_DATE_EPOCH": 1709362755
     },
     "arches": {
       "amd64": {
         "tags": [
-          "julia:1.10.1-alpine3.18",
+          "julia:1.10.2-alpine3.18",
           "julia:1.10-alpine3.18",
           "julia:1-alpine3.18",
           "julia:alpine3.18"
         ],
         "archTags": [
-          "amd64/julia:1.10.1-alpine3.18",
+          "amd64/julia:1.10.2-alpine3.18",
           "amd64/julia:1.10-alpine3.18",
           "amd64/julia:1-alpine3.18",
           "amd64/julia:alpine3.18"
@@ -36993,31 +37574,31 @@
       }
     }
   },
-  "bc03cdbe1300832a83d4794bff28054dff21a85d959cad9e9853c04ac83001fb": {
-    "sourceId": "bc03cdbe1300832a83d4794bff28054dff21a85d959cad9e9853c04ac83001fb",
-    "reproducibleGitChecksum": "1c908000090091ca848e87f59b6a3a47a41a80f4471838eaa7b132444593a8ac",
+  "de66549ac2ae67d94a25e3b0dca4fc212a999f661731991021b99ddd45f82486": {
+    "sourceId": "de66549ac2ae67d94a25e3b0dca4fc212a999f661731991021b99ddd45f82486",
+    "reproducibleGitChecksum": "06e6d6fdfbd5ca3bcbbeba271a9fe0b654df04d433bed37c2850e377e88dd5f0",
     "allTags": [
-      "julia:1.10.1-windowsservercore-ltsc2022",
+      "julia:1.10.2-windowsservercore-ltsc2022",
       "julia:1.10-windowsservercore-ltsc2022",
       "julia:1-windowsservercore-ltsc2022",
       "julia:windowsservercore-ltsc2022",
-      "julia:1.10.1",
+      "julia:1.10.2",
       "julia:1.10",
       "julia:1",
       "julia:latest",
-      "julia:1.10.1-windowsservercore",
+      "julia:1.10.2-windowsservercore",
       "julia:1.10-windowsservercore",
       "julia:1-windowsservercore",
       "julia:windowsservercore",
-      "winamd64/julia:1.10.1-windowsservercore-ltsc2022",
+      "winamd64/julia:1.10.2-windowsservercore-ltsc2022",
       "winamd64/julia:1.10-windowsservercore-ltsc2022",
       "winamd64/julia:1-windowsservercore-ltsc2022",
       "winamd64/julia:windowsservercore-ltsc2022",
-      "winamd64/julia:1.10.1",
+      "winamd64/julia:1.10.2",
       "winamd64/julia:1.10",
       "winamd64/julia:1",
       "winamd64/julia:latest",
-      "winamd64/julia:1.10.1-windowsservercore",
+      "winamd64/julia:1.10.2-windowsservercore",
       "winamd64/julia:1.10-windowsservercore",
       "winamd64/julia:1-windowsservercore",
       "winamd64/julia:windowsservercore"
@@ -37025,38 +37606,38 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/julia.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "488218e5607ad811decac17862f06147d916c480",
+      "GitCommit": "8412fce8b8c25f568f809f9312e83a17e89f763a",
       "Directory": "1.10/windows/windowsservercore-ltsc2022",
       "File": "Dockerfile",
       "Builder": "classic",
-      "SOURCE_DATE_EPOCH": 1707958755
+      "SOURCE_DATE_EPOCH": 1709362755
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "julia:1.10.1-windowsservercore-ltsc2022",
+          "julia:1.10.2-windowsservercore-ltsc2022",
           "julia:1.10-windowsservercore-ltsc2022",
           "julia:1-windowsservercore-ltsc2022",
           "julia:windowsservercore-ltsc2022",
-          "julia:1.10.1",
+          "julia:1.10.2",
           "julia:1.10",
           "julia:1",
           "julia:latest",
-          "julia:1.10.1-windowsservercore",
+          "julia:1.10.2-windowsservercore",
           "julia:1.10-windowsservercore",
           "julia:1-windowsservercore",
           "julia:windowsservercore"
         ],
         "archTags": [
-          "winamd64/julia:1.10.1-windowsservercore-ltsc2022",
+          "winamd64/julia:1.10.2-windowsservercore-ltsc2022",
           "winamd64/julia:1.10-windowsservercore-ltsc2022",
           "winamd64/julia:1-windowsservercore-ltsc2022",
           "winamd64/julia:windowsservercore-ltsc2022",
-          "winamd64/julia:1.10.1",
+          "winamd64/julia:1.10.2",
           "winamd64/julia:1.10",
           "winamd64/julia:1",
           "winamd64/julia:latest",
-          "winamd64/julia:1.10.1-windowsservercore",
+          "winamd64/julia:1.10.2-windowsservercore",
           "winamd64/julia:1.10-windowsservercore",
           "winamd64/julia:1-windowsservercore",
           "winamd64/julia:windowsservercore"
@@ -37079,31 +37660,31 @@
       }
     }
   },
-  "d774f41f25781cb44888d12ba1395841f43fa1db616c845570cbb5e7feda73d0": {
-    "sourceId": "d774f41f25781cb44888d12ba1395841f43fa1db616c845570cbb5e7feda73d0",
-    "reproducibleGitChecksum": "907bdd5a32c7c7f6656a15e6dd94633b5bd9319d68849b02f4e88d5ac253a0a5",
+  "94735f6664c399940ce82cb624076d4de988cc8ff5f62fb07ef5f0b37cc14eb0": {
+    "sourceId": "94735f6664c399940ce82cb624076d4de988cc8ff5f62fb07ef5f0b37cc14eb0",
+    "reproducibleGitChecksum": "278f4dc6aa6d14b825e9509f5dfdb772747b97b0e1bca779d23974dc5e8551ba",
     "allTags": [
-      "julia:1.10.1-windowsservercore-1809",
+      "julia:1.10.2-windowsservercore-1809",
       "julia:1.10-windowsservercore-1809",
       "julia:1-windowsservercore-1809",
       "julia:windowsservercore-1809",
-      "julia:1.10.1",
+      "julia:1.10.2",
       "julia:1.10",
       "julia:1",
       "julia:latest",
-      "julia:1.10.1-windowsservercore",
+      "julia:1.10.2-windowsservercore",
       "julia:1.10-windowsservercore",
       "julia:1-windowsservercore",
       "julia:windowsservercore",
-      "winamd64/julia:1.10.1-windowsservercore-1809",
+      "winamd64/julia:1.10.2-windowsservercore-1809",
       "winamd64/julia:1.10-windowsservercore-1809",
       "winamd64/julia:1-windowsservercore-1809",
       "winamd64/julia:windowsservercore-1809",
-      "winamd64/julia:1.10.1",
+      "winamd64/julia:1.10.2",
       "winamd64/julia:1.10",
       "winamd64/julia:1",
       "winamd64/julia:latest",
-      "winamd64/julia:1.10.1-windowsservercore",
+      "winamd64/julia:1.10.2-windowsservercore",
       "winamd64/julia:1.10-windowsservercore",
       "winamd64/julia:1-windowsservercore",
       "winamd64/julia:windowsservercore"
@@ -37111,38 +37692,38 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/julia.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "488218e5607ad811decac17862f06147d916c480",
+      "GitCommit": "8412fce8b8c25f568f809f9312e83a17e89f763a",
       "Directory": "1.10/windows/windowsservercore-1809",
       "File": "Dockerfile",
       "Builder": "classic",
-      "SOURCE_DATE_EPOCH": 1707958755
+      "SOURCE_DATE_EPOCH": 1709362755
     },
     "arches": {
       "windows-amd64": {
         "tags": [
-          "julia:1.10.1-windowsservercore-1809",
+          "julia:1.10.2-windowsservercore-1809",
           "julia:1.10-windowsservercore-1809",
           "julia:1-windowsservercore-1809",
           "julia:windowsservercore-1809",
-          "julia:1.10.1",
+          "julia:1.10.2",
           "julia:1.10",
           "julia:1",
           "julia:latest",
-          "julia:1.10.1-windowsservercore",
+          "julia:1.10.2-windowsservercore",
           "julia:1.10-windowsservercore",
           "julia:1-windowsservercore",
           "julia:windowsservercore"
         ],
         "archTags": [
-          "winamd64/julia:1.10.1-windowsservercore-1809",
+          "winamd64/julia:1.10.2-windowsservercore-1809",
           "winamd64/julia:1.10-windowsservercore-1809",
           "winamd64/julia:1-windowsservercore-1809",
           "winamd64/julia:windowsservercore-1809",
-          "winamd64/julia:1.10.1",
+          "winamd64/julia:1.10.2",
           "winamd64/julia:1.10",
           "winamd64/julia:1",
           "winamd64/julia:latest",
-          "winamd64/julia:1.10.1-windowsservercore",
+          "winamd64/julia:1.10.2-windowsservercore",
           "winamd64/julia:1.10-windowsservercore",
           "winamd64/julia:1-windowsservercore",
           "winamd64/julia:windowsservercore"
@@ -98657,79 +99238,79 @@
       }
     }
   },
-  "9aa96032a52273e108b6026474f94e8452a9f20e6e36e83ca30532b6467b4be9": {
-    "sourceId": "9aa96032a52273e108b6026474f94e8452a9f20e6e36e83ca30532b6467b4be9",
-    "reproducibleGitChecksum": "dee7f4a288ba7195ec146f1e527ea3ea00bf104ad1b2fd6de3d30959c76a2ba2",
+  "179491199efbc25c970ad7d1f9096d2b1ea1b4205e1cf0cf942e0040f77ba273": {
+    "sourceId": "179491199efbc25c970ad7d1f9096d2b1ea1b4205e1cf0cf942e0040f77ba273",
+    "reproducibleGitChecksum": "26fd343b3af6b193d071afec6274fe8b9cef48728785e1ab7ec1171f4796ed44",
     "allTags": [
-      "redmine:5.1.1",
+      "redmine:5.1.2",
       "redmine:5.1",
       "redmine:5",
       "redmine:latest",
-      "redmine:5.1.1-bookworm",
+      "redmine:5.1.2-bookworm",
       "redmine:5.1-bookworm",
       "redmine:5-bookworm",
       "redmine:bookworm",
-      "amd64/redmine:5.1.1",
+      "amd64/redmine:5.1.2",
       "amd64/redmine:5.1",
       "amd64/redmine:5",
       "amd64/redmine:latest",
-      "amd64/redmine:5.1.1-bookworm",
+      "amd64/redmine:5.1.2-bookworm",
       "amd64/redmine:5.1-bookworm",
       "amd64/redmine:5-bookworm",
       "amd64/redmine:bookworm",
-      "arm32v5/redmine:5.1.1",
+      "arm32v5/redmine:5.1.2",
       "arm32v5/redmine:5.1",
       "arm32v5/redmine:5",
       "arm32v5/redmine:latest",
-      "arm32v5/redmine:5.1.1-bookworm",
+      "arm32v5/redmine:5.1.2-bookworm",
       "arm32v5/redmine:5.1-bookworm",
       "arm32v5/redmine:5-bookworm",
       "arm32v5/redmine:bookworm",
-      "arm32v7/redmine:5.1.1",
+      "arm32v7/redmine:5.1.2",
       "arm32v7/redmine:5.1",
       "arm32v7/redmine:5",
       "arm32v7/redmine:latest",
-      "arm32v7/redmine:5.1.1-bookworm",
+      "arm32v7/redmine:5.1.2-bookworm",
       "arm32v7/redmine:5.1-bookworm",
       "arm32v7/redmine:5-bookworm",
       "arm32v7/redmine:bookworm",
-      "arm64v8/redmine:5.1.1",
+      "arm64v8/redmine:5.1.2",
       "arm64v8/redmine:5.1",
       "arm64v8/redmine:5",
       "arm64v8/redmine:latest",
-      "arm64v8/redmine:5.1.1-bookworm",
+      "arm64v8/redmine:5.1.2-bookworm",
       "arm64v8/redmine:5.1-bookworm",
       "arm64v8/redmine:5-bookworm",
       "arm64v8/redmine:bookworm",
-      "i386/redmine:5.1.1",
+      "i386/redmine:5.1.2",
       "i386/redmine:5.1",
       "i386/redmine:5",
       "i386/redmine:latest",
-      "i386/redmine:5.1.1-bookworm",
+      "i386/redmine:5.1.2-bookworm",
       "i386/redmine:5.1-bookworm",
       "i386/redmine:5-bookworm",
       "i386/redmine:bookworm",
-      "mips64le/redmine:5.1.1",
+      "mips64le/redmine:5.1.2",
       "mips64le/redmine:5.1",
       "mips64le/redmine:5",
       "mips64le/redmine:latest",
-      "mips64le/redmine:5.1.1-bookworm",
+      "mips64le/redmine:5.1.2-bookworm",
       "mips64le/redmine:5.1-bookworm",
       "mips64le/redmine:5-bookworm",
       "mips64le/redmine:bookworm",
-      "ppc64le/redmine:5.1.1",
+      "ppc64le/redmine:5.1.2",
       "ppc64le/redmine:5.1",
       "ppc64le/redmine:5",
       "ppc64le/redmine:latest",
-      "ppc64le/redmine:5.1.1-bookworm",
+      "ppc64le/redmine:5.1.2-bookworm",
       "ppc64le/redmine:5.1-bookworm",
       "ppc64le/redmine:5-bookworm",
       "ppc64le/redmine:bookworm",
-      "s390x/redmine:5.1.1",
+      "s390x/redmine:5.1.2",
       "s390x/redmine:5.1",
       "s390x/redmine:5",
       "s390x/redmine:latest",
-      "s390x/redmine:5.1.1-bookworm",
+      "s390x/redmine:5.1.2-bookworm",
       "s390x/redmine:5.1-bookworm",
       "s390x/redmine:5-bookworm",
       "s390x/redmine:bookworm"
@@ -98737,30 +99318,30 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/redmine.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "9f8737bd02cab294935e8ef8521ae51bfad9aee8",
+      "GitCommit": "51b7921366b46e2dd5a7f9629b933a3e7a68fdb1",
       "Directory": "5.1/bookworm",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1704481377
+      "SOURCE_DATE_EPOCH": 1709588045
     },
     "arches": {
       "amd64": {
         "tags": [
-          "redmine:5.1.1",
+          "redmine:5.1.2",
           "redmine:5.1",
           "redmine:5",
           "redmine:latest",
-          "redmine:5.1.1-bookworm",
+          "redmine:5.1.2-bookworm",
           "redmine:5.1-bookworm",
           "redmine:5-bookworm",
           "redmine:bookworm"
         ],
         "archTags": [
-          "amd64/redmine:5.1.1",
+          "amd64/redmine:5.1.2",
           "amd64/redmine:5.1",
           "amd64/redmine:5",
           "amd64/redmine:latest",
-          "amd64/redmine:5.1.1-bookworm",
+          "amd64/redmine:5.1.2-bookworm",
           "amd64/redmine:5.1-bookworm",
           "amd64/redmine:5-bookworm",
           "amd64/redmine:bookworm"
@@ -98783,21 +99364,21 @@
       },
       "arm32v5": {
         "tags": [
-          "redmine:5.1.1",
+          "redmine:5.1.2",
           "redmine:5.1",
           "redmine:5",
           "redmine:latest",
-          "redmine:5.1.1-bookworm",
+          "redmine:5.1.2-bookworm",
           "redmine:5.1-bookworm",
           "redmine:5-bookworm",
           "redmine:bookworm"
         ],
         "archTags": [
-          "arm32v5/redmine:5.1.1",
+          "arm32v5/redmine:5.1.2",
           "arm32v5/redmine:5.1",
           "arm32v5/redmine:5",
           "arm32v5/redmine:latest",
-          "arm32v5/redmine:5.1.1-bookworm",
+          "arm32v5/redmine:5.1.2-bookworm",
           "arm32v5/redmine:5.1-bookworm",
           "arm32v5/redmine:5-bookworm",
           "arm32v5/redmine:bookworm"
@@ -98821,21 +99402,21 @@
       },
       "arm32v7": {
         "tags": [
-          "redmine:5.1.1",
+          "redmine:5.1.2",
           "redmine:5.1",
           "redmine:5",
           "redmine:latest",
-          "redmine:5.1.1-bookworm",
+          "redmine:5.1.2-bookworm",
           "redmine:5.1-bookworm",
           "redmine:5-bookworm",
           "redmine:bookworm"
         ],
         "archTags": [
-          "arm32v7/redmine:5.1.1",
+          "arm32v7/redmine:5.1.2",
           "arm32v7/redmine:5.1",
           "arm32v7/redmine:5",
           "arm32v7/redmine:latest",
-          "arm32v7/redmine:5.1.1-bookworm",
+          "arm32v7/redmine:5.1.2-bookworm",
           "arm32v7/redmine:5.1-bookworm",
           "arm32v7/redmine:5-bookworm",
           "arm32v7/redmine:bookworm"
@@ -98859,21 +99440,21 @@
       },
       "arm64v8": {
         "tags": [
-          "redmine:5.1.1",
+          "redmine:5.1.2",
           "redmine:5.1",
           "redmine:5",
           "redmine:latest",
-          "redmine:5.1.1-bookworm",
+          "redmine:5.1.2-bookworm",
           "redmine:5.1-bookworm",
           "redmine:5-bookworm",
           "redmine:bookworm"
         ],
         "archTags": [
-          "arm64v8/redmine:5.1.1",
+          "arm64v8/redmine:5.1.2",
           "arm64v8/redmine:5.1",
           "arm64v8/redmine:5",
           "arm64v8/redmine:latest",
-          "arm64v8/redmine:5.1.1-bookworm",
+          "arm64v8/redmine:5.1.2-bookworm",
           "arm64v8/redmine:5.1-bookworm",
           "arm64v8/redmine:5-bookworm",
           "arm64v8/redmine:bookworm"
@@ -98897,21 +99478,21 @@
       },
       "i386": {
         "tags": [
-          "redmine:5.1.1",
+          "redmine:5.1.2",
           "redmine:5.1",
           "redmine:5",
           "redmine:latest",
-          "redmine:5.1.1-bookworm",
+          "redmine:5.1.2-bookworm",
           "redmine:5.1-bookworm",
           "redmine:5-bookworm",
           "redmine:bookworm"
         ],
         "archTags": [
-          "i386/redmine:5.1.1",
+          "i386/redmine:5.1.2",
           "i386/redmine:5.1",
           "i386/redmine:5",
           "i386/redmine:latest",
-          "i386/redmine:5.1.1-bookworm",
+          "i386/redmine:5.1.2-bookworm",
           "i386/redmine:5.1-bookworm",
           "i386/redmine:5-bookworm",
           "i386/redmine:bookworm"
@@ -98934,21 +99515,21 @@
       },
       "mips64le": {
         "tags": [
-          "redmine:5.1.1",
+          "redmine:5.1.2",
           "redmine:5.1",
           "redmine:5",
           "redmine:latest",
-          "redmine:5.1.1-bookworm",
+          "redmine:5.1.2-bookworm",
           "redmine:5.1-bookworm",
           "redmine:5-bookworm",
           "redmine:bookworm"
         ],
         "archTags": [
-          "mips64le/redmine:5.1.1",
+          "mips64le/redmine:5.1.2",
           "mips64le/redmine:5.1",
           "mips64le/redmine:5",
           "mips64le/redmine:latest",
-          "mips64le/redmine:5.1.1-bookworm",
+          "mips64le/redmine:5.1.2-bookworm",
           "mips64le/redmine:5.1-bookworm",
           "mips64le/redmine:5-bookworm",
           "mips64le/redmine:bookworm"
@@ -98971,21 +99552,21 @@
       },
       "ppc64le": {
         "tags": [
-          "redmine:5.1.1",
+          "redmine:5.1.2",
           "redmine:5.1",
           "redmine:5",
           "redmine:latest",
-          "redmine:5.1.1-bookworm",
+          "redmine:5.1.2-bookworm",
           "redmine:5.1-bookworm",
           "redmine:5-bookworm",
           "redmine:bookworm"
         ],
         "archTags": [
-          "ppc64le/redmine:5.1.1",
+          "ppc64le/redmine:5.1.2",
           "ppc64le/redmine:5.1",
           "ppc64le/redmine:5",
           "ppc64le/redmine:latest",
-          "ppc64le/redmine:5.1.1-bookworm",
+          "ppc64le/redmine:5.1.2-bookworm",
           "ppc64le/redmine:5.1-bookworm",
           "ppc64le/redmine:5-bookworm",
           "ppc64le/redmine:bookworm"
@@ -99008,21 +99589,21 @@
       },
       "s390x": {
         "tags": [
-          "redmine:5.1.1",
+          "redmine:5.1.2",
           "redmine:5.1",
           "redmine:5",
           "redmine:latest",
-          "redmine:5.1.1-bookworm",
+          "redmine:5.1.2-bookworm",
           "redmine:5.1-bookworm",
           "redmine:5-bookworm",
           "redmine:bookworm"
         ],
         "archTags": [
-          "s390x/redmine:5.1.1",
+          "s390x/redmine:5.1.2",
           "s390x/redmine:5.1",
           "s390x/redmine:5",
           "s390x/redmine:latest",
-          "s390x/redmine:5.1.1-bookworm",
+          "s390x/redmine:5.1.2-bookworm",
           "s390x/redmine:5.1-bookworm",
           "s390x/redmine:5-bookworm",
           "s390x/redmine:bookworm"
@@ -99045,71 +99626,71 @@
       }
     }
   },
-  "0d29fa8f71860c1b7857c090d26f9ae31f312db36ce04a8c1af08f7966e823d0": {
-    "sourceId": "0d29fa8f71860c1b7857c090d26f9ae31f312db36ce04a8c1af08f7966e823d0",
-    "reproducibleGitChecksum": "9b5a858a5e67110d682a21075e759a187fc04abeb25c81bd6d37a8bedbb6e3a0",
+  "9628d2b7d5a2a61464ec2e916eefaf152c6c772efd14028de78f67335b10e425": {
+    "sourceId": "9628d2b7d5a2a61464ec2e916eefaf152c6c772efd14028de78f67335b10e425",
+    "reproducibleGitChecksum": "325e6e314be915ed55e46c9f817dc260f764ece276a39a03d75017593fe87049",
     "allTags": [
-      "redmine:5.1.1-alpine3.18",
+      "redmine:5.1.2-alpine3.18",
       "redmine:5.1-alpine3.18",
       "redmine:5-alpine3.18",
       "redmine:alpine3.18",
-      "redmine:5.1.1-alpine",
+      "redmine:5.1.2-alpine",
       "redmine:5.1-alpine",
       "redmine:5-alpine",
       "redmine:alpine",
-      "amd64/redmine:5.1.1-alpine3.18",
+      "amd64/redmine:5.1.2-alpine3.18",
       "amd64/redmine:5.1-alpine3.18",
       "amd64/redmine:5-alpine3.18",
       "amd64/redmine:alpine3.18",
-      "amd64/redmine:5.1.1-alpine",
+      "amd64/redmine:5.1.2-alpine",
       "amd64/redmine:5.1-alpine",
       "amd64/redmine:5-alpine",
       "amd64/redmine:alpine",
-      "arm32v6/redmine:5.1.1-alpine3.18",
+      "arm32v6/redmine:5.1.2-alpine3.18",
       "arm32v6/redmine:5.1-alpine3.18",
       "arm32v6/redmine:5-alpine3.18",
       "arm32v6/redmine:alpine3.18",
-      "arm32v6/redmine:5.1.1-alpine",
+      "arm32v6/redmine:5.1.2-alpine",
       "arm32v6/redmine:5.1-alpine",
       "arm32v6/redmine:5-alpine",
       "arm32v6/redmine:alpine",
-      "arm32v7/redmine:5.1.1-alpine3.18",
+      "arm32v7/redmine:5.1.2-alpine3.18",
       "arm32v7/redmine:5.1-alpine3.18",
       "arm32v7/redmine:5-alpine3.18",
       "arm32v7/redmine:alpine3.18",
-      "arm32v7/redmine:5.1.1-alpine",
+      "arm32v7/redmine:5.1.2-alpine",
       "arm32v7/redmine:5.1-alpine",
       "arm32v7/redmine:5-alpine",
       "arm32v7/redmine:alpine",
-      "arm64v8/redmine:5.1.1-alpine3.18",
+      "arm64v8/redmine:5.1.2-alpine3.18",
       "arm64v8/redmine:5.1-alpine3.18",
       "arm64v8/redmine:5-alpine3.18",
       "arm64v8/redmine:alpine3.18",
-      "arm64v8/redmine:5.1.1-alpine",
+      "arm64v8/redmine:5.1.2-alpine",
       "arm64v8/redmine:5.1-alpine",
       "arm64v8/redmine:5-alpine",
       "arm64v8/redmine:alpine",
-      "i386/redmine:5.1.1-alpine3.18",
+      "i386/redmine:5.1.2-alpine3.18",
       "i386/redmine:5.1-alpine3.18",
       "i386/redmine:5-alpine3.18",
       "i386/redmine:alpine3.18",
-      "i386/redmine:5.1.1-alpine",
+      "i386/redmine:5.1.2-alpine",
       "i386/redmine:5.1-alpine",
       "i386/redmine:5-alpine",
       "i386/redmine:alpine",
-      "ppc64le/redmine:5.1.1-alpine3.18",
+      "ppc64le/redmine:5.1.2-alpine3.18",
       "ppc64le/redmine:5.1-alpine3.18",
       "ppc64le/redmine:5-alpine3.18",
       "ppc64le/redmine:alpine3.18",
-      "ppc64le/redmine:5.1.1-alpine",
+      "ppc64le/redmine:5.1.2-alpine",
       "ppc64le/redmine:5.1-alpine",
       "ppc64le/redmine:5-alpine",
       "ppc64le/redmine:alpine",
-      "s390x/redmine:5.1.1-alpine3.18",
+      "s390x/redmine:5.1.2-alpine3.18",
       "s390x/redmine:5.1-alpine3.18",
       "s390x/redmine:5-alpine3.18",
       "s390x/redmine:alpine3.18",
-      "s390x/redmine:5.1.1-alpine",
+      "s390x/redmine:5.1.2-alpine",
       "s390x/redmine:5.1-alpine",
       "s390x/redmine:5-alpine",
       "s390x/redmine:alpine"
@@ -99117,30 +99698,30 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/redmine.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "5b28bcaaca4e14c41564d43cf5e53b0a13b49155",
+      "GitCommit": "51b7921366b46e2dd5a7f9629b933a3e7a68fdb1",
       "Directory": "5.1/alpine3.18",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1703007767
+      "SOURCE_DATE_EPOCH": 1709588045
     },
     "arches": {
       "amd64": {
         "tags": [
-          "redmine:5.1.1-alpine3.18",
+          "redmine:5.1.2-alpine3.18",
           "redmine:5.1-alpine3.18",
           "redmine:5-alpine3.18",
           "redmine:alpine3.18",
-          "redmine:5.1.1-alpine",
+          "redmine:5.1.2-alpine",
           "redmine:5.1-alpine",
           "redmine:5-alpine",
           "redmine:alpine"
         ],
         "archTags": [
-          "amd64/redmine:5.1.1-alpine3.18",
+          "amd64/redmine:5.1.2-alpine3.18",
           "amd64/redmine:5.1-alpine3.18",
           "amd64/redmine:5-alpine3.18",
           "amd64/redmine:alpine3.18",
-          "amd64/redmine:5.1.1-alpine",
+          "amd64/redmine:5.1.2-alpine",
           "amd64/redmine:5.1-alpine",
           "amd64/redmine:5-alpine",
           "amd64/redmine:alpine"
@@ -99163,21 +99744,21 @@
       },
       "arm32v6": {
         "tags": [
-          "redmine:5.1.1-alpine3.18",
+          "redmine:5.1.2-alpine3.18",
           "redmine:5.1-alpine3.18",
           "redmine:5-alpine3.18",
           "redmine:alpine3.18",
-          "redmine:5.1.1-alpine",
+          "redmine:5.1.2-alpine",
           "redmine:5.1-alpine",
           "redmine:5-alpine",
           "redmine:alpine"
         ],
         "archTags": [
-          "arm32v6/redmine:5.1.1-alpine3.18",
+          "arm32v6/redmine:5.1.2-alpine3.18",
           "arm32v6/redmine:5.1-alpine3.18",
           "arm32v6/redmine:5-alpine3.18",
           "arm32v6/redmine:alpine3.18",
-          "arm32v6/redmine:5.1.1-alpine",
+          "arm32v6/redmine:5.1.2-alpine",
           "arm32v6/redmine:5.1-alpine",
           "arm32v6/redmine:5-alpine",
           "arm32v6/redmine:alpine"
@@ -99201,21 +99782,21 @@
       },
       "arm32v7": {
         "tags": [
-          "redmine:5.1.1-alpine3.18",
+          "redmine:5.1.2-alpine3.18",
           "redmine:5.1-alpine3.18",
           "redmine:5-alpine3.18",
           "redmine:alpine3.18",
-          "redmine:5.1.1-alpine",
+          "redmine:5.1.2-alpine",
           "redmine:5.1-alpine",
           "redmine:5-alpine",
           "redmine:alpine"
         ],
         "archTags": [
-          "arm32v7/redmine:5.1.1-alpine3.18",
+          "arm32v7/redmine:5.1.2-alpine3.18",
           "arm32v7/redmine:5.1-alpine3.18",
           "arm32v7/redmine:5-alpine3.18",
           "arm32v7/redmine:alpine3.18",
-          "arm32v7/redmine:5.1.1-alpine",
+          "arm32v7/redmine:5.1.2-alpine",
           "arm32v7/redmine:5.1-alpine",
           "arm32v7/redmine:5-alpine",
           "arm32v7/redmine:alpine"
@@ -99239,21 +99820,21 @@
       },
       "arm64v8": {
         "tags": [
-          "redmine:5.1.1-alpine3.18",
+          "redmine:5.1.2-alpine3.18",
           "redmine:5.1-alpine3.18",
           "redmine:5-alpine3.18",
           "redmine:alpine3.18",
-          "redmine:5.1.1-alpine",
+          "redmine:5.1.2-alpine",
           "redmine:5.1-alpine",
           "redmine:5-alpine",
           "redmine:alpine"
         ],
         "archTags": [
-          "arm64v8/redmine:5.1.1-alpine3.18",
+          "arm64v8/redmine:5.1.2-alpine3.18",
           "arm64v8/redmine:5.1-alpine3.18",
           "arm64v8/redmine:5-alpine3.18",
           "arm64v8/redmine:alpine3.18",
-          "arm64v8/redmine:5.1.1-alpine",
+          "arm64v8/redmine:5.1.2-alpine",
           "arm64v8/redmine:5.1-alpine",
           "arm64v8/redmine:5-alpine",
           "arm64v8/redmine:alpine"
@@ -99277,21 +99858,21 @@
       },
       "i386": {
         "tags": [
-          "redmine:5.1.1-alpine3.18",
+          "redmine:5.1.2-alpine3.18",
           "redmine:5.1-alpine3.18",
           "redmine:5-alpine3.18",
           "redmine:alpine3.18",
-          "redmine:5.1.1-alpine",
+          "redmine:5.1.2-alpine",
           "redmine:5.1-alpine",
           "redmine:5-alpine",
           "redmine:alpine"
         ],
         "archTags": [
-          "i386/redmine:5.1.1-alpine3.18",
+          "i386/redmine:5.1.2-alpine3.18",
           "i386/redmine:5.1-alpine3.18",
           "i386/redmine:5-alpine3.18",
           "i386/redmine:alpine3.18",
-          "i386/redmine:5.1.1-alpine",
+          "i386/redmine:5.1.2-alpine",
           "i386/redmine:5.1-alpine",
           "i386/redmine:5-alpine",
           "i386/redmine:alpine"
@@ -99314,21 +99895,21 @@
       },
       "ppc64le": {
         "tags": [
-          "redmine:5.1.1-alpine3.18",
+          "redmine:5.1.2-alpine3.18",
           "redmine:5.1-alpine3.18",
           "redmine:5-alpine3.18",
           "redmine:alpine3.18",
-          "redmine:5.1.1-alpine",
+          "redmine:5.1.2-alpine",
           "redmine:5.1-alpine",
           "redmine:5-alpine",
           "redmine:alpine"
         ],
         "archTags": [
-          "ppc64le/redmine:5.1.1-alpine3.18",
+          "ppc64le/redmine:5.1.2-alpine3.18",
           "ppc64le/redmine:5.1-alpine3.18",
           "ppc64le/redmine:5-alpine3.18",
           "ppc64le/redmine:alpine3.18",
-          "ppc64le/redmine:5.1.1-alpine",
+          "ppc64le/redmine:5.1.2-alpine",
           "ppc64le/redmine:5.1-alpine",
           "ppc64le/redmine:5-alpine",
           "ppc64le/redmine:alpine"
@@ -99351,21 +99932,21 @@
       },
       "s390x": {
         "tags": [
-          "redmine:5.1.1-alpine3.18",
+          "redmine:5.1.2-alpine3.18",
           "redmine:5.1-alpine3.18",
           "redmine:5-alpine3.18",
           "redmine:alpine3.18",
-          "redmine:5.1.1-alpine",
+          "redmine:5.1.2-alpine",
           "redmine:5.1-alpine",
           "redmine:5-alpine",
           "redmine:alpine"
         ],
         "archTags": [
-          "s390x/redmine:5.1.1-alpine3.18",
+          "s390x/redmine:5.1.2-alpine3.18",
           "s390x/redmine:5.1-alpine3.18",
           "s390x/redmine:5-alpine3.18",
           "s390x/redmine:alpine3.18",
-          "s390x/redmine:5.1.1-alpine",
+          "s390x/redmine:5.1.2-alpine",
           "s390x/redmine:5.1-alpine",
           "s390x/redmine:5-alpine",
           "s390x/redmine:alpine"
@@ -99388,68 +99969,68 @@
       }
     }
   },
-  "de8d9881c4537182d6f520acb1e87036712d07475bd5fc69e151db43fa1daed4": {
-    "sourceId": "de8d9881c4537182d6f520acb1e87036712d07475bd5fc69e151db43fa1daed4",
-    "reproducibleGitChecksum": "a480cdc214e749b1ef1e0e8a6132320c2728fc2e331d7a68f4eb5ad77b684d8f",
+  "b72750c37645278407fb661a9e87844e91dad1ff9ad843d4fc6a4c03cde4830b": {
+    "sourceId": "b72750c37645278407fb661a9e87844e91dad1ff9ad843d4fc6a4c03cde4830b",
+    "reproducibleGitChecksum": "075fd814b9d330e6c4331f9a296ecf127538f2587b61c4c556fc30a720a0df9c",
     "allTags": [
-      "redmine:5.0.7",
+      "redmine:5.0.8",
       "redmine:5.0",
-      "redmine:5.0.7-bookworm",
+      "redmine:5.0.8-bookworm",
       "redmine:5.0-bookworm",
-      "amd64/redmine:5.0.7",
+      "amd64/redmine:5.0.8",
       "amd64/redmine:5.0",
-      "amd64/redmine:5.0.7-bookworm",
+      "amd64/redmine:5.0.8-bookworm",
       "amd64/redmine:5.0-bookworm",
-      "arm32v5/redmine:5.0.7",
+      "arm32v5/redmine:5.0.8",
       "arm32v5/redmine:5.0",
-      "arm32v5/redmine:5.0.7-bookworm",
+      "arm32v5/redmine:5.0.8-bookworm",
       "arm32v5/redmine:5.0-bookworm",
-      "arm32v7/redmine:5.0.7",
+      "arm32v7/redmine:5.0.8",
       "arm32v7/redmine:5.0",
-      "arm32v7/redmine:5.0.7-bookworm",
+      "arm32v7/redmine:5.0.8-bookworm",
       "arm32v7/redmine:5.0-bookworm",
-      "arm64v8/redmine:5.0.7",
+      "arm64v8/redmine:5.0.8",
       "arm64v8/redmine:5.0",
-      "arm64v8/redmine:5.0.7-bookworm",
+      "arm64v8/redmine:5.0.8-bookworm",
       "arm64v8/redmine:5.0-bookworm",
-      "i386/redmine:5.0.7",
+      "i386/redmine:5.0.8",
       "i386/redmine:5.0",
-      "i386/redmine:5.0.7-bookworm",
+      "i386/redmine:5.0.8-bookworm",
       "i386/redmine:5.0-bookworm",
-      "mips64le/redmine:5.0.7",
+      "mips64le/redmine:5.0.8",
       "mips64le/redmine:5.0",
-      "mips64le/redmine:5.0.7-bookworm",
+      "mips64le/redmine:5.0.8-bookworm",
       "mips64le/redmine:5.0-bookworm",
-      "ppc64le/redmine:5.0.7",
+      "ppc64le/redmine:5.0.8",
       "ppc64le/redmine:5.0",
-      "ppc64le/redmine:5.0.7-bookworm",
+      "ppc64le/redmine:5.0.8-bookworm",
       "ppc64le/redmine:5.0-bookworm",
-      "s390x/redmine:5.0.7",
+      "s390x/redmine:5.0.8",
       "s390x/redmine:5.0",
-      "s390x/redmine:5.0.7-bookworm",
+      "s390x/redmine:5.0.8-bookworm",
       "s390x/redmine:5.0-bookworm"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/redmine.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "9f8737bd02cab294935e8ef8521ae51bfad9aee8",
+      "GitCommit": "a47825ab3251935beedb9d83ecdc80e78d1ccf28",
       "Directory": "5.0/bookworm",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1704481377
+      "SOURCE_DATE_EPOCH": 1709587573
     },
     "arches": {
       "amd64": {
         "tags": [
-          "redmine:5.0.7",
+          "redmine:5.0.8",
           "redmine:5.0",
-          "redmine:5.0.7-bookworm",
+          "redmine:5.0.8-bookworm",
           "redmine:5.0-bookworm"
         ],
         "archTags": [
-          "amd64/redmine:5.0.7",
+          "amd64/redmine:5.0.8",
           "amd64/redmine:5.0",
-          "amd64/redmine:5.0.7-bookworm",
+          "amd64/redmine:5.0.8-bookworm",
           "amd64/redmine:5.0-bookworm"
         ],
         "froms": [
@@ -99470,15 +100051,15 @@
       },
       "arm32v5": {
         "tags": [
-          "redmine:5.0.7",
+          "redmine:5.0.8",
           "redmine:5.0",
-          "redmine:5.0.7-bookworm",
+          "redmine:5.0.8-bookworm",
           "redmine:5.0-bookworm"
         ],
         "archTags": [
-          "arm32v5/redmine:5.0.7",
+          "arm32v5/redmine:5.0.8",
           "arm32v5/redmine:5.0",
-          "arm32v5/redmine:5.0.7-bookworm",
+          "arm32v5/redmine:5.0.8-bookworm",
           "arm32v5/redmine:5.0-bookworm"
         ],
         "froms": [
@@ -99500,15 +100081,15 @@
       },
       "arm32v7": {
         "tags": [
-          "redmine:5.0.7",
+          "redmine:5.0.8",
           "redmine:5.0",
-          "redmine:5.0.7-bookworm",
+          "redmine:5.0.8-bookworm",
           "redmine:5.0-bookworm"
         ],
         "archTags": [
-          "arm32v7/redmine:5.0.7",
+          "arm32v7/redmine:5.0.8",
           "arm32v7/redmine:5.0",
-          "arm32v7/redmine:5.0.7-bookworm",
+          "arm32v7/redmine:5.0.8-bookworm",
           "arm32v7/redmine:5.0-bookworm"
         ],
         "froms": [
@@ -99530,15 +100111,15 @@
       },
       "arm64v8": {
         "tags": [
-          "redmine:5.0.7",
+          "redmine:5.0.8",
           "redmine:5.0",
-          "redmine:5.0.7-bookworm",
+          "redmine:5.0.8-bookworm",
           "redmine:5.0-bookworm"
         ],
         "archTags": [
-          "arm64v8/redmine:5.0.7",
+          "arm64v8/redmine:5.0.8",
           "arm64v8/redmine:5.0",
-          "arm64v8/redmine:5.0.7-bookworm",
+          "arm64v8/redmine:5.0.8-bookworm",
           "arm64v8/redmine:5.0-bookworm"
         ],
         "froms": [
@@ -99560,15 +100141,15 @@
       },
       "i386": {
         "tags": [
-          "redmine:5.0.7",
+          "redmine:5.0.8",
           "redmine:5.0",
-          "redmine:5.0.7-bookworm",
+          "redmine:5.0.8-bookworm",
           "redmine:5.0-bookworm"
         ],
         "archTags": [
-          "i386/redmine:5.0.7",
+          "i386/redmine:5.0.8",
           "i386/redmine:5.0",
-          "i386/redmine:5.0.7-bookworm",
+          "i386/redmine:5.0.8-bookworm",
           "i386/redmine:5.0-bookworm"
         ],
         "froms": [
@@ -99589,15 +100170,15 @@
       },
       "mips64le": {
         "tags": [
-          "redmine:5.0.7",
+          "redmine:5.0.8",
           "redmine:5.0",
-          "redmine:5.0.7-bookworm",
+          "redmine:5.0.8-bookworm",
           "redmine:5.0-bookworm"
         ],
         "archTags": [
-          "mips64le/redmine:5.0.7",
+          "mips64le/redmine:5.0.8",
           "mips64le/redmine:5.0",
-          "mips64le/redmine:5.0.7-bookworm",
+          "mips64le/redmine:5.0.8-bookworm",
           "mips64le/redmine:5.0-bookworm"
         ],
         "froms": [
@@ -99618,15 +100199,15 @@
       },
       "ppc64le": {
         "tags": [
-          "redmine:5.0.7",
+          "redmine:5.0.8",
           "redmine:5.0",
-          "redmine:5.0.7-bookworm",
+          "redmine:5.0.8-bookworm",
           "redmine:5.0-bookworm"
         ],
         "archTags": [
-          "ppc64le/redmine:5.0.7",
+          "ppc64le/redmine:5.0.8",
           "ppc64le/redmine:5.0",
-          "ppc64le/redmine:5.0.7-bookworm",
+          "ppc64le/redmine:5.0.8-bookworm",
           "ppc64le/redmine:5.0-bookworm"
         ],
         "froms": [
@@ -99647,15 +100228,15 @@
       },
       "s390x": {
         "tags": [
-          "redmine:5.0.7",
+          "redmine:5.0.8",
           "redmine:5.0",
-          "redmine:5.0.7-bookworm",
+          "redmine:5.0.8-bookworm",
           "redmine:5.0-bookworm"
         ],
         "archTags": [
-          "s390x/redmine:5.0.7",
+          "s390x/redmine:5.0.8",
           "s390x/redmine:5.0",
-          "s390x/redmine:5.0.7-bookworm",
+          "s390x/redmine:5.0.8-bookworm",
           "s390x/redmine:5.0-bookworm"
         ],
         "froms": [
@@ -99676,64 +100257,64 @@
       }
     }
   },
-  "11065bc1980d3cd799037160e743a388e168ac7f14cd6b3dec86332b244e4cb0": {
-    "sourceId": "11065bc1980d3cd799037160e743a388e168ac7f14cd6b3dec86332b244e4cb0",
-    "reproducibleGitChecksum": "42f9b7863bd2c7a084b0730049679d6d4c6e2865f06e25465fb885fa56e0f694",
+  "0739399f7bcdfb380f8e89fa563f06aef1793be745c68c17d2cd926b37fb66dd": {
+    "sourceId": "0739399f7bcdfb380f8e89fa563f06aef1793be745c68c17d2cd926b37fb66dd",
+    "reproducibleGitChecksum": "cea9017ee656a6dc4e23ba6de011146fce3f8e41a29c932d808ea69efb96e2c1",
     "allTags": [
-      "redmine:5.0.7-alpine3.18",
+      "redmine:5.0.8-alpine3.18",
       "redmine:5.0-alpine3.18",
-      "redmine:5.0.7-alpine",
+      "redmine:5.0.8-alpine",
       "redmine:5.0-alpine",
-      "amd64/redmine:5.0.7-alpine3.18",
+      "amd64/redmine:5.0.8-alpine3.18",
       "amd64/redmine:5.0-alpine3.18",
-      "amd64/redmine:5.0.7-alpine",
+      "amd64/redmine:5.0.8-alpine",
       "amd64/redmine:5.0-alpine",
-      "arm32v6/redmine:5.0.7-alpine3.18",
+      "arm32v6/redmine:5.0.8-alpine3.18",
       "arm32v6/redmine:5.0-alpine3.18",
-      "arm32v6/redmine:5.0.7-alpine",
+      "arm32v6/redmine:5.0.8-alpine",
       "arm32v6/redmine:5.0-alpine",
-      "arm32v7/redmine:5.0.7-alpine3.18",
+      "arm32v7/redmine:5.0.8-alpine3.18",
       "arm32v7/redmine:5.0-alpine3.18",
-      "arm32v7/redmine:5.0.7-alpine",
+      "arm32v7/redmine:5.0.8-alpine",
       "arm32v7/redmine:5.0-alpine",
-      "arm64v8/redmine:5.0.7-alpine3.18",
+      "arm64v8/redmine:5.0.8-alpine3.18",
       "arm64v8/redmine:5.0-alpine3.18",
-      "arm64v8/redmine:5.0.7-alpine",
+      "arm64v8/redmine:5.0.8-alpine",
       "arm64v8/redmine:5.0-alpine",
-      "i386/redmine:5.0.7-alpine3.18",
+      "i386/redmine:5.0.8-alpine3.18",
       "i386/redmine:5.0-alpine3.18",
-      "i386/redmine:5.0.7-alpine",
+      "i386/redmine:5.0.8-alpine",
       "i386/redmine:5.0-alpine",
-      "ppc64le/redmine:5.0.7-alpine3.18",
+      "ppc64le/redmine:5.0.8-alpine3.18",
       "ppc64le/redmine:5.0-alpine3.18",
-      "ppc64le/redmine:5.0.7-alpine",
+      "ppc64le/redmine:5.0.8-alpine",
       "ppc64le/redmine:5.0-alpine",
-      "s390x/redmine:5.0.7-alpine3.18",
+      "s390x/redmine:5.0.8-alpine3.18",
       "s390x/redmine:5.0-alpine3.18",
-      "s390x/redmine:5.0.7-alpine",
+      "s390x/redmine:5.0.8-alpine",
       "s390x/redmine:5.0-alpine"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/redmine.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "d65c2af08af53ba1c68beca8b10ae59fa4e402d5",
+      "GitCommit": "a47825ab3251935beedb9d83ecdc80e78d1ccf28",
       "Directory": "5.0/alpine3.18",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1701120372
+      "SOURCE_DATE_EPOCH": 1709587573
     },
     "arches": {
       "amd64": {
         "tags": [
-          "redmine:5.0.7-alpine3.18",
+          "redmine:5.0.8-alpine3.18",
           "redmine:5.0-alpine3.18",
-          "redmine:5.0.7-alpine",
+          "redmine:5.0.8-alpine",
           "redmine:5.0-alpine"
         ],
         "archTags": [
-          "amd64/redmine:5.0.7-alpine3.18",
+          "amd64/redmine:5.0.8-alpine3.18",
           "amd64/redmine:5.0-alpine3.18",
-          "amd64/redmine:5.0.7-alpine",
+          "amd64/redmine:5.0.8-alpine",
           "amd64/redmine:5.0-alpine"
         ],
         "froms": [
@@ -99754,15 +100335,15 @@
       },
       "arm32v6": {
         "tags": [
-          "redmine:5.0.7-alpine3.18",
+          "redmine:5.0.8-alpine3.18",
           "redmine:5.0-alpine3.18",
-          "redmine:5.0.7-alpine",
+          "redmine:5.0.8-alpine",
           "redmine:5.0-alpine"
         ],
         "archTags": [
-          "arm32v6/redmine:5.0.7-alpine3.18",
+          "arm32v6/redmine:5.0.8-alpine3.18",
           "arm32v6/redmine:5.0-alpine3.18",
-          "arm32v6/redmine:5.0.7-alpine",
+          "arm32v6/redmine:5.0.8-alpine",
           "arm32v6/redmine:5.0-alpine"
         ],
         "froms": [
@@ -99784,15 +100365,15 @@
       },
       "arm32v7": {
         "tags": [
-          "redmine:5.0.7-alpine3.18",
+          "redmine:5.0.8-alpine3.18",
           "redmine:5.0-alpine3.18",
-          "redmine:5.0.7-alpine",
+          "redmine:5.0.8-alpine",
           "redmine:5.0-alpine"
         ],
         "archTags": [
-          "arm32v7/redmine:5.0.7-alpine3.18",
+          "arm32v7/redmine:5.0.8-alpine3.18",
           "arm32v7/redmine:5.0-alpine3.18",
-          "arm32v7/redmine:5.0.7-alpine",
+          "arm32v7/redmine:5.0.8-alpine",
           "arm32v7/redmine:5.0-alpine"
         ],
         "froms": [
@@ -99814,15 +100395,15 @@
       },
       "arm64v8": {
         "tags": [
-          "redmine:5.0.7-alpine3.18",
+          "redmine:5.0.8-alpine3.18",
           "redmine:5.0-alpine3.18",
-          "redmine:5.0.7-alpine",
+          "redmine:5.0.8-alpine",
           "redmine:5.0-alpine"
         ],
         "archTags": [
-          "arm64v8/redmine:5.0.7-alpine3.18",
+          "arm64v8/redmine:5.0.8-alpine3.18",
           "arm64v8/redmine:5.0-alpine3.18",
-          "arm64v8/redmine:5.0.7-alpine",
+          "arm64v8/redmine:5.0.8-alpine",
           "arm64v8/redmine:5.0-alpine"
         ],
         "froms": [
@@ -99844,15 +100425,15 @@
       },
       "i386": {
         "tags": [
-          "redmine:5.0.7-alpine3.18",
+          "redmine:5.0.8-alpine3.18",
           "redmine:5.0-alpine3.18",
-          "redmine:5.0.7-alpine",
+          "redmine:5.0.8-alpine",
           "redmine:5.0-alpine"
         ],
         "archTags": [
-          "i386/redmine:5.0.7-alpine3.18",
+          "i386/redmine:5.0.8-alpine3.18",
           "i386/redmine:5.0-alpine3.18",
-          "i386/redmine:5.0.7-alpine",
+          "i386/redmine:5.0.8-alpine",
           "i386/redmine:5.0-alpine"
         ],
         "froms": [
@@ -99873,15 +100454,15 @@
       },
       "ppc64le": {
         "tags": [
-          "redmine:5.0.7-alpine3.18",
+          "redmine:5.0.8-alpine3.18",
           "redmine:5.0-alpine3.18",
-          "redmine:5.0.7-alpine",
+          "redmine:5.0.8-alpine",
           "redmine:5.0-alpine"
         ],
         "archTags": [
-          "ppc64le/redmine:5.0.7-alpine3.18",
+          "ppc64le/redmine:5.0.8-alpine3.18",
           "ppc64le/redmine:5.0-alpine3.18",
-          "ppc64le/redmine:5.0.7-alpine",
+          "ppc64le/redmine:5.0.8-alpine",
           "ppc64le/redmine:5.0-alpine"
         ],
         "froms": [
@@ -99902,15 +100483,15 @@
       },
       "s390x": {
         "tags": [
-          "redmine:5.0.7-alpine3.18",
+          "redmine:5.0.8-alpine3.18",
           "redmine:5.0-alpine3.18",
-          "redmine:5.0.7-alpine",
+          "redmine:5.0.8-alpine",
           "redmine:5.0-alpine"
         ],
         "archTags": [
-          "s390x/redmine:5.0.7-alpine3.18",
+          "s390x/redmine:5.0.8-alpine3.18",
           "s390x/redmine:5.0-alpine3.18",
-          "s390x/redmine:5.0.7-alpine",
+          "s390x/redmine:5.0.8-alpine",
           "s390x/redmine:5.0-alpine"
         ],
         "froms": [
