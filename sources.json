@@ -28998,34 +28998,6 @@
           }
         }
       },
-      "arm32v7": {
-        "archTags": [
-          "arm32v7/memcached:1.6.24",
-          "arm32v7/memcached:1.6",
-          "arm32v7/memcached:1",
-          "arm32v7/memcached:latest",
-          "arm32v7/memcached:1.6.24-bookworm",
-          "arm32v7/memcached:1.6-bookworm",
-          "arm32v7/memcached:1-bookworm",
-          "arm32v7/memcached:bookworm"
-        ],
-        "froms": [
-          "debian:bookworm-slim"
-        ],
-        "lastStageFrom": "debian:bookworm-slim",
-        "platformString": "linux/arm/v7",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v7"
-        },
-        "parents": {
-          "debian:bookworm-slim": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
       "arm64v8": {
         "archTags": [
           "arm64v8/memcached:1.6.24",
@@ -29206,34 +29178,6 @@
         "platform": {
           "architecture": "amd64",
           "os": "linux"
-        },
-        "parents": {
-          "alpine:3.19": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v7": {
-        "archTags": [
-          "arm32v7/memcached:1.6.24-alpine",
-          "arm32v7/memcached:1.6-alpine",
-          "arm32v7/memcached:1-alpine",
-          "arm32v7/memcached:alpine",
-          "arm32v7/memcached:1.6.24-alpine3.19",
-          "arm32v7/memcached:1.6-alpine3.19",
-          "arm32v7/memcached:1-alpine3.19",
-          "arm32v7/memcached:alpine3.19"
-        ],
-        "froms": [
-          "alpine:3.19"
-        ],
-        "lastStageFrom": "alpine:3.19",
-        "platformString": "linux/arm/v7",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v7"
         },
         "parents": {
           "alpine:3.19": {
@@ -34580,24 +34524,24 @@
       }
     }
   },
-  "fbbb9e4af26e9c7063c247838d8a95b54ac06a1e7b537e13aad4f41028776949": {
-    "sourceId": "fbbb9e4af26e9c7063c247838d8a95b54ac06a1e7b537e13aad4f41028776949",
-    "reproducibleGitChecksum": "e1ee24bb6945466a41298771c9cfc3ed390c637d212380eab90f9cab6d9778f1",
+  "3e9dfe88ae358d37baa7a7a06c8576d9032402961cf85f4b5de07b45ebf3f3dd": {
+    "sourceId": "3e9dfe88ae358d37baa7a7a06c8576d9032402961cf85f4b5de07b45ebf3f3dd",
+    "reproducibleGitChecksum": "1f9f760e78abc9ec9b03aefb7c942b08faa42c2a7ab41988b0df13ce13d7f951",
     "tags": [
-      "openjdk:23-ea-13-jdk-oraclelinux8",
-      "openjdk:23-ea-13-oraclelinux8",
-      "openjdk:23-ea-jdk-oraclelinux8",
-      "openjdk:23-ea-oraclelinux8",
-      "openjdk:23-jdk-oraclelinux8",
-      "openjdk:23-oraclelinux8",
-      "openjdk:23-ea-13-jdk-oracle",
-      "openjdk:23-ea-13-oracle",
+      "openjdk:23-ea-14-jdk-oraclelinux9",
+      "openjdk:23-ea-14-oraclelinux9",
+      "openjdk:23-ea-jdk-oraclelinux9",
+      "openjdk:23-ea-oraclelinux9",
+      "openjdk:23-jdk-oraclelinux9",
+      "openjdk:23-oraclelinux9",
+      "openjdk:23-ea-14-jdk-oracle",
+      "openjdk:23-ea-14-oracle",
       "openjdk:23-ea-jdk-oracle",
       "openjdk:23-ea-oracle",
       "openjdk:23-jdk-oracle",
       "openjdk:23-oracle",
-      "openjdk:23-ea-13-jdk",
-      "openjdk:23-ea-13",
+      "openjdk:23-ea-14-jdk",
+      "openjdk:23-ea-14",
       "openjdk:23-ea-jdk",
       "openjdk:23-ea",
       "openjdk:23-jdk",
@@ -34606,45 +34550,45 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/openjdk.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "2dbd57218cdde5092fc8d5ef43b5bc0cea345b1f",
-      "Directory": "23/jdk/oraclelinux8",
+      "GitCommit": "6bb5ac0dcc5d6db48d6684ccf8dd6c4252ebd5ae",
+      "Directory": "23/jdk/oraclelinux9",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1709862496
+      "SOURCE_DATE_EPOCH": 1710518884
     },
     "arches": {
       "amd64": {
         "archTags": [
-          "amd64/openjdk:23-ea-13-jdk-oraclelinux8",
-          "amd64/openjdk:23-ea-13-oraclelinux8",
-          "amd64/openjdk:23-ea-jdk-oraclelinux8",
-          "amd64/openjdk:23-ea-oraclelinux8",
-          "amd64/openjdk:23-jdk-oraclelinux8",
-          "amd64/openjdk:23-oraclelinux8",
-          "amd64/openjdk:23-ea-13-jdk-oracle",
-          "amd64/openjdk:23-ea-13-oracle",
+          "amd64/openjdk:23-ea-14-jdk-oraclelinux9",
+          "amd64/openjdk:23-ea-14-oraclelinux9",
+          "amd64/openjdk:23-ea-jdk-oraclelinux9",
+          "amd64/openjdk:23-ea-oraclelinux9",
+          "amd64/openjdk:23-jdk-oraclelinux9",
+          "amd64/openjdk:23-oraclelinux9",
+          "amd64/openjdk:23-ea-14-jdk-oracle",
+          "amd64/openjdk:23-ea-14-oracle",
           "amd64/openjdk:23-ea-jdk-oracle",
           "amd64/openjdk:23-ea-oracle",
           "amd64/openjdk:23-jdk-oracle",
           "amd64/openjdk:23-oracle",
-          "amd64/openjdk:23-ea-13-jdk",
-          "amd64/openjdk:23-ea-13",
+          "amd64/openjdk:23-ea-14-jdk",
+          "amd64/openjdk:23-ea-14",
           "amd64/openjdk:23-ea-jdk",
           "amd64/openjdk:23-ea",
           "amd64/openjdk:23-jdk",
           "amd64/openjdk:23"
         ],
         "froms": [
-          "oraclelinux:8-slim"
+          "oraclelinux:9-slim"
         ],
-        "lastStageFrom": "oraclelinux:8-slim",
+        "lastStageFrom": "oraclelinux:9-slim",
         "platformString": "linux/amd64",
         "platform": {
           "architecture": "amd64",
           "os": "linux"
         },
         "parents": {
-          "oraclelinux:8-slim": {
+          "oraclelinux:9-slim": {
             "sourceId": null,
             "pin": null
           }
@@ -34652,26 +34596,100 @@
       },
       "arm64v8": {
         "archTags": [
-          "arm64v8/openjdk:23-ea-13-jdk-oraclelinux8",
-          "arm64v8/openjdk:23-ea-13-oraclelinux8",
-          "arm64v8/openjdk:23-ea-jdk-oraclelinux8",
-          "arm64v8/openjdk:23-ea-oraclelinux8",
-          "arm64v8/openjdk:23-jdk-oraclelinux8",
-          "arm64v8/openjdk:23-oraclelinux8",
-          "arm64v8/openjdk:23-ea-13-jdk-oracle",
-          "arm64v8/openjdk:23-ea-13-oracle",
+          "arm64v8/openjdk:23-ea-14-jdk-oraclelinux9",
+          "arm64v8/openjdk:23-ea-14-oraclelinux9",
+          "arm64v8/openjdk:23-ea-jdk-oraclelinux9",
+          "arm64v8/openjdk:23-ea-oraclelinux9",
+          "arm64v8/openjdk:23-jdk-oraclelinux9",
+          "arm64v8/openjdk:23-oraclelinux9",
+          "arm64v8/openjdk:23-ea-14-jdk-oracle",
+          "arm64v8/openjdk:23-ea-14-oracle",
           "arm64v8/openjdk:23-ea-jdk-oracle",
           "arm64v8/openjdk:23-ea-oracle",
           "arm64v8/openjdk:23-jdk-oracle",
           "arm64v8/openjdk:23-oracle",
-          "arm64v8/openjdk:23-ea-13-jdk",
-          "arm64v8/openjdk:23-ea-13",
+          "arm64v8/openjdk:23-ea-14-jdk",
+          "arm64v8/openjdk:23-ea-14",
           "arm64v8/openjdk:23-ea-jdk",
           "arm64v8/openjdk:23-ea",
           "arm64v8/openjdk:23-jdk",
           "arm64v8/openjdk:23"
         ],
         "froms": [
+          "oraclelinux:9-slim"
+        ],
+        "lastStageFrom": "oraclelinux:9-slim",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "oraclelinux:9-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "c298905aa96086aec1dd6ec54af4d39eefa65dc2c827a04a43e2fce310d720e8": {
+    "sourceId": "c298905aa96086aec1dd6ec54af4d39eefa65dc2c827a04a43e2fce310d720e8",
+    "reproducibleGitChecksum": "184f752bb7814e330e02a244464724f5eea9a1482b7599592c789094c80b2fbf",
+    "tags": [
+      "openjdk:23-ea-14-jdk-oraclelinux8",
+      "openjdk:23-ea-14-oraclelinux8",
+      "openjdk:23-ea-jdk-oraclelinux8",
+      "openjdk:23-ea-oraclelinux8",
+      "openjdk:23-jdk-oraclelinux8",
+      "openjdk:23-oraclelinux8"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/openjdk.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "942cd725dc00274bf639a8ceee51f52d28d3af8e",
+      "Directory": "23/jdk/oraclelinux8",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1710463722
+    },
+    "arches": {
+      "amd64": {
+        "archTags": [
+          "amd64/openjdk:23-ea-14-jdk-oraclelinux8",
+          "amd64/openjdk:23-ea-14-oraclelinux8",
+          "amd64/openjdk:23-ea-jdk-oraclelinux8",
+          "amd64/openjdk:23-ea-oraclelinux8",
+          "amd64/openjdk:23-jdk-oraclelinux8",
+          "amd64/openjdk:23-oraclelinux8"
+        ],
+        "froms": [
+          "oraclelinux:8-slim"
+        ],
+        "lastStageFrom": "oraclelinux:8-slim",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "oraclelinux:8-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "archTags": [
+          "arm64v8/openjdk:23-ea-14-jdk-oraclelinux8",
+          "arm64v8/openjdk:23-ea-14-oraclelinux8",
+          "arm64v8/openjdk:23-ea-jdk-oraclelinux8",
+          "arm64v8/openjdk:23-ea-oraclelinux8",
+          "arm64v8/openjdk:23-jdk-oraclelinux8",
+          "arm64v8/openjdk:23-oraclelinux8"
+        ],
+        "froms": [
           "oraclelinux:8-slim"
         ],
         "lastStageFrom": "oraclelinux:8-slim",
@@ -34690,86 +34708,12 @@
       }
     }
   },
-  "e4b2cc52021ad660cd511445aeb270073a96e02642946041a46f80e4f91772b1": {
-    "sourceId": "e4b2cc52021ad660cd511445aeb270073a96e02642946041a46f80e4f91772b1",
-    "reproducibleGitChecksum": "92e1663bcb79ee2e2a79e53b23ff075967818e67b76cf2fa0619f9bb1ab06127",
+  "ebb4864d41a5dadf8ee887630e9aacf1fd3b4e67f652c86d5125439427d39955": {
+    "sourceId": "ebb4864d41a5dadf8ee887630e9aacf1fd3b4e67f652c86d5125439427d39955",
+    "reproducibleGitChecksum": "27ef5764d2b5f66215cef417f9041b197128ac707adb6b49a756dcd14548acc1",
     "tags": [
-      "openjdk:23-ea-13-jdk-oraclelinux7",
-      "openjdk:23-ea-13-oraclelinux7",
-      "openjdk:23-ea-jdk-oraclelinux7",
-      "openjdk:23-ea-oraclelinux7",
-      "openjdk:23-jdk-oraclelinux7",
-      "openjdk:23-oraclelinux7"
-    ],
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/openjdk.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "2dbd57218cdde5092fc8d5ef43b5bc0cea345b1f",
-      "Directory": "23/jdk/oraclelinux7",
-      "File": "Dockerfile",
-      "Builder": "",
-      "SOURCE_DATE_EPOCH": 1709862496
-    },
-    "arches": {
-      "amd64": {
-        "archTags": [
-          "amd64/openjdk:23-ea-13-jdk-oraclelinux7",
-          "amd64/openjdk:23-ea-13-oraclelinux7",
-          "amd64/openjdk:23-ea-jdk-oraclelinux7",
-          "amd64/openjdk:23-ea-oraclelinux7",
-          "amd64/openjdk:23-jdk-oraclelinux7",
-          "amd64/openjdk:23-oraclelinux7"
-        ],
-        "froms": [
-          "oraclelinux:7-slim"
-        ],
-        "lastStageFrom": "oraclelinux:7-slim",
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "oraclelinux:7-slim": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "archTags": [
-          "arm64v8/openjdk:23-ea-13-jdk-oraclelinux7",
-          "arm64v8/openjdk:23-ea-13-oraclelinux7",
-          "arm64v8/openjdk:23-ea-jdk-oraclelinux7",
-          "arm64v8/openjdk:23-ea-oraclelinux7",
-          "arm64v8/openjdk:23-jdk-oraclelinux7",
-          "arm64v8/openjdk:23-oraclelinux7"
-        ],
-        "froms": [
-          "oraclelinux:7-slim"
-        ],
-        "lastStageFrom": "oraclelinux:7-slim",
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "oraclelinux:7-slim": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "20fbb2b0e2c2ea3032c0202590f0d35cfea3f159793ca9cada02a2458e99fa55": {
-    "sourceId": "20fbb2b0e2c2ea3032c0202590f0d35cfea3f159793ca9cada02a2458e99fa55",
-    "reproducibleGitChecksum": "a53074300198c456bfcd15156035a61f3e5d9839a293386044ffedb2da9d2bb9",
-    "tags": [
-      "openjdk:23-ea-13-jdk-bookworm",
-      "openjdk:23-ea-13-bookworm",
+      "openjdk:23-ea-14-jdk-bookworm",
+      "openjdk:23-ea-14-bookworm",
       "openjdk:23-ea-jdk-bookworm",
       "openjdk:23-ea-bookworm",
       "openjdk:23-jdk-bookworm",
@@ -34778,17 +34722,17 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/openjdk.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "2dbd57218cdde5092fc8d5ef43b5bc0cea345b1f",
+      "GitCommit": "942cd725dc00274bf639a8ceee51f52d28d3af8e",
       "Directory": "23/jdk/bookworm",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1709862496
+      "SOURCE_DATE_EPOCH": 1710463722
     },
     "arches": {
       "amd64": {
         "archTags": [
-          "amd64/openjdk:23-ea-13-jdk-bookworm",
-          "amd64/openjdk:23-ea-13-bookworm",
+          "amd64/openjdk:23-ea-14-jdk-bookworm",
+          "amd64/openjdk:23-ea-14-bookworm",
           "amd64/openjdk:23-ea-jdk-bookworm",
           "amd64/openjdk:23-ea-bookworm",
           "amd64/openjdk:23-jdk-bookworm",
@@ -34812,8 +34756,8 @@
       },
       "arm64v8": {
         "archTags": [
-          "arm64v8/openjdk:23-ea-13-jdk-bookworm",
-          "arm64v8/openjdk:23-ea-13-bookworm",
+          "arm64v8/openjdk:23-ea-14-jdk-bookworm",
+          "arm64v8/openjdk:23-ea-14-bookworm",
           "arm64v8/openjdk:23-ea-jdk-bookworm",
           "arm64v8/openjdk:23-ea-bookworm",
           "arm64v8/openjdk:23-jdk-bookworm",
@@ -34838,18 +34782,18 @@
       }
     }
   },
-  "cc00dd4440383867d88ae8cf7ab2a43d94ca23a6073a73cbbc915115fbbdf3ed": {
-    "sourceId": "cc00dd4440383867d88ae8cf7ab2a43d94ca23a6073a73cbbc915115fbbdf3ed",
-    "reproducibleGitChecksum": "77d7e2e768efd19d90a37cbc1bc7f098a8028a846b7f0dbc4ee89bc539a3cf94",
+  "803a6b94c1d5298905d652b65bfc8c12b8e837b290e1ba3feb785b6f327d06f1": {
+    "sourceId": "803a6b94c1d5298905d652b65bfc8c12b8e837b290e1ba3feb785b6f327d06f1",
+    "reproducibleGitChecksum": "efaea85717e5232a8c3764189092f8d543385cfd02306404b752e5319cfac0a3",
     "tags": [
-      "openjdk:23-ea-13-jdk-slim-bookworm",
-      "openjdk:23-ea-13-slim-bookworm",
+      "openjdk:23-ea-14-jdk-slim-bookworm",
+      "openjdk:23-ea-14-slim-bookworm",
       "openjdk:23-ea-jdk-slim-bookworm",
       "openjdk:23-ea-slim-bookworm",
       "openjdk:23-jdk-slim-bookworm",
       "openjdk:23-slim-bookworm",
-      "openjdk:23-ea-13-jdk-slim",
-      "openjdk:23-ea-13-slim",
+      "openjdk:23-ea-14-jdk-slim",
+      "openjdk:23-ea-14-slim",
       "openjdk:23-ea-jdk-slim",
       "openjdk:23-ea-slim",
       "openjdk:23-jdk-slim",
@@ -34858,23 +34802,23 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/openjdk.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "2dbd57218cdde5092fc8d5ef43b5bc0cea345b1f",
+      "GitCommit": "942cd725dc00274bf639a8ceee51f52d28d3af8e",
       "Directory": "23/jdk/slim-bookworm",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1709862496
+      "SOURCE_DATE_EPOCH": 1710463722
     },
     "arches": {
       "amd64": {
         "archTags": [
-          "amd64/openjdk:23-ea-13-jdk-slim-bookworm",
-          "amd64/openjdk:23-ea-13-slim-bookworm",
+          "amd64/openjdk:23-ea-14-jdk-slim-bookworm",
+          "amd64/openjdk:23-ea-14-slim-bookworm",
           "amd64/openjdk:23-ea-jdk-slim-bookworm",
           "amd64/openjdk:23-ea-slim-bookworm",
           "amd64/openjdk:23-jdk-slim-bookworm",
           "amd64/openjdk:23-slim-bookworm",
-          "amd64/openjdk:23-ea-13-jdk-slim",
-          "amd64/openjdk:23-ea-13-slim",
+          "amd64/openjdk:23-ea-14-jdk-slim",
+          "amd64/openjdk:23-ea-14-slim",
           "amd64/openjdk:23-ea-jdk-slim",
           "amd64/openjdk:23-ea-slim",
           "amd64/openjdk:23-jdk-slim",
@@ -34898,14 +34842,14 @@
       },
       "arm64v8": {
         "archTags": [
-          "arm64v8/openjdk:23-ea-13-jdk-slim-bookworm",
-          "arm64v8/openjdk:23-ea-13-slim-bookworm",
+          "arm64v8/openjdk:23-ea-14-jdk-slim-bookworm",
+          "arm64v8/openjdk:23-ea-14-slim-bookworm",
           "arm64v8/openjdk:23-ea-jdk-slim-bookworm",
           "arm64v8/openjdk:23-ea-slim-bookworm",
           "arm64v8/openjdk:23-jdk-slim-bookworm",
           "arm64v8/openjdk:23-slim-bookworm",
-          "arm64v8/openjdk:23-ea-13-jdk-slim",
-          "arm64v8/openjdk:23-ea-13-slim",
+          "arm64v8/openjdk:23-ea-14-jdk-slim",
+          "arm64v8/openjdk:23-ea-14-slim",
           "arm64v8/openjdk:23-ea-jdk-slim",
           "arm64v8/openjdk:23-ea-slim",
           "arm64v8/openjdk:23-jdk-slim",
@@ -34930,12 +34874,12 @@
       }
     }
   },
-  "e48c6e955a80ff9ae3ac081efeef1cb27af6de6c7f30478bd3bfa5fa3861a4bd": {
-    "sourceId": "e48c6e955a80ff9ae3ac081efeef1cb27af6de6c7f30478bd3bfa5fa3861a4bd",
-    "reproducibleGitChecksum": "aede681ac3d568504fad191e30ff9e16f5a2fc44bb5774dcd389a53a3545d3f9",
+  "481fbe7899e35b4193a8223b0e9e129e2a06a9ac056fed2afe767253b68ac1ed": {
+    "sourceId": "481fbe7899e35b4193a8223b0e9e129e2a06a9ac056fed2afe767253b68ac1ed",
+    "reproducibleGitChecksum": "aeda80b5301c39f75335630c079f891a554c1dd118a7a8f09d166f0e6a254b99",
     "tags": [
-      "openjdk:23-ea-13-jdk-bullseye",
-      "openjdk:23-ea-13-bullseye",
+      "openjdk:23-ea-14-jdk-bullseye",
+      "openjdk:23-ea-14-bullseye",
       "openjdk:23-ea-jdk-bullseye",
       "openjdk:23-ea-bullseye",
       "openjdk:23-jdk-bullseye",
@@ -34944,17 +34888,17 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/openjdk.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "2dbd57218cdde5092fc8d5ef43b5bc0cea345b1f",
+      "GitCommit": "942cd725dc00274bf639a8ceee51f52d28d3af8e",
       "Directory": "23/jdk/bullseye",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1709862496
+      "SOURCE_DATE_EPOCH": 1710463722
     },
     "arches": {
       "amd64": {
         "archTags": [
-          "amd64/openjdk:23-ea-13-jdk-bullseye",
-          "amd64/openjdk:23-ea-13-bullseye",
+          "amd64/openjdk:23-ea-14-jdk-bullseye",
+          "amd64/openjdk:23-ea-14-bullseye",
           "amd64/openjdk:23-ea-jdk-bullseye",
           "amd64/openjdk:23-ea-bullseye",
           "amd64/openjdk:23-jdk-bullseye",
@@ -34978,8 +34922,8 @@
       },
       "arm64v8": {
         "archTags": [
-          "arm64v8/openjdk:23-ea-13-jdk-bullseye",
-          "arm64v8/openjdk:23-ea-13-bullseye",
+          "arm64v8/openjdk:23-ea-14-jdk-bullseye",
+          "arm64v8/openjdk:23-ea-14-bullseye",
           "arm64v8/openjdk:23-ea-jdk-bullseye",
           "arm64v8/openjdk:23-ea-bullseye",
           "arm64v8/openjdk:23-jdk-bullseye",
@@ -35004,12 +34948,12 @@
       }
     }
   },
-  "5bd674f38a35bbd41584bf05c81ad506a5cbe26be12ab5b3ca3f9249dfb1fa1b": {
-    "sourceId": "5bd674f38a35bbd41584bf05c81ad506a5cbe26be12ab5b3ca3f9249dfb1fa1b",
-    "reproducibleGitChecksum": "518ec2060994079f483f1e0d4f1d8132e530fb753e2f4b54656d415fd25d1646",
+  "d33a85c5fa3595c39d6fca9c8ebabb79627b1d277d7096d6a439eb3703ac795f": {
+    "sourceId": "d33a85c5fa3595c39d6fca9c8ebabb79627b1d277d7096d6a439eb3703ac795f",
+    "reproducibleGitChecksum": "235802f750a7bb9b12298e02f95d8cb00bda9a4618d05c2a55ccaaebd5bb01b7",
     "tags": [
-      "openjdk:23-ea-13-jdk-slim-bullseye",
-      "openjdk:23-ea-13-slim-bullseye",
+      "openjdk:23-ea-14-jdk-slim-bullseye",
+      "openjdk:23-ea-14-slim-bullseye",
       "openjdk:23-ea-jdk-slim-bullseye",
       "openjdk:23-ea-slim-bullseye",
       "openjdk:23-jdk-slim-bullseye",
@@ -35018,17 +34962,17 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/openjdk.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "2dbd57218cdde5092fc8d5ef43b5bc0cea345b1f",
+      "GitCommit": "942cd725dc00274bf639a8ceee51f52d28d3af8e",
       "Directory": "23/jdk/slim-bullseye",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1709862496
+      "SOURCE_DATE_EPOCH": 1710463722
     },
     "arches": {
       "amd64": {
         "archTags": [
-          "amd64/openjdk:23-ea-13-jdk-slim-bullseye",
-          "amd64/openjdk:23-ea-13-slim-bullseye",
+          "amd64/openjdk:23-ea-14-jdk-slim-bullseye",
+          "amd64/openjdk:23-ea-14-slim-bullseye",
           "amd64/openjdk:23-ea-jdk-slim-bullseye",
           "amd64/openjdk:23-ea-slim-bullseye",
           "amd64/openjdk:23-jdk-slim-bullseye",
@@ -35052,8 +34996,8 @@
       },
       "arm64v8": {
         "archTags": [
-          "arm64v8/openjdk:23-ea-13-jdk-slim-bullseye",
-          "arm64v8/openjdk:23-ea-13-slim-bullseye",
+          "arm64v8/openjdk:23-ea-14-jdk-slim-bullseye",
+          "arm64v8/openjdk:23-ea-14-slim-bullseye",
           "arm64v8/openjdk:23-ea-jdk-slim-bullseye",
           "arm64v8/openjdk:23-ea-slim-bullseye",
           "arm64v8/openjdk:23-jdk-slim-bullseye",
@@ -35078,24 +35022,24 @@
       }
     }
   },
-  "aa47141bc70130bcd4081199ee75dfe9940ec18878e5197164cbde867d1336eb": {
-    "sourceId": "aa47141bc70130bcd4081199ee75dfe9940ec18878e5197164cbde867d1336eb",
-    "reproducibleGitChecksum": "60584557c284d48a1d5fe9828166d28790903fc93f255c0b6c0172c7833ec8fd",
+  "821bdc2f6a555a76c38975cc76b36bd5ecf316da0f1558d02c4d7b7ad3bee6d8": {
+    "sourceId": "821bdc2f6a555a76c38975cc76b36bd5ecf316da0f1558d02c4d7b7ad3bee6d8",
+    "reproducibleGitChecksum": "0cd3da8e0cad44c2853331854f0acf6aa57c9b5fd07d370cd7bb9f5b9a2bd2a1",
     "tags": [
-      "openjdk:23-ea-13-jdk-windowsservercore-ltsc2022",
-      "openjdk:23-ea-13-windowsservercore-ltsc2022",
+      "openjdk:23-ea-14-jdk-windowsservercore-ltsc2022",
+      "openjdk:23-ea-14-windowsservercore-ltsc2022",
       "openjdk:23-ea-jdk-windowsservercore-ltsc2022",
       "openjdk:23-ea-windowsservercore-ltsc2022",
       "openjdk:23-jdk-windowsservercore-ltsc2022",
       "openjdk:23-windowsservercore-ltsc2022",
-      "openjdk:23-ea-13-jdk-windowsservercore",
-      "openjdk:23-ea-13-windowsservercore",
+      "openjdk:23-ea-14-jdk-windowsservercore",
+      "openjdk:23-ea-14-windowsservercore",
       "openjdk:23-ea-jdk-windowsservercore",
       "openjdk:23-ea-windowsservercore",
       "openjdk:23-jdk-windowsservercore",
       "openjdk:23-windowsservercore",
-      "openjdk:23-ea-13-jdk",
-      "openjdk:23-ea-13",
+      "openjdk:23-ea-14-jdk",
+      "openjdk:23-ea-14",
       "openjdk:23-ea-jdk",
       "openjdk:23-ea",
       "openjdk:23-jdk",
@@ -35104,29 +35048,29 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/openjdk.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "2dbd57218cdde5092fc8d5ef43b5bc0cea345b1f",
+      "GitCommit": "942cd725dc00274bf639a8ceee51f52d28d3af8e",
       "Directory": "23/jdk/windows/windowsservercore-ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1709862496
+      "SOURCE_DATE_EPOCH": 1710463722
     },
     "arches": {
       "windows-amd64": {
         "archTags": [
-          "winamd64/openjdk:23-ea-13-jdk-windowsservercore-ltsc2022",
-          "winamd64/openjdk:23-ea-13-windowsservercore-ltsc2022",
+          "winamd64/openjdk:23-ea-14-jdk-windowsservercore-ltsc2022",
+          "winamd64/openjdk:23-ea-14-windowsservercore-ltsc2022",
           "winamd64/openjdk:23-ea-jdk-windowsservercore-ltsc2022",
           "winamd64/openjdk:23-ea-windowsservercore-ltsc2022",
           "winamd64/openjdk:23-jdk-windowsservercore-ltsc2022",
           "winamd64/openjdk:23-windowsservercore-ltsc2022",
-          "winamd64/openjdk:23-ea-13-jdk-windowsservercore",
-          "winamd64/openjdk:23-ea-13-windowsservercore",
+          "winamd64/openjdk:23-ea-14-jdk-windowsservercore",
+          "winamd64/openjdk:23-ea-14-windowsservercore",
           "winamd64/openjdk:23-ea-jdk-windowsservercore",
           "winamd64/openjdk:23-ea-windowsservercore",
           "winamd64/openjdk:23-jdk-windowsservercore",
           "winamd64/openjdk:23-windowsservercore",
-          "winamd64/openjdk:23-ea-13-jdk",
-          "winamd64/openjdk:23-ea-13",
+          "winamd64/openjdk:23-ea-14-jdk",
+          "winamd64/openjdk:23-ea-14",
           "winamd64/openjdk:23-ea-jdk",
           "winamd64/openjdk:23-ea",
           "winamd64/openjdk:23-jdk",
@@ -35150,24 +35094,24 @@
       }
     }
   },
-  "251111df476a8900eccecc7946de9b993a4d948c7b8e85d7d6383c3804654c3b": {
-    "sourceId": "251111df476a8900eccecc7946de9b993a4d948c7b8e85d7d6383c3804654c3b",
-    "reproducibleGitChecksum": "fbab069127dccda6ae72686e0bd8ae6434f2c76a9608b02bd1fa4f6afd79830f",
+  "9eaf312d60d37663917fde06fc4243f91c7a6698ccd35e41cd2607ad230189aa": {
+    "sourceId": "9eaf312d60d37663917fde06fc4243f91c7a6698ccd35e41cd2607ad230189aa",
+    "reproducibleGitChecksum": "98a67ed04e2dcf989132c596c0036d6a499b0f0a7e59831f900cf41adaffab14",
     "tags": [
-      "openjdk:23-ea-13-jdk-windowsservercore-1809",
-      "openjdk:23-ea-13-windowsservercore-1809",
+      "openjdk:23-ea-14-jdk-windowsservercore-1809",
+      "openjdk:23-ea-14-windowsservercore-1809",
       "openjdk:23-ea-jdk-windowsservercore-1809",
       "openjdk:23-ea-windowsservercore-1809",
       "openjdk:23-jdk-windowsservercore-1809",
       "openjdk:23-windowsservercore-1809",
-      "openjdk:23-ea-13-jdk-windowsservercore",
-      "openjdk:23-ea-13-windowsservercore",
+      "openjdk:23-ea-14-jdk-windowsservercore",
+      "openjdk:23-ea-14-windowsservercore",
       "openjdk:23-ea-jdk-windowsservercore",
       "openjdk:23-ea-windowsservercore",
       "openjdk:23-jdk-windowsservercore",
       "openjdk:23-windowsservercore",
-      "openjdk:23-ea-13-jdk",
-      "openjdk:23-ea-13",
+      "openjdk:23-ea-14-jdk",
+      "openjdk:23-ea-14",
       "openjdk:23-ea-jdk",
       "openjdk:23-ea",
       "openjdk:23-jdk",
@@ -35176,29 +35120,29 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/openjdk.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "2dbd57218cdde5092fc8d5ef43b5bc0cea345b1f",
+      "GitCommit": "942cd725dc00274bf639a8ceee51f52d28d3af8e",
       "Directory": "23/jdk/windows/windowsservercore-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1709862496
+      "SOURCE_DATE_EPOCH": 1710463722
     },
     "arches": {
       "windows-amd64": {
         "archTags": [
-          "winamd64/openjdk:23-ea-13-jdk-windowsservercore-1809",
-          "winamd64/openjdk:23-ea-13-windowsservercore-1809",
+          "winamd64/openjdk:23-ea-14-jdk-windowsservercore-1809",
+          "winamd64/openjdk:23-ea-14-windowsservercore-1809",
           "winamd64/openjdk:23-ea-jdk-windowsservercore-1809",
           "winamd64/openjdk:23-ea-windowsservercore-1809",
           "winamd64/openjdk:23-jdk-windowsservercore-1809",
           "winamd64/openjdk:23-windowsservercore-1809",
-          "winamd64/openjdk:23-ea-13-jdk-windowsservercore",
-          "winamd64/openjdk:23-ea-13-windowsservercore",
+          "winamd64/openjdk:23-ea-14-jdk-windowsservercore",
+          "winamd64/openjdk:23-ea-14-windowsservercore",
           "winamd64/openjdk:23-ea-jdk-windowsservercore",
           "winamd64/openjdk:23-ea-windowsservercore",
           "winamd64/openjdk:23-jdk-windowsservercore",
           "winamd64/openjdk:23-windowsservercore",
-          "winamd64/openjdk:23-ea-13-jdk",
-          "winamd64/openjdk:23-ea-13",
+          "winamd64/openjdk:23-ea-14-jdk",
+          "winamd64/openjdk:23-ea-14",
           "winamd64/openjdk:23-ea-jdk",
           "winamd64/openjdk:23-ea",
           "winamd64/openjdk:23-jdk",
@@ -35222,18 +35166,18 @@
       }
     }
   },
-  "8094e91170e90b0eeb0fd1940405e981b73c17ca1287d9e6f6e6052f7915195d": {
-    "sourceId": "8094e91170e90b0eeb0fd1940405e981b73c17ca1287d9e6f6e6052f7915195d",
-    "reproducibleGitChecksum": "cb1858dad687ef912aae3272db844e0e4b114ef013dfa0c76abe7a5fc62ff0ff",
+  "8538a357645d4251506858df815289de1772e39e9aa9791f1431c8bb37c601b0": {
+    "sourceId": "8538a357645d4251506858df815289de1772e39e9aa9791f1431c8bb37c601b0",
+    "reproducibleGitChecksum": "afafeaade41c67a3b041d81e4600e1f908e22004618fc66f4fbab9fe1051debc",
     "tags": [
-      "openjdk:23-ea-13-jdk-nanoserver-1809",
-      "openjdk:23-ea-13-nanoserver-1809",
+      "openjdk:23-ea-14-jdk-nanoserver-1809",
+      "openjdk:23-ea-14-nanoserver-1809",
       "openjdk:23-ea-jdk-nanoserver-1809",
       "openjdk:23-ea-nanoserver-1809",
       "openjdk:23-jdk-nanoserver-1809",
       "openjdk:23-nanoserver-1809",
-      "openjdk:23-ea-13-jdk-nanoserver",
-      "openjdk:23-ea-13-nanoserver",
+      "openjdk:23-ea-14-jdk-nanoserver",
+      "openjdk:23-ea-14-nanoserver",
       "openjdk:23-ea-jdk-nanoserver",
       "openjdk:23-ea-nanoserver",
       "openjdk:23-jdk-nanoserver",
@@ -35242,23 +35186,23 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/openjdk.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "2dbd57218cdde5092fc8d5ef43b5bc0cea345b1f",
+      "GitCommit": "942cd725dc00274bf639a8ceee51f52d28d3af8e",
       "Directory": "23/jdk/windows/nanoserver-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1709862496
+      "SOURCE_DATE_EPOCH": 1710463722
     },
     "arches": {
       "windows-amd64": {
         "archTags": [
-          "winamd64/openjdk:23-ea-13-jdk-nanoserver-1809",
-          "winamd64/openjdk:23-ea-13-nanoserver-1809",
+          "winamd64/openjdk:23-ea-14-jdk-nanoserver-1809",
+          "winamd64/openjdk:23-ea-14-nanoserver-1809",
           "winamd64/openjdk:23-ea-jdk-nanoserver-1809",
           "winamd64/openjdk:23-ea-nanoserver-1809",
           "winamd64/openjdk:23-jdk-nanoserver-1809",
           "winamd64/openjdk:23-nanoserver-1809",
-          "winamd64/openjdk:23-ea-13-jdk-nanoserver",
-          "winamd64/openjdk:23-ea-13-nanoserver",
+          "winamd64/openjdk:23-ea-14-jdk-nanoserver",
+          "winamd64/openjdk:23-ea-14-nanoserver",
           "winamd64/openjdk:23-ea-jdk-nanoserver",
           "winamd64/openjdk:23-ea-nanoserver",
           "winamd64/openjdk:23-jdk-nanoserver",
@@ -35266,7 +35210,7 @@
         ],
         "froms": [
           "mcr.microsoft.com/windows/nanoserver:1809",
-          "openjdk:23-ea-13-jdk-windowsservercore-1809"
+          "openjdk:23-ea-14-jdk-windowsservercore-1809"
         ],
         "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:1809",
         "platformString": "windows/amd64",
@@ -35279,8 +35223,100 @@
             "sourceId": null,
             "pin": "sha256:05f991b57e0095d6ea29c4fa7bef9e614c290de030c8e10e40cebc505871f725"
           },
-          "openjdk:23-ea-13-jdk-windowsservercore-1809": {
-            "sourceId": "251111df476a8900eccecc7946de9b993a4d948c7b8e85d7d6383c3804654c3b",
+          "openjdk:23-ea-14-jdk-windowsservercore-1809": {
+            "sourceId": "9eaf312d60d37663917fde06fc4243f91c7a6698ccd35e41cd2607ad230189aa",
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "3b0979ce8fb40607b9747817019c778cae3b62ecfeecc6196630722c388f87d1": {
+    "sourceId": "3b0979ce8fb40607b9747817019c778cae3b62ecfeecc6196630722c388f87d1",
+    "reproducibleGitChecksum": "e45a6f4270f6bade1572a52486b5cdd05894c77291b268bfc5fa8ebc19d8ffbd",
+    "tags": [
+      "openjdk:22-rc-jdk-oraclelinux9",
+      "openjdk:22-rc-oraclelinux9",
+      "openjdk:22-jdk-oraclelinux9",
+      "openjdk:22-oraclelinux9",
+      "openjdk:22-rc-jdk-oracle",
+      "openjdk:22-rc-oracle",
+      "openjdk:22-jdk-oracle",
+      "openjdk:22-oracle",
+      "openjdk:22-rc-jdk",
+      "openjdk:22-rc",
+      "openjdk:22-jdk",
+      "openjdk:22"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/openjdk.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "6bb5ac0dcc5d6db48d6684ccf8dd6c4252ebd5ae",
+      "Directory": "22/jdk/oraclelinux9",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1710518884
+    },
+    "arches": {
+      "amd64": {
+        "archTags": [
+          "amd64/openjdk:22-rc-jdk-oraclelinux9",
+          "amd64/openjdk:22-rc-oraclelinux9",
+          "amd64/openjdk:22-jdk-oraclelinux9",
+          "amd64/openjdk:22-oraclelinux9",
+          "amd64/openjdk:22-rc-jdk-oracle",
+          "amd64/openjdk:22-rc-oracle",
+          "amd64/openjdk:22-jdk-oracle",
+          "amd64/openjdk:22-oracle",
+          "amd64/openjdk:22-rc-jdk",
+          "amd64/openjdk:22-rc",
+          "amd64/openjdk:22-jdk",
+          "amd64/openjdk:22"
+        ],
+        "froms": [
+          "oraclelinux:9-slim"
+        ],
+        "lastStageFrom": "oraclelinux:9-slim",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "oraclelinux:9-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "archTags": [
+          "arm64v8/openjdk:22-rc-jdk-oraclelinux9",
+          "arm64v8/openjdk:22-rc-oraclelinux9",
+          "arm64v8/openjdk:22-jdk-oraclelinux9",
+          "arm64v8/openjdk:22-oraclelinux9",
+          "arm64v8/openjdk:22-rc-jdk-oracle",
+          "arm64v8/openjdk:22-rc-oracle",
+          "arm64v8/openjdk:22-jdk-oracle",
+          "arm64v8/openjdk:22-oracle",
+          "arm64v8/openjdk:22-rc-jdk",
+          "arm64v8/openjdk:22-rc",
+          "arm64v8/openjdk:22-jdk",
+          "arm64v8/openjdk:22"
+        ],
+        "froms": [
+          "oraclelinux:9-slim"
+        ],
+        "lastStageFrom": "oraclelinux:9-slim",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "oraclelinux:9-slim": {
+            "sourceId": null,
             "pin": null
           }
         }
@@ -35294,15 +35330,7 @@
       "openjdk:22-rc-jdk-oraclelinux8",
       "openjdk:22-rc-oraclelinux8",
       "openjdk:22-jdk-oraclelinux8",
-      "openjdk:22-oraclelinux8",
-      "openjdk:22-rc-jdk-oracle",
-      "openjdk:22-rc-oracle",
-      "openjdk:22-jdk-oracle",
-      "openjdk:22-oracle",
-      "openjdk:22-rc-jdk",
-      "openjdk:22-rc",
-      "openjdk:22-jdk",
-      "openjdk:22"
+      "openjdk:22-oraclelinux8"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/openjdk.git",
@@ -35319,15 +35347,7 @@
           "amd64/openjdk:22-rc-jdk-oraclelinux8",
           "amd64/openjdk:22-rc-oraclelinux8",
           "amd64/openjdk:22-jdk-oraclelinux8",
-          "amd64/openjdk:22-oraclelinux8",
-          "amd64/openjdk:22-rc-jdk-oracle",
-          "amd64/openjdk:22-rc-oracle",
-          "amd64/openjdk:22-jdk-oracle",
-          "amd64/openjdk:22-oracle",
-          "amd64/openjdk:22-rc-jdk",
-          "amd64/openjdk:22-rc",
-          "amd64/openjdk:22-jdk",
-          "amd64/openjdk:22"
+          "amd64/openjdk:22-oraclelinux8"
         ],
         "froms": [
           "oraclelinux:8-slim"
@@ -35350,15 +35370,7 @@
           "arm64v8/openjdk:22-rc-jdk-oraclelinux8",
           "arm64v8/openjdk:22-rc-oraclelinux8",
           "arm64v8/openjdk:22-jdk-oraclelinux8",
-          "arm64v8/openjdk:22-oraclelinux8",
-          "arm64v8/openjdk:22-rc-jdk-oracle",
-          "arm64v8/openjdk:22-rc-oracle",
-          "arm64v8/openjdk:22-jdk-oracle",
-          "arm64v8/openjdk:22-oracle",
-          "arm64v8/openjdk:22-rc-jdk",
-          "arm64v8/openjdk:22-rc",
-          "arm64v8/openjdk:22-jdk",
-          "arm64v8/openjdk:22"
+          "arm64v8/openjdk:22-oraclelinux8"
         ],
         "froms": [
           "oraclelinux:8-slim"
@@ -35372,74 +35384,6 @@
         },
         "parents": {
           "oraclelinux:8-slim": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "8ad57f454ca5be7766a43da1b3d2ac0df3e04ab8da14d2cc9016f42f9318fe51": {
-    "sourceId": "8ad57f454ca5be7766a43da1b3d2ac0df3e04ab8da14d2cc9016f42f9318fe51",
-    "reproducibleGitChecksum": "8254a8031ddb4faec3e78236a709e4f28a014ba557a326118d5414b16a143e29",
-    "tags": [
-      "openjdk:22-rc-jdk-oraclelinux7",
-      "openjdk:22-rc-oraclelinux7",
-      "openjdk:22-jdk-oraclelinux7",
-      "openjdk:22-oraclelinux7"
-    ],
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/openjdk.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "e582736928a0af546bf984cf6c4b6bbc48a6f091",
-      "Directory": "22/jdk/oraclelinux7",
-      "File": "Dockerfile",
-      "Builder": "",
-      "SOURCE_DATE_EPOCH": 1708112904
-    },
-    "arches": {
-      "amd64": {
-        "archTags": [
-          "amd64/openjdk:22-rc-jdk-oraclelinux7",
-          "amd64/openjdk:22-rc-oraclelinux7",
-          "amd64/openjdk:22-jdk-oraclelinux7",
-          "amd64/openjdk:22-oraclelinux7"
-        ],
-        "froms": [
-          "oraclelinux:7-slim"
-        ],
-        "lastStageFrom": "oraclelinux:7-slim",
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "oraclelinux:7-slim": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "archTags": [
-          "arm64v8/openjdk:22-rc-jdk-oraclelinux7",
-          "arm64v8/openjdk:22-rc-oraclelinux7",
-          "arm64v8/openjdk:22-jdk-oraclelinux7",
-          "arm64v8/openjdk:22-oraclelinux7"
-        ],
-        "froms": [
-          "oraclelinux:7-slim"
-        ],
-        "lastStageFrom": "oraclelinux:7-slim",
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "oraclelinux:7-slim": {
             "sourceId": null,
             "pin": null
           }
