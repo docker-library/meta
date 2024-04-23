@@ -1,28 +1,28 @@
 {
-  "7981ea5568f4b1a996ee097ce0c519e79a2f8cbe1905899d02745092951f131d": {
-    "sourceId": "7981ea5568f4b1a996ee097ce0c519e79a2f8cbe1905899d02745092951f131d",
-    "reproducibleGitChecksum": "b87a438c80e0d16e6d4464f9e627b6e64a3329c1776074a2fdc3dcaef8581101",
+  "8ed6239e7f315687071407c1093598f7eb9cca84a5230c48087e81b42b0921b2": {
+    "sourceId": "8ed6239e7f315687071407c1093598f7eb9cca84a5230c48087e81b42b0921b2",
+    "reproducibleGitChecksum": "3fa609d54bdecbee3525bd2dfab2a1d1cded0320cf0dd1ba10797613bc1f2ae7",
     "tags": [
-      "bash:devel-20240415",
+      "bash:devel-20240422",
       "bash:devel",
-      "bash:devel-20240415-alpine3.19",
+      "bash:devel-20240422-alpine3.19",
       "bash:devel-alpine3.19"
     ],
     "entry": {
       "GitRepo": "https://github.com/tianon/docker-bash.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "3519de9825d4c678a4996b4ce172773387f3dbc2",
+      "GitCommit": "7b657f0af13de947770f02d66ab0b24465b20f3c",
       "Directory": "devel",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1713250737
+      "SOURCE_DATE_EPOCH": 1713845892
     },
     "arches": {
       "amd64": {
         "archTags": [
-          "amd64/bash:devel-20240415",
+          "amd64/bash:devel-20240422",
           "amd64/bash:devel",
-          "amd64/bash:devel-20240415-alpine3.19",
+          "amd64/bash:devel-20240422-alpine3.19",
           "amd64/bash:devel-alpine3.19"
         ],
         "froms": [
@@ -43,9 +43,9 @@
       },
       "arm32v6": {
         "archTags": [
-          "arm32v6/bash:devel-20240415",
+          "arm32v6/bash:devel-20240422",
           "arm32v6/bash:devel",
-          "arm32v6/bash:devel-20240415-alpine3.19",
+          "arm32v6/bash:devel-20240422-alpine3.19",
           "arm32v6/bash:devel-alpine3.19"
         ],
         "froms": [
@@ -67,9 +67,9 @@
       },
       "arm32v7": {
         "archTags": [
-          "arm32v7/bash:devel-20240415",
+          "arm32v7/bash:devel-20240422",
           "arm32v7/bash:devel",
-          "arm32v7/bash:devel-20240415-alpine3.19",
+          "arm32v7/bash:devel-20240422-alpine3.19",
           "arm32v7/bash:devel-alpine3.19"
         ],
         "froms": [
@@ -91,9 +91,9 @@
       },
       "arm64v8": {
         "archTags": [
-          "arm64v8/bash:devel-20240415",
+          "arm64v8/bash:devel-20240422",
           "arm64v8/bash:devel",
-          "arm64v8/bash:devel-20240415-alpine3.19",
+          "arm64v8/bash:devel-20240422-alpine3.19",
           "arm64v8/bash:devel-alpine3.19"
         ],
         "froms": [
@@ -115,9 +115,9 @@
       },
       "i386": {
         "archTags": [
-          "i386/bash:devel-20240415",
+          "i386/bash:devel-20240422",
           "i386/bash:devel",
-          "i386/bash:devel-20240415-alpine3.19",
+          "i386/bash:devel-20240422-alpine3.19",
           "i386/bash:devel-alpine3.19"
         ],
         "froms": [
@@ -138,9 +138,9 @@
       },
       "ppc64le": {
         "archTags": [
-          "ppc64le/bash:devel-20240415",
+          "ppc64le/bash:devel-20240422",
           "ppc64le/bash:devel",
-          "ppc64le/bash:devel-20240415-alpine3.19",
+          "ppc64le/bash:devel-20240422-alpine3.19",
           "ppc64le/bash:devel-alpine3.19"
         ],
         "froms": [
@@ -161,10 +161,211 @@
       },
       "s390x": {
         "archTags": [
-          "s390x/bash:devel-20240415",
+          "s390x/bash:devel-20240422",
           "s390x/bash:devel",
-          "s390x/bash:devel-20240415-alpine3.19",
+          "s390x/bash:devel-20240422-alpine3.19",
           "s390x/bash:devel-alpine3.19"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "85fc852f8f1f55fa413e9dcba9418b58cc5ad3d63ba459b0940dfdd8a7a26b12": {
+    "sourceId": "85fc852f8f1f55fa413e9dcba9418b58cc5ad3d63ba459b0940dfdd8a7a26b12",
+    "reproducibleGitChecksum": "889b7bc3d9f18317a79ba7035bf1705fb275685da78f318fd9e960dd9f306f3c",
+    "tags": [
+      "bash:5.3-alpha",
+      "bash:5.3-rc",
+      "bash:rc",
+      "bash:5.3-alpha-alpine3.19",
+      "bash:5.3-rc-alpine3.19",
+      "bash:rc-alpine3.19"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/tianon/docker-bash.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "608eced9a1929c57fec449ea5f2f770a0371e5a3",
+      "Directory": "5.3-rc",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1713818883
+    },
+    "arches": {
+      "amd64": {
+        "archTags": [
+          "amd64/bash:5.3-alpha",
+          "amd64/bash:5.3-rc",
+          "amd64/bash:rc",
+          "amd64/bash:5.3-alpha-alpine3.19",
+          "amd64/bash:5.3-rc-alpine3.19",
+          "amd64/bash:rc-alpine3.19"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v6": {
+        "archTags": [
+          "arm32v6/bash:5.3-alpha",
+          "arm32v6/bash:5.3-rc",
+          "arm32v6/bash:rc",
+          "arm32v6/bash:5.3-alpha-alpine3.19",
+          "arm32v6/bash:5.3-rc-alpine3.19",
+          "arm32v6/bash:rc-alpine3.19"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "archTags": [
+          "arm32v7/bash:5.3-alpha",
+          "arm32v7/bash:5.3-rc",
+          "arm32v7/bash:rc",
+          "arm32v7/bash:5.3-alpha-alpine3.19",
+          "arm32v7/bash:5.3-rc-alpine3.19",
+          "arm32v7/bash:rc-alpine3.19"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "archTags": [
+          "arm64v8/bash:5.3-alpha",
+          "arm64v8/bash:5.3-rc",
+          "arm64v8/bash:rc",
+          "arm64v8/bash:5.3-alpha-alpine3.19",
+          "arm64v8/bash:5.3-rc-alpine3.19",
+          "arm64v8/bash:rc-alpine3.19"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "archTags": [
+          "i386/bash:5.3-alpha",
+          "i386/bash:5.3-rc",
+          "i386/bash:rc",
+          "i386/bash:5.3-alpha-alpine3.19",
+          "i386/bash:5.3-rc-alpine3.19",
+          "i386/bash:rc-alpine3.19"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "archTags": [
+          "ppc64le/bash:5.3-alpha",
+          "ppc64le/bash:5.3-rc",
+          "ppc64le/bash:rc",
+          "ppc64le/bash:5.3-alpha-alpine3.19",
+          "ppc64le/bash:5.3-rc-alpine3.19",
+          "ppc64le/bash:rc-alpine3.19"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "archTags": [
+          "s390x/bash:5.3-alpha",
+          "s390x/bash:5.3-rc",
+          "s390x/bash:rc",
+          "s390x/bash:5.3-alpha-alpine3.19",
+          "s390x/bash:5.3-rc-alpine3.19",
+          "s390x/bash:rc-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -5654,33 +5855,33 @@
       }
     }
   },
-  "5fc40e1082575824045d82f08207158a2a42722e66bc9490eb5bd7c6f17892fb": {
-    "sourceId": "5fc40e1082575824045d82f08207158a2a42722e66bc9490eb5bd7c6f17892fb",
-    "reproducibleGitChecksum": "00333d29da64043fdbf8ca9c1981786688a19e5a6388366bca422147ef2c8ecf",
+  "b429ca80479eef7ef2bd5d65fbee3c9497a5607bb7fa50ada009d2e0747b0a18": {
+    "sourceId": "b429ca80479eef7ef2bd5d65fbee3c9497a5607bb7fa50ada009d2e0747b0a18",
+    "reproducibleGitChecksum": "186b117a39e611bbcbe44d2ee5bd43ab3a33737aaa450662ce73b2bf3216eb19",
     "tags": [
-      "docker:26.0.2-cli",
-      "docker:26.0-cli",
+      "docker:26.1.0-cli",
+      "docker:26.1-cli",
       "docker:26-cli",
       "docker:cli",
-      "docker:26.0.2-cli-alpine3.19"
+      "docker:26.1.0-cli-alpine3.19"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "e73d98fe46a0a7b99be6ce69cc6406ff5a7d94a0",
+      "GitCommit": "9b4db7b1b1edb202cf2a8046174d835a4cec70e0",
       "Directory": "26/cli",
       "File": "Dockerfile",
       "Builder": "buildkit",
-      "SOURCE_DATE_EPOCH": 1713476447
+      "SOURCE_DATE_EPOCH": 1713822545
     },
     "arches": {
       "amd64": {
         "archTags": [
-          "amd64/docker:26.0.2-cli",
-          "amd64/docker:26.0-cli",
+          "amd64/docker:26.1.0-cli",
+          "amd64/docker:26.1-cli",
           "amd64/docker:26-cli",
           "amd64/docker:cli",
-          "amd64/docker:26.0.2-cli-alpine3.19"
+          "amd64/docker:26.1.0-cli-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -5700,11 +5901,11 @@
       },
       "arm32v6": {
         "archTags": [
-          "arm32v6/docker:26.0.2-cli",
-          "arm32v6/docker:26.0-cli",
+          "arm32v6/docker:26.1.0-cli",
+          "arm32v6/docker:26.1-cli",
           "arm32v6/docker:26-cli",
           "arm32v6/docker:cli",
-          "arm32v6/docker:26.0.2-cli-alpine3.19"
+          "arm32v6/docker:26.1.0-cli-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -5725,11 +5926,11 @@
       },
       "arm32v7": {
         "archTags": [
-          "arm32v7/docker:26.0.2-cli",
-          "arm32v7/docker:26.0-cli",
+          "arm32v7/docker:26.1.0-cli",
+          "arm32v7/docker:26.1-cli",
           "arm32v7/docker:26-cli",
           "arm32v7/docker:cli",
-          "arm32v7/docker:26.0.2-cli-alpine3.19"
+          "arm32v7/docker:26.1.0-cli-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -5750,11 +5951,11 @@
       },
       "arm64v8": {
         "archTags": [
-          "arm64v8/docker:26.0.2-cli",
-          "arm64v8/docker:26.0-cli",
+          "arm64v8/docker:26.1.0-cli",
+          "arm64v8/docker:26.1-cli",
           "arm64v8/docker:26-cli",
           "arm64v8/docker:cli",
-          "arm64v8/docker:26.0.2-cli-alpine3.19"
+          "arm64v8/docker:26.1.0-cli-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -5775,43 +5976,43 @@
       }
     }
   },
-  "99f1965058127cf364d3f93e4da9e1dc0028dc47c5e486cfaf59c339a9b70c91": {
-    "sourceId": "99f1965058127cf364d3f93e4da9e1dc0028dc47c5e486cfaf59c339a9b70c91",
-    "reproducibleGitChecksum": "ef1a76ef9c5af306884f9a20e882c9d5f2148405304085f8ca3e24292ef0c394",
+  "fbcde53ddfe51204e067a8af66fb5285337849e08833552b0f775a3488f1f8de": {
+    "sourceId": "fbcde53ddfe51204e067a8af66fb5285337849e08833552b0f775a3488f1f8de",
+    "reproducibleGitChecksum": "df6e82576619f1da8a726aff345bd087f05b13fd87a4d370041ff4af1f5f1cab",
     "tags": [
-      "docker:26.0.2-dind",
-      "docker:26.0-dind",
+      "docker:26.1.0-dind",
+      "docker:26.1-dind",
       "docker:26-dind",
       "docker:dind",
-      "docker:26.0.2-dind-alpine3.19",
-      "docker:26.0.2",
-      "docker:26.0",
+      "docker:26.1.0-dind-alpine3.19",
+      "docker:26.1.0",
+      "docker:26.1",
       "docker:26",
       "docker:latest",
-      "docker:26.0.2-alpine3.19"
+      "docker:26.1.0-alpine3.19"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "e73d98fe46a0a7b99be6ce69cc6406ff5a7d94a0",
+      "GitCommit": "9b4db7b1b1edb202cf2a8046174d835a4cec70e0",
       "Directory": "26/dind",
       "File": "Dockerfile",
       "Builder": "buildkit",
-      "SOURCE_DATE_EPOCH": 1713476447
+      "SOURCE_DATE_EPOCH": 1713822545
     },
     "arches": {
       "amd64": {
         "archTags": [
-          "amd64/docker:26.0.2-dind",
-          "amd64/docker:26.0-dind",
+          "amd64/docker:26.1.0-dind",
+          "amd64/docker:26.1-dind",
           "amd64/docker:26-dind",
           "amd64/docker:dind",
-          "amd64/docker:26.0.2-dind-alpine3.19",
-          "amd64/docker:26.0.2",
-          "amd64/docker:26.0",
+          "amd64/docker:26.1.0-dind-alpine3.19",
+          "amd64/docker:26.1.0",
+          "amd64/docker:26.1",
           "amd64/docker:26",
           "amd64/docker:latest",
-          "amd64/docker:26.0.2-alpine3.19"
+          "amd64/docker:26.1.0-alpine3.19"
         ],
         "froms": [
           "docker:26-cli"
@@ -5824,23 +6025,23 @@
         },
         "parents": {
           "docker:26-cli": {
-            "sourceId": "5fc40e1082575824045d82f08207158a2a42722e66bc9490eb5bd7c6f17892fb",
+            "sourceId": "b429ca80479eef7ef2bd5d65fbee3c9497a5607bb7fa50ada009d2e0747b0a18",
             "pin": null
           }
         }
       },
       "arm32v6": {
         "archTags": [
-          "arm32v6/docker:26.0.2-dind",
-          "arm32v6/docker:26.0-dind",
+          "arm32v6/docker:26.1.0-dind",
+          "arm32v6/docker:26.1-dind",
           "arm32v6/docker:26-dind",
           "arm32v6/docker:dind",
-          "arm32v6/docker:26.0.2-dind-alpine3.19",
-          "arm32v6/docker:26.0.2",
-          "arm32v6/docker:26.0",
+          "arm32v6/docker:26.1.0-dind-alpine3.19",
+          "arm32v6/docker:26.1.0",
+          "arm32v6/docker:26.1",
           "arm32v6/docker:26",
           "arm32v6/docker:latest",
-          "arm32v6/docker:26.0.2-alpine3.19"
+          "arm32v6/docker:26.1.0-alpine3.19"
         ],
         "froms": [
           "docker:26-cli"
@@ -5854,23 +6055,23 @@
         },
         "parents": {
           "docker:26-cli": {
-            "sourceId": "5fc40e1082575824045d82f08207158a2a42722e66bc9490eb5bd7c6f17892fb",
+            "sourceId": "b429ca80479eef7ef2bd5d65fbee3c9497a5607bb7fa50ada009d2e0747b0a18",
             "pin": null
           }
         }
       },
       "arm32v7": {
         "archTags": [
-          "arm32v7/docker:26.0.2-dind",
-          "arm32v7/docker:26.0-dind",
+          "arm32v7/docker:26.1.0-dind",
+          "arm32v7/docker:26.1-dind",
           "arm32v7/docker:26-dind",
           "arm32v7/docker:dind",
-          "arm32v7/docker:26.0.2-dind-alpine3.19",
-          "arm32v7/docker:26.0.2",
-          "arm32v7/docker:26.0",
+          "arm32v7/docker:26.1.0-dind-alpine3.19",
+          "arm32v7/docker:26.1.0",
+          "arm32v7/docker:26.1",
           "arm32v7/docker:26",
           "arm32v7/docker:latest",
-          "arm32v7/docker:26.0.2-alpine3.19"
+          "arm32v7/docker:26.1.0-alpine3.19"
         ],
         "froms": [
           "docker:26-cli"
@@ -5884,23 +6085,23 @@
         },
         "parents": {
           "docker:26-cli": {
-            "sourceId": "5fc40e1082575824045d82f08207158a2a42722e66bc9490eb5bd7c6f17892fb",
+            "sourceId": "b429ca80479eef7ef2bd5d65fbee3c9497a5607bb7fa50ada009d2e0747b0a18",
             "pin": null
           }
         }
       },
       "arm64v8": {
         "archTags": [
-          "arm64v8/docker:26.0.2-dind",
-          "arm64v8/docker:26.0-dind",
+          "arm64v8/docker:26.1.0-dind",
+          "arm64v8/docker:26.1-dind",
           "arm64v8/docker:26-dind",
           "arm64v8/docker:dind",
-          "arm64v8/docker:26.0.2-dind-alpine3.19",
-          "arm64v8/docker:26.0.2",
-          "arm64v8/docker:26.0",
+          "arm64v8/docker:26.1.0-dind-alpine3.19",
+          "arm64v8/docker:26.1.0",
+          "arm64v8/docker:26.1",
           "arm64v8/docker:26",
           "arm64v8/docker:latest",
-          "arm64v8/docker:26.0.2-alpine3.19"
+          "arm64v8/docker:26.1.0-alpine3.19"
         ],
         "froms": [
           "docker:26-cli"
@@ -5914,36 +6115,36 @@
         },
         "parents": {
           "docker:26-cli": {
-            "sourceId": "5fc40e1082575824045d82f08207158a2a42722e66bc9490eb5bd7c6f17892fb",
+            "sourceId": "b429ca80479eef7ef2bd5d65fbee3c9497a5607bb7fa50ada009d2e0747b0a18",
             "pin": null
           }
         }
       }
     }
   },
-  "64c7bafe5bc9f8a46cb8f255267c774d4ce06091da2aa24bea1688cf6df16db0": {
-    "sourceId": "64c7bafe5bc9f8a46cb8f255267c774d4ce06091da2aa24bea1688cf6df16db0",
-    "reproducibleGitChecksum": "a3f91db99d63e1fa8b72cb5612ce6de164f95d867ba7757c931dff950bd420d6",
+  "536c9216bd2d7dab7b0017b27b352c0bfe342f4a2129afac3628e0585c2475f3": {
+    "sourceId": "536c9216bd2d7dab7b0017b27b352c0bfe342f4a2129afac3628e0585c2475f3",
+    "reproducibleGitChecksum": "6b9d58ea36dff701fc10b427170e90dbd518f87aa654d7d4d0f6b46325159aba",
     "tags": [
-      "docker:26.0.2-dind-rootless",
-      "docker:26.0-dind-rootless",
+      "docker:26.1.0-dind-rootless",
+      "docker:26.1-dind-rootless",
       "docker:26-dind-rootless",
       "docker:dind-rootless"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "e73d98fe46a0a7b99be6ce69cc6406ff5a7d94a0",
+      "GitCommit": "9b4db7b1b1edb202cf2a8046174d835a4cec70e0",
       "Directory": "26/dind-rootless",
       "File": "Dockerfile",
       "Builder": "buildkit",
-      "SOURCE_DATE_EPOCH": 1713476447
+      "SOURCE_DATE_EPOCH": 1713822545
     },
     "arches": {
       "amd64": {
         "archTags": [
-          "amd64/docker:26.0.2-dind-rootless",
-          "amd64/docker:26.0-dind-rootless",
+          "amd64/docker:26.1.0-dind-rootless",
+          "amd64/docker:26.1-dind-rootless",
           "amd64/docker:26-dind-rootless",
           "amd64/docker:dind-rootless"
         ],
@@ -5958,15 +6159,15 @@
         },
         "parents": {
           "docker:26-dind": {
-            "sourceId": "99f1965058127cf364d3f93e4da9e1dc0028dc47c5e486cfaf59c339a9b70c91",
+            "sourceId": "fbcde53ddfe51204e067a8af66fb5285337849e08833552b0f775a3488f1f8de",
             "pin": null
           }
         }
       },
       "arm64v8": {
         "archTags": [
-          "arm64v8/docker:26.0.2-dind-rootless",
-          "arm64v8/docker:26.0-dind-rootless",
+          "arm64v8/docker:26.1.0-dind-rootless",
+          "arm64v8/docker:26.1-dind-rootless",
           "arm64v8/docker:26-dind-rootless",
           "arm64v8/docker:dind-rootless"
         ],
@@ -5982,44 +6183,44 @@
         },
         "parents": {
           "docker:26-dind": {
-            "sourceId": "99f1965058127cf364d3f93e4da9e1dc0028dc47c5e486cfaf59c339a9b70c91",
+            "sourceId": "fbcde53ddfe51204e067a8af66fb5285337849e08833552b0f775a3488f1f8de",
             "pin": null
           }
         }
       }
     }
   },
-  "3ef5406ade572688bbd0b1137ccf637a689060af06110e871966e1ab1454325f": {
-    "sourceId": "3ef5406ade572688bbd0b1137ccf637a689060af06110e871966e1ab1454325f",
-    "reproducibleGitChecksum": "214b1ec3d19bcd2ed1920c52e89aee286b64c9aee3cb836b2cb304800d4b26e4",
+  "b8a2840974e93e3d1bed83a438ea9aa96de6b15bbeb8944144fd5c7fae4d0041": {
+    "sourceId": "b8a2840974e93e3d1bed83a438ea9aa96de6b15bbeb8944144fd5c7fae4d0041",
+    "reproducibleGitChecksum": "c53f440a0e585adfc6e50c4fd4e510cb36aeb00d2f3da8085ff9590c6ef54d7b",
     "tags": [
-      "docker:26.0.2-windowsservercore-ltsc2022",
-      "docker:26.0-windowsservercore-ltsc2022",
+      "docker:26.1.0-windowsservercore-ltsc2022",
+      "docker:26.1-windowsservercore-ltsc2022",
       "docker:26-windowsservercore-ltsc2022",
       "docker:windowsservercore-ltsc2022",
-      "docker:26.0.2-windowsservercore",
-      "docker:26.0-windowsservercore",
+      "docker:26.1.0-windowsservercore",
+      "docker:26.1-windowsservercore",
       "docker:26-windowsservercore",
       "docker:windowsservercore"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "e73d98fe46a0a7b99be6ce69cc6406ff5a7d94a0",
+      "GitCommit": "9b4db7b1b1edb202cf2a8046174d835a4cec70e0",
       "Directory": "26/windows/windowsservercore-ltsc2022",
       "File": "Dockerfile",
       "Builder": "classic",
-      "SOURCE_DATE_EPOCH": 1713476447
+      "SOURCE_DATE_EPOCH": 1713822545
     },
     "arches": {
       "windows-amd64": {
         "archTags": [
-          "winamd64/docker:26.0.2-windowsservercore-ltsc2022",
-          "winamd64/docker:26.0-windowsservercore-ltsc2022",
+          "winamd64/docker:26.1.0-windowsservercore-ltsc2022",
+          "winamd64/docker:26.1-windowsservercore-ltsc2022",
           "winamd64/docker:26-windowsservercore-ltsc2022",
           "winamd64/docker:windowsservercore-ltsc2022",
-          "winamd64/docker:26.0.2-windowsservercore",
-          "winamd64/docker:26.0-windowsservercore",
+          "winamd64/docker:26.1.0-windowsservercore",
+          "winamd64/docker:26.1-windowsservercore",
           "winamd64/docker:26-windowsservercore",
           "winamd64/docker:windowsservercore"
         ],
@@ -6041,37 +6242,37 @@
       }
     }
   },
-  "c8c05cb6d4dca2c764ff5bf0a078ab8eb076816183455734b3761ea2ea01a200": {
-    "sourceId": "c8c05cb6d4dca2c764ff5bf0a078ab8eb076816183455734b3761ea2ea01a200",
-    "reproducibleGitChecksum": "3e6179dfa4a5632e6f7c8fe76d8e709097c25bff157024c7ed251e02edb8f5eb",
+  "97c1b355aa746d78970ffcd98da7c90f00cb965f3fd432318a429d741a6aee75": {
+    "sourceId": "97c1b355aa746d78970ffcd98da7c90f00cb965f3fd432318a429d741a6aee75",
+    "reproducibleGitChecksum": "1f44e33e4a081c13a8765e3b098c3620c60e2365aca541901f8676a8b53bc710",
     "tags": [
-      "docker:26.0.2-windowsservercore-1809",
-      "docker:26.0-windowsservercore-1809",
+      "docker:26.1.0-windowsservercore-1809",
+      "docker:26.1-windowsservercore-1809",
       "docker:26-windowsservercore-1809",
       "docker:windowsservercore-1809",
-      "docker:26.0.2-windowsservercore",
-      "docker:26.0-windowsservercore",
+      "docker:26.1.0-windowsservercore",
+      "docker:26.1-windowsservercore",
       "docker:26-windowsservercore",
       "docker:windowsservercore"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "e73d98fe46a0a7b99be6ce69cc6406ff5a7d94a0",
+      "GitCommit": "9b4db7b1b1edb202cf2a8046174d835a4cec70e0",
       "Directory": "26/windows/windowsservercore-1809",
       "File": "Dockerfile",
       "Builder": "classic",
-      "SOURCE_DATE_EPOCH": 1713476447
+      "SOURCE_DATE_EPOCH": 1713822545
     },
     "arches": {
       "windows-amd64": {
         "archTags": [
-          "winamd64/docker:26.0.2-windowsservercore-1809",
-          "winamd64/docker:26.0-windowsservercore-1809",
+          "winamd64/docker:26.1.0-windowsservercore-1809",
+          "winamd64/docker:26.1-windowsservercore-1809",
           "winamd64/docker:26-windowsservercore-1809",
           "winamd64/docker:windowsservercore-1809",
-          "winamd64/docker:26.0.2-windowsservercore",
-          "winamd64/docker:26.0-windowsservercore",
+          "winamd64/docker:26.1.0-windowsservercore",
+          "winamd64/docker:26.1-windowsservercore",
           "winamd64/docker:26-windowsservercore",
           "winamd64/docker:windowsservercore"
         ],
@@ -28899,30 +29100,30 @@
       }
     }
   },
-  "ce1448201baff25cba117c261c554b403c5f2db00df6cf944808f0ffeb1ff028": {
-    "sourceId": "ce1448201baff25cba117c261c554b403c5f2db00df6cf944808f0ffeb1ff028",
-    "reproducibleGitChecksum": "73ed2a07ddd9ff7fbc9f04946a9ca3a91f1061fc65fd6461746d36218f655338",
+  "c83caeeef2e84fc15468c8125d09b004d5aa68af79d767cbd558b8a484e6edfb": {
+    "sourceId": "c83caeeef2e84fc15468c8125d09b004d5aa68af79d767cbd558b8a484e6edfb",
+    "reproducibleGitChecksum": "d86494c076e0c7e5c384cdf02111ad37121617b3c2e14cea7a67d23b003196cf",
     "tags": [
-      "mongo:7.0.9-rc0-jammy",
+      "mongo:7.0.9-rc1-jammy",
       "mongo:7.0-rc-jammy",
-      "mongo:7.0.9-rc0",
+      "mongo:7.0.9-rc1",
       "mongo:7.0-rc"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4e2447f544788d60656578d03a335e87595e1b84",
+      "GitCommit": "fbfba91eec75ee6dfa1644b519af518d9a6a71df",
       "Directory": "7.0-rc",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1712916103
+      "SOURCE_DATE_EPOCH": 1713672106
     },
     "arches": {
       "amd64": {
         "archTags": [
-          "amd64/mongo:7.0.9-rc0-jammy",
+          "amd64/mongo:7.0.9-rc1-jammy",
           "amd64/mongo:7.0-rc-jammy",
-          "amd64/mongo:7.0.9-rc0",
+          "amd64/mongo:7.0.9-rc1",
           "amd64/mongo:7.0-rc"
         ],
         "froms": [
@@ -28943,9 +29144,9 @@
       },
       "arm64v8": {
         "archTags": [
-          "arm64v8/mongo:7.0.9-rc0-jammy",
+          "arm64v8/mongo:7.0.9-rc1-jammy",
           "arm64v8/mongo:7.0-rc-jammy",
-          "arm64v8/mongo:7.0.9-rc0",
+          "arm64v8/mongo:7.0.9-rc1",
           "arm64v8/mongo:7.0-rc"
         ],
         "froms": [
@@ -28967,34 +29168,34 @@
       }
     }
   },
-  "6fb09a1c6f90ff162f34a88e341daa47e794f5f03c41fd4511c4c961e1ca148c": {
-    "sourceId": "6fb09a1c6f90ff162f34a88e341daa47e794f5f03c41fd4511c4c961e1ca148c",
-    "reproducibleGitChecksum": "6bde11b0ce705d825b7fa2357d14d9117d88c539ca2c3875c4909927e07b0b0e",
+  "c30766e981bad8f0e96bba573e75408c663dcf34a489c36d8f59ed07381b9ad9": {
+    "sourceId": "c30766e981bad8f0e96bba573e75408c663dcf34a489c36d8f59ed07381b9ad9",
+    "reproducibleGitChecksum": "3abcbf4a26c85582e9fbce50f926f686d1712e18293f74953975271153737c4b",
     "tags": [
-      "mongo:7.0.9-rc0-windowsservercore-ltsc2022",
+      "mongo:7.0.9-rc1-windowsservercore-ltsc2022",
       "mongo:7.0-rc-windowsservercore-ltsc2022",
-      "mongo:7.0.9-rc0-windowsservercore",
+      "mongo:7.0.9-rc1-windowsservercore",
       "mongo:7.0-rc-windowsservercore",
-      "mongo:7.0.9-rc0",
+      "mongo:7.0.9-rc1",
       "mongo:7.0-rc"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4e2447f544788d60656578d03a335e87595e1b84",
+      "GitCommit": "fbfba91eec75ee6dfa1644b519af518d9a6a71df",
       "Directory": "7.0-rc/windows/windowsservercore-ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1712916103
+      "SOURCE_DATE_EPOCH": 1713672106
     },
     "arches": {
       "windows-amd64": {
         "archTags": [
-          "winamd64/mongo:7.0.9-rc0-windowsservercore-ltsc2022",
+          "winamd64/mongo:7.0.9-rc1-windowsservercore-ltsc2022",
           "winamd64/mongo:7.0-rc-windowsservercore-ltsc2022",
-          "winamd64/mongo:7.0.9-rc0-windowsservercore",
+          "winamd64/mongo:7.0.9-rc1-windowsservercore",
           "winamd64/mongo:7.0-rc-windowsservercore",
-          "winamd64/mongo:7.0.9-rc0",
+          "winamd64/mongo:7.0.9-rc1",
           "winamd64/mongo:7.0-rc"
         ],
         "froms": [
@@ -29015,34 +29216,34 @@
       }
     }
   },
-  "65e1947d66628a71a9860c0e5c039775cfab56bfc5ddcc7e4a01af6dca04f6aa": {
-    "sourceId": "65e1947d66628a71a9860c0e5c039775cfab56bfc5ddcc7e4a01af6dca04f6aa",
-    "reproducibleGitChecksum": "dd0467b0209929c9ac94dd32298f6e0a08ddf0feabc89cd3886310941f2e8b6e",
+  "f26d6186f2b43670f9b96e688bf3b1b320085a03307c4a63de235c74cfd8c482": {
+    "sourceId": "f26d6186f2b43670f9b96e688bf3b1b320085a03307c4a63de235c74cfd8c482",
+    "reproducibleGitChecksum": "9f51841d5931404e005bc762a10361edcde7262022332d564aabb4d264fd4808",
     "tags": [
-      "mongo:7.0.9-rc0-windowsservercore-1809",
+      "mongo:7.0.9-rc1-windowsservercore-1809",
       "mongo:7.0-rc-windowsservercore-1809",
-      "mongo:7.0.9-rc0-windowsservercore",
+      "mongo:7.0.9-rc1-windowsservercore",
       "mongo:7.0-rc-windowsservercore",
-      "mongo:7.0.9-rc0",
+      "mongo:7.0.9-rc1",
       "mongo:7.0-rc"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4e2447f544788d60656578d03a335e87595e1b84",
+      "GitCommit": "fbfba91eec75ee6dfa1644b519af518d9a6a71df",
       "Directory": "7.0-rc/windows/windowsservercore-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1712916103
+      "SOURCE_DATE_EPOCH": 1713672106
     },
     "arches": {
       "windows-amd64": {
         "archTags": [
-          "winamd64/mongo:7.0.9-rc0-windowsservercore-1809",
+          "winamd64/mongo:7.0.9-rc1-windowsservercore-1809",
           "winamd64/mongo:7.0-rc-windowsservercore-1809",
-          "winamd64/mongo:7.0.9-rc0-windowsservercore",
+          "winamd64/mongo:7.0.9-rc1-windowsservercore",
           "winamd64/mongo:7.0-rc-windowsservercore",
-          "winamd64/mongo:7.0.9-rc0",
+          "winamd64/mongo:7.0.9-rc1",
           "winamd64/mongo:7.0-rc"
         ],
         "froms": [
@@ -29063,36 +29264,36 @@
       }
     }
   },
-  "51be9d7ccabf1bddebfe33ff21335e7e3e316afe9bcda309cdb9331b03712e70": {
-    "sourceId": "51be9d7ccabf1bddebfe33ff21335e7e3e316afe9bcda309cdb9331b03712e70",
-    "reproducibleGitChecksum": "c9a3a4d051269d78aeca62f722750c42b86b0f934ff068a117779800b982f643",
+  "2ec8e6d4727c4a26029a2b40417859b5261a6d003edd45ac25c8ffacb049a66a": {
+    "sourceId": "2ec8e6d4727c4a26029a2b40417859b5261a6d003edd45ac25c8ffacb049a66a",
+    "reproducibleGitChecksum": "4847be64564b53c395aeec713eec53f3f0693263d509ade3965bcd8ec875d13e",
     "tags": [
-      "mongo:7.0.9-rc0-nanoserver-ltsc2022",
+      "mongo:7.0.9-rc1-nanoserver-ltsc2022",
       "mongo:7.0-rc-nanoserver-ltsc2022",
-      "mongo:7.0.9-rc0-nanoserver",
+      "mongo:7.0.9-rc1-nanoserver",
       "mongo:7.0-rc-nanoserver"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4e2447f544788d60656578d03a335e87595e1b84",
+      "GitCommit": "fbfba91eec75ee6dfa1644b519af518d9a6a71df",
       "Directory": "7.0-rc/windows/nanoserver-ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1712916103
+      "SOURCE_DATE_EPOCH": 1713672106
     },
     "arches": {
       "windows-amd64": {
         "archTags": [
-          "winamd64/mongo:7.0.9-rc0-nanoserver-ltsc2022",
+          "winamd64/mongo:7.0.9-rc1-nanoserver-ltsc2022",
           "winamd64/mongo:7.0-rc-nanoserver-ltsc2022",
-          "winamd64/mongo:7.0.9-rc0-nanoserver",
+          "winamd64/mongo:7.0.9-rc1-nanoserver",
           "winamd64/mongo:7.0-rc-nanoserver"
         ],
         "froms": [
           "mcr.microsoft.com/windows/nanoserver:ltsc2022",
-          "mongo:7.0.9-rc0-windowsservercore-ltsc2022",
-          "mongo:7.0.9-rc0-windowsservercore-ltsc2022"
+          "mongo:7.0.9-rc1-windowsservercore-ltsc2022",
+          "mongo:7.0.9-rc1-windowsservercore-ltsc2022"
         ],
         "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2022",
         "platformString": "windows/amd64",
@@ -29105,44 +29306,44 @@
             "sourceId": null,
             "pin": "sha256:6223f3a17f2652064c56ca55aaef866177d58d6a1c526636ac2120685df5466d"
           },
-          "mongo:7.0.9-rc0-windowsservercore-ltsc2022": {
-            "sourceId": "6fb09a1c6f90ff162f34a88e341daa47e794f5f03c41fd4511c4c961e1ca148c",
+          "mongo:7.0.9-rc1-windowsservercore-ltsc2022": {
+            "sourceId": "c30766e981bad8f0e96bba573e75408c663dcf34a489c36d8f59ed07381b9ad9",
             "pin": null
           }
         }
       }
     }
   },
-  "4d9c0134d90ee6030caa5f1224d99617b0a6f03af5475cd69665771b4511122f": {
-    "sourceId": "4d9c0134d90ee6030caa5f1224d99617b0a6f03af5475cd69665771b4511122f",
-    "reproducibleGitChecksum": "5536d4bae705bd3e0c36f8560a97afacd6faec968faee25c82ce8458595fa76f",
+  "a9aaec72b1eb7dc50edea73fe48ce3dbae992bfb195280f2bdf89bc644e372a2": {
+    "sourceId": "a9aaec72b1eb7dc50edea73fe48ce3dbae992bfb195280f2bdf89bc644e372a2",
+    "reproducibleGitChecksum": "f870bee9c25ee24547d3606d4ee8ca8e6530a1693f9ef13cc6a62d65ad7c4ea3",
     "tags": [
-      "mongo:7.0.9-rc0-nanoserver-1809",
+      "mongo:7.0.9-rc1-nanoserver-1809",
       "mongo:7.0-rc-nanoserver-1809",
-      "mongo:7.0.9-rc0-nanoserver",
+      "mongo:7.0.9-rc1-nanoserver",
       "mongo:7.0-rc-nanoserver"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/mongo.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4e2447f544788d60656578d03a335e87595e1b84",
+      "GitCommit": "fbfba91eec75ee6dfa1644b519af518d9a6a71df",
       "Directory": "7.0-rc/windows/nanoserver-1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1712916103
+      "SOURCE_DATE_EPOCH": 1713672106
     },
     "arches": {
       "windows-amd64": {
         "archTags": [
-          "winamd64/mongo:7.0.9-rc0-nanoserver-1809",
+          "winamd64/mongo:7.0.9-rc1-nanoserver-1809",
           "winamd64/mongo:7.0-rc-nanoserver-1809",
-          "winamd64/mongo:7.0.9-rc0-nanoserver",
+          "winamd64/mongo:7.0.9-rc1-nanoserver",
           "winamd64/mongo:7.0-rc-nanoserver"
         ],
         "froms": [
           "mcr.microsoft.com/windows/nanoserver:1809",
-          "mongo:7.0.9-rc0-windowsservercore-1809",
-          "mongo:7.0.9-rc0-windowsservercore-1809"
+          "mongo:7.0.9-rc1-windowsservercore-1809",
+          "mongo:7.0.9-rc1-windowsservercore-1809"
         ],
         "lastStageFrom": "mcr.microsoft.com/windows/nanoserver:1809",
         "platformString": "windows/amd64",
@@ -29155,8 +29356,8 @@
             "sourceId": null,
             "pin": "sha256:9118c25a81609f13b441411f006b7cb6dd50958303e228f53914bebd8056d2e1"
           },
-          "mongo:7.0.9-rc0-windowsservercore-1809": {
-            "sourceId": "65e1947d66628a71a9860c0e5c039775cfab56bfc5ddcc7e4a01af6dca04f6aa",
+          "mongo:7.0.9-rc1-windowsservercore-1809": {
+            "sourceId": "f26d6186f2b43670f9b96e688bf3b1b320085a03307c4a63de235c74cfd8c482",
             "pin": null
           }
         }
