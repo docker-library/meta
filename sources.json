@@ -4706,9 +4706,517 @@
       }
     }
   },
-  "63730a265a46293ea0cfe98b154df05fa3b93820c5af137d8c19b3d4e734bd43": {
-    "sourceId": "63730a265a46293ea0cfe98b154df05fa3b93820c5af137d8c19b3d4e734bd43",
-    "reproducibleGitChecksum": "bf52ff97b3d8bb8a743c49ff866a8f80f129539b999ef97a15253dfb63769a72",
+  "4bcc80304dbad6e08eeca7cdc2a2243128455773e9614496c78e6530748a73c8": {
+    "sourceId": "4bcc80304dbad6e08eeca7cdc2a2243128455773e9614496c78e6530748a73c8",
+    "reproducibleGitChecksum": "42893e329f743e1a4e4714f282b7dbfd8b6253d6cf4dbc3af90813cdbbce0adc",
+    "tags": [
+      "caddy:2.8.0-beta.1-alpine",
+      "caddy:2.8-alpine",
+      "caddy:2.8.0-beta.1",
+      "caddy:2.8"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "bb842e2f2671cff715a207d200b1328cb770c9f2",
+      "Directory": "2.8/alpine",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1714573063
+    },
+    "arches": {
+      "amd64": {
+        "archTags": [
+          "amd64/caddy:2.8.0-beta.1-alpine",
+          "amd64/caddy:2.8-alpine",
+          "amd64/caddy:2.8.0-beta.1",
+          "amd64/caddy:2.8"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v6": {
+        "archTags": [
+          "arm32v6/caddy:2.8.0-beta.1-alpine",
+          "arm32v6/caddy:2.8-alpine",
+          "arm32v6/caddy:2.8.0-beta.1",
+          "arm32v6/caddy:2.8"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "archTags": [
+          "arm32v7/caddy:2.8.0-beta.1-alpine",
+          "arm32v7/caddy:2.8-alpine",
+          "arm32v7/caddy:2.8.0-beta.1",
+          "arm32v7/caddy:2.8"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "archTags": [
+          "arm64v8/caddy:2.8.0-beta.1-alpine",
+          "arm64v8/caddy:2.8-alpine",
+          "arm64v8/caddy:2.8.0-beta.1",
+          "arm64v8/caddy:2.8"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "archTags": [
+          "ppc64le/caddy:2.8.0-beta.1-alpine",
+          "ppc64le/caddy:2.8-alpine",
+          "ppc64le/caddy:2.8.0-beta.1",
+          "ppc64le/caddy:2.8"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "archTags": [
+          "s390x/caddy:2.8.0-beta.1-alpine",
+          "s390x/caddy:2.8-alpine",
+          "s390x/caddy:2.8.0-beta.1",
+          "s390x/caddy:2.8"
+        ],
+        "froms": [
+          "alpine:3.19"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "97859f95dea21bde7ec4f9f0b568fbde602bfe88869b95e66dd0a3258a20e25b": {
+    "sourceId": "97859f95dea21bde7ec4f9f0b568fbde602bfe88869b95e66dd0a3258a20e25b",
+    "reproducibleGitChecksum": "23a501ec4ad5a679fd39c8ae5608a34cb8e8961efe7c0879f9cb69888fcefaa9",
+    "tags": [
+      "caddy:2.8.0-beta.1-builder-alpine",
+      "caddy:2.8-builder-alpine",
+      "caddy:2.8.0-beta.1-builder",
+      "caddy:2.8-builder"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "dff8340ae685a6a952b7fb08590d18462748537c",
+      "Directory": "2.8/builder",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1714572164
+    },
+    "arches": {
+      "amd64": {
+        "archTags": [
+          "amd64/caddy:2.8.0-beta.1-builder-alpine",
+          "amd64/caddy:2.8-builder-alpine",
+          "amd64/caddy:2.8.0-beta.1-builder",
+          "amd64/caddy:2.8-builder"
+        ],
+        "froms": [
+          "golang:1.22-alpine3.19"
+        ],
+        "lastStageFrom": "golang:1.22-alpine3.19",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "golang:1.22-alpine3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v6": {
+        "archTags": [
+          "arm32v6/caddy:2.8.0-beta.1-builder-alpine",
+          "arm32v6/caddy:2.8-builder-alpine",
+          "arm32v6/caddy:2.8.0-beta.1-builder",
+          "arm32v6/caddy:2.8-builder"
+        ],
+        "froms": [
+          "golang:1.22-alpine3.19"
+        ],
+        "lastStageFrom": "golang:1.22-alpine3.19",
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "golang:1.22-alpine3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "archTags": [
+          "arm32v7/caddy:2.8.0-beta.1-builder-alpine",
+          "arm32v7/caddy:2.8-builder-alpine",
+          "arm32v7/caddy:2.8.0-beta.1-builder",
+          "arm32v7/caddy:2.8-builder"
+        ],
+        "froms": [
+          "golang:1.22-alpine3.19"
+        ],
+        "lastStageFrom": "golang:1.22-alpine3.19",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "golang:1.22-alpine3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "archTags": [
+          "arm64v8/caddy:2.8.0-beta.1-builder-alpine",
+          "arm64v8/caddy:2.8-builder-alpine",
+          "arm64v8/caddy:2.8.0-beta.1-builder",
+          "arm64v8/caddy:2.8-builder"
+        ],
+        "froms": [
+          "golang:1.22-alpine3.19"
+        ],
+        "lastStageFrom": "golang:1.22-alpine3.19",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "golang:1.22-alpine3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "archTags": [
+          "ppc64le/caddy:2.8.0-beta.1-builder-alpine",
+          "ppc64le/caddy:2.8-builder-alpine",
+          "ppc64le/caddy:2.8.0-beta.1-builder",
+          "ppc64le/caddy:2.8-builder"
+        ],
+        "froms": [
+          "golang:1.22-alpine3.19"
+        ],
+        "lastStageFrom": "golang:1.22-alpine3.19",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "golang:1.22-alpine3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "archTags": [
+          "s390x/caddy:2.8.0-beta.1-builder-alpine",
+          "s390x/caddy:2.8-builder-alpine",
+          "s390x/caddy:2.8.0-beta.1-builder",
+          "s390x/caddy:2.8-builder"
+        ],
+        "froms": [
+          "golang:1.22-alpine3.19"
+        ],
+        "lastStageFrom": "golang:1.22-alpine3.19",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "golang:1.22-alpine3.19": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "181da9632766441b2e3e3d5143c07cc813609e69a57ffa19e517e47c74c79b2f": {
+    "sourceId": "181da9632766441b2e3e3d5143c07cc813609e69a57ffa19e517e47c74c79b2f",
+    "reproducibleGitChecksum": "eb55dd7418ece3c897bd37c1cbe9692a4f07b8ffc12bd84e9beafe0deab13755",
+    "tags": [
+      "caddy:2.8.0-beta.1-windowsservercore-1809",
+      "caddy:2.8-windowsservercore-1809",
+      "caddy:2.8.0-beta.1-windowsservercore",
+      "caddy:2.8-windowsservercore",
+      "caddy:2.8.0-beta.1",
+      "caddy:2.8"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "bb842e2f2671cff715a207d200b1328cb770c9f2",
+      "Directory": "2.8/windows/1809",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1714573063
+    },
+    "arches": {
+      "windows-amd64": {
+        "archTags": [
+          "winamd64/caddy:2.8.0-beta.1-windowsservercore-1809",
+          "winamd64/caddy:2.8-windowsservercore-1809",
+          "winamd64/caddy:2.8.0-beta.1-windowsservercore",
+          "winamd64/caddy:2.8-windowsservercore",
+          "winamd64/caddy:2.8.0-beta.1",
+          "winamd64/caddy:2.8"
+        ],
+        "froms": [
+          "mcr.microsoft.com/windows/servercore:1809"
+        ],
+        "lastStageFrom": "mcr.microsoft.com/windows/servercore:1809",
+        "platformString": "windows/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "windows"
+        },
+        "parents": {
+          "mcr.microsoft.com/windows/servercore:1809": {
+            "sourceId": null,
+            "pin": "sha256:6fdf140282a2f809dae9b13fe441635867f0a27c33a438771673b8da8f3348a4"
+          }
+        }
+      }
+    }
+  },
+  "60e5d904140d028b28b27d21fc4b7b9c609de647c43422c1390872bfb9c1dd83": {
+    "sourceId": "60e5d904140d028b28b27d21fc4b7b9c609de647c43422c1390872bfb9c1dd83",
+    "reproducibleGitChecksum": "e149818f3fc3a8914814d1d71d94b9a46374a5df43a31f165cab8e7d2c36e63e",
+    "tags": [
+      "caddy:2.8.0-beta.1-windowsservercore-ltsc2022",
+      "caddy:2.8-windowsservercore-ltsc2022",
+      "caddy:2.8.0-beta.1-windowsservercore",
+      "caddy:2.8-windowsservercore",
+      "caddy:2.8.0-beta.1",
+      "caddy:2.8"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "bb842e2f2671cff715a207d200b1328cb770c9f2",
+      "Directory": "2.8/windows/ltsc2022",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1714573063
+    },
+    "arches": {
+      "windows-amd64": {
+        "archTags": [
+          "winamd64/caddy:2.8.0-beta.1-windowsservercore-ltsc2022",
+          "winamd64/caddy:2.8-windowsservercore-ltsc2022",
+          "winamd64/caddy:2.8.0-beta.1-windowsservercore",
+          "winamd64/caddy:2.8-windowsservercore",
+          "winamd64/caddy:2.8.0-beta.1",
+          "winamd64/caddy:2.8"
+        ],
+        "froms": [
+          "mcr.microsoft.com/windows/servercore:ltsc2022"
+        ],
+        "lastStageFrom": "mcr.microsoft.com/windows/servercore:ltsc2022",
+        "platformString": "windows/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "windows"
+        },
+        "parents": {
+          "mcr.microsoft.com/windows/servercore:ltsc2022": {
+            "sourceId": null,
+            "pin": "sha256:5d09ffa90d91a46e2fe7652b0a37cbf5217f34a819c3d71cbe635dae8226061b"
+          }
+        }
+      }
+    }
+  },
+  "82513f345022572c432b70666a8d5ab105c77c80829fc85d7e07f8d1dbaa9fc2": {
+    "sourceId": "82513f345022572c432b70666a8d5ab105c77c80829fc85d7e07f8d1dbaa9fc2",
+    "reproducibleGitChecksum": "88ea29fb4bf18f0424f346952a1bf485ebc858ccca84a093b86aee0464eef634",
+    "tags": [
+      "caddy:2.8.0-beta.1-builder-windowsservercore-1809",
+      "caddy:2.8-builder-windowsservercore-1809",
+      "caddy:2.8.0-beta.1-builder",
+      "caddy:2.8-builder"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "98e68dd0425220e66e6c7425905489e35fefef67",
+      "Directory": "2.8/windows-builder/1809",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1714572854
+    },
+    "arches": {
+      "windows-amd64": {
+        "archTags": [
+          "winamd64/caddy:2.8.0-beta.1-builder-windowsservercore-1809",
+          "winamd64/caddy:2.8-builder-windowsservercore-1809",
+          "winamd64/caddy:2.8.0-beta.1-builder",
+          "winamd64/caddy:2.8-builder"
+        ],
+        "froms": [
+          "golang:1.22-windowsservercore-1809"
+        ],
+        "lastStageFrom": "golang:1.22-windowsservercore-1809",
+        "platformString": "windows/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "windows"
+        },
+        "parents": {
+          "golang:1.22-windowsservercore-1809": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "0b23fef796eedb9bcd5d69ffb3d96d217f406e2a244fa2d78909b666d34e015a": {
+    "sourceId": "0b23fef796eedb9bcd5d69ffb3d96d217f406e2a244fa2d78909b666d34e015a",
+    "reproducibleGitChecksum": "5adc6fe5276099eba17221b30f03603e86cb987364e6b0d59b8f31cb6e7d6b46",
+    "tags": [
+      "caddy:2.8.0-beta.1-builder-windowsservercore-ltsc2022",
+      "caddy:2.8-builder-windowsservercore-ltsc2022",
+      "caddy:2.8.0-beta.1-builder",
+      "caddy:2.8-builder"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "98e68dd0425220e66e6c7425905489e35fefef67",
+      "Directory": "2.8/windows-builder/ltsc2022",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1714572854
+    },
+    "arches": {
+      "windows-amd64": {
+        "archTags": [
+          "winamd64/caddy:2.8.0-beta.1-builder-windowsservercore-ltsc2022",
+          "winamd64/caddy:2.8-builder-windowsservercore-ltsc2022",
+          "winamd64/caddy:2.8.0-beta.1-builder",
+          "winamd64/caddy:2.8-builder"
+        ],
+        "froms": [
+          "golang:1.22-windowsservercore-ltsc2022"
+        ],
+        "lastStageFrom": "golang:1.22-windowsservercore-ltsc2022",
+        "platformString": "windows/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "windows"
+        },
+        "parents": {
+          "golang:1.22-windowsservercore-ltsc2022": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "d851c2d4d016cb990bcb4d1d098a833b7f3d2a725fa10ff65f2f6dbdc0b5fd1f": {
+    "sourceId": "d851c2d4d016cb990bcb4d1d098a833b7f3d2a725fa10ff65f2f6dbdc0b5fd1f",
+    "reproducibleGitChecksum": "84fa4ba4963186a4e6790f3e7814b27c87a4a3cb7f76998325d177fadd3cc06a",
     "tags": [
       "caddy:2.7.6-alpine",
       "caddy:2.7-alpine",
@@ -4722,11 +5230,11 @@
     "entry": {
       "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4ce9344fd5c8b1f13533a3bd83b92368d6129836",
+      "GitCommit": "bb842e2f2671cff715a207d200b1328cb770c9f2",
       "Directory": "2.7/alpine",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1702002187
+      "SOURCE_DATE_EPOCH": 1714573063
     },
     "arches": {
       "amd64": {
@@ -4896,9 +5404,9 @@
       }
     }
   },
-  "676a8945cd28e3ea3d2f275ca30ce80c0ca6ebbdd5d88522460d5959cf1b270b": {
-    "sourceId": "676a8945cd28e3ea3d2f275ca30ce80c0ca6ebbdd5d88522460d5959cf1b270b",
-    "reproducibleGitChecksum": "6b7702c806b1f4d401090d095370f5d46993f93a06a924a7649ce48da97aecec",
+  "d92b90a905608d87fb2df7330a5d6c09f4c0aa2ec2f5ac7b76104b61b404e7b2": {
+    "sourceId": "d92b90a905608d87fb2df7330a5d6c09f4c0aa2ec2f5ac7b76104b61b404e7b2",
+    "reproducibleGitChecksum": "f01c132a2bed58e5159dc97ed7c34c4aaf24dd296fe3c69c919ba995e812d87a",
     "tags": [
       "caddy:2.7.6-builder-alpine",
       "caddy:2.7-builder-alpine",
@@ -4912,11 +5420,11 @@
     "entry": {
       "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4ce9344fd5c8b1f13533a3bd83b92368d6129836",
+      "GitCommit": "dff8340ae685a6a952b7fb08590d18462748537c",
       "Directory": "2.7/builder",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1702002187
+      "SOURCE_DATE_EPOCH": 1714572164
     },
     "arches": {
       "amd64": {
@@ -5086,9 +5594,9 @@
       }
     }
   },
-  "c51a958495451667111dc147a970af485b94fff91e000d473cb4514e16daeb63": {
-    "sourceId": "c51a958495451667111dc147a970af485b94fff91e000d473cb4514e16daeb63",
-    "reproducibleGitChecksum": "4dcee32d5b2290e0759f8c290fbf70caa12dd727920b0effce2957d5738de8cc",
+  "5ce86eb9d19789aaf6929d7f1443e32ec90a49d3c79a0db79642c9ed620945f8": {
+    "sourceId": "5ce86eb9d19789aaf6929d7f1443e32ec90a49d3c79a0db79642c9ed620945f8",
+    "reproducibleGitChecksum": "ee09b3952973d4749e1a9eb587331ae7f0e1d886ac5742ce929bcf2d82ddda25",
     "tags": [
       "caddy:2.7.6-windowsservercore-1809",
       "caddy:2.7-windowsservercore-1809",
@@ -5106,11 +5614,11 @@
     "entry": {
       "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4ce9344fd5c8b1f13533a3bd83b92368d6129836",
+      "GitCommit": "bb842e2f2671cff715a207d200b1328cb770c9f2",
       "Directory": "2.7/windows/1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1702002187
+      "SOURCE_DATE_EPOCH": 1714573063
     },
     "arches": {
       "windows-amd64": {
@@ -5146,9 +5654,9 @@
       }
     }
   },
-  "cd5ca2fe178e4c523fe5789351bfe1532668b59454fc688b38a465727b55b7b1": {
-    "sourceId": "cd5ca2fe178e4c523fe5789351bfe1532668b59454fc688b38a465727b55b7b1",
-    "reproducibleGitChecksum": "3a795915f2914e9188bc647cd196669ce53167e4457d83ddd34ea30879e49423",
+  "8697347aa9826bbdddc7cb21fd0bb8d83aecda2d05c25e531437aca24d990786": {
+    "sourceId": "8697347aa9826bbdddc7cb21fd0bb8d83aecda2d05c25e531437aca24d990786",
+    "reproducibleGitChecksum": "9d68411ca5ed0e1018a6331ea5546a9d6e276e4fac94e85498c56649e49b16da",
     "tags": [
       "caddy:2.7.6-windowsservercore-ltsc2022",
       "caddy:2.7-windowsservercore-ltsc2022",
@@ -5166,11 +5674,11 @@
     "entry": {
       "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4ce9344fd5c8b1f13533a3bd83b92368d6129836",
+      "GitCommit": "bb842e2f2671cff715a207d200b1328cb770c9f2",
       "Directory": "2.7/windows/ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1702002187
+      "SOURCE_DATE_EPOCH": 1714573063
     },
     "arches": {
       "windows-amd64": {
@@ -5206,9 +5714,9 @@
       }
     }
   },
-  "0ecb3a46f4faf447278513fb3e8addc86bd5a6bde15022c7122cc51f9614a33c": {
-    "sourceId": "0ecb3a46f4faf447278513fb3e8addc86bd5a6bde15022c7122cc51f9614a33c",
-    "reproducibleGitChecksum": "360ea7c35595472ddf5917d2b7cb89fd7df88e38978ce4c97abed541128f57eb",
+  "76b5f9a2a32839391686f2c392ff968897ef9f14f007d029348e9dcf84b7518e": {
+    "sourceId": "76b5f9a2a32839391686f2c392ff968897ef9f14f007d029348e9dcf84b7518e",
+    "reproducibleGitChecksum": "0f034d5a4d0c5499690549d47103a8cc248c0cf248d3b583ec0899a595464b44",
     "tags": [
       "caddy:2.7.6-builder-windowsservercore-1809",
       "caddy:2.7-builder-windowsservercore-1809",
@@ -5222,11 +5730,11 @@
     "entry": {
       "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4ce9344fd5c8b1f13533a3bd83b92368d6129836",
+      "GitCommit": "dff8340ae685a6a952b7fb08590d18462748537c",
       "Directory": "2.7/windows-builder/1809",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1702002187
+      "SOURCE_DATE_EPOCH": 1714572164
     },
     "arches": {
       "windows-amd64": {
@@ -5258,9 +5766,9 @@
       }
     }
   },
-  "482676bfdb3a8d31d855a1e1c93025eaf7f367aa76d02e4066bf5738e8c8b266": {
-    "sourceId": "482676bfdb3a8d31d855a1e1c93025eaf7f367aa76d02e4066bf5738e8c8b266",
-    "reproducibleGitChecksum": "65839455f7cd48b533ed6e51c09f26e680c1bb4abb739382e12326ab3c533b22",
+  "ee5b28fcda66ad78abbc75335a0978cdd5a624b32e5be039cba2baec2417786e": {
+    "sourceId": "ee5b28fcda66ad78abbc75335a0978cdd5a624b32e5be039cba2baec2417786e",
+    "reproducibleGitChecksum": "65e28edc12eb79f179cc98372095ceea7210999259e2ba8d22ce50999e7bc5b4",
     "tags": [
       "caddy:2.7.6-builder-windowsservercore-ltsc2022",
       "caddy:2.7-builder-windowsservercore-ltsc2022",
@@ -5274,11 +5782,11 @@
     "entry": {
       "GitRepo": "https://github.com/caddyserver/caddy-docker.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4ce9344fd5c8b1f13533a3bd83b92368d6129836",
+      "GitCommit": "dff8340ae685a6a952b7fb08590d18462748537c",
       "Directory": "2.7/windows-builder/ltsc2022",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1702002187
+      "SOURCE_DATE_EPOCH": 1714572164
     },
     "arches": {
       "windows-amd64": {
