@@ -23149,27 +23149,215 @@
       }
     }
   },
-  "eeee6935fcd1efb72f51f0f7d3408968e061f452aa60d931386d856e3b1c853f": {
-    "sourceId": "eeee6935fcd1efb72f51f0f7d3408968e061f452aa60d931386d856e3b1c853f",
-    "reproducibleGitChecksum": "302363a8e76259ddf01327782720bde9efee2a5fb1cdd87c51602f75a6ab9d94",
+  "b61cd112a7919270f060723f954c79564842d2f47cdd7025f8553020ad38480f": {
+    "sourceId": "b61cd112a7919270f060723f954c79564842d2f47cdd7025f8553020ad38480f",
+    "reproducibleGitChecksum": "9bcd7bfba1662b1cb786502a7befb4d02ae57f54142cd7ec25360c06259c6e4a",
     "tags": [
-      "gcc:13.2.0",
-      "gcc:13.2",
-      "gcc:13",
+      "gcc:14.1.0",
+      "gcc:14.1",
+      "gcc:14",
       "gcc:latest",
-      "gcc:13.2.0-bookworm",
-      "gcc:13.2-bookworm",
-      "gcc:13-bookworm",
+      "gcc:14.1.0-bookworm",
+      "gcc:14.1-bookworm",
+      "gcc:14-bookworm",
       "gcc:bookworm"
     ],
     "entry": {
       "GitRepo": "https://github.com/docker-library/gcc.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "9fbc8275f1adad750cdc7ad71a70254b7db4501e",
+      "GitCommit": "b1e7fc69e4021bab505d420fddc57002ef04939e",
+      "Directory": "14",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1715194723
+    },
+    "arches": {
+      "amd64": {
+        "archTags": [
+          "amd64/gcc:14.1.0",
+          "amd64/gcc:14.1",
+          "amd64/gcc:14",
+          "amd64/gcc:latest",
+          "amd64/gcc:14.1.0-bookworm",
+          "amd64/gcc:14.1-bookworm",
+          "amd64/gcc:14-bookworm",
+          "amd64/gcc:bookworm"
+        ],
+        "froms": [
+          "buildpack-deps:bookworm"
+        ],
+        "lastStageFrom": "buildpack-deps:bookworm",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "buildpack-deps:bookworm": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v5": {
+        "archTags": [
+          "arm32v5/gcc:14.1.0",
+          "arm32v5/gcc:14.1",
+          "arm32v5/gcc:14",
+          "arm32v5/gcc:latest",
+          "arm32v5/gcc:14.1.0-bookworm",
+          "arm32v5/gcc:14.1-bookworm",
+          "arm32v5/gcc:14-bookworm",
+          "arm32v5/gcc:bookworm"
+        ],
+        "froms": [
+          "buildpack-deps:bookworm"
+        ],
+        "lastStageFrom": "buildpack-deps:bookworm",
+        "platformString": "linux/arm/v5",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v5"
+        },
+        "parents": {
+          "buildpack-deps:bookworm": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "archTags": [
+          "arm32v7/gcc:14.1.0",
+          "arm32v7/gcc:14.1",
+          "arm32v7/gcc:14",
+          "arm32v7/gcc:latest",
+          "arm32v7/gcc:14.1.0-bookworm",
+          "arm32v7/gcc:14.1-bookworm",
+          "arm32v7/gcc:14-bookworm",
+          "arm32v7/gcc:bookworm"
+        ],
+        "froms": [
+          "buildpack-deps:bookworm"
+        ],
+        "lastStageFrom": "buildpack-deps:bookworm",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "buildpack-deps:bookworm": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "archTags": [
+          "arm64v8/gcc:14.1.0",
+          "arm64v8/gcc:14.1",
+          "arm64v8/gcc:14",
+          "arm64v8/gcc:latest",
+          "arm64v8/gcc:14.1.0-bookworm",
+          "arm64v8/gcc:14.1-bookworm",
+          "arm64v8/gcc:14-bookworm",
+          "arm64v8/gcc:bookworm"
+        ],
+        "froms": [
+          "buildpack-deps:bookworm"
+        ],
+        "lastStageFrom": "buildpack-deps:bookworm",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "buildpack-deps:bookworm": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "archTags": [
+          "ppc64le/gcc:14.1.0",
+          "ppc64le/gcc:14.1",
+          "ppc64le/gcc:14",
+          "ppc64le/gcc:latest",
+          "ppc64le/gcc:14.1.0-bookworm",
+          "ppc64le/gcc:14.1-bookworm",
+          "ppc64le/gcc:14-bookworm",
+          "ppc64le/gcc:bookworm"
+        ],
+        "froms": [
+          "buildpack-deps:bookworm"
+        ],
+        "lastStageFrom": "buildpack-deps:bookworm",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "buildpack-deps:bookworm": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "archTags": [
+          "s390x/gcc:14.1.0",
+          "s390x/gcc:14.1",
+          "s390x/gcc:14",
+          "s390x/gcc:latest",
+          "s390x/gcc:14.1.0-bookworm",
+          "s390x/gcc:14.1-bookworm",
+          "s390x/gcc:14-bookworm",
+          "s390x/gcc:bookworm"
+        ],
+        "froms": [
+          "buildpack-deps:bookworm"
+        ],
+        "lastStageFrom": "buildpack-deps:bookworm",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "buildpack-deps:bookworm": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "5d05b99e16806c4591e46709d3814e8a95851e1af823841c2d62680236a29a64": {
+    "sourceId": "5d05b99e16806c4591e46709d3814e8a95851e1af823841c2d62680236a29a64",
+    "reproducibleGitChecksum": "99028e938c5a86d13834315251bd3207089b6c5eceb20eefb3933c83dbfe2fad",
+    "tags": [
+      "gcc:13.2.0",
+      "gcc:13.2",
+      "gcc:13",
+      "gcc:13.2.0-bookworm",
+      "gcc:13.2-bookworm",
+      "gcc:13-bookworm"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/gcc.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "b1e7fc69e4021bab505d420fddc57002ef04939e",
       "Directory": "13",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1698434571
+      "SOURCE_DATE_EPOCH": 1715194723
     },
     "arches": {
       "amd64": {
@@ -23177,11 +23365,9 @@
           "amd64/gcc:13.2.0",
           "amd64/gcc:13.2",
           "amd64/gcc:13",
-          "amd64/gcc:latest",
           "amd64/gcc:13.2.0-bookworm",
           "amd64/gcc:13.2-bookworm",
-          "amd64/gcc:13-bookworm",
-          "amd64/gcc:bookworm"
+          "amd64/gcc:13-bookworm"
         ],
         "froms": [
           "buildpack-deps:bookworm"
@@ -23204,11 +23390,9 @@
           "arm32v5/gcc:13.2.0",
           "arm32v5/gcc:13.2",
           "arm32v5/gcc:13",
-          "arm32v5/gcc:latest",
           "arm32v5/gcc:13.2.0-bookworm",
           "arm32v5/gcc:13.2-bookworm",
-          "arm32v5/gcc:13-bookworm",
-          "arm32v5/gcc:bookworm"
+          "arm32v5/gcc:13-bookworm"
         ],
         "froms": [
           "buildpack-deps:bookworm"
@@ -23232,11 +23416,9 @@
           "arm32v7/gcc:13.2.0",
           "arm32v7/gcc:13.2",
           "arm32v7/gcc:13",
-          "arm32v7/gcc:latest",
           "arm32v7/gcc:13.2.0-bookworm",
           "arm32v7/gcc:13.2-bookworm",
-          "arm32v7/gcc:13-bookworm",
-          "arm32v7/gcc:bookworm"
+          "arm32v7/gcc:13-bookworm"
         ],
         "froms": [
           "buildpack-deps:bookworm"
@@ -23260,11 +23442,9 @@
           "arm64v8/gcc:13.2.0",
           "arm64v8/gcc:13.2",
           "arm64v8/gcc:13",
-          "arm64v8/gcc:latest",
           "arm64v8/gcc:13.2.0-bookworm",
           "arm64v8/gcc:13.2-bookworm",
-          "arm64v8/gcc:13-bookworm",
-          "arm64v8/gcc:bookworm"
+          "arm64v8/gcc:13-bookworm"
         ],
         "froms": [
           "buildpack-deps:bookworm"
@@ -23288,11 +23468,9 @@
           "ppc64le/gcc:13.2.0",
           "ppc64le/gcc:13.2",
           "ppc64le/gcc:13",
-          "ppc64le/gcc:latest",
           "ppc64le/gcc:13.2.0-bookworm",
           "ppc64le/gcc:13.2-bookworm",
-          "ppc64le/gcc:13-bookworm",
-          "ppc64le/gcc:bookworm"
+          "ppc64le/gcc:13-bookworm"
         ],
         "froms": [
           "buildpack-deps:bookworm"
@@ -23315,11 +23493,9 @@
           "s390x/gcc:13.2.0",
           "s390x/gcc:13.2",
           "s390x/gcc:13",
-          "s390x/gcc:latest",
           "s390x/gcc:13.2.0-bookworm",
           "s390x/gcc:13.2-bookworm",
-          "s390x/gcc:13-bookworm",
-          "s390x/gcc:bookworm"
+          "s390x/gcc:13-bookworm"
         ],
         "froms": [
           "buildpack-deps:bookworm"
@@ -23339,9 +23515,9 @@
       }
     }
   },
-  "d9de1bc067f2997417ceb45f778a6e3e5d47c7e3be644ef4a03db834b2a0d152": {
-    "sourceId": "d9de1bc067f2997417ceb45f778a6e3e5d47c7e3be644ef4a03db834b2a0d152",
-    "reproducibleGitChecksum": "a49d525d6560e1647895aa4ee417a4728028a1fb7d9570a04d80d6100b3bba12",
+  "b8190d202556b9404a38012448cfca866774837a4fa75dc8c2db7fbadd49541e": {
+    "sourceId": "b8190d202556b9404a38012448cfca866774837a4fa75dc8c2db7fbadd49541e",
+    "reproducibleGitChecksum": "3b22e8f89bf958f547072a18fb1227c133b7305083306851cd307f2464d62efa",
     "tags": [
       "gcc:12.3.0",
       "gcc:12.3",
@@ -23353,11 +23529,11 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/gcc.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "9fbc8275f1adad750cdc7ad71a70254b7db4501e",
+      "GitCommit": "b1e7fc69e4021bab505d420fddc57002ef04939e",
       "Directory": "12",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1698434571
+      "SOURCE_DATE_EPOCH": 1715194723
     },
     "arches": {
       "amd64": {
@@ -23515,9 +23691,9 @@
       }
     }
   },
-  "5e71dc8c4ed7abf89ca5ca9093858ec50089fed1ac2fa1ce64a95fdd8a3dfc36": {
-    "sourceId": "5e71dc8c4ed7abf89ca5ca9093858ec50089fed1ac2fa1ce64a95fdd8a3dfc36",
-    "reproducibleGitChecksum": "1945e9229e03f0b546cfc37093cddf989ceac3fe54f5e5efb3919e1d9d34276f",
+  "fe82a5ed8fa6965ed3d0125c8e933e2cb98a942134d8dd19edeacdf1c05261cc": {
+    "sourceId": "fe82a5ed8fa6965ed3d0125c8e933e2cb98a942134d8dd19edeacdf1c05261cc",
+    "reproducibleGitChecksum": "78aa80ba6ce54e0a260ce4ee15847e180c554b5ff4752363b9a7833c6f0a20cf",
     "tags": [
       "gcc:11.4.0",
       "gcc:11.4",
@@ -23529,11 +23705,11 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/gcc.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "9fbc8275f1adad750cdc7ad71a70254b7db4501e",
+      "GitCommit": "b1e7fc69e4021bab505d420fddc57002ef04939e",
       "Directory": "11",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1698434571
+      "SOURCE_DATE_EPOCH": 1715194723
     },
     "arches": {
       "amd64": {
@@ -23691,9 +23867,9 @@
       }
     }
   },
-  "8c5220a422b641e31b9c5af32c1ed605e4a104f88dd2c8fd8e2224a2febd9176": {
-    "sourceId": "8c5220a422b641e31b9c5af32c1ed605e4a104f88dd2c8fd8e2224a2febd9176",
-    "reproducibleGitChecksum": "57e3e5d883575d83724c5f02d690882005d50a2e9a2695969606c71f59d4bc14",
+  "a8e5e3d57a34e686708993d43b579ffdbec0776eaed76705d05213f9d556fa43": {
+    "sourceId": "a8e5e3d57a34e686708993d43b579ffdbec0776eaed76705d05213f9d556fa43",
+    "reproducibleGitChecksum": "54a8aea7e66fb91693a11773884a8318b2c98356d2709a8ab41eea0d0ea00695",
     "tags": [
       "gcc:10.5.0",
       "gcc:10.5",
@@ -23705,11 +23881,11 @@
     "entry": {
       "GitRepo": "https://github.com/docker-library/gcc.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "9fbc8275f1adad750cdc7ad71a70254b7db4501e",
+      "GitCommit": "b1e7fc69e4021bab505d420fddc57002ef04939e",
       "Directory": "10",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1698434571
+      "SOURCE_DATE_EPOCH": 1715194723
     },
     "arches": {
       "amd64": {
@@ -23848,182 +24024,6 @@
           "s390x/gcc:10.5.0-bullseye",
           "s390x/gcc:10.5-bullseye",
           "s390x/gcc:10-bullseye"
-        ],
-        "froms": [
-          "buildpack-deps:bullseye"
-        ],
-        "lastStageFrom": "buildpack-deps:bullseye",
-        "platformString": "linux/s390x",
-        "platform": {
-          "architecture": "s390x",
-          "os": "linux"
-        },
-        "parents": {
-          "buildpack-deps:bullseye": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "22b91ceee2bfa71039274801995d25dbaa4057054130cd511c5972407d2e3548": {
-    "sourceId": "22b91ceee2bfa71039274801995d25dbaa4057054130cd511c5972407d2e3548",
-    "reproducibleGitChecksum": "45f9991d8f6f51f8a6c7a8ff2eb6eb90dbd7b73079a4b5d833ed3b366bbd2611",
-    "tags": [
-      "gcc:9.5.0",
-      "gcc:9.5",
-      "gcc:9",
-      "gcc:9.5.0-bullseye",
-      "gcc:9.5-bullseye",
-      "gcc:9-bullseye"
-    ],
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/gcc.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "9fbc8275f1adad750cdc7ad71a70254b7db4501e",
-      "Directory": "9",
-      "File": "Dockerfile",
-      "Builder": "",
-      "SOURCE_DATE_EPOCH": 1698434571
-    },
-    "arches": {
-      "amd64": {
-        "archTags": [
-          "amd64/gcc:9.5.0",
-          "amd64/gcc:9.5",
-          "amd64/gcc:9",
-          "amd64/gcc:9.5.0-bullseye",
-          "amd64/gcc:9.5-bullseye",
-          "amd64/gcc:9-bullseye"
-        ],
-        "froms": [
-          "buildpack-deps:bullseye"
-        ],
-        "lastStageFrom": "buildpack-deps:bullseye",
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "buildpack-deps:bullseye": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v5": {
-        "archTags": [
-          "arm32v5/gcc:9.5.0",
-          "arm32v5/gcc:9.5",
-          "arm32v5/gcc:9",
-          "arm32v5/gcc:9.5.0-bullseye",
-          "arm32v5/gcc:9.5-bullseye",
-          "arm32v5/gcc:9-bullseye"
-        ],
-        "froms": [
-          "buildpack-deps:bullseye"
-        ],
-        "lastStageFrom": "buildpack-deps:bullseye",
-        "platformString": "linux/arm/v5",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v5"
-        },
-        "parents": {
-          "buildpack-deps:bullseye": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v7": {
-        "archTags": [
-          "arm32v7/gcc:9.5.0",
-          "arm32v7/gcc:9.5",
-          "arm32v7/gcc:9",
-          "arm32v7/gcc:9.5.0-bullseye",
-          "arm32v7/gcc:9.5-bullseye",
-          "arm32v7/gcc:9-bullseye"
-        ],
-        "froms": [
-          "buildpack-deps:bullseye"
-        ],
-        "lastStageFrom": "buildpack-deps:bullseye",
-        "platformString": "linux/arm/v7",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v7"
-        },
-        "parents": {
-          "buildpack-deps:bullseye": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "archTags": [
-          "arm64v8/gcc:9.5.0",
-          "arm64v8/gcc:9.5",
-          "arm64v8/gcc:9",
-          "arm64v8/gcc:9.5.0-bullseye",
-          "arm64v8/gcc:9.5-bullseye",
-          "arm64v8/gcc:9-bullseye"
-        ],
-        "froms": [
-          "buildpack-deps:bullseye"
-        ],
-        "lastStageFrom": "buildpack-deps:bullseye",
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "buildpack-deps:bullseye": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "ppc64le": {
-        "archTags": [
-          "ppc64le/gcc:9.5.0",
-          "ppc64le/gcc:9.5",
-          "ppc64le/gcc:9",
-          "ppc64le/gcc:9.5.0-bullseye",
-          "ppc64le/gcc:9.5-bullseye",
-          "ppc64le/gcc:9-bullseye"
-        ],
-        "froms": [
-          "buildpack-deps:bullseye"
-        ],
-        "lastStageFrom": "buildpack-deps:bullseye",
-        "platformString": "linux/ppc64le",
-        "platform": {
-          "architecture": "ppc64le",
-          "os": "linux"
-        },
-        "parents": {
-          "buildpack-deps:bullseye": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "s390x": {
-        "archTags": [
-          "s390x/gcc:9.5.0",
-          "s390x/gcc:9.5",
-          "s390x/gcc:9",
-          "s390x/gcc:9.5.0-bullseye",
-          "s390x/gcc:9.5-bullseye",
-          "s390x/gcc:9-bullseye"
         ],
         "froms": [
           "buildpack-deps:bullseye"
