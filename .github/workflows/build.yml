@@ -107,7 +107,7 @@ jobs:
           mkdir build
 
           # TODO signing prototype -- starting very small
-          shouldSign="$(jq <<<"$json" '.build.arch == "amd64" and any(.source.tags[]; startswith("notary:"))')"
+          shouldSign="$(jq <<<"$json" '.build.arch == "amd64" and any(.source.arches[.build.arch].tags[]; startswith("notary:"))')"
           [ "$shouldSign" = 'true' ] || [ "$shouldSign" = 'false' ] || exit 1
           echo "shouldSign=$shouldSign" >> "$GITHUB_ENV"
 
