@@ -48087,7 +48087,7 @@
         "parents": {
           "redhat/ubi8-minimal:latest": {
             "sourceId": null,
-            "pin": "sha256:2fa47fa9df7b98e2776f447855699c01d06c3271b2d7259b8b314084580cf591"
+            "pin": "sha256:f729a7f5685ea823e87ffd68aff988f2b8ff8d52126ade4e6de7c68088f28ebd"
           }
         }
       },
@@ -48125,7 +48125,7 @@
         "parents": {
           "redhat/ubi8-minimal:latest": {
             "sourceId": null,
-            "pin": "sha256:2fa47fa9df7b98e2776f447855699c01d06c3271b2d7259b8b314084580cf591"
+            "pin": "sha256:f729a7f5685ea823e87ffd68aff988f2b8ff8d52126ade4e6de7c68088f28ebd"
           }
         }
       }
@@ -48169,7 +48169,7 @@
         "parents": {
           "redhat/ubi8-minimal:latest": {
             "sourceId": null,
-            "pin": "sha256:2fa47fa9df7b98e2776f447855699c01d06c3271b2d7259b8b314084580cf591"
+            "pin": "sha256:f729a7f5685ea823e87ffd68aff988f2b8ff8d52126ade4e6de7c68088f28ebd"
           }
         }
       },
@@ -48199,7 +48199,7 @@
         "parents": {
           "redhat/ubi8-minimal:latest": {
             "sourceId": null,
-            "pin": "sha256:2fa47fa9df7b98e2776f447855699c01d06c3271b2d7259b8b314084580cf591"
+            "pin": "sha256:f729a7f5685ea823e87ffd68aff988f2b8ff8d52126ade4e6de7c68088f28ebd"
           }
         }
       }
@@ -62222,6 +62222,288 @@
       }
     }
   },
+  "b1e5b9a28f442d4406a3db3bdf87638575ea1cdfd90237569dee403f7eb863ce": {
+    "sourceId": "b1e5b9a28f442d4406a3db3bdf87638575ea1cdfd90237569dee403f7eb863ce",
+    "reproducibleGitChecksum": "1cb766d9502c29570b0569440cf7d4f7689f7402de5e8e493bb03a6523ad6c13",
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/postgres.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "930acaf01ff536090a3bb304cf823a8cc777b658",
+      "Directory": "16/alpine3.20",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716410384
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "postgres:16.3-alpine3.20",
+          "postgres:16-alpine3.20",
+          "postgres:alpine3.20",
+          "postgres:16.3-alpine",
+          "postgres:16-alpine",
+          "postgres:alpine"
+        ],
+        "archTags": [
+          "amd64/postgres:16.3-alpine3.20",
+          "amd64/postgres:16-alpine3.20",
+          "amd64/postgres:alpine3.20",
+          "amd64/postgres:16.3-alpine",
+          "amd64/postgres:16-alpine",
+          "amd64/postgres:alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v6": {
+        "tags": [
+          "postgres:16.3-alpine3.20",
+          "postgres:16-alpine3.20",
+          "postgres:alpine3.20",
+          "postgres:16.3-alpine",
+          "postgres:16-alpine",
+          "postgres:alpine"
+        ],
+        "archTags": [
+          "arm32v6/postgres:16.3-alpine3.20",
+          "arm32v6/postgres:16-alpine3.20",
+          "arm32v6/postgres:alpine3.20",
+          "arm32v6/postgres:16.3-alpine",
+          "arm32v6/postgres:16-alpine",
+          "arm32v6/postgres:alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "postgres:16.3-alpine3.20",
+          "postgres:16-alpine3.20",
+          "postgres:alpine3.20",
+          "postgres:16.3-alpine",
+          "postgres:16-alpine",
+          "postgres:alpine"
+        ],
+        "archTags": [
+          "arm32v7/postgres:16.3-alpine3.20",
+          "arm32v7/postgres:16-alpine3.20",
+          "arm32v7/postgres:alpine3.20",
+          "arm32v7/postgres:16.3-alpine",
+          "arm32v7/postgres:16-alpine",
+          "arm32v7/postgres:alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "postgres:16.3-alpine3.20",
+          "postgres:16-alpine3.20",
+          "postgres:alpine3.20",
+          "postgres:16.3-alpine",
+          "postgres:16-alpine",
+          "postgres:alpine"
+        ],
+        "archTags": [
+          "arm64v8/postgres:16.3-alpine3.20",
+          "arm64v8/postgres:16-alpine3.20",
+          "arm64v8/postgres:alpine3.20",
+          "arm64v8/postgres:16.3-alpine",
+          "arm64v8/postgres:16-alpine",
+          "arm64v8/postgres:alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "postgres:16.3-alpine3.20",
+          "postgres:16-alpine3.20",
+          "postgres:alpine3.20",
+          "postgres:16.3-alpine",
+          "postgres:16-alpine",
+          "postgres:alpine"
+        ],
+        "archTags": [
+          "i386/postgres:16.3-alpine3.20",
+          "i386/postgres:16-alpine3.20",
+          "i386/postgres:alpine3.20",
+          "i386/postgres:16.3-alpine",
+          "i386/postgres:16-alpine",
+          "i386/postgres:alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "postgres:16.3-alpine3.20",
+          "postgres:16-alpine3.20",
+          "postgres:alpine3.20",
+          "postgres:16.3-alpine",
+          "postgres:16-alpine",
+          "postgres:alpine"
+        ],
+        "archTags": [
+          "ppc64le/postgres:16.3-alpine3.20",
+          "ppc64le/postgres:16-alpine3.20",
+          "ppc64le/postgres:alpine3.20",
+          "ppc64le/postgres:16.3-alpine",
+          "ppc64le/postgres:16-alpine",
+          "ppc64le/postgres:alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "riscv64": {
+        "tags": [
+          "postgres:16.3-alpine3.20",
+          "postgres:16-alpine3.20",
+          "postgres:alpine3.20",
+          "postgres:16.3-alpine",
+          "postgres:16-alpine",
+          "postgres:alpine"
+        ],
+        "archTags": [
+          "riscv64/postgres:16.3-alpine3.20",
+          "riscv64/postgres:16-alpine3.20",
+          "riscv64/postgres:alpine3.20",
+          "riscv64/postgres:16.3-alpine",
+          "riscv64/postgres:16-alpine",
+          "riscv64/postgres:alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/riscv64",
+        "platform": {
+          "architecture": "riscv64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "postgres:16.3-alpine3.20",
+          "postgres:16-alpine3.20",
+          "postgres:alpine3.20",
+          "postgres:16.3-alpine",
+          "postgres:16-alpine",
+          "postgres:alpine"
+        ],
+        "archTags": [
+          "s390x/postgres:16.3-alpine3.20",
+          "s390x/postgres:16-alpine3.20",
+          "s390x/postgres:alpine3.20",
+          "s390x/postgres:16.3-alpine",
+          "s390x/postgres:16-alpine",
+          "s390x/postgres:alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
   "93740e6bd8501c0644175645c5b77aa1ad1b5db589b2098d6ffa289cf8603554": {
     "sourceId": "93740e6bd8501c0644175645c5b77aa1ad1b5db589b2098d6ffa289cf8603554",
     "reproducibleGitChecksum": "60ceef0df096865dddee4c52231d43ab6e4d85ab21e9f52e592dd732ac4a47c3",
@@ -62239,18 +62521,12 @@
         "tags": [
           "postgres:16.3-alpine3.19",
           "postgres:16-alpine3.19",
-          "postgres:alpine3.19",
-          "postgres:16.3-alpine",
-          "postgres:16-alpine",
-          "postgres:alpine"
+          "postgres:alpine3.19"
         ],
         "archTags": [
           "amd64/postgres:16.3-alpine3.19",
           "amd64/postgres:16-alpine3.19",
-          "amd64/postgres:alpine3.19",
-          "amd64/postgres:16.3-alpine",
-          "amd64/postgres:16-alpine",
-          "amd64/postgres:alpine"
+          "amd64/postgres:alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -62272,18 +62548,12 @@
         "tags": [
           "postgres:16.3-alpine3.19",
           "postgres:16-alpine3.19",
-          "postgres:alpine3.19",
-          "postgres:16.3-alpine",
-          "postgres:16-alpine",
-          "postgres:alpine"
+          "postgres:alpine3.19"
         ],
         "archTags": [
           "arm32v6/postgres:16.3-alpine3.19",
           "arm32v6/postgres:16-alpine3.19",
-          "arm32v6/postgres:alpine3.19",
-          "arm32v6/postgres:16.3-alpine",
-          "arm32v6/postgres:16-alpine",
-          "arm32v6/postgres:alpine"
+          "arm32v6/postgres:alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -62306,18 +62576,12 @@
         "tags": [
           "postgres:16.3-alpine3.19",
           "postgres:16-alpine3.19",
-          "postgres:alpine3.19",
-          "postgres:16.3-alpine",
-          "postgres:16-alpine",
-          "postgres:alpine"
+          "postgres:alpine3.19"
         ],
         "archTags": [
           "arm32v7/postgres:16.3-alpine3.19",
           "arm32v7/postgres:16-alpine3.19",
-          "arm32v7/postgres:alpine3.19",
-          "arm32v7/postgres:16.3-alpine",
-          "arm32v7/postgres:16-alpine",
-          "arm32v7/postgres:alpine"
+          "arm32v7/postgres:alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -62340,18 +62604,12 @@
         "tags": [
           "postgres:16.3-alpine3.19",
           "postgres:16-alpine3.19",
-          "postgres:alpine3.19",
-          "postgres:16.3-alpine",
-          "postgres:16-alpine",
-          "postgres:alpine"
+          "postgres:alpine3.19"
         ],
         "archTags": [
           "arm64v8/postgres:16.3-alpine3.19",
           "arm64v8/postgres:16-alpine3.19",
-          "arm64v8/postgres:alpine3.19",
-          "arm64v8/postgres:16.3-alpine",
-          "arm64v8/postgres:16-alpine",
-          "arm64v8/postgres:alpine"
+          "arm64v8/postgres:alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -62374,18 +62632,12 @@
         "tags": [
           "postgres:16.3-alpine3.19",
           "postgres:16-alpine3.19",
-          "postgres:alpine3.19",
-          "postgres:16.3-alpine",
-          "postgres:16-alpine",
-          "postgres:alpine"
+          "postgres:alpine3.19"
         ],
         "archTags": [
           "i386/postgres:16.3-alpine3.19",
           "i386/postgres:16-alpine3.19",
-          "i386/postgres:alpine3.19",
-          "i386/postgres:16.3-alpine",
-          "i386/postgres:16-alpine",
-          "i386/postgres:alpine"
+          "i386/postgres:alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -62407,18 +62659,12 @@
         "tags": [
           "postgres:16.3-alpine3.19",
           "postgres:16-alpine3.19",
-          "postgres:alpine3.19",
-          "postgres:16.3-alpine",
-          "postgres:16-alpine",
-          "postgres:alpine"
+          "postgres:alpine3.19"
         ],
         "archTags": [
           "ppc64le/postgres:16.3-alpine3.19",
           "ppc64le/postgres:16-alpine3.19",
-          "ppc64le/postgres:alpine3.19",
-          "ppc64le/postgres:16.3-alpine",
-          "ppc64le/postgres:16-alpine",
-          "ppc64le/postgres:alpine"
+          "ppc64le/postgres:alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -62440,18 +62686,12 @@
         "tags": [
           "postgres:16.3-alpine3.19",
           "postgres:16-alpine3.19",
-          "postgres:alpine3.19",
-          "postgres:16.3-alpine",
-          "postgres:16-alpine",
-          "postgres:alpine"
+          "postgres:alpine3.19"
         ],
         "archTags": [
           "s390x/postgres:16.3-alpine3.19",
           "s390x/postgres:16-alpine3.19",
-          "s390x/postgres:alpine3.19",
-          "s390x/postgres:16.3-alpine",
-          "s390x/postgres:16-alpine",
-          "s390x/postgres:alpine"
+          "s390x/postgres:alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -62464,213 +62704,6 @@
         },
         "parents": {
           "alpine:3.19": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "737ebfcec56f9488eac36d2c2d7eb9dd31dfe82b3ed4c93833cf02e114d8f6ea": {
-    "sourceId": "737ebfcec56f9488eac36d2c2d7eb9dd31dfe82b3ed4c93833cf02e114d8f6ea",
-    "reproducibleGitChecksum": "1fc2c11ee4aeee9dd2a7227ea3928073f0e024c4038f9aedd99999d3c8218a2f",
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/postgres.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "d08757ccb56ee047efd76c41dbc148e2e2c4f68f",
-      "Directory": "16/alpine3.18",
-      "File": "Dockerfile",
-      "Builder": "",
-      "SOURCE_DATE_EPOCH": 1715281091
-    },
-    "arches": {
-      "amd64": {
-        "tags": [
-          "postgres:16.3-alpine3.18",
-          "postgres:16-alpine3.18",
-          "postgres:alpine3.18"
-        ],
-        "archTags": [
-          "amd64/postgres:16.3-alpine3.18",
-          "amd64/postgres:16-alpine3.18",
-          "amd64/postgres:alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v6": {
-        "tags": [
-          "postgres:16.3-alpine3.18",
-          "postgres:16-alpine3.18",
-          "postgres:alpine3.18"
-        ],
-        "archTags": [
-          "arm32v6/postgres:16.3-alpine3.18",
-          "arm32v6/postgres:16-alpine3.18",
-          "arm32v6/postgres:alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm/v6",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v6"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v7": {
-        "tags": [
-          "postgres:16.3-alpine3.18",
-          "postgres:16-alpine3.18",
-          "postgres:alpine3.18"
-        ],
-        "archTags": [
-          "arm32v7/postgres:16.3-alpine3.18",
-          "arm32v7/postgres:16-alpine3.18",
-          "arm32v7/postgres:alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm/v7",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v7"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "tags": [
-          "postgres:16.3-alpine3.18",
-          "postgres:16-alpine3.18",
-          "postgres:alpine3.18"
-        ],
-        "archTags": [
-          "arm64v8/postgres:16.3-alpine3.18",
-          "arm64v8/postgres:16-alpine3.18",
-          "arm64v8/postgres:alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "i386": {
-        "tags": [
-          "postgres:16.3-alpine3.18",
-          "postgres:16-alpine3.18",
-          "postgres:alpine3.18"
-        ],
-        "archTags": [
-          "i386/postgres:16.3-alpine3.18",
-          "i386/postgres:16-alpine3.18",
-          "i386/postgres:alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/386",
-        "platform": {
-          "architecture": "386",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "ppc64le": {
-        "tags": [
-          "postgres:16.3-alpine3.18",
-          "postgres:16-alpine3.18",
-          "postgres:alpine3.18"
-        ],
-        "archTags": [
-          "ppc64le/postgres:16.3-alpine3.18",
-          "ppc64le/postgres:16-alpine3.18",
-          "ppc64le/postgres:alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/ppc64le",
-        "platform": {
-          "architecture": "ppc64le",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "s390x": {
-        "tags": [
-          "postgres:16.3-alpine3.18",
-          "postgres:16-alpine3.18",
-          "postgres:alpine3.18"
-        ],
-        "archTags": [
-          "s390x/postgres:16.3-alpine3.18",
-          "s390x/postgres:16-alpine3.18",
-          "s390x/postgres:alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/s390x",
-        "platform": {
-          "architecture": "s390x",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
             "sourceId": null,
             "pin": null
           }
@@ -63146,6 +63179,256 @@
       }
     }
   },
+  "842abe45de8771dcf346a3aec350432e08bab0424c585b56e80e626c7c07aae6": {
+    "sourceId": "842abe45de8771dcf346a3aec350432e08bab0424c585b56e80e626c7c07aae6",
+    "reproducibleGitChecksum": "7c35a1bbb81f0616aa8afe1dfdc3936e77def38428a1dc25ba3d7d8f053ad0d0",
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/postgres.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "930acaf01ff536090a3bb304cf823a8cc777b658",
+      "Directory": "15/alpine3.20",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716410384
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "postgres:15.7-alpine3.20",
+          "postgres:15-alpine3.20",
+          "postgres:15.7-alpine",
+          "postgres:15-alpine"
+        ],
+        "archTags": [
+          "amd64/postgres:15.7-alpine3.20",
+          "amd64/postgres:15-alpine3.20",
+          "amd64/postgres:15.7-alpine",
+          "amd64/postgres:15-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v6": {
+        "tags": [
+          "postgres:15.7-alpine3.20",
+          "postgres:15-alpine3.20",
+          "postgres:15.7-alpine",
+          "postgres:15-alpine"
+        ],
+        "archTags": [
+          "arm32v6/postgres:15.7-alpine3.20",
+          "arm32v6/postgres:15-alpine3.20",
+          "arm32v6/postgres:15.7-alpine",
+          "arm32v6/postgres:15-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "postgres:15.7-alpine3.20",
+          "postgres:15-alpine3.20",
+          "postgres:15.7-alpine",
+          "postgres:15-alpine"
+        ],
+        "archTags": [
+          "arm32v7/postgres:15.7-alpine3.20",
+          "arm32v7/postgres:15-alpine3.20",
+          "arm32v7/postgres:15.7-alpine",
+          "arm32v7/postgres:15-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "postgres:15.7-alpine3.20",
+          "postgres:15-alpine3.20",
+          "postgres:15.7-alpine",
+          "postgres:15-alpine"
+        ],
+        "archTags": [
+          "arm64v8/postgres:15.7-alpine3.20",
+          "arm64v8/postgres:15-alpine3.20",
+          "arm64v8/postgres:15.7-alpine",
+          "arm64v8/postgres:15-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "postgres:15.7-alpine3.20",
+          "postgres:15-alpine3.20",
+          "postgres:15.7-alpine",
+          "postgres:15-alpine"
+        ],
+        "archTags": [
+          "i386/postgres:15.7-alpine3.20",
+          "i386/postgres:15-alpine3.20",
+          "i386/postgres:15.7-alpine",
+          "i386/postgres:15-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "postgres:15.7-alpine3.20",
+          "postgres:15-alpine3.20",
+          "postgres:15.7-alpine",
+          "postgres:15-alpine"
+        ],
+        "archTags": [
+          "ppc64le/postgres:15.7-alpine3.20",
+          "ppc64le/postgres:15-alpine3.20",
+          "ppc64le/postgres:15.7-alpine",
+          "ppc64le/postgres:15-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "riscv64": {
+        "tags": [
+          "postgres:15.7-alpine3.20",
+          "postgres:15-alpine3.20",
+          "postgres:15.7-alpine",
+          "postgres:15-alpine"
+        ],
+        "archTags": [
+          "riscv64/postgres:15.7-alpine3.20",
+          "riscv64/postgres:15-alpine3.20",
+          "riscv64/postgres:15.7-alpine",
+          "riscv64/postgres:15-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/riscv64",
+        "platform": {
+          "architecture": "riscv64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "postgres:15.7-alpine3.20",
+          "postgres:15-alpine3.20",
+          "postgres:15.7-alpine",
+          "postgres:15-alpine"
+        ],
+        "archTags": [
+          "s390x/postgres:15.7-alpine3.20",
+          "s390x/postgres:15-alpine3.20",
+          "s390x/postgres:15.7-alpine",
+          "s390x/postgres:15-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
   "f66ecfb7b6d5561769f32b7f5cb374aaf123736a39a8597c1c79edd14c8ee950": {
     "sourceId": "f66ecfb7b6d5561769f32b7f5cb374aaf123736a39a8597c1c79edd14c8ee950",
     "reproducibleGitChecksum": "33731612647feac8d335537ecb5125c6e9c45600aa659aff9a80399edeb0eaf0",
@@ -63162,15 +63445,11 @@
       "amd64": {
         "tags": [
           "postgres:15.7-alpine3.19",
-          "postgres:15-alpine3.19",
-          "postgres:15.7-alpine",
-          "postgres:15-alpine"
+          "postgres:15-alpine3.19"
         ],
         "archTags": [
           "amd64/postgres:15.7-alpine3.19",
-          "amd64/postgres:15-alpine3.19",
-          "amd64/postgres:15.7-alpine",
-          "amd64/postgres:15-alpine"
+          "amd64/postgres:15-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -63191,15 +63470,11 @@
       "arm32v6": {
         "tags": [
           "postgres:15.7-alpine3.19",
-          "postgres:15-alpine3.19",
-          "postgres:15.7-alpine",
-          "postgres:15-alpine"
+          "postgres:15-alpine3.19"
         ],
         "archTags": [
           "arm32v6/postgres:15.7-alpine3.19",
-          "arm32v6/postgres:15-alpine3.19",
-          "arm32v6/postgres:15.7-alpine",
-          "arm32v6/postgres:15-alpine"
+          "arm32v6/postgres:15-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -63221,15 +63496,11 @@
       "arm32v7": {
         "tags": [
           "postgres:15.7-alpine3.19",
-          "postgres:15-alpine3.19",
-          "postgres:15.7-alpine",
-          "postgres:15-alpine"
+          "postgres:15-alpine3.19"
         ],
         "archTags": [
           "arm32v7/postgres:15.7-alpine3.19",
-          "arm32v7/postgres:15-alpine3.19",
-          "arm32v7/postgres:15.7-alpine",
-          "arm32v7/postgres:15-alpine"
+          "arm32v7/postgres:15-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -63251,15 +63522,11 @@
       "arm64v8": {
         "tags": [
           "postgres:15.7-alpine3.19",
-          "postgres:15-alpine3.19",
-          "postgres:15.7-alpine",
-          "postgres:15-alpine"
+          "postgres:15-alpine3.19"
         ],
         "archTags": [
           "arm64v8/postgres:15.7-alpine3.19",
-          "arm64v8/postgres:15-alpine3.19",
-          "arm64v8/postgres:15.7-alpine",
-          "arm64v8/postgres:15-alpine"
+          "arm64v8/postgres:15-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -63281,15 +63548,11 @@
       "i386": {
         "tags": [
           "postgres:15.7-alpine3.19",
-          "postgres:15-alpine3.19",
-          "postgres:15.7-alpine",
-          "postgres:15-alpine"
+          "postgres:15-alpine3.19"
         ],
         "archTags": [
           "i386/postgres:15.7-alpine3.19",
-          "i386/postgres:15-alpine3.19",
-          "i386/postgres:15.7-alpine",
-          "i386/postgres:15-alpine"
+          "i386/postgres:15-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -63310,15 +63573,11 @@
       "ppc64le": {
         "tags": [
           "postgres:15.7-alpine3.19",
-          "postgres:15-alpine3.19",
-          "postgres:15.7-alpine",
-          "postgres:15-alpine"
+          "postgres:15-alpine3.19"
         ],
         "archTags": [
           "ppc64le/postgres:15.7-alpine3.19",
-          "ppc64le/postgres:15-alpine3.19",
-          "ppc64le/postgres:15.7-alpine",
-          "ppc64le/postgres:15-alpine"
+          "ppc64le/postgres:15-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -63339,15 +63598,11 @@
       "s390x": {
         "tags": [
           "postgres:15.7-alpine3.19",
-          "postgres:15-alpine3.19",
-          "postgres:15.7-alpine",
-          "postgres:15-alpine"
+          "postgres:15-alpine3.19"
         ],
         "archTags": [
           "s390x/postgres:15.7-alpine3.19",
-          "s390x/postgres:15-alpine3.19",
-          "s390x/postgres:15.7-alpine",
-          "s390x/postgres:15-alpine"
+          "s390x/postgres:15-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -63360,199 +63615,6 @@
         },
         "parents": {
           "alpine:3.19": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "7872d4a2d219c1b1348abf6fced339910d242e0ee6912a79572e9b2a6f9e252a": {
-    "sourceId": "7872d4a2d219c1b1348abf6fced339910d242e0ee6912a79572e9b2a6f9e252a",
-    "reproducibleGitChecksum": "9ec1a932001607a185460458e071dfeba26de8dc5baa4919f455cc242a2d770d",
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/postgres.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "8a0b96710d917d1c3b32a5fe5b66687ad83827da",
-      "Directory": "15/alpine3.18",
-      "File": "Dockerfile",
-      "Builder": "",
-      "SOURCE_DATE_EPOCH": 1715280257
-    },
-    "arches": {
-      "amd64": {
-        "tags": [
-          "postgres:15.7-alpine3.18",
-          "postgres:15-alpine3.18"
-        ],
-        "archTags": [
-          "amd64/postgres:15.7-alpine3.18",
-          "amd64/postgres:15-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v6": {
-        "tags": [
-          "postgres:15.7-alpine3.18",
-          "postgres:15-alpine3.18"
-        ],
-        "archTags": [
-          "arm32v6/postgres:15.7-alpine3.18",
-          "arm32v6/postgres:15-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm/v6",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v6"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v7": {
-        "tags": [
-          "postgres:15.7-alpine3.18",
-          "postgres:15-alpine3.18"
-        ],
-        "archTags": [
-          "arm32v7/postgres:15.7-alpine3.18",
-          "arm32v7/postgres:15-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm/v7",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v7"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "tags": [
-          "postgres:15.7-alpine3.18",
-          "postgres:15-alpine3.18"
-        ],
-        "archTags": [
-          "arm64v8/postgres:15.7-alpine3.18",
-          "arm64v8/postgres:15-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "i386": {
-        "tags": [
-          "postgres:15.7-alpine3.18",
-          "postgres:15-alpine3.18"
-        ],
-        "archTags": [
-          "i386/postgres:15.7-alpine3.18",
-          "i386/postgres:15-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/386",
-        "platform": {
-          "architecture": "386",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "ppc64le": {
-        "tags": [
-          "postgres:15.7-alpine3.18",
-          "postgres:15-alpine3.18"
-        ],
-        "archTags": [
-          "ppc64le/postgres:15.7-alpine3.18",
-          "ppc64le/postgres:15-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/ppc64le",
-        "platform": {
-          "architecture": "ppc64le",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "s390x": {
-        "tags": [
-          "postgres:15.7-alpine3.18",
-          "postgres:15-alpine3.18"
-        ],
-        "archTags": [
-          "s390x/postgres:15.7-alpine3.18",
-          "s390x/postgres:15-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/s390x",
-        "platform": {
-          "architecture": "s390x",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
             "sourceId": null,
             "pin": null
           }
@@ -64028,6 +64090,256 @@
       }
     }
   },
+  "e7a7373dd21d13419e493e860e6faab6686766e7b5a352389a744444a4bbd633": {
+    "sourceId": "e7a7373dd21d13419e493e860e6faab6686766e7b5a352389a744444a4bbd633",
+    "reproducibleGitChecksum": "1df32a30fde8f276572f95a6398652a95f3ce131cc42164946b2e0e2ef35a0a4",
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/postgres.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "930acaf01ff536090a3bb304cf823a8cc777b658",
+      "Directory": "14/alpine3.20",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716410384
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "postgres:14.12-alpine3.20",
+          "postgres:14-alpine3.20",
+          "postgres:14.12-alpine",
+          "postgres:14-alpine"
+        ],
+        "archTags": [
+          "amd64/postgres:14.12-alpine3.20",
+          "amd64/postgres:14-alpine3.20",
+          "amd64/postgres:14.12-alpine",
+          "amd64/postgres:14-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v6": {
+        "tags": [
+          "postgres:14.12-alpine3.20",
+          "postgres:14-alpine3.20",
+          "postgres:14.12-alpine",
+          "postgres:14-alpine"
+        ],
+        "archTags": [
+          "arm32v6/postgres:14.12-alpine3.20",
+          "arm32v6/postgres:14-alpine3.20",
+          "arm32v6/postgres:14.12-alpine",
+          "arm32v6/postgres:14-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "postgres:14.12-alpine3.20",
+          "postgres:14-alpine3.20",
+          "postgres:14.12-alpine",
+          "postgres:14-alpine"
+        ],
+        "archTags": [
+          "arm32v7/postgres:14.12-alpine3.20",
+          "arm32v7/postgres:14-alpine3.20",
+          "arm32v7/postgres:14.12-alpine",
+          "arm32v7/postgres:14-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "postgres:14.12-alpine3.20",
+          "postgres:14-alpine3.20",
+          "postgres:14.12-alpine",
+          "postgres:14-alpine"
+        ],
+        "archTags": [
+          "arm64v8/postgres:14.12-alpine3.20",
+          "arm64v8/postgres:14-alpine3.20",
+          "arm64v8/postgres:14.12-alpine",
+          "arm64v8/postgres:14-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "postgres:14.12-alpine3.20",
+          "postgres:14-alpine3.20",
+          "postgres:14.12-alpine",
+          "postgres:14-alpine"
+        ],
+        "archTags": [
+          "i386/postgres:14.12-alpine3.20",
+          "i386/postgres:14-alpine3.20",
+          "i386/postgres:14.12-alpine",
+          "i386/postgres:14-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "postgres:14.12-alpine3.20",
+          "postgres:14-alpine3.20",
+          "postgres:14.12-alpine",
+          "postgres:14-alpine"
+        ],
+        "archTags": [
+          "ppc64le/postgres:14.12-alpine3.20",
+          "ppc64le/postgres:14-alpine3.20",
+          "ppc64le/postgres:14.12-alpine",
+          "ppc64le/postgres:14-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "riscv64": {
+        "tags": [
+          "postgres:14.12-alpine3.20",
+          "postgres:14-alpine3.20",
+          "postgres:14.12-alpine",
+          "postgres:14-alpine"
+        ],
+        "archTags": [
+          "riscv64/postgres:14.12-alpine3.20",
+          "riscv64/postgres:14-alpine3.20",
+          "riscv64/postgres:14.12-alpine",
+          "riscv64/postgres:14-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/riscv64",
+        "platform": {
+          "architecture": "riscv64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "postgres:14.12-alpine3.20",
+          "postgres:14-alpine3.20",
+          "postgres:14.12-alpine",
+          "postgres:14-alpine"
+        ],
+        "archTags": [
+          "s390x/postgres:14.12-alpine3.20",
+          "s390x/postgres:14-alpine3.20",
+          "s390x/postgres:14.12-alpine",
+          "s390x/postgres:14-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
   "56975a6a61d10a47b0db506392103608489c9f857f0ae86e7560b174f408e9df": {
     "sourceId": "56975a6a61d10a47b0db506392103608489c9f857f0ae86e7560b174f408e9df",
     "reproducibleGitChecksum": "06721457ca6985dd3338dfa87b1eb0ff6938bcd8bd646306c872ea91c40bedfd",
@@ -64044,15 +64356,11 @@
       "amd64": {
         "tags": [
           "postgres:14.12-alpine3.19",
-          "postgres:14-alpine3.19",
-          "postgres:14.12-alpine",
-          "postgres:14-alpine"
+          "postgres:14-alpine3.19"
         ],
         "archTags": [
           "amd64/postgres:14.12-alpine3.19",
-          "amd64/postgres:14-alpine3.19",
-          "amd64/postgres:14.12-alpine",
-          "amd64/postgres:14-alpine"
+          "amd64/postgres:14-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -64073,15 +64381,11 @@
       "arm32v6": {
         "tags": [
           "postgres:14.12-alpine3.19",
-          "postgres:14-alpine3.19",
-          "postgres:14.12-alpine",
-          "postgres:14-alpine"
+          "postgres:14-alpine3.19"
         ],
         "archTags": [
           "arm32v6/postgres:14.12-alpine3.19",
-          "arm32v6/postgres:14-alpine3.19",
-          "arm32v6/postgres:14.12-alpine",
-          "arm32v6/postgres:14-alpine"
+          "arm32v6/postgres:14-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -64103,15 +64407,11 @@
       "arm32v7": {
         "tags": [
           "postgres:14.12-alpine3.19",
-          "postgres:14-alpine3.19",
-          "postgres:14.12-alpine",
-          "postgres:14-alpine"
+          "postgres:14-alpine3.19"
         ],
         "archTags": [
           "arm32v7/postgres:14.12-alpine3.19",
-          "arm32v7/postgres:14-alpine3.19",
-          "arm32v7/postgres:14.12-alpine",
-          "arm32v7/postgres:14-alpine"
+          "arm32v7/postgres:14-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -64133,15 +64433,11 @@
       "arm64v8": {
         "tags": [
           "postgres:14.12-alpine3.19",
-          "postgres:14-alpine3.19",
-          "postgres:14.12-alpine",
-          "postgres:14-alpine"
+          "postgres:14-alpine3.19"
         ],
         "archTags": [
           "arm64v8/postgres:14.12-alpine3.19",
-          "arm64v8/postgres:14-alpine3.19",
-          "arm64v8/postgres:14.12-alpine",
-          "arm64v8/postgres:14-alpine"
+          "arm64v8/postgres:14-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -64163,15 +64459,11 @@
       "i386": {
         "tags": [
           "postgres:14.12-alpine3.19",
-          "postgres:14-alpine3.19",
-          "postgres:14.12-alpine",
-          "postgres:14-alpine"
+          "postgres:14-alpine3.19"
         ],
         "archTags": [
           "i386/postgres:14.12-alpine3.19",
-          "i386/postgres:14-alpine3.19",
-          "i386/postgres:14.12-alpine",
-          "i386/postgres:14-alpine"
+          "i386/postgres:14-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -64192,15 +64484,11 @@
       "ppc64le": {
         "tags": [
           "postgres:14.12-alpine3.19",
-          "postgres:14-alpine3.19",
-          "postgres:14.12-alpine",
-          "postgres:14-alpine"
+          "postgres:14-alpine3.19"
         ],
         "archTags": [
           "ppc64le/postgres:14.12-alpine3.19",
-          "ppc64le/postgres:14-alpine3.19",
-          "ppc64le/postgres:14.12-alpine",
-          "ppc64le/postgres:14-alpine"
+          "ppc64le/postgres:14-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -64221,15 +64509,11 @@
       "s390x": {
         "tags": [
           "postgres:14.12-alpine3.19",
-          "postgres:14-alpine3.19",
-          "postgres:14.12-alpine",
-          "postgres:14-alpine"
+          "postgres:14-alpine3.19"
         ],
         "archTags": [
           "s390x/postgres:14.12-alpine3.19",
-          "s390x/postgres:14-alpine3.19",
-          "s390x/postgres:14.12-alpine",
-          "s390x/postgres:14-alpine"
+          "s390x/postgres:14-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -64242,199 +64526,6 @@
         },
         "parents": {
           "alpine:3.19": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "1e36f30b989812241a9a5a388cdc04a11b7e0b77f8d30ee638f7d6f4a6a86be1": {
-    "sourceId": "1e36f30b989812241a9a5a388cdc04a11b7e0b77f8d30ee638f7d6f4a6a86be1",
-    "reproducibleGitChecksum": "3daac88815cff8e463ea43d6dbe1e0f64cbed664e314b85c84fc8fe00a24da8c",
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/postgres.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "662dbe5225f4d404364bdcf5e49dd5d88357ed31",
-      "Directory": "14/alpine3.18",
-      "File": "Dockerfile",
-      "Builder": "",
-      "SOURCE_DATE_EPOCH": 1715279472
-    },
-    "arches": {
-      "amd64": {
-        "tags": [
-          "postgres:14.12-alpine3.18",
-          "postgres:14-alpine3.18"
-        ],
-        "archTags": [
-          "amd64/postgres:14.12-alpine3.18",
-          "amd64/postgres:14-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v6": {
-        "tags": [
-          "postgres:14.12-alpine3.18",
-          "postgres:14-alpine3.18"
-        ],
-        "archTags": [
-          "arm32v6/postgres:14.12-alpine3.18",
-          "arm32v6/postgres:14-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm/v6",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v6"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v7": {
-        "tags": [
-          "postgres:14.12-alpine3.18",
-          "postgres:14-alpine3.18"
-        ],
-        "archTags": [
-          "arm32v7/postgres:14.12-alpine3.18",
-          "arm32v7/postgres:14-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm/v7",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v7"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "tags": [
-          "postgres:14.12-alpine3.18",
-          "postgres:14-alpine3.18"
-        ],
-        "archTags": [
-          "arm64v8/postgres:14.12-alpine3.18",
-          "arm64v8/postgres:14-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "i386": {
-        "tags": [
-          "postgres:14.12-alpine3.18",
-          "postgres:14-alpine3.18"
-        ],
-        "archTags": [
-          "i386/postgres:14.12-alpine3.18",
-          "i386/postgres:14-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/386",
-        "platform": {
-          "architecture": "386",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "ppc64le": {
-        "tags": [
-          "postgres:14.12-alpine3.18",
-          "postgres:14-alpine3.18"
-        ],
-        "archTags": [
-          "ppc64le/postgres:14.12-alpine3.18",
-          "ppc64le/postgres:14-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/ppc64le",
-        "platform": {
-          "architecture": "ppc64le",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "s390x": {
-        "tags": [
-          "postgres:14.12-alpine3.18",
-          "postgres:14-alpine3.18"
-        ],
-        "archTags": [
-          "s390x/postgres:14.12-alpine3.18",
-          "s390x/postgres:14-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/s390x",
-        "platform": {
-          "architecture": "s390x",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
             "sourceId": null,
             "pin": null
           }
@@ -64910,6 +65001,256 @@
       }
     }
   },
+  "e5d951d1b961b9845a67921181549a0fedcf62535e8907a75939410e14125d81": {
+    "sourceId": "e5d951d1b961b9845a67921181549a0fedcf62535e8907a75939410e14125d81",
+    "reproducibleGitChecksum": "9b8fde59589942b3913a4d24926b97453a71876a8586e6d31088daed1a944a90",
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/postgres.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "930acaf01ff536090a3bb304cf823a8cc777b658",
+      "Directory": "13/alpine3.20",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716410384
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "postgres:13.15-alpine3.20",
+          "postgres:13-alpine3.20",
+          "postgres:13.15-alpine",
+          "postgres:13-alpine"
+        ],
+        "archTags": [
+          "amd64/postgres:13.15-alpine3.20",
+          "amd64/postgres:13-alpine3.20",
+          "amd64/postgres:13.15-alpine",
+          "amd64/postgres:13-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v6": {
+        "tags": [
+          "postgres:13.15-alpine3.20",
+          "postgres:13-alpine3.20",
+          "postgres:13.15-alpine",
+          "postgres:13-alpine"
+        ],
+        "archTags": [
+          "arm32v6/postgres:13.15-alpine3.20",
+          "arm32v6/postgres:13-alpine3.20",
+          "arm32v6/postgres:13.15-alpine",
+          "arm32v6/postgres:13-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "postgres:13.15-alpine3.20",
+          "postgres:13-alpine3.20",
+          "postgres:13.15-alpine",
+          "postgres:13-alpine"
+        ],
+        "archTags": [
+          "arm32v7/postgres:13.15-alpine3.20",
+          "arm32v7/postgres:13-alpine3.20",
+          "arm32v7/postgres:13.15-alpine",
+          "arm32v7/postgres:13-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "postgres:13.15-alpine3.20",
+          "postgres:13-alpine3.20",
+          "postgres:13.15-alpine",
+          "postgres:13-alpine"
+        ],
+        "archTags": [
+          "arm64v8/postgres:13.15-alpine3.20",
+          "arm64v8/postgres:13-alpine3.20",
+          "arm64v8/postgres:13.15-alpine",
+          "arm64v8/postgres:13-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "postgres:13.15-alpine3.20",
+          "postgres:13-alpine3.20",
+          "postgres:13.15-alpine",
+          "postgres:13-alpine"
+        ],
+        "archTags": [
+          "i386/postgres:13.15-alpine3.20",
+          "i386/postgres:13-alpine3.20",
+          "i386/postgres:13.15-alpine",
+          "i386/postgres:13-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "postgres:13.15-alpine3.20",
+          "postgres:13-alpine3.20",
+          "postgres:13.15-alpine",
+          "postgres:13-alpine"
+        ],
+        "archTags": [
+          "ppc64le/postgres:13.15-alpine3.20",
+          "ppc64le/postgres:13-alpine3.20",
+          "ppc64le/postgres:13.15-alpine",
+          "ppc64le/postgres:13-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "riscv64": {
+        "tags": [
+          "postgres:13.15-alpine3.20",
+          "postgres:13-alpine3.20",
+          "postgres:13.15-alpine",
+          "postgres:13-alpine"
+        ],
+        "archTags": [
+          "riscv64/postgres:13.15-alpine3.20",
+          "riscv64/postgres:13-alpine3.20",
+          "riscv64/postgres:13.15-alpine",
+          "riscv64/postgres:13-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/riscv64",
+        "platform": {
+          "architecture": "riscv64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "postgres:13.15-alpine3.20",
+          "postgres:13-alpine3.20",
+          "postgres:13.15-alpine",
+          "postgres:13-alpine"
+        ],
+        "archTags": [
+          "s390x/postgres:13.15-alpine3.20",
+          "s390x/postgres:13-alpine3.20",
+          "s390x/postgres:13.15-alpine",
+          "s390x/postgres:13-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
   "21aed88975e6055f0a67afc9d48730c5a4ba9d181df3d6ed251a0093cd309dc1": {
     "sourceId": "21aed88975e6055f0a67afc9d48730c5a4ba9d181df3d6ed251a0093cd309dc1",
     "reproducibleGitChecksum": "139d36dc3b453eac76b00bdc88a61396718358c55b05a4c05289d546c741542e",
@@ -64926,15 +65267,11 @@
       "amd64": {
         "tags": [
           "postgres:13.15-alpine3.19",
-          "postgres:13-alpine3.19",
-          "postgres:13.15-alpine",
-          "postgres:13-alpine"
+          "postgres:13-alpine3.19"
         ],
         "archTags": [
           "amd64/postgres:13.15-alpine3.19",
-          "amd64/postgres:13-alpine3.19",
-          "amd64/postgres:13.15-alpine",
-          "amd64/postgres:13-alpine"
+          "amd64/postgres:13-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -64955,15 +65292,11 @@
       "arm32v6": {
         "tags": [
           "postgres:13.15-alpine3.19",
-          "postgres:13-alpine3.19",
-          "postgres:13.15-alpine",
-          "postgres:13-alpine"
+          "postgres:13-alpine3.19"
         ],
         "archTags": [
           "arm32v6/postgres:13.15-alpine3.19",
-          "arm32v6/postgres:13-alpine3.19",
-          "arm32v6/postgres:13.15-alpine",
-          "arm32v6/postgres:13-alpine"
+          "arm32v6/postgres:13-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -64985,15 +65318,11 @@
       "arm32v7": {
         "tags": [
           "postgres:13.15-alpine3.19",
-          "postgres:13-alpine3.19",
-          "postgres:13.15-alpine",
-          "postgres:13-alpine"
+          "postgres:13-alpine3.19"
         ],
         "archTags": [
           "arm32v7/postgres:13.15-alpine3.19",
-          "arm32v7/postgres:13-alpine3.19",
-          "arm32v7/postgres:13.15-alpine",
-          "arm32v7/postgres:13-alpine"
+          "arm32v7/postgres:13-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -65015,15 +65344,11 @@
       "arm64v8": {
         "tags": [
           "postgres:13.15-alpine3.19",
-          "postgres:13-alpine3.19",
-          "postgres:13.15-alpine",
-          "postgres:13-alpine"
+          "postgres:13-alpine3.19"
         ],
         "archTags": [
           "arm64v8/postgres:13.15-alpine3.19",
-          "arm64v8/postgres:13-alpine3.19",
-          "arm64v8/postgres:13.15-alpine",
-          "arm64v8/postgres:13-alpine"
+          "arm64v8/postgres:13-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -65045,15 +65370,11 @@
       "i386": {
         "tags": [
           "postgres:13.15-alpine3.19",
-          "postgres:13-alpine3.19",
-          "postgres:13.15-alpine",
-          "postgres:13-alpine"
+          "postgres:13-alpine3.19"
         ],
         "archTags": [
           "i386/postgres:13.15-alpine3.19",
-          "i386/postgres:13-alpine3.19",
-          "i386/postgres:13.15-alpine",
-          "i386/postgres:13-alpine"
+          "i386/postgres:13-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -65074,15 +65395,11 @@
       "ppc64le": {
         "tags": [
           "postgres:13.15-alpine3.19",
-          "postgres:13-alpine3.19",
-          "postgres:13.15-alpine",
-          "postgres:13-alpine"
+          "postgres:13-alpine3.19"
         ],
         "archTags": [
           "ppc64le/postgres:13.15-alpine3.19",
-          "ppc64le/postgres:13-alpine3.19",
-          "ppc64le/postgres:13.15-alpine",
-          "ppc64le/postgres:13-alpine"
+          "ppc64le/postgres:13-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -65103,15 +65420,11 @@
       "s390x": {
         "tags": [
           "postgres:13.15-alpine3.19",
-          "postgres:13-alpine3.19",
-          "postgres:13.15-alpine",
-          "postgres:13-alpine"
+          "postgres:13-alpine3.19"
         ],
         "archTags": [
           "s390x/postgres:13.15-alpine3.19",
-          "s390x/postgres:13-alpine3.19",
-          "s390x/postgres:13.15-alpine",
-          "s390x/postgres:13-alpine"
+          "s390x/postgres:13-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -65124,199 +65437,6 @@
         },
         "parents": {
           "alpine:3.19": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "d5fd50280b5192f9eea48d72184e3020d4d21d999715426f03d53373a8577286": {
-    "sourceId": "d5fd50280b5192f9eea48d72184e3020d4d21d999715426f03d53373a8577286",
-    "reproducibleGitChecksum": "9b1a73582dc82fa1d42932e26ad3c91e98c0dcdb9f61cdf337093a6aef72a649",
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/postgres.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "f3ab8c6db63e2986453e0a4fae2c5f372dd4f05e",
-      "Directory": "13/alpine3.18",
-      "File": "Dockerfile",
-      "Builder": "",
-      "SOURCE_DATE_EPOCH": 1715278606
-    },
-    "arches": {
-      "amd64": {
-        "tags": [
-          "postgres:13.15-alpine3.18",
-          "postgres:13-alpine3.18"
-        ],
-        "archTags": [
-          "amd64/postgres:13.15-alpine3.18",
-          "amd64/postgres:13-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v6": {
-        "tags": [
-          "postgres:13.15-alpine3.18",
-          "postgres:13-alpine3.18"
-        ],
-        "archTags": [
-          "arm32v6/postgres:13.15-alpine3.18",
-          "arm32v6/postgres:13-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm/v6",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v6"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v7": {
-        "tags": [
-          "postgres:13.15-alpine3.18",
-          "postgres:13-alpine3.18"
-        ],
-        "archTags": [
-          "arm32v7/postgres:13.15-alpine3.18",
-          "arm32v7/postgres:13-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm/v7",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v7"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "tags": [
-          "postgres:13.15-alpine3.18",
-          "postgres:13-alpine3.18"
-        ],
-        "archTags": [
-          "arm64v8/postgres:13.15-alpine3.18",
-          "arm64v8/postgres:13-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "i386": {
-        "tags": [
-          "postgres:13.15-alpine3.18",
-          "postgres:13-alpine3.18"
-        ],
-        "archTags": [
-          "i386/postgres:13.15-alpine3.18",
-          "i386/postgres:13-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/386",
-        "platform": {
-          "architecture": "386",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "ppc64le": {
-        "tags": [
-          "postgres:13.15-alpine3.18",
-          "postgres:13-alpine3.18"
-        ],
-        "archTags": [
-          "ppc64le/postgres:13.15-alpine3.18",
-          "ppc64le/postgres:13-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/ppc64le",
-        "platform": {
-          "architecture": "ppc64le",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "s390x": {
-        "tags": [
-          "postgres:13.15-alpine3.18",
-          "postgres:13-alpine3.18"
-        ],
-        "archTags": [
-          "s390x/postgres:13.15-alpine3.18",
-          "s390x/postgres:13-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/s390x",
-        "platform": {
-          "architecture": "s390x",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
             "sourceId": null,
             "pin": null
           }
@@ -65792,6 +65912,256 @@
       }
     }
   },
+  "2b6c78d7bc0b0b6a46546d7cbae5a331ed0ae9768a0e79fc75e5ba8ce5bbea53": {
+    "sourceId": "2b6c78d7bc0b0b6a46546d7cbae5a331ed0ae9768a0e79fc75e5ba8ce5bbea53",
+    "reproducibleGitChecksum": "3f5744508c7659870f4255c7bb1121e9972a70732c00efe2e904cac49f676576",
+    "entry": {
+      "GitRepo": "https://github.com/docker-library/postgres.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "930acaf01ff536090a3bb304cf823a8cc777b658",
+      "Directory": "12/alpine3.20",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716410384
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "postgres:12.19-alpine3.20",
+          "postgres:12-alpine3.20",
+          "postgres:12.19-alpine",
+          "postgres:12-alpine"
+        ],
+        "archTags": [
+          "amd64/postgres:12.19-alpine3.20",
+          "amd64/postgres:12-alpine3.20",
+          "amd64/postgres:12.19-alpine",
+          "amd64/postgres:12-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v6": {
+        "tags": [
+          "postgres:12.19-alpine3.20",
+          "postgres:12-alpine3.20",
+          "postgres:12.19-alpine",
+          "postgres:12-alpine"
+        ],
+        "archTags": [
+          "arm32v6/postgres:12.19-alpine3.20",
+          "arm32v6/postgres:12-alpine3.20",
+          "arm32v6/postgres:12.19-alpine",
+          "arm32v6/postgres:12-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "postgres:12.19-alpine3.20",
+          "postgres:12-alpine3.20",
+          "postgres:12.19-alpine",
+          "postgres:12-alpine"
+        ],
+        "archTags": [
+          "arm32v7/postgres:12.19-alpine3.20",
+          "arm32v7/postgres:12-alpine3.20",
+          "arm32v7/postgres:12.19-alpine",
+          "arm32v7/postgres:12-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "postgres:12.19-alpine3.20",
+          "postgres:12-alpine3.20",
+          "postgres:12.19-alpine",
+          "postgres:12-alpine"
+        ],
+        "archTags": [
+          "arm64v8/postgres:12.19-alpine3.20",
+          "arm64v8/postgres:12-alpine3.20",
+          "arm64v8/postgres:12.19-alpine",
+          "arm64v8/postgres:12-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "postgres:12.19-alpine3.20",
+          "postgres:12-alpine3.20",
+          "postgres:12.19-alpine",
+          "postgres:12-alpine"
+        ],
+        "archTags": [
+          "i386/postgres:12.19-alpine3.20",
+          "i386/postgres:12-alpine3.20",
+          "i386/postgres:12.19-alpine",
+          "i386/postgres:12-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "postgres:12.19-alpine3.20",
+          "postgres:12-alpine3.20",
+          "postgres:12.19-alpine",
+          "postgres:12-alpine"
+        ],
+        "archTags": [
+          "ppc64le/postgres:12.19-alpine3.20",
+          "ppc64le/postgres:12-alpine3.20",
+          "ppc64le/postgres:12.19-alpine",
+          "ppc64le/postgres:12-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "riscv64": {
+        "tags": [
+          "postgres:12.19-alpine3.20",
+          "postgres:12-alpine3.20",
+          "postgres:12.19-alpine",
+          "postgres:12-alpine"
+        ],
+        "archTags": [
+          "riscv64/postgres:12.19-alpine3.20",
+          "riscv64/postgres:12-alpine3.20",
+          "riscv64/postgres:12.19-alpine",
+          "riscv64/postgres:12-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/riscv64",
+        "platform": {
+          "architecture": "riscv64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "postgres:12.19-alpine3.20",
+          "postgres:12-alpine3.20",
+          "postgres:12.19-alpine",
+          "postgres:12-alpine"
+        ],
+        "archTags": [
+          "s390x/postgres:12.19-alpine3.20",
+          "s390x/postgres:12-alpine3.20",
+          "s390x/postgres:12.19-alpine",
+          "s390x/postgres:12-alpine"
+        ],
+        "froms": [
+          "alpine:3.20"
+        ],
+        "lastStageFrom": "alpine:3.20",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.20": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
   "e6669fef41907705bc6408b77766051f463dd4122dd559ba0fce33070991a9e6": {
     "sourceId": "e6669fef41907705bc6408b77766051f463dd4122dd559ba0fce33070991a9e6",
     "reproducibleGitChecksum": "2419d124114bb138c0b3c723dda8450b7820685b5a37b6230cba8c253187cc4a",
@@ -65808,15 +66178,11 @@
       "amd64": {
         "tags": [
           "postgres:12.19-alpine3.19",
-          "postgres:12-alpine3.19",
-          "postgres:12.19-alpine",
-          "postgres:12-alpine"
+          "postgres:12-alpine3.19"
         ],
         "archTags": [
           "amd64/postgres:12.19-alpine3.19",
-          "amd64/postgres:12-alpine3.19",
-          "amd64/postgres:12.19-alpine",
-          "amd64/postgres:12-alpine"
+          "amd64/postgres:12-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -65837,15 +66203,11 @@
       "arm32v6": {
         "tags": [
           "postgres:12.19-alpine3.19",
-          "postgres:12-alpine3.19",
-          "postgres:12.19-alpine",
-          "postgres:12-alpine"
+          "postgres:12-alpine3.19"
         ],
         "archTags": [
           "arm32v6/postgres:12.19-alpine3.19",
-          "arm32v6/postgres:12-alpine3.19",
-          "arm32v6/postgres:12.19-alpine",
-          "arm32v6/postgres:12-alpine"
+          "arm32v6/postgres:12-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -65867,15 +66229,11 @@
       "arm32v7": {
         "tags": [
           "postgres:12.19-alpine3.19",
-          "postgres:12-alpine3.19",
-          "postgres:12.19-alpine",
-          "postgres:12-alpine"
+          "postgres:12-alpine3.19"
         ],
         "archTags": [
           "arm32v7/postgres:12.19-alpine3.19",
-          "arm32v7/postgres:12-alpine3.19",
-          "arm32v7/postgres:12.19-alpine",
-          "arm32v7/postgres:12-alpine"
+          "arm32v7/postgres:12-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -65897,15 +66255,11 @@
       "arm64v8": {
         "tags": [
           "postgres:12.19-alpine3.19",
-          "postgres:12-alpine3.19",
-          "postgres:12.19-alpine",
-          "postgres:12-alpine"
+          "postgres:12-alpine3.19"
         ],
         "archTags": [
           "arm64v8/postgres:12.19-alpine3.19",
-          "arm64v8/postgres:12-alpine3.19",
-          "arm64v8/postgres:12.19-alpine",
-          "arm64v8/postgres:12-alpine"
+          "arm64v8/postgres:12-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -65927,15 +66281,11 @@
       "i386": {
         "tags": [
           "postgres:12.19-alpine3.19",
-          "postgres:12-alpine3.19",
-          "postgres:12.19-alpine",
-          "postgres:12-alpine"
+          "postgres:12-alpine3.19"
         ],
         "archTags": [
           "i386/postgres:12.19-alpine3.19",
-          "i386/postgres:12-alpine3.19",
-          "i386/postgres:12.19-alpine",
-          "i386/postgres:12-alpine"
+          "i386/postgres:12-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -65956,15 +66306,11 @@
       "ppc64le": {
         "tags": [
           "postgres:12.19-alpine3.19",
-          "postgres:12-alpine3.19",
-          "postgres:12.19-alpine",
-          "postgres:12-alpine"
+          "postgres:12-alpine3.19"
         ],
         "archTags": [
           "ppc64le/postgres:12.19-alpine3.19",
-          "ppc64le/postgres:12-alpine3.19",
-          "ppc64le/postgres:12.19-alpine",
-          "ppc64le/postgres:12-alpine"
+          "ppc64le/postgres:12-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -65985,15 +66331,11 @@
       "s390x": {
         "tags": [
           "postgres:12.19-alpine3.19",
-          "postgres:12-alpine3.19",
-          "postgres:12.19-alpine",
-          "postgres:12-alpine"
+          "postgres:12-alpine3.19"
         ],
         "archTags": [
           "s390x/postgres:12.19-alpine3.19",
-          "s390x/postgres:12-alpine3.19",
-          "s390x/postgres:12.19-alpine",
-          "s390x/postgres:12-alpine"
+          "s390x/postgres:12-alpine3.19"
         ],
         "froms": [
           "alpine:3.19"
@@ -66006,199 +66348,6 @@
         },
         "parents": {
           "alpine:3.19": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      }
-    }
-  },
-  "64860d21f39aac640803d0e57a3b20aab61c65e1a29e9efde4ca99bfb3608f59": {
-    "sourceId": "64860d21f39aac640803d0e57a3b20aab61c65e1a29e9efde4ca99bfb3608f59",
-    "reproducibleGitChecksum": "1393e57a27c5eef68d66812a774453691184f07874b54cf9f8713b1353578895",
-    "entry": {
-      "GitRepo": "https://github.com/docker-library/postgres.git",
-      "GitFetch": "refs/heads/master",
-      "GitCommit": "ccf4f2289a1e59ddf74a5d1e6eb7693b7f464b54",
-      "Directory": "12/alpine3.18",
-      "File": "Dockerfile",
-      "Builder": "",
-      "SOURCE_DATE_EPOCH": 1715277743
-    },
-    "arches": {
-      "amd64": {
-        "tags": [
-          "postgres:12.19-alpine3.18",
-          "postgres:12-alpine3.18"
-        ],
-        "archTags": [
-          "amd64/postgres:12.19-alpine3.18",
-          "amd64/postgres:12-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/amd64",
-        "platform": {
-          "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v6": {
-        "tags": [
-          "postgres:12.19-alpine3.18",
-          "postgres:12-alpine3.18"
-        ],
-        "archTags": [
-          "arm32v6/postgres:12.19-alpine3.18",
-          "arm32v6/postgres:12-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm/v6",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v6"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v7": {
-        "tags": [
-          "postgres:12.19-alpine3.18",
-          "postgres:12-alpine3.18"
-        ],
-        "archTags": [
-          "arm32v7/postgres:12.19-alpine3.18",
-          "arm32v7/postgres:12-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm/v7",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v7"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "tags": [
-          "postgres:12.19-alpine3.18",
-          "postgres:12-alpine3.18"
-        ],
-        "archTags": [
-          "arm64v8/postgres:12.19-alpine3.18",
-          "arm64v8/postgres:12-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "i386": {
-        "tags": [
-          "postgres:12.19-alpine3.18",
-          "postgres:12-alpine3.18"
-        ],
-        "archTags": [
-          "i386/postgres:12.19-alpine3.18",
-          "i386/postgres:12-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/386",
-        "platform": {
-          "architecture": "386",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "ppc64le": {
-        "tags": [
-          "postgres:12.19-alpine3.18",
-          "postgres:12-alpine3.18"
-        ],
-        "archTags": [
-          "ppc64le/postgres:12.19-alpine3.18",
-          "ppc64le/postgres:12-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/ppc64le",
-        "platform": {
-          "architecture": "ppc64le",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "s390x": {
-        "tags": [
-          "postgres:12.19-alpine3.18",
-          "postgres:12-alpine3.18"
-        ],
-        "archTags": [
-          "s390x/postgres:12.19-alpine3.18",
-          "s390x/postgres:12-alpine3.18"
-        ],
-        "froms": [
-          "alpine:3.18"
-        ],
-        "lastStageFrom": "alpine:3.18",
-        "platformString": "linux/s390x",
-        "platform": {
-          "architecture": "s390x",
-          "os": "linux"
-        },
-        "parents": {
-          "alpine:3.18": {
             "sourceId": null,
             "pin": null
           }
