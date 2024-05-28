@@ -18807,33 +18807,1752 @@
       }
     }
   },
-  "aa477a971486e33bb458d3cffbbb4873fe804a8f75530742e4a8ace24e0e470e": {
-    "sourceId": "aa477a971486e33bb458d3cffbbb4873fe804a8f75530742e4a8ace24e0e470e",
-    "reproducibleGitChecksum": "ddb15877beac0952b055fb5c02d07e9d43af1dec17437d7f012abc6ad266971d",
+  "73c19636e4fb89d36e59c5d1126be1556f4b0c8bf5400b493d4799743d22aab6": {
+    "sourceId": "73c19636e4fb89d36e59c5d1126be1556f4b0c8bf5400b493d4799743d22aab6",
+    "reproducibleGitChecksum": "5ba2aa51e2265a99796581f945c99a6baed8c77640a4be259cdf748301d90df3",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "fd41114df3706382657801a6b0679ccfb4472296",
-      "Directory": "1.16",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
+      "Directory": "1.17",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1710182981
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.16.2",
+          "elixir:1.17.0-rc.0",
+          "elixir:1.17.0-rc",
+          "elixir:1.17",
+          "elixir:1.17.0-rc.0-otp-27",
+          "elixir:1.17.0-rc-otp-27",
+          "elixir:1.17-otp-27"
+        ],
+        "archTags": [
+          "amd64/elixir:1.17.0-rc.0",
+          "amd64/elixir:1.17.0-rc",
+          "amd64/elixir:1.17",
+          "amd64/elixir:1.17.0-rc.0-otp-27",
+          "amd64/elixir:1.17.0-rc-otp-27",
+          "amd64/elixir:1.17-otp-27"
+        ],
+        "froms": [
+          "erlang:27"
+        ],
+        "lastStageFrom": "erlang:27",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "elixir:1.17.0-rc.0",
+          "elixir:1.17.0-rc",
+          "elixir:1.17",
+          "elixir:1.17.0-rc.0-otp-27",
+          "elixir:1.17.0-rc-otp-27",
+          "elixir:1.17-otp-27"
+        ],
+        "archTags": [
+          "arm32v7/elixir:1.17.0-rc.0",
+          "arm32v7/elixir:1.17.0-rc",
+          "arm32v7/elixir:1.17",
+          "arm32v7/elixir:1.17.0-rc.0-otp-27",
+          "arm32v7/elixir:1.17.0-rc-otp-27",
+          "arm32v7/elixir:1.17-otp-27"
+        ],
+        "froms": [
+          "erlang:27"
+        ],
+        "lastStageFrom": "erlang:27",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "erlang:27": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "elixir:1.17.0-rc.0",
+          "elixir:1.17.0-rc",
+          "elixir:1.17",
+          "elixir:1.17.0-rc.0-otp-27",
+          "elixir:1.17.0-rc-otp-27",
+          "elixir:1.17-otp-27"
+        ],
+        "archTags": [
+          "arm64v8/elixir:1.17.0-rc.0",
+          "arm64v8/elixir:1.17.0-rc",
+          "arm64v8/elixir:1.17",
+          "arm64v8/elixir:1.17.0-rc.0-otp-27",
+          "arm64v8/elixir:1.17.0-rc-otp-27",
+          "arm64v8/elixir:1.17-otp-27"
+        ],
+        "froms": [
+          "erlang:27"
+        ],
+        "lastStageFrom": "erlang:27",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "erlang:27": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "elixir:1.17.0-rc.0",
+          "elixir:1.17.0-rc",
+          "elixir:1.17",
+          "elixir:1.17.0-rc.0-otp-27",
+          "elixir:1.17.0-rc-otp-27",
+          "elixir:1.17-otp-27"
+        ],
+        "archTags": [
+          "i386/elixir:1.17.0-rc.0",
+          "i386/elixir:1.17.0-rc",
+          "i386/elixir:1.17",
+          "i386/elixir:1.17.0-rc.0-otp-27",
+          "i386/elixir:1.17.0-rc-otp-27",
+          "i386/elixir:1.17-otp-27"
+        ],
+        "froms": [
+          "erlang:27"
+        ],
+        "lastStageFrom": "erlang:27",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "elixir:1.17.0-rc.0",
+          "elixir:1.17.0-rc",
+          "elixir:1.17",
+          "elixir:1.17.0-rc.0-otp-27",
+          "elixir:1.17.0-rc-otp-27",
+          "elixir:1.17-otp-27"
+        ],
+        "archTags": [
+          "ppc64le/elixir:1.17.0-rc.0",
+          "ppc64le/elixir:1.17.0-rc",
+          "ppc64le/elixir:1.17",
+          "ppc64le/elixir:1.17.0-rc.0-otp-27",
+          "ppc64le/elixir:1.17.0-rc-otp-27",
+          "ppc64le/elixir:1.17-otp-27"
+        ],
+        "froms": [
+          "erlang:27"
+        ],
+        "lastStageFrom": "erlang:27",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "elixir:1.17.0-rc.0",
+          "elixir:1.17.0-rc",
+          "elixir:1.17",
+          "elixir:1.17.0-rc.0-otp-27",
+          "elixir:1.17.0-rc-otp-27",
+          "elixir:1.17-otp-27"
+        ],
+        "archTags": [
+          "s390x/elixir:1.17.0-rc.0",
+          "s390x/elixir:1.17.0-rc",
+          "s390x/elixir:1.17",
+          "s390x/elixir:1.17.0-rc.0-otp-27",
+          "s390x/elixir:1.17.0-rc-otp-27",
+          "s390x/elixir:1.17-otp-27"
+        ],
+        "froms": [
+          "erlang:27"
+        ],
+        "lastStageFrom": "erlang:27",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "1f7a6e44bf89bba22cedc4393292fa1f52c4947cd3e44afb37e98874d6a3d3a5": {
+    "sourceId": "1f7a6e44bf89bba22cedc4393292fa1f52c4947cd3e44afb37e98874d6a3d3a5",
+    "reproducibleGitChecksum": "810c0169f062dd3468d8a3a395f17e7babdc6e6a22bc06fdff27cccb1c831f7f",
+    "entry": {
+      "GitRepo": "https://github.com/erlef/docker-elixir.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
+      "Directory": "1.17/slim",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716698358
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "elixir:1.17.0-rc.0-slim",
+          "elixir:1.17.0-rc-slim",
+          "elixir:1.17-slim",
+          "elixir:1.17.0-rc.0-otp-27-slim",
+          "elixir:1.17.0-rc-otp-27-slim",
+          "elixir:1.17-otp-27-slim"
+        ],
+        "archTags": [
+          "amd64/elixir:1.17.0-rc.0-slim",
+          "amd64/elixir:1.17.0-rc-slim",
+          "amd64/elixir:1.17-slim",
+          "amd64/elixir:1.17.0-rc.0-otp-27-slim",
+          "amd64/elixir:1.17.0-rc-otp-27-slim",
+          "amd64/elixir:1.17-otp-27-slim"
+        ],
+        "froms": [
+          "erlang:27-slim"
+        ],
+        "lastStageFrom": "erlang:27-slim",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "elixir:1.17.0-rc.0-slim",
+          "elixir:1.17.0-rc-slim",
+          "elixir:1.17-slim",
+          "elixir:1.17.0-rc.0-otp-27-slim",
+          "elixir:1.17.0-rc-otp-27-slim",
+          "elixir:1.17-otp-27-slim"
+        ],
+        "archTags": [
+          "arm32v7/elixir:1.17.0-rc.0-slim",
+          "arm32v7/elixir:1.17.0-rc-slim",
+          "arm32v7/elixir:1.17-slim",
+          "arm32v7/elixir:1.17.0-rc.0-otp-27-slim",
+          "arm32v7/elixir:1.17.0-rc-otp-27-slim",
+          "arm32v7/elixir:1.17-otp-27-slim"
+        ],
+        "froms": [
+          "erlang:27-slim"
+        ],
+        "lastStageFrom": "erlang:27-slim",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "erlang:27-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "elixir:1.17.0-rc.0-slim",
+          "elixir:1.17.0-rc-slim",
+          "elixir:1.17-slim",
+          "elixir:1.17.0-rc.0-otp-27-slim",
+          "elixir:1.17.0-rc-otp-27-slim",
+          "elixir:1.17-otp-27-slim"
+        ],
+        "archTags": [
+          "arm64v8/elixir:1.17.0-rc.0-slim",
+          "arm64v8/elixir:1.17.0-rc-slim",
+          "arm64v8/elixir:1.17-slim",
+          "arm64v8/elixir:1.17.0-rc.0-otp-27-slim",
+          "arm64v8/elixir:1.17.0-rc-otp-27-slim",
+          "arm64v8/elixir:1.17-otp-27-slim"
+        ],
+        "froms": [
+          "erlang:27-slim"
+        ],
+        "lastStageFrom": "erlang:27-slim",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "erlang:27-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "elixir:1.17.0-rc.0-slim",
+          "elixir:1.17.0-rc-slim",
+          "elixir:1.17-slim",
+          "elixir:1.17.0-rc.0-otp-27-slim",
+          "elixir:1.17.0-rc-otp-27-slim",
+          "elixir:1.17-otp-27-slim"
+        ],
+        "archTags": [
+          "i386/elixir:1.17.0-rc.0-slim",
+          "i386/elixir:1.17.0-rc-slim",
+          "i386/elixir:1.17-slim",
+          "i386/elixir:1.17.0-rc.0-otp-27-slim",
+          "i386/elixir:1.17.0-rc-otp-27-slim",
+          "i386/elixir:1.17-otp-27-slim"
+        ],
+        "froms": [
+          "erlang:27-slim"
+        ],
+        "lastStageFrom": "erlang:27-slim",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "elixir:1.17.0-rc.0-slim",
+          "elixir:1.17.0-rc-slim",
+          "elixir:1.17-slim",
+          "elixir:1.17.0-rc.0-otp-27-slim",
+          "elixir:1.17.0-rc-otp-27-slim",
+          "elixir:1.17-otp-27-slim"
+        ],
+        "archTags": [
+          "ppc64le/elixir:1.17.0-rc.0-slim",
+          "ppc64le/elixir:1.17.0-rc-slim",
+          "ppc64le/elixir:1.17-slim",
+          "ppc64le/elixir:1.17.0-rc.0-otp-27-slim",
+          "ppc64le/elixir:1.17.0-rc-otp-27-slim",
+          "ppc64le/elixir:1.17-otp-27-slim"
+        ],
+        "froms": [
+          "erlang:27-slim"
+        ],
+        "lastStageFrom": "erlang:27-slim",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "elixir:1.17.0-rc.0-slim",
+          "elixir:1.17.0-rc-slim",
+          "elixir:1.17-slim",
+          "elixir:1.17.0-rc.0-otp-27-slim",
+          "elixir:1.17.0-rc-otp-27-slim",
+          "elixir:1.17-otp-27-slim"
+        ],
+        "archTags": [
+          "s390x/elixir:1.17.0-rc.0-slim",
+          "s390x/elixir:1.17.0-rc-slim",
+          "s390x/elixir:1.17-slim",
+          "s390x/elixir:1.17.0-rc.0-otp-27-slim",
+          "s390x/elixir:1.17.0-rc-otp-27-slim",
+          "s390x/elixir:1.17-otp-27-slim"
+        ],
+        "froms": [
+          "erlang:27-slim"
+        ],
+        "lastStageFrom": "erlang:27-slim",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "108914e55596713a2a083b6ba3603081b3f1f073c60313b3eeb053ebb81abe12": {
+    "sourceId": "108914e55596713a2a083b6ba3603081b3f1f073c60313b3eeb053ebb81abe12",
+    "reproducibleGitChecksum": "fda5d48e3642f1bcfc81aeefa2e70c36cf0b5cd78e3ce87d2ef621ce6f6fb60a",
+    "entry": {
+      "GitRepo": "https://github.com/erlef/docker-elixir.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
+      "Directory": "1.17/alpine",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716698358
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "elixir:1.17.0-rc.0-alpine",
+          "elixir:1.17.0-rc-alpine",
+          "elixir:1.17-alpine",
+          "elixir:1.17.0-rc.0-otp-27-alpine",
+          "elixir:1.17.0-rc-otp-27-alpine",
+          "elixir:1.17-otp-27-alpine"
+        ],
+        "archTags": [
+          "amd64/elixir:1.17.0-rc.0-alpine",
+          "amd64/elixir:1.17.0-rc-alpine",
+          "amd64/elixir:1.17-alpine",
+          "amd64/elixir:1.17.0-rc.0-otp-27-alpine",
+          "amd64/elixir:1.17.0-rc-otp-27-alpine",
+          "amd64/elixir:1.17-otp-27-alpine"
+        ],
+        "froms": [
+          "erlang:27-alpine"
+        ],
+        "lastStageFrom": "erlang:27-alpine",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "elixir:1.17.0-rc.0-alpine",
+          "elixir:1.17.0-rc-alpine",
+          "elixir:1.17-alpine",
+          "elixir:1.17.0-rc.0-otp-27-alpine",
+          "elixir:1.17.0-rc-otp-27-alpine",
+          "elixir:1.17-otp-27-alpine"
+        ],
+        "archTags": [
+          "arm32v7/elixir:1.17.0-rc.0-alpine",
+          "arm32v7/elixir:1.17.0-rc-alpine",
+          "arm32v7/elixir:1.17-alpine",
+          "arm32v7/elixir:1.17.0-rc.0-otp-27-alpine",
+          "arm32v7/elixir:1.17.0-rc-otp-27-alpine",
+          "arm32v7/elixir:1.17-otp-27-alpine"
+        ],
+        "froms": [
+          "erlang:27-alpine"
+        ],
+        "lastStageFrom": "erlang:27-alpine",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "erlang:27-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "elixir:1.17.0-rc.0-alpine",
+          "elixir:1.17.0-rc-alpine",
+          "elixir:1.17-alpine",
+          "elixir:1.17.0-rc.0-otp-27-alpine",
+          "elixir:1.17.0-rc-otp-27-alpine",
+          "elixir:1.17-otp-27-alpine"
+        ],
+        "archTags": [
+          "arm64v8/elixir:1.17.0-rc.0-alpine",
+          "arm64v8/elixir:1.17.0-rc-alpine",
+          "arm64v8/elixir:1.17-alpine",
+          "arm64v8/elixir:1.17.0-rc.0-otp-27-alpine",
+          "arm64v8/elixir:1.17.0-rc-otp-27-alpine",
+          "arm64v8/elixir:1.17-otp-27-alpine"
+        ],
+        "froms": [
+          "erlang:27-alpine"
+        ],
+        "lastStageFrom": "erlang:27-alpine",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "erlang:27-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "elixir:1.17.0-rc.0-alpine",
+          "elixir:1.17.0-rc-alpine",
+          "elixir:1.17-alpine",
+          "elixir:1.17.0-rc.0-otp-27-alpine",
+          "elixir:1.17.0-rc-otp-27-alpine",
+          "elixir:1.17-otp-27-alpine"
+        ],
+        "archTags": [
+          "i386/elixir:1.17.0-rc.0-alpine",
+          "i386/elixir:1.17.0-rc-alpine",
+          "i386/elixir:1.17-alpine",
+          "i386/elixir:1.17.0-rc.0-otp-27-alpine",
+          "i386/elixir:1.17.0-rc-otp-27-alpine",
+          "i386/elixir:1.17-otp-27-alpine"
+        ],
+        "froms": [
+          "erlang:27-alpine"
+        ],
+        "lastStageFrom": "erlang:27-alpine",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "elixir:1.17.0-rc.0-alpine",
+          "elixir:1.17.0-rc-alpine",
+          "elixir:1.17-alpine",
+          "elixir:1.17.0-rc.0-otp-27-alpine",
+          "elixir:1.17.0-rc-otp-27-alpine",
+          "elixir:1.17-otp-27-alpine"
+        ],
+        "archTags": [
+          "ppc64le/elixir:1.17.0-rc.0-alpine",
+          "ppc64le/elixir:1.17.0-rc-alpine",
+          "ppc64le/elixir:1.17-alpine",
+          "ppc64le/elixir:1.17.0-rc.0-otp-27-alpine",
+          "ppc64le/elixir:1.17.0-rc-otp-27-alpine",
+          "ppc64le/elixir:1.17-otp-27-alpine"
+        ],
+        "froms": [
+          "erlang:27-alpine"
+        ],
+        "lastStageFrom": "erlang:27-alpine",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "elixir:1.17.0-rc.0-alpine",
+          "elixir:1.17.0-rc-alpine",
+          "elixir:1.17-alpine",
+          "elixir:1.17.0-rc.0-otp-27-alpine",
+          "elixir:1.17.0-rc-otp-27-alpine",
+          "elixir:1.17-otp-27-alpine"
+        ],
+        "archTags": [
+          "s390x/elixir:1.17.0-rc.0-alpine",
+          "s390x/elixir:1.17.0-rc-alpine",
+          "s390x/elixir:1.17-alpine",
+          "s390x/elixir:1.17.0-rc.0-otp-27-alpine",
+          "s390x/elixir:1.17.0-rc-otp-27-alpine",
+          "s390x/elixir:1.17-otp-27-alpine"
+        ],
+        "froms": [
+          "erlang:27-alpine"
+        ],
+        "lastStageFrom": "erlang:27-alpine",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:27-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "9c9a0aa60ddf4abf422670e11ed0aa0b0ddd1acf3388a229117d583d26cb8feb": {
+    "sourceId": "9c9a0aa60ddf4abf422670e11ed0aa0b0ddd1acf3388a229117d583d26cb8feb",
+    "reproducibleGitChecksum": "9b8d5201044dd45bd8c7d362cff102966e523f9b344d65b165a69a3123fe4478",
+    "entry": {
+      "GitRepo": "https://github.com/erlef/docker-elixir.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
+      "Directory": "1.17/otp-25",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716698358
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25",
+          "elixir:1.17.0-rc-otp-25",
+          "elixir:1.17-otp-25"
+        ],
+        "archTags": [
+          "amd64/elixir:1.17.0-rc.0-otp-25",
+          "amd64/elixir:1.17.0-rc-otp-25",
+          "amd64/elixir:1.17-otp-25"
+        ],
+        "froms": [
+          "erlang:25"
+        ],
+        "lastStageFrom": "erlang:25",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25",
+          "elixir:1.17.0-rc-otp-25",
+          "elixir:1.17-otp-25"
+        ],
+        "archTags": [
+          "arm32v7/elixir:1.17.0-rc.0-otp-25",
+          "arm32v7/elixir:1.17.0-rc-otp-25",
+          "arm32v7/elixir:1.17-otp-25"
+        ],
+        "froms": [
+          "erlang:25"
+        ],
+        "lastStageFrom": "erlang:25",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "erlang:25": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25",
+          "elixir:1.17.0-rc-otp-25",
+          "elixir:1.17-otp-25"
+        ],
+        "archTags": [
+          "arm64v8/elixir:1.17.0-rc.0-otp-25",
+          "arm64v8/elixir:1.17.0-rc-otp-25",
+          "arm64v8/elixir:1.17-otp-25"
+        ],
+        "froms": [
+          "erlang:25"
+        ],
+        "lastStageFrom": "erlang:25",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "erlang:25": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25",
+          "elixir:1.17.0-rc-otp-25",
+          "elixir:1.17-otp-25"
+        ],
+        "archTags": [
+          "i386/elixir:1.17.0-rc.0-otp-25",
+          "i386/elixir:1.17.0-rc-otp-25",
+          "i386/elixir:1.17-otp-25"
+        ],
+        "froms": [
+          "erlang:25"
+        ],
+        "lastStageFrom": "erlang:25",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25",
+          "elixir:1.17.0-rc-otp-25",
+          "elixir:1.17-otp-25"
+        ],
+        "archTags": [
+          "ppc64le/elixir:1.17.0-rc.0-otp-25",
+          "ppc64le/elixir:1.17.0-rc-otp-25",
+          "ppc64le/elixir:1.17-otp-25"
+        ],
+        "froms": [
+          "erlang:25"
+        ],
+        "lastStageFrom": "erlang:25",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25",
+          "elixir:1.17.0-rc-otp-25",
+          "elixir:1.17-otp-25"
+        ],
+        "archTags": [
+          "s390x/elixir:1.17.0-rc.0-otp-25",
+          "s390x/elixir:1.17.0-rc-otp-25",
+          "s390x/elixir:1.17-otp-25"
+        ],
+        "froms": [
+          "erlang:25"
+        ],
+        "lastStageFrom": "erlang:25",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "962b262bc30429ffd3cf3889e841dfb21bccfaebcdd9b42caae69e191ba59c90": {
+    "sourceId": "962b262bc30429ffd3cf3889e841dfb21bccfaebcdd9b42caae69e191ba59c90",
+    "reproducibleGitChecksum": "986f5e9c5f1553e00f8298524c151e1e530653d311466af68e32d00572a3488c",
+    "entry": {
+      "GitRepo": "https://github.com/erlef/docker-elixir.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
+      "Directory": "1.17/otp-25-alpine",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716698358
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-alpine",
+          "elixir:1.17.0-rc-otp-25-alpine",
+          "elixir:1.17-otp-25-alpine"
+        ],
+        "archTags": [
+          "amd64/elixir:1.17.0-rc.0-otp-25-alpine",
+          "amd64/elixir:1.17.0-rc-otp-25-alpine",
+          "amd64/elixir:1.17-otp-25-alpine"
+        ],
+        "froms": [
+          "erlang:25-alpine"
+        ],
+        "lastStageFrom": "erlang:25-alpine",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-alpine",
+          "elixir:1.17.0-rc-otp-25-alpine",
+          "elixir:1.17-otp-25-alpine"
+        ],
+        "archTags": [
+          "arm32v7/elixir:1.17.0-rc.0-otp-25-alpine",
+          "arm32v7/elixir:1.17.0-rc-otp-25-alpine",
+          "arm32v7/elixir:1.17-otp-25-alpine"
+        ],
+        "froms": [
+          "erlang:25-alpine"
+        ],
+        "lastStageFrom": "erlang:25-alpine",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "erlang:25-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-alpine",
+          "elixir:1.17.0-rc-otp-25-alpine",
+          "elixir:1.17-otp-25-alpine"
+        ],
+        "archTags": [
+          "arm64v8/elixir:1.17.0-rc.0-otp-25-alpine",
+          "arm64v8/elixir:1.17.0-rc-otp-25-alpine",
+          "arm64v8/elixir:1.17-otp-25-alpine"
+        ],
+        "froms": [
+          "erlang:25-alpine"
+        ],
+        "lastStageFrom": "erlang:25-alpine",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "erlang:25-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-alpine",
+          "elixir:1.17.0-rc-otp-25-alpine",
+          "elixir:1.17-otp-25-alpine"
+        ],
+        "archTags": [
+          "i386/elixir:1.17.0-rc.0-otp-25-alpine",
+          "i386/elixir:1.17.0-rc-otp-25-alpine",
+          "i386/elixir:1.17-otp-25-alpine"
+        ],
+        "froms": [
+          "erlang:25-alpine"
+        ],
+        "lastStageFrom": "erlang:25-alpine",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-alpine",
+          "elixir:1.17.0-rc-otp-25-alpine",
+          "elixir:1.17-otp-25-alpine"
+        ],
+        "archTags": [
+          "ppc64le/elixir:1.17.0-rc.0-otp-25-alpine",
+          "ppc64le/elixir:1.17.0-rc-otp-25-alpine",
+          "ppc64le/elixir:1.17-otp-25-alpine"
+        ],
+        "froms": [
+          "erlang:25-alpine"
+        ],
+        "lastStageFrom": "erlang:25-alpine",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-alpine",
+          "elixir:1.17.0-rc-otp-25-alpine",
+          "elixir:1.17-otp-25-alpine"
+        ],
+        "archTags": [
+          "s390x/elixir:1.17.0-rc.0-otp-25-alpine",
+          "s390x/elixir:1.17.0-rc-otp-25-alpine",
+          "s390x/elixir:1.17-otp-25-alpine"
+        ],
+        "froms": [
+          "erlang:25-alpine"
+        ],
+        "lastStageFrom": "erlang:25-alpine",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "6c0e2950dad5e37da6c8e2098c705317917aa56581ec9f9c656e2d98a0fbcf35": {
+    "sourceId": "6c0e2950dad5e37da6c8e2098c705317917aa56581ec9f9c656e2d98a0fbcf35",
+    "reproducibleGitChecksum": "9bd7486ccc0a49533798c1ed46766088782d60cdc22802f2a623bdadf2b1732d",
+    "entry": {
+      "GitRepo": "https://github.com/erlef/docker-elixir.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
+      "Directory": "1.17/otp-25-slim",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716698358
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-slim",
+          "elixir:1.17.0-rc-otp-25-slim",
+          "elixir:1.17-otp-25-slim"
+        ],
+        "archTags": [
+          "amd64/elixir:1.17.0-rc.0-otp-25-slim",
+          "amd64/elixir:1.17.0-rc-otp-25-slim",
+          "amd64/elixir:1.17-otp-25-slim"
+        ],
+        "froms": [
+          "erlang:25-slim"
+        ],
+        "lastStageFrom": "erlang:25-slim",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-slim",
+          "elixir:1.17.0-rc-otp-25-slim",
+          "elixir:1.17-otp-25-slim"
+        ],
+        "archTags": [
+          "arm32v7/elixir:1.17.0-rc.0-otp-25-slim",
+          "arm32v7/elixir:1.17.0-rc-otp-25-slim",
+          "arm32v7/elixir:1.17-otp-25-slim"
+        ],
+        "froms": [
+          "erlang:25-slim"
+        ],
+        "lastStageFrom": "erlang:25-slim",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "erlang:25-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-slim",
+          "elixir:1.17.0-rc-otp-25-slim",
+          "elixir:1.17-otp-25-slim"
+        ],
+        "archTags": [
+          "arm64v8/elixir:1.17.0-rc.0-otp-25-slim",
+          "arm64v8/elixir:1.17.0-rc-otp-25-slim",
+          "arm64v8/elixir:1.17-otp-25-slim"
+        ],
+        "froms": [
+          "erlang:25-slim"
+        ],
+        "lastStageFrom": "erlang:25-slim",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "erlang:25-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-slim",
+          "elixir:1.17.0-rc-otp-25-slim",
+          "elixir:1.17-otp-25-slim"
+        ],
+        "archTags": [
+          "i386/elixir:1.17.0-rc.0-otp-25-slim",
+          "i386/elixir:1.17.0-rc-otp-25-slim",
+          "i386/elixir:1.17-otp-25-slim"
+        ],
+        "froms": [
+          "erlang:25-slim"
+        ],
+        "lastStageFrom": "erlang:25-slim",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-slim",
+          "elixir:1.17.0-rc-otp-25-slim",
+          "elixir:1.17-otp-25-slim"
+        ],
+        "archTags": [
+          "ppc64le/elixir:1.17.0-rc.0-otp-25-slim",
+          "ppc64le/elixir:1.17.0-rc-otp-25-slim",
+          "ppc64le/elixir:1.17-otp-25-slim"
+        ],
+        "froms": [
+          "erlang:25-slim"
+        ],
+        "lastStageFrom": "erlang:25-slim",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-25-slim",
+          "elixir:1.17.0-rc-otp-25-slim",
+          "elixir:1.17-otp-25-slim"
+        ],
+        "archTags": [
+          "s390x/elixir:1.17.0-rc.0-otp-25-slim",
+          "s390x/elixir:1.17.0-rc-otp-25-slim",
+          "s390x/elixir:1.17-otp-25-slim"
+        ],
+        "froms": [
+          "erlang:25-slim"
+        ],
+        "lastStageFrom": "erlang:25-slim",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:25-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "b2fa90cd830240c085c9347769f0aae1ebc9212cb792ed02824d6a94f95b4b30": {
+    "sourceId": "b2fa90cd830240c085c9347769f0aae1ebc9212cb792ed02824d6a94f95b4b30",
+    "reproducibleGitChecksum": "d3db0e3d0397053ee89830d4bba566d13e01176dccde690a054a2bae47f4af04",
+    "entry": {
+      "GitRepo": "https://github.com/erlef/docker-elixir.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
+      "Directory": "1.17/otp-26",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716698358
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26",
+          "elixir:1.17.0-rc-otp-26",
+          "elixir:1.17-otp-26"
+        ],
+        "archTags": [
+          "amd64/elixir:1.17.0-rc.0-otp-26",
+          "amd64/elixir:1.17.0-rc-otp-26",
+          "amd64/elixir:1.17-otp-26"
+        ],
+        "froms": [
+          "erlang:26"
+        ],
+        "lastStageFrom": "erlang:26",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26",
+          "elixir:1.17.0-rc-otp-26",
+          "elixir:1.17-otp-26"
+        ],
+        "archTags": [
+          "arm32v7/elixir:1.17.0-rc.0-otp-26",
+          "arm32v7/elixir:1.17.0-rc-otp-26",
+          "arm32v7/elixir:1.17-otp-26"
+        ],
+        "froms": [
+          "erlang:26"
+        ],
+        "lastStageFrom": "erlang:26",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "erlang:26": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26",
+          "elixir:1.17.0-rc-otp-26",
+          "elixir:1.17-otp-26"
+        ],
+        "archTags": [
+          "arm64v8/elixir:1.17.0-rc.0-otp-26",
+          "arm64v8/elixir:1.17.0-rc-otp-26",
+          "arm64v8/elixir:1.17-otp-26"
+        ],
+        "froms": [
+          "erlang:26"
+        ],
+        "lastStageFrom": "erlang:26",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "erlang:26": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26",
+          "elixir:1.17.0-rc-otp-26",
+          "elixir:1.17-otp-26"
+        ],
+        "archTags": [
+          "i386/elixir:1.17.0-rc.0-otp-26",
+          "i386/elixir:1.17.0-rc-otp-26",
+          "i386/elixir:1.17-otp-26"
+        ],
+        "froms": [
+          "erlang:26"
+        ],
+        "lastStageFrom": "erlang:26",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26",
+          "elixir:1.17.0-rc-otp-26",
+          "elixir:1.17-otp-26"
+        ],
+        "archTags": [
+          "ppc64le/elixir:1.17.0-rc.0-otp-26",
+          "ppc64le/elixir:1.17.0-rc-otp-26",
+          "ppc64le/elixir:1.17-otp-26"
+        ],
+        "froms": [
+          "erlang:26"
+        ],
+        "lastStageFrom": "erlang:26",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26",
+          "elixir:1.17.0-rc-otp-26",
+          "elixir:1.17-otp-26"
+        ],
+        "archTags": [
+          "s390x/elixir:1.17.0-rc.0-otp-26",
+          "s390x/elixir:1.17.0-rc-otp-26",
+          "s390x/elixir:1.17-otp-26"
+        ],
+        "froms": [
+          "erlang:26"
+        ],
+        "lastStageFrom": "erlang:26",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "5a4ea4986f26e953a49d9b25222e3aa338c62fc39792c33250def4560d66e2b7": {
+    "sourceId": "5a4ea4986f26e953a49d9b25222e3aa338c62fc39792c33250def4560d66e2b7",
+    "reproducibleGitChecksum": "a3a5588c3a3872eac29d3c01de0aa720a170584e0e7e13dba292a66f7f1c9ef0",
+    "entry": {
+      "GitRepo": "https://github.com/erlef/docker-elixir.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
+      "Directory": "1.17/otp-26-alpine",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716698358
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-alpine",
+          "elixir:1.17.0-rc-otp-26-alpine",
+          "elixir:1.17-otp-26-alpine"
+        ],
+        "archTags": [
+          "amd64/elixir:1.17.0-rc.0-otp-26-alpine",
+          "amd64/elixir:1.17.0-rc-otp-26-alpine",
+          "amd64/elixir:1.17-otp-26-alpine"
+        ],
+        "froms": [
+          "erlang:26-alpine"
+        ],
+        "lastStageFrom": "erlang:26-alpine",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-alpine",
+          "elixir:1.17.0-rc-otp-26-alpine",
+          "elixir:1.17-otp-26-alpine"
+        ],
+        "archTags": [
+          "arm32v7/elixir:1.17.0-rc.0-otp-26-alpine",
+          "arm32v7/elixir:1.17.0-rc-otp-26-alpine",
+          "arm32v7/elixir:1.17-otp-26-alpine"
+        ],
+        "froms": [
+          "erlang:26-alpine"
+        ],
+        "lastStageFrom": "erlang:26-alpine",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "erlang:26-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-alpine",
+          "elixir:1.17.0-rc-otp-26-alpine",
+          "elixir:1.17-otp-26-alpine"
+        ],
+        "archTags": [
+          "arm64v8/elixir:1.17.0-rc.0-otp-26-alpine",
+          "arm64v8/elixir:1.17.0-rc-otp-26-alpine",
+          "arm64v8/elixir:1.17-otp-26-alpine"
+        ],
+        "froms": [
+          "erlang:26-alpine"
+        ],
+        "lastStageFrom": "erlang:26-alpine",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "erlang:26-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-alpine",
+          "elixir:1.17.0-rc-otp-26-alpine",
+          "elixir:1.17-otp-26-alpine"
+        ],
+        "archTags": [
+          "i386/elixir:1.17.0-rc.0-otp-26-alpine",
+          "i386/elixir:1.17.0-rc-otp-26-alpine",
+          "i386/elixir:1.17-otp-26-alpine"
+        ],
+        "froms": [
+          "erlang:26-alpine"
+        ],
+        "lastStageFrom": "erlang:26-alpine",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-alpine",
+          "elixir:1.17.0-rc-otp-26-alpine",
+          "elixir:1.17-otp-26-alpine"
+        ],
+        "archTags": [
+          "ppc64le/elixir:1.17.0-rc.0-otp-26-alpine",
+          "ppc64le/elixir:1.17.0-rc-otp-26-alpine",
+          "ppc64le/elixir:1.17-otp-26-alpine"
+        ],
+        "froms": [
+          "erlang:26-alpine"
+        ],
+        "lastStageFrom": "erlang:26-alpine",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-alpine",
+          "elixir:1.17.0-rc-otp-26-alpine",
+          "elixir:1.17-otp-26-alpine"
+        ],
+        "archTags": [
+          "s390x/elixir:1.17.0-rc.0-otp-26-alpine",
+          "s390x/elixir:1.17.0-rc-otp-26-alpine",
+          "s390x/elixir:1.17-otp-26-alpine"
+        ],
+        "froms": [
+          "erlang:26-alpine"
+        ],
+        "lastStageFrom": "erlang:26-alpine",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26-alpine": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "18b10f79a41c48aa6bf0deec6d36e4e16c6aad0678bfb09248b181e351952f07": {
+    "sourceId": "18b10f79a41c48aa6bf0deec6d36e4e16c6aad0678bfb09248b181e351952f07",
+    "reproducibleGitChecksum": "9093af5558800bd1ce90c2bb6e2bfcb0e24dc322c5aa354987428ac34d14b4a3",
+    "entry": {
+      "GitRepo": "https://github.com/erlef/docker-elixir.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
+      "Directory": "1.17/otp-26-slim",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716698358
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-slim",
+          "elixir:1.17.0-rc-otp-26-slim",
+          "elixir:1.17-otp-26-slim"
+        ],
+        "archTags": [
+          "amd64/elixir:1.17.0-rc.0-otp-26-slim",
+          "amd64/elixir:1.17.0-rc-otp-26-slim",
+          "amd64/elixir:1.17-otp-26-slim"
+        ],
+        "froms": [
+          "erlang:26-slim"
+        ],
+        "lastStageFrom": "erlang:26-slim",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-slim",
+          "elixir:1.17.0-rc-otp-26-slim",
+          "elixir:1.17-otp-26-slim"
+        ],
+        "archTags": [
+          "arm32v7/elixir:1.17.0-rc.0-otp-26-slim",
+          "arm32v7/elixir:1.17.0-rc-otp-26-slim",
+          "arm32v7/elixir:1.17-otp-26-slim"
+        ],
+        "froms": [
+          "erlang:26-slim"
+        ],
+        "lastStageFrom": "erlang:26-slim",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "erlang:26-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-slim",
+          "elixir:1.17.0-rc-otp-26-slim",
+          "elixir:1.17-otp-26-slim"
+        ],
+        "archTags": [
+          "arm64v8/elixir:1.17.0-rc.0-otp-26-slim",
+          "arm64v8/elixir:1.17.0-rc-otp-26-slim",
+          "arm64v8/elixir:1.17-otp-26-slim"
+        ],
+        "froms": [
+          "erlang:26-slim"
+        ],
+        "lastStageFrom": "erlang:26-slim",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "erlang:26-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-slim",
+          "elixir:1.17.0-rc-otp-26-slim",
+          "elixir:1.17-otp-26-slim"
+        ],
+        "archTags": [
+          "i386/elixir:1.17.0-rc.0-otp-26-slim",
+          "i386/elixir:1.17.0-rc-otp-26-slim",
+          "i386/elixir:1.17-otp-26-slim"
+        ],
+        "froms": [
+          "erlang:26-slim"
+        ],
+        "lastStageFrom": "erlang:26-slim",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-slim",
+          "elixir:1.17.0-rc-otp-26-slim",
+          "elixir:1.17-otp-26-slim"
+        ],
+        "archTags": [
+          "ppc64le/elixir:1.17.0-rc.0-otp-26-slim",
+          "ppc64le/elixir:1.17.0-rc-otp-26-slim",
+          "ppc64le/elixir:1.17-otp-26-slim"
+        ],
+        "froms": [
+          "erlang:26-slim"
+        ],
+        "lastStageFrom": "erlang:26-slim",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "elixir:1.17.0-rc.0-otp-26-slim",
+          "elixir:1.17.0-rc-otp-26-slim",
+          "elixir:1.17-otp-26-slim"
+        ],
+        "archTags": [
+          "s390x/elixir:1.17.0-rc.0-otp-26-slim",
+          "s390x/elixir:1.17.0-rc-otp-26-slim",
+          "s390x/elixir:1.17-otp-26-slim"
+        ],
+        "froms": [
+          "erlang:26-slim"
+        ],
+        "lastStageFrom": "erlang:26-slim",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "erlang:26-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "ee3d46851949003a59e94be32a494f07268932393b67a8b089b0dcbfadca37f8": {
+    "sourceId": "ee3d46851949003a59e94be32a494f07268932393b67a8b089b0dcbfadca37f8",
+    "reproducibleGitChecksum": "a73caba27361c1ee03fefa9f738599dceaa4c93e62829756e97bb6329d4f963c",
+    "entry": {
+      "GitRepo": "https://github.com/erlef/docker-elixir.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
+      "Directory": "1.16",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1716698358
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "elixir:1.16.3",
           "elixir:1.16",
           "elixir:latest",
-          "elixir:1.16.2-otp-26",
+          "elixir:1.16.3-otp-26",
           "elixir:1.16-otp-26",
           "elixir:otp-26"
         ],
         "archTags": [
-          "amd64/elixir:1.16.2",
+          "amd64/elixir:1.16.3",
           "amd64/elixir:1.16",
           "amd64/elixir:latest",
-          "amd64/elixir:1.16.2-otp-26",
+          "amd64/elixir:1.16.3-otp-26",
           "amd64/elixir:1.16-otp-26",
           "amd64/elixir:otp-26"
         ],
@@ -18855,18 +20574,18 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.16.2",
+          "elixir:1.16.3",
           "elixir:1.16",
           "elixir:latest",
-          "elixir:1.16.2-otp-26",
+          "elixir:1.16.3-otp-26",
           "elixir:1.16-otp-26",
           "elixir:otp-26"
         ],
         "archTags": [
-          "arm32v7/elixir:1.16.2",
+          "arm32v7/elixir:1.16.3",
           "arm32v7/elixir:1.16",
           "arm32v7/elixir:latest",
-          "arm32v7/elixir:1.16.2-otp-26",
+          "arm32v7/elixir:1.16.3-otp-26",
           "arm32v7/elixir:1.16-otp-26",
           "arm32v7/elixir:otp-26"
         ],
@@ -18889,18 +20608,18 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.16.2",
+          "elixir:1.16.3",
           "elixir:1.16",
           "elixir:latest",
-          "elixir:1.16.2-otp-26",
+          "elixir:1.16.3-otp-26",
           "elixir:1.16-otp-26",
           "elixir:otp-26"
         ],
         "archTags": [
-          "arm64v8/elixir:1.16.2",
+          "arm64v8/elixir:1.16.3",
           "arm64v8/elixir:1.16",
           "arm64v8/elixir:latest",
-          "arm64v8/elixir:1.16.2-otp-26",
+          "arm64v8/elixir:1.16.3-otp-26",
           "arm64v8/elixir:1.16-otp-26",
           "arm64v8/elixir:otp-26"
         ],
@@ -18923,18 +20642,18 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.16.2",
+          "elixir:1.16.3",
           "elixir:1.16",
           "elixir:latest",
-          "elixir:1.16.2-otp-26",
+          "elixir:1.16.3-otp-26",
           "elixir:1.16-otp-26",
           "elixir:otp-26"
         ],
         "archTags": [
-          "i386/elixir:1.16.2",
+          "i386/elixir:1.16.3",
           "i386/elixir:1.16",
           "i386/elixir:latest",
-          "i386/elixir:1.16.2-otp-26",
+          "i386/elixir:1.16.3-otp-26",
           "i386/elixir:1.16-otp-26",
           "i386/elixir:otp-26"
         ],
@@ -18956,18 +20675,18 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.16.2",
+          "elixir:1.16.3",
           "elixir:1.16",
           "elixir:latest",
-          "elixir:1.16.2-otp-26",
+          "elixir:1.16.3-otp-26",
           "elixir:1.16-otp-26",
           "elixir:otp-26"
         ],
         "archTags": [
-          "ppc64le/elixir:1.16.2",
+          "ppc64le/elixir:1.16.3",
           "ppc64le/elixir:1.16",
           "ppc64le/elixir:latest",
-          "ppc64le/elixir:1.16.2-otp-26",
+          "ppc64le/elixir:1.16.3-otp-26",
           "ppc64le/elixir:1.16-otp-26",
           "ppc64le/elixir:otp-26"
         ],
@@ -18989,18 +20708,18 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.16.2",
+          "elixir:1.16.3",
           "elixir:1.16",
           "elixir:latest",
-          "elixir:1.16.2-otp-26",
+          "elixir:1.16.3-otp-26",
           "elixir:1.16-otp-26",
           "elixir:otp-26"
         ],
         "archTags": [
-          "s390x/elixir:1.16.2",
+          "s390x/elixir:1.16.3",
           "s390x/elixir:1.16",
           "s390x/elixir:latest",
-          "s390x/elixir:1.16.2-otp-26",
+          "s390x/elixir:1.16.3-otp-26",
           "s390x/elixir:1.16-otp-26",
           "s390x/elixir:otp-26"
         ],
@@ -19022,33 +20741,33 @@
       }
     }
   },
-  "820116f8efe135dba7c8b672abf52b82a5e9ccb7c3ee2c4ce0da56b686be1918": {
-    "sourceId": "820116f8efe135dba7c8b672abf52b82a5e9ccb7c3ee2c4ce0da56b686be1918",
-    "reproducibleGitChecksum": "a26b823c9c20f4c313dcb246d70539e4296e2cb28ff385df49cb1eb3fc434444",
+  "4ccd97f2aafaf51ed4ee067324d97730ca5807af836acc26d2b920d9eaf85544": {
+    "sourceId": "4ccd97f2aafaf51ed4ee067324d97730ca5807af836acc26d2b920d9eaf85544",
+    "reproducibleGitChecksum": "afe6bf64eb594866db15a16ef2f644d9aac2d29e18a857794820914216e7cfcc",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "fd41114df3706382657801a6b0679ccfb4472296",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.16/slim",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1710182981
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.16.2-slim",
+          "elixir:1.16.3-slim",
           "elixir:1.16-slim",
           "elixir:slim",
-          "elixir:1.16.2-otp-26-slim",
+          "elixir:1.16.3-otp-26-slim",
           "elixir:1.16-otp-26-slim",
           "elixir:otp-26-slim"
         ],
         "archTags": [
-          "amd64/elixir:1.16.2-slim",
+          "amd64/elixir:1.16.3-slim",
           "amd64/elixir:1.16-slim",
           "amd64/elixir:slim",
-          "amd64/elixir:1.16.2-otp-26-slim",
+          "amd64/elixir:1.16.3-otp-26-slim",
           "amd64/elixir:1.16-otp-26-slim",
           "amd64/elixir:otp-26-slim"
         ],
@@ -19070,18 +20789,18 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.16.2-slim",
+          "elixir:1.16.3-slim",
           "elixir:1.16-slim",
           "elixir:slim",
-          "elixir:1.16.2-otp-26-slim",
+          "elixir:1.16.3-otp-26-slim",
           "elixir:1.16-otp-26-slim",
           "elixir:otp-26-slim"
         ],
         "archTags": [
-          "arm32v7/elixir:1.16.2-slim",
+          "arm32v7/elixir:1.16.3-slim",
           "arm32v7/elixir:1.16-slim",
           "arm32v7/elixir:slim",
-          "arm32v7/elixir:1.16.2-otp-26-slim",
+          "arm32v7/elixir:1.16.3-otp-26-slim",
           "arm32v7/elixir:1.16-otp-26-slim",
           "arm32v7/elixir:otp-26-slim"
         ],
@@ -19104,18 +20823,18 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.16.2-slim",
+          "elixir:1.16.3-slim",
           "elixir:1.16-slim",
           "elixir:slim",
-          "elixir:1.16.2-otp-26-slim",
+          "elixir:1.16.3-otp-26-slim",
           "elixir:1.16-otp-26-slim",
           "elixir:otp-26-slim"
         ],
         "archTags": [
-          "arm64v8/elixir:1.16.2-slim",
+          "arm64v8/elixir:1.16.3-slim",
           "arm64v8/elixir:1.16-slim",
           "arm64v8/elixir:slim",
-          "arm64v8/elixir:1.16.2-otp-26-slim",
+          "arm64v8/elixir:1.16.3-otp-26-slim",
           "arm64v8/elixir:1.16-otp-26-slim",
           "arm64v8/elixir:otp-26-slim"
         ],
@@ -19138,18 +20857,18 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.16.2-slim",
+          "elixir:1.16.3-slim",
           "elixir:1.16-slim",
           "elixir:slim",
-          "elixir:1.16.2-otp-26-slim",
+          "elixir:1.16.3-otp-26-slim",
           "elixir:1.16-otp-26-slim",
           "elixir:otp-26-slim"
         ],
         "archTags": [
-          "i386/elixir:1.16.2-slim",
+          "i386/elixir:1.16.3-slim",
           "i386/elixir:1.16-slim",
           "i386/elixir:slim",
-          "i386/elixir:1.16.2-otp-26-slim",
+          "i386/elixir:1.16.3-otp-26-slim",
           "i386/elixir:1.16-otp-26-slim",
           "i386/elixir:otp-26-slim"
         ],
@@ -19171,18 +20890,18 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.16.2-slim",
+          "elixir:1.16.3-slim",
           "elixir:1.16-slim",
           "elixir:slim",
-          "elixir:1.16.2-otp-26-slim",
+          "elixir:1.16.3-otp-26-slim",
           "elixir:1.16-otp-26-slim",
           "elixir:otp-26-slim"
         ],
         "archTags": [
-          "ppc64le/elixir:1.16.2-slim",
+          "ppc64le/elixir:1.16.3-slim",
           "ppc64le/elixir:1.16-slim",
           "ppc64le/elixir:slim",
-          "ppc64le/elixir:1.16.2-otp-26-slim",
+          "ppc64le/elixir:1.16.3-otp-26-slim",
           "ppc64le/elixir:1.16-otp-26-slim",
           "ppc64le/elixir:otp-26-slim"
         ],
@@ -19204,18 +20923,18 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.16.2-slim",
+          "elixir:1.16.3-slim",
           "elixir:1.16-slim",
           "elixir:slim",
-          "elixir:1.16.2-otp-26-slim",
+          "elixir:1.16.3-otp-26-slim",
           "elixir:1.16-otp-26-slim",
           "elixir:otp-26-slim"
         ],
         "archTags": [
-          "s390x/elixir:1.16.2-slim",
+          "s390x/elixir:1.16.3-slim",
           "s390x/elixir:1.16-slim",
           "s390x/elixir:slim",
-          "s390x/elixir:1.16.2-otp-26-slim",
+          "s390x/elixir:1.16.3-otp-26-slim",
           "s390x/elixir:1.16-otp-26-slim",
           "s390x/elixir:otp-26-slim"
         ],
@@ -19237,33 +20956,33 @@
       }
     }
   },
-  "5aff4ff37d0e06a5aeb40a16b9a7b74ff868fe12b7a314f4fe4c06381fba8de7": {
-    "sourceId": "5aff4ff37d0e06a5aeb40a16b9a7b74ff868fe12b7a314f4fe4c06381fba8de7",
-    "reproducibleGitChecksum": "f1599606b8ad9115618844a893d6f067d4efd12d1fec9add158f8b571b6cf1bd",
+  "ee03cc8b96c4bfb5058c681ed7fca30589a8216e6610695abc7d0dcf256cec1a": {
+    "sourceId": "ee03cc8b96c4bfb5058c681ed7fca30589a8216e6610695abc7d0dcf256cec1a",
+    "reproducibleGitChecksum": "697fd0ee53add4dbc0df8b344097fa3b9ed6f1fb8a92b819d08da4f25210feec",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "fd41114df3706382657801a6b0679ccfb4472296",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.16/alpine",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1710182981
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.16.2-alpine",
+          "elixir:1.16.3-alpine",
           "elixir:1.16-alpine",
           "elixir:alpine",
-          "elixir:1.16.2-otp-26-alpine",
+          "elixir:1.16.3-otp-26-alpine",
           "elixir:1.16-otp-26-alpine",
           "elixir:otp-26-alpine"
         ],
         "archTags": [
-          "amd64/elixir:1.16.2-alpine",
+          "amd64/elixir:1.16.3-alpine",
           "amd64/elixir:1.16-alpine",
           "amd64/elixir:alpine",
-          "amd64/elixir:1.16.2-otp-26-alpine",
+          "amd64/elixir:1.16.3-otp-26-alpine",
           "amd64/elixir:1.16-otp-26-alpine",
           "amd64/elixir:otp-26-alpine"
         ],
@@ -19285,18 +21004,18 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.16.2-alpine",
+          "elixir:1.16.3-alpine",
           "elixir:1.16-alpine",
           "elixir:alpine",
-          "elixir:1.16.2-otp-26-alpine",
+          "elixir:1.16.3-otp-26-alpine",
           "elixir:1.16-otp-26-alpine",
           "elixir:otp-26-alpine"
         ],
         "archTags": [
-          "arm32v7/elixir:1.16.2-alpine",
+          "arm32v7/elixir:1.16.3-alpine",
           "arm32v7/elixir:1.16-alpine",
           "arm32v7/elixir:alpine",
-          "arm32v7/elixir:1.16.2-otp-26-alpine",
+          "arm32v7/elixir:1.16.3-otp-26-alpine",
           "arm32v7/elixir:1.16-otp-26-alpine",
           "arm32v7/elixir:otp-26-alpine"
         ],
@@ -19319,18 +21038,18 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.16.2-alpine",
+          "elixir:1.16.3-alpine",
           "elixir:1.16-alpine",
           "elixir:alpine",
-          "elixir:1.16.2-otp-26-alpine",
+          "elixir:1.16.3-otp-26-alpine",
           "elixir:1.16-otp-26-alpine",
           "elixir:otp-26-alpine"
         ],
         "archTags": [
-          "arm64v8/elixir:1.16.2-alpine",
+          "arm64v8/elixir:1.16.3-alpine",
           "arm64v8/elixir:1.16-alpine",
           "arm64v8/elixir:alpine",
-          "arm64v8/elixir:1.16.2-otp-26-alpine",
+          "arm64v8/elixir:1.16.3-otp-26-alpine",
           "arm64v8/elixir:1.16-otp-26-alpine",
           "arm64v8/elixir:otp-26-alpine"
         ],
@@ -19353,18 +21072,18 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.16.2-alpine",
+          "elixir:1.16.3-alpine",
           "elixir:1.16-alpine",
           "elixir:alpine",
-          "elixir:1.16.2-otp-26-alpine",
+          "elixir:1.16.3-otp-26-alpine",
           "elixir:1.16-otp-26-alpine",
           "elixir:otp-26-alpine"
         ],
         "archTags": [
-          "i386/elixir:1.16.2-alpine",
+          "i386/elixir:1.16.3-alpine",
           "i386/elixir:1.16-alpine",
           "i386/elixir:alpine",
-          "i386/elixir:1.16.2-otp-26-alpine",
+          "i386/elixir:1.16.3-otp-26-alpine",
           "i386/elixir:1.16-otp-26-alpine",
           "i386/elixir:otp-26-alpine"
         ],
@@ -19386,18 +21105,18 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.16.2-alpine",
+          "elixir:1.16.3-alpine",
           "elixir:1.16-alpine",
           "elixir:alpine",
-          "elixir:1.16.2-otp-26-alpine",
+          "elixir:1.16.3-otp-26-alpine",
           "elixir:1.16-otp-26-alpine",
           "elixir:otp-26-alpine"
         ],
         "archTags": [
-          "ppc64le/elixir:1.16.2-alpine",
+          "ppc64le/elixir:1.16.3-alpine",
           "ppc64le/elixir:1.16-alpine",
           "ppc64le/elixir:alpine",
-          "ppc64le/elixir:1.16.2-otp-26-alpine",
+          "ppc64le/elixir:1.16.3-otp-26-alpine",
           "ppc64le/elixir:1.16-otp-26-alpine",
           "ppc64le/elixir:otp-26-alpine"
         ],
@@ -19419,18 +21138,18 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.16.2-alpine",
+          "elixir:1.16.3-alpine",
           "elixir:1.16-alpine",
           "elixir:alpine",
-          "elixir:1.16.2-otp-26-alpine",
+          "elixir:1.16.3-otp-26-alpine",
           "elixir:1.16-otp-26-alpine",
           "elixir:otp-26-alpine"
         ],
         "archTags": [
-          "s390x/elixir:1.16.2-alpine",
+          "s390x/elixir:1.16.3-alpine",
           "s390x/elixir:1.16-alpine",
           "s390x/elixir:alpine",
-          "s390x/elixir:1.16.2-otp-26-alpine",
+          "s390x/elixir:1.16.3-otp-26-alpine",
           "s390x/elixir:1.16-otp-26-alpine",
           "s390x/elixir:otp-26-alpine"
         ],
@@ -19452,27 +21171,27 @@
       }
     }
   },
-  "14daac007ad4c98d0a70b772b340911a67191be225f0878318421aa1c4f18e94": {
-    "sourceId": "14daac007ad4c98d0a70b772b340911a67191be225f0878318421aa1c4f18e94",
-    "reproducibleGitChecksum": "f03d3f120a3b5b5d5f56d5f6c9d3c373f25bfd78bf951a4e07772a7e98652982",
+  "49daf1494aca5824fc8785eb6acfccfaf76cda9648f59b79056d9ae150335f7d": {
+    "sourceId": "49daf1494aca5824fc8785eb6acfccfaf76cda9648f59b79056d9ae150335f7d",
+    "reproducibleGitChecksum": "6737ae7fa7984643d2a93731ae65c0379c6d9186f7ddf77de9be89d7469cab73",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "fd41114df3706382657801a6b0679ccfb4472296",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.16/otp-24",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1710182981
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.16.2-otp-24",
+          "elixir:1.16.3-otp-24",
           "elixir:1.16-otp-24",
           "elixir:otp-24"
         ],
         "archTags": [
-          "amd64/elixir:1.16.2-otp-24",
+          "amd64/elixir:1.16.3-otp-24",
           "amd64/elixir:1.16-otp-24",
           "amd64/elixir:otp-24"
         ],
@@ -19494,12 +21213,12 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.16.2-otp-24",
+          "elixir:1.16.3-otp-24",
           "elixir:1.16-otp-24",
           "elixir:otp-24"
         ],
         "archTags": [
-          "arm32v7/elixir:1.16.2-otp-24",
+          "arm32v7/elixir:1.16.3-otp-24",
           "arm32v7/elixir:1.16-otp-24",
           "arm32v7/elixir:otp-24"
         ],
@@ -19522,12 +21241,12 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.16.2-otp-24",
+          "elixir:1.16.3-otp-24",
           "elixir:1.16-otp-24",
           "elixir:otp-24"
         ],
         "archTags": [
-          "arm64v8/elixir:1.16.2-otp-24",
+          "arm64v8/elixir:1.16.3-otp-24",
           "arm64v8/elixir:1.16-otp-24",
           "arm64v8/elixir:otp-24"
         ],
@@ -19550,12 +21269,12 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.16.2-otp-24",
+          "elixir:1.16.3-otp-24",
           "elixir:1.16-otp-24",
           "elixir:otp-24"
         ],
         "archTags": [
-          "i386/elixir:1.16.2-otp-24",
+          "i386/elixir:1.16.3-otp-24",
           "i386/elixir:1.16-otp-24",
           "i386/elixir:otp-24"
         ],
@@ -19577,12 +21296,12 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.16.2-otp-24",
+          "elixir:1.16.3-otp-24",
           "elixir:1.16-otp-24",
           "elixir:otp-24"
         ],
         "archTags": [
-          "ppc64le/elixir:1.16.2-otp-24",
+          "ppc64le/elixir:1.16.3-otp-24",
           "ppc64le/elixir:1.16-otp-24",
           "ppc64le/elixir:otp-24"
         ],
@@ -19604,12 +21323,12 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.16.2-otp-24",
+          "elixir:1.16.3-otp-24",
           "elixir:1.16-otp-24",
           "elixir:otp-24"
         ],
         "archTags": [
-          "s390x/elixir:1.16.2-otp-24",
+          "s390x/elixir:1.16.3-otp-24",
           "s390x/elixir:1.16-otp-24",
           "s390x/elixir:otp-24"
         ],
@@ -19631,27 +21350,27 @@
       }
     }
   },
-  "21f92fb6d06a9c88d0195ded0efc24db1bab319135c5c50b43f8b4f50225aa01": {
-    "sourceId": "21f92fb6d06a9c88d0195ded0efc24db1bab319135c5c50b43f8b4f50225aa01",
-    "reproducibleGitChecksum": "091dfb46b88d6fc0a836f2188713cc945aae7fbe5506773b4a5886e2c9bcf39d",
+  "4ef4eb752eef58933a4891c5f00e4af163ab58ac11c9cc2e60e4b3866f407e55": {
+    "sourceId": "4ef4eb752eef58933a4891c5f00e4af163ab58ac11c9cc2e60e4b3866f407e55",
+    "reproducibleGitChecksum": "9d3fe6efcd9aef4c98f5e175f87a1d48b03b67cce83c4df58bce2246d5660db4",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "fd41114df3706382657801a6b0679ccfb4472296",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.16/otp-24-alpine",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1710182981
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.16.2-otp-24-alpine",
+          "elixir:1.16.3-otp-24-alpine",
           "elixir:1.16-otp-24-alpine",
           "elixir:otp-24-alpine"
         ],
         "archTags": [
-          "amd64/elixir:1.16.2-otp-24-alpine",
+          "amd64/elixir:1.16.3-otp-24-alpine",
           "amd64/elixir:1.16-otp-24-alpine",
           "amd64/elixir:otp-24-alpine"
         ],
@@ -19673,12 +21392,12 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.16.2-otp-24-alpine",
+          "elixir:1.16.3-otp-24-alpine",
           "elixir:1.16-otp-24-alpine",
           "elixir:otp-24-alpine"
         ],
         "archTags": [
-          "arm32v7/elixir:1.16.2-otp-24-alpine",
+          "arm32v7/elixir:1.16.3-otp-24-alpine",
           "arm32v7/elixir:1.16-otp-24-alpine",
           "arm32v7/elixir:otp-24-alpine"
         ],
@@ -19701,12 +21420,12 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.16.2-otp-24-alpine",
+          "elixir:1.16.3-otp-24-alpine",
           "elixir:1.16-otp-24-alpine",
           "elixir:otp-24-alpine"
         ],
         "archTags": [
-          "arm64v8/elixir:1.16.2-otp-24-alpine",
+          "arm64v8/elixir:1.16.3-otp-24-alpine",
           "arm64v8/elixir:1.16-otp-24-alpine",
           "arm64v8/elixir:otp-24-alpine"
         ],
@@ -19729,12 +21448,12 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.16.2-otp-24-alpine",
+          "elixir:1.16.3-otp-24-alpine",
           "elixir:1.16-otp-24-alpine",
           "elixir:otp-24-alpine"
         ],
         "archTags": [
-          "i386/elixir:1.16.2-otp-24-alpine",
+          "i386/elixir:1.16.3-otp-24-alpine",
           "i386/elixir:1.16-otp-24-alpine",
           "i386/elixir:otp-24-alpine"
         ],
@@ -19756,12 +21475,12 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.16.2-otp-24-alpine",
+          "elixir:1.16.3-otp-24-alpine",
           "elixir:1.16-otp-24-alpine",
           "elixir:otp-24-alpine"
         ],
         "archTags": [
-          "ppc64le/elixir:1.16.2-otp-24-alpine",
+          "ppc64le/elixir:1.16.3-otp-24-alpine",
           "ppc64le/elixir:1.16-otp-24-alpine",
           "ppc64le/elixir:otp-24-alpine"
         ],
@@ -19783,12 +21502,12 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.16.2-otp-24-alpine",
+          "elixir:1.16.3-otp-24-alpine",
           "elixir:1.16-otp-24-alpine",
           "elixir:otp-24-alpine"
         ],
         "archTags": [
-          "s390x/elixir:1.16.2-otp-24-alpine",
+          "s390x/elixir:1.16.3-otp-24-alpine",
           "s390x/elixir:1.16-otp-24-alpine",
           "s390x/elixir:otp-24-alpine"
         ],
@@ -19810,27 +21529,27 @@
       }
     }
   },
-  "6b7ab55e132076f9f866def8516fe806420f572182fb974f753b138e9bc2ac42": {
-    "sourceId": "6b7ab55e132076f9f866def8516fe806420f572182fb974f753b138e9bc2ac42",
-    "reproducibleGitChecksum": "68efa1e4f9e595637824adf4f942dd91987b4c650f3480aade8b1639dbd44ede",
+  "e56dfbf4034f61cf22c066f462429a2dc444f4c0c85cf6c3155d09917d47b03b": {
+    "sourceId": "e56dfbf4034f61cf22c066f462429a2dc444f4c0c85cf6c3155d09917d47b03b",
+    "reproducibleGitChecksum": "e2755c357b9dce1681cb7a4ac4e0c434f31384adb4de6426fce2a4452f34ab6d",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "fd41114df3706382657801a6b0679ccfb4472296",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.16/otp-24-slim",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1710182981
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.16.2-otp-24-slim",
+          "elixir:1.16.3-otp-24-slim",
           "elixir:1.16-otp-24-slim",
           "elixir:otp-24-slim"
         ],
         "archTags": [
-          "amd64/elixir:1.16.2-otp-24-slim",
+          "amd64/elixir:1.16.3-otp-24-slim",
           "amd64/elixir:1.16-otp-24-slim",
           "amd64/elixir:otp-24-slim"
         ],
@@ -19852,12 +21571,12 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.16.2-otp-24-slim",
+          "elixir:1.16.3-otp-24-slim",
           "elixir:1.16-otp-24-slim",
           "elixir:otp-24-slim"
         ],
         "archTags": [
-          "arm32v7/elixir:1.16.2-otp-24-slim",
+          "arm32v7/elixir:1.16.3-otp-24-slim",
           "arm32v7/elixir:1.16-otp-24-slim",
           "arm32v7/elixir:otp-24-slim"
         ],
@@ -19880,12 +21599,12 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.16.2-otp-24-slim",
+          "elixir:1.16.3-otp-24-slim",
           "elixir:1.16-otp-24-slim",
           "elixir:otp-24-slim"
         ],
         "archTags": [
-          "arm64v8/elixir:1.16.2-otp-24-slim",
+          "arm64v8/elixir:1.16.3-otp-24-slim",
           "arm64v8/elixir:1.16-otp-24-slim",
           "arm64v8/elixir:otp-24-slim"
         ],
@@ -19908,12 +21627,12 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.16.2-otp-24-slim",
+          "elixir:1.16.3-otp-24-slim",
           "elixir:1.16-otp-24-slim",
           "elixir:otp-24-slim"
         ],
         "archTags": [
-          "i386/elixir:1.16.2-otp-24-slim",
+          "i386/elixir:1.16.3-otp-24-slim",
           "i386/elixir:1.16-otp-24-slim",
           "i386/elixir:otp-24-slim"
         ],
@@ -19935,12 +21654,12 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.16.2-otp-24-slim",
+          "elixir:1.16.3-otp-24-slim",
           "elixir:1.16-otp-24-slim",
           "elixir:otp-24-slim"
         ],
         "archTags": [
-          "ppc64le/elixir:1.16.2-otp-24-slim",
+          "ppc64le/elixir:1.16.3-otp-24-slim",
           "ppc64le/elixir:1.16-otp-24-slim",
           "ppc64le/elixir:otp-24-slim"
         ],
@@ -19962,12 +21681,12 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.16.2-otp-24-slim",
+          "elixir:1.16.3-otp-24-slim",
           "elixir:1.16-otp-24-slim",
           "elixir:otp-24-slim"
         ],
         "archTags": [
-          "s390x/elixir:1.16.2-otp-24-slim",
+          "s390x/elixir:1.16.3-otp-24-slim",
           "s390x/elixir:1.16-otp-24-slim",
           "s390x/elixir:otp-24-slim"
         ],
@@ -19989,27 +21708,27 @@
       }
     }
   },
-  "fbeb3b0a9e17f7d4ab5875daa69b82e93770ebaa0cffccd52dfc677c382025c7": {
-    "sourceId": "fbeb3b0a9e17f7d4ab5875daa69b82e93770ebaa0cffccd52dfc677c382025c7",
-    "reproducibleGitChecksum": "be37b9e34b1ffbeb118d7c8e39b286126d8aaf52ada6c6a38cae8b106c92a2c9",
+  "279e3fe7caa681699db3a1387232bd421251a415083aef487a3e118c9910cc69": {
+    "sourceId": "279e3fe7caa681699db3a1387232bd421251a415083aef487a3e118c9910cc69",
+    "reproducibleGitChecksum": "1c221576dfd4db4667497e9bbcdbbe81604fb98faae68d7cfbab510213b1a2d2",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "fd41114df3706382657801a6b0679ccfb4472296",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.16/otp-25",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1710182981
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.16.2-otp-25",
+          "elixir:1.16.3-otp-25",
           "elixir:1.16-otp-25",
           "elixir:otp-25"
         ],
         "archTags": [
-          "amd64/elixir:1.16.2-otp-25",
+          "amd64/elixir:1.16.3-otp-25",
           "amd64/elixir:1.16-otp-25",
           "amd64/elixir:otp-25"
         ],
@@ -20031,12 +21750,12 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.16.2-otp-25",
+          "elixir:1.16.3-otp-25",
           "elixir:1.16-otp-25",
           "elixir:otp-25"
         ],
         "archTags": [
-          "arm32v7/elixir:1.16.2-otp-25",
+          "arm32v7/elixir:1.16.3-otp-25",
           "arm32v7/elixir:1.16-otp-25",
           "arm32v7/elixir:otp-25"
         ],
@@ -20059,12 +21778,12 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.16.2-otp-25",
+          "elixir:1.16.3-otp-25",
           "elixir:1.16-otp-25",
           "elixir:otp-25"
         ],
         "archTags": [
-          "arm64v8/elixir:1.16.2-otp-25",
+          "arm64v8/elixir:1.16.3-otp-25",
           "arm64v8/elixir:1.16-otp-25",
           "arm64v8/elixir:otp-25"
         ],
@@ -20087,12 +21806,12 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.16.2-otp-25",
+          "elixir:1.16.3-otp-25",
           "elixir:1.16-otp-25",
           "elixir:otp-25"
         ],
         "archTags": [
-          "i386/elixir:1.16.2-otp-25",
+          "i386/elixir:1.16.3-otp-25",
           "i386/elixir:1.16-otp-25",
           "i386/elixir:otp-25"
         ],
@@ -20114,12 +21833,12 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.16.2-otp-25",
+          "elixir:1.16.3-otp-25",
           "elixir:1.16-otp-25",
           "elixir:otp-25"
         ],
         "archTags": [
-          "ppc64le/elixir:1.16.2-otp-25",
+          "ppc64le/elixir:1.16.3-otp-25",
           "ppc64le/elixir:1.16-otp-25",
           "ppc64le/elixir:otp-25"
         ],
@@ -20141,12 +21860,12 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.16.2-otp-25",
+          "elixir:1.16.3-otp-25",
           "elixir:1.16-otp-25",
           "elixir:otp-25"
         ],
         "archTags": [
-          "s390x/elixir:1.16.2-otp-25",
+          "s390x/elixir:1.16.3-otp-25",
           "s390x/elixir:1.16-otp-25",
           "s390x/elixir:otp-25"
         ],
@@ -20168,27 +21887,27 @@
       }
     }
   },
-  "aaa4f9027c99d105ed08e8ade190ad7d7489fc79cd031465f69566537de1a671": {
-    "sourceId": "aaa4f9027c99d105ed08e8ade190ad7d7489fc79cd031465f69566537de1a671",
-    "reproducibleGitChecksum": "e55d8d66f0864025be283f8c107a659735c2621ae5d48f75ed0086e9dfa7a7a9",
+  "c5d614f335b03fbfb123867a19f260f07d8e615e03a7e8d08cb9f6fc9c9496b3": {
+    "sourceId": "c5d614f335b03fbfb123867a19f260f07d8e615e03a7e8d08cb9f6fc9c9496b3",
+    "reproducibleGitChecksum": "30ae381fb48d1973e5905c7b0bd6cae221b0fb3e7a0f5ad67bea8670707b5281",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "fd41114df3706382657801a6b0679ccfb4472296",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.16/otp-25-alpine",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1710182981
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.16.2-otp-25-alpine",
+          "elixir:1.16.3-otp-25-alpine",
           "elixir:1.16-otp-25-alpine",
           "elixir:otp-25-alpine"
         ],
         "archTags": [
-          "amd64/elixir:1.16.2-otp-25-alpine",
+          "amd64/elixir:1.16.3-otp-25-alpine",
           "amd64/elixir:1.16-otp-25-alpine",
           "amd64/elixir:otp-25-alpine"
         ],
@@ -20210,12 +21929,12 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.16.2-otp-25-alpine",
+          "elixir:1.16.3-otp-25-alpine",
           "elixir:1.16-otp-25-alpine",
           "elixir:otp-25-alpine"
         ],
         "archTags": [
-          "arm32v7/elixir:1.16.2-otp-25-alpine",
+          "arm32v7/elixir:1.16.3-otp-25-alpine",
           "arm32v7/elixir:1.16-otp-25-alpine",
           "arm32v7/elixir:otp-25-alpine"
         ],
@@ -20238,12 +21957,12 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.16.2-otp-25-alpine",
+          "elixir:1.16.3-otp-25-alpine",
           "elixir:1.16-otp-25-alpine",
           "elixir:otp-25-alpine"
         ],
         "archTags": [
-          "arm64v8/elixir:1.16.2-otp-25-alpine",
+          "arm64v8/elixir:1.16.3-otp-25-alpine",
           "arm64v8/elixir:1.16-otp-25-alpine",
           "arm64v8/elixir:otp-25-alpine"
         ],
@@ -20266,12 +21985,12 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.16.2-otp-25-alpine",
+          "elixir:1.16.3-otp-25-alpine",
           "elixir:1.16-otp-25-alpine",
           "elixir:otp-25-alpine"
         ],
         "archTags": [
-          "i386/elixir:1.16.2-otp-25-alpine",
+          "i386/elixir:1.16.3-otp-25-alpine",
           "i386/elixir:1.16-otp-25-alpine",
           "i386/elixir:otp-25-alpine"
         ],
@@ -20293,12 +22012,12 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.16.2-otp-25-alpine",
+          "elixir:1.16.3-otp-25-alpine",
           "elixir:1.16-otp-25-alpine",
           "elixir:otp-25-alpine"
         ],
         "archTags": [
-          "ppc64le/elixir:1.16.2-otp-25-alpine",
+          "ppc64le/elixir:1.16.3-otp-25-alpine",
           "ppc64le/elixir:1.16-otp-25-alpine",
           "ppc64le/elixir:otp-25-alpine"
         ],
@@ -20320,12 +22039,12 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.16.2-otp-25-alpine",
+          "elixir:1.16.3-otp-25-alpine",
           "elixir:1.16-otp-25-alpine",
           "elixir:otp-25-alpine"
         ],
         "archTags": [
-          "s390x/elixir:1.16.2-otp-25-alpine",
+          "s390x/elixir:1.16.3-otp-25-alpine",
           "s390x/elixir:1.16-otp-25-alpine",
           "s390x/elixir:otp-25-alpine"
         ],
@@ -20347,27 +22066,27 @@
       }
     }
   },
-  "292434ee7543e7612b711cd5b4bfaeb0c02dda5682a450127d1b67872d528f09": {
-    "sourceId": "292434ee7543e7612b711cd5b4bfaeb0c02dda5682a450127d1b67872d528f09",
-    "reproducibleGitChecksum": "89dded0fc6bd72c3f9cae6a0f5d5179379bf756557a0ba9ef5bc394f5d6d6de5",
+  "24566d19c455d7ab0237a8c7d8e85a5dd805524fc02a11ed416a47d4fd4cd8ac": {
+    "sourceId": "24566d19c455d7ab0237a8c7d8e85a5dd805524fc02a11ed416a47d4fd4cd8ac",
+    "reproducibleGitChecksum": "87e97f6c3b634091b37100cbca90d8602844f989c6fb1f401f7883a325edaa4f",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "fd41114df3706382657801a6b0679ccfb4472296",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.16/otp-25-slim",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1710182981
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.16.2-otp-25-slim",
+          "elixir:1.16.3-otp-25-slim",
           "elixir:1.16-otp-25-slim",
           "elixir:otp-25-slim"
         ],
         "archTags": [
-          "amd64/elixir:1.16.2-otp-25-slim",
+          "amd64/elixir:1.16.3-otp-25-slim",
           "amd64/elixir:1.16-otp-25-slim",
           "amd64/elixir:otp-25-slim"
         ],
@@ -20389,12 +22108,12 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.16.2-otp-25-slim",
+          "elixir:1.16.3-otp-25-slim",
           "elixir:1.16-otp-25-slim",
           "elixir:otp-25-slim"
         ],
         "archTags": [
-          "arm32v7/elixir:1.16.2-otp-25-slim",
+          "arm32v7/elixir:1.16.3-otp-25-slim",
           "arm32v7/elixir:1.16-otp-25-slim",
           "arm32v7/elixir:otp-25-slim"
         ],
@@ -20417,12 +22136,12 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.16.2-otp-25-slim",
+          "elixir:1.16.3-otp-25-slim",
           "elixir:1.16-otp-25-slim",
           "elixir:otp-25-slim"
         ],
         "archTags": [
-          "arm64v8/elixir:1.16.2-otp-25-slim",
+          "arm64v8/elixir:1.16.3-otp-25-slim",
           "arm64v8/elixir:1.16-otp-25-slim",
           "arm64v8/elixir:otp-25-slim"
         ],
@@ -20445,12 +22164,12 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.16.2-otp-25-slim",
+          "elixir:1.16.3-otp-25-slim",
           "elixir:1.16-otp-25-slim",
           "elixir:otp-25-slim"
         ],
         "archTags": [
-          "i386/elixir:1.16.2-otp-25-slim",
+          "i386/elixir:1.16.3-otp-25-slim",
           "i386/elixir:1.16-otp-25-slim",
           "i386/elixir:otp-25-slim"
         ],
@@ -20472,12 +22191,12 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.16.2-otp-25-slim",
+          "elixir:1.16.3-otp-25-slim",
           "elixir:1.16-otp-25-slim",
           "elixir:otp-25-slim"
         ],
         "archTags": [
-          "ppc64le/elixir:1.16.2-otp-25-slim",
+          "ppc64le/elixir:1.16.3-otp-25-slim",
           "ppc64le/elixir:1.16-otp-25-slim",
           "ppc64le/elixir:otp-25-slim"
         ],
@@ -20499,12 +22218,12 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.16.2-otp-25-slim",
+          "elixir:1.16.3-otp-25-slim",
           "elixir:1.16-otp-25-slim",
           "elixir:otp-25-slim"
         ],
         "archTags": [
-          "s390x/elixir:1.16.2-otp-25-slim",
+          "s390x/elixir:1.16.3-otp-25-slim",
           "s390x/elixir:1.16-otp-25-slim",
           "s390x/elixir:otp-25-slim"
         ],
@@ -20526,30 +22245,30 @@
       }
     }
   },
-  "4d186d48d7b0fa2581da9ef6699dbaf3e9bf64d14bc27829a98c7e26eab611ca": {
-    "sourceId": "4d186d48d7b0fa2581da9ef6699dbaf3e9bf64d14bc27829a98c7e26eab611ca",
-    "reproducibleGitChecksum": "1f8a43d8e1d387370a93af574b90c6cc0138ef07a959b9f3c8375fc3b5c48142",
+  "13e82d1c8911a0afd0af32498b782614da8ca3d6a975cb3bccc1be09f89f0f30": {
+    "sourceId": "13e82d1c8911a0afd0af32498b782614da8ca3d6a975cb3bccc1be09f89f0f30",
+    "reproducibleGitChecksum": "ba4ceb51e974abe3c3c491914305092f0f0320e12e769483aee7b5a60c64bb35",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "8bb39c071ac936d584b390cd50edf5c8c27ef0dd",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.15",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1699000748
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.15.7",
+          "elixir:1.15.8",
           "elixir:1.15",
-          "elixir:1.15.7-otp-26",
+          "elixir:1.15.8-otp-26",
           "elixir:1.15-otp-26"
         ],
         "archTags": [
-          "amd64/elixir:1.15.7",
+          "amd64/elixir:1.15.8",
           "amd64/elixir:1.15",
-          "amd64/elixir:1.15.7-otp-26",
+          "amd64/elixir:1.15.8-otp-26",
           "amd64/elixir:1.15-otp-26"
         ],
         "froms": [
@@ -20570,15 +22289,15 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.15.7",
+          "elixir:1.15.8",
           "elixir:1.15",
-          "elixir:1.15.7-otp-26",
+          "elixir:1.15.8-otp-26",
           "elixir:1.15-otp-26"
         ],
         "archTags": [
-          "arm32v7/elixir:1.15.7",
+          "arm32v7/elixir:1.15.8",
           "arm32v7/elixir:1.15",
-          "arm32v7/elixir:1.15.7-otp-26",
+          "arm32v7/elixir:1.15.8-otp-26",
           "arm32v7/elixir:1.15-otp-26"
         ],
         "froms": [
@@ -20600,15 +22319,15 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.15.7",
+          "elixir:1.15.8",
           "elixir:1.15",
-          "elixir:1.15.7-otp-26",
+          "elixir:1.15.8-otp-26",
           "elixir:1.15-otp-26"
         ],
         "archTags": [
-          "arm64v8/elixir:1.15.7",
+          "arm64v8/elixir:1.15.8",
           "arm64v8/elixir:1.15",
-          "arm64v8/elixir:1.15.7-otp-26",
+          "arm64v8/elixir:1.15.8-otp-26",
           "arm64v8/elixir:1.15-otp-26"
         ],
         "froms": [
@@ -20630,15 +22349,15 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.15.7",
+          "elixir:1.15.8",
           "elixir:1.15",
-          "elixir:1.15.7-otp-26",
+          "elixir:1.15.8-otp-26",
           "elixir:1.15-otp-26"
         ],
         "archTags": [
-          "i386/elixir:1.15.7",
+          "i386/elixir:1.15.8",
           "i386/elixir:1.15",
-          "i386/elixir:1.15.7-otp-26",
+          "i386/elixir:1.15.8-otp-26",
           "i386/elixir:1.15-otp-26"
         ],
         "froms": [
@@ -20659,15 +22378,15 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.15.7",
+          "elixir:1.15.8",
           "elixir:1.15",
-          "elixir:1.15.7-otp-26",
+          "elixir:1.15.8-otp-26",
           "elixir:1.15-otp-26"
         ],
         "archTags": [
-          "ppc64le/elixir:1.15.7",
+          "ppc64le/elixir:1.15.8",
           "ppc64le/elixir:1.15",
-          "ppc64le/elixir:1.15.7-otp-26",
+          "ppc64le/elixir:1.15.8-otp-26",
           "ppc64le/elixir:1.15-otp-26"
         ],
         "froms": [
@@ -20688,15 +22407,15 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.15.7",
+          "elixir:1.15.8",
           "elixir:1.15",
-          "elixir:1.15.7-otp-26",
+          "elixir:1.15.8-otp-26",
           "elixir:1.15-otp-26"
         ],
         "archTags": [
-          "s390x/elixir:1.15.7",
+          "s390x/elixir:1.15.8",
           "s390x/elixir:1.15",
-          "s390x/elixir:1.15.7-otp-26",
+          "s390x/elixir:1.15.8-otp-26",
           "s390x/elixir:1.15-otp-26"
         ],
         "froms": [
@@ -20717,30 +22436,30 @@
       }
     }
   },
-  "3b4edea0d46247d0a2448cac73008468cbe985774e6072545197f5bb2b777927": {
-    "sourceId": "3b4edea0d46247d0a2448cac73008468cbe985774e6072545197f5bb2b777927",
-    "reproducibleGitChecksum": "e5fbb924931a60ad219ac204a352b7dbf82caa85e09022040aaecd0c2eda449b",
+  "ef03f60df38de3834d6fe6ab14e80a438037b000fe732dd00655778ec3223bb7": {
+    "sourceId": "ef03f60df38de3834d6fe6ab14e80a438037b000fe732dd00655778ec3223bb7",
+    "reproducibleGitChecksum": "00ba2f4e8535a8204324033ae65028264d50bd1b7fa6f029812336d7d4f30541",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "8bb39c071ac936d584b390cd50edf5c8c27ef0dd",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.15/slim",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1699000748
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.15.7-slim",
+          "elixir:1.15.8-slim",
           "elixir:1.15-slim",
-          "elixir:1.15.7-otp-26-slim",
+          "elixir:1.15.8-otp-26-slim",
           "elixir:1.15-otp-26-slim"
         ],
         "archTags": [
-          "amd64/elixir:1.15.7-slim",
+          "amd64/elixir:1.15.8-slim",
           "amd64/elixir:1.15-slim",
-          "amd64/elixir:1.15.7-otp-26-slim",
+          "amd64/elixir:1.15.8-otp-26-slim",
           "amd64/elixir:1.15-otp-26-slim"
         ],
         "froms": [
@@ -20761,15 +22480,15 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.15.7-slim",
+          "elixir:1.15.8-slim",
           "elixir:1.15-slim",
-          "elixir:1.15.7-otp-26-slim",
+          "elixir:1.15.8-otp-26-slim",
           "elixir:1.15-otp-26-slim"
         ],
         "archTags": [
-          "arm32v7/elixir:1.15.7-slim",
+          "arm32v7/elixir:1.15.8-slim",
           "arm32v7/elixir:1.15-slim",
-          "arm32v7/elixir:1.15.7-otp-26-slim",
+          "arm32v7/elixir:1.15.8-otp-26-slim",
           "arm32v7/elixir:1.15-otp-26-slim"
         ],
         "froms": [
@@ -20791,15 +22510,15 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.15.7-slim",
+          "elixir:1.15.8-slim",
           "elixir:1.15-slim",
-          "elixir:1.15.7-otp-26-slim",
+          "elixir:1.15.8-otp-26-slim",
           "elixir:1.15-otp-26-slim"
         ],
         "archTags": [
-          "arm64v8/elixir:1.15.7-slim",
+          "arm64v8/elixir:1.15.8-slim",
           "arm64v8/elixir:1.15-slim",
-          "arm64v8/elixir:1.15.7-otp-26-slim",
+          "arm64v8/elixir:1.15.8-otp-26-slim",
           "arm64v8/elixir:1.15-otp-26-slim"
         ],
         "froms": [
@@ -20821,15 +22540,15 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.15.7-slim",
+          "elixir:1.15.8-slim",
           "elixir:1.15-slim",
-          "elixir:1.15.7-otp-26-slim",
+          "elixir:1.15.8-otp-26-slim",
           "elixir:1.15-otp-26-slim"
         ],
         "archTags": [
-          "i386/elixir:1.15.7-slim",
+          "i386/elixir:1.15.8-slim",
           "i386/elixir:1.15-slim",
-          "i386/elixir:1.15.7-otp-26-slim",
+          "i386/elixir:1.15.8-otp-26-slim",
           "i386/elixir:1.15-otp-26-slim"
         ],
         "froms": [
@@ -20850,15 +22569,15 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.15.7-slim",
+          "elixir:1.15.8-slim",
           "elixir:1.15-slim",
-          "elixir:1.15.7-otp-26-slim",
+          "elixir:1.15.8-otp-26-slim",
           "elixir:1.15-otp-26-slim"
         ],
         "archTags": [
-          "ppc64le/elixir:1.15.7-slim",
+          "ppc64le/elixir:1.15.8-slim",
           "ppc64le/elixir:1.15-slim",
-          "ppc64le/elixir:1.15.7-otp-26-slim",
+          "ppc64le/elixir:1.15.8-otp-26-slim",
           "ppc64le/elixir:1.15-otp-26-slim"
         ],
         "froms": [
@@ -20879,15 +22598,15 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.15.7-slim",
+          "elixir:1.15.8-slim",
           "elixir:1.15-slim",
-          "elixir:1.15.7-otp-26-slim",
+          "elixir:1.15.8-otp-26-slim",
           "elixir:1.15-otp-26-slim"
         ],
         "archTags": [
-          "s390x/elixir:1.15.7-slim",
+          "s390x/elixir:1.15.8-slim",
           "s390x/elixir:1.15-slim",
-          "s390x/elixir:1.15.7-otp-26-slim",
+          "s390x/elixir:1.15.8-otp-26-slim",
           "s390x/elixir:1.15-otp-26-slim"
         ],
         "froms": [
@@ -20908,30 +22627,30 @@
       }
     }
   },
-  "6d784c9452a7b86cfd19b3adc322663db56566080f84202fdb0e2d4b40138724": {
-    "sourceId": "6d784c9452a7b86cfd19b3adc322663db56566080f84202fdb0e2d4b40138724",
-    "reproducibleGitChecksum": "e2659eed5cd2214531a065b841772f78c08c341cc08d1af66fda7939740ad17b",
+  "8a844289fb71a1b93eb3892b847181ce9abbc7da50099b954aea42e3a7ba3220": {
+    "sourceId": "8a844289fb71a1b93eb3892b847181ce9abbc7da50099b954aea42e3a7ba3220",
+    "reproducibleGitChecksum": "a03d2c99624d5798a40765992faa7a1d345c2dfac651afbf9d7ac83c5f34b20c",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "8bb39c071ac936d584b390cd50edf5c8c27ef0dd",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.15/alpine",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1699000748
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.15.7-alpine",
+          "elixir:1.15.8-alpine",
           "elixir:1.15-alpine",
-          "elixir:1.15.7-otp-26-alpine",
+          "elixir:1.15.8-otp-26-alpine",
           "elixir:1.15-otp-26-alpine"
         ],
         "archTags": [
-          "amd64/elixir:1.15.7-alpine",
+          "amd64/elixir:1.15.8-alpine",
           "amd64/elixir:1.15-alpine",
-          "amd64/elixir:1.15.7-otp-26-alpine",
+          "amd64/elixir:1.15.8-otp-26-alpine",
           "amd64/elixir:1.15-otp-26-alpine"
         ],
         "froms": [
@@ -20952,15 +22671,15 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.15.7-alpine",
+          "elixir:1.15.8-alpine",
           "elixir:1.15-alpine",
-          "elixir:1.15.7-otp-26-alpine",
+          "elixir:1.15.8-otp-26-alpine",
           "elixir:1.15-otp-26-alpine"
         ],
         "archTags": [
-          "arm32v7/elixir:1.15.7-alpine",
+          "arm32v7/elixir:1.15.8-alpine",
           "arm32v7/elixir:1.15-alpine",
-          "arm32v7/elixir:1.15.7-otp-26-alpine",
+          "arm32v7/elixir:1.15.8-otp-26-alpine",
           "arm32v7/elixir:1.15-otp-26-alpine"
         ],
         "froms": [
@@ -20982,15 +22701,15 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.15.7-alpine",
+          "elixir:1.15.8-alpine",
           "elixir:1.15-alpine",
-          "elixir:1.15.7-otp-26-alpine",
+          "elixir:1.15.8-otp-26-alpine",
           "elixir:1.15-otp-26-alpine"
         ],
         "archTags": [
-          "arm64v8/elixir:1.15.7-alpine",
+          "arm64v8/elixir:1.15.8-alpine",
           "arm64v8/elixir:1.15-alpine",
-          "arm64v8/elixir:1.15.7-otp-26-alpine",
+          "arm64v8/elixir:1.15.8-otp-26-alpine",
           "arm64v8/elixir:1.15-otp-26-alpine"
         ],
         "froms": [
@@ -21012,15 +22731,15 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.15.7-alpine",
+          "elixir:1.15.8-alpine",
           "elixir:1.15-alpine",
-          "elixir:1.15.7-otp-26-alpine",
+          "elixir:1.15.8-otp-26-alpine",
           "elixir:1.15-otp-26-alpine"
         ],
         "archTags": [
-          "i386/elixir:1.15.7-alpine",
+          "i386/elixir:1.15.8-alpine",
           "i386/elixir:1.15-alpine",
-          "i386/elixir:1.15.7-otp-26-alpine",
+          "i386/elixir:1.15.8-otp-26-alpine",
           "i386/elixir:1.15-otp-26-alpine"
         ],
         "froms": [
@@ -21041,15 +22760,15 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.15.7-alpine",
+          "elixir:1.15.8-alpine",
           "elixir:1.15-alpine",
-          "elixir:1.15.7-otp-26-alpine",
+          "elixir:1.15.8-otp-26-alpine",
           "elixir:1.15-otp-26-alpine"
         ],
         "archTags": [
-          "ppc64le/elixir:1.15.7-alpine",
+          "ppc64le/elixir:1.15.8-alpine",
           "ppc64le/elixir:1.15-alpine",
-          "ppc64le/elixir:1.15.7-otp-26-alpine",
+          "ppc64le/elixir:1.15.8-otp-26-alpine",
           "ppc64le/elixir:1.15-otp-26-alpine"
         ],
         "froms": [
@@ -21070,15 +22789,15 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.15.7-alpine",
+          "elixir:1.15.8-alpine",
           "elixir:1.15-alpine",
-          "elixir:1.15.7-otp-26-alpine",
+          "elixir:1.15.8-otp-26-alpine",
           "elixir:1.15-otp-26-alpine"
         ],
         "archTags": [
-          "s390x/elixir:1.15.7-alpine",
+          "s390x/elixir:1.15.8-alpine",
           "s390x/elixir:1.15-alpine",
-          "s390x/elixir:1.15.7-otp-26-alpine",
+          "s390x/elixir:1.15.8-otp-26-alpine",
           "s390x/elixir:1.15-otp-26-alpine"
         ],
         "froms": [
@@ -21099,26 +22818,26 @@
       }
     }
   },
-  "a86572c844adbf758bf7ccf02baf8fa75ed5df495cd9218c9acdcad31e4b88ce": {
-    "sourceId": "a86572c844adbf758bf7ccf02baf8fa75ed5df495cd9218c9acdcad31e4b88ce",
-    "reproducibleGitChecksum": "ab4636a8949c5a31bc60c4bfdf18bf422e982d6b4c9dcd181b7707689cf5d192",
+  "4ad5bb3fdc641573b69d024df0dceda557c6c79d74b96b853aa0c2c8fa480b86": {
+    "sourceId": "4ad5bb3fdc641573b69d024df0dceda557c6c79d74b96b853aa0c2c8fa480b86",
+    "reproducibleGitChecksum": "e4b30ef76d4575948578056340f9878cd43eaa24c8bd5347b099a092664cf0d3",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "8bb39c071ac936d584b390cd50edf5c8c27ef0dd",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.15/otp-24",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1699000748
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.15.7-otp-24",
+          "elixir:1.15.8-otp-24",
           "elixir:1.15-otp-24"
         ],
         "archTags": [
-          "amd64/elixir:1.15.7-otp-24",
+          "amd64/elixir:1.15.8-otp-24",
           "amd64/elixir:1.15-otp-24"
         ],
         "froms": [
@@ -21139,11 +22858,11 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.15.7-otp-24",
+          "elixir:1.15.8-otp-24",
           "elixir:1.15-otp-24"
         ],
         "archTags": [
-          "arm32v7/elixir:1.15.7-otp-24",
+          "arm32v7/elixir:1.15.8-otp-24",
           "arm32v7/elixir:1.15-otp-24"
         ],
         "froms": [
@@ -21165,11 +22884,11 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.15.7-otp-24",
+          "elixir:1.15.8-otp-24",
           "elixir:1.15-otp-24"
         ],
         "archTags": [
-          "arm64v8/elixir:1.15.7-otp-24",
+          "arm64v8/elixir:1.15.8-otp-24",
           "arm64v8/elixir:1.15-otp-24"
         ],
         "froms": [
@@ -21191,11 +22910,11 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.15.7-otp-24",
+          "elixir:1.15.8-otp-24",
           "elixir:1.15-otp-24"
         ],
         "archTags": [
-          "i386/elixir:1.15.7-otp-24",
+          "i386/elixir:1.15.8-otp-24",
           "i386/elixir:1.15-otp-24"
         ],
         "froms": [
@@ -21216,11 +22935,11 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.15.7-otp-24",
+          "elixir:1.15.8-otp-24",
           "elixir:1.15-otp-24"
         ],
         "archTags": [
-          "ppc64le/elixir:1.15.7-otp-24",
+          "ppc64le/elixir:1.15.8-otp-24",
           "ppc64le/elixir:1.15-otp-24"
         ],
         "froms": [
@@ -21241,11 +22960,11 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.15.7-otp-24",
+          "elixir:1.15.8-otp-24",
           "elixir:1.15-otp-24"
         ],
         "archTags": [
-          "s390x/elixir:1.15.7-otp-24",
+          "s390x/elixir:1.15.8-otp-24",
           "s390x/elixir:1.15-otp-24"
         ],
         "froms": [
@@ -21266,26 +22985,26 @@
       }
     }
   },
-  "14b7c5f03bdd941d6dc76e94e1c6da449283f38dfbe5b3a1359e7edc1c56a2e1": {
-    "sourceId": "14b7c5f03bdd941d6dc76e94e1c6da449283f38dfbe5b3a1359e7edc1c56a2e1",
-    "reproducibleGitChecksum": "6120a943c4a009c844dabd7119b67f35d1ebeaabb5ee62a352407152eb1432fd",
+  "5febcf098e0a6de26ed06fbe691fc9c46d3e924b525b0e68311f0be3129cb5f2": {
+    "sourceId": "5febcf098e0a6de26ed06fbe691fc9c46d3e924b525b0e68311f0be3129cb5f2",
+    "reproducibleGitChecksum": "508f48bae065c0ad899d173af87ad032575be0add1f89b112d64e49748d4c8fa",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "8bb39c071ac936d584b390cd50edf5c8c27ef0dd",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.15/otp-24-alpine",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1699000748
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.15.7-otp-24-alpine",
+          "elixir:1.15.8-otp-24-alpine",
           "elixir:1.15-otp-24-alpine"
         ],
         "archTags": [
-          "amd64/elixir:1.15.7-otp-24-alpine",
+          "amd64/elixir:1.15.8-otp-24-alpine",
           "amd64/elixir:1.15-otp-24-alpine"
         ],
         "froms": [
@@ -21306,11 +23025,11 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.15.7-otp-24-alpine",
+          "elixir:1.15.8-otp-24-alpine",
           "elixir:1.15-otp-24-alpine"
         ],
         "archTags": [
-          "arm32v7/elixir:1.15.7-otp-24-alpine",
+          "arm32v7/elixir:1.15.8-otp-24-alpine",
           "arm32v7/elixir:1.15-otp-24-alpine"
         ],
         "froms": [
@@ -21332,11 +23051,11 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.15.7-otp-24-alpine",
+          "elixir:1.15.8-otp-24-alpine",
           "elixir:1.15-otp-24-alpine"
         ],
         "archTags": [
-          "arm64v8/elixir:1.15.7-otp-24-alpine",
+          "arm64v8/elixir:1.15.8-otp-24-alpine",
           "arm64v8/elixir:1.15-otp-24-alpine"
         ],
         "froms": [
@@ -21358,11 +23077,11 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.15.7-otp-24-alpine",
+          "elixir:1.15.8-otp-24-alpine",
           "elixir:1.15-otp-24-alpine"
         ],
         "archTags": [
-          "i386/elixir:1.15.7-otp-24-alpine",
+          "i386/elixir:1.15.8-otp-24-alpine",
           "i386/elixir:1.15-otp-24-alpine"
         ],
         "froms": [
@@ -21383,11 +23102,11 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.15.7-otp-24-alpine",
+          "elixir:1.15.8-otp-24-alpine",
           "elixir:1.15-otp-24-alpine"
         ],
         "archTags": [
-          "ppc64le/elixir:1.15.7-otp-24-alpine",
+          "ppc64le/elixir:1.15.8-otp-24-alpine",
           "ppc64le/elixir:1.15-otp-24-alpine"
         ],
         "froms": [
@@ -21408,11 +23127,11 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.15.7-otp-24-alpine",
+          "elixir:1.15.8-otp-24-alpine",
           "elixir:1.15-otp-24-alpine"
         ],
         "archTags": [
-          "s390x/elixir:1.15.7-otp-24-alpine",
+          "s390x/elixir:1.15.8-otp-24-alpine",
           "s390x/elixir:1.15-otp-24-alpine"
         ],
         "froms": [
@@ -21433,26 +23152,26 @@
       }
     }
   },
-  "3ddb3dcfc331f4fd36d1dbe0abb5d937146a8de002f07c4c01d38bc9a5b57b68": {
-    "sourceId": "3ddb3dcfc331f4fd36d1dbe0abb5d937146a8de002f07c4c01d38bc9a5b57b68",
-    "reproducibleGitChecksum": "787b1309921ba9d3d46d16830dc1d543873b04c27da953d07bde31c619b9fd94",
+  "91db3aef76bc48b6c4f82096d4c49a2fb6be0e6e45b97e00109e1331f7b137b8": {
+    "sourceId": "91db3aef76bc48b6c4f82096d4c49a2fb6be0e6e45b97e00109e1331f7b137b8",
+    "reproducibleGitChecksum": "44d606dd212f409de5d4a15fdbb0d7efac3d934d8024a98f6fa63f48b99d31f5",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "8bb39c071ac936d584b390cd50edf5c8c27ef0dd",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.15/otp-24-slim",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1699000748
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.15.7-otp-24-slim",
+          "elixir:1.15.8-otp-24-slim",
           "elixir:1.15-otp-24-slim"
         ],
         "archTags": [
-          "amd64/elixir:1.15.7-otp-24-slim",
+          "amd64/elixir:1.15.8-otp-24-slim",
           "amd64/elixir:1.15-otp-24-slim"
         ],
         "froms": [
@@ -21473,11 +23192,11 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.15.7-otp-24-slim",
+          "elixir:1.15.8-otp-24-slim",
           "elixir:1.15-otp-24-slim"
         ],
         "archTags": [
-          "arm32v7/elixir:1.15.7-otp-24-slim",
+          "arm32v7/elixir:1.15.8-otp-24-slim",
           "arm32v7/elixir:1.15-otp-24-slim"
         ],
         "froms": [
@@ -21499,11 +23218,11 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.15.7-otp-24-slim",
+          "elixir:1.15.8-otp-24-slim",
           "elixir:1.15-otp-24-slim"
         ],
         "archTags": [
-          "arm64v8/elixir:1.15.7-otp-24-slim",
+          "arm64v8/elixir:1.15.8-otp-24-slim",
           "arm64v8/elixir:1.15-otp-24-slim"
         ],
         "froms": [
@@ -21525,11 +23244,11 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.15.7-otp-24-slim",
+          "elixir:1.15.8-otp-24-slim",
           "elixir:1.15-otp-24-slim"
         ],
         "archTags": [
-          "i386/elixir:1.15.7-otp-24-slim",
+          "i386/elixir:1.15.8-otp-24-slim",
           "i386/elixir:1.15-otp-24-slim"
         ],
         "froms": [
@@ -21550,11 +23269,11 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.15.7-otp-24-slim",
+          "elixir:1.15.8-otp-24-slim",
           "elixir:1.15-otp-24-slim"
         ],
         "archTags": [
-          "ppc64le/elixir:1.15.7-otp-24-slim",
+          "ppc64le/elixir:1.15.8-otp-24-slim",
           "ppc64le/elixir:1.15-otp-24-slim"
         ],
         "froms": [
@@ -21575,11 +23294,11 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.15.7-otp-24-slim",
+          "elixir:1.15.8-otp-24-slim",
           "elixir:1.15-otp-24-slim"
         ],
         "archTags": [
-          "s390x/elixir:1.15.7-otp-24-slim",
+          "s390x/elixir:1.15.8-otp-24-slim",
           "s390x/elixir:1.15-otp-24-slim"
         ],
         "froms": [
@@ -21600,26 +23319,26 @@
       }
     }
   },
-  "62a287191f767238080eddbce9abab95b3a5eb11d5165544f683f9eaf6799bff": {
-    "sourceId": "62a287191f767238080eddbce9abab95b3a5eb11d5165544f683f9eaf6799bff",
-    "reproducibleGitChecksum": "d3fc402871f52d2feeac0155f53ff60c613c2c88ff07226d9ef67d7212016a3a",
+  "5ab75c602c2a4ef7829199cb6f1e742532e1a59b2fd2ff4327824e359e31d112": {
+    "sourceId": "5ab75c602c2a4ef7829199cb6f1e742532e1a59b2fd2ff4327824e359e31d112",
+    "reproducibleGitChecksum": "88860e70bead89ddd12bc773664b7d3c42d2c669bd4726c2209bdadd4e3a485b",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "8bb39c071ac936d584b390cd50edf5c8c27ef0dd",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.15/otp-25",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1699000748
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.15.7-otp-25",
+          "elixir:1.15.8-otp-25",
           "elixir:1.15-otp-25"
         ],
         "archTags": [
-          "amd64/elixir:1.15.7-otp-25",
+          "amd64/elixir:1.15.8-otp-25",
           "amd64/elixir:1.15-otp-25"
         ],
         "froms": [
@@ -21640,11 +23359,11 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.15.7-otp-25",
+          "elixir:1.15.8-otp-25",
           "elixir:1.15-otp-25"
         ],
         "archTags": [
-          "arm32v7/elixir:1.15.7-otp-25",
+          "arm32v7/elixir:1.15.8-otp-25",
           "arm32v7/elixir:1.15-otp-25"
         ],
         "froms": [
@@ -21666,11 +23385,11 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.15.7-otp-25",
+          "elixir:1.15.8-otp-25",
           "elixir:1.15-otp-25"
         ],
         "archTags": [
-          "arm64v8/elixir:1.15.7-otp-25",
+          "arm64v8/elixir:1.15.8-otp-25",
           "arm64v8/elixir:1.15-otp-25"
         ],
         "froms": [
@@ -21692,11 +23411,11 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.15.7-otp-25",
+          "elixir:1.15.8-otp-25",
           "elixir:1.15-otp-25"
         ],
         "archTags": [
-          "i386/elixir:1.15.7-otp-25",
+          "i386/elixir:1.15.8-otp-25",
           "i386/elixir:1.15-otp-25"
         ],
         "froms": [
@@ -21717,11 +23436,11 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.15.7-otp-25",
+          "elixir:1.15.8-otp-25",
           "elixir:1.15-otp-25"
         ],
         "archTags": [
-          "ppc64le/elixir:1.15.7-otp-25",
+          "ppc64le/elixir:1.15.8-otp-25",
           "ppc64le/elixir:1.15-otp-25"
         ],
         "froms": [
@@ -21742,11 +23461,11 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.15.7-otp-25",
+          "elixir:1.15.8-otp-25",
           "elixir:1.15-otp-25"
         ],
         "archTags": [
-          "s390x/elixir:1.15.7-otp-25",
+          "s390x/elixir:1.15.8-otp-25",
           "s390x/elixir:1.15-otp-25"
         ],
         "froms": [
@@ -21767,26 +23486,26 @@
       }
     }
   },
-  "708b7e5bb766cfe53cad1e9eeb9cf72ad83af52bec3f47ef5e111176f2114c82": {
-    "sourceId": "708b7e5bb766cfe53cad1e9eeb9cf72ad83af52bec3f47ef5e111176f2114c82",
-    "reproducibleGitChecksum": "a2de1a6202d6533f9c33c83ddcc5ce5cf2cd468d7770fa51b43f8a806178b641",
+  "b363065738a4c3df87b99a7e54c4f2567c80700a579320585f37ba49c313c7db": {
+    "sourceId": "b363065738a4c3df87b99a7e54c4f2567c80700a579320585f37ba49c313c7db",
+    "reproducibleGitChecksum": "7c442ad97de0a07cc09773560f6d7ca181d953107524b8b78464fe3a4bd99da4",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "8bb39c071ac936d584b390cd50edf5c8c27ef0dd",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.15/otp-25-alpine",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1699000748
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.15.7-otp-25-alpine",
+          "elixir:1.15.8-otp-25-alpine",
           "elixir:1.15-otp-25-alpine"
         ],
         "archTags": [
-          "amd64/elixir:1.15.7-otp-25-alpine",
+          "amd64/elixir:1.15.8-otp-25-alpine",
           "amd64/elixir:1.15-otp-25-alpine"
         ],
         "froms": [
@@ -21807,11 +23526,11 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.15.7-otp-25-alpine",
+          "elixir:1.15.8-otp-25-alpine",
           "elixir:1.15-otp-25-alpine"
         ],
         "archTags": [
-          "arm32v7/elixir:1.15.7-otp-25-alpine",
+          "arm32v7/elixir:1.15.8-otp-25-alpine",
           "arm32v7/elixir:1.15-otp-25-alpine"
         ],
         "froms": [
@@ -21833,11 +23552,11 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.15.7-otp-25-alpine",
+          "elixir:1.15.8-otp-25-alpine",
           "elixir:1.15-otp-25-alpine"
         ],
         "archTags": [
-          "arm64v8/elixir:1.15.7-otp-25-alpine",
+          "arm64v8/elixir:1.15.8-otp-25-alpine",
           "arm64v8/elixir:1.15-otp-25-alpine"
         ],
         "froms": [
@@ -21859,11 +23578,11 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.15.7-otp-25-alpine",
+          "elixir:1.15.8-otp-25-alpine",
           "elixir:1.15-otp-25-alpine"
         ],
         "archTags": [
-          "i386/elixir:1.15.7-otp-25-alpine",
+          "i386/elixir:1.15.8-otp-25-alpine",
           "i386/elixir:1.15-otp-25-alpine"
         ],
         "froms": [
@@ -21884,11 +23603,11 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.15.7-otp-25-alpine",
+          "elixir:1.15.8-otp-25-alpine",
           "elixir:1.15-otp-25-alpine"
         ],
         "archTags": [
-          "ppc64le/elixir:1.15.7-otp-25-alpine",
+          "ppc64le/elixir:1.15.8-otp-25-alpine",
           "ppc64le/elixir:1.15-otp-25-alpine"
         ],
         "froms": [
@@ -21909,11 +23628,11 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.15.7-otp-25-alpine",
+          "elixir:1.15.8-otp-25-alpine",
           "elixir:1.15-otp-25-alpine"
         ],
         "archTags": [
-          "s390x/elixir:1.15.7-otp-25-alpine",
+          "s390x/elixir:1.15.8-otp-25-alpine",
           "s390x/elixir:1.15-otp-25-alpine"
         ],
         "froms": [
@@ -21934,26 +23653,26 @@
       }
     }
   },
-  "69cf7310cda677ada1a5bd12b4d2408ed0d34f02d39d3c2df2a8f13fefca2edc": {
-    "sourceId": "69cf7310cda677ada1a5bd12b4d2408ed0d34f02d39d3c2df2a8f13fefca2edc",
-    "reproducibleGitChecksum": "3eb509d5b67db5beb94f2800313de7dfc79dfbf38ab7d02ad154eecd170e173c",
+  "2e65a4ebd4320769f2884d1f9a373d2bca018868a38548063f56252a098a6730": {
+    "sourceId": "2e65a4ebd4320769f2884d1f9a373d2bca018868a38548063f56252a098a6730",
+    "reproducibleGitChecksum": "4f2983b6958611d364a164d3b67d52f2fbc6680399d638ff3a4dd62bd566cf0c",
     "entry": {
       "GitRepo": "https://github.com/erlef/docker-elixir.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "8bb39c071ac936d584b390cd50edf5c8c27ef0dd",
+      "GitCommit": "f749dfb8a5b1e6945b2369e143107b9ad3b16664",
       "Directory": "1.15/otp-25-slim",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1699000748
+      "SOURCE_DATE_EPOCH": 1716698358
     },
     "arches": {
       "amd64": {
         "tags": [
-          "elixir:1.15.7-otp-25-slim",
+          "elixir:1.15.8-otp-25-slim",
           "elixir:1.15-otp-25-slim"
         ],
         "archTags": [
-          "amd64/elixir:1.15.7-otp-25-slim",
+          "amd64/elixir:1.15.8-otp-25-slim",
           "amd64/elixir:1.15-otp-25-slim"
         ],
         "froms": [
@@ -21974,11 +23693,11 @@
       },
       "arm32v7": {
         "tags": [
-          "elixir:1.15.7-otp-25-slim",
+          "elixir:1.15.8-otp-25-slim",
           "elixir:1.15-otp-25-slim"
         ],
         "archTags": [
-          "arm32v7/elixir:1.15.7-otp-25-slim",
+          "arm32v7/elixir:1.15.8-otp-25-slim",
           "arm32v7/elixir:1.15-otp-25-slim"
         ],
         "froms": [
@@ -22000,11 +23719,11 @@
       },
       "arm64v8": {
         "tags": [
-          "elixir:1.15.7-otp-25-slim",
+          "elixir:1.15.8-otp-25-slim",
           "elixir:1.15-otp-25-slim"
         ],
         "archTags": [
-          "arm64v8/elixir:1.15.7-otp-25-slim",
+          "arm64v8/elixir:1.15.8-otp-25-slim",
           "arm64v8/elixir:1.15-otp-25-slim"
         ],
         "froms": [
@@ -22026,11 +23745,11 @@
       },
       "i386": {
         "tags": [
-          "elixir:1.15.7-otp-25-slim",
+          "elixir:1.15.8-otp-25-slim",
           "elixir:1.15-otp-25-slim"
         ],
         "archTags": [
-          "i386/elixir:1.15.7-otp-25-slim",
+          "i386/elixir:1.15.8-otp-25-slim",
           "i386/elixir:1.15-otp-25-slim"
         ],
         "froms": [
@@ -22051,11 +23770,11 @@
       },
       "ppc64le": {
         "tags": [
-          "elixir:1.15.7-otp-25-slim",
+          "elixir:1.15.8-otp-25-slim",
           "elixir:1.15-otp-25-slim"
         ],
         "archTags": [
-          "ppc64le/elixir:1.15.7-otp-25-slim",
+          "ppc64le/elixir:1.15.8-otp-25-slim",
           "ppc64le/elixir:1.15-otp-25-slim"
         ],
         "froms": [
@@ -22076,11 +23795,11 @@
       },
       "s390x": {
         "tags": [
-          "elixir:1.15.7-otp-25-slim",
+          "elixir:1.15.8-otp-25-slim",
           "elixir:1.15-otp-25-slim"
         ],
         "archTags": [
-          "s390x/elixir:1.15.7-otp-25-slim",
+          "s390x/elixir:1.15.8-otp-25-slim",
           "s390x/elixir:1.15-otp-25-slim"
         ],
         "froms": [
