@@ -67,7 +67,7 @@ jobs:
             local target="$1"; shift
             local url="$1"; shift
             if command -v wget > /dev/null; then
-              wget -O "$target" "$url" --progress=dot:giga
+              wget --timeout=5 -O "$target" "$url" --progress=dot:giga
             else
               curl -fL -o "$target" "$url"
             fi
