@@ -34,12 +34,6 @@ defaults:
 env:
   BUILD_ID: ${{ inputs.buildId }}
   BASHBREW_ARCH: ${{ inputs.bashbrewArch }}
-  BASHBREW_IMAGE_SIGNER: 'docker/image-signer-verifier:0.5.15@sha256:322351455cff9ce6ea3bc61e531b1ce26c7c93ff5283b64a8c65bbd1122ed28a'
-  BASHBREW_REFERRERS_REPO: oisupport/referrers  # repo to store attestation artifacts
-  BASHBREW_TUF_META: docker/tuf-metadata:latest  # TUF trust root for verifying DOI policy required for generating Verification Summary Attestations (VSA)
-  BASHBREW_TUF_TARGETS: docker/tuf-targets  # see https://github.com/docker/tuf and https://theupdateframework.io/
-  BASHBREW_SIGNING_POLICY: docker-official-images-full # policy id for rego stored in TUF to verify DOI attestations for VSA generation (https://github.com/docker/tuf/blob/main/targets/doi/policy-full.rego)
-
 jobs:
   build:
     name: Build ${{ inputs.buildId }}
@@ -157,17 +151,6 @@ jobs:
           fi
           eval "$shell"
 
-      - name: Docker Login
-        env:
-          DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
-          DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
-        run: |
-          export DOCKER_CONFIG="$PWD/.docker"
-          mkdir "$DOCKER_CONFIG"
-          trap 'find "$DOCKER_CONFIG" -type f -exec shred -fuvz "{}" + || :; rm -rf "$DOCKER_CONFIG"' EXIT
-          docker login --username "$DOCKER_HUB_USERNAME" --password-stdin <<<"$DOCKER_HUB_PASSWORD"
-          unset DOCKER_HUB_USERNAME DOCKER_HUB_PASSWORD
-
       # TODO signing prototype (see above where "shouldSign" is populated)
       - name: Configure AWS (for signing)
         id: auth
@@ -180,33 +163,37 @@ jobs:
           role-to-assume: ${{ contains(fromJSON('["main","subset"]'), github.ref_name) && secrets.AWS_KMS_PROD_ROLE_ARN || secrets.AWS_KMS_STAGE_ROLE_ARN }}
           # TODO figure out if there's some way we could make our secrets ternaries here more DRY without major headaches 🙈
       - name: Sign
-        id: sign
         if: env.shouldSign == 'true'
         env:
           AWS_KMS_REGION:  ${{ job.build.steps.auth.with.args.aws-region }}
           AWS_KMS_KEY_ARN: ${{ contains(fromJSON('["main","subset"]'), github.ref_name) && secrets.AWS_KMS_PROD_KEY_ARN || secrets.AWS_KMS_STAGE_KEY_ARN }}
+
+          DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
+          DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+          # Docker Hub repository we'll push the (signed) attestation artifacts to
+          REFERRERS_REPO: oisupport/referrers
+
+          # the image we'll run to access the signing tool
+          # https://explore.ggcr.dev/?repo=docker/image-signer-verifier
+          IMAGE_SIGNER: 'docker/image-signer-verifier:0.5.17@sha256:bde1b7cdd36933b620353aa83f4115cc13e1d6230902c7a892b1580520607b55'
+
+          # TUF trust root for verifying DOI policy required for generating Verification Summary Attestations (VSA)
+          TUF_META: docker/tuf-metadata:latest
+
+          # see https://github.com/docker/tuf and https://theupdateframework.io/
+          TUF_TARGETS: docker/tuf-targets
+
+          # policy id for rego stored in TUF to verify DOI attestations for VSA generation (https://github.com/docker/tuf/blob/main/targets/doi/policy-full.rego)
+          SIGNING_POLICY: docker-official-images-full
+
+          # SLSA Build level target
+          SLSA_BUILD_LEVEL: SLSA_BUILD_LEVEL_2
+
+          # Verifier Id
+          VERIFIER_ID: https://docker.io/verifier/docker-official-images/v1
         run: |
-          cd build
-
-          args=(
-            --interactive
-            --rm
-            --read-only
-            --workdir /tmp # see "--tmpfs" below (TODO the signer currently uses PWD as TMPDIR -- something to fix in the future so we can drop this --workdir and only keep --tmpfs perhaps adding --env TMPDIR=/tmp if necessary)
-          )
-          if [ -t 0 ] && [ -t 1 ]; then
-            args+=( --tty )
-          fi
-
-          user="$(id -u)"
-          args+=( --tmpfs "/tmp:uid=$user" )
-          user+=":$(id -g)"
-          args+=( --user "$user" )
-
-          awsEnvs=( "${!AWS_@}" )
-          args+=( "${awsEnvs[@]/#/--env=}" )
-
-          # some very light assumption verification (see TODO in --mount below)
+          # function for some very light assumption verification (see TODO in --mount below)
           validate-oci-layout() {
             local dir="$1"
             jq -s '
@@ -258,8 +245,37 @@ jobs:
               # TODO more validation?
             ' "$manifest" || return "$?"
           }
+
+          cd build
+
+          args=(
+            --interactive
+            --rm
+            --read-only
+            --workdir /tmp # see "--tmpfs" below (TODO the signer currently uses PWD as TMPDIR -- something to fix in the future so we can drop this --workdir and only keep --tmpfs perhaps adding --env TMPDIR=/tmp if necessary)
+          )
+          if [ -t 0 ] && [ -t 1 ]; then
+            args+=( --tty )
+          fi
+
+          user="$(id -u)"
+          args+=( --tmpfs "/tmp:uid=$user" )
+          user+=":$(id -g)"
+          args+=( --user "$user" )
+
+          awsEnvs=( "${!AWS_@}" )
+          args+=( "${awsEnvs[@]/#/--env=}" )
+
           validate-oci-layout temp
 
+          # Login to Docker Hub
+          export DOCKER_CONFIG="$PWD/.docker"
+          mkdir "$DOCKER_CONFIG"
+          trap 'find "$DOCKER_CONFIG" -type f -exec shred -fuvz "{}" + || :; rm -rf "$DOCKER_CONFIG"' EXIT
+          docker login --username "$DOCKER_HUB_USERNAME" --password-stdin <<<"$DOCKER_HUB_PASSWORD"
+          unset DOCKER_HUB_USERNAME DOCKER_HUB_PASSWORD
+
+          # Create signatures
           mkdir signed
 
           args+=(
@@ -267,7 +283,7 @@ jobs:
             --mount "type=bind,src=$PWD/signed,dst=/doi-build/signed"
 
             # https://explore.ggcr.dev/?repo=docker/image-signer-verifier
-            "$BASHBREW_IMAGE_SIGNER"
+            "$IMAGE_SIGNER"
 
             sign
 
@@ -277,7 +293,7 @@ jobs:
             --kms-key-ref="$AWS_KMS_KEY_ARN"
 
             --input=oci:///doi-build/image
-            --referrers-dest="$BASHBREW_REFERRERS_REPO"  # repo to store attestation artifacts
+            --referrers-dest="$REFERRERS_REPO"  # repo to store attestation artifacts
             --keep=true  # keep preserves the unsigned attestations generated by buildkit
           )
 
@@ -290,17 +306,12 @@ jobs:
           rm -rf temp
           mv signed temp
 
-      - name: Generate VSA
-        if: env.shouldSign == 'true'
-        env:
-          AWS_KMS_REGION:  ${{ job.build.steps.auth.with.args.aws-region }}
-          AWS_KMS_KEY_ARN: ${{ job.build.steps.sign.env.AWS_KMS_KEY_ARN }}
-        run: |
+          # Generate VSA
           args+=(
             --mount "type=bind,src=$PWD/signed,dst=/doi-build/signed"
 
             # https://explore.ggcr.dev/?repo=docker/image-signer-verifier
-            "$BASHBREW_IMAGE_SIGNER"
+            "$IMAGE_SIGNER"
 
             # verify is called here to generate a VSA (https://slsa.dev/spec/v1.0/verification_summary)
             verify
@@ -311,10 +322,13 @@ jobs:
             --vsa=true # whether or not to generate a VSA from verification output
 
             --tuf-source=oci  # how to pull TUF data for policy and key material (oci or http)
-            --tuf-meta-source="$BASHBREW_TUF_META"  # TUF metadata URI
-            --tuf-targets-source="$BASHBREW_TUF_TARGETS"  # TUF targets URI
+            --tuf-meta-source="$TUF_META"  # TUF metadata URI
+            --tuf-targets-source="$TUF_TARGETS"  # TUF targets URI
 
-            --policy-id="$BASHBREW_SIGNING_POLICY"  # policy stored in TUF for sbom/provenance verification
+            --policy-id="$SIGNING_POLICY"  # policy stored in TUF for sbom/provenance verification
+
+            --verified-levels="$SLSA_BUILD_LEVEL"
+            --verifier-id="$VERIFIER_ID"
 
             # kms key used to sign VSA
             --kms="AWS"
@@ -322,8 +336,8 @@ jobs:
             --kms-key-ref="$AWS_KMS_KEY_ARN"
 
             --image=oci:///doi-build/image # subject image to verify attestations and generate VSA for
-            --referrers-source="$BASHBREW_REFERRERS_REPO"  # repo to pull attestation artifacts from
-            --referrers-dest="$BASHBREW_REFERRERS_REPO"  # repo to push VSA artifact to
+            --referrers-source="$REFERRERS_REPO"  # repo to pull attestation artifacts from (which are then validated by the specified policy)
+            --referrers-dest="$REFERRERS_REPO"  # repo to push VSA artifact to
           )
 
           docker run "${args[@]}"
