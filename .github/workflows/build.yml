@@ -37,6 +37,8 @@ env:
 jobs:
   build:
     name: Build ${{ inputs.buildId }}
+    outputs:
+      shouldSign: ${{ steps.json.outputs.shouldSign }}
     runs-on: ${{ inputs.bashbrewArch == 'windows-amd64' && format('windows-{0}', inputs.windowsVersion) || 'ubuntu-latest' }}
     steps:
 
