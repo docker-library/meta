@@ -20,6 +20,10 @@ on:
           - '' # without this, it's technically "required" 🙃
           - 2022
           - 2019
+      pruneArtifact:
+        required: true
+        type: boolean
+        default: true
 run-name: '${{ inputs.bashbrewArch }}: ${{ inputs.firstTag }} (${{ inputs.buildId }})'
 permissions:
   contents: read
@@ -36,7 +40,7 @@ env:
 
   # the image we'll run to access the signing tool
   # https://explore.ggcr.dev/?repo=docker/image-signer-verifier
-  IMAGE_SIGNER: 'docker/image-signer-verifier:0.6.3@sha256:d7930e03b48064b6c2d9f9c0421f65a5dacc6aba7d91b9d2e320d2976becfeac'
+  IMAGE_SIGNER: 'docker/image-signer-verifier:0.6.9@sha256:e38be2b9e6f010cf3432a2772b0e800feee572f7733c6df81e21293cb3e977e0'
 
   # Docker Hub repository we'll push the (signed) attestation artifacts to
   REFERRERS_REPO: oisupport/referrers
@@ -44,7 +48,9 @@ jobs:
   build:
     name: Build ${{ inputs.buildId }}
     outputs:
-      shouldSign: ${{ steps.json.outputs.shouldSign }}
+      json: ${{ steps.json.outputs.json }}
+      artifactUrl: ${{ steps.oci.outputs.artifact-url }}
+      artifactSha256: ${{ steps.sha256.outputs.sha256 }}
     runs-on: ${{ inputs.bashbrewArch == 'windows-amd64' && format('windows-{0}', inputs.windowsVersion) || 'ubuntu-latest' }}
     steps:
 
@@ -156,128 +162,214 @@ jobs:
           fi
           eval "$shell"
 
-      # TODO signing prototype (see above where "shouldSign" is populated)
+      # save the build as an "artifact" so we can sign it in a separate step (and minimize the exposure of the signing credentials); also save a checksum so we can be sure it transmits between the steps accurately
+      # TODO what do we do here for "classic" builds like Windows? (no "temp" OCI layout currently)
+      - name: Generate Artifact
+        id: sha256
+        run: |
+          tar -cvf temp.tar -C build temp
+          sha256="$(sha256sum temp.tar | cut -d' ' -f1)"
+          echo "sha256=$sha256" >> "$GITHUB_OUTPUT"
+      - name: Upload Artifact
+        id: oci
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-oci
+          path: |
+            temp.tar
+          retention-days: 5
+
+  sign:
+    name: Sign
+    needs: build
+    if: fromJSON(needs.build.outputs.json).shouldSign
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # for AWS KMS signing (see usage below)
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: 'false'
+          sparse-checkout: |
+            .scripts/oci.jq
+            .scripts/provenance.jq
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-oci
+      - name: Extract Artifact
+        env:
+          sha256: ${{ needs.build.outputs.artifactSha256 }}
+        run: |
+          sha256sum <<<"$sha256 *temp.tar" --strict --check -
+          tar -xvf temp.tar
+          [ -d temp ] # basic "valid JSON" check
       - name: Configure AWS (for signing)
-        if: fromJSON(steps.json.outputs.json).shouldSign
         # https://github.com/aws-actions/configure-aws-credentials/releases
         uses: aws-actions/configure-aws-credentials@010d0da01d0b5a38af31e9c3470dbfdabdecca3a # v4.0.1
         with:
           aws-region:     ${{ github.ref_name == 'main' && secrets.AWS_KMS_PROD_REGION   || secrets.AWS_KMS_STAGE_REGION }}
           role-to-assume: ${{ github.ref_name == 'main' && secrets.AWS_KMS_PROD_ROLE_ARN || secrets.AWS_KMS_STAGE_ROLE_ARN }}
-          # TODO figure out if there's some way we could make our secrets ternaries here more DRY without major headaches 🙈
+      - name: Generate Provenance
+        env:
+          json: ${{ needs.build.outputs.json }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: |
+          image-digest() {
+            local dir="$1/blobs"
+            img=$(
+              grep -R --include "*" '"mediaType":\s"application/vnd.oci.image.layer.' "$dir" \
+                | head -n 1 \
+                | cut -d ':' -f1
+            )
+            [ "$(cat $img | jq -r '.mediaType')" = "application/vnd.oci.image.manifest.v1+json" ] || exit 1
+            echo $img | rev | cut -d '/' -f2,1 --output-delimiter ':' | rev
+          }
+
+          digest=$(image-digest temp)
+
+          echo $json | jq -L.scripts --argjson github '${{ env.GITHUB_CONTEXT }}' --argjson runner '${{ toJson(runner) }}' --arg digest ${digest} '
+            include "provenance";
+            github_actions_provenance($github; $runner; $digest)
+          ' >> provenance.json
       - name: Sign
-        if: fromJSON(steps.json.outputs.json).shouldSign
         env:
           AWS_KMS_REGION:  ${{ github.ref_name == 'main' && secrets.AWS_KMS_PROD_REGION  || secrets.AWS_KMS_STAGE_REGION }}
           AWS_KMS_KEY_ARN: ${{ github.ref_name == 'main' && secrets.AWS_KMS_PROD_KEY_ARN || secrets.AWS_KMS_STAGE_KEY_ARN }}
-        run: |
-          cd build
 
-          args=(
+          DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_SIGNING_USERNAME }}
+          DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_SIGNING_PASSWORD }}
+        run: |
+          validate-oci-layout() {
+            local dir="$1"
+            jq -L.scripts -s '
+              include "oci";
+              validate_oci_layout | true
+            ' "$dir/oci-layout" "$dir/index.json" || return "$?"
+            local manifest
+            manifest="$dir/blobs/$(jq -r '.manifests[0].digest | sub(":"; "/")' "$dir/index.json")" || return "$?"
+            jq -L.scripts -s '
+              include "oci";
+              if length != 1 then
+                error("unexpected image index document count: \(length)")
+              else .[0] end
+              | validate_oci_index
+
+              # TODO more validation?
+            ' "$manifest" || return "$?"
+          }
+
+          dockerArgs=(
             --interactive
             --rm
             --read-only
             --workdir /tmp # see "--tmpfs" below (TODO the signer currently uses PWD as TMPDIR -- something to fix in the future so we can drop this --workdir and only keep --tmpfs perhaps adding --env TMPDIR=/tmp if necessary)
           )
           if [ -t 0 ] && [ -t 1 ]; then
-            args+=( --tty )
+            dockerArgs+=( --tty )
           fi
 
           user="$(id -u)"
-          args+=( --tmpfs "/tmp:uid=$user" )
+          dockerArgs+=( --tmpfs "/tmp:uid=$user" )
           user+=":$(id -g)"
-          args+=( --user "$user" )
+          dockerArgs+=( --user "$user" )
 
           awsEnvs=( "${!AWS_@}" )
-          args+=( "${awsEnvs[@]/#/--env=}" )
+          dockerArgs+=( "${awsEnvs[@]/#/--env=}" )
 
-          # some very light assumption verification (see TODO in --mount below)
-          validate-oci-layout() {
-            local dir="$1"
-            jq -s '
-              if length != 1 then
-                error("unexpected 'oci-layout' document count: " + length)
-              else .[0] end
-              | if .imageLayoutVersion != "1.0.0" then
-                error("unsupported imageLayoutVersion: " + .imageLayoutVersion)
-              else . end
-            ' "$dir/oci-layout" || return "$?"
-            jq -s '
-              if length != 1 then
-                error("unexpected 'index.json' document count: " + length)
-              else .[0] end
-
-              | if .schemaVersion != 2 then
-                error("unsupported schemaVersion: " + .schemaVersion)
-              else . end
-              | if .mediaType != "application/vnd.oci.image.index.v1+json" and .mediaType then # TODO drop the second half of this validation: https://github.com/moby/buildkit/issues/4595
-                error("unsupported index mediaType: " + .mediaType)
-              else . end
-              | if .manifests | length != 1 then
-                error("expected only one manifests entry, not " + (.manifests | length))
-              else . end
-
-              | .manifests[0] |= (
-                if .mediaType != "application/vnd.oci.image.index.v1+json" then
-                  error("unsupported descriptor mediaType: " + .mediaType)
-                else . end
-                # TODO validate .digest somehow (`crane validate`?) - would also be good to validate all descriptors recursively
-                | if .size < 0 then
-                  error("invalid descriptor size: " + .size)
-                else . end
-              )
-            ' "$dir/index.json" || return "$?"
-            local manifest
-            manifest="$dir/blobs/$(jq -r '.manifests[0].digest | sub(":"; "/")' "$dir/index.json")" || return "$?"
-            jq -s '
-              if length != 1 then
-                error("unexpected image index document count: " + length)
-              else .[0] end
-              | if .schemaVersion != 2 then
-                error("unsupported schemaVersion: " + .schemaVersion)
-              else . end
-              | if .mediaType != "application/vnd.oci.image.index.v1+json" then
-                error("unsupported image index mediaType: " + .mediaType)
-              else . end
-
-              # TODO more validation?
-            ' "$manifest" || return "$?"
-          }
           validate-oci-layout temp
 
-          mkdir signed
+          # Login to Docker Hub
+          export DOCKER_CONFIG="$PWD/.docker"
+          mkdir "$DOCKER_CONFIG"
+          trap 'find "$DOCKER_CONFIG" -type f -exec shred -fuvz "{}" + || :; rm -rf "$DOCKER_CONFIG"' EXIT
+          docker login --username "$DOCKER_HUB_USERNAME" --password-stdin <<<"$DOCKER_HUB_PASSWORD"
+          unset DOCKER_HUB_USERNAME DOCKER_HUB_PASSWORD
 
-          args+=(
-            --mount "type=bind,src=$PWD/temp,dst=/doi-build/unsigned" # TODO this currently assumes normalized_builder == "buildkit" and !should_use_docker_buildx_driver -- we need to factor that in later (although this signs the attestations, not the image, so buildkit/buildx is the only builder whose output we *can* sign right now)
-            --mount "type=bind,src=$PWD/signed,dst=/doi-build/signed"
+          # Create signatures
+          dockerArgs+=(
+           --mount "type=bind,src=$PWD/temp,dst=/doi-build/image,ro" # TODO this currently assumes normalized_builder == "buildkit" and !should_use_docker_buildx_driver -- we need to factor that in later (although this signs the attestations, not the image, so buildkit/buildx is the only builder whose output we *can* sign right now)
+            --mount "type=bind,src=$PWD/provenance.json,dst=/doi-build/provenance.json,ro"
+            --mount "type=bind,src=$DOCKER_CONFIG,dst=/docker-config,ro"
+            --env DOCKER_CONFIG=/docker-config # TODO verify that image-signer supports this environment variable correctly
 
             # https://explore.ggcr.dev/?repo=docker/image-signer-verifier
-            docker/image-signer-verifier:0.3.3@sha256:a5351e6495596429bacea85fbf8f41a77ce7237c26c74fd7c3b94c3e6d409c82
-
-            sign
-
-            --envelope-style oci-content-descriptor
-
-            --aws_region "$AWS_KMS_REGION"
-            --aws_arn "awskms:///$AWS_KMS_KEY_ARN"
-
-            --input oci:///doi-build/unsigned
-            --output oci:///doi-build/signed
+            "$IMAGE_SIGNER"
           )
 
-          docker run "${args[@]}"
+          kmsArg=(
+             # kms key used to sign attestation artifacts
+            --kms="AWS"
+            --kms-region="$AWS_KMS_REGION"
+            --kms-key-ref="$AWS_KMS_KEY_ARN"
 
-          validate-oci-layout signed
+            --referrers-dest="$REFERRERS_REPO"  # repo to store attestation artifacts and provenance
+          )
 
-          # TODO validate that "signed" still has all the original layer blobs from "temp" (ie, that the attestation manifest *just* has some new layers and everything else is unchanged)
+          # Sign buildkit statements
+          signArgs=(
+            "${kmsArg[@]}"
+            --input=oci:///doi-build/image
+            --keep=true  # keep preserves the unsigned attestations generated by buildkit
+          )
 
-          rm -rf temp
-          mv signed temp
+          docker run "${dockerArgs[@]}" sign "${signArgs[@]}"
 
+          # Attach and sign provenance
+          provArgs=(
+            "${kmsArg[@]}"
+            --image=oci:///doi-build/image
+            --statement="/doi-build/provenance.json"
+          )
+          docker run "${dockerArgs[@]}" attest "${provArgs[@]}"
+
+  push:
+    name: Push
+    needs:
+      - build
+      - sign
+      # - verify
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: ${{ (needs.sign.result == 'skipped' && needs.build.result == 'success') ||  needs.verify.result == 'success' || 'exit 1' }}
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-oci
+      - name: Extract Artifact
+        env:
+          sha256: ${{ needs.build.outputs.artifactSha256 }}
+        run: |
+          sha256sum <<<"$sha256 *temp.tar" --strict --check -
+          tar -xvf temp.tar
+          [ -d temp ] # basic "valid JSON" check
+      - name: Tools
+        run: |
+          mkdir .gha-bin
+          echo "$PWD/.gha-bin" >> "$GITHUB_PATH"
+
+          case "${RUNNER_ARCH}" in \
+            X64) ARCH='amd64';; \
+          esac
+
+          _download() {
+            local target="$1"; shift
+            local url="$1"; shift
+            wget --timeout=5 -O "$target" "$url" --progress=dot:giga
+          }
+
+          # https://doi-janky.infosiftr.net/job/wip/job/crane
+          _download ".gha-bin/crane" "https://doi-janky.infosiftr.net/job/wip/job/crane/lastSuccessfulBuild/artifact/crane-$ARCH"
+          # TODO checksum verification ("checksums.txt")
+          chmod +x ".gha-bin/crane"
+          ".gha-bin/crane" version
       - name: Push
         env:
           DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
           DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
+          json: ${{ needs.build.outputs.json }}
         run: |
           export DOCKER_CONFIG="$PWD/.docker"
           mkdir "$DOCKER_CONFIG"
@@ -285,6 +377,28 @@ jobs:
           docker login --username "$DOCKER_HUB_USERNAME" --password-stdin <<<"$DOCKER_HUB_PASSWORD"
           unset DOCKER_HUB_USERNAME DOCKER_HUB_PASSWORD
 
-          cd build
           shell="$(jq <<<"$json" -r '.commands.push')"
           eval "$shell"
+
+  clean:
+    name: Cleanup
+    needs:
+      - build
+      - sign
+      - push
+    if: ${{ always() && inputs.pruneArtifact }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clean Up Artifact
+        env:
+          ARTIFACT_URL: ${{ needs.build.outputs.artifactUrl }}
+          TOKEN: ${{ github.token }}
+        run: |
+          url="${ARTIFACT_URL/\/\/github\.com///api.github.com/repos}"
+          url="${url/runs\/*\/artifacts/artifacts}"  # Translate web URL to API url
+          curl -L \
+            -X DELETE \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "$url"
