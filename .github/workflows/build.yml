@@ -24,7 +24,6 @@ run-name: '${{ inputs.bashbrewArch }}: ${{ inputs.firstTag }} (${{ inputs.buildI
 permissions:
   contents: read
   actions: write # for https://github.com/andymckay/cancel-action (see usage below)
-  id-token: write # for AWS KMS signing (see usage below)
 concurrency:
   group: ${{ github.event.inputs.buildId }}
   cancel-in-progress: false
@@ -34,6 +33,13 @@ defaults:
 env:
   BUILD_ID: ${{ inputs.buildId }}
   BASHBREW_ARCH: ${{ inputs.bashbrewArch }}
+
+  # the image we'll run to access the signing tool
+  # https://explore.ggcr.dev/?repo=docker/image-signer-verifier
+  IMAGE_SIGNER: 'docker/image-signer-verifier:0.6.3@sha256:d7930e03b48064b6c2d9f9c0421f65a5dacc6aba7d91b9d2e320d2976becfeac'
+
+  # Docker Hub repository we'll push the (signed) attestation artifacts to
+  REFERRERS_REPO: oisupport/referrers
 jobs:
   build:
     name: Build ${{ inputs.buildId }}
