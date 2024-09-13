@@ -86,13 +86,16 @@ jobs:
           ".gha-bin/crane$ext" version
 
       - name: JSON
+        id: json
         run: |
           json="$(
             jq -L.scripts '
               include "meta";
+              include "doi";
               .[env.BUILD_ID]
               | select(needs_build and .build.arch == env.BASHBREW_ARCH) # sanity check
               | .commands = commands
+              | .shouldSign = build_should_sign
             ' builds.json
           )"
           [ -n "$json" ]
@@ -102,15 +105,9 @@ jobs:
             echo "json<<$EOJSON"
             cat <<<"$json"
             echo "$EOJSON"
-          } >> "$GITHUB_ENV"
+          } | tee -a "$GITHUB_ENV" "$GITHUB_OUTPUT" > /dev/null
 
           mkdir build
-
-          # TODO signing prototype -- starting very small
-          shouldSign="$(jq <<<"$json" -L.scripts 'include "doi"; build_should_sign')"
-          [ "$shouldSign" = 'true' ] || [ "$shouldSign" = 'false' ] || exit 1
-          echo "shouldSign=$shouldSign" >> "$GITHUB_ENV"
-
       - name: Check
         run: |
           img="$(jq <<<"$json" -r '.build.img')"
@@ -153,7 +150,7 @@ jobs:
 
       # TODO signing prototype (see above where "shouldSign" is populated)
       - name: Configure AWS (for signing)
-        if: env.shouldSign == 'true'
+        if: fromJSON(steps.json.outputs.json).shouldSign
         # https://github.com/aws-actions/configure-aws-credentials/releases
         uses: aws-actions/configure-aws-credentials@010d0da01d0b5a38af31e9c3470dbfdabdecca3a # v4.0.1
         with:
@@ -162,7 +159,7 @@ jobs:
           role-to-assume: ${{ contains(fromJSON('["main","subset"]'), github.ref_name) && secrets.AWS_KMS_PROD_ROLE_ARN || secrets.AWS_KMS_STAGE_ROLE_ARN }}
           # TODO figure out if there's some way we could make our secrets ternaries here more DRY without major headaches 🙈
       - name: Sign
-        if: env.shouldSign == 'true'
+        if: fromJSON(steps.json.outputs.json).shouldSign
         env:
           AWS_KMS_REGION:  ${{ contains(fromJSON('["main","subset"]'), github.ref_name) && secrets.AWS_KMS_PROD_REGION  || secrets.AWS_KMS_STAGE_REGION }}
           AWS_KMS_KEY_ARN: ${{ contains(fromJSON('["main","subset"]'), github.ref_name) && secrets.AWS_KMS_PROD_KEY_ARN || secrets.AWS_KMS_STAGE_KEY_ARN }}
