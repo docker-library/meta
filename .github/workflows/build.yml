@@ -154,14 +154,14 @@ jobs:
         # https://github.com/aws-actions/configure-aws-credentials/releases
         uses: aws-actions/configure-aws-credentials@010d0da01d0b5a38af31e9c3470dbfdabdecca3a # v4.0.1
         with:
-          aws-region:     ${{ github.ref_name == "main" && secrets.AWS_KMS_PROD_REGION   || secrets.AWS_KMS_STAGE_REGION }}
-          role-to-assume: ${{ github.ref_name == "main" && secrets.AWS_KMS_PROD_ROLE_ARN || secrets.AWS_KMS_STAGE_ROLE_ARN }}
+          aws-region:     ${{ github.ref_name == 'main' && secrets.AWS_KMS_PROD_REGION   || secrets.AWS_KMS_STAGE_REGION }}
+          role-to-assume: ${{ github.ref_name == 'main' && secrets.AWS_KMS_PROD_ROLE_ARN || secrets.AWS_KMS_STAGE_ROLE_ARN }}
           # TODO figure out if there's some way we could make our secrets ternaries here more DRY without major headaches 🙈
       - name: Sign
         if: fromJSON(steps.json.outputs.json).shouldSign
         env:
-          AWS_KMS_REGION:  ${{ github.ref_name == "main" && secrets.AWS_KMS_PROD_REGION  || secrets.AWS_KMS_STAGE_REGION }}
-          AWS_KMS_KEY_ARN: ${{ github.ref_name == "main" && secrets.AWS_KMS_PROD_KEY_ARN || secrets.AWS_KMS_STAGE_KEY_ARN }}
+          AWS_KMS_REGION:  ${{ github.ref_name == 'main' && secrets.AWS_KMS_PROD_REGION  || secrets.AWS_KMS_STAGE_REGION }}
+          AWS_KMS_KEY_ARN: ${{ github.ref_name == 'main' && secrets.AWS_KMS_PROD_KEY_ARN || secrets.AWS_KMS_STAGE_KEY_ARN }}
         run: |
           cd build
 
