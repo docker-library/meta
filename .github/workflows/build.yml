@@ -40,6 +40,7 @@ jobs:
     runs-on: ${{ inputs.bashbrewArch == 'windows-amd64' && format('windows-{0}', inputs.windowsVersion) || 'ubuntu-latest' }}
     steps:
 
+      # Step 1: Checkout the repository and submodules
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -52,6 +53,7 @@ jobs:
           # avoid building because we want to skip the build and download a release instead (which will be way faster)
           build: none # this will set BASHBREW_VERSION for us
           # TODO improve the bashbrew action to download a release binary instead of building from source ("build: download", perhaps?)
+      # Step 2: Install necessary tools and dependencies
       - name: Tools
         run: |
           mkdir .gha-bin
@@ -85,6 +87,7 @@ jobs:
           chmod +x ".gha-bin/crane$ext"
           ".gha-bin/crane$ext" version
 
+      # Step 3: Extract JSON data for the build
       - name: JSON
         id: json
         run: |
@@ -108,6 +111,8 @@ jobs:
           } | tee -a "$GITHUB_ENV" "$GITHUB_OUTPUT" > /dev/null
 
           mkdir build
+
+      # Step 4: Check if the Docker image already exists
       - name: Check
         run: |
           img="$(jq <<<"$json" -r '.build.img')"
@@ -118,10 +123,14 @@ jobs:
             echo 'cancel=' >> "$GITHUB_OUTPUT"
           fi
         id: check
+
+      # Step 5: Cancel the build if the image already exists
       - name: Cancel If Built
         if: steps.check.outputs.cancel == 'exists'
         uses: andymckay/cancel-action@435124153eb37d6a62a29d053a7e449652f89d51 # https://github.com/andymckay/cancel-action/commits/HEAD
         # https://github.com/andymckay/cancel-action/issues/12
+
+      # Step 6: Spin wheels if the build is cancelled (waiting for cancellation)
       - name: Spin Wheels If Built (waiting for cancellation)
         if: steps.check.outputs.cancel == 'exists'
         run: |
@@ -131,12 +140,14 @@ jobs:
           done
           exit 1
 
+      # Step 7: Pull the necessary resources for the build
       - name: Pull
         run: |
           cd build
           shell="$(jq <<<"$json" -r '.commands.pull')"
           eval "$shell"
 
+      # Step 8: Build the Docker image
       - name: Build
         run: |
           cd build
@@ -148,15 +159,17 @@ jobs:
           fi
           eval "$shell"
 
-      # TODO signing prototype (see above where "shouldSign" is populated)
+      # Step 9: Configure AWS for signing if required
       - name: Configure AWS (for signing)
         if: fromJSON(steps.json.outputs.json).shouldSign
         # https://github.com/aws-actions/configure-aws-credentials/releases
-        uses: aws-actions/configure-aws-credentials@010d0da01d0b5a38af31e9c3470dbfdabdecca3a # v4.0.1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region:     ${{ github.ref_name == 'main' && secrets.AWS_KMS_PROD_REGION   || secrets.AWS_KMS_STAGE_REGION }}
           role-to-assume: ${{ github.ref_name == 'main' && secrets.AWS_KMS_PROD_ROLE_ARN || secrets.AWS_KMS_STAGE_ROLE_ARN }}
           # TODO figure out if there's some way we could make our secrets ternaries here more DRY without major headaches 🙈
+
+      # Step 10: Sign the Docker image using AWS KMS
       - name: Sign
         if: fromJSON(steps.json.outputs.json).shouldSign
         env:
@@ -266,6 +279,7 @@ jobs:
           rm -rf temp
           mv signed temp
 
+      # Step 11: Push the Docker image to the registry
       - name: Push
         env:
           DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
@@ -280,3 +294,13 @@ jobs:
           cd build
           shell="$(jq <<<"$json" -r '.commands.push')"
           eval "$shell"
+
+      # Step 12: Notify the team on Slack when the build is complete
+      - name: Notify Team on Slack
+        if: always()
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
