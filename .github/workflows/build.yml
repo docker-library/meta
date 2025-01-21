@@ -18,6 +18,7 @@ on:
         type: choice
         options:
           - '' # without this, it's technically "required" 🙃
+          - 2025
           - 2022
           - 2019
 run-name: '${{ inputs.bashbrewArch }}: ${{ inputs.firstTag }} (${{ inputs.buildId }})'
