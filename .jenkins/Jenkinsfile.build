@@ -1,0 +1,168 @@
+// any number of jobs per arch that build the specified buildId (triggered by the respective trigger job)
+properties([
+	// limited by one job per buildId so that the same build cannot run concurrently
+	throttleJobProperty(
+		limitOneJobWithMatchingParams: true,
+		paramsToUseForLimit: 'buildId',
+		throttleEnabled: true,
+		throttleOption: 'project',
+	),
+	disableResume(),
+	durabilityHint('PERFORMANCE_OPTIMIZED'),
+	parameters([
+		string(name: 'buildId', trim: true),
+		string(name: 'identifier', trim: true, description: '(optional) used to set <code>currentBuild.displayName</code> to a meaningful value earlier'),
+	]),
+])
+
+env.BASHBREW_ARCH = env.JOB_NAME.minus('/build').split('/')[-1] // "windows-amd64", "arm64v8", etc
+env.BUILD_ID = params.buildId
+if (params.identifier) {
+	currentBuild.displayName = params.identifier + ' (#' + currentBuild.number + ')'
+}
+
+node('multiarch-' + env.BASHBREW_ARCH) { ansiColor('xterm') {
+	stage('Checkout') {
+		checkout(scmGit(
+			userRemoteConfigs: [[
+				url: 'https://github.com/docker-library/meta.git',
+				name: 'origin',
+			]],
+			branches: [[name: '*/main']],
+			extensions: [
+				cloneOption(
+					noTags: true,
+					shallow: true,
+					depth: 1,
+				),
+				submodule(
+					parentCredentials: true,
+					recursiveSubmodules: true,
+					trackingSubmodules: true,
+				),
+				cleanBeforeCheckout(),
+				cleanAfterCheckout(),
+				[$class: 'RelativeTargetDirectory', relativeTargetDir: 'meta'],
+			],
+		))
+	}
+
+	dir('.bin') {
+		deleteDir()
+
+		stage('Crane') {
+			sh '''#!/usr/bin/env bash
+				set -Eeuo pipefail -x
+
+				ext=''
+				if [ "$BASHBREW_ARCH" = 'windows-amd64' ]; then
+					ext='.exe'
+				fi
+
+				# https://doi-janky.infosiftr.net/job/wip/job/crane
+				# ipv6 can be extremely slow on s390x so set a timeout and have wget try the other DNS addresses instead
+				wget --timeout=5 -O "crane$ext" "https://doi-janky.infosiftr.net/job/wip/job/crane/lastSuccessfulBuild/artifact/crane-$BASHBREW_ARCH$ext" --progress=dot:giga
+				# TODO checksum verification ("checksums.txt")
+				chmod +x "crane$ext"
+				"./crane$ext" version
+			'''
+			if (env.BASHBREW_ARCH == 'windows-amd64') {
+				env.PATH = "${workspace}/.bin;${env.PATH}"
+			} else {
+				env.PATH = "${workspace}/.bin:${env.PATH}"
+			}
+		}
+	}
+
+	dir('meta') {
+		def obj = ''
+		stage('JSON') {
+			obj = sh(returnStdout: true, script: '''
+				[ -n "$BUILD_ID" ]
+				shell="$(
+					jq -L.scripts -r '
+						include "meta";
+						.[env.BUILD_ID]
+						| select(needs_build and .build.arch == env.BASHBREW_ARCH) # sanity check
+						| .commands = commands
+						| @sh "if ! crane digest \\(.build.img) >&2; then printf %s \\(tojson); exit 0; fi"
+					' builds.json
+				)"
+				eval "$shell"
+			''').trim()
+		}
+		if (obj) {
+			obj = readJSON(text: obj)
+			currentBuild.displayName = obj.source.arches[obj.build.arch].tags[0] + ' (#' + currentBuild.number + ')'
+			currentBuild.description = '<code>' + obj.build.img + '</code>'
+		} else {
+			currentBuild.displayName = 'nothing to do (#' + currentBuild.number + ')'
+			return
+		}
+
+		timeout(time: 3, unit: 'HOURS') {
+			/*
+			// TODO this is currently already done on the worker machines themselves, which is a tradeoff
+			// make sure "docker login" is localized to this workspace
+			env.DOCKER_CONFIG = workspace + '/.docker'
+			dir(env.DOCKER_CONFIG) { deleteDir() }
+
+			withCredentials([usernamePassword(
+				credentialsId: 'docker-hub-' + env.BASHBREW_ARCH, // TODO windows?
+				usernameVariable: 'DOCKER_USERNAME',
+				passwordVariable: 'DOCKER_PASSWORD',
+			)]) {
+				sh '''#!/usr/bin/env bash
+					set -Eeuo pipefail
+					docker login --username "$DOCKER_USERNAME" --password-stdin <<<"$DOCKER_PASSWORD"
+				'''
+			}
+			*/
+
+			def buildEnvs = []
+			stage('Prep') {
+				if (obj.commands.build.contains(' buildx ')) {
+					def json = sh(returnStdout: true, script: '''#!/usr/bin/env bash
+						set -Eeuo pipefail -x
+
+						.doi/.bin/bashbrew-buildkit-env-setup.sh \\
+							| jq 'to_entries | map(.key + "=" + .value)'
+					''').trim()
+					if (json) {
+						buildEnvs += readJSON(text: json)
+					}
+				}
+			}
+
+			withEnv(buildEnvs) {
+				dir('build') {
+					deleteDir()
+
+					stage('Pull') {
+						sh """#!/usr/bin/env bash
+							set -Eeuo pipefail -x
+
+							${ obj.commands.pull }
+						"""
+					}
+
+					stage('Build') {
+						sh """#!/usr/bin/env bash
+							set -Eeuo pipefail -x
+
+							${ obj.commands.build }
+						"""
+					}
+
+					stage('Push') {
+						sh """#!/usr/bin/env bash
+							set -Eeuo pipefail -x
+
+							${ obj.commands.push }
+						"""
+					}
+				}
+			}
+		}
+	}
+} }

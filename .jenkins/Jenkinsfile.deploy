@@ -1,0 +1,112 @@
+// one job per arch (for now) that copies built images to the arch-specific namespaces
+properties([
+	disableConcurrentBuilds(),
+	disableResume(),
+	durabilityHint('PERFORMANCE_OPTIMIZED'),
+	pipelineTriggers([
+		githubPush(),
+		cron('@daily'), // check periodically, just in case
+	]),
+])
+
+env.BASHBREW_ARCH = env.JOB_NAME.minus('/deploy').split('/')[-1] // "windows-amd64", "arm64v8", etc
+
+node('put-shared') { ansiColor('xterm') {
+	stage('Checkout') {
+		checkout(scmGit(
+			userRemoteConfigs: [[
+				url: 'https://github.com/docker-library/meta.git',
+				name: 'origin',
+			]],
+			branches: [[name: '*/main']],
+			extensions: [
+				cloneOption(
+					noTags: true,
+					shallow: true,
+					depth: 1,
+				),
+				submodule(
+					parentCredentials: true,
+					recursiveSubmodules: true,
+					trackingSubmodules: true,
+				),
+				cleanBeforeCheckout(),
+				cleanAfterCheckout(),
+				[$class: 'RelativeTargetDirectory', relativeTargetDir: 'meta'],
+			],
+		))
+	}
+
+	// make sure "docker login" is localized to this workspace
+	env.DOCKER_CONFIG = workspace + '/.docker'
+	dir(env.DOCKER_CONFIG) { deleteDir() }
+
+	stage('Login') {
+		withCredentials([
+			usernamePassword(
+				credentialsId: 'docker-hub-' + env.BASHBREW_ARCH,
+				usernameVariable: 'DOCKER_USERNAME',
+				passwordVariable: 'DOCKER_PASSWORD',
+			),
+		]) {
+			sh '''#!/usr/bin/env bash
+				set -Eeuo pipefail # no -x
+				docker login --username "$DOCKER_USERNAME" --password-stdin <<<"$DOCKER_PASSWORD"
+			'''
+		}
+	}
+
+	dir('meta') {
+		stage('Generate') {
+			sh '''#!/usr/bin/env bash
+				set -Eeuo pipefail -x
+
+				jq -L.scripts '
+					include "deploy";
+					arch_tagged_manifests(env.BASHBREW_ARCH)
+					| deploy_objects[]
+				' builds.json > deploy.json
+			'''
+		}
+		stage('Filter') {
+			// using the previous successful deploy.json, filter the current deploy.json with items already pushed last time
+			sh '''
+				wget --timeout=5 -qO past-deploy.json "$JOB_URL/lastSuccessfulBuild/artifact/deploy.json"
+				# swap to this touch instead of the wget above to (re)bootstrap
+				#touch past-deploy.json
+				jq --slurpfile past ./past-deploy.json 'select( IN($past[]) | not )' ./deploy.json > filtered-deploy.json
+			'''
+		}
+		stage('Archive') {
+			archiveArtifacts(
+				artifacts: [
+					'deploy.json',
+					'filtered-deploy.json',
+				].join(','),
+				fingerprint: true,
+			)
+		}
+
+		withCredentials([
+			string(credentialsId: 'dockerhub-public-proxy', variable: 'DOCKERHUB_PUBLIC_PROXY'),
+		]) {
+			stage('Deploy') {
+				sh '''#!/usr/bin/env bash
+					set -Eeuo pipefail -x
+
+					(
+						cd .scripts
+						# TODO make a helper to build binaries correctly/consistently 🙃
+						if ./.any-go-nt.sh bin/deploy; then
+							./.go-env.sh go build -trimpath -o bin/deploy ./cmd/deploy
+						fi
+					)
+					.scripts/bin/deploy --parallel < filtered-deploy.json
+				'''
+			}
+		}
+	}
+
+	// "docker logout"
+	dir(env.DOCKER_CONFIG) { deleteDir() }
+} }
