@@ -38,6 +38,8 @@ jobs:
   build:
     name: Build ${{ inputs.buildId }}
     runs-on: ${{ inputs.bashbrewArch == 'windows-amd64' && format('windows-{0}', inputs.windowsVersion) || 'ubuntu-latest' }}
+    env:
+      BASHBREW_META_SCRIPTS: ${{ github.workspace }}/.scripts
     steps:
 
       - name: Checkout
@@ -89,7 +91,7 @@ jobs:
         id: json
         run: |
           json="$(
-            jq -L.scripts '
+            jq -L"$BASHBREW_META_SCRIPTS" '
               include "meta";
               include "doi";
               .[env.BUILD_ID]
