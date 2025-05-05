@@ -140,13 +140,12 @@ jobs:
 
       - name: Build
         run: |
+          bk="$(.doi/.bin/bashbrew-buildkit-env-setup.sh)"
+          bk="$(jq <<<"$bk" -r 'to_entries | map(.key + "=" + .value | @sh) | "export " + join(" ")')"
+          eval "$bk"
+
           cd build
           shell="$(jq <<<"$json" -r '.commands.build')"
-          if grep <<<"$shell" -q ' buildx '; then
-            bk="$(../.doi/.bin/bashbrew-buildkit-env-setup.sh)"
-            bk="$(jq <<<"$bk" -r 'to_entries | map(.key + "=" + .value | @sh) | "export " + join(" ")')"
-            eval "$bk"
-          fi
           eval "$shell"
 
       - name: Push
