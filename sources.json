@@ -205256,6 +205256,50 @@
 			}
 		}
 	},
+	"10641043776745c776cfa5d98f956c6d8d06933465b018d40b4e046ed59e1774": {
+		"sourceId": "10641043776745c776cfa5d98f956c6d8d06933465b018d40b4e046ed59e1774",
+		"reproducibleGitChecksum": "fba2f81378be144d03f4e58a21b71b995d0a4c7976271d0b53b2af5cc018f811",
+		"entries": [
+			{
+				"GitRepo": "https://github.com/RocketChat/Docker.Official.Image.git",
+				"GitFetch": "refs/heads/main",
+				"GitCommit": "233e0247aa283538b52b0ba72b9886881323d571",
+				"Directory": "8.9",
+				"File": "Dockerfile",
+				"Builder": "",
+				"SOURCE_DATE_EPOCH": 1791238406
+			}
+		],
+		"arches": {
+			"amd64": {
+				"tags": [
+					"rocket.chat:8.9.0",
+					"rocket.chat:8.9",
+					"rocket.chat:latest"
+				],
+				"archTags": [
+					"amd64/rocket.chat:8.9.0",
+					"amd64/rocket.chat:8.9",
+					"amd64/rocket.chat:latest"
+				],
+				"froms": [
+					"node:24-trixie-slim"
+				],
+				"lastStageFrom": "node:24-trixie-slim",
+				"platformString": "linux/amd64",
+				"platform": {
+					"architecture": "amd64",
+					"os": "linux"
+				},
+				"parents": {
+					"node:24-trixie-slim": {
+						"sourceId": "a102328576b2983dad07aef0768b94de07bc8c49324384fee635db9a910ed49b",
+						"pin": null
+					}
+				}
+			}
+		}
+	},
 	"bb0c8526cdabb28c9641290e4459eb7bb4d84f718f5ac4aba4ec34a08543038e": {
 		"sourceId": "bb0c8526cdabb28c9641290e4459eb7bb4d84f718f5ac4aba4ec34a08543038e",
 		"reproducibleGitChecksum": "860310b1446c8acc948514995e1f0286757eed224bd190f6c9152791e0000576",
@@ -205274,13 +205318,11 @@
 			"amd64": {
 				"tags": [
 					"rocket.chat:8.8.1",
-					"rocket.chat:8.8",
-					"rocket.chat:latest"
+					"rocket.chat:8.8"
 				],
 				"archTags": [
 					"amd64/rocket.chat:8.8.1",
-					"amd64/rocket.chat:8.8",
-					"amd64/rocket.chat:latest"
+					"amd64/rocket.chat:8.8"
 				],
 				"froms": [
 					"node:22-bookworm-slim"
@@ -205491,90 +205533,6 @@
 				"archTags": [
 					"amd64/rocket.chat:8.3.8",
 					"amd64/rocket.chat:8.3"
-				],
-				"froms": [
-					"node:22-bookworm-slim"
-				],
-				"lastStageFrom": "node:22-bookworm-slim",
-				"platformString": "linux/amd64",
-				"platform": {
-					"architecture": "amd64",
-					"os": "linux"
-				},
-				"parents": {
-					"node:22-bookworm-slim": {
-						"sourceId": "05d623469844ec2062dfb246547fa6baaad52673d2f304f166300ba0fd41e8d1",
-						"pin": null
-					}
-				}
-			}
-		}
-	},
-	"616a629b26376493a9fb8c878f24a6c1b198ecf89add9709c6df1201911136be": {
-		"sourceId": "616a629b26376493a9fb8c878f24a6c1b198ecf89add9709c6df1201911136be",
-		"reproducibleGitChecksum": "77ce6be642426370317dcf543db57806e4b4dec137623e90b555f0c53a7b2ac5",
-		"entries": [
-			{
-				"GitRepo": "https://github.com/RocketChat/Docker.Official.Image.git",
-				"GitFetch": "refs/heads/main",
-				"GitCommit": "2ad8a4fc73ba9dceb1c18adf49f1510cf671e6aa",
-				"Directory": "8.2",
-				"File": "Dockerfile",
-				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1789162153
-			}
-		],
-		"arches": {
-			"amd64": {
-				"tags": [
-					"rocket.chat:8.2.8",
-					"rocket.chat:8.2"
-				],
-				"archTags": [
-					"amd64/rocket.chat:8.2.8",
-					"amd64/rocket.chat:8.2"
-				],
-				"froms": [
-					"node:22-bookworm-slim"
-				],
-				"lastStageFrom": "node:22-bookworm-slim",
-				"platformString": "linux/amd64",
-				"platform": {
-					"architecture": "amd64",
-					"os": "linux"
-				},
-				"parents": {
-					"node:22-bookworm-slim": {
-						"sourceId": "05d623469844ec2062dfb246547fa6baaad52673d2f304f166300ba0fd41e8d1",
-						"pin": null
-					}
-				}
-			}
-		}
-	},
-	"e27a2168ae23bf081001a643e24b7fa6c94ecb5da12a9827a89bf4aa8c686000": {
-		"sourceId": "e27a2168ae23bf081001a643e24b7fa6c94ecb5da12a9827a89bf4aa8c686000",
-		"reproducibleGitChecksum": "f6f75cff61d597521a0b8f232f54a673205b44af09bb7f18b1ac32a90a8dc3fa",
-		"entries": [
-			{
-				"GitRepo": "https://github.com/RocketChat/Docker.Official.Image.git",
-				"GitFetch": "refs/heads/main",
-				"GitCommit": "2ad8a4fc73ba9dceb1c18adf49f1510cf671e6aa",
-				"Directory": "7.10",
-				"File": "Dockerfile",
-				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1789162153
-			}
-		],
-		"arches": {
-			"amd64": {
-				"tags": [
-					"rocket.chat:7.10.15",
-					"rocket.chat:7.10"
-				],
-				"archTags": [
-					"amd64/rocket.chat:7.10.15",
-					"amd64/rocket.chat:7.10"
 				],
 				"froms": [
 					"node:22-bookworm-slim"
