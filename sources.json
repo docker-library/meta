@@ -217240,30 +217240,30 @@
 			}
 		}
 	},
-	"45a5bdc228fa401b344de5e0278fa00c271c974eee913dce696a792927475de7": {
-		"sourceId": "45a5bdc228fa401b344de5e0278fa00c271c974eee913dce696a792927475de7",
-		"reproducibleGitChecksum": "c9fbf9c472fb2e4e95968474948e8015bb64419c3cc94333b094d6c331d59455",
+	"01064d271a0ff4a784119a8c8732fdc35b991d09b15820b8794413d835a9c5df": {
+		"sourceId": "01064d271a0ff4a784119a8c8732fdc35b991d09b15820b8794413d835a9c5df",
+		"reproducibleGitChecksum": "26fffe70501022f76b1d87c3d9ec3c8ae7228cea07f0c4f10f3c6ab4d60970c0",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/apache/solr-docker.git",
 				"GitFetch": "refs/heads/main",
-				"GitCommit": "9c4aa799df40c506a48bc487cc6b4aaed24f9149",
-				"Directory": "9.10",
+				"GitCommit": "13c8b3c91d1b67db15b2addea387803d5eb2b246",
+				"Directory": "9.11",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1768917081
+				"SOURCE_DATE_EPOCH": 1791129838
 			}
 		],
 		"arches": {
 			"amd64": {
 				"tags": [
-					"solr:9.10.1",
-					"solr:9.10",
+					"solr:9.11.0",
+					"solr:9.11",
 					"solr:9"
 				],
 				"archTags": [
-					"amd64/solr:9.10.1",
-					"amd64/solr:9.10",
+					"amd64/solr:9.11.0",
+					"amd64/solr:9.11",
 					"amd64/solr:9"
 				],
 				"froms": [
@@ -217284,13 +217284,13 @@
 			},
 			"arm64v8": {
 				"tags": [
-					"solr:9.10.1",
-					"solr:9.10",
+					"solr:9.11.0",
+					"solr:9.11",
 					"solr:9"
 				],
 				"archTags": [
-					"arm64v8/solr:9.10.1",
-					"arm64v8/solr:9.10",
+					"arm64v8/solr:9.11.0",
+					"arm64v8/solr:9.11",
 					"arm64v8/solr:9"
 				],
 				"froms": [
@@ -217312,13 +217312,13 @@
 			},
 			"ppc64le": {
 				"tags": [
-					"solr:9.10.1",
-					"solr:9.10",
+					"solr:9.11.0",
+					"solr:9.11",
 					"solr:9"
 				],
 				"archTags": [
-					"ppc64le/solr:9.10.1",
-					"ppc64le/solr:9.10",
+					"ppc64le/solr:9.11.0",
+					"ppc64le/solr:9.11",
 					"ppc64le/solr:9"
 				],
 				"froms": [
@@ -217339,14 +217339,258 @@
 			},
 			"s390x": {
 				"tags": [
-					"solr:9.10.1",
-					"solr:9.10",
+					"solr:9.11.0",
+					"solr:9.11",
 					"solr:9"
 				],
 				"archTags": [
-					"s390x/solr:9.10.1",
-					"s390x/solr:9.10",
+					"s390x/solr:9.11.0",
+					"s390x/solr:9.11",
 					"s390x/solr:9"
+				],
+				"froms": [
+					"eclipse-temurin:17-jre-jammy"
+				],
+				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
+				"platformString": "linux/s390x",
+				"platform": {
+					"architecture": "s390x",
+					"os": "linux"
+				},
+				"parents": {
+					"eclipse-temurin:17-jre-jammy": {
+						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
+						"pin": null
+					}
+				}
+			}
+		}
+	},
+	"64fd7bc8bcbab0351084b3b1b6f49ee6bb951b423fea3c63b4d0b66181580e16": {
+		"sourceId": "64fd7bc8bcbab0351084b3b1b6f49ee6bb951b423fea3c63b4d0b66181580e16",
+		"reproducibleGitChecksum": "65ab205770a7aac98d0cffff20bbba336db4df0e4d71f8e1d0c2b32fd48ecfa2",
+		"entries": [
+			{
+				"GitRepo": "https://github.com/apache/solr-docker.git",
+				"GitFetch": "refs/heads/main",
+				"GitCommit": "13c8b3c91d1b67db15b2addea387803d5eb2b246",
+				"Directory": "9.11-slim",
+				"File": "Dockerfile",
+				"Builder": "",
+				"SOURCE_DATE_EPOCH": 1791129838
+			}
+		],
+		"arches": {
+			"amd64": {
+				"tags": [
+					"solr:9.11.0-slim",
+					"solr:9.11-slim",
+					"solr:9-slim"
+				],
+				"archTags": [
+					"amd64/solr:9.11.0-slim",
+					"amd64/solr:9.11-slim",
+					"amd64/solr:9-slim"
+				],
+				"froms": [
+					"eclipse-temurin:17-jre-jammy"
+				],
+				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
+				"platformString": "linux/amd64",
+				"platform": {
+					"architecture": "amd64",
+					"os": "linux"
+				},
+				"parents": {
+					"eclipse-temurin:17-jre-jammy": {
+						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
+						"pin": null
+					}
+				}
+			},
+			"arm64v8": {
+				"tags": [
+					"solr:9.11.0-slim",
+					"solr:9.11-slim",
+					"solr:9-slim"
+				],
+				"archTags": [
+					"arm64v8/solr:9.11.0-slim",
+					"arm64v8/solr:9.11-slim",
+					"arm64v8/solr:9-slim"
+				],
+				"froms": [
+					"eclipse-temurin:17-jre-jammy"
+				],
+				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
+				"platformString": "linux/arm64/v8",
+				"platform": {
+					"architecture": "arm64",
+					"os": "linux",
+					"variant": "v8"
+				},
+				"parents": {
+					"eclipse-temurin:17-jre-jammy": {
+						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
+						"pin": null
+					}
+				}
+			},
+			"ppc64le": {
+				"tags": [
+					"solr:9.11.0-slim",
+					"solr:9.11-slim",
+					"solr:9-slim"
+				],
+				"archTags": [
+					"ppc64le/solr:9.11.0-slim",
+					"ppc64le/solr:9.11-slim",
+					"ppc64le/solr:9-slim"
+				],
+				"froms": [
+					"eclipse-temurin:17-jre-jammy"
+				],
+				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
+				"platformString": "linux/ppc64le",
+				"platform": {
+					"architecture": "ppc64le",
+					"os": "linux"
+				},
+				"parents": {
+					"eclipse-temurin:17-jre-jammy": {
+						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
+						"pin": null
+					}
+				}
+			},
+			"s390x": {
+				"tags": [
+					"solr:9.11.0-slim",
+					"solr:9.11-slim",
+					"solr:9-slim"
+				],
+				"archTags": [
+					"s390x/solr:9.11.0-slim",
+					"s390x/solr:9.11-slim",
+					"s390x/solr:9-slim"
+				],
+				"froms": [
+					"eclipse-temurin:17-jre-jammy"
+				],
+				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
+				"platformString": "linux/s390x",
+				"platform": {
+					"architecture": "s390x",
+					"os": "linux"
+				},
+				"parents": {
+					"eclipse-temurin:17-jre-jammy": {
+						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
+						"pin": null
+					}
+				}
+			}
+		}
+	},
+	"45a5bdc228fa401b344de5e0278fa00c271c974eee913dce696a792927475de7": {
+		"sourceId": "45a5bdc228fa401b344de5e0278fa00c271c974eee913dce696a792927475de7",
+		"reproducibleGitChecksum": "c9fbf9c472fb2e4e95968474948e8015bb64419c3cc94333b094d6c331d59455",
+		"entries": [
+			{
+				"GitRepo": "https://github.com/apache/solr-docker.git",
+				"GitFetch": "refs/heads/main",
+				"GitCommit": "9c4aa799df40c506a48bc487cc6b4aaed24f9149",
+				"Directory": "9.10",
+				"File": "Dockerfile",
+				"Builder": "",
+				"SOURCE_DATE_EPOCH": 1768917081
+			}
+		],
+		"arches": {
+			"amd64": {
+				"tags": [
+					"solr:9.10.1",
+					"solr:9.10"
+				],
+				"archTags": [
+					"amd64/solr:9.10.1",
+					"amd64/solr:9.10"
+				],
+				"froms": [
+					"eclipse-temurin:17-jre-jammy"
+				],
+				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
+				"platformString": "linux/amd64",
+				"platform": {
+					"architecture": "amd64",
+					"os": "linux"
+				},
+				"parents": {
+					"eclipse-temurin:17-jre-jammy": {
+						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
+						"pin": null
+					}
+				}
+			},
+			"arm64v8": {
+				"tags": [
+					"solr:9.10.1",
+					"solr:9.10"
+				],
+				"archTags": [
+					"arm64v8/solr:9.10.1",
+					"arm64v8/solr:9.10"
+				],
+				"froms": [
+					"eclipse-temurin:17-jre-jammy"
+				],
+				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
+				"platformString": "linux/arm64/v8",
+				"platform": {
+					"architecture": "arm64",
+					"os": "linux",
+					"variant": "v8"
+				},
+				"parents": {
+					"eclipse-temurin:17-jre-jammy": {
+						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
+						"pin": null
+					}
+				}
+			},
+			"ppc64le": {
+				"tags": [
+					"solr:9.10.1",
+					"solr:9.10"
+				],
+				"archTags": [
+					"ppc64le/solr:9.10.1",
+					"ppc64le/solr:9.10"
+				],
+				"froms": [
+					"eclipse-temurin:17-jre-jammy"
+				],
+				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
+				"platformString": "linux/ppc64le",
+				"platform": {
+					"architecture": "ppc64le",
+					"os": "linux"
+				},
+				"parents": {
+					"eclipse-temurin:17-jre-jammy": {
+						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
+						"pin": null
+					}
+				}
+			},
+			"s390x": {
+				"tags": [
+					"solr:9.10.1",
+					"solr:9.10"
+				],
+				"archTags": [
+					"s390x/solr:9.10.1",
+					"s390x/solr:9.10"
 				],
 				"froms": [
 					"eclipse-temurin:17-jre-jammy"
@@ -217384,13 +217628,11 @@
 			"amd64": {
 				"tags": [
 					"solr:9.10.1-slim",
-					"solr:9.10-slim",
-					"solr:9-slim"
+					"solr:9.10-slim"
 				],
 				"archTags": [
 					"amd64/solr:9.10.1-slim",
-					"amd64/solr:9.10-slim",
-					"amd64/solr:9-slim"
+					"amd64/solr:9.10-slim"
 				],
 				"froms": [
 					"eclipse-temurin:17-jre-jammy"
@@ -217411,13 +217653,11 @@
 			"arm64v8": {
 				"tags": [
 					"solr:9.10.1-slim",
-					"solr:9.10-slim",
-					"solr:9-slim"
+					"solr:9.10-slim"
 				],
 				"archTags": [
 					"arm64v8/solr:9.10.1-slim",
-					"arm64v8/solr:9.10-slim",
-					"arm64v8/solr:9-slim"
+					"arm64v8/solr:9.10-slim"
 				],
 				"froms": [
 					"eclipse-temurin:17-jre-jammy"
@@ -217439,13 +217679,11 @@
 			"ppc64le": {
 				"tags": [
 					"solr:9.10.1-slim",
-					"solr:9.10-slim",
-					"solr:9-slim"
+					"solr:9.10-slim"
 				],
 				"archTags": [
 					"ppc64le/solr:9.10.1-slim",
-					"ppc64le/solr:9.10-slim",
-					"ppc64le/solr:9-slim"
+					"ppc64le/solr:9.10-slim"
 				],
 				"froms": [
 					"eclipse-temurin:17-jre-jammy"
@@ -217466,249 +217704,11 @@
 			"s390x": {
 				"tags": [
 					"solr:9.10.1-slim",
-					"solr:9.10-slim",
-					"solr:9-slim"
+					"solr:9.10-slim"
 				],
 				"archTags": [
 					"s390x/solr:9.10.1-slim",
-					"s390x/solr:9.10-slim",
-					"s390x/solr:9-slim"
-				],
-				"froms": [
-					"eclipse-temurin:17-jre-jammy"
-				],
-				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
-				"platformString": "linux/s390x",
-				"platform": {
-					"architecture": "s390x",
-					"os": "linux"
-				},
-				"parents": {
-					"eclipse-temurin:17-jre-jammy": {
-						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
-						"pin": null
-					}
-				}
-			}
-		}
-	},
-	"1bc5e344a9a64459a871aa076f264b1c674321183eb2b082048732b0765da502": {
-		"sourceId": "1bc5e344a9a64459a871aa076f264b1c674321183eb2b082048732b0765da502",
-		"reproducibleGitChecksum": "11701b7b9efbf2cc9a0c40054ec32dcbe0d1171387d24c18f0201713c71be4f6",
-		"entries": [
-			{
-				"GitRepo": "https://github.com/apache/solr-docker.git",
-				"GitFetch": "refs/heads/main",
-				"GitCommit": "aa51c522c3e74cd1b2886209ea249358a34d324a",
-				"Directory": "9.9",
-				"File": "Dockerfile",
-				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1753380890
-			}
-		],
-		"arches": {
-			"amd64": {
-				"tags": [
-					"solr:9.9.0",
-					"solr:9.9"
-				],
-				"archTags": [
-					"amd64/solr:9.9.0",
-					"amd64/solr:9.9"
-				],
-				"froms": [
-					"eclipse-temurin:17-jre-jammy"
-				],
-				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
-				"platformString": "linux/amd64",
-				"platform": {
-					"architecture": "amd64",
-					"os": "linux"
-				},
-				"parents": {
-					"eclipse-temurin:17-jre-jammy": {
-						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
-						"pin": null
-					}
-				}
-			},
-			"arm64v8": {
-				"tags": [
-					"solr:9.9.0",
-					"solr:9.9"
-				],
-				"archTags": [
-					"arm64v8/solr:9.9.0",
-					"arm64v8/solr:9.9"
-				],
-				"froms": [
-					"eclipse-temurin:17-jre-jammy"
-				],
-				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
-				"platformString": "linux/arm64/v8",
-				"platform": {
-					"architecture": "arm64",
-					"os": "linux",
-					"variant": "v8"
-				},
-				"parents": {
-					"eclipse-temurin:17-jre-jammy": {
-						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
-						"pin": null
-					}
-				}
-			},
-			"ppc64le": {
-				"tags": [
-					"solr:9.9.0",
-					"solr:9.9"
-				],
-				"archTags": [
-					"ppc64le/solr:9.9.0",
-					"ppc64le/solr:9.9"
-				],
-				"froms": [
-					"eclipse-temurin:17-jre-jammy"
-				],
-				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
-				"platformString": "linux/ppc64le",
-				"platform": {
-					"architecture": "ppc64le",
-					"os": "linux"
-				},
-				"parents": {
-					"eclipse-temurin:17-jre-jammy": {
-						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
-						"pin": null
-					}
-				}
-			},
-			"s390x": {
-				"tags": [
-					"solr:9.9.0",
-					"solr:9.9"
-				],
-				"archTags": [
-					"s390x/solr:9.9.0",
-					"s390x/solr:9.9"
-				],
-				"froms": [
-					"eclipse-temurin:17-jre-jammy"
-				],
-				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
-				"platformString": "linux/s390x",
-				"platform": {
-					"architecture": "s390x",
-					"os": "linux"
-				},
-				"parents": {
-					"eclipse-temurin:17-jre-jammy": {
-						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
-						"pin": null
-					}
-				}
-			}
-		}
-	},
-	"06e260687043f4b6a9aa988553ea955d0a0f877ec9d5b249887e54e9c130200b": {
-		"sourceId": "06e260687043f4b6a9aa988553ea955d0a0f877ec9d5b249887e54e9c130200b",
-		"reproducibleGitChecksum": "9e4a58f1c3fedcf9b2db058deeb8cd4fd1e0cf26fec820cfd41f7fb872a83f22",
-		"entries": [
-			{
-				"GitRepo": "https://github.com/apache/solr-docker.git",
-				"GitFetch": "refs/heads/main",
-				"GitCommit": "aa51c522c3e74cd1b2886209ea249358a34d324a",
-				"Directory": "9.9-slim",
-				"File": "Dockerfile",
-				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1753380890
-			}
-		],
-		"arches": {
-			"amd64": {
-				"tags": [
-					"solr:9.9.0-slim",
-					"solr:9.9-slim"
-				],
-				"archTags": [
-					"amd64/solr:9.9.0-slim",
-					"amd64/solr:9.9-slim"
-				],
-				"froms": [
-					"eclipse-temurin:17-jre-jammy"
-				],
-				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
-				"platformString": "linux/amd64",
-				"platform": {
-					"architecture": "amd64",
-					"os": "linux"
-				},
-				"parents": {
-					"eclipse-temurin:17-jre-jammy": {
-						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
-						"pin": null
-					}
-				}
-			},
-			"arm64v8": {
-				"tags": [
-					"solr:9.9.0-slim",
-					"solr:9.9-slim"
-				],
-				"archTags": [
-					"arm64v8/solr:9.9.0-slim",
-					"arm64v8/solr:9.9-slim"
-				],
-				"froms": [
-					"eclipse-temurin:17-jre-jammy"
-				],
-				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
-				"platformString": "linux/arm64/v8",
-				"platform": {
-					"architecture": "arm64",
-					"os": "linux",
-					"variant": "v8"
-				},
-				"parents": {
-					"eclipse-temurin:17-jre-jammy": {
-						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
-						"pin": null
-					}
-				}
-			},
-			"ppc64le": {
-				"tags": [
-					"solr:9.9.0-slim",
-					"solr:9.9-slim"
-				],
-				"archTags": [
-					"ppc64le/solr:9.9.0-slim",
-					"ppc64le/solr:9.9-slim"
-				],
-				"froms": [
-					"eclipse-temurin:17-jre-jammy"
-				],
-				"lastStageFrom": "eclipse-temurin:17-jre-jammy",
-				"platformString": "linux/ppc64le",
-				"platform": {
-					"architecture": "ppc64le",
-					"os": "linux"
-				},
-				"parents": {
-					"eclipse-temurin:17-jre-jammy": {
-						"sourceId": "458d7b0f74316ac8ad9bc37ec660f3998753c9553569373c6dbc473ecdb5616d",
-						"pin": null
-					}
-				}
-			},
-			"s390x": {
-				"tags": [
-					"solr:9.9.0-slim",
-					"solr:9.9-slim"
-				],
-				"archTags": [
-					"s390x/solr:9.9.0-slim",
-					"s390x/solr:9.9-slim"
+					"s390x/solr:9.10-slim"
 				],
 				"froms": [
 					"eclipse-temurin:17-jre-jammy"
