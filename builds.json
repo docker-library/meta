@@ -145790,7 +145790,50 @@
 		"buildId": "4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47",
 		"build": {
 			"img": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+						"size": 3824,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-10-06T22:06:44Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"org.opencontainers.image.revision": "79320e28b93fdc720d6f07d150709310cf54e757",
+							"org.opencontainers.image.source": "https://github.com/docker-library/php.git#79320e28b93fdc720d6f07d150709310cf54e757:8.4/trixie/apache",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/php",
+							"org.opencontainers.image.version": "8.4.26-apache-trixie"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+							"vnd.docker.reference.digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:8c802757e383c984057c31a6c088a592d60ceca13be2df724b94dff3253621dc"
+				}
+			},
 			"sourceId": "01fa66694b74abecb92e016aa93d48df7dbbac910980e976a2a3ab1ae5ab5fb6",
 			"arch": "riscv64",
 			"parents": {
@@ -253130,6 +253173,118 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"php:8.4-apache": {
+							"sourceId": "01fa66694b74abecb92e016aa93d48df7dbbac910980e976a2a3ab1ae5ab5fb6",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"5535cf7cbc32f10e7bf8079750709859b0e7979d97f5b9ad9756b2f6a47d07c5": {
+		"buildId": "5535cf7cbc32f10e7bf8079750709859b0e7979d97f5b9ad9756b2f6a47d07c5",
+		"build": {
+			"img": "oisupport/staging-riscv64:5535cf7cbc32f10e7bf8079750709859b0e7979d97f5b9ad9756b2f6a47d07c5",
+			"resolved": null,
+			"sourceId": "f5c6e46a1a7a77975e805c13cdbea286ce469dd203b47751a72ff4e463e91fd4",
+			"arch": "riscv64",
+			"parents": {
+				"php:8.4-apache": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed"
+			},
+			"resolvedParents": {
+				"php:8.4-apache": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"size": 3824,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-10-06T22:06:44Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"org.opencontainers.image.revision": "79320e28b93fdc720d6f07d150709310cf54e757",
+								"org.opencontainers.image.source": "https://github.com/docker-library/php.git#79320e28b93fdc720d6f07d150709310cf54e757:8.4/trixie/apache",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/php",
+								"org.opencontainers.image.version": "8.4.26-apache-trixie"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+								"vnd.docker.reference.digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:8c802757e383c984057c31a6c088a592d60ceca13be2df724b94dff3253621dc"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "f5c6e46a1a7a77975e805c13cdbea286ce469dd203b47751a72ff4e463e91fd4",
+			"reproducibleGitChecksum": "475e2a15e37916eb8a26808b85f6fec013f22b1fb8869125dda5b5277a565289",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/wordpress.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "2e9f0a6371f5a711f901ef92bd8491b36ce98722",
+					"Directory": "latest/php8.4/apache",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1790099367
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"wordpress:7.1.2-php8.4-apache",
+						"wordpress:7.1-php8.4-apache",
+						"wordpress:7-php8.4-apache",
+						"wordpress:php8.4-apache",
+						"wordpress:7.1.2-php8.4",
+						"wordpress:7.1-php8.4",
+						"wordpress:7-php8.4",
+						"wordpress:php8.4"
+					],
+					"archTags": [
+						"riscv64/wordpress:7.1.2-php8.4-apache",
+						"riscv64/wordpress:7.1-php8.4-apache",
+						"riscv64/wordpress:7-php8.4-apache",
+						"riscv64/wordpress:php8.4-apache",
+						"riscv64/wordpress:7.1.2-php8.4",
+						"riscv64/wordpress:7.1-php8.4",
+						"riscv64/wordpress:7-php8.4",
+						"riscv64/wordpress:php8.4"
+					],
+					"froms": [
+						"php:8.4-apache"
+					],
+					"lastStageFrom": "php:8.4-apache",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -368323,6 +368478,176 @@
 			}
 		}
 	},
+	"f39cde070a87e118954e0873da37bd76dbfa213e92a26d8c0ee4447fd14c0a51": {
+		"buildId": "f39cde070a87e118954e0873da37bd76dbfa213e92a26d8c0ee4447fd14c0a51",
+		"build": {
+			"img": "oisupport/staging-riscv64:f39cde070a87e118954e0873da37bd76dbfa213e92a26d8c0ee4447fd14c0a51",
+			"resolved": null,
+			"sourceId": "c5534614c21ccb145b9824222d3005c3af5891ff8014c4a7fe3c97d403e011d6",
+			"arch": "riscv64",
+			"parents": {
+				"php:8.4-apache-trixie": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+				"composer:2": "sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194"
+			},
+			"resolvedParents": {
+				"php:8.4-apache-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"size": 3824,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-10-06T22:06:44Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"org.opencontainers.image.revision": "79320e28b93fdc720d6f07d150709310cf54e757",
+								"org.opencontainers.image.source": "https://github.com/docker-library/php.git#79320e28b93fdc720d6f07d150709310cf54e757:8.4/trixie/apache",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/php",
+								"org.opencontainers.image.version": "8.4.26-apache-trixie"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+								"vnd.docker.reference.digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:8c802757e383c984057c31a6c088a592d60ceca13be2df724b94dff3253621dc"
+					}
+				},
+				"composer:2": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194",
+							"size": 3611,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:f861cb1a73a55ea9a13639ba2d42753f180ca4aa0010d24604a6cc9ee3c5cb66",
+								"org.opencontainers.image.base.name": "php:8-alpine",
+								"org.opencontainers.image.created": "2026-09-30T03:36:09Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:b3b730498221308abc794367e0280a6b1e9924297457005f6234a545273d9278@sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194",
+								"org.opencontainers.image.revision": "a23788a1b4f65ad2dd090c3ee2a7ad9e35a7d9d1",
+								"org.opencontainers.image.source": "https://github.com/composer/docker.git#a23788a1b4f65ad2dd090c3ee2a7ad9e35a7d9d1:latest",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/composer",
+								"org.opencontainers.image.version": "2.10.3"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:8334ab1314f4b2d6a6819819d0f16c928d06d61af1fd1cd852cdc3b674dfae2f",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:b3b730498221308abc794367e0280a6b1e9924297457005f6234a545273d9278@sha256:8334ab1314f4b2d6a6819819d0f16c928d06d61af1fd1cd852cdc3b674dfae2f",
+								"vnd.docker.reference.digest": "sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:b3b730498221308abc794367e0280a6b1e9924297457005f6234a545273d9278@sha256:950ae7110da14fc227cf94c31e3e7cbf20428a99665a5b51252089017255228b"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "c5534614c21ccb145b9824222d3005c3af5891ff8014c4a7fe3c97d403e011d6",
+			"reproducibleGitChecksum": "4a05cf2d83bbbe9f5dd5f3402ddae18b18bf9a5275c73934d6b0bdc6fd72642a",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/drupal.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "b88224cd0254c64387c7d01e661b19dc77c07c94",
+					"Directory": "11.4/php8.4/apache-trixie",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1790498700
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"drupal:11.4.8-php8.4-apache-trixie",
+						"drupal:11.4-php8.4-apache-trixie",
+						"drupal:11-php8.4-apache-trixie",
+						"drupal:php8.4-apache-trixie",
+						"drupal:11.4.8-php8.4-apache",
+						"drupal:11.4-php8.4-apache",
+						"drupal:11-php8.4-apache",
+						"drupal:php8.4-apache",
+						"drupal:11.4.8-php8.4",
+						"drupal:11.4-php8.4",
+						"drupal:11-php8.4",
+						"drupal:php8.4"
+					],
+					"archTags": [
+						"riscv64/drupal:11.4.8-php8.4-apache-trixie",
+						"riscv64/drupal:11.4-php8.4-apache-trixie",
+						"riscv64/drupal:11-php8.4-apache-trixie",
+						"riscv64/drupal:php8.4-apache-trixie",
+						"riscv64/drupal:11.4.8-php8.4-apache",
+						"riscv64/drupal:11.4-php8.4-apache",
+						"riscv64/drupal:11-php8.4-apache",
+						"riscv64/drupal:php8.4-apache",
+						"riscv64/drupal:11.4.8-php8.4",
+						"riscv64/drupal:11.4-php8.4",
+						"riscv64/drupal:11-php8.4",
+						"riscv64/drupal:php8.4"
+					],
+					"froms": [
+						"php:8.4-apache-trixie",
+						"composer:2"
+					],
+					"lastStageFrom": "php:8.4-apache-trixie",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
+						"os": "linux"
+					},
+					"parents": {
+						"php:8.4-apache-trixie": {
+							"sourceId": "01fa66694b74abecb92e016aa93d48df7dbbac910980e976a2a3ab1ae5ab5fb6",
+							"pin": null
+						},
+						"composer:2": {
+							"sourceId": "bdafcbbad4982b50459127d73d28fbf253d89611e4e9aad3f616b186bb858adb",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"17a31e0da6b0ebde01b19364beac38b408df9de4d18933990be00ef2b57cef62": {
 		"buildId": "17a31e0da6b0ebde01b19364beac38b408df9de4d18933990be00ef2b57cef62",
 		"build": {
@@ -383637,6 +383962,176 @@
 			}
 		}
 	},
+	"5e58b7d995347cfeaf9aa2c437ff5db7dae5475f7f44608fabf0916d879be9fb": {
+		"buildId": "5e58b7d995347cfeaf9aa2c437ff5db7dae5475f7f44608fabf0916d879be9fb",
+		"build": {
+			"img": "oisupport/staging-riscv64:5e58b7d995347cfeaf9aa2c437ff5db7dae5475f7f44608fabf0916d879be9fb",
+			"resolved": null,
+			"sourceId": "a4e6dc9d07c34b419c904e8b43185794a4f447757884caa3e7277a7f54f524c4",
+			"arch": "riscv64",
+			"parents": {
+				"php:8.4-apache-trixie": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+				"composer:2": "sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194"
+			},
+			"resolvedParents": {
+				"php:8.4-apache-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"size": 3824,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-10-06T22:06:44Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"org.opencontainers.image.revision": "79320e28b93fdc720d6f07d150709310cf54e757",
+								"org.opencontainers.image.source": "https://github.com/docker-library/php.git#79320e28b93fdc720d6f07d150709310cf54e757:8.4/trixie/apache",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/php",
+								"org.opencontainers.image.version": "8.4.26-apache-trixie"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+								"vnd.docker.reference.digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:8c802757e383c984057c31a6c088a592d60ceca13be2df724b94dff3253621dc"
+					}
+				},
+				"composer:2": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194",
+							"size": 3611,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:f861cb1a73a55ea9a13639ba2d42753f180ca4aa0010d24604a6cc9ee3c5cb66",
+								"org.opencontainers.image.base.name": "php:8-alpine",
+								"org.opencontainers.image.created": "2026-09-30T03:36:09Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:b3b730498221308abc794367e0280a6b1e9924297457005f6234a545273d9278@sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194",
+								"org.opencontainers.image.revision": "a23788a1b4f65ad2dd090c3ee2a7ad9e35a7d9d1",
+								"org.opencontainers.image.source": "https://github.com/composer/docker.git#a23788a1b4f65ad2dd090c3ee2a7ad9e35a7d9d1:latest",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/composer",
+								"org.opencontainers.image.version": "2.10.3"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:8334ab1314f4b2d6a6819819d0f16c928d06d61af1fd1cd852cdc3b674dfae2f",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:b3b730498221308abc794367e0280a6b1e9924297457005f6234a545273d9278@sha256:8334ab1314f4b2d6a6819819d0f16c928d06d61af1fd1cd852cdc3b674dfae2f",
+								"vnd.docker.reference.digest": "sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:b3b730498221308abc794367e0280a6b1e9924297457005f6234a545273d9278@sha256:950ae7110da14fc227cf94c31e3e7cbf20428a99665a5b51252089017255228b"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "a4e6dc9d07c34b419c904e8b43185794a4f447757884caa3e7277a7f54f524c4",
+			"reproducibleGitChecksum": "7fc7b1de5c0456f6e3f949f80028de9801c128a28b43ac25022b7d1c7b3d4a13",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/drupal.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "185e6beca775a5ab5da40d9a9bd29f24bfa145d4",
+					"Directory": "11.3/php8.4/apache-trixie",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1790605635
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"drupal:11.3.18-php8.4-apache-trixie",
+						"drupal:11.3-php8.4-apache-trixie",
+						"drupal:11.3.18-php8.4-apache",
+						"drupal:11.3-php8.4-apache",
+						"drupal:11.3.18-php8.4",
+						"drupal:11.3-php8.4",
+						"drupal:11.3.18-apache-trixie",
+						"drupal:11.3-apache-trixie",
+						"drupal:11.3.18-apache",
+						"drupal:11.3-apache",
+						"drupal:11.3.18",
+						"drupal:11.3"
+					],
+					"archTags": [
+						"riscv64/drupal:11.3.18-php8.4-apache-trixie",
+						"riscv64/drupal:11.3-php8.4-apache-trixie",
+						"riscv64/drupal:11.3.18-php8.4-apache",
+						"riscv64/drupal:11.3-php8.4-apache",
+						"riscv64/drupal:11.3.18-php8.4",
+						"riscv64/drupal:11.3-php8.4",
+						"riscv64/drupal:11.3.18-apache-trixie",
+						"riscv64/drupal:11.3-apache-trixie",
+						"riscv64/drupal:11.3.18-apache",
+						"riscv64/drupal:11.3-apache",
+						"riscv64/drupal:11.3.18",
+						"riscv64/drupal:11.3"
+					],
+					"froms": [
+						"php:8.4-apache-trixie",
+						"composer:2"
+					],
+					"lastStageFrom": "php:8.4-apache-trixie",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
+						"os": "linux"
+					},
+					"parents": {
+						"php:8.4-apache-trixie": {
+							"sourceId": "01fa66694b74abecb92e016aa93d48df7dbbac910980e976a2a3ab1ae5ab5fb6",
+							"pin": null
+						},
+						"composer:2": {
+							"sourceId": "bdafcbbad4982b50459127d73d28fbf253d89611e4e9aad3f616b186bb858adb",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"65e7601d429e2b578cbfa81205f06c28377a2e188fe534ed18f1cc576c8472fe": {
 		"buildId": "65e7601d429e2b578cbfa81205f06c28377a2e188fe534ed18f1cc576c8472fe",
 		"build": {
@@ -391431,6 +391926,188 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"php:8.4-apache-trixie": {
+							"sourceId": "01fa66694b74abecb92e016aa93d48df7dbbac910980e976a2a3ab1ae5ab5fb6",
+							"pin": null
+						},
+						"composer:2": {
+							"sourceId": "bdafcbbad4982b50459127d73d28fbf253d89611e4e9aad3f616b186bb858adb",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"96d3135f3a47053a792e37fa905ba62f9d74f4eedad7fdd9fa6549ff2e115a62": {
+		"buildId": "96d3135f3a47053a792e37fa905ba62f9d74f4eedad7fdd9fa6549ff2e115a62",
+		"build": {
+			"img": "oisupport/staging-riscv64:96d3135f3a47053a792e37fa905ba62f9d74f4eedad7fdd9fa6549ff2e115a62",
+			"resolved": null,
+			"sourceId": "19e825fea3c2f2a917546f1d5cc3f092e4154b054fbd3d089939527259cb22a7",
+			"arch": "riscv64",
+			"parents": {
+				"php:8.4-apache-trixie": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+				"composer:2": "sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194"
+			},
+			"resolvedParents": {
+				"php:8.4-apache-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"size": 3824,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-10-06T22:06:44Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"org.opencontainers.image.revision": "79320e28b93fdc720d6f07d150709310cf54e757",
+								"org.opencontainers.image.source": "https://github.com/docker-library/php.git#79320e28b93fdc720d6f07d150709310cf54e757:8.4/trixie/apache",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/php",
+								"org.opencontainers.image.version": "8.4.26-apache-trixie"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+								"vnd.docker.reference.digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:8c802757e383c984057c31a6c088a592d60ceca13be2df724b94dff3253621dc"
+					}
+				},
+				"composer:2": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194",
+							"size": 3611,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:f861cb1a73a55ea9a13639ba2d42753f180ca4aa0010d24604a6cc9ee3c5cb66",
+								"org.opencontainers.image.base.name": "php:8-alpine",
+								"org.opencontainers.image.created": "2026-09-30T03:36:09Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:b3b730498221308abc794367e0280a6b1e9924297457005f6234a545273d9278@sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194",
+								"org.opencontainers.image.revision": "a23788a1b4f65ad2dd090c3ee2a7ad9e35a7d9d1",
+								"org.opencontainers.image.source": "https://github.com/composer/docker.git#a23788a1b4f65ad2dd090c3ee2a7ad9e35a7d9d1:latest",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/composer",
+								"org.opencontainers.image.version": "2.10.3"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:8334ab1314f4b2d6a6819819d0f16c928d06d61af1fd1cd852cdc3b674dfae2f",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:b3b730498221308abc794367e0280a6b1e9924297457005f6234a545273d9278@sha256:8334ab1314f4b2d6a6819819d0f16c928d06d61af1fd1cd852cdc3b674dfae2f",
+								"vnd.docker.reference.digest": "sha256:27a19c5320a7b5ec50117c8d45b794bf69af321bf245939003ef7e062f9e1194",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:b3b730498221308abc794367e0280a6b1e9924297457005f6234a545273d9278@sha256:950ae7110da14fc227cf94c31e3e7cbf20428a99665a5b51252089017255228b"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "19e825fea3c2f2a917546f1d5cc3f092e4154b054fbd3d089939527259cb22a7",
+			"reproducibleGitChecksum": "5039de51c17c7ada4858e51d447b85cf9f3baad97b73ef18c6b4cbe77c3b6259",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/drupal.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "694bad6b0ca0ee5ba949daf0c9d170d4d8283126",
+					"Directory": "10.6/php8.4/apache-trixie",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1790497630
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"drupal:10.6.18-php8.4-apache-trixie",
+						"drupal:10.6-php8.4-apache-trixie",
+						"drupal:10-php8.4-apache-trixie",
+						"drupal:10.6.18-php8.4-apache",
+						"drupal:10.6-php8.4-apache",
+						"drupal:10-php8.4-apache",
+						"drupal:10.6.18-php8.4",
+						"drupal:10.6-php8.4",
+						"drupal:10-php8.4",
+						"drupal:10.6.18-apache-trixie",
+						"drupal:10.6-apache-trixie",
+						"drupal:10-apache-trixie",
+						"drupal:10.6.18-apache",
+						"drupal:10.6-apache",
+						"drupal:10-apache",
+						"drupal:10.6.18",
+						"drupal:10.6",
+						"drupal:10"
+					],
+					"archTags": [
+						"riscv64/drupal:10.6.18-php8.4-apache-trixie",
+						"riscv64/drupal:10.6-php8.4-apache-trixie",
+						"riscv64/drupal:10-php8.4-apache-trixie",
+						"riscv64/drupal:10.6.18-php8.4-apache",
+						"riscv64/drupal:10.6-php8.4-apache",
+						"riscv64/drupal:10-php8.4-apache",
+						"riscv64/drupal:10.6.18-php8.4",
+						"riscv64/drupal:10.6-php8.4",
+						"riscv64/drupal:10-php8.4",
+						"riscv64/drupal:10.6.18-apache-trixie",
+						"riscv64/drupal:10.6-apache-trixie",
+						"riscv64/drupal:10-apache-trixie",
+						"riscv64/drupal:10.6.18-apache",
+						"riscv64/drupal:10.6-apache",
+						"riscv64/drupal:10-apache",
+						"riscv64/drupal:10.6.18",
+						"riscv64/drupal:10.6",
+						"riscv64/drupal:10"
+					],
+					"froms": [
+						"php:8.4-apache-trixie",
+						"composer:2"
+					],
+					"lastStageFrom": "php:8.4-apache-trixie",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -461031,7 +461708,50 @@
 		"buildId": "5a1c61449e5b36c001e85215eaf50736bfd91e2fdde5e6c1b3b2274ad83f1cc3",
 		"build": {
 			"img": "oisupport/staging-amd64:5a1c61449e5b36c001e85215eaf50736bfd91e2fdde5e6c1b3b2274ad83f1cc3",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:4c61164f43e3a9553cefc61429b80666a1af40cd799813c42745e32fe7a29385",
+						"size": 2877,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:68b92732accbffdd8e2491b4c29976634ed92459f5779dac2aad670c967337c7",
+							"org.opencontainers.image.base.name": "redhat/ubi9-minimal:latest",
+							"org.opencontainers.image.created": "2026-10-06T23:00:29Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5a1c61449e5b36c001e85215eaf50736bfd91e2fdde5e6c1b3b2274ad83f1cc3@sha256:4c61164f43e3a9553cefc61429b80666a1af40cd799813c42745e32fe7a29385",
+							"org.opencontainers.image.revision": "8eec196323810ee2b48f94058ce633665c540e1a",
+							"org.opencontainers.image.source": "https://github.com/elastic/dockerfiles.git#8eec196323810ee2b48f94058ce633665c540e1a:elasticsearch",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/elasticsearch",
+							"org.opencontainers.image.version": "9.4.8"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:16dd428920469e32ba7ad87e55162b88259e138edfcacd13611c44df7ff90af5",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5a1c61449e5b36c001e85215eaf50736bfd91e2fdde5e6c1b3b2274ad83f1cc3@sha256:16dd428920469e32ba7ad87e55162b88259e138edfcacd13611c44df7ff90af5",
+							"vnd.docker.reference.digest": "sha256:4c61164f43e3a9553cefc61429b80666a1af40cd799813c42745e32fe7a29385",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5a1c61449e5b36c001e85215eaf50736bfd91e2fdde5e6c1b3b2274ad83f1cc3@sha256:e5d659a096f167dc3521d4f8b3fb8e21aa1405ae17c1dbba7a9966f1cbca579a"
+				}
+			},
 			"sourceId": "67ce6b212ad8bf244fb200c6f642cb9acee01f79dee07ca5e6cab30058cbc89c",
 			"arch": "amd64",
 			"parents": {
@@ -461110,7 +461830,51 @@
 		"buildId": "f98ed234f82179401e99e5990df96fcd4d31121a7de2331b222cc25731a4b92d",
 		"build": {
 			"img": "oisupport/staging-arm64v8:f98ed234f82179401e99e5990df96fcd4d31121a7de2331b222cc25731a4b92d",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:1b087bf64b266bdf5593a98b1a330bb657ca5c5a638ac739836ff4615e844406",
+						"size": 2879,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:9b01126bb2c06cc0b8463b6a2ae316634601ca5b01520acc00a2299574814bfb",
+							"org.opencontainers.image.base.name": "redhat/ubi9-minimal:latest",
+							"org.opencontainers.image.created": "2026-10-06T23:00:17Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:f98ed234f82179401e99e5990df96fcd4d31121a7de2331b222cc25731a4b92d@sha256:1b087bf64b266bdf5593a98b1a330bb657ca5c5a638ac739836ff4615e844406",
+							"org.opencontainers.image.revision": "8eec196323810ee2b48f94058ce633665c540e1a",
+							"org.opencontainers.image.source": "https://github.com/elastic/dockerfiles.git#8eec196323810ee2b48f94058ce633665c540e1a:elasticsearch",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/elasticsearch",
+							"org.opencontainers.image.version": "9.4.8"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:31a0b7efcc20d9385432462c3c0d8b1005da703523e9a72260f6a4f881a77ae1",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:f98ed234f82179401e99e5990df96fcd4d31121a7de2331b222cc25731a4b92d@sha256:31a0b7efcc20d9385432462c3c0d8b1005da703523e9a72260f6a4f881a77ae1",
+							"vnd.docker.reference.digest": "sha256:1b087bf64b266bdf5593a98b1a330bb657ca5c5a638ac739836ff4615e844406",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:f98ed234f82179401e99e5990df96fcd4d31121a7de2331b222cc25731a4b92d@sha256:f153d59607cca794bbd07495c0e579a66c04a38b459b6af18e3ba32d25179afd"
+				}
+			},
 			"sourceId": "67ce6b212ad8bf244fb200c6f642cb9acee01f79dee07ca5e6cab30058cbc89c",
 			"arch": "arm64v8",
 			"parents": {
@@ -461191,7 +461955,50 @@
 		"buildId": "de264f23ade3bb1ea9c94811eefeb558f293d3ddbc10d23fe2755dfdf34b0e09",
 		"build": {
 			"img": "oisupport/staging-amd64:de264f23ade3bb1ea9c94811eefeb558f293d3ddbc10d23fe2755dfdf34b0e09",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:cb4893c81bf99036c8bf89bfa814b9a6410be49bc22be0b1b58167084dee0038",
+						"size": 2877,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:68b92732accbffdd8e2491b4c29976634ed92459f5779dac2aad670c967337c7",
+							"org.opencontainers.image.base.name": "redhat/ubi9-minimal:latest",
+							"org.opencontainers.image.created": "2026-10-06T23:01:21Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:de264f23ade3bb1ea9c94811eefeb558f293d3ddbc10d23fe2755dfdf34b0e09@sha256:cb4893c81bf99036c8bf89bfa814b9a6410be49bc22be0b1b58167084dee0038",
+							"org.opencontainers.image.revision": "379b7f13fe4a5ce76a8ec81c8ab45ebc9f9968ed",
+							"org.opencontainers.image.source": "https://github.com/elastic/dockerfiles.git#379b7f13fe4a5ce76a8ec81c8ab45ebc9f9968ed:elasticsearch",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/elasticsearch",
+							"org.opencontainers.image.version": "9.5.5"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:5a2189b40fa1648e725ec18373038d3a9479b9d49c94adf03645d91784544a9e",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:de264f23ade3bb1ea9c94811eefeb558f293d3ddbc10d23fe2755dfdf34b0e09@sha256:5a2189b40fa1648e725ec18373038d3a9479b9d49c94adf03645d91784544a9e",
+							"vnd.docker.reference.digest": "sha256:cb4893c81bf99036c8bf89bfa814b9a6410be49bc22be0b1b58167084dee0038",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:de264f23ade3bb1ea9c94811eefeb558f293d3ddbc10d23fe2755dfdf34b0e09@sha256:d49aded2a3a4387aed62d6278353dfeac6cb32a2c0d7d9b845c3bdd40d3d0134"
+				}
+			},
 			"sourceId": "6a7124ad2c7ec917468178e8c64f77943dd86c58d26390a0a54c1b26436cd844",
 			"arch": "amd64",
 			"parents": {
@@ -461270,7 +462077,51 @@
 		"buildId": "d0104500b4f4545bd225b10f419969f0c0744f48fa05c7f3a07175cae9874a3f",
 		"build": {
 			"img": "oisupport/staging-arm64v8:d0104500b4f4545bd225b10f419969f0c0744f48fa05c7f3a07175cae9874a3f",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:434903cd4e6e592752e626ed88bcdef3fe36f9808260347d039964e7a98702f4",
+						"size": 2879,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:9b01126bb2c06cc0b8463b6a2ae316634601ca5b01520acc00a2299574814bfb",
+							"org.opencontainers.image.base.name": "redhat/ubi9-minimal:latest",
+							"org.opencontainers.image.created": "2026-10-06T23:01:00Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:d0104500b4f4545bd225b10f419969f0c0744f48fa05c7f3a07175cae9874a3f@sha256:434903cd4e6e592752e626ed88bcdef3fe36f9808260347d039964e7a98702f4",
+							"org.opencontainers.image.revision": "379b7f13fe4a5ce76a8ec81c8ab45ebc9f9968ed",
+							"org.opencontainers.image.source": "https://github.com/elastic/dockerfiles.git#379b7f13fe4a5ce76a8ec81c8ab45ebc9f9968ed:elasticsearch",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/elasticsearch",
+							"org.opencontainers.image.version": "9.5.5"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:20393910dfe310a0a807658b924dde8e1b7a5c00667e91844fc84938a3f09172",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:d0104500b4f4545bd225b10f419969f0c0744f48fa05c7f3a07175cae9874a3f@sha256:20393910dfe310a0a807658b924dde8e1b7a5c00667e91844fc84938a3f09172",
+							"vnd.docker.reference.digest": "sha256:434903cd4e6e592752e626ed88bcdef3fe36f9808260347d039964e7a98702f4",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:d0104500b4f4545bd225b10f419969f0c0744f48fa05c7f3a07175cae9874a3f@sha256:df999bdd67a90a28a28e25e2a0038871a23dba10d5bc3acb524238fc8178f8b3"
+				}
+			},
 			"sourceId": "6a7124ad2c7ec917468178e8c64f77943dd86c58d26390a0a54c1b26436cd844",
 			"arch": "arm64v8",
 			"parents": {
@@ -481266,6 +482117,114 @@
 			}
 		}
 	},
+	"0261cdd3d95ed51bba7d1f7f9f9619001bfe477a385b0b0b3865e85881a57e16": {
+		"buildId": "0261cdd3d95ed51bba7d1f7f9f9619001bfe477a385b0b0b3865e85881a57e16",
+		"build": {
+			"img": "oisupport/staging-riscv64:0261cdd3d95ed51bba7d1f7f9f9619001bfe477a385b0b0b3865e85881a57e16",
+			"resolved": null,
+			"sourceId": "ba6b226218e045f1c691158cd0629ce9e89458743441c2e246da0833b1f5d8b2",
+			"arch": "riscv64",
+			"parents": {
+				"php:8.4-apache-trixie": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed"
+			},
+			"resolvedParents": {
+				"php:8.4-apache-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"size": 3824,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-10-06T22:06:44Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"org.opencontainers.image.revision": "79320e28b93fdc720d6f07d150709310cf54e757",
+								"org.opencontainers.image.source": "https://github.com/docker-library/php.git#79320e28b93fdc720d6f07d150709310cf54e757:8.4/trixie/apache",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/php",
+								"org.opencontainers.image.version": "8.4.26-apache-trixie"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+								"vnd.docker.reference.digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:8c802757e383c984057c31a6c088a592d60ceca13be2df724b94dff3253621dc"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "ba6b226218e045f1c691158cd0629ce9e89458743441c2e246da0833b1f5d8b2",
+			"reproducibleGitChecksum": "26d2399b92c4239c4a98580762dd6aba5dda115c7a4a3520ca6872af128355f9",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/friendica/docker.git",
+					"GitFetch": "refs/heads/stable",
+					"GitCommit": "eba9e61bdb9ca9605d38c1f96c6af772e9136790",
+					"Directory": "2026.05/apache",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1790180529
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"friendica:2026.05-apache",
+						"friendica:apache",
+						"friendica:stable-apache",
+						"friendica:2026.05",
+						"friendica:latest",
+						"friendica:stable"
+					],
+					"archTags": [
+						"riscv64/friendica:2026.05-apache",
+						"riscv64/friendica:apache",
+						"riscv64/friendica:stable-apache",
+						"riscv64/friendica:2026.05",
+						"riscv64/friendica:latest",
+						"riscv64/friendica:stable"
+					],
+					"froms": [
+						"php:8.4-apache-trixie"
+					],
+					"lastStageFrom": "php:8.4-apache-trixie",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
+						"os": "linux"
+					},
+					"parents": {
+						"php:8.4-apache-trixie": {
+							"sourceId": "01fa66694b74abecb92e016aa93d48df7dbbac910980e976a2a3ab1ae5ab5fb6",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"aa9ded760eba41da4077fbed8a1aaddfd0623acb43389ed3729f23dc656c7959": {
 		"buildId": "aa9ded760eba41da4077fbed8a1aaddfd0623acb43389ed3729f23dc656c7959",
 		"build": {
@@ -484501,6 +485460,110 @@
 			}
 		}
 	},
+	"08d6f64ec385f408e8b5cfa7f4f471de69317262ca280450b94887f8975d63b6": {
+		"buildId": "08d6f64ec385f408e8b5cfa7f4f471de69317262ca280450b94887f8975d63b6",
+		"build": {
+			"img": "oisupport/staging-riscv64:08d6f64ec385f408e8b5cfa7f4f471de69317262ca280450b94887f8975d63b6",
+			"resolved": null,
+			"sourceId": "31469bd300de7afb1c4528b58848353637a420097435f37160df0b1194ac9a4a",
+			"arch": "riscv64",
+			"parents": {
+				"php:8.4-apache-trixie": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed"
+			},
+			"resolvedParents": {
+				"php:8.4-apache-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"size": 3824,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-10-06T22:06:44Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"org.opencontainers.image.revision": "79320e28b93fdc720d6f07d150709310cf54e757",
+								"org.opencontainers.image.source": "https://github.com/docker-library/php.git#79320e28b93fdc720d6f07d150709310cf54e757:8.4/trixie/apache",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/php",
+								"org.opencontainers.image.version": "8.4.26-apache-trixie"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+								"vnd.docker.reference.digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:8c802757e383c984057c31a6c088a592d60ceca13be2df724b94dff3253621dc"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "31469bd300de7afb1c4528b58848353637a420097435f37160df0b1194ac9a4a",
+			"reproducibleGitChecksum": "56ade15f1b02008ea08fefca1ccdb02fd205f2ab1b7c9e3d30bf3955083365ef",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/friendica/docker.git",
+					"GitFetch": "refs/heads/stable",
+					"GitCommit": "eba9e61bdb9ca9605d38c1f96c6af772e9136790",
+					"Directory": "2026.08-dev/apache",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1790180529
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"friendica:2026.08-dev-apache",
+						"friendica:dev-apache",
+						"friendica:2026.08-dev",
+						"friendica:dev"
+					],
+					"archTags": [
+						"riscv64/friendica:2026.08-dev-apache",
+						"riscv64/friendica:dev-apache",
+						"riscv64/friendica:2026.08-dev",
+						"riscv64/friendica:dev"
+					],
+					"froms": [
+						"php:8.4-apache-trixie"
+					],
+					"lastStageFrom": "php:8.4-apache-trixie",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
+						"os": "linux"
+					},
+					"parents": {
+						"php:8.4-apache-trixie": {
+							"sourceId": "01fa66694b74abecb92e016aa93d48df7dbbac910980e976a2a3ab1ae5ab5fb6",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"b720cd0386f2590a2a3543f04931231a8b5d7c0beb0e9e3d7c7c3b28d956e093": {
 		"buildId": "b720cd0386f2590a2a3543f04931231a8b5d7c0beb0e9e3d7c7c3b28d956e093",
 		"build": {
@@ -487690,6 +488753,110 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"php:8.4-apache-trixie": {
+							"sourceId": "01fa66694b74abecb92e016aa93d48df7dbbac910980e976a2a3ab1ae5ab5fb6",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"63bfafe9dc2bc0287a1c3848d9e5a51f43009f2c0c107b511412a9ec170966ba": {
+		"buildId": "63bfafe9dc2bc0287a1c3848d9e5a51f43009f2c0c107b511412a9ec170966ba",
+		"build": {
+			"img": "oisupport/staging-riscv64:63bfafe9dc2bc0287a1c3848d9e5a51f43009f2c0c107b511412a9ec170966ba",
+			"resolved": null,
+			"sourceId": "60db1f44651f69d847fd4524a29c85c4d468d31c3264a326efc73331a2316bf2",
+			"arch": "riscv64",
+			"parents": {
+				"php:8.4-apache-trixie": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed"
+			},
+			"resolvedParents": {
+				"php:8.4-apache-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"size": 3824,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-10-06T22:06:44Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"org.opencontainers.image.revision": "79320e28b93fdc720d6f07d150709310cf54e757",
+								"org.opencontainers.image.source": "https://github.com/docker-library/php.git#79320e28b93fdc720d6f07d150709310cf54e757:8.4/trixie/apache",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/php",
+								"org.opencontainers.image.version": "8.4.26-apache-trixie"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+								"vnd.docker.reference.digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:8c802757e383c984057c31a6c088a592d60ceca13be2df724b94dff3253621dc"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "60db1f44651f69d847fd4524a29c85c4d468d31c3264a326efc73331a2316bf2",
+			"reproducibleGitChecksum": "3b5d73e86608f4f6b4bc7d73b523548f26a6adab40dec78b37fb218ae56da3ad",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/friendica/docker.git",
+					"GitFetch": "refs/heads/stable",
+					"GitCommit": "eba9e61bdb9ca9605d38c1f96c6af772e9136790",
+					"Directory": "2026.08-rc/apache",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1790180529
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"friendica:2026.08-rc-apache",
+						"friendica:rc-apache",
+						"friendica:2026.08-rc",
+						"friendica:rc"
+					],
+					"archTags": [
+						"riscv64/friendica:2026.08-rc-apache",
+						"riscv64/friendica:rc-apache",
+						"riscv64/friendica:2026.08-rc",
+						"riscv64/friendica:rc"
+					],
+					"froms": [
+						"php:8.4-apache-trixie"
+					],
+					"lastStageFrom": "php:8.4-apache-trixie",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -608690,6 +609857,134 @@
 			}
 		}
 	},
+	"ba0ecf973ab5010e3bd2182f0e8f112fb32d736c47d7b42e9fe8390bb7f6e7ac": {
+		"buildId": "ba0ecf973ab5010e3bd2182f0e8f112fb32d736c47d7b42e9fe8390bb7f6e7ac",
+		"build": {
+			"img": "oisupport/staging-riscv64:ba0ecf973ab5010e3bd2182f0e8f112fb32d736c47d7b42e9fe8390bb7f6e7ac",
+			"resolved": null,
+			"sourceId": "b3048cb80554e45a502a231ab654a274f50833af14fe733c869f3c02cefcf0fb",
+			"arch": "riscv64",
+			"parents": {
+				"php:8.4-apache": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed"
+			},
+			"resolvedParents": {
+				"php:8.4-apache": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"size": 3824,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-10-06T22:06:44Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"org.opencontainers.image.revision": "79320e28b93fdc720d6f07d150709310cf54e757",
+								"org.opencontainers.image.source": "https://github.com/docker-library/php.git#79320e28b93fdc720d6f07d150709310cf54e757:8.4/trixie/apache",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/php",
+								"org.opencontainers.image.version": "8.4.26-apache-trixie"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+								"vnd.docker.reference.digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:8c802757e383c984057c31a6c088a592d60ceca13be2df724b94dff3253621dc"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "b3048cb80554e45a502a231ab654a274f50833af14fe733c869f3c02cefcf0fb",
+			"reproducibleGitChecksum": "f81f58618574da700735b9cc36a2e6917fa19affd83cce4a8b6a55bd66d1c428",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/joomla-docker/docker-joomla.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "e6f0582b4490b3b42a3e902af78da0c24bf03ffb",
+					"Directory": "6.1/php8.4/apache",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1790704972
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"joomla:6.1.4",
+						"joomla:6.1",
+						"joomla:6",
+						"joomla:latest",
+						"joomla:6.1.4-apache",
+						"joomla:6.1-apache",
+						"joomla:6-apache",
+						"joomla:apache",
+						"joomla:6.1.4-php8.4",
+						"joomla:6.1-php8.4",
+						"joomla:6-php8.4",
+						"joomla:php8.4",
+						"joomla:6.1.4-php8.4-apache",
+						"joomla:6.1-php8.4-apache",
+						"joomla:6-php8.4-apache",
+						"joomla:php8.4-apache"
+					],
+					"archTags": [
+						"riscv64/joomla:6.1.4",
+						"riscv64/joomla:6.1",
+						"riscv64/joomla:6",
+						"riscv64/joomla:latest",
+						"riscv64/joomla:6.1.4-apache",
+						"riscv64/joomla:6.1-apache",
+						"riscv64/joomla:6-apache",
+						"riscv64/joomla:apache",
+						"riscv64/joomla:6.1.4-php8.4",
+						"riscv64/joomla:6.1-php8.4",
+						"riscv64/joomla:6-php8.4",
+						"riscv64/joomla:php8.4",
+						"riscv64/joomla:6.1.4-php8.4-apache",
+						"riscv64/joomla:6.1-php8.4-apache",
+						"riscv64/joomla:6-php8.4-apache",
+						"riscv64/joomla:php8.4-apache"
+					],
+					"froms": [
+						"php:8.4-apache"
+					],
+					"lastStageFrom": "php:8.4-apache",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
+						"os": "linux"
+					},
+					"parents": {
+						"php:8.4-apache": {
+							"sourceId": "01fa66694b74abecb92e016aa93d48df7dbbac910980e976a2a3ab1ae5ab5fb6",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"2712d4a17fbc53fab878e3b7378a0848b6e0357712f19c3b6918e99580ce41ab": {
 		"buildId": "2712d4a17fbc53fab878e3b7378a0848b6e0357712f19c3b6918e99580ce41ab",
 		"build": {
@@ -643551,7 +644846,50 @@
 		"buildId": "82c79e63051b3a5203f6c525cbea66c110da81f7b660e72a1acffde2e092c178",
 		"build": {
 			"img": "oisupport/staging-amd64:82c79e63051b3a5203f6c525cbea66c110da81f7b660e72a1acffde2e092c178",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:39d96e464ac44cf1d93f9f2d3d3b4b8f6b047891bcffbfdf44a0312bde41aea3",
+						"size": 3241,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:68b92732accbffdd8e2491b4c29976634ed92459f5779dac2aad670c967337c7",
+							"org.opencontainers.image.base.name": "redhat/ubi9-minimal:latest",
+							"org.opencontainers.image.created": "2026-10-06T23:02:27Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:82c79e63051b3a5203f6c525cbea66c110da81f7b660e72a1acffde2e092c178@sha256:39d96e464ac44cf1d93f9f2d3d3b4b8f6b047891bcffbfdf44a0312bde41aea3",
+							"org.opencontainers.image.revision": "8eec196323810ee2b48f94058ce633665c540e1a",
+							"org.opencontainers.image.source": "https://github.com/elastic/dockerfiles.git#8eec196323810ee2b48f94058ce633665c540e1a:logstash",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/logstash",
+							"org.opencontainers.image.version": "9.4.8"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:1a93ab1a85a83b5c540e7e3456b1b9e11f8826a7e9c3f5ea32eae8eedc069de9",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:82c79e63051b3a5203f6c525cbea66c110da81f7b660e72a1acffde2e092c178@sha256:1a93ab1a85a83b5c540e7e3456b1b9e11f8826a7e9c3f5ea32eae8eedc069de9",
+							"vnd.docker.reference.digest": "sha256:39d96e464ac44cf1d93f9f2d3d3b4b8f6b047891bcffbfdf44a0312bde41aea3",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:82c79e63051b3a5203f6c525cbea66c110da81f7b660e72a1acffde2e092c178@sha256:d6db7c5777ee3e36a10a38babb5188086a8dfaa860d47f2db024913794ec886a"
+				}
+			},
 			"sourceId": "7378c0ef91f2589f631fdb7acad495ebad0a8d0b644ca6626ddff6ed0d4d2a4a",
 			"arch": "amd64",
 			"parents": {
@@ -643627,7 +644965,51 @@
 		"buildId": "be713ca74d29013e3a154b155a9268b02139d9e66d555de443c4eb7b572c120b",
 		"build": {
 			"img": "oisupport/staging-arm64v8:be713ca74d29013e3a154b155a9268b02139d9e66d555de443c4eb7b572c120b",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:e3a087bc2ef8c96330c5a42f79a9c41dc1fbbfcc4bd9945b605dfefb81dde8df",
+						"size": 3243,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:9b01126bb2c06cc0b8463b6a2ae316634601ca5b01520acc00a2299574814bfb",
+							"org.opencontainers.image.base.name": "redhat/ubi9-minimal:latest",
+							"org.opencontainers.image.created": "2026-10-06T23:01:59Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:be713ca74d29013e3a154b155a9268b02139d9e66d555de443c4eb7b572c120b@sha256:e3a087bc2ef8c96330c5a42f79a9c41dc1fbbfcc4bd9945b605dfefb81dde8df",
+							"org.opencontainers.image.revision": "8eec196323810ee2b48f94058ce633665c540e1a",
+							"org.opencontainers.image.source": "https://github.com/elastic/dockerfiles.git#8eec196323810ee2b48f94058ce633665c540e1a:logstash",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/logstash",
+							"org.opencontainers.image.version": "9.4.8"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:33f1fef1837336119174a71b8327ad209b56464d88c4ec93b85ade27ec024c27",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:be713ca74d29013e3a154b155a9268b02139d9e66d555de443c4eb7b572c120b@sha256:33f1fef1837336119174a71b8327ad209b56464d88c4ec93b85ade27ec024c27",
+							"vnd.docker.reference.digest": "sha256:e3a087bc2ef8c96330c5a42f79a9c41dc1fbbfcc4bd9945b605dfefb81dde8df",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:be713ca74d29013e3a154b155a9268b02139d9e66d555de443c4eb7b572c120b@sha256:258452a40686ce9848d801035eb668fb334bf8b31ffb0fb23cb1d31d69471e9a"
+				}
+			},
 			"sourceId": "7378c0ef91f2589f631fdb7acad495ebad0a8d0b644ca6626ddff6ed0d4d2a4a",
 			"arch": "arm64v8",
 			"parents": {
@@ -643705,7 +645087,50 @@
 		"buildId": "53515c586dcf6224aa20b259f426a446fcead33e6127abd084e35fb7b88943ad",
 		"build": {
 			"img": "oisupport/staging-amd64:53515c586dcf6224aa20b259f426a446fcead33e6127abd084e35fb7b88943ad",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:041b12797d282cd4d751312d4b57337487444e7b9839493737b83130e17fe940",
+						"size": 3241,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:68b92732accbffdd8e2491b4c29976634ed92459f5779dac2aad670c967337c7",
+							"org.opencontainers.image.base.name": "redhat/ubi9-minimal:latest",
+							"org.opencontainers.image.created": "2026-10-06T23:04:08Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:53515c586dcf6224aa20b259f426a446fcead33e6127abd084e35fb7b88943ad@sha256:041b12797d282cd4d751312d4b57337487444e7b9839493737b83130e17fe940",
+							"org.opencontainers.image.revision": "379b7f13fe4a5ce76a8ec81c8ab45ebc9f9968ed",
+							"org.opencontainers.image.source": "https://github.com/elastic/dockerfiles.git#379b7f13fe4a5ce76a8ec81c8ab45ebc9f9968ed:logstash",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/logstash",
+							"org.opencontainers.image.version": "9.5.5"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:e34c2fa55bef98a83d177f4689526a14cec13b10a8efc77ac457ee1a54636c16",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:53515c586dcf6224aa20b259f426a446fcead33e6127abd084e35fb7b88943ad@sha256:e34c2fa55bef98a83d177f4689526a14cec13b10a8efc77ac457ee1a54636c16",
+							"vnd.docker.reference.digest": "sha256:041b12797d282cd4d751312d4b57337487444e7b9839493737b83130e17fe940",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:53515c586dcf6224aa20b259f426a446fcead33e6127abd084e35fb7b88943ad@sha256:54d1b5f1e2bed058070165a1fc673b3ce09db867924106597f13dca9bf439180"
+				}
+			},
 			"sourceId": "d74c9629dbbb811d92db299bbd31495c45b3aad7b62f5177ab4e9fe1754f0ee1",
 			"arch": "amd64",
 			"parents": {
@@ -643781,7 +645206,51 @@
 		"buildId": "d406b435209803e9c88a63e36119dca538302d9d62f706d7ab2a6e29bccc14b8",
 		"build": {
 			"img": "oisupport/staging-arm64v8:d406b435209803e9c88a63e36119dca538302d9d62f706d7ab2a6e29bccc14b8",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:34cfc6c472e1ebb27e120bea3ec29d12d91fa6313edadbcb1b9f91f13a6acd28",
+						"size": 3243,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:9b01126bb2c06cc0b8463b6a2ae316634601ca5b01520acc00a2299574814bfb",
+							"org.opencontainers.image.base.name": "redhat/ubi9-minimal:latest",
+							"org.opencontainers.image.created": "2026-10-06T23:02:34Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:d406b435209803e9c88a63e36119dca538302d9d62f706d7ab2a6e29bccc14b8@sha256:34cfc6c472e1ebb27e120bea3ec29d12d91fa6313edadbcb1b9f91f13a6acd28",
+							"org.opencontainers.image.revision": "379b7f13fe4a5ce76a8ec81c8ab45ebc9f9968ed",
+							"org.opencontainers.image.source": "https://github.com/elastic/dockerfiles.git#379b7f13fe4a5ce76a8ec81c8ab45ebc9f9968ed:logstash",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/logstash",
+							"org.opencontainers.image.version": "9.5.5"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:e8587f75158c83c29e3895a22cbbd46428c94c2024fe5d4e1432ddfed258ae42",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:d406b435209803e9c88a63e36119dca538302d9d62f706d7ab2a6e29bccc14b8@sha256:e8587f75158c83c29e3895a22cbbd46428c94c2024fe5d4e1432ddfed258ae42",
+							"vnd.docker.reference.digest": "sha256:34cfc6c472e1ebb27e120bea3ec29d12d91fa6313edadbcb1b9f91f13a6acd28",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:d406b435209803e9c88a63e36119dca538302d9d62f706d7ab2a6e29bccc14b8@sha256:286b7631576260bede46dd31828c95bb1a5913d63ca35d509c54aa07eb2b5300"
+				}
+			},
 			"sourceId": "d74c9629dbbb811d92db299bbd31495c45b3aad7b62f5177ab4e9fe1754f0ee1",
 			"arch": "arm64v8",
 			"parents": {
@@ -652588,6 +654057,118 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"php:8.4-apache": {
+							"sourceId": "01fa66694b74abecb92e016aa93d48df7dbbac910980e976a2a3ab1ae5ab5fb6",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"6a697ceb0f2c2e937caf3defc139034182c65980af068f8fe751088652decb9a": {
+		"buildId": "6a697ceb0f2c2e937caf3defc139034182c65980af068f8fe751088652decb9a",
+		"build": {
+			"img": "oisupport/staging-riscv64:6a697ceb0f2c2e937caf3defc139034182c65980af068f8fe751088652decb9a",
+			"resolved": null,
+			"sourceId": "c5c50234f4f3ba9a2259cb9281745919379e83c7a67955f3b2f0dbd52f226bbd",
+			"arch": "riscv64",
+			"parents": {
+				"php:8.4-apache": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed"
+			},
+			"resolvedParents": {
+				"php:8.4-apache": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"size": 3824,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-10-06T22:06:44Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"org.opencontainers.image.revision": "79320e28b93fdc720d6f07d150709310cf54e757",
+								"org.opencontainers.image.source": "https://github.com/docker-library/php.git#79320e28b93fdc720d6f07d150709310cf54e757:8.4/trixie/apache",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/php",
+								"org.opencontainers.image.version": "8.4.26-apache-trixie"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+								"vnd.docker.reference.digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:8c802757e383c984057c31a6c088a592d60ceca13be2df724b94dff3253621dc"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "c5c50234f4f3ba9a2259cb9281745919379e83c7a67955f3b2f0dbd52f226bbd",
+			"reproducibleGitChecksum": "ffc48eda10e739e4ac6cab1bb158f06ee09e2ab55bf4215ccf4dd7a5fb4c2493",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/matomo-org/docker.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "8e70f7de7b75e4b7cb76239500ce601c97b9dee2",
+					"Directory": "apache",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1790041453
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"matomo:5.14.0-apache",
+						"matomo:5.14-apache",
+						"matomo:5-apache",
+						"matomo:apache",
+						"matomo:5.14.0",
+						"matomo:5.14",
+						"matomo:5",
+						"matomo:latest"
+					],
+					"archTags": [
+						"riscv64/matomo:5.14.0-apache",
+						"riscv64/matomo:5.14-apache",
+						"riscv64/matomo:5-apache",
+						"riscv64/matomo:apache",
+						"riscv64/matomo:5.14.0",
+						"riscv64/matomo:5.14",
+						"riscv64/matomo:5",
+						"riscv64/matomo:latest"
+					],
+					"froms": [
+						"php:8.4-apache"
+					],
+					"lastStageFrom": "php:8.4-apache",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -686208,6 +687789,114 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"php:8.4-apache-trixie": {
+							"sourceId": "01fa66694b74abecb92e016aa93d48df7dbbac910980e976a2a3ab1ae5ab5fb6",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"5bb6389aded7c26f286689e16c73d255772c2fd51212137f35beb77ab1e5dbb1": {
+		"buildId": "5bb6389aded7c26f286689e16c73d255772c2fd51212137f35beb77ab1e5dbb1",
+		"build": {
+			"img": "oisupport/staging-riscv64:5bb6389aded7c26f286689e16c73d255772c2fd51212137f35beb77ab1e5dbb1",
+			"resolved": null,
+			"sourceId": "4a4f63d79f3842cd0741ec3b7500fd005ad7798973fb14d20eeb1b91f9050bf3",
+			"arch": "riscv64",
+			"parents": {
+				"php:8.4-apache-trixie": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed"
+			},
+			"resolvedParents": {
+				"php:8.4-apache-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+							"size": 3824,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-10-06T22:06:44Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"org.opencontainers.image.revision": "79320e28b93fdc720d6f07d150709310cf54e757",
+								"org.opencontainers.image.source": "https://github.com/docker-library/php.git#79320e28b93fdc720d6f07d150709310cf54e757:8.4/trixie/apache",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/php",
+								"org.opencontainers.image.version": "8.4.26-apache-trixie"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:cf929167aed99a86ef8b315dc0334c15c13e4ba28d691ebd39720177fd83ab09",
+								"vnd.docker.reference.digest": "sha256:131ba5a8acd9b6b0142cb3a2655a18fbcb8d9bf77291ecfcbb57517333d408ed",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e81edcccad262cc2875f277ed1c9a73d995c35d4c7748ebdf3087aac9994c47@sha256:8c802757e383c984057c31a6c088a592d60ceca13be2df724b94dff3253621dc"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "4a4f63d79f3842cd0741ec3b7500fd005ad7798973fb14d20eeb1b91f9050bf3",
+			"reproducibleGitChecksum": "8e6270d37da752082d5a397c636739ec51c8d8e9ac015930fca5c91c91dcd11d",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/nextcloud/docker.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "a1206d2467689ecb8597b7e5b753b49dda29b773",
+					"Directory": "33/apache",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1789064796
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"nextcloud:33.0.9-apache",
+						"nextcloud:33.0-apache",
+						"nextcloud:33-apache",
+						"nextcloud:33.0.9",
+						"nextcloud:33.0",
+						"nextcloud:33"
+					],
+					"archTags": [
+						"riscv64/nextcloud:33.0.9-apache",
+						"riscv64/nextcloud:33.0-apache",
+						"riscv64/nextcloud:33-apache",
+						"riscv64/nextcloud:33.0.9",
+						"riscv64/nextcloud:33.0",
+						"riscv64/nextcloud:33"
+					],
+					"froms": [
+						"php:8.4-apache-trixie"
+					],
+					"lastStageFrom": "php:8.4-apache-trixie",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
