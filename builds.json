@@ -845827,7 +845827,50 @@
 		"buildId": "c33e0b7e517e72f83632f727624ab11f2448df6854f1f5c3d694e6b41d16166f",
 		"build": {
 			"img": "oisupport/staging-riscv64:c33e0b7e517e72f83632f727624ab11f2448df6854f1f5c3d694e6b41d16166f",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:20d3a75db7f5d23e955c7237a66915e4a0f320b0dfb360a822b329b826373431",
+						"size": 2310,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:d7226662e5b486b4bb1b0f3acf742d70a02f9af023e79ce8d11a47c5ff107c0c",
+							"org.opencontainers.image.base.name": "buildpack-deps:trixie",
+							"org.opencontainers.image.created": "2026-10-11T17:45:21Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c33e0b7e517e72f83632f727624ab11f2448df6854f1f5c3d694e6b41d16166f@sha256:20d3a75db7f5d23e955c7237a66915e4a0f320b0dfb360a822b329b826373431",
+							"org.opencontainers.image.revision": "6c27e82b81200000d7fef10ed3831a6e67c1d352",
+							"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#6c27e82b81200000d7fef10ed3831a6e67c1d352:4.0/trixie",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+							"org.opencontainers.image.version": "4.0.7-trixie"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:fee5c40a4529963beb2f6c9eea2d56985353477aca3a78169dae87c40061fd51",
+						"size": 842,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c33e0b7e517e72f83632f727624ab11f2448df6854f1f5c3d694e6b41d16166f@sha256:fee5c40a4529963beb2f6c9eea2d56985353477aca3a78169dae87c40061fd51",
+							"vnd.docker.reference.digest": "sha256:20d3a75db7f5d23e955c7237a66915e4a0f320b0dfb360a822b329b826373431",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c33e0b7e517e72f83632f727624ab11f2448df6854f1f5c3d694e6b41d16166f@sha256:2740cd87ccb5f369cc1aff5650a238337d6169dfc8c05a3786dad38ff25e5841"
+				}
+			},
 			"sourceId": "243fb9ef08b0c1df4c78d20cfd614321e564561395f0b638ccbadbd279109458",
 			"arch": "riscv64",
 			"parents": {
