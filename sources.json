@@ -263370,29 +263370,29 @@
 			}
 		}
 	},
-	"1488695e4e4e59bf1253e9e0e5d234c98f117b836ae62cade869d9f01975d52a": {
-		"sourceId": "1488695e4e4e59bf1253e9e0e5d234c98f117b836ae62cade869d9f01975d52a",
-		"reproducibleGitChecksum": "e5d000c9d1f285f419e42ec75fa88ec8798461029fdd03606244688941e04516",
+	"c9df1b3e9b4596757d9951edf68d62a6bd02ebddedb81731093f9b655a8a284c": {
+		"sourceId": "c9df1b3e9b4596757d9951edf68d62a6bd02ebddedb81731093f9b655a8a284c",
+		"reproducibleGitChecksum": "c5dda416bf55276cb3188277ccd4962358061849592f4c19a616a8733613fc30",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/convertigo/convertigo",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "a88d3732ccc395b4a769e618d7e5cad71e4b4ed8",
+				"GitCommit": "e0d6a5ab9a642ea9db24f32f21650063b41ac0ec",
 				"Directory": "docker/default",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1790351292
+				"SOURCE_DATE_EPOCH": 1791540754
 			}
 		],
 		"arches": {
 			"amd64": {
 				"tags": [
-					"convertigo:8.4.5",
+					"convertigo:8.4.6",
 					"convertigo:8.4",
 					"convertigo:latest"
 				],
 				"archTags": [
-					"amd64/convertigo:8.4.5",
+					"amd64/convertigo:8.4.6",
 					"amd64/convertigo:8.4",
 					"amd64/convertigo:latest"
 				],
@@ -263414,12 +263414,12 @@
 			},
 			"arm64v8": {
 				"tags": [
-					"convertigo:8.4.5",
+					"convertigo:8.4.6",
 					"convertigo:8.4",
 					"convertigo:latest"
 				],
 				"archTags": [
-					"arm64v8/convertigo:8.4.5",
+					"arm64v8/convertigo:8.4.6",
 					"arm64v8/convertigo:8.4",
 					"arm64v8/convertigo:latest"
 				],
@@ -263436,6 +263436,74 @@
 				"parents": {
 					"tomcat:9-jdk25-temurin-noble": {
 						"sourceId": "91b0e320397d73e59151ab84d278e487b7c67ae92166970d1183b8501a348f97",
+						"pin": null
+					}
+				}
+			}
+		}
+	},
+	"742558f54fad4f32dc8113784c1f00d23fbb10767a522849ce178257dd965574": {
+		"sourceId": "742558f54fad4f32dc8113784c1f00d23fbb10767a522849ce178257dd965574",
+		"reproducibleGitChecksum": "f03ad144e4187e1cc840984042c2496d178d482348d6b69fc1df39ce8ef44ebd",
+		"entries": [
+			{
+				"GitRepo": "https://github.com/convertigo/convertigo",
+				"GitFetch": "refs/tags/8.3.14",
+				"GitCommit": "6f80dacf263413bb1e03b27ffba6d6dfb09e2a35",
+				"Directory": "docker/default",
+				"File": "Dockerfile",
+				"Builder": "",
+				"SOURCE_DATE_EPOCH": 1791476714
+			}
+		],
+		"arches": {
+			"amd64": {
+				"tags": [
+					"convertigo:8.3.14",
+					"convertigo:8.3"
+				],
+				"archTags": [
+					"amd64/convertigo:8.3.14",
+					"amd64/convertigo:8.3"
+				],
+				"froms": [
+					"tomcat:9-jdk21-temurin-jammy"
+				],
+				"lastStageFrom": "tomcat:9-jdk21-temurin-jammy",
+				"platformString": "linux/amd64",
+				"platform": {
+					"architecture": "amd64",
+					"os": "linux"
+				},
+				"parents": {
+					"tomcat:9-jdk21-temurin-jammy": {
+						"sourceId": "c1fc5efb3faebf15e8ff65a22183040f10f8835f3df02810e4260f0b4b6c3660",
+						"pin": null
+					}
+				}
+			},
+			"arm64v8": {
+				"tags": [
+					"convertigo:8.3.14",
+					"convertigo:8.3"
+				],
+				"archTags": [
+					"arm64v8/convertigo:8.3.14",
+					"arm64v8/convertigo:8.3"
+				],
+				"froms": [
+					"tomcat:9-jdk21-temurin-jammy"
+				],
+				"lastStageFrom": "tomcat:9-jdk21-temurin-jammy",
+				"platformString": "linux/arm64/v8",
+				"platform": {
+					"architecture": "arm64",
+					"os": "linux",
+					"variant": "v8"
+				},
+				"parents": {
+					"tomcat:9-jdk21-temurin-jammy": {
+						"sourceId": "c1fc5efb3faebf15e8ff65a22183040f10f8835f3df02810e4260f0b4b6c3660",
 						"pin": null
 					}
 				}
