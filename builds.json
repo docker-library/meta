@@ -298452,7 +298452,51 @@
 		"buildId": "0df0df140e5b43708f7ea34c266846a002c5751b5ad83c37d1ebb7facedb0b1e",
 		"build": {
 			"img": "oisupport/staging-arm32v7:0df0df140e5b43708f7ea34c266846a002c5751b5ad83c37d1ebb7facedb0b1e",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:05a733f35113000f03f1d87741a69568fde604b2f27845b2a2e3228e2c1ca7ff",
+						"size": 4180,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm32v7",
+							"org.opencontainers.image.base.digest": "sha256:4a1c88a95b94f36697ea604bae7168e0d154d0561e932a23052abc6754e2ec78",
+							"org.opencontainers.image.base.name": "php:8.4-alpine",
+							"org.opencontainers.image.created": "2026-10-13T21:06:37Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:0df0df140e5b43708f7ea34c266846a002c5751b5ad83c37d1ebb7facedb0b1e@sha256:05a733f35113000f03f1d87741a69568fde604b2f27845b2a2e3228e2c1ca7ff",
+							"org.opencontainers.image.revision": "346d8e4559d4fb0af83cd3b4d48080bf18070758",
+							"org.opencontainers.image.source": "https://github.com/TimWolla/docker-adminer.git#346d8e4559d4fb0af83cd3b4d48080bf18070758:6",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/adminer",
+							"org.opencontainers.image.version": "6.1.2"
+						},
+						"platform": {
+							"architecture": "arm",
+							"os": "linux",
+							"variant": "v7"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:07091b78d1f7cb6c556f18e814dbdd9db5a9ad837f897fcead3c9f623b833f56",
+						"size": 567,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm32v7",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:0df0df140e5b43708f7ea34c266846a002c5751b5ad83c37d1ebb7facedb0b1e@sha256:07091b78d1f7cb6c556f18e814dbdd9db5a9ad837f897fcead3c9f623b833f56",
+							"vnd.docker.reference.digest": "sha256:05a733f35113000f03f1d87741a69568fde604b2f27845b2a2e3228e2c1ca7ff",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:0df0df140e5b43708f7ea34c266846a002c5751b5ad83c37d1ebb7facedb0b1e@sha256:ac7854210fc273c26faffff15d6670b7ad45af93379c70a253608015c6840d7f"
+				}
+			},
 			"sourceId": "25dc76a358b06f6ef31e5ffcea001a45cb1a906c73f6243a35ec395f236a1c5c",
 			"arch": "arm32v7",
 			"parents": {
@@ -379206,55 +379250,12 @@
 			}
 		}
 	},
-	"5ce2ad055893f3d28086bed16e2e9ea2e5ea004868c218bf49911a32dab2a785": {
-		"buildId": "5ce2ad055893f3d28086bed16e2e9ea2e5ea004868c218bf49911a32dab2a785",
+	"f51632fd4b5cb5c1c79b05b50dbaae6dd8c47a4159df1b8fe5b877a4d0defede": {
+		"buildId": "f51632fd4b5cb5c1c79b05b50dbaae6dd8c47a4159df1b8fe5b877a4d0defede",
 		"build": {
-			"img": "oisupport/staging-amd64:5ce2ad055893f3d28086bed16e2e9ea2e5ea004868c218bf49911a32dab2a785",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:6785bd4bec3d406fbba8d60f8ec258e6ddec38bf0fbfd700916790b697f9ab8e",
-						"size": 3051,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:918311b7b6c4c6f68b232ba516584925f6c78ad82b6fd534b98979df6438e483",
-							"org.opencontainers.image.base.name": "debian:trixie-slim",
-							"org.opencontainers.image.created": "2026-10-06T01:41:21Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5ce2ad055893f3d28086bed16e2e9ea2e5ea004868c218bf49911a32dab2a785@sha256:6785bd4bec3d406fbba8d60f8ec258e6ddec38bf0fbfd700916790b697f9ab8e",
-							"org.opencontainers.image.revision": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-							"org.opencontainers.image.source": "https://github.com/apache/couchdb-docker.git#a76020b130d5d2e2a0e54f9437d90d35652b8707:3.5.2.1",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/couchdb",
-							"org.opencontainers.image.version": "latest"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:c84555466270b14f8c94a9c442b5e2a5915b4728e26b398f64f81261546beb1e",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5ce2ad055893f3d28086bed16e2e9ea2e5ea004868c218bf49911a32dab2a785@sha256:c84555466270b14f8c94a9c442b5e2a5915b4728e26b398f64f81261546beb1e",
-							"vnd.docker.reference.digest": "sha256:6785bd4bec3d406fbba8d60f8ec258e6ddec38bf0fbfd700916790b697f9ab8e",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5ce2ad055893f3d28086bed16e2e9ea2e5ea004868c218bf49911a32dab2a785@sha256:27a41f6f22ea483c79c619104efce9276f2b89428f7f628ac32e3ddc38086d74"
-				}
-			},
-			"sourceId": "e3f8273ccb53f0e61f73cfe40a2c068f431a8f09d98b7c0c885d376acc1a3b8a",
+			"img": "oisupport/staging-amd64:f51632fd4b5cb5c1c79b05b50dbaae6dd8c47a4159df1b8fe5b877a4d0defede",
+			"resolved": null,
+			"sourceId": "ddc9b67c25138113b681dc70b887e1c725019c9b4355aa48b295b8066dd6c746",
 			"arch": "amd64",
 			"parents": {
 				"debian:trixie-slim": "sha256:918311b7b6c4c6f68b232ba516584925f6c78ad82b6fd534b98979df6438e483"
@@ -379306,32 +379307,30 @@
 			}
 		},
 		"source": {
-			"sourceId": "e3f8273ccb53f0e61f73cfe40a2c068f431a8f09d98b7c0c885d376acc1a3b8a",
-			"reproducibleGitChecksum": "f0778ea05bf54292e85b3c5b13a63e953b0612d94347f3685f3025cd091549a5",
+			"sourceId": "ddc9b67c25138113b681dc70b887e1c725019c9b4355aa48b295b8066dd6c746",
+			"reproducibleGitChecksum": "95bf0c4fa1d0d9687aa0369b38340d95be745e5bb48d13b2139aeb84f29ffc5e",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/apache/couchdb-docker",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-					"Directory": "3.5.2.1",
+					"GitCommit": "a61e7b8f4bbe5f0aa4bf1e2a53514989792b463c",
+					"Directory": "3.5.3",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1782249646
+					"SOURCE_DATE_EPOCH": 1791870096
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
 						"couchdb:latest",
-						"couchdb:3.5.2.1",
-						"couchdb:3.5.2",
+						"couchdb:3.5.3",
 						"couchdb:3.5",
 						"couchdb:3"
 					],
 					"archTags": [
 						"amd64/couchdb:latest",
-						"amd64/couchdb:3.5.2.1",
-						"amd64/couchdb:3.5.2",
+						"amd64/couchdb:3.5.3",
 						"amd64/couchdb:3.5",
 						"amd64/couchdb:3"
 					],
@@ -379354,56 +379353,12 @@
 			}
 		}
 	},
-	"092bd2dc124e0b33a26dc3ef27a26eb4dbd0a313fd5d6b75260f2325c7cd4679": {
-		"buildId": "092bd2dc124e0b33a26dc3ef27a26eb4dbd0a313fd5d6b75260f2325c7cd4679",
+	"1c4e8f43faefe22276ec22a942c0d99cf239527fb627caa4e8ce96765b21b51e": {
+		"buildId": "1c4e8f43faefe22276ec22a942c0d99cf239527fb627caa4e8ce96765b21b51e",
 		"build": {
-			"img": "oisupport/staging-arm64v8:092bd2dc124e0b33a26dc3ef27a26eb4dbd0a313fd5d6b75260f2325c7cd4679",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:5a1991c184104a164e1df74139989f0bd7c8cac320ac79de3e15cb3c194d3eb4",
-						"size": 3053,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:a2ca65377c251208de42e1a2722cb949211236c161b634f6f3663754e2d06850",
-							"org.opencontainers.image.base.name": "debian:trixie-slim",
-							"org.opencontainers.image.created": "2026-10-06T01:44:33Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:092bd2dc124e0b33a26dc3ef27a26eb4dbd0a313fd5d6b75260f2325c7cd4679@sha256:5a1991c184104a164e1df74139989f0bd7c8cac320ac79de3e15cb3c194d3eb4",
-							"org.opencontainers.image.revision": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-							"org.opencontainers.image.source": "https://github.com/apache/couchdb-docker.git#a76020b130d5d2e2a0e54f9437d90d35652b8707:3.5.2.1",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/couchdb",
-							"org.opencontainers.image.version": "latest"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:216f5178059563de938b4056b60ab5e86fdef183ec35b9f06c26a65f9f00ab26",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:092bd2dc124e0b33a26dc3ef27a26eb4dbd0a313fd5d6b75260f2325c7cd4679@sha256:216f5178059563de938b4056b60ab5e86fdef183ec35b9f06c26a65f9f00ab26",
-							"vnd.docker.reference.digest": "sha256:5a1991c184104a164e1df74139989f0bd7c8cac320ac79de3e15cb3c194d3eb4",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:092bd2dc124e0b33a26dc3ef27a26eb4dbd0a313fd5d6b75260f2325c7cd4679@sha256:501471e36fc714a99ae7546c55c935545bd6fcc601198a1e3fec566485eacd2d"
-				}
-			},
-			"sourceId": "e3f8273ccb53f0e61f73cfe40a2c068f431a8f09d98b7c0c885d376acc1a3b8a",
+			"img": "oisupport/staging-arm64v8:1c4e8f43faefe22276ec22a942c0d99cf239527fb627caa4e8ce96765b21b51e",
+			"resolved": null,
+			"sourceId": "ddc9b67c25138113b681dc70b887e1c725019c9b4355aa48b295b8066dd6c746",
 			"arch": "arm64v8",
 			"parents": {
 				"debian:trixie-slim": "sha256:a2ca65377c251208de42e1a2722cb949211236c161b634f6f3663754e2d06850"
@@ -379456,32 +379411,30 @@
 			}
 		},
 		"source": {
-			"sourceId": "e3f8273ccb53f0e61f73cfe40a2c068f431a8f09d98b7c0c885d376acc1a3b8a",
-			"reproducibleGitChecksum": "f0778ea05bf54292e85b3c5b13a63e953b0612d94347f3685f3025cd091549a5",
+			"sourceId": "ddc9b67c25138113b681dc70b887e1c725019c9b4355aa48b295b8066dd6c746",
+			"reproducibleGitChecksum": "95bf0c4fa1d0d9687aa0369b38340d95be745e5bb48d13b2139aeb84f29ffc5e",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/apache/couchdb-docker",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-					"Directory": "3.5.2.1",
+					"GitCommit": "a61e7b8f4bbe5f0aa4bf1e2a53514989792b463c",
+					"Directory": "3.5.3",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1782249646
+					"SOURCE_DATE_EPOCH": 1791870096
 				}
 			],
 			"arches": {
 				"arm64v8": {
 					"tags": [
 						"couchdb:latest",
-						"couchdb:3.5.2.1",
-						"couchdb:3.5.2",
+						"couchdb:3.5.3",
 						"couchdb:3.5",
 						"couchdb:3"
 					],
 					"archTags": [
 						"arm64v8/couchdb:latest",
-						"arm64v8/couchdb:3.5.2.1",
-						"arm64v8/couchdb:3.5.2",
+						"arm64v8/couchdb:3.5.3",
 						"arm64v8/couchdb:3.5",
 						"arm64v8/couchdb:3"
 					],
@@ -379505,55 +379458,12 @@
 			}
 		}
 	},
-	"4e8ccfa8ed44570ea8b9c88948369007dbacc9b6f8d0965de717bfda9c448d49": {
-		"buildId": "4e8ccfa8ed44570ea8b9c88948369007dbacc9b6f8d0965de717bfda9c448d49",
+	"bde7c46b1da5e4fb415609a6ac8f5d8b99d6b18697ea7caeab4527c9093ecd02": {
+		"buildId": "bde7c46b1da5e4fb415609a6ac8f5d8b99d6b18697ea7caeab4527c9093ecd02",
 		"build": {
-			"img": "oisupport/staging-amd64:4e8ccfa8ed44570ea8b9c88948369007dbacc9b6f8d0965de717bfda9c448d49",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:dd5c49cdde13432f67121e9c19ee703ba2579d459f19285e3d52a97ac9606131",
-						"size": 2694,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:918311b7b6c4c6f68b232ba516584925f6c78ad82b6fd534b98979df6438e483",
-							"org.opencontainers.image.base.name": "debian:trixie-slim",
-							"org.opencontainers.image.created": "2026-10-06T01:41:24Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:4e8ccfa8ed44570ea8b9c88948369007dbacc9b6f8d0965de717bfda9c448d49@sha256:dd5c49cdde13432f67121e9c19ee703ba2579d459f19285e3d52a97ac9606131",
-							"org.opencontainers.image.revision": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-							"org.opencontainers.image.source": "https://github.com/apache/couchdb-docker.git#a76020b130d5d2e2a0e54f9437d90d35652b8707:3.5.2.1-nouveau",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/couchdb",
-							"org.opencontainers.image.version": "3.5.2.1-nouveau"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:552d3d14c5b69e65c8e61673444c7caff7d14358678fe3e4b3fd4fd6f0f6c50b",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:4e8ccfa8ed44570ea8b9c88948369007dbacc9b6f8d0965de717bfda9c448d49@sha256:552d3d14c5b69e65c8e61673444c7caff7d14358678fe3e4b3fd4fd6f0f6c50b",
-							"vnd.docker.reference.digest": "sha256:dd5c49cdde13432f67121e9c19ee703ba2579d459f19285e3d52a97ac9606131",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:4e8ccfa8ed44570ea8b9c88948369007dbacc9b6f8d0965de717bfda9c448d49@sha256:0b0137f8e026e8f968aba78306b0cab84362f8a1b1f718416dafad5ee1f762be"
-				}
-			},
-			"sourceId": "8994ae6dcd866453e27723209883a48d1bb2380175dd1fa0188917a1d81a3ba9",
+			"img": "oisupport/staging-amd64:bde7c46b1da5e4fb415609a6ac8f5d8b99d6b18697ea7caeab4527c9093ecd02",
+			"resolved": null,
+			"sourceId": "3eebb8c51d4cc2a5ba5c5bab71143f5deea5eaefcd41177f7c585d2e9a72ddf0",
 			"arch": "amd64",
 			"parents": {
 				"debian:trixie-slim": "sha256:918311b7b6c4c6f68b232ba516584925f6c78ad82b6fd534b98979df6438e483"
@@ -379605,30 +379515,28 @@
 			}
 		},
 		"source": {
-			"sourceId": "8994ae6dcd866453e27723209883a48d1bb2380175dd1fa0188917a1d81a3ba9",
-			"reproducibleGitChecksum": "8e2ff8904106daac4f4854fd133c10dc13c76fc55abd67f57ca6d2b3c3924dc7",
+			"sourceId": "3eebb8c51d4cc2a5ba5c5bab71143f5deea5eaefcd41177f7c585d2e9a72ddf0",
+			"reproducibleGitChecksum": "80062e1e4afca8152373ad64994e03fe1b7b4ad2cc8315e00d85dd8c204b1a2a",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/apache/couchdb-docker",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-					"Directory": "3.5.2.1-nouveau",
+					"GitCommit": "a61e7b8f4bbe5f0aa4bf1e2a53514989792b463c",
+					"Directory": "3.5.3-nouveau",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1782249646
+					"SOURCE_DATE_EPOCH": 1791870096
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
-						"couchdb:3.5.2.1-nouveau",
-						"couchdb:3.5.2-nouveau",
+						"couchdb:3.5.3-nouveau",
 						"couchdb:3.5-nouveau",
 						"couchdb:3-nouveau"
 					],
 					"archTags": [
-						"amd64/couchdb:3.5.2.1-nouveau",
-						"amd64/couchdb:3.5.2-nouveau",
+						"amd64/couchdb:3.5.3-nouveau",
 						"amd64/couchdb:3.5-nouveau",
 						"amd64/couchdb:3-nouveau"
 					],
@@ -379651,56 +379559,12 @@
 			}
 		}
 	},
-	"9fe7e3010f3202e8e91b33412f16111f73958bf6f779dfa9e354674d470c5816": {
-		"buildId": "9fe7e3010f3202e8e91b33412f16111f73958bf6f779dfa9e354674d470c5816",
+	"0739211ff46382b915f5fd6c5c31ffec92c057aba4faba63fb5a3accb8690aea": {
+		"buildId": "0739211ff46382b915f5fd6c5c31ffec92c057aba4faba63fb5a3accb8690aea",
 		"build": {
-			"img": "oisupport/staging-arm64v8:9fe7e3010f3202e8e91b33412f16111f73958bf6f779dfa9e354674d470c5816",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:2845fde5c374b7551ca38a4f544a086d5bec1c3690022f397aee5a018e0acf82",
-						"size": 2696,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:a2ca65377c251208de42e1a2722cb949211236c161b634f6f3663754e2d06850",
-							"org.opencontainers.image.base.name": "debian:trixie-slim",
-							"org.opencontainers.image.created": "2026-10-06T01:44:37Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:9fe7e3010f3202e8e91b33412f16111f73958bf6f779dfa9e354674d470c5816@sha256:2845fde5c374b7551ca38a4f544a086d5bec1c3690022f397aee5a018e0acf82",
-							"org.opencontainers.image.revision": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-							"org.opencontainers.image.source": "https://github.com/apache/couchdb-docker.git#a76020b130d5d2e2a0e54f9437d90d35652b8707:3.5.2.1-nouveau",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/couchdb",
-							"org.opencontainers.image.version": "3.5.2.1-nouveau"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:2e7d7bc21b3394ac75f93e515ea9d9d495ccc7459f67a5fa95265d7b066a5b64",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:9fe7e3010f3202e8e91b33412f16111f73958bf6f779dfa9e354674d470c5816@sha256:2e7d7bc21b3394ac75f93e515ea9d9d495ccc7459f67a5fa95265d7b066a5b64",
-							"vnd.docker.reference.digest": "sha256:2845fde5c374b7551ca38a4f544a086d5bec1c3690022f397aee5a018e0acf82",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:9fe7e3010f3202e8e91b33412f16111f73958bf6f779dfa9e354674d470c5816@sha256:958a30c121e7a6f8f3e7ad8d51536d6aa1954c2c9fd55ab38028f09aac49e1ea"
-				}
-			},
-			"sourceId": "8994ae6dcd866453e27723209883a48d1bb2380175dd1fa0188917a1d81a3ba9",
+			"img": "oisupport/staging-arm64v8:0739211ff46382b915f5fd6c5c31ffec92c057aba4faba63fb5a3accb8690aea",
+			"resolved": null,
+			"sourceId": "3eebb8c51d4cc2a5ba5c5bab71143f5deea5eaefcd41177f7c585d2e9a72ddf0",
 			"arch": "arm64v8",
 			"parents": {
 				"debian:trixie-slim": "sha256:a2ca65377c251208de42e1a2722cb949211236c161b634f6f3663754e2d06850"
@@ -379753,30 +379617,28 @@
 			}
 		},
 		"source": {
-			"sourceId": "8994ae6dcd866453e27723209883a48d1bb2380175dd1fa0188917a1d81a3ba9",
-			"reproducibleGitChecksum": "8e2ff8904106daac4f4854fd133c10dc13c76fc55abd67f57ca6d2b3c3924dc7",
+			"sourceId": "3eebb8c51d4cc2a5ba5c5bab71143f5deea5eaefcd41177f7c585d2e9a72ddf0",
+			"reproducibleGitChecksum": "80062e1e4afca8152373ad64994e03fe1b7b4ad2cc8315e00d85dd8c204b1a2a",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/apache/couchdb-docker",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-					"Directory": "3.5.2.1-nouveau",
+					"GitCommit": "a61e7b8f4bbe5f0aa4bf1e2a53514989792b463c",
+					"Directory": "3.5.3-nouveau",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1782249646
+					"SOURCE_DATE_EPOCH": 1791870096
 				}
 			],
 			"arches": {
 				"arm64v8": {
 					"tags": [
-						"couchdb:3.5.2.1-nouveau",
-						"couchdb:3.5.2-nouveau",
+						"couchdb:3.5.3-nouveau",
 						"couchdb:3.5-nouveau",
 						"couchdb:3-nouveau"
 					],
 					"archTags": [
-						"arm64v8/couchdb:3.5.2.1-nouveau",
-						"arm64v8/couchdb:3.5.2-nouveau",
+						"arm64v8/couchdb:3.5.3-nouveau",
 						"arm64v8/couchdb:3.5-nouveau",
 						"arm64v8/couchdb:3-nouveau"
 					],
@@ -379793,580 +379655,6 @@
 					"parents": {
 						"debian:trixie-slim": {
 							"sourceId": "50f71e99b326a34c733e49a23233c7034f9c8763b7c2f6786dfbcd51e6a96900",
-							"pin": null
-						}
-					}
-				}
-			}
-		}
-	},
-	"6cfb9ae6aa25c45c7a76e7f310d2668aa5c5d00ac682ffd17d555a5e4253cdf5": {
-		"buildId": "6cfb9ae6aa25c45c7a76e7f310d2668aa5c5d00ac682ffd17d555a5e4253cdf5",
-		"build": {
-			"img": "oisupport/staging-amd64:6cfb9ae6aa25c45c7a76e7f310d2668aa5c5d00ac682ffd17d555a5e4253cdf5",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:67c4a24dd47d9a9728eb7205cdc44619d540da648f74c6ebbbf03a9c57533f2e",
-						"size": 3049,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:a4672c0cb26fbdde88e38fa2dfb6c681942306680e41e4378b28770b6e79ee91",
-							"org.opencontainers.image.base.name": "debian:bookworm-slim",
-							"org.opencontainers.image.created": "2026-10-06T01:41:28Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:6cfb9ae6aa25c45c7a76e7f310d2668aa5c5d00ac682ffd17d555a5e4253cdf5@sha256:67c4a24dd47d9a9728eb7205cdc44619d540da648f74c6ebbbf03a9c57533f2e",
-							"org.opencontainers.image.revision": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-							"org.opencontainers.image.source": "https://github.com/apache/couchdb-docker.git#a76020b130d5d2e2a0e54f9437d90d35652b8707:3.4.3",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/couchdb",
-							"org.opencontainers.image.version": "3.4.3"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:d407d72044166090039d29fbc96496b04f50b36b980410fff02bbc7ef1a8b384",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:6cfb9ae6aa25c45c7a76e7f310d2668aa5c5d00ac682ffd17d555a5e4253cdf5@sha256:d407d72044166090039d29fbc96496b04f50b36b980410fff02bbc7ef1a8b384",
-							"vnd.docker.reference.digest": "sha256:67c4a24dd47d9a9728eb7205cdc44619d540da648f74c6ebbbf03a9c57533f2e",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:6cfb9ae6aa25c45c7a76e7f310d2668aa5c5d00ac682ffd17d555a5e4253cdf5@sha256:0cf7edaa5d7743ea894b4da5d907caaa1ba6b78458279546c2f0b08115021b1a"
-				}
-			},
-			"sourceId": "525862cb3c14a560c838366a57dbc7bdcc9627069ad77f16a094b0a3af1930e4",
-			"arch": "amd64",
-			"parents": {
-				"debian:bookworm-slim": "sha256:a4672c0cb26fbdde88e38fa2dfb6c681942306680e41e4378b28770b6e79ee91"
-			},
-			"resolvedParents": {
-				"debian:bookworm-slim": {
-					"schemaVersion": 2,
-					"mediaType": "application/vnd.oci.image.index.v1+json",
-					"manifests": [
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:a4672c0cb26fbdde88e38fa2dfb6c681942306680e41e4378b28770b6e79ee91",
-							"size": 1021,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "amd64",
-								"org.opencontainers.image.base.name": "scratch",
-								"org.opencontainers.image.created": "2026-10-05T00:00:00Z",
-								"org.opencontainers.image.ref.name": "oisupport/staging-amd64:7644bca121201f8d85d13ecef5800e3fdb0321477e105d28b1ba8a675085c7ba@sha256:a4672c0cb26fbdde88e38fa2dfb6c681942306680e41e4378b28770b6e79ee91",
-								"org.opencontainers.image.revision": "a3751996111ce2c1c904050c84440184535e23b1",
-								"org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
-								"org.opencontainers.image.url": "https://hub.docker.com/_/debian",
-								"org.opencontainers.image.version": "bookworm-slim"
-							},
-							"platform": {
-								"architecture": "amd64",
-								"os": "linux"
-							}
-						},
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:dd0ada2da3f11d4d164cdfc61983795f22c2e820cf35f6868e06a102a65bc361",
-							"size": 562,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "amd64",
-								"org.opencontainers.image.ref.name": "oisupport/staging-amd64:7644bca121201f8d85d13ecef5800e3fdb0321477e105d28b1ba8a675085c7ba@sha256:dd0ada2da3f11d4d164cdfc61983795f22c2e820cf35f6868e06a102a65bc361",
-								"vnd.docker.reference.digest": "sha256:a4672c0cb26fbdde88e38fa2dfb6c681942306680e41e4378b28770b6e79ee91",
-								"vnd.docker.reference.type": "attestation-manifest"
-							},
-							"platform": {
-								"architecture": "unknown",
-								"os": "unknown"
-							}
-						}
-					],
-					"annotations": {
-						"org.opencontainers.image.ref.name": "oisupport/staging-amd64:7644bca121201f8d85d13ecef5800e3fdb0321477e105d28b1ba8a675085c7ba@sha256:1fad0738607d9b53880771bd0e87433c9267a37c50d95b4860b68f53bf7db2b8"
-					}
-				}
-			}
-		},
-		"source": {
-			"sourceId": "525862cb3c14a560c838366a57dbc7bdcc9627069ad77f16a094b0a3af1930e4",
-			"reproducibleGitChecksum": "9244ad3188a8a230f6aef0dcb842cd23b7e8bc181e470711e359958a5d01ab0b",
-			"entries": [
-				{
-					"GitRepo": "https://github.com/apache/couchdb-docker",
-					"GitFetch": "refs/heads/main",
-					"GitCommit": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-					"Directory": "3.4.3",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1782249646
-				}
-			],
-			"arches": {
-				"amd64": {
-					"tags": [
-						"couchdb:3.4.3",
-						"couchdb:3.4"
-					],
-					"archTags": [
-						"amd64/couchdb:3.4.3",
-						"amd64/couchdb:3.4"
-					],
-					"froms": [
-						"debian:bookworm-slim"
-					],
-					"lastStageFrom": "debian:bookworm-slim",
-					"platformString": "linux/amd64",
-					"platform": {
-						"architecture": "amd64",
-						"os": "linux"
-					},
-					"parents": {
-						"debian:bookworm-slim": {
-							"sourceId": "a4077ad1c8ba150982076ba85ff06fd3241eefd289655dbc59c74ec3deb71e48",
-							"pin": null
-						}
-					}
-				}
-			}
-		}
-	},
-	"2168b3a6125aef79ef54376ebd4a2fa7a42a71fe56c5da795fe1ec837f0375fb": {
-		"buildId": "2168b3a6125aef79ef54376ebd4a2fa7a42a71fe56c5da795fe1ec837f0375fb",
-		"build": {
-			"img": "oisupport/staging-arm64v8:2168b3a6125aef79ef54376ebd4a2fa7a42a71fe56c5da795fe1ec837f0375fb",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:475b19bfc8fa1bffd7cb7ef9a9be79fb4c221bd46ac931de1b0f3040f5543cef",
-						"size": 3051,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:a1b86db52ce3daef089e45aabe36dfec4091f82464c25c1fdcf03de197cbe82a",
-							"org.opencontainers.image.base.name": "debian:bookworm-slim",
-							"org.opencontainers.image.created": "2026-10-06T01:44:42Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2168b3a6125aef79ef54376ebd4a2fa7a42a71fe56c5da795fe1ec837f0375fb@sha256:475b19bfc8fa1bffd7cb7ef9a9be79fb4c221bd46ac931de1b0f3040f5543cef",
-							"org.opencontainers.image.revision": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-							"org.opencontainers.image.source": "https://github.com/apache/couchdb-docker.git#a76020b130d5d2e2a0e54f9437d90d35652b8707:3.4.3",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/couchdb",
-							"org.opencontainers.image.version": "3.4.3"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:a521808ae52db8bc90cd50b1dfa9627bd04d325e409785b756c3dfa1363572e1",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2168b3a6125aef79ef54376ebd4a2fa7a42a71fe56c5da795fe1ec837f0375fb@sha256:a521808ae52db8bc90cd50b1dfa9627bd04d325e409785b756c3dfa1363572e1",
-							"vnd.docker.reference.digest": "sha256:475b19bfc8fa1bffd7cb7ef9a9be79fb4c221bd46ac931de1b0f3040f5543cef",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2168b3a6125aef79ef54376ebd4a2fa7a42a71fe56c5da795fe1ec837f0375fb@sha256:85f96ac3fe1464cb6b90da8c14680b03f75f0b2e9fca2a3bb674db71dff1a2dd"
-				}
-			},
-			"sourceId": "525862cb3c14a560c838366a57dbc7bdcc9627069ad77f16a094b0a3af1930e4",
-			"arch": "arm64v8",
-			"parents": {
-				"debian:bookworm-slim": "sha256:a1b86db52ce3daef089e45aabe36dfec4091f82464c25c1fdcf03de197cbe82a"
-			},
-			"resolvedParents": {
-				"debian:bookworm-slim": {
-					"schemaVersion": 2,
-					"mediaType": "application/vnd.oci.image.index.v1+json",
-					"manifests": [
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:a1b86db52ce3daef089e45aabe36dfec4091f82464c25c1fdcf03de197cbe82a",
-							"size": 1041,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "arm64v8",
-								"org.opencontainers.image.base.name": "scratch",
-								"org.opencontainers.image.created": "2026-10-05T00:00:00Z",
-								"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5968a1139e32eb2e4ba53600e978a0e8da1fac3e7772142dd57356b70adf1051@sha256:a1b86db52ce3daef089e45aabe36dfec4091f82464c25c1fdcf03de197cbe82a",
-								"org.opencontainers.image.revision": "cf1f4a45447842b45e9952e0f018ae734a7341c7",
-								"org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
-								"org.opencontainers.image.url": "https://hub.docker.com/_/debian",
-								"org.opencontainers.image.version": "bookworm-slim"
-							},
-							"platform": {
-								"architecture": "arm64",
-								"os": "linux",
-								"variant": "v8"
-							}
-						},
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:7aa7e71eb91e06f8374c5509601059d1ce5341c4a7b0dca299d1ac710113577e",
-							"size": 562,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "arm64v8",
-								"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5968a1139e32eb2e4ba53600e978a0e8da1fac3e7772142dd57356b70adf1051@sha256:7aa7e71eb91e06f8374c5509601059d1ce5341c4a7b0dca299d1ac710113577e",
-								"vnd.docker.reference.digest": "sha256:a1b86db52ce3daef089e45aabe36dfec4091f82464c25c1fdcf03de197cbe82a",
-								"vnd.docker.reference.type": "attestation-manifest"
-							},
-							"platform": {
-								"architecture": "unknown",
-								"os": "unknown"
-							}
-						}
-					],
-					"annotations": {
-						"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5968a1139e32eb2e4ba53600e978a0e8da1fac3e7772142dd57356b70adf1051@sha256:ed001c2ba8757178455dd580e60f1f7dd359ad5725b6acf51a40aa0c73c3fb7a"
-					}
-				}
-			}
-		},
-		"source": {
-			"sourceId": "525862cb3c14a560c838366a57dbc7bdcc9627069ad77f16a094b0a3af1930e4",
-			"reproducibleGitChecksum": "9244ad3188a8a230f6aef0dcb842cd23b7e8bc181e470711e359958a5d01ab0b",
-			"entries": [
-				{
-					"GitRepo": "https://github.com/apache/couchdb-docker",
-					"GitFetch": "refs/heads/main",
-					"GitCommit": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-					"Directory": "3.4.3",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1782249646
-				}
-			],
-			"arches": {
-				"arm64v8": {
-					"tags": [
-						"couchdb:3.4.3",
-						"couchdb:3.4"
-					],
-					"archTags": [
-						"arm64v8/couchdb:3.4.3",
-						"arm64v8/couchdb:3.4"
-					],
-					"froms": [
-						"debian:bookworm-slim"
-					],
-					"lastStageFrom": "debian:bookworm-slim",
-					"platformString": "linux/arm64/v8",
-					"platform": {
-						"architecture": "arm64",
-						"os": "linux",
-						"variant": "v8"
-					},
-					"parents": {
-						"debian:bookworm-slim": {
-							"sourceId": "21aa6c951b1bf3f497989a786d3a29d1e2b0dc7c555aae7b4e1554782de7d0f3",
-							"pin": null
-						}
-					}
-				}
-			}
-		}
-	},
-	"0bddde1c5772beb3ad375ad9f22c8d303ad22e7bae565f8a41035a447a799ea4": {
-		"buildId": "0bddde1c5772beb3ad375ad9f22c8d303ad22e7bae565f8a41035a447a799ea4",
-		"build": {
-			"img": "oisupport/staging-amd64:0bddde1c5772beb3ad375ad9f22c8d303ad22e7bae565f8a41035a447a799ea4",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:7f2c085db8046942e8c1d85be7f05e9663f3b376a9d4e92878a0d1d615982e6a",
-						"size": 2691,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:a4672c0cb26fbdde88e38fa2dfb6c681942306680e41e4378b28770b6e79ee91",
-							"org.opencontainers.image.base.name": "debian:bookworm-slim",
-							"org.opencontainers.image.created": "2026-10-06T01:41:29Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:0bddde1c5772beb3ad375ad9f22c8d303ad22e7bae565f8a41035a447a799ea4@sha256:7f2c085db8046942e8c1d85be7f05e9663f3b376a9d4e92878a0d1d615982e6a",
-							"org.opencontainers.image.revision": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-							"org.opencontainers.image.source": "https://github.com/apache/couchdb-docker.git#a76020b130d5d2e2a0e54f9437d90d35652b8707:3.4.3-nouveau",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/couchdb",
-							"org.opencontainers.image.version": "3.4.3-nouveau"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:2be80f79634d590e39ff2f9e97eddf97c45ed9a8b413c2a1efc539353af31c2c",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:0bddde1c5772beb3ad375ad9f22c8d303ad22e7bae565f8a41035a447a799ea4@sha256:2be80f79634d590e39ff2f9e97eddf97c45ed9a8b413c2a1efc539353af31c2c",
-							"vnd.docker.reference.digest": "sha256:7f2c085db8046942e8c1d85be7f05e9663f3b376a9d4e92878a0d1d615982e6a",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:0bddde1c5772beb3ad375ad9f22c8d303ad22e7bae565f8a41035a447a799ea4@sha256:6c62619d6610d7bf56a0de0bf8c67a0fac0dbbbe03cbc4362e9590c278315d02"
-				}
-			},
-			"sourceId": "20ff4af3d87234f7931816e29501aa54be23b38e8c4907e5a3c5624370111bf5",
-			"arch": "amd64",
-			"parents": {
-				"debian:bookworm-slim": "sha256:a4672c0cb26fbdde88e38fa2dfb6c681942306680e41e4378b28770b6e79ee91"
-			},
-			"resolvedParents": {
-				"debian:bookworm-slim": {
-					"schemaVersion": 2,
-					"mediaType": "application/vnd.oci.image.index.v1+json",
-					"manifests": [
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:a4672c0cb26fbdde88e38fa2dfb6c681942306680e41e4378b28770b6e79ee91",
-							"size": 1021,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "amd64",
-								"org.opencontainers.image.base.name": "scratch",
-								"org.opencontainers.image.created": "2026-10-05T00:00:00Z",
-								"org.opencontainers.image.ref.name": "oisupport/staging-amd64:7644bca121201f8d85d13ecef5800e3fdb0321477e105d28b1ba8a675085c7ba@sha256:a4672c0cb26fbdde88e38fa2dfb6c681942306680e41e4378b28770b6e79ee91",
-								"org.opencontainers.image.revision": "a3751996111ce2c1c904050c84440184535e23b1",
-								"org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
-								"org.opencontainers.image.url": "https://hub.docker.com/_/debian",
-								"org.opencontainers.image.version": "bookworm-slim"
-							},
-							"platform": {
-								"architecture": "amd64",
-								"os": "linux"
-							}
-						},
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:dd0ada2da3f11d4d164cdfc61983795f22c2e820cf35f6868e06a102a65bc361",
-							"size": 562,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "amd64",
-								"org.opencontainers.image.ref.name": "oisupport/staging-amd64:7644bca121201f8d85d13ecef5800e3fdb0321477e105d28b1ba8a675085c7ba@sha256:dd0ada2da3f11d4d164cdfc61983795f22c2e820cf35f6868e06a102a65bc361",
-								"vnd.docker.reference.digest": "sha256:a4672c0cb26fbdde88e38fa2dfb6c681942306680e41e4378b28770b6e79ee91",
-								"vnd.docker.reference.type": "attestation-manifest"
-							},
-							"platform": {
-								"architecture": "unknown",
-								"os": "unknown"
-							}
-						}
-					],
-					"annotations": {
-						"org.opencontainers.image.ref.name": "oisupport/staging-amd64:7644bca121201f8d85d13ecef5800e3fdb0321477e105d28b1ba8a675085c7ba@sha256:1fad0738607d9b53880771bd0e87433c9267a37c50d95b4860b68f53bf7db2b8"
-					}
-				}
-			}
-		},
-		"source": {
-			"sourceId": "20ff4af3d87234f7931816e29501aa54be23b38e8c4907e5a3c5624370111bf5",
-			"reproducibleGitChecksum": "5fb5e7225998a775f4a9c0234782250ea8580f756d245c921ac5105f54524db3",
-			"entries": [
-				{
-					"GitRepo": "https://github.com/apache/couchdb-docker",
-					"GitFetch": "refs/heads/main",
-					"GitCommit": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-					"Directory": "3.4.3-nouveau",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1782249646
-				}
-			],
-			"arches": {
-				"amd64": {
-					"tags": [
-						"couchdb:3.4.3-nouveau",
-						"couchdb:3.4-nouveau"
-					],
-					"archTags": [
-						"amd64/couchdb:3.4.3-nouveau",
-						"amd64/couchdb:3.4-nouveau"
-					],
-					"froms": [
-						"debian:bookworm-slim"
-					],
-					"lastStageFrom": "debian:bookworm-slim",
-					"platformString": "linux/amd64",
-					"platform": {
-						"architecture": "amd64",
-						"os": "linux"
-					},
-					"parents": {
-						"debian:bookworm-slim": {
-							"sourceId": "a4077ad1c8ba150982076ba85ff06fd3241eefd289655dbc59c74ec3deb71e48",
-							"pin": null
-						}
-					}
-				}
-			}
-		}
-	},
-	"2179d7ca3a45320d2d06292c90def4e6e3449ad10ba5f2d6e28c0aa35345a59f": {
-		"buildId": "2179d7ca3a45320d2d06292c90def4e6e3449ad10ba5f2d6e28c0aa35345a59f",
-		"build": {
-			"img": "oisupport/staging-arm64v8:2179d7ca3a45320d2d06292c90def4e6e3449ad10ba5f2d6e28c0aa35345a59f",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:130e63f11a8e3d80fb4cf0c988c478934d02ac1b27837f044dcdc9b4a58649c2",
-						"size": 2693,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:a1b86db52ce3daef089e45aabe36dfec4091f82464c25c1fdcf03de197cbe82a",
-							"org.opencontainers.image.base.name": "debian:bookworm-slim",
-							"org.opencontainers.image.created": "2026-10-06T01:44:43Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2179d7ca3a45320d2d06292c90def4e6e3449ad10ba5f2d6e28c0aa35345a59f@sha256:130e63f11a8e3d80fb4cf0c988c478934d02ac1b27837f044dcdc9b4a58649c2",
-							"org.opencontainers.image.revision": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-							"org.opencontainers.image.source": "https://github.com/apache/couchdb-docker.git#a76020b130d5d2e2a0e54f9437d90d35652b8707:3.4.3-nouveau",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/couchdb",
-							"org.opencontainers.image.version": "3.4.3-nouveau"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:9581538a0d7c8065b105f2050e5727e17edb1855cf035b22e65cb7091eed94d5",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2179d7ca3a45320d2d06292c90def4e6e3449ad10ba5f2d6e28c0aa35345a59f@sha256:9581538a0d7c8065b105f2050e5727e17edb1855cf035b22e65cb7091eed94d5",
-							"vnd.docker.reference.digest": "sha256:130e63f11a8e3d80fb4cf0c988c478934d02ac1b27837f044dcdc9b4a58649c2",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2179d7ca3a45320d2d06292c90def4e6e3449ad10ba5f2d6e28c0aa35345a59f@sha256:a11dc235ae6a5cc40f8e945f4541d4c7872d80464892219ccd880f8b0f9c5036"
-				}
-			},
-			"sourceId": "20ff4af3d87234f7931816e29501aa54be23b38e8c4907e5a3c5624370111bf5",
-			"arch": "arm64v8",
-			"parents": {
-				"debian:bookworm-slim": "sha256:a1b86db52ce3daef089e45aabe36dfec4091f82464c25c1fdcf03de197cbe82a"
-			},
-			"resolvedParents": {
-				"debian:bookworm-slim": {
-					"schemaVersion": 2,
-					"mediaType": "application/vnd.oci.image.index.v1+json",
-					"manifests": [
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:a1b86db52ce3daef089e45aabe36dfec4091f82464c25c1fdcf03de197cbe82a",
-							"size": 1041,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "arm64v8",
-								"org.opencontainers.image.base.name": "scratch",
-								"org.opencontainers.image.created": "2026-10-05T00:00:00Z",
-								"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5968a1139e32eb2e4ba53600e978a0e8da1fac3e7772142dd57356b70adf1051@sha256:a1b86db52ce3daef089e45aabe36dfec4091f82464c25c1fdcf03de197cbe82a",
-								"org.opencontainers.image.revision": "cf1f4a45447842b45e9952e0f018ae734a7341c7",
-								"org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
-								"org.opencontainers.image.url": "https://hub.docker.com/_/debian",
-								"org.opencontainers.image.version": "bookworm-slim"
-							},
-							"platform": {
-								"architecture": "arm64",
-								"os": "linux",
-								"variant": "v8"
-							}
-						},
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:7aa7e71eb91e06f8374c5509601059d1ce5341c4a7b0dca299d1ac710113577e",
-							"size": 562,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "arm64v8",
-								"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5968a1139e32eb2e4ba53600e978a0e8da1fac3e7772142dd57356b70adf1051@sha256:7aa7e71eb91e06f8374c5509601059d1ce5341c4a7b0dca299d1ac710113577e",
-								"vnd.docker.reference.digest": "sha256:a1b86db52ce3daef089e45aabe36dfec4091f82464c25c1fdcf03de197cbe82a",
-								"vnd.docker.reference.type": "attestation-manifest"
-							},
-							"platform": {
-								"architecture": "unknown",
-								"os": "unknown"
-							}
-						}
-					],
-					"annotations": {
-						"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5968a1139e32eb2e4ba53600e978a0e8da1fac3e7772142dd57356b70adf1051@sha256:ed001c2ba8757178455dd580e60f1f7dd359ad5725b6acf51a40aa0c73c3fb7a"
-					}
-				}
-			}
-		},
-		"source": {
-			"sourceId": "20ff4af3d87234f7931816e29501aa54be23b38e8c4907e5a3c5624370111bf5",
-			"reproducibleGitChecksum": "5fb5e7225998a775f4a9c0234782250ea8580f756d245c921ac5105f54524db3",
-			"entries": [
-				{
-					"GitRepo": "https://github.com/apache/couchdb-docker",
-					"GitFetch": "refs/heads/main",
-					"GitCommit": "a76020b130d5d2e2a0e54f9437d90d35652b8707",
-					"Directory": "3.4.3-nouveau",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1782249646
-				}
-			],
-			"arches": {
-				"arm64v8": {
-					"tags": [
-						"couchdb:3.4.3-nouveau",
-						"couchdb:3.4-nouveau"
-					],
-					"archTags": [
-						"arm64v8/couchdb:3.4.3-nouveau",
-						"arm64v8/couchdb:3.4-nouveau"
-					],
-					"froms": [
-						"debian:bookworm-slim"
-					],
-					"lastStageFrom": "debian:bookworm-slim",
-					"platformString": "linux/arm64/v8",
-					"platform": {
-						"architecture": "arm64",
-						"os": "linux",
-						"variant": "v8"
-					},
-					"parents": {
-						"debian:bookworm-slim": {
-							"sourceId": "21aa6c951b1bf3f497989a786d3a29d1e2b0dc7c555aae7b4e1554782de7d0f3",
 							"pin": null
 						}
 					}
@@ -1117311,7 +1116599,51 @@
 		"buildId": "1574a8681a0942d31623ee4c9fe25cd3de132d014fc91a38b20f6ac6eda64414",
 		"build": {
 			"img": "oisupport/staging-arm32v7:1574a8681a0942d31623ee4c9fe25cd3de132d014fc91a38b20f6ac6eda64414",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:8c2eae33ccb01a16ebdeb5836a2b5ab39eb4cc0756a7f7ebddd175bb97739615",
+						"size": 2892,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm32v7",
+							"org.opencontainers.image.base.digest": "sha256:9b2967ccd03689c31ab27c7e987f955460a9ebc1ad0e5cc77f11afb915185652",
+							"org.opencontainers.image.base.name": "node:22-bookworm-slim",
+							"org.opencontainers.image.created": "2026-10-13T21:03:00Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:1574a8681a0942d31623ee4c9fe25cd3de132d014fc91a38b20f6ac6eda64414@sha256:8c2eae33ccb01a16ebdeb5836a2b5ab39eb4cc0756a7f7ebddd175bb97739615",
+							"org.opencontainers.image.revision": "f3d7eab651b3ed9b5ad84e46b771c177dbae105c",
+							"org.opencontainers.image.source": "https://github.com/TryGhost/docker-library-ghost.git#f3d7eab651b3ed9b5ad84e46b771c177dbae105c:6/bookworm",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ghost",
+							"org.opencontainers.image.version": "6.70.0-bookworm"
+						},
+						"platform": {
+							"architecture": "arm",
+							"os": "linux",
+							"variant": "v7"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:5cb8ad23457dfc07e6a05f86e7e3a88e99fb1d2c567b7010f87f864bf4b3ea93",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm32v7",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:1574a8681a0942d31623ee4c9fe25cd3de132d014fc91a38b20f6ac6eda64414@sha256:5cb8ad23457dfc07e6a05f86e7e3a88e99fb1d2c567b7010f87f864bf4b3ea93",
+							"vnd.docker.reference.digest": "sha256:8c2eae33ccb01a16ebdeb5836a2b5ab39eb4cc0756a7f7ebddd175bb97739615",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:1574a8681a0942d31623ee4c9fe25cd3de132d014fc91a38b20f6ac6eda64414@sha256:e0119b45f9cd40bff305e86f7413fc2615d2dbed2899c28d56baefcc13332ea6"
+				}
+			},
 			"sourceId": "8371b9a8a6d06678d7085c1be6e0b6ea4bc5df075eb0d3c038e3f53f22360cb4",
 			"arch": "arm32v7",
 			"parents": {
@@ -1117583,7 +1116915,50 @@
 		"buildId": "cea523e26aba7a1bd4ec06730f114d26201094bd04ab233f7540c7152ff64892",
 		"build": {
 			"img": "oisupport/staging-amd64:cea523e26aba7a1bd4ec06730f114d26201094bd04ab233f7540c7152ff64892",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:e388abb383fe213f696b021e073f20f5c56ab83a3ece7e6c266bb554058398f5",
+						"size": 2890,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:489418a947387da1c5b4c0c5749c963da56ecaac0ced1da74c67db60e42f2b3a",
+							"org.opencontainers.image.base.name": "node:22-alpine3.23",
+							"org.opencontainers.image.created": "2026-10-13T21:05:21Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:cea523e26aba7a1bd4ec06730f114d26201094bd04ab233f7540c7152ff64892@sha256:e388abb383fe213f696b021e073f20f5c56ab83a3ece7e6c266bb554058398f5",
+							"org.opencontainers.image.revision": "f3d7eab651b3ed9b5ad84e46b771c177dbae105c",
+							"org.opencontainers.image.source": "https://github.com/TryGhost/docker-library-ghost.git#f3d7eab651b3ed9b5ad84e46b771c177dbae105c:6/alpine3.23",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ghost",
+							"org.opencontainers.image.version": "6.70.0-alpine3.23"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:4560f0e674a8006784e06077360b84d3076b1b5d2c70424aac954ccb561e22f4",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:cea523e26aba7a1bd4ec06730f114d26201094bd04ab233f7540c7152ff64892@sha256:4560f0e674a8006784e06077360b84d3076b1b5d2c70424aac954ccb561e22f4",
+							"vnd.docker.reference.digest": "sha256:e388abb383fe213f696b021e073f20f5c56ab83a3ece7e6c266bb554058398f5",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:cea523e26aba7a1bd4ec06730f114d26201094bd04ab233f7540c7152ff64892@sha256:97575f0681504b2235b55a58202aa4ab875e06fdea12fd0b4d4ed63dc257ab96"
+				}
+			},
 			"sourceId": "847c5af19d4d39f4f003f8482e1c19906e57e314c03c884cfb30d7fb98736149",
 			"arch": "amd64",
 			"parents": {
@@ -1117853,7 +1117228,50 @@
 		"buildId": "b259838c44582f60c60f45438f773f9da54e8c89dc2f6a4a6341f18bc6c27183",
 		"build": {
 			"img": "oisupport/staging-amd64:b259838c44582f60c60f45438f773f9da54e8c89dc2f6a4a6341f18bc6c27183",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:796c3a9db554d3bb4795705e5f7c6fdf923e47711b68c49db43caedbece26762",
+						"size": 3272,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:efd0ab5780c2d9ab1f0f869571a00d5edb17793bff4cce4a2792e3eb0ffc7562",
+							"org.opencontainers.image.base.name": "node:22-bookworm-slim",
+							"org.opencontainers.image.created": "2026-10-13T21:05:35Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b259838c44582f60c60f45438f773f9da54e8c89dc2f6a4a6341f18bc6c27183@sha256:796c3a9db554d3bb4795705e5f7c6fdf923e47711b68c49db43caedbece26762",
+							"org.opencontainers.image.revision": "f3d7eab651b3ed9b5ad84e46b771c177dbae105c",
+							"org.opencontainers.image.source": "https://github.com/TryGhost/docker-library-ghost.git#f3d7eab651b3ed9b5ad84e46b771c177dbae105c:6-next/bookworm",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ghost",
+							"org.opencontainers.image.version": "6.70.0-next-bookworm"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:280262381544f77621916b6bc8b61f721ec1c2fbac77c7198d32b0288dbc7bc0",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b259838c44582f60c60f45438f773f9da54e8c89dc2f6a4a6341f18bc6c27183@sha256:280262381544f77621916b6bc8b61f721ec1c2fbac77c7198d32b0288dbc7bc0",
+							"vnd.docker.reference.digest": "sha256:796c3a9db554d3bb4795705e5f7c6fdf923e47711b68c49db43caedbece26762",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b259838c44582f60c60f45438f773f9da54e8c89dc2f6a4a6341f18bc6c27183@sha256:9dc194e43a9560cf10db09153d4d201b79bd479efbe6ccb2321573f02e33f34b"
+				}
+			},
 			"sourceId": "abd69aa1e0520d14dbd79df0b5f9ca2fdf720fbf6153a8f09f1c00b26e1f59ac",
 			"arch": "amd64",
 			"parents": {
@@ -1118123,7 +1117541,50 @@
 		"buildId": "a923774a346e33cc399e983e56de2b51d339f1fe3acb347b51be3d71e91e5020",
 		"build": {
 			"img": "oisupport/staging-amd64:a923774a346e33cc399e983e56de2b51d339f1fe3acb347b51be3d71e91e5020",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:d7103bfd714f8f55a602c68202183e164ebd1eb50aa2cfd4959ba0cd6f3dbfa1",
+						"size": 3081,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:489418a947387da1c5b4c0c5749c963da56ecaac0ced1da74c67db60e42f2b3a",
+							"org.opencontainers.image.base.name": "node:22-alpine3.23",
+							"org.opencontainers.image.created": "2026-10-13T21:05:43Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a923774a346e33cc399e983e56de2b51d339f1fe3acb347b51be3d71e91e5020@sha256:d7103bfd714f8f55a602c68202183e164ebd1eb50aa2cfd4959ba0cd6f3dbfa1",
+							"org.opencontainers.image.revision": "f3d7eab651b3ed9b5ad84e46b771c177dbae105c",
+							"org.opencontainers.image.source": "https://github.com/TryGhost/docker-library-ghost.git#f3d7eab651b3ed9b5ad84e46b771c177dbae105c:6-next/alpine3.23",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ghost",
+							"org.opencontainers.image.version": "6.70.0-next-alpine3.23"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:ab39a0c7d8683e9d9a784385b916e61ffb6767e0d14853523db8795ad1a7a4e5",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a923774a346e33cc399e983e56de2b51d339f1fe3acb347b51be3d71e91e5020@sha256:ab39a0c7d8683e9d9a784385b916e61ffb6767e0d14853523db8795ad1a7a4e5",
+							"vnd.docker.reference.digest": "sha256:d7103bfd714f8f55a602c68202183e164ebd1eb50aa2cfd4959ba0cd6f3dbfa1",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a923774a346e33cc399e983e56de2b51d339f1fe3acb347b51be3d71e91e5020@sha256:2cc4ddcfdc71ff524f311388c1ee7235b5c62edc0866b1f5d88c210df48b8427"
+				}
+			},
 			"sourceId": "fcc9eaaba31b2a1b8f019991ea9dc6f8a244416b30e4329e4211015c8f707107",
 			"arch": "amd64",
 			"parents": {
@@ -1118235,7 +1117696,51 @@
 		"buildId": "8bf56c17e0138248e385a66333098d5f00fd96c238d5d660fb4658d0f62364e5",
 		"build": {
 			"img": "oisupport/staging-arm64v8:8bf56c17e0138248e385a66333098d5f00fd96c238d5d660fb4658d0f62364e5",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:c81710dc90ef7fa59536388150e7df07dd829a2e0a8841ff75fc028a7fb2de30",
+						"size": 3083,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:09100ba0dbdaab0490dbdefa9b1f19fe8ca0d0419e4441ce18b6428c6a7a8a87",
+							"org.opencontainers.image.base.name": "node:22-alpine3.23",
+							"org.opencontainers.image.created": "2026-10-13T21:06:08Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:8bf56c17e0138248e385a66333098d5f00fd96c238d5d660fb4658d0f62364e5@sha256:c81710dc90ef7fa59536388150e7df07dd829a2e0a8841ff75fc028a7fb2de30",
+							"org.opencontainers.image.revision": "f3d7eab651b3ed9b5ad84e46b771c177dbae105c",
+							"org.opencontainers.image.source": "https://github.com/TryGhost/docker-library-ghost.git#f3d7eab651b3ed9b5ad84e46b771c177dbae105c:6-next/alpine3.23",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ghost",
+							"org.opencontainers.image.version": "6.70.0-next-alpine3.23"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:b45c276af1b7959fee4ead896ec6f13aa10544aa7057614915f86056c56b8024",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:8bf56c17e0138248e385a66333098d5f00fd96c238d5d660fb4658d0f62364e5@sha256:b45c276af1b7959fee4ead896ec6f13aa10544aa7057614915f86056c56b8024",
+							"vnd.docker.reference.digest": "sha256:c81710dc90ef7fa59536388150e7df07dd829a2e0a8841ff75fc028a7fb2de30",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:8bf56c17e0138248e385a66333098d5f00fd96c238d5d660fb4658d0f62364e5@sha256:f828ddc260781f4b2cde9ab95a2a4388d5635510b6d3f61d51b06b5e4ee066da"
+				}
+			},
 			"sourceId": "fcc9eaaba31b2a1b8f019991ea9dc6f8a244416b30e4329e4211015c8f707107",
 			"arch": "arm64v8",
 			"parents": {
