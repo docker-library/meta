@@ -857150,7 +857150,50 @@
 		"buildId": "d4acdfea09cad1b358fee20b7b0e256893decebcc174ccb124b3c4842aee49f4",
 		"build": {
 			"img": "oisupport/staging-riscv64:d4acdfea09cad1b358fee20b7b0e256893decebcc174ccb124b3c4842aee49f4",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:73ea20c228f5bf4749615b29f526a49384232732ebe97d49f849edb95fe9f7c5",
+						"size": 2673,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:104f3559ecc356453abe314e84c817b0ce43ec98db993c2a8e77627f8a072bc6",
+							"org.opencontainers.image.base.name": "ubuntu:24.04",
+							"org.opencontainers.image.created": "2026-10-17T16:25:27Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d4acdfea09cad1b358fee20b7b0e256893decebcc174ccb124b3c4842aee49f4@sha256:73ea20c228f5bf4749615b29f526a49384232732ebe97d49f849edb95fe9f7c5",
+							"org.opencontainers.image.revision": "d484e226edcc4a9ba5b88b4a91b549f9fd25edc4",
+							"org.opencontainers.image.source": "https://github.com/docker-library/rabbitmq.git#d484e226edcc4a9ba5b88b4a91b549f9fd25edc4:4.3/ubuntu",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/rabbitmq",
+							"org.opencontainers.image.version": "4.3.6"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:6d391a7e27d10e5f11c3c51ca769e8447b4eb9f6404695fb174663f691bfbb73",
+						"size": 1663,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d4acdfea09cad1b358fee20b7b0e256893decebcc174ccb124b3c4842aee49f4@sha256:6d391a7e27d10e5f11c3c51ca769e8447b4eb9f6404695fb174663f691bfbb73",
+							"vnd.docker.reference.digest": "sha256:73ea20c228f5bf4749615b29f526a49384232732ebe97d49f849edb95fe9f7c5",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d4acdfea09cad1b358fee20b7b0e256893decebcc174ccb124b3c4842aee49f4@sha256:53abfeffbee6b88f1a2f100ad15baef114a69d55be2d4e88f830d7ec74f268af"
+				}
+			},
 			"sourceId": "be49747d4d866d04899b923afec428fa11559ee4a38c3b81b7d85fef130f71b4",
 			"arch": "riscv64",
 			"parents": {
@@ -857987,6 +858030,110 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"rabbitmq:4.3": {
+							"sourceId": "be49747d4d866d04899b923afec428fa11559ee4a38c3b81b7d85fef130f71b4",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"61364f484a0a2a24438b09ecc2962f66b986f3477736ece121c04b5d5538f29c": {
+		"buildId": "61364f484a0a2a24438b09ecc2962f66b986f3477736ece121c04b5d5538f29c",
+		"build": {
+			"img": "oisupport/staging-riscv64:61364f484a0a2a24438b09ecc2962f66b986f3477736ece121c04b5d5538f29c",
+			"resolved": null,
+			"sourceId": "35518652d44785d2f99f8ed605f1ccf67f6ae351d077c077050be6313b0000ac",
+			"arch": "riscv64",
+			"parents": {
+				"rabbitmq:4.3": "sha256:73ea20c228f5bf4749615b29f526a49384232732ebe97d49f849edb95fe9f7c5"
+			},
+			"resolvedParents": {
+				"rabbitmq:4.3": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:73ea20c228f5bf4749615b29f526a49384232732ebe97d49f849edb95fe9f7c5",
+							"size": 2673,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:104f3559ecc356453abe314e84c817b0ce43ec98db993c2a8e77627f8a072bc6",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-17T16:25:27Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d4acdfea09cad1b358fee20b7b0e256893decebcc174ccb124b3c4842aee49f4@sha256:73ea20c228f5bf4749615b29f526a49384232732ebe97d49f849edb95fe9f7c5",
+								"org.opencontainers.image.revision": "d484e226edcc4a9ba5b88b4a91b549f9fd25edc4",
+								"org.opencontainers.image.source": "https://github.com/docker-library/rabbitmq.git#d484e226edcc4a9ba5b88b4a91b549f9fd25edc4:4.3/ubuntu",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/rabbitmq",
+								"org.opencontainers.image.version": "4.3.6"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:6d391a7e27d10e5f11c3c51ca769e8447b4eb9f6404695fb174663f691bfbb73",
+							"size": 1663,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d4acdfea09cad1b358fee20b7b0e256893decebcc174ccb124b3c4842aee49f4@sha256:6d391a7e27d10e5f11c3c51ca769e8447b4eb9f6404695fb174663f691bfbb73",
+								"vnd.docker.reference.digest": "sha256:73ea20c228f5bf4749615b29f526a49384232732ebe97d49f849edb95fe9f7c5",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d4acdfea09cad1b358fee20b7b0e256893decebcc174ccb124b3c4842aee49f4@sha256:53abfeffbee6b88f1a2f100ad15baef114a69d55be2d4e88f830d7ec74f268af"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "35518652d44785d2f99f8ed605f1ccf67f6ae351d077c077050be6313b0000ac",
+			"reproducibleGitChecksum": "013bdc082f7f15aaad0b7e6a930895eaddb25f0af131e0c0357749e41eb29188",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/rabbitmq.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "a2d49841fbcf81713cf0e1c279facbce545e2292",
+					"Directory": "4.3/ubuntu/management",
+					"File": "Dockerfile",
+					"Builder": "buildkit",
+					"SOURCE_DATE_EPOCH": 1788928340
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"rabbitmq:4.3.6-management",
+						"rabbitmq:4.3-management",
+						"rabbitmq:4-management",
+						"rabbitmq:management"
+					],
+					"archTags": [
+						"riscv64/rabbitmq:4.3.6-management",
+						"riscv64/rabbitmq:4.3-management",
+						"riscv64/rabbitmq:4-management",
+						"riscv64/rabbitmq:management"
+					],
+					"froms": [
+						"rabbitmq:4.3"
+					],
+					"lastStageFrom": "rabbitmq:4.3",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
