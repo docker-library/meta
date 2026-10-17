@@ -980381,7 +980381,50 @@
 		"buildId": "13e8e3cbffd03955e71593a836416fca6aefd8d400590d2a03fd87a0bfcf532e",
 		"build": {
 			"img": "oisupport/staging-riscv64:13e8e3cbffd03955e71593a836416fca6aefd8d400590d2a03fd87a0bfcf532e",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:6485c7344ec3ca67210ec9a5f0d95e13ccae1a0fac68183d4bd407b96e84bf63",
+						"size": 2721,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:a290611b64076922f569c5accfdac6a4e4b7a8c11a603609330829f6362c93f7",
+							"org.opencontainers.image.base.name": "eclipse-temurin:17-jdk-noble",
+							"org.opencontainers.image.created": "2026-10-17T21:05:19Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:13e8e3cbffd03955e71593a836416fca6aefd8d400590d2a03fd87a0bfcf532e@sha256:6485c7344ec3ca67210ec9a5f0d95e13ccae1a0fac68183d4bd407b96e84bf63",
+							"org.opencontainers.image.revision": "b4adb9037d3273ec3d9125ad76070a959773d557",
+							"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#b4adb9037d3273ec3d9125ad76070a959773d557:11.0/jdk17/temurin-noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+							"org.opencontainers.image.version": "11.0.27-jdk17-temurin-noble"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:56877d7b4b28ea943e4595bf96f684161c9336f3cae91f51398fcfc9c1b9fce3",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:13e8e3cbffd03955e71593a836416fca6aefd8d400590d2a03fd87a0bfcf532e@sha256:56877d7b4b28ea943e4595bf96f684161c9336f3cae91f51398fcfc9c1b9fce3",
+							"vnd.docker.reference.digest": "sha256:6485c7344ec3ca67210ec9a5f0d95e13ccae1a0fac68183d4bd407b96e84bf63",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:13e8e3cbffd03955e71593a836416fca6aefd8d400590d2a03fd87a0bfcf532e@sha256:fa219b974378f9137cefd3aed6d64aaf511634d41e90aef0a879b395b83985ef"
+				}
+			},
 			"sourceId": "35d994b34015e9ea0491adb6547b85e473b0ab81d98b206a79dff775b41d2232",
 			"arch": "riscv64",
 			"parents": {
@@ -981408,6 +981451,160 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"eclipse-temurin:17-jre-noble": {
+							"sourceId": "0861210ac70a8d006ddda45b55453f75a23403cc3547d1fe70ec99844befb9b2",
+							"pin": null
+						},
+						"tomcat:11.0.27-jdk17-temurin-noble": {
+							"sourceId": "35d994b34015e9ea0491adb6547b85e473b0ab81d98b206a79dff775b41d2232",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"36d3bca413c342b6a4bda0f3aca5a472c61120a70d0b737476bb2a61f0b3502f": {
+		"buildId": "36d3bca413c342b6a4bda0f3aca5a472c61120a70d0b737476bb2a61f0b3502f",
+		"build": {
+			"img": "oisupport/staging-riscv64:36d3bca413c342b6a4bda0f3aca5a472c61120a70d0b737476bb2a61f0b3502f",
+			"resolved": null,
+			"sourceId": "b7dd2f3a74778c5786a3044fa6230fcc28562d79d64e3e4d0a1f9bc61502570e",
+			"arch": "riscv64",
+			"parents": {
+				"eclipse-temurin:17-jre-noble": "sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+				"tomcat:11.0.27-jdk17-temurin-noble": "sha256:6485c7344ec3ca67210ec9a5f0d95e13ccae1a0fac68183d4bd407b96e84bf63"
+			},
+			"resolvedParents": {
+				"eclipse-temurin:17-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+							"size": 1944,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:104f3559ecc356453abe314e84c817b0ce43ec98db993c2a8e77627f8a072bc6",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-17T15:42:58Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c937178b110c09e787683c5124f8fa183a9b5de11691fa761724a9b0e7fb75d0@sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+								"org.opencontainers.image.revision": "511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07",
+								"org.opencontainers.image.source": "https://github.com/adoptium/containers.git#511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07:17/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/eclipse-temurin",
+								"org.opencontainers.image.version": "17.0.20.1_1-jre-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:3efc439420fa7c4dccdbc70cfdcf147a503847a4332f0fcedc8a96730a13a492",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c937178b110c09e787683c5124f8fa183a9b5de11691fa761724a9b0e7fb75d0@sha256:3efc439420fa7c4dccdbc70cfdcf147a503847a4332f0fcedc8a96730a13a492",
+								"vnd.docker.reference.digest": "sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c937178b110c09e787683c5124f8fa183a9b5de11691fa761724a9b0e7fb75d0@sha256:8481694367d81b1ee795fe659d574c3f8f467e94b66b7b4453ebe71cc730c2fa"
+					}
+				},
+				"tomcat:11.0.27-jdk17-temurin-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:6485c7344ec3ca67210ec9a5f0d95e13ccae1a0fac68183d4bd407b96e84bf63",
+							"size": 2721,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:a290611b64076922f569c5accfdac6a4e4b7a8c11a603609330829f6362c93f7",
+								"org.opencontainers.image.base.name": "eclipse-temurin:17-jdk-noble",
+								"org.opencontainers.image.created": "2026-10-17T21:05:19Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:13e8e3cbffd03955e71593a836416fca6aefd8d400590d2a03fd87a0bfcf532e@sha256:6485c7344ec3ca67210ec9a5f0d95e13ccae1a0fac68183d4bd407b96e84bf63",
+								"org.opencontainers.image.revision": "b4adb9037d3273ec3d9125ad76070a959773d557",
+								"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#b4adb9037d3273ec3d9125ad76070a959773d557:11.0/jdk17/temurin-noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+								"org.opencontainers.image.version": "11.0.27-jdk17-temurin-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:56877d7b4b28ea943e4595bf96f684161c9336f3cae91f51398fcfc9c1b9fce3",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:13e8e3cbffd03955e71593a836416fca6aefd8d400590d2a03fd87a0bfcf532e@sha256:56877d7b4b28ea943e4595bf96f684161c9336f3cae91f51398fcfc9c1b9fce3",
+								"vnd.docker.reference.digest": "sha256:6485c7344ec3ca67210ec9a5f0d95e13ccae1a0fac68183d4bd407b96e84bf63",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:13e8e3cbffd03955e71593a836416fca6aefd8d400590d2a03fd87a0bfcf532e@sha256:fa219b974378f9137cefd3aed6d64aaf511634d41e90aef0a879b395b83985ef"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "b7dd2f3a74778c5786a3044fa6230fcc28562d79d64e3e4d0a1f9bc61502570e",
+			"reproducibleGitChecksum": "424607e26498e260b01dc7356b52bd8c619f27a1639fa4d582d3d6c9118355bf",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/tomcat.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "b4adb9037d3273ec3d9125ad76070a959773d557",
+					"Directory": "11.0/jre17/temurin-noble",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1791811775
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"tomcat:11.0.27-jre17-temurin-noble",
+						"tomcat:11.0-jre17-temurin-noble",
+						"tomcat:11-jre17-temurin-noble",
+						"tomcat:jre17-temurin-noble"
+					],
+					"archTags": [
+						"riscv64/tomcat:11.0.27-jre17-temurin-noble",
+						"riscv64/tomcat:11.0-jre17-temurin-noble",
+						"riscv64/tomcat:11-jre17-temurin-noble",
+						"riscv64/tomcat:jre17-temurin-noble"
+					],
+					"froms": [
+						"eclipse-temurin:17-jre-noble",
+						"tomcat:11.0.27-jdk17-temurin-noble"
+					],
+					"lastStageFrom": "eclipse-temurin:17-jre-noble",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -985284,7 +985481,50 @@
 		"buildId": "990b852b88186c9a76e4c60fdf0837111baa230791f1fb4b8425a8899ca73ff5",
 		"build": {
 			"img": "oisupport/staging-riscv64:990b852b88186c9a76e4c60fdf0837111baa230791f1fb4b8425a8899ca73ff5",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:21b2bbf700725e7327c3d577ca6a2be2c55aa9ea2a2ffb79a2f29657d1dbc883",
+						"size": 2719,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:695c2f37d850603b9fab07346ceb3d4f9a37b41ff27533e88d66a8c5a6434646",
+							"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+							"org.opencontainers.image.created": "2026-10-17T21:13:34Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:990b852b88186c9a76e4c60fdf0837111baa230791f1fb4b8425a8899ca73ff5@sha256:21b2bbf700725e7327c3d577ca6a2be2c55aa9ea2a2ffb79a2f29657d1dbc883",
+							"org.opencontainers.image.revision": "b22484c15e3bdb919a5c0cc116ba556bd3fe226d",
+							"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#b22484c15e3bdb919a5c0cc116ba556bd3fe226d:10.1/jdk25/temurin-noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+							"org.opencontainers.image.version": "10.1.61-jdk25-temurin-noble"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:ae6a27a35d8694149266683a1e92e020918744a63002a441aeb5da60fb30fcbb",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:990b852b88186c9a76e4c60fdf0837111baa230791f1fb4b8425a8899ca73ff5@sha256:ae6a27a35d8694149266683a1e92e020918744a63002a441aeb5da60fb30fcbb",
+							"vnd.docker.reference.digest": "sha256:21b2bbf700725e7327c3d577ca6a2be2c55aa9ea2a2ffb79a2f29657d1dbc883",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:990b852b88186c9a76e4c60fdf0837111baa230791f1fb4b8425a8899ca73ff5@sha256:8a3a138e7e69a46e6d93a171a6536c067449ee3a43a241bc0bae111bb921dd49"
+				}
+			},
 			"sourceId": "b255f5310a0723e5f55cd693e539ce9dbf3c5515e1d7d345f0387ff7452e472c",
 			"arch": "riscv64",
 			"parents": {
@@ -986100,6 +986340,158 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"eclipse-temurin:25-jre-noble": {
+							"sourceId": "05dc5ce0763f3d76c48a2f74831845e42ade5a03953a4bd63c8cf7e0e658fc4a",
+							"pin": null
+						},
+						"tomcat:10.1.61-jdk25-temurin-noble": {
+							"sourceId": "b255f5310a0723e5f55cd693e539ce9dbf3c5515e1d7d345f0387ff7452e472c",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"7492b6e469feef79a61df0117eba60daa38f6280f1a8e5152e02b5d5e6b953f3": {
+		"buildId": "7492b6e469feef79a61df0117eba60daa38f6280f1a8e5152e02b5d5e6b953f3",
+		"build": {
+			"img": "oisupport/staging-riscv64:7492b6e469feef79a61df0117eba60daa38f6280f1a8e5152e02b5d5e6b953f3",
+			"resolved": null,
+			"sourceId": "5803d5ee9c015bbd1a63910262d2a1e8977dea833caa2c1874be1e9b0b6c48fc",
+			"arch": "riscv64",
+			"parents": {
+				"eclipse-temurin:25-jre-noble": "sha256:2b548c0d2409a8ff3f0060933a945a5efde954822725e340ae4ff93426d5eb9b",
+				"tomcat:10.1.61-jdk25-temurin-noble": "sha256:21b2bbf700725e7327c3d577ca6a2be2c55aa9ea2a2ffb79a2f29657d1dbc883"
+			},
+			"resolvedParents": {
+				"eclipse-temurin:25-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:2b548c0d2409a8ff3f0060933a945a5efde954822725e340ae4ff93426d5eb9b",
+							"size": 1942,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:104f3559ecc356453abe314e84c817b0ce43ec98db993c2a8e77627f8a072bc6",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-17T16:06:00Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:347f144fd556a43f652979432cc2a3675e2a85d796066b6ca76c62f4e2e2aeec@sha256:2b548c0d2409a8ff3f0060933a945a5efde954822725e340ae4ff93426d5eb9b",
+								"org.opencontainers.image.revision": "511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07",
+								"org.opencontainers.image.source": "https://github.com/adoptium/containers.git#511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07:25/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/eclipse-temurin",
+								"org.opencontainers.image.version": "25.0.4.1_1-jre-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:4fdc9777f6361102a35192a9382353aa9f52541e0c24d99bf693ab420f5a3160",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:347f144fd556a43f652979432cc2a3675e2a85d796066b6ca76c62f4e2e2aeec@sha256:4fdc9777f6361102a35192a9382353aa9f52541e0c24d99bf693ab420f5a3160",
+								"vnd.docker.reference.digest": "sha256:2b548c0d2409a8ff3f0060933a945a5efde954822725e340ae4ff93426d5eb9b",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:347f144fd556a43f652979432cc2a3675e2a85d796066b6ca76c62f4e2e2aeec@sha256:979e67773d8c3f682f09511b0c5f7846c03aab1a4d6cc93187ef72450fb70747"
+					}
+				},
+				"tomcat:10.1.61-jdk25-temurin-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:21b2bbf700725e7327c3d577ca6a2be2c55aa9ea2a2ffb79a2f29657d1dbc883",
+							"size": 2719,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:695c2f37d850603b9fab07346ceb3d4f9a37b41ff27533e88d66a8c5a6434646",
+								"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+								"org.opencontainers.image.created": "2026-10-17T21:13:34Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:990b852b88186c9a76e4c60fdf0837111baa230791f1fb4b8425a8899ca73ff5@sha256:21b2bbf700725e7327c3d577ca6a2be2c55aa9ea2a2ffb79a2f29657d1dbc883",
+								"org.opencontainers.image.revision": "b22484c15e3bdb919a5c0cc116ba556bd3fe226d",
+								"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#b22484c15e3bdb919a5c0cc116ba556bd3fe226d:10.1/jdk25/temurin-noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+								"org.opencontainers.image.version": "10.1.61-jdk25-temurin-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:ae6a27a35d8694149266683a1e92e020918744a63002a441aeb5da60fb30fcbb",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:990b852b88186c9a76e4c60fdf0837111baa230791f1fb4b8425a8899ca73ff5@sha256:ae6a27a35d8694149266683a1e92e020918744a63002a441aeb5da60fb30fcbb",
+								"vnd.docker.reference.digest": "sha256:21b2bbf700725e7327c3d577ca6a2be2c55aa9ea2a2ffb79a2f29657d1dbc883",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:990b852b88186c9a76e4c60fdf0837111baa230791f1fb4b8425a8899ca73ff5@sha256:8a3a138e7e69a46e6d93a171a6536c067449ee3a43a241bc0bae111bb921dd49"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "5803d5ee9c015bbd1a63910262d2a1e8977dea833caa2c1874be1e9b0b6c48fc",
+			"reproducibleGitChecksum": "5fe2ecf4f5fbf1dd9979c396eee54d4e629ad06cbc44bf7d8c5d77c46709b8d6",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/tomcat.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "b22484c15e3bdb919a5c0cc116ba556bd3fe226d",
+					"Directory": "10.1/jre25/temurin-noble",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1791810194
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"tomcat:10.1.61-jre25-temurin-noble",
+						"tomcat:10.1-jre25-temurin-noble",
+						"tomcat:10-jre25-temurin-noble"
+					],
+					"archTags": [
+						"riscv64/tomcat:10.1.61-jre25-temurin-noble",
+						"riscv64/tomcat:10.1-jre25-temurin-noble",
+						"riscv64/tomcat:10-jre25-temurin-noble"
+					],
+					"froms": [
+						"eclipse-temurin:25-jre-noble",
+						"tomcat:10.1.61-jdk25-temurin-noble"
+					],
+					"lastStageFrom": "eclipse-temurin:25-jre-noble",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -989583,7 +989975,50 @@
 		"buildId": "298d0905444668f74131efa34aa9bed58fe9d39ac9ee202356cbe279b9d602e5",
 		"build": {
 			"img": "oisupport/staging-riscv64:298d0905444668f74131efa34aa9bed58fe9d39ac9ee202356cbe279b9d602e5",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:890719150b94cde805053f042422f2a15c7f6120b829fb4a2cc73a38c9bb3826",
+						"size": 2721,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:029c8feb3a6c693af3698f7d92eb1e7a2526e5dd40be19b3aee9c4eade86dab4",
+							"org.opencontainers.image.base.name": "eclipse-temurin:21-jdk-noble",
+							"org.opencontainers.image.created": "2026-10-17T21:21:42Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:298d0905444668f74131efa34aa9bed58fe9d39ac9ee202356cbe279b9d602e5@sha256:890719150b94cde805053f042422f2a15c7f6120b829fb4a2cc73a38c9bb3826",
+							"org.opencontainers.image.revision": "b22484c15e3bdb919a5c0cc116ba556bd3fe226d",
+							"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#b22484c15e3bdb919a5c0cc116ba556bd3fe226d:10.1/jdk21/temurin-noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+							"org.opencontainers.image.version": "10.1.61-jdk21-temurin-noble"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:252edf9d960e870dbebece6471b30eb035852d99f79b52312f90f407c6e54ec9",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:298d0905444668f74131efa34aa9bed58fe9d39ac9ee202356cbe279b9d602e5@sha256:252edf9d960e870dbebece6471b30eb035852d99f79b52312f90f407c6e54ec9",
+							"vnd.docker.reference.digest": "sha256:890719150b94cde805053f042422f2a15c7f6120b829fb4a2cc73a38c9bb3826",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:298d0905444668f74131efa34aa9bed58fe9d39ac9ee202356cbe279b9d602e5@sha256:0f8587d6435931c2c100b3838481eceeb27444cbbfec74a8f9b657bae1e6bf13"
+				}
+			},
 			"sourceId": "39a56f732a3fe8174d849b57d752b3ff3da61e37817e6774d86d61c7ffbfddfa",
 			"arch": "riscv64",
 			"parents": {
@@ -990399,6 +990834,158 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"eclipse-temurin:21-jre-noble": {
+							"sourceId": "23dc83167288b843eaaaad8054dc31098826720c043ff2b2ceaee7aa055eb8ea",
+							"pin": null
+						},
+						"tomcat:10.1.61-jdk21-temurin-noble": {
+							"sourceId": "39a56f732a3fe8174d849b57d752b3ff3da61e37817e6774d86d61c7ffbfddfa",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"7e43ee69ec2583dd6a283e1876b6613acd588ecdbfc05cf3a70c87bfa7dfca91": {
+		"buildId": "7e43ee69ec2583dd6a283e1876b6613acd588ecdbfc05cf3a70c87bfa7dfca91",
+		"build": {
+			"img": "oisupport/staging-riscv64:7e43ee69ec2583dd6a283e1876b6613acd588ecdbfc05cf3a70c87bfa7dfca91",
+			"resolved": null,
+			"sourceId": "aeb1ffe5a1cdaa1c184d7d975d14c181380fc781507cfba7f6146521643aa598",
+			"arch": "riscv64",
+			"parents": {
+				"eclipse-temurin:21-jre-noble": "sha256:00f029627edce3b8a9e3b29793e505515be0a224f895b7b4ccbf90f17b6b6fe6",
+				"tomcat:10.1.61-jdk21-temurin-noble": "sha256:890719150b94cde805053f042422f2a15c7f6120b829fb4a2cc73a38c9bb3826"
+			},
+			"resolvedParents": {
+				"eclipse-temurin:21-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:00f029627edce3b8a9e3b29793e505515be0a224f895b7b4ccbf90f17b6b6fe6",
+							"size": 1944,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:104f3559ecc356453abe314e84c817b0ce43ec98db993c2a8e77627f8a072bc6",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-17T15:54:00Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6e1a4678ff10599bbdffff32d3457993c78cf8410b88f35c80ccb12f7201f8c6@sha256:00f029627edce3b8a9e3b29793e505515be0a224f895b7b4ccbf90f17b6b6fe6",
+								"org.opencontainers.image.revision": "511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07",
+								"org.opencontainers.image.source": "https://github.com/adoptium/containers.git#511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07:21/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/eclipse-temurin",
+								"org.opencontainers.image.version": "21.0.12.1_1-jre-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:a4ed625a46c3dc53c5a2287581b823ec4d41d17ab0ab7471e368082454a58042",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6e1a4678ff10599bbdffff32d3457993c78cf8410b88f35c80ccb12f7201f8c6@sha256:a4ed625a46c3dc53c5a2287581b823ec4d41d17ab0ab7471e368082454a58042",
+								"vnd.docker.reference.digest": "sha256:00f029627edce3b8a9e3b29793e505515be0a224f895b7b4ccbf90f17b6b6fe6",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6e1a4678ff10599bbdffff32d3457993c78cf8410b88f35c80ccb12f7201f8c6@sha256:434c79f30c9ea7a281d08257c96610e8c803685d327f46eafbaea516fd5079ff"
+					}
+				},
+				"tomcat:10.1.61-jdk21-temurin-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:890719150b94cde805053f042422f2a15c7f6120b829fb4a2cc73a38c9bb3826",
+							"size": 2721,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:029c8feb3a6c693af3698f7d92eb1e7a2526e5dd40be19b3aee9c4eade86dab4",
+								"org.opencontainers.image.base.name": "eclipse-temurin:21-jdk-noble",
+								"org.opencontainers.image.created": "2026-10-17T21:21:42Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:298d0905444668f74131efa34aa9bed58fe9d39ac9ee202356cbe279b9d602e5@sha256:890719150b94cde805053f042422f2a15c7f6120b829fb4a2cc73a38c9bb3826",
+								"org.opencontainers.image.revision": "b22484c15e3bdb919a5c0cc116ba556bd3fe226d",
+								"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#b22484c15e3bdb919a5c0cc116ba556bd3fe226d:10.1/jdk21/temurin-noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+								"org.opencontainers.image.version": "10.1.61-jdk21-temurin-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:252edf9d960e870dbebece6471b30eb035852d99f79b52312f90f407c6e54ec9",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:298d0905444668f74131efa34aa9bed58fe9d39ac9ee202356cbe279b9d602e5@sha256:252edf9d960e870dbebece6471b30eb035852d99f79b52312f90f407c6e54ec9",
+								"vnd.docker.reference.digest": "sha256:890719150b94cde805053f042422f2a15c7f6120b829fb4a2cc73a38c9bb3826",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:298d0905444668f74131efa34aa9bed58fe9d39ac9ee202356cbe279b9d602e5@sha256:0f8587d6435931c2c100b3838481eceeb27444cbbfec74a8f9b657bae1e6bf13"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "aeb1ffe5a1cdaa1c184d7d975d14c181380fc781507cfba7f6146521643aa598",
+			"reproducibleGitChecksum": "d3946a6db4f2c95d4a49d15d9607d83f55743cdc36b57cb83bcf74fb336aed37",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/tomcat.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "b22484c15e3bdb919a5c0cc116ba556bd3fe226d",
+					"Directory": "10.1/jre21/temurin-noble",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1791810194
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"tomcat:10.1.61-jre21-temurin-noble",
+						"tomcat:10.1-jre21-temurin-noble",
+						"tomcat:10-jre21-temurin-noble"
+					],
+					"archTags": [
+						"riscv64/tomcat:10.1.61-jre21-temurin-noble",
+						"riscv64/tomcat:10.1-jre21-temurin-noble",
+						"riscv64/tomcat:10-jre21-temurin-noble"
+					],
+					"froms": [
+						"eclipse-temurin:21-jre-noble",
+						"tomcat:10.1.61-jdk21-temurin-noble"
+					],
+					"lastStageFrom": "eclipse-temurin:21-jre-noble",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -994401,7 +994988,50 @@
 		"buildId": "2d7d55ddfef90271aa072f61dfa2109379b0ce2131008fc138a76c8e85968bc7",
 		"build": {
 			"img": "oisupport/staging-riscv64:2d7d55ddfef90271aa072f61dfa2109379b0ce2131008fc138a76c8e85968bc7",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:76176dca2d27a724dbd3786c1aa60083b0ab24573c5d7eceb164866794353b94",
+						"size": 2721,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:a290611b64076922f569c5accfdac6a4e4b7a8c11a603609330829f6362c93f7",
+							"org.opencontainers.image.base.name": "eclipse-temurin:17-jdk-noble",
+							"org.opencontainers.image.created": "2026-10-17T21:29:52Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:2d7d55ddfef90271aa072f61dfa2109379b0ce2131008fc138a76c8e85968bc7@sha256:76176dca2d27a724dbd3786c1aa60083b0ab24573c5d7eceb164866794353b94",
+							"org.opencontainers.image.revision": "b22484c15e3bdb919a5c0cc116ba556bd3fe226d",
+							"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#b22484c15e3bdb919a5c0cc116ba556bd3fe226d:10.1/jdk17/temurin-noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+							"org.opencontainers.image.version": "10.1.61-jdk17-temurin-noble"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:5ed118e0f221825703ddb2bcb2d9903b492060837bd775d6e6f8c9cb7c1a571a",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:2d7d55ddfef90271aa072f61dfa2109379b0ce2131008fc138a76c8e85968bc7@sha256:5ed118e0f221825703ddb2bcb2d9903b492060837bd775d6e6f8c9cb7c1a571a",
+							"vnd.docker.reference.digest": "sha256:76176dca2d27a724dbd3786c1aa60083b0ab24573c5d7eceb164866794353b94",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:2d7d55ddfef90271aa072f61dfa2109379b0ce2131008fc138a76c8e85968bc7@sha256:1fc92cc526e772bc659468c930bb5ad8ef42bb98023f5da2041dafd627d6d538"
+				}
+			},
 			"sourceId": "dc3a3d2118509acfd89c614964406345eda6c71174136c408494539ed6247a9b",
 			"arch": "riscv64",
 			"parents": {
@@ -995416,6 +996046,158 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"eclipse-temurin:17-jre-noble": {
+							"sourceId": "0861210ac70a8d006ddda45b55453f75a23403cc3547d1fe70ec99844befb9b2",
+							"pin": null
+						},
+						"tomcat:10.1.61-jdk17-temurin-noble": {
+							"sourceId": "dc3a3d2118509acfd89c614964406345eda6c71174136c408494539ed6247a9b",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"06cfbaabb87f6efd7a756bde288e61ad6a60664b6b1624b0af25e45dc908555c": {
+		"buildId": "06cfbaabb87f6efd7a756bde288e61ad6a60664b6b1624b0af25e45dc908555c",
+		"build": {
+			"img": "oisupport/staging-riscv64:06cfbaabb87f6efd7a756bde288e61ad6a60664b6b1624b0af25e45dc908555c",
+			"resolved": null,
+			"sourceId": "e75152de9ec1d6b85752a85eb5ea32ce89580c622519503a11a0a4f31db1f19a",
+			"arch": "riscv64",
+			"parents": {
+				"eclipse-temurin:17-jre-noble": "sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+				"tomcat:10.1.61-jdk17-temurin-noble": "sha256:76176dca2d27a724dbd3786c1aa60083b0ab24573c5d7eceb164866794353b94"
+			},
+			"resolvedParents": {
+				"eclipse-temurin:17-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+							"size": 1944,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:104f3559ecc356453abe314e84c817b0ce43ec98db993c2a8e77627f8a072bc6",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-17T15:42:58Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c937178b110c09e787683c5124f8fa183a9b5de11691fa761724a9b0e7fb75d0@sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+								"org.opencontainers.image.revision": "511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07",
+								"org.opencontainers.image.source": "https://github.com/adoptium/containers.git#511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07:17/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/eclipse-temurin",
+								"org.opencontainers.image.version": "17.0.20.1_1-jre-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:3efc439420fa7c4dccdbc70cfdcf147a503847a4332f0fcedc8a96730a13a492",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c937178b110c09e787683c5124f8fa183a9b5de11691fa761724a9b0e7fb75d0@sha256:3efc439420fa7c4dccdbc70cfdcf147a503847a4332f0fcedc8a96730a13a492",
+								"vnd.docker.reference.digest": "sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c937178b110c09e787683c5124f8fa183a9b5de11691fa761724a9b0e7fb75d0@sha256:8481694367d81b1ee795fe659d574c3f8f467e94b66b7b4453ebe71cc730c2fa"
+					}
+				},
+				"tomcat:10.1.61-jdk17-temurin-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:76176dca2d27a724dbd3786c1aa60083b0ab24573c5d7eceb164866794353b94",
+							"size": 2721,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:a290611b64076922f569c5accfdac6a4e4b7a8c11a603609330829f6362c93f7",
+								"org.opencontainers.image.base.name": "eclipse-temurin:17-jdk-noble",
+								"org.opencontainers.image.created": "2026-10-17T21:29:52Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:2d7d55ddfef90271aa072f61dfa2109379b0ce2131008fc138a76c8e85968bc7@sha256:76176dca2d27a724dbd3786c1aa60083b0ab24573c5d7eceb164866794353b94",
+								"org.opencontainers.image.revision": "b22484c15e3bdb919a5c0cc116ba556bd3fe226d",
+								"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#b22484c15e3bdb919a5c0cc116ba556bd3fe226d:10.1/jdk17/temurin-noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+								"org.opencontainers.image.version": "10.1.61-jdk17-temurin-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:5ed118e0f221825703ddb2bcb2d9903b492060837bd775d6e6f8c9cb7c1a571a",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:2d7d55ddfef90271aa072f61dfa2109379b0ce2131008fc138a76c8e85968bc7@sha256:5ed118e0f221825703ddb2bcb2d9903b492060837bd775d6e6f8c9cb7c1a571a",
+								"vnd.docker.reference.digest": "sha256:76176dca2d27a724dbd3786c1aa60083b0ab24573c5d7eceb164866794353b94",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:2d7d55ddfef90271aa072f61dfa2109379b0ce2131008fc138a76c8e85968bc7@sha256:1fc92cc526e772bc659468c930bb5ad8ef42bb98023f5da2041dafd627d6d538"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "e75152de9ec1d6b85752a85eb5ea32ce89580c622519503a11a0a4f31db1f19a",
+			"reproducibleGitChecksum": "4b2fbc22743765636eec3f67f58e4f1a4efe4d73c960568d7e17cb43ce826d0a",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/tomcat.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "b22484c15e3bdb919a5c0cc116ba556bd3fe226d",
+					"Directory": "10.1/jre17/temurin-noble",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1791810194
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"tomcat:10.1.61-jre17-temurin-noble",
+						"tomcat:10.1-jre17-temurin-noble",
+						"tomcat:10-jre17-temurin-noble"
+					],
+					"archTags": [
+						"riscv64/tomcat:10.1.61-jre17-temurin-noble",
+						"riscv64/tomcat:10.1-jre17-temurin-noble",
+						"riscv64/tomcat:10-jre17-temurin-noble"
+					],
+					"froms": [
+						"eclipse-temurin:17-jre-noble",
+						"tomcat:10.1.61-jdk17-temurin-noble"
+					],
+					"lastStageFrom": "eclipse-temurin:17-jre-noble",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -1004532,7 +1005314,50 @@
 		"buildId": "67087d065b05925147388b45cfab6811ebc11e82790b7e3c5844aa73897f501e",
 		"build": {
 			"img": "oisupport/staging-riscv64:67087d065b05925147388b45cfab6811ebc11e82790b7e3c5844aa73897f501e",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:c78bd479559151e938d72236acf23be64a1a0b0d29d348f19486896aa9066ac9",
+						"size": 2718,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:695c2f37d850603b9fab07346ceb3d4f9a37b41ff27533e88d66a8c5a6434646",
+							"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+							"org.opencontainers.image.created": "2026-10-17T21:37:50Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:67087d065b05925147388b45cfab6811ebc11e82790b7e3c5844aa73897f501e@sha256:c78bd479559151e938d72236acf23be64a1a0b0d29d348f19486896aa9066ac9",
+							"org.opencontainers.image.revision": "8d61ad77a0cee7f165015db13bb8745185f08d28",
+							"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#8d61ad77a0cee7f165015db13bb8745185f08d28:9.0/jdk25/temurin-noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+							"org.opencontainers.image.version": "9.0.123-jdk25-temurin-noble"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:9796d5c4a9ddb430614e2520c8dd06e9097b0f117bd5c5a3a8982b03eb43dd20",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:67087d065b05925147388b45cfab6811ebc11e82790b7e3c5844aa73897f501e@sha256:9796d5c4a9ddb430614e2520c8dd06e9097b0f117bd5c5a3a8982b03eb43dd20",
+							"vnd.docker.reference.digest": "sha256:c78bd479559151e938d72236acf23be64a1a0b0d29d348f19486896aa9066ac9",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:67087d065b05925147388b45cfab6811ebc11e82790b7e3c5844aa73897f501e@sha256:c8a403f5504692cba1b468d33f386ae6ce353cfc959e997e671e168c520427d0"
+				}
+			},
 			"sourceId": "cae5dbcb0bd3e9097decf4b9ef88a43334447aedde27ecaf66fcefc37c3081e6",
 			"arch": "riscv64",
 			"parents": {
@@ -1005348,6 +1006173,158 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"eclipse-temurin:25-jre-noble": {
+							"sourceId": "05dc5ce0763f3d76c48a2f74831845e42ade5a03953a4bd63c8cf7e0e658fc4a",
+							"pin": null
+						},
+						"tomcat:9.0.123-jdk25-temurin-noble": {
+							"sourceId": "cae5dbcb0bd3e9097decf4b9ef88a43334447aedde27ecaf66fcefc37c3081e6",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"5d7198decd82fb250f4b3cf0f340e8169ba961fa9b6f3223110f38a5e38aeec8": {
+		"buildId": "5d7198decd82fb250f4b3cf0f340e8169ba961fa9b6f3223110f38a5e38aeec8",
+		"build": {
+			"img": "oisupport/staging-riscv64:5d7198decd82fb250f4b3cf0f340e8169ba961fa9b6f3223110f38a5e38aeec8",
+			"resolved": null,
+			"sourceId": "2279f392ea3974086a20aa2ec9b4500c73fafbefd8e41c9379efa78b64679e9f",
+			"arch": "riscv64",
+			"parents": {
+				"eclipse-temurin:25-jre-noble": "sha256:2b548c0d2409a8ff3f0060933a945a5efde954822725e340ae4ff93426d5eb9b",
+				"tomcat:9.0.123-jdk25-temurin-noble": "sha256:c78bd479559151e938d72236acf23be64a1a0b0d29d348f19486896aa9066ac9"
+			},
+			"resolvedParents": {
+				"eclipse-temurin:25-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:2b548c0d2409a8ff3f0060933a945a5efde954822725e340ae4ff93426d5eb9b",
+							"size": 1942,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:104f3559ecc356453abe314e84c817b0ce43ec98db993c2a8e77627f8a072bc6",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-17T16:06:00Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:347f144fd556a43f652979432cc2a3675e2a85d796066b6ca76c62f4e2e2aeec@sha256:2b548c0d2409a8ff3f0060933a945a5efde954822725e340ae4ff93426d5eb9b",
+								"org.opencontainers.image.revision": "511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07",
+								"org.opencontainers.image.source": "https://github.com/adoptium/containers.git#511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07:25/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/eclipse-temurin",
+								"org.opencontainers.image.version": "25.0.4.1_1-jre-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:4fdc9777f6361102a35192a9382353aa9f52541e0c24d99bf693ab420f5a3160",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:347f144fd556a43f652979432cc2a3675e2a85d796066b6ca76c62f4e2e2aeec@sha256:4fdc9777f6361102a35192a9382353aa9f52541e0c24d99bf693ab420f5a3160",
+								"vnd.docker.reference.digest": "sha256:2b548c0d2409a8ff3f0060933a945a5efde954822725e340ae4ff93426d5eb9b",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:347f144fd556a43f652979432cc2a3675e2a85d796066b6ca76c62f4e2e2aeec@sha256:979e67773d8c3f682f09511b0c5f7846c03aab1a4d6cc93187ef72450fb70747"
+					}
+				},
+				"tomcat:9.0.123-jdk25-temurin-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:c78bd479559151e938d72236acf23be64a1a0b0d29d348f19486896aa9066ac9",
+							"size": 2718,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:695c2f37d850603b9fab07346ceb3d4f9a37b41ff27533e88d66a8c5a6434646",
+								"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+								"org.opencontainers.image.created": "2026-10-17T21:37:50Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:67087d065b05925147388b45cfab6811ebc11e82790b7e3c5844aa73897f501e@sha256:c78bd479559151e938d72236acf23be64a1a0b0d29d348f19486896aa9066ac9",
+								"org.opencontainers.image.revision": "8d61ad77a0cee7f165015db13bb8745185f08d28",
+								"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#8d61ad77a0cee7f165015db13bb8745185f08d28:9.0/jdk25/temurin-noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+								"org.opencontainers.image.version": "9.0.123-jdk25-temurin-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:9796d5c4a9ddb430614e2520c8dd06e9097b0f117bd5c5a3a8982b03eb43dd20",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:67087d065b05925147388b45cfab6811ebc11e82790b7e3c5844aa73897f501e@sha256:9796d5c4a9ddb430614e2520c8dd06e9097b0f117bd5c5a3a8982b03eb43dd20",
+								"vnd.docker.reference.digest": "sha256:c78bd479559151e938d72236acf23be64a1a0b0d29d348f19486896aa9066ac9",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:67087d065b05925147388b45cfab6811ebc11e82790b7e3c5844aa73897f501e@sha256:c8a403f5504692cba1b468d33f386ae6ce353cfc959e997e671e168c520427d0"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "2279f392ea3974086a20aa2ec9b4500c73fafbefd8e41c9379efa78b64679e9f",
+			"reproducibleGitChecksum": "f1e41eae8c789172453b137dabb8043e94bbace018e75471a7f7188bf8078e25",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/tomcat.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "8d61ad77a0cee7f165015db13bb8745185f08d28",
+					"Directory": "9.0/jre25/temurin-noble",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1791812618
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"tomcat:9.0.123-jre25-temurin-noble",
+						"tomcat:9.0-jre25-temurin-noble",
+						"tomcat:9-jre25-temurin-noble"
+					],
+					"archTags": [
+						"riscv64/tomcat:9.0.123-jre25-temurin-noble",
+						"riscv64/tomcat:9.0-jre25-temurin-noble",
+						"riscv64/tomcat:9-jre25-temurin-noble"
+					],
+					"froms": [
+						"eclipse-temurin:25-jre-noble",
+						"tomcat:9.0.123-jdk25-temurin-noble"
+					],
+					"lastStageFrom": "eclipse-temurin:25-jre-noble",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -1008831,7 +1009808,50 @@
 		"buildId": "5a7bcc31ec9d4110fee900c6a854b9ca0844dfe3e9725ea15b4cefdc4d39965b",
 		"build": {
 			"img": "oisupport/staging-riscv64:5a7bcc31ec9d4110fee900c6a854b9ca0844dfe3e9725ea15b4cefdc4d39965b",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:52d74f818c141db339da120f621044d68e7ea7171620e142136e56a0cb90a268",
+						"size": 2720,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:029c8feb3a6c693af3698f7d92eb1e7a2526e5dd40be19b3aee9c4eade86dab4",
+							"org.opencontainers.image.base.name": "eclipse-temurin:21-jdk-noble",
+							"org.opencontainers.image.created": "2026-10-17T21:46:14Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:5a7bcc31ec9d4110fee900c6a854b9ca0844dfe3e9725ea15b4cefdc4d39965b@sha256:52d74f818c141db339da120f621044d68e7ea7171620e142136e56a0cb90a268",
+							"org.opencontainers.image.revision": "8d61ad77a0cee7f165015db13bb8745185f08d28",
+							"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#8d61ad77a0cee7f165015db13bb8745185f08d28:9.0/jdk21/temurin-noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+							"org.opencontainers.image.version": "9.0.123-jdk21-temurin-noble"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:9593fe80098129a7f324ae8d8a662a422a24907978a4b10fed34da7a10a8a353",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:5a7bcc31ec9d4110fee900c6a854b9ca0844dfe3e9725ea15b4cefdc4d39965b@sha256:9593fe80098129a7f324ae8d8a662a422a24907978a4b10fed34da7a10a8a353",
+							"vnd.docker.reference.digest": "sha256:52d74f818c141db339da120f621044d68e7ea7171620e142136e56a0cb90a268",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:5a7bcc31ec9d4110fee900c6a854b9ca0844dfe3e9725ea15b4cefdc4d39965b@sha256:bbd8245b474f2682c491f1f63aa6d28d21d475087b7fae7dea4f6127b6c681ec"
+				}
+			},
 			"sourceId": "29f8b7eda932efa49ff812f9d32397ac379e6bfe524ec9bc49498baac4c7da2c",
 			"arch": "riscv64",
 			"parents": {
@@ -1009647,6 +1010667,158 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"eclipse-temurin:21-jre-noble": {
+							"sourceId": "23dc83167288b843eaaaad8054dc31098826720c043ff2b2ceaee7aa055eb8ea",
+							"pin": null
+						},
+						"tomcat:9.0.123-jdk21-temurin-noble": {
+							"sourceId": "29f8b7eda932efa49ff812f9d32397ac379e6bfe524ec9bc49498baac4c7da2c",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"d12db965e49fc5b49072a9f250cefe0045fbb473ddddc47f974230a518cd3a5b": {
+		"buildId": "d12db965e49fc5b49072a9f250cefe0045fbb473ddddc47f974230a518cd3a5b",
+		"build": {
+			"img": "oisupport/staging-riscv64:d12db965e49fc5b49072a9f250cefe0045fbb473ddddc47f974230a518cd3a5b",
+			"resolved": null,
+			"sourceId": "a513e5c1c76d983ce8ef6097a12545a18dc988598c9c17d00307cf3518d50fa0",
+			"arch": "riscv64",
+			"parents": {
+				"eclipse-temurin:21-jre-noble": "sha256:00f029627edce3b8a9e3b29793e505515be0a224f895b7b4ccbf90f17b6b6fe6",
+				"tomcat:9.0.123-jdk21-temurin-noble": "sha256:52d74f818c141db339da120f621044d68e7ea7171620e142136e56a0cb90a268"
+			},
+			"resolvedParents": {
+				"eclipse-temurin:21-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:00f029627edce3b8a9e3b29793e505515be0a224f895b7b4ccbf90f17b6b6fe6",
+							"size": 1944,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:104f3559ecc356453abe314e84c817b0ce43ec98db993c2a8e77627f8a072bc6",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-17T15:54:00Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6e1a4678ff10599bbdffff32d3457993c78cf8410b88f35c80ccb12f7201f8c6@sha256:00f029627edce3b8a9e3b29793e505515be0a224f895b7b4ccbf90f17b6b6fe6",
+								"org.opencontainers.image.revision": "511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07",
+								"org.opencontainers.image.source": "https://github.com/adoptium/containers.git#511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07:21/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/eclipse-temurin",
+								"org.opencontainers.image.version": "21.0.12.1_1-jre-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:a4ed625a46c3dc53c5a2287581b823ec4d41d17ab0ab7471e368082454a58042",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6e1a4678ff10599bbdffff32d3457993c78cf8410b88f35c80ccb12f7201f8c6@sha256:a4ed625a46c3dc53c5a2287581b823ec4d41d17ab0ab7471e368082454a58042",
+								"vnd.docker.reference.digest": "sha256:00f029627edce3b8a9e3b29793e505515be0a224f895b7b4ccbf90f17b6b6fe6",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6e1a4678ff10599bbdffff32d3457993c78cf8410b88f35c80ccb12f7201f8c6@sha256:434c79f30c9ea7a281d08257c96610e8c803685d327f46eafbaea516fd5079ff"
+					}
+				},
+				"tomcat:9.0.123-jdk21-temurin-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:52d74f818c141db339da120f621044d68e7ea7171620e142136e56a0cb90a268",
+							"size": 2720,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:029c8feb3a6c693af3698f7d92eb1e7a2526e5dd40be19b3aee9c4eade86dab4",
+								"org.opencontainers.image.base.name": "eclipse-temurin:21-jdk-noble",
+								"org.opencontainers.image.created": "2026-10-17T21:46:14Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:5a7bcc31ec9d4110fee900c6a854b9ca0844dfe3e9725ea15b4cefdc4d39965b@sha256:52d74f818c141db339da120f621044d68e7ea7171620e142136e56a0cb90a268",
+								"org.opencontainers.image.revision": "8d61ad77a0cee7f165015db13bb8745185f08d28",
+								"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#8d61ad77a0cee7f165015db13bb8745185f08d28:9.0/jdk21/temurin-noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+								"org.opencontainers.image.version": "9.0.123-jdk21-temurin-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:9593fe80098129a7f324ae8d8a662a422a24907978a4b10fed34da7a10a8a353",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:5a7bcc31ec9d4110fee900c6a854b9ca0844dfe3e9725ea15b4cefdc4d39965b@sha256:9593fe80098129a7f324ae8d8a662a422a24907978a4b10fed34da7a10a8a353",
+								"vnd.docker.reference.digest": "sha256:52d74f818c141db339da120f621044d68e7ea7171620e142136e56a0cb90a268",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:5a7bcc31ec9d4110fee900c6a854b9ca0844dfe3e9725ea15b4cefdc4d39965b@sha256:bbd8245b474f2682c491f1f63aa6d28d21d475087b7fae7dea4f6127b6c681ec"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "a513e5c1c76d983ce8ef6097a12545a18dc988598c9c17d00307cf3518d50fa0",
+			"reproducibleGitChecksum": "b86e59ee372f66d47d7492132dcd064392f9be00863c80c95dba42b36c98df67",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/tomcat.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "8d61ad77a0cee7f165015db13bb8745185f08d28",
+					"Directory": "9.0/jre21/temurin-noble",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1791812618
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"tomcat:9.0.123-jre21-temurin-noble",
+						"tomcat:9.0-jre21-temurin-noble",
+						"tomcat:9-jre21-temurin-noble"
+					],
+					"archTags": [
+						"riscv64/tomcat:9.0.123-jre21-temurin-noble",
+						"riscv64/tomcat:9.0-jre21-temurin-noble",
+						"riscv64/tomcat:9-jre21-temurin-noble"
+					],
+					"froms": [
+						"eclipse-temurin:21-jre-noble",
+						"tomcat:9.0.123-jdk21-temurin-noble"
+					],
+					"lastStageFrom": "eclipse-temurin:21-jre-noble",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -1013649,7 +1014821,50 @@
 		"buildId": "7215a3a03f36d102aca30a3e0501abf2a4f84a74e7cd3168ccbe6b15a2a935b6",
 		"build": {
 			"img": "oisupport/staging-riscv64:7215a3a03f36d102aca30a3e0501abf2a4f84a74e7cd3168ccbe6b15a2a935b6",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:3109ce2c64e3cfc4d40c6ac455f6341b098ca418a979cc7e32b3fd5014d2775c",
+						"size": 2720,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:a290611b64076922f569c5accfdac6a4e4b7a8c11a603609330829f6362c93f7",
+							"org.opencontainers.image.base.name": "eclipse-temurin:17-jdk-noble",
+							"org.opencontainers.image.created": "2026-10-17T21:54:37Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:7215a3a03f36d102aca30a3e0501abf2a4f84a74e7cd3168ccbe6b15a2a935b6@sha256:3109ce2c64e3cfc4d40c6ac455f6341b098ca418a979cc7e32b3fd5014d2775c",
+							"org.opencontainers.image.revision": "8d61ad77a0cee7f165015db13bb8745185f08d28",
+							"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#8d61ad77a0cee7f165015db13bb8745185f08d28:9.0/jdk17/temurin-noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+							"org.opencontainers.image.version": "9.0.123-jdk17-temurin-noble"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:04a8201ec11db3a5aeaa6207bfcbc120fa9362e67887f09fe69503682b6a7f4f",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:7215a3a03f36d102aca30a3e0501abf2a4f84a74e7cd3168ccbe6b15a2a935b6@sha256:04a8201ec11db3a5aeaa6207bfcbc120fa9362e67887f09fe69503682b6a7f4f",
+							"vnd.docker.reference.digest": "sha256:3109ce2c64e3cfc4d40c6ac455f6341b098ca418a979cc7e32b3fd5014d2775c",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:7215a3a03f36d102aca30a3e0501abf2a4f84a74e7cd3168ccbe6b15a2a935b6@sha256:ddc41f3e77c237269b9599250780ae382a61a60e8d9c351c1a454345c2197915"
+				}
+			},
 			"sourceId": "7a5a518ae4a91b656ea057bab98541be921494bc69434c40ba575e7a8ed006b8",
 			"arch": "riscv64",
 			"parents": {
@@ -1014664,6 +1015879,158 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"eclipse-temurin:17-jre-noble": {
+							"sourceId": "0861210ac70a8d006ddda45b55453f75a23403cc3547d1fe70ec99844befb9b2",
+							"pin": null
+						},
+						"tomcat:9.0.123-jdk17-temurin-noble": {
+							"sourceId": "7a5a518ae4a91b656ea057bab98541be921494bc69434c40ba575e7a8ed006b8",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"f1a4eb5d1b1e6c794d104177727dd9e560bc2207e250f2f827666b261f2f3613": {
+		"buildId": "f1a4eb5d1b1e6c794d104177727dd9e560bc2207e250f2f827666b261f2f3613",
+		"build": {
+			"img": "oisupport/staging-riscv64:f1a4eb5d1b1e6c794d104177727dd9e560bc2207e250f2f827666b261f2f3613",
+			"resolved": null,
+			"sourceId": "9d077f0a0bb938c3e567baf47e07bbcb920893e76e996bbed0caf118bd380360",
+			"arch": "riscv64",
+			"parents": {
+				"eclipse-temurin:17-jre-noble": "sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+				"tomcat:9.0.123-jdk17-temurin-noble": "sha256:3109ce2c64e3cfc4d40c6ac455f6341b098ca418a979cc7e32b3fd5014d2775c"
+			},
+			"resolvedParents": {
+				"eclipse-temurin:17-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+							"size": 1944,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:104f3559ecc356453abe314e84c817b0ce43ec98db993c2a8e77627f8a072bc6",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-17T15:42:58Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c937178b110c09e787683c5124f8fa183a9b5de11691fa761724a9b0e7fb75d0@sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+								"org.opencontainers.image.revision": "511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07",
+								"org.opencontainers.image.source": "https://github.com/adoptium/containers.git#511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07:17/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/eclipse-temurin",
+								"org.opencontainers.image.version": "17.0.20.1_1-jre-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:3efc439420fa7c4dccdbc70cfdcf147a503847a4332f0fcedc8a96730a13a492",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c937178b110c09e787683c5124f8fa183a9b5de11691fa761724a9b0e7fb75d0@sha256:3efc439420fa7c4dccdbc70cfdcf147a503847a4332f0fcedc8a96730a13a492",
+								"vnd.docker.reference.digest": "sha256:f19d12625d922ceb0bb81c9609ab52b3d811639bf6316e97a2b1fb2c4a9abdd9",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c937178b110c09e787683c5124f8fa183a9b5de11691fa761724a9b0e7fb75d0@sha256:8481694367d81b1ee795fe659d574c3f8f467e94b66b7b4453ebe71cc730c2fa"
+					}
+				},
+				"tomcat:9.0.123-jdk17-temurin-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:3109ce2c64e3cfc4d40c6ac455f6341b098ca418a979cc7e32b3fd5014d2775c",
+							"size": 2720,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:a290611b64076922f569c5accfdac6a4e4b7a8c11a603609330829f6362c93f7",
+								"org.opencontainers.image.base.name": "eclipse-temurin:17-jdk-noble",
+								"org.opencontainers.image.created": "2026-10-17T21:54:37Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:7215a3a03f36d102aca30a3e0501abf2a4f84a74e7cd3168ccbe6b15a2a935b6@sha256:3109ce2c64e3cfc4d40c6ac455f6341b098ca418a979cc7e32b3fd5014d2775c",
+								"org.opencontainers.image.revision": "8d61ad77a0cee7f165015db13bb8745185f08d28",
+								"org.opencontainers.image.source": "https://github.com/docker-library/tomcat.git#8d61ad77a0cee7f165015db13bb8745185f08d28:9.0/jdk17/temurin-noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/tomcat",
+								"org.opencontainers.image.version": "9.0.123-jdk17-temurin-noble"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:04a8201ec11db3a5aeaa6207bfcbc120fa9362e67887f09fe69503682b6a7f4f",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:7215a3a03f36d102aca30a3e0501abf2a4f84a74e7cd3168ccbe6b15a2a935b6@sha256:04a8201ec11db3a5aeaa6207bfcbc120fa9362e67887f09fe69503682b6a7f4f",
+								"vnd.docker.reference.digest": "sha256:3109ce2c64e3cfc4d40c6ac455f6341b098ca418a979cc7e32b3fd5014d2775c",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:7215a3a03f36d102aca30a3e0501abf2a4f84a74e7cd3168ccbe6b15a2a935b6@sha256:ddc41f3e77c237269b9599250780ae382a61a60e8d9c351c1a454345c2197915"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "9d077f0a0bb938c3e567baf47e07bbcb920893e76e996bbed0caf118bd380360",
+			"reproducibleGitChecksum": "f93f68cbc35d6f54a5876ca2c95a6e38cdf8c966669513d7fc67f51f46e73bb7",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/tomcat.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "8d61ad77a0cee7f165015db13bb8745185f08d28",
+					"Directory": "9.0/jre17/temurin-noble",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1791812618
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"tomcat:9.0.123-jre17-temurin-noble",
+						"tomcat:9.0-jre17-temurin-noble",
+						"tomcat:9-jre17-temurin-noble"
+					],
+					"archTags": [
+						"riscv64/tomcat:9.0.123-jre17-temurin-noble",
+						"riscv64/tomcat:9.0-jre17-temurin-noble",
+						"riscv64/tomcat:9-jre17-temurin-noble"
+					],
+					"froms": [
+						"eclipse-temurin:17-jre-noble",
+						"tomcat:9.0.123-jdk17-temurin-noble"
+					],
+					"lastStageFrom": "eclipse-temurin:17-jre-noble",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
