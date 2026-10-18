@@ -99164,7 +99164,50 @@
 		"buildId": "c08c0c085e740a31d3a1a9f729965c1fc86492265d750f9e3dee83e678bc85cf",
 		"build": {
 			"img": "oisupport/staging-riscv64:c08c0c085e740a31d3a1a9f729965c1fc86492265d750f9e3dee83e678bc85cf",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:f3f61eaa75222f6c02904a61bcfb87f8fff220e38fe9479cac37b281fe328b70",
+						"size": 2292,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-10-18T19:02:47Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c08c0c085e740a31d3a1a9f729965c1fc86492265d750f9e3dee83e678bc85cf@sha256:f3f61eaa75222f6c02904a61bcfb87f8fff220e38fe9479cac37b281fe328b70",
+							"org.opencontainers.image.revision": "4b9f658be76820b24e4ef4605413a5c08707a512",
+							"org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#4b9f658be76820b24e4ef4605413a5c08707a512:mainline/debian",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+							"org.opencontainers.image.version": "1.31.7"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:b7864efa1e37eefb2089cb0a5e4647637e0b74161c59ce84ef7162d01d1071b6",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c08c0c085e740a31d3a1a9f729965c1fc86492265d750f9e3dee83e678bc85cf@sha256:b7864efa1e37eefb2089cb0a5e4647637e0b74161c59ce84ef7162d01d1071b6",
+							"vnd.docker.reference.digest": "sha256:f3f61eaa75222f6c02904a61bcfb87f8fff220e38fe9479cac37b281fe328b70",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c08c0c085e740a31d3a1a9f729965c1fc86492265d750f9e3dee83e678bc85cf@sha256:d54ff3d36e035a0177043c28e70ff879104d1105a209593329b6f0eda411c0b0"
+				}
+			},
 			"sourceId": "6a26ee2518b42c5eb2f8396cea5b1840b7691a223452a2e995b38294a76f8a1b",
 			"arch": "riscv64",
 			"parents": {
@@ -100384,6 +100427,122 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"nginx:1.31.7": {
+							"sourceId": "6a26ee2518b42c5eb2f8396cea5b1840b7691a223452a2e995b38294a76f8a1b",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"b0a7c2686377c08845f16821410538e5ae2405ca0864119d1f36d01aa898ba98": {
+		"buildId": "b0a7c2686377c08845f16821410538e5ae2405ca0864119d1f36d01aa898ba98",
+		"build": {
+			"img": "oisupport/staging-riscv64:b0a7c2686377c08845f16821410538e5ae2405ca0864119d1f36d01aa898ba98",
+			"resolved": null,
+			"sourceId": "1f03f94c9c62f788d670d96bb9985ef0bfd6121e5afdecbcceb2c806b3937b26",
+			"arch": "riscv64",
+			"parents": {
+				"nginx:1.31.7": "sha256:f3f61eaa75222f6c02904a61bcfb87f8fff220e38fe9479cac37b281fe328b70"
+			},
+			"resolvedParents": {
+				"nginx:1.31.7": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:f3f61eaa75222f6c02904a61bcfb87f8fff220e38fe9479cac37b281fe328b70",
+							"size": 2292,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:c6d58429cec88e03b2fe5c3d285bf90517be50b20bc1151b1b5a436d05865a9d",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-10-18T19:02:47Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c08c0c085e740a31d3a1a9f729965c1fc86492265d750f9e3dee83e678bc85cf@sha256:f3f61eaa75222f6c02904a61bcfb87f8fff220e38fe9479cac37b281fe328b70",
+								"org.opencontainers.image.revision": "4b9f658be76820b24e4ef4605413a5c08707a512",
+								"org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#4b9f658be76820b24e4ef4605413a5c08707a512:mainline/debian",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+								"org.opencontainers.image.version": "1.31.7"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:b7864efa1e37eefb2089cb0a5e4647637e0b74161c59ce84ef7162d01d1071b6",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c08c0c085e740a31d3a1a9f729965c1fc86492265d750f9e3dee83e678bc85cf@sha256:b7864efa1e37eefb2089cb0a5e4647637e0b74161c59ce84ef7162d01d1071b6",
+								"vnd.docker.reference.digest": "sha256:f3f61eaa75222f6c02904a61bcfb87f8fff220e38fe9479cac37b281fe328b70",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c08c0c085e740a31d3a1a9f729965c1fc86492265d750f9e3dee83e678bc85cf@sha256:d54ff3d36e035a0177043c28e70ff879104d1105a209593329b6f0eda411c0b0"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "1f03f94c9c62f788d670d96bb9985ef0bfd6121e5afdecbcceb2c806b3937b26",
+			"reproducibleGitChecksum": "e61c86a866aa98d526ac55c244395c03a2392debd0d6fe7c40fc5790c29543e3",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/nginx/docker-nginx.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "4b9f658be76820b24e4ef4605413a5c08707a512",
+					"Directory": "mainline/debian-perl",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1791993887
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"nginx:1.31.7-perl",
+						"nginx:mainline-perl",
+						"nginx:1-perl",
+						"nginx:1.31-perl",
+						"nginx:perl",
+						"nginx:1.31.7-trixie-perl",
+						"nginx:mainline-trixie-perl",
+						"nginx:1-trixie-perl",
+						"nginx:1.31-trixie-perl",
+						"nginx:trixie-perl"
+					],
+					"archTags": [
+						"riscv64/nginx:1.31.7-perl",
+						"riscv64/nginx:mainline-perl",
+						"riscv64/nginx:1-perl",
+						"riscv64/nginx:1.31-perl",
+						"riscv64/nginx:perl",
+						"riscv64/nginx:1.31.7-trixie-perl",
+						"riscv64/nginx:mainline-trixie-perl",
+						"riscv64/nginx:1-trixie-perl",
+						"riscv64/nginx:1.31-trixie-perl",
+						"riscv64/nginx:trixie-perl"
+					],
+					"froms": [
+						"nginx:1.31.7"
+					],
+					"lastStageFrom": "nginx:1.31.7",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
