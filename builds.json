@@ -268511,7 +268511,29 @@
 		"buildId": "f7b54f5c03882871fbaf012835bb06112a08c76bff7131a7beb1976c9592155a",
 		"build": {
 			"img": "oisupport/staging-windows-amd64:f7b54f5c03882871fbaf012835bb06112a08c76bff7131a7beb1976c9592155a",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+						"digest": "sha256:f833ba07885c96faff604eac26b80a596eb57eefa22d2bf4c889ca655e5ee3fa",
+						"size": 1788,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "windows-amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:f7b54f5c03882871fbaf012835bb06112a08c76bff7131a7beb1976c9592155a@sha256:f833ba07885c96faff604eac26b80a596eb57eefa22d2bf4c889ca655e5ee3fa"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "windows",
+							"os.version": "10.0.26100.33650"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:f7b54f5c03882871fbaf012835bb06112a08c76bff7131a7beb1976c9592155a@sha256:f833ba07885c96faff604eac26b80a596eb57eefa22d2bf4c889ca655e5ee3fa"
+				}
+			},
 			"sourceId": "e3937e05ca4da6fa1d90b3b67e871d240d666b2ef164c00079069f0ae6c6b9a2",
 			"arch": "windows-amd64",
 			"parents": {
@@ -268605,7 +268627,29 @@
 		"buildId": "aaa324d1ea3792184820db7712525ca686c573c477ad8d78f82179f00b3b0f9d",
 		"build": {
 			"img": "oisupport/staging-windows-amd64:aaa324d1ea3792184820db7712525ca686c573c477ad8d78f82179f00b3b0f9d",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+						"digest": "sha256:85633cc9400f3a94e6d38da6aa1d741e204c6d157f8c1db1f6688ce7d9750112",
+						"size": 1788,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "windows-amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:aaa324d1ea3792184820db7712525ca686c573c477ad8d78f82179f00b3b0f9d@sha256:85633cc9400f3a94e6d38da6aa1d741e204c6d157f8c1db1f6688ce7d9750112"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "windows",
+							"os.version": "10.0.20348.5761"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:aaa324d1ea3792184820db7712525ca686c573c477ad8d78f82179f00b3b0f9d@sha256:85633cc9400f3a94e6d38da6aa1d741e204c6d157f8c1db1f6688ce7d9750112"
+				}
+			},
 			"sourceId": "10a64468cdb58592a32c5506a128a79a90d7b3fc231b4507f07956b898a602ef",
 			"arch": "windows-amd64",
 			"parents": {
@@ -268689,6 +268733,246 @@
 						"mcr.microsoft.com/windows/servercore:ltsc2022": {
 							"sourceId": null,
 							"pin": "sha256:593cf4a5ef08cfff00a03637e45eba073b8fe9dc90b80af4449bc5f427c7cdcd"
+						}
+					}
+				}
+			}
+		}
+	},
+	"dbe765a93a532f61b68d62eccf0b9a972eb4ebcc7b006a7ce957135abafc274c": {
+		"buildId": "dbe765a93a532f61b68d62eccf0b9a972eb4ebcc7b006a7ce957135abafc274c",
+		"build": {
+			"img": "oisupport/staging-windows-amd64:dbe765a93a532f61b68d62eccf0b9a972eb4ebcc7b006a7ce957135abafc274c",
+			"resolved": null,
+			"sourceId": "9f17f4d30088e47673152512e579eef3e65ed8ce8d621dc0602dc73f130d1c92",
+			"arch": "windows-amd64",
+			"parents": {
+				"mcr.microsoft.com/windows/nanoserver:ltsc2025": "sha256:8f1a9a102c56156120b6124b57c48016555b6dd30fd33ba7b259055e51e14bd8",
+				"traefik:v3.7.16-windowsservercore-ltsc2025": "sha256:f833ba07885c96faff604eac26b80a596eb57eefa22d2bf4c889ca655e5ee3fa"
+			},
+			"resolvedParents": {
+				"mcr.microsoft.com/windows/nanoserver:ltsc2025": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+							"digest": "sha256:8f1a9a102c56156120b6124b57c48016555b6dd30fd33ba7b259055e51e14bd8",
+							"size": 429,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "windows-amd64",
+								"org.opencontainers.image.ref.name": "mcr.microsoft.com/windows/nanoserver@sha256:8f1a9a102c56156120b6124b57c48016555b6dd30fd33ba7b259055e51e14bd8"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "windows",
+								"os.version": "10.0.26100.33650"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "mcr.microsoft.com/windows/nanoserver@sha256:4d81c65bfec7e1b00e004ba8d7306347a880935179bc20cae1044b5a7d35f789"
+					}
+				},
+				"traefik:v3.7.16-windowsservercore-ltsc2025": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+							"digest": "sha256:f833ba07885c96faff604eac26b80a596eb57eefa22d2bf4c889ca655e5ee3fa",
+							"size": 1788,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "windows-amd64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:f7b54f5c03882871fbaf012835bb06112a08c76bff7131a7beb1976c9592155a@sha256:f833ba07885c96faff604eac26b80a596eb57eefa22d2bf4c889ca655e5ee3fa"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "windows",
+								"os.version": "10.0.26100.33650"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:f7b54f5c03882871fbaf012835bb06112a08c76bff7131a7beb1976c9592155a@sha256:f833ba07885c96faff604eac26b80a596eb57eefa22d2bf4c889ca655e5ee3fa"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "9f17f4d30088e47673152512e579eef3e65ed8ce8d621dc0602dc73f130d1c92",
+			"reproducibleGitChecksum": "34c3fffbf5965f1371e479937d2ade0afcff4657f1d866da996db07a123fa61b",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/traefik/traefik-library-image.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "8bf882086da1e3295756402a1cb2646600eb9d6d",
+					"Directory": "v3.7/windows/nanoserver-ltsc2025",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1792509572
+				}
+			],
+			"arches": {
+				"windows-amd64": {
+					"tags": [
+						"traefik:v3.7.16-nanoserver-ltsc2025",
+						"traefik:3.7.16-nanoserver-ltsc2025",
+						"traefik:v3.7-nanoserver-ltsc2025",
+						"traefik:3.7-nanoserver-ltsc2025",
+						"traefik:langres-nanoserver-ltsc2025",
+						"traefik:v3-nanoserver-ltsc2025",
+						"traefik:3-nanoserver-ltsc2025",
+						"traefik:nanoserver-ltsc2025"
+					],
+					"archTags": [
+						"winamd64/traefik:v3.7.16-nanoserver-ltsc2025",
+						"winamd64/traefik:3.7.16-nanoserver-ltsc2025",
+						"winamd64/traefik:v3.7-nanoserver-ltsc2025",
+						"winamd64/traefik:3.7-nanoserver-ltsc2025",
+						"winamd64/traefik:langres-nanoserver-ltsc2025",
+						"winamd64/traefik:v3-nanoserver-ltsc2025",
+						"winamd64/traefik:3-nanoserver-ltsc2025",
+						"winamd64/traefik:nanoserver-ltsc2025"
+					],
+					"froms": [
+						"mcr.microsoft.com/windows/nanoserver:ltsc2025",
+						"traefik:v3.7.16-windowsservercore-ltsc2025"
+					],
+					"lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2025",
+					"platformString": "windows/amd64",
+					"platform": {
+						"architecture": "amd64",
+						"os": "windows"
+					},
+					"parents": {
+						"mcr.microsoft.com/windows/nanoserver:ltsc2025": {
+							"sourceId": null,
+							"pin": "sha256:4d81c65bfec7e1b00e004ba8d7306347a880935179bc20cae1044b5a7d35f789"
+						},
+						"traefik:v3.7.16-windowsservercore-ltsc2025": {
+							"sourceId": "e3937e05ca4da6fa1d90b3b67e871d240d666b2ef164c00079069f0ae6c6b9a2",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"736c3019fc5732bd9111e883a24186c148979ef96c7745a82d7468b5259b85b2": {
+		"buildId": "736c3019fc5732bd9111e883a24186c148979ef96c7745a82d7468b5259b85b2",
+		"build": {
+			"img": "oisupport/staging-windows-amd64:736c3019fc5732bd9111e883a24186c148979ef96c7745a82d7468b5259b85b2",
+			"resolved": null,
+			"sourceId": "a06845d6190cc6ee91492867ad52a791cd7abc0f4b677b3dfa8e2da23bf42e53",
+			"arch": "windows-amd64",
+			"parents": {
+				"mcr.microsoft.com/windows/nanoserver:ltsc2022": "sha256:0a0497a0e36b78bd2f50ebc02f59f06e439a5e13a8525175cf01d4c1fcd17eb5",
+				"traefik:v3.7.16-windowsservercore-ltsc2022": "sha256:85633cc9400f3a94e6d38da6aa1d741e204c6d157f8c1db1f6688ce7d9750112"
+			},
+			"resolvedParents": {
+				"mcr.microsoft.com/windows/nanoserver:ltsc2022": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+							"digest": "sha256:0a0497a0e36b78bd2f50ebc02f59f06e439a5e13a8525175cf01d4c1fcd17eb5",
+							"size": 429,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "windows-amd64",
+								"org.opencontainers.image.ref.name": "mcr.microsoft.com/windows/nanoserver@sha256:0a0497a0e36b78bd2f50ebc02f59f06e439a5e13a8525175cf01d4c1fcd17eb5"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "windows",
+								"os.version": "10.0.20348.5761"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "mcr.microsoft.com/windows/nanoserver@sha256:32729e1cdc6718c90952375e9bbae2b2c5d38f41ceb50a693fc2383b76df28fd"
+					}
+				},
+				"traefik:v3.7.16-windowsservercore-ltsc2022": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+							"digest": "sha256:85633cc9400f3a94e6d38da6aa1d741e204c6d157f8c1db1f6688ce7d9750112",
+							"size": 1788,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "windows-amd64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:aaa324d1ea3792184820db7712525ca686c573c477ad8d78f82179f00b3b0f9d@sha256:85633cc9400f3a94e6d38da6aa1d741e204c6d157f8c1db1f6688ce7d9750112"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "windows",
+								"os.version": "10.0.20348.5761"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:aaa324d1ea3792184820db7712525ca686c573c477ad8d78f82179f00b3b0f9d@sha256:85633cc9400f3a94e6d38da6aa1d741e204c6d157f8c1db1f6688ce7d9750112"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "a06845d6190cc6ee91492867ad52a791cd7abc0f4b677b3dfa8e2da23bf42e53",
+			"reproducibleGitChecksum": "0b102375fd806b6e41a338589c23a333001d7c6eb3aa3d2e60cd12a57266d67e",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/traefik/traefik-library-image.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "8bf882086da1e3295756402a1cb2646600eb9d6d",
+					"Directory": "v3.7/windows/nanoserver-ltsc2022",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1792509572
+				}
+			],
+			"arches": {
+				"windows-amd64": {
+					"tags": [
+						"traefik:v3.7.16-nanoserver-ltsc2022",
+						"traefik:3.7.16-nanoserver-ltsc2022",
+						"traefik:v3.7-nanoserver-ltsc2022",
+						"traefik:3.7-nanoserver-ltsc2022",
+						"traefik:langres-nanoserver-ltsc2022",
+						"traefik:v3-nanoserver-ltsc2022",
+						"traefik:3-nanoserver-ltsc2022",
+						"traefik:nanoserver-ltsc2022"
+					],
+					"archTags": [
+						"winamd64/traefik:v3.7.16-nanoserver-ltsc2022",
+						"winamd64/traefik:3.7.16-nanoserver-ltsc2022",
+						"winamd64/traefik:v3.7-nanoserver-ltsc2022",
+						"winamd64/traefik:3.7-nanoserver-ltsc2022",
+						"winamd64/traefik:langres-nanoserver-ltsc2022",
+						"winamd64/traefik:v3-nanoserver-ltsc2022",
+						"winamd64/traefik:3-nanoserver-ltsc2022",
+						"winamd64/traefik:nanoserver-ltsc2022"
+					],
+					"froms": [
+						"mcr.microsoft.com/windows/nanoserver:ltsc2022",
+						"traefik:v3.7.16-windowsservercore-ltsc2022"
+					],
+					"lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2022",
+					"platformString": "windows/amd64",
+					"platform": {
+						"architecture": "amd64",
+						"os": "windows"
+					},
+					"parents": {
+						"mcr.microsoft.com/windows/nanoserver:ltsc2022": {
+							"sourceId": null,
+							"pin": "sha256:32729e1cdc6718c90952375e9bbae2b2c5d38f41ceb50a693fc2383b76df28fd"
+						},
+						"traefik:v3.7.16-windowsservercore-ltsc2022": {
+							"sourceId": "10a64468cdb58592a32c5506a128a79a90d7b3fc231b4507f07956b898a602ef",
+							"pin": null
 						}
 					}
 				}
@@ -269321,7 +269605,50 @@
 		"buildId": "d2f7fcc949f5657a35fb8f8a54e3e277fb48ba06e89cc918ac734310641a06ad",
 		"build": {
 			"img": "oisupport/staging-riscv64:d2f7fcc949f5657a35fb8f8a54e3e277fb48ba06e89cc918ac734310641a06ad",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:e2bbbc3795e78cf2d3f32822af8d28ef83dfe5fa0c95d55877012a864c7f1274",
+						"size": 1731,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:1320e86f94641acc6c531e0519ca4285f1882612d52c654dfa4f1bb65b48a04f",
+							"org.opencontainers.image.base.name": "alpine:3.24",
+							"org.opencontainers.image.created": "2026-10-20T18:04:35Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d2f7fcc949f5657a35fb8f8a54e3e277fb48ba06e89cc918ac734310641a06ad@sha256:e2bbbc3795e78cf2d3f32822af8d28ef83dfe5fa0c95d55877012a864c7f1274",
+							"org.opencontainers.image.revision": "8bf882086da1e3295756402a1cb2646600eb9d6d",
+							"org.opencontainers.image.source": "https://github.com/traefik/traefik-library-image.git#8bf882086da1e3295756402a1cb2646600eb9d6d:v3.7/alpine",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/traefik",
+							"org.opencontainers.image.version": "v3.7.16"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:fc5101df5c2c8f74d5172fa0c12a70d1ea91725b9b428dc9408455b856d7b373",
+						"size": 840,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d2f7fcc949f5657a35fb8f8a54e3e277fb48ba06e89cc918ac734310641a06ad@sha256:fc5101df5c2c8f74d5172fa0c12a70d1ea91725b9b428dc9408455b856d7b373",
+							"vnd.docker.reference.digest": "sha256:e2bbbc3795e78cf2d3f32822af8d28ef83dfe5fa0c95d55877012a864c7f1274",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d2f7fcc949f5657a35fb8f8a54e3e277fb48ba06e89cc918ac734310641a06ad@sha256:fd34586d5d10e60e450919498ce7b74c45d8cd3a64ffd934b11de02c61234c9d"
+				}
+			},
 			"sourceId": "82f323fb1479bf1ae13ff79adf5f52f825e817308ccb97e24477ceb6e7382dcf",
 			"arch": "riscv64",
 			"parents": {
@@ -269586,7 +269913,29 @@
 		"buildId": "2b5d5b760577fa73d32a3370b268be9ebfcc8ec4764a9515b21984bfe15d8ae0",
 		"build": {
 			"img": "oisupport/staging-windows-amd64:2b5d5b760577fa73d32a3370b268be9ebfcc8ec4764a9515b21984bfe15d8ae0",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+						"digest": "sha256:3190b7ebd61741bcbb7575a923fea58327c0e4aa7039ab4fb1b17e29be95dd82",
+						"size": 1788,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "windows-amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:2b5d5b760577fa73d32a3370b268be9ebfcc8ec4764a9515b21984bfe15d8ae0@sha256:3190b7ebd61741bcbb7575a923fea58327c0e4aa7039ab4fb1b17e29be95dd82"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "windows",
+							"os.version": "10.0.26100.33650"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:2b5d5b760577fa73d32a3370b268be9ebfcc8ec4764a9515b21984bfe15d8ae0@sha256:3190b7ebd61741bcbb7575a923fea58327c0e4aa7039ab4fb1b17e29be95dd82"
+				}
+			},
 			"sourceId": "03edde3e67aa82d19f54a732afd456e090a4210d497211b426561bb57c413910",
 			"arch": "windows-amd64",
 			"parents": {
@@ -269678,7 +270027,29 @@
 		"buildId": "8c94f41e57845131d0ed51a529ed8cd9f4e8bfa9e6a014ca931b9509a6dab0c6",
 		"build": {
 			"img": "oisupport/staging-windows-amd64:8c94f41e57845131d0ed51a529ed8cd9f4e8bfa9e6a014ca931b9509a6dab0c6",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+						"digest": "sha256:1f7177334fa83077129cd0794d41aeb10ad76efdb85aa3a3ae90b18b8c0c8b26",
+						"size": 1788,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "windows-amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:8c94f41e57845131d0ed51a529ed8cd9f4e8bfa9e6a014ca931b9509a6dab0c6@sha256:1f7177334fa83077129cd0794d41aeb10ad76efdb85aa3a3ae90b18b8c0c8b26"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "windows",
+							"os.version": "10.0.20348.5761"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:8c94f41e57845131d0ed51a529ed8cd9f4e8bfa9e6a014ca931b9509a6dab0c6@sha256:1f7177334fa83077129cd0794d41aeb10ad76efdb85aa3a3ae90b18b8c0c8b26"
+				}
+			},
 			"sourceId": "6dde9c707653f3b07ffaf6edb3138fa2e960107b9d68dc3f30764eda955b9173",
 			"arch": "windows-amd64",
 			"parents": {
@@ -269760,6 +270131,242 @@
 						"mcr.microsoft.com/windows/servercore:ltsc2022": {
 							"sourceId": null,
 							"pin": "sha256:593cf4a5ef08cfff00a03637e45eba073b8fe9dc90b80af4449bc5f427c7cdcd"
+						}
+					}
+				}
+			}
+		}
+	},
+	"e99cf2e66c884806859211bf7f31b7613100a95d4bd7dee3f9b82c041d10ca30": {
+		"buildId": "e99cf2e66c884806859211bf7f31b7613100a95d4bd7dee3f9b82c041d10ca30",
+		"build": {
+			"img": "oisupport/staging-windows-amd64:e99cf2e66c884806859211bf7f31b7613100a95d4bd7dee3f9b82c041d10ca30",
+			"resolved": null,
+			"sourceId": "5d966eb5206cac06dc06971ad36bd0f6d05d8fa37249c7a7230919b1fd23047e",
+			"arch": "windows-amd64",
+			"parents": {
+				"mcr.microsoft.com/windows/nanoserver:ltsc2025": "sha256:8f1a9a102c56156120b6124b57c48016555b6dd30fd33ba7b259055e51e14bd8",
+				"traefik:v2.11.60-windowsservercore-ltsc2025": "sha256:3190b7ebd61741bcbb7575a923fea58327c0e4aa7039ab4fb1b17e29be95dd82"
+			},
+			"resolvedParents": {
+				"mcr.microsoft.com/windows/nanoserver:ltsc2025": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+							"digest": "sha256:8f1a9a102c56156120b6124b57c48016555b6dd30fd33ba7b259055e51e14bd8",
+							"size": 429,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "windows-amd64",
+								"org.opencontainers.image.ref.name": "mcr.microsoft.com/windows/nanoserver@sha256:8f1a9a102c56156120b6124b57c48016555b6dd30fd33ba7b259055e51e14bd8"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "windows",
+								"os.version": "10.0.26100.33650"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "mcr.microsoft.com/windows/nanoserver@sha256:4d81c65bfec7e1b00e004ba8d7306347a880935179bc20cae1044b5a7d35f789"
+					}
+				},
+				"traefik:v2.11.60-windowsservercore-ltsc2025": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+							"digest": "sha256:3190b7ebd61741bcbb7575a923fea58327c0e4aa7039ab4fb1b17e29be95dd82",
+							"size": 1788,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "windows-amd64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:2b5d5b760577fa73d32a3370b268be9ebfcc8ec4764a9515b21984bfe15d8ae0@sha256:3190b7ebd61741bcbb7575a923fea58327c0e4aa7039ab4fb1b17e29be95dd82"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "windows",
+								"os.version": "10.0.26100.33650"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:2b5d5b760577fa73d32a3370b268be9ebfcc8ec4764a9515b21984bfe15d8ae0@sha256:3190b7ebd61741bcbb7575a923fea58327c0e4aa7039ab4fb1b17e29be95dd82"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "5d966eb5206cac06dc06971ad36bd0f6d05d8fa37249c7a7230919b1fd23047e",
+			"reproducibleGitChecksum": "464641b882ea17b645b8f59d415a475835cda368f4ede4ddc7425a828a2298fc",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/traefik/traefik-library-image.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "f205779a77ef7424f431a88825eabe5a64ff4ff2",
+					"Directory": "v2.11/windows/nanoserver-ltsc2025",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1792508740
+				}
+			],
+			"arches": {
+				"windows-amd64": {
+					"tags": [
+						"traefik:v2.11.60-nanoserver-ltsc2025",
+						"traefik:2.11.60-nanoserver-ltsc2025",
+						"traefik:v2.11-nanoserver-ltsc2025",
+						"traefik:2.11-nanoserver-ltsc2025",
+						"traefik:mimolette-nanoserver-ltsc2025",
+						"traefik:v2-nanoserver-ltsc2025",
+						"traefik:2-nanoserver-ltsc2025"
+					],
+					"archTags": [
+						"winamd64/traefik:v2.11.60-nanoserver-ltsc2025",
+						"winamd64/traefik:2.11.60-nanoserver-ltsc2025",
+						"winamd64/traefik:v2.11-nanoserver-ltsc2025",
+						"winamd64/traefik:2.11-nanoserver-ltsc2025",
+						"winamd64/traefik:mimolette-nanoserver-ltsc2025",
+						"winamd64/traefik:v2-nanoserver-ltsc2025",
+						"winamd64/traefik:2-nanoserver-ltsc2025"
+					],
+					"froms": [
+						"mcr.microsoft.com/windows/nanoserver:ltsc2025",
+						"traefik:v2.11.60-windowsservercore-ltsc2025"
+					],
+					"lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2025",
+					"platformString": "windows/amd64",
+					"platform": {
+						"architecture": "amd64",
+						"os": "windows"
+					},
+					"parents": {
+						"mcr.microsoft.com/windows/nanoserver:ltsc2025": {
+							"sourceId": null,
+							"pin": "sha256:4d81c65bfec7e1b00e004ba8d7306347a880935179bc20cae1044b5a7d35f789"
+						},
+						"traefik:v2.11.60-windowsservercore-ltsc2025": {
+							"sourceId": "03edde3e67aa82d19f54a732afd456e090a4210d497211b426561bb57c413910",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"bd9e3559a2667730b2d32ec5e8f21906e7a17b611e5f5676917243732b6cbddb": {
+		"buildId": "bd9e3559a2667730b2d32ec5e8f21906e7a17b611e5f5676917243732b6cbddb",
+		"build": {
+			"img": "oisupport/staging-windows-amd64:bd9e3559a2667730b2d32ec5e8f21906e7a17b611e5f5676917243732b6cbddb",
+			"resolved": null,
+			"sourceId": "67d650894a4b8bc95595069ea6193fde267d3e3ee7ad2de98d380ede309b27b9",
+			"arch": "windows-amd64",
+			"parents": {
+				"mcr.microsoft.com/windows/nanoserver:ltsc2022": "sha256:0a0497a0e36b78bd2f50ebc02f59f06e439a5e13a8525175cf01d4c1fcd17eb5",
+				"traefik:v2.11.60-windowsservercore-ltsc2022": "sha256:1f7177334fa83077129cd0794d41aeb10ad76efdb85aa3a3ae90b18b8c0c8b26"
+			},
+			"resolvedParents": {
+				"mcr.microsoft.com/windows/nanoserver:ltsc2022": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+							"digest": "sha256:0a0497a0e36b78bd2f50ebc02f59f06e439a5e13a8525175cf01d4c1fcd17eb5",
+							"size": 429,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "windows-amd64",
+								"org.opencontainers.image.ref.name": "mcr.microsoft.com/windows/nanoserver@sha256:0a0497a0e36b78bd2f50ebc02f59f06e439a5e13a8525175cf01d4c1fcd17eb5"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "windows",
+								"os.version": "10.0.20348.5761"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "mcr.microsoft.com/windows/nanoserver@sha256:32729e1cdc6718c90952375e9bbae2b2c5d38f41ceb50a693fc2383b76df28fd"
+					}
+				},
+				"traefik:v2.11.60-windowsservercore-ltsc2022": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+							"digest": "sha256:1f7177334fa83077129cd0794d41aeb10ad76efdb85aa3a3ae90b18b8c0c8b26",
+							"size": 1788,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "windows-amd64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:8c94f41e57845131d0ed51a529ed8cd9f4e8bfa9e6a014ca931b9509a6dab0c6@sha256:1f7177334fa83077129cd0794d41aeb10ad76efdb85aa3a3ae90b18b8c0c8b26"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "windows",
+								"os.version": "10.0.20348.5761"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-windows-amd64:8c94f41e57845131d0ed51a529ed8cd9f4e8bfa9e6a014ca931b9509a6dab0c6@sha256:1f7177334fa83077129cd0794d41aeb10ad76efdb85aa3a3ae90b18b8c0c8b26"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "67d650894a4b8bc95595069ea6193fde267d3e3ee7ad2de98d380ede309b27b9",
+			"reproducibleGitChecksum": "a5389b08abdcc63cb3da24f5bef9fb335f0bc27820bce6fd36a90f2de8388fe9",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/traefik/traefik-library-image.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "f205779a77ef7424f431a88825eabe5a64ff4ff2",
+					"Directory": "v2.11/windows/nanoserver-ltsc2022",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1792508740
+				}
+			],
+			"arches": {
+				"windows-amd64": {
+					"tags": [
+						"traefik:v2.11.60-nanoserver-ltsc2022",
+						"traefik:2.11.60-nanoserver-ltsc2022",
+						"traefik:v2.11-nanoserver-ltsc2022",
+						"traefik:2.11-nanoserver-ltsc2022",
+						"traefik:mimolette-nanoserver-ltsc2022",
+						"traefik:v2-nanoserver-ltsc2022",
+						"traefik:2-nanoserver-ltsc2022"
+					],
+					"archTags": [
+						"winamd64/traefik:v2.11.60-nanoserver-ltsc2022",
+						"winamd64/traefik:2.11.60-nanoserver-ltsc2022",
+						"winamd64/traefik:v2.11-nanoserver-ltsc2022",
+						"winamd64/traefik:2.11-nanoserver-ltsc2022",
+						"winamd64/traefik:mimolette-nanoserver-ltsc2022",
+						"winamd64/traefik:v2-nanoserver-ltsc2022",
+						"winamd64/traefik:2-nanoserver-ltsc2022"
+					],
+					"froms": [
+						"mcr.microsoft.com/windows/nanoserver:ltsc2022",
+						"traefik:v2.11.60-windowsservercore-ltsc2022"
+					],
+					"lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2022",
+					"platformString": "windows/amd64",
+					"platform": {
+						"architecture": "amd64",
+						"os": "windows"
+					},
+					"parents": {
+						"mcr.microsoft.com/windows/nanoserver:ltsc2022": {
+							"sourceId": null,
+							"pin": "sha256:32729e1cdc6718c90952375e9bbae2b2c5d38f41ceb50a693fc2383b76df28fd"
+						},
+						"traefik:v2.11.60-windowsservercore-ltsc2022": {
+							"sourceId": "6dde9c707653f3b07ffaf6edb3138fa2e960107b9d68dc3f30764eda955b9173",
+							"pin": null
 						}
 					}
 				}
@@ -270384,7 +270991,50 @@
 		"buildId": "80b54fd5ca0deb0e6135f61146caf2257cc0b024d477317c58ccc76abe7e9fcf",
 		"build": {
 			"img": "oisupport/staging-riscv64:80b54fd5ca0deb0e6135f61146caf2257cc0b024d477317c58ccc76abe7e9fcf",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:073b6c8dbbf0b924e66574de156461516e28ea6405690e39889c900093b4d4f2",
+						"size": 1733,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:1320e86f94641acc6c531e0519ca4285f1882612d52c654dfa4f1bb65b48a04f",
+							"org.opencontainers.image.base.name": "alpine:3.24",
+							"org.opencontainers.image.created": "2026-10-20T18:11:18Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:80b54fd5ca0deb0e6135f61146caf2257cc0b024d477317c58ccc76abe7e9fcf@sha256:073b6c8dbbf0b924e66574de156461516e28ea6405690e39889c900093b4d4f2",
+							"org.opencontainers.image.revision": "f205779a77ef7424f431a88825eabe5a64ff4ff2",
+							"org.opencontainers.image.source": "https://github.com/traefik/traefik-library-image.git#f205779a77ef7424f431a88825eabe5a64ff4ff2:v2.11/alpine",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/traefik",
+							"org.opencontainers.image.version": "v2.11.60"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:8b8579e94eec2f64590df256aea75b0c36b593423e8743c18f0a54d85373a162",
+						"size": 840,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:80b54fd5ca0deb0e6135f61146caf2257cc0b024d477317c58ccc76abe7e9fcf@sha256:8b8579e94eec2f64590df256aea75b0c36b593423e8743c18f0a54d85373a162",
+							"vnd.docker.reference.digest": "sha256:073b6c8dbbf0b924e66574de156461516e28ea6405690e39889c900093b4d4f2",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:80b54fd5ca0deb0e6135f61146caf2257cc0b024d477317c58ccc76abe7e9fcf@sha256:b2b9c5e4efbe8dfb4c5b478451e6542c418985de95632220e32cde9f511edc4d"
+				}
+			},
 			"sourceId": "f0e2244bdc0c510857ef4e037c2bb9f7d0b209c0c00783fa0b4d3f3a9234c4f2",
 			"arch": "riscv64",
 			"parents": {
@@ -560086,7 +560736,50 @@
 		"buildId": "3c2048f92ac19e68e35c6312ffb58758c7a84613434fd509db2d902b411b51aa",
 		"build": {
 			"img": "oisupport/staging-riscv64:3c2048f92ac19e68e35c6312ffb58758c7a84613434fd509db2d902b411b51aa",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:362c73b2aa1c26105552e62d4d9138f73cb34964ef273f2ca19c2857ec94aa23",
+						"size": 2891,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:695c2f37d850603b9fab07346ceb3d4f9a37b41ff27533e88d66a8c5a6434646",
+							"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+							"org.opencontainers.image.created": "2026-10-20T18:17:45Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:3c2048f92ac19e68e35c6312ffb58758c7a84613434fd509db2d902b411b51aa@sha256:362c73b2aa1c26105552e62d4d9138f73cb34964ef273f2ca19c2857ec94aa23",
+							"org.opencontainers.image.revision": "f924f1841ebbe72074bca8339465b21ec61876cf",
+							"org.opencontainers.image.source": "https://github.com/gradle/docker-gradle.git#f924f1841ebbe72074bca8339465b21ec61876cf:jdk25-noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/gradle",
+							"org.opencontainers.image.version": "9.8.2-jdk25-noble"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:a627ab62a725af0ae241f656ecd33ae21339a726002ce8182482b1bac026e601",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:3c2048f92ac19e68e35c6312ffb58758c7a84613434fd509db2d902b411b51aa@sha256:a627ab62a725af0ae241f656ecd33ae21339a726002ce8182482b1bac026e601",
+							"vnd.docker.reference.digest": "sha256:362c73b2aa1c26105552e62d4d9138f73cb34964ef273f2ca19c2857ec94aa23",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:3c2048f92ac19e68e35c6312ffb58758c7a84613434fd509db2d902b411b51aa@sha256:4d1a8bf11b0a5d53eee7e45077d8579d850dcca38e55dd0dd982a31cea2925fd"
+				}
+			},
 			"sourceId": "12746e78a94ec74d9764ee66b3ea6d3733cd1d32afe66912821ccb0221a91d00",
 			"arch": "riscv64",
 			"parents": {
@@ -563427,7 +564120,50 @@
 		"buildId": "fcc2689eb192df65d203813d35e2b107df1507ca4d042378639477b624b64a09",
 		"build": {
 			"img": "oisupport/staging-riscv64:fcc2689eb192df65d203813d35e2b107df1507ca4d042378639477b624b64a09",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:a61a0fa43e3abe2aa15029a9c82db8a600556b8da7812d70be1283e196bdb633",
+						"size": 2893,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:029c8feb3a6c693af3698f7d92eb1e7a2526e5dd40be19b3aee9c4eade86dab4",
+							"org.opencontainers.image.base.name": "eclipse-temurin:21-jdk-noble",
+							"org.opencontainers.image.created": "2026-10-20T18:25:47Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:fcc2689eb192df65d203813d35e2b107df1507ca4d042378639477b624b64a09@sha256:a61a0fa43e3abe2aa15029a9c82db8a600556b8da7812d70be1283e196bdb633",
+							"org.opencontainers.image.revision": "f924f1841ebbe72074bca8339465b21ec61876cf",
+							"org.opencontainers.image.source": "https://github.com/gradle/docker-gradle.git#f924f1841ebbe72074bca8339465b21ec61876cf:jdk21-noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/gradle",
+							"org.opencontainers.image.version": "9.8.2-jdk21-noble"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:68f1b7747dc74955d437e81d2deba1f5e663c6da233af0fa4a12b8fca986c0ad",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:fcc2689eb192df65d203813d35e2b107df1507ca4d042378639477b624b64a09@sha256:68f1b7747dc74955d437e81d2deba1f5e663c6da233af0fa4a12b8fca986c0ad",
+							"vnd.docker.reference.digest": "sha256:a61a0fa43e3abe2aa15029a9c82db8a600556b8da7812d70be1283e196bdb633",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:fcc2689eb192df65d203813d35e2b107df1507ca4d042378639477b624b64a09@sha256:b6ca62c615aacf91ca52eb073d507b13f0f56b9e58a71f5af6ca57b2f4aa74c4"
+				}
+			},
 			"sourceId": "7cec93d7e594c7dfd559cef95f63cc29468ff9aee1d8f0db79bc468fa2274d2a",
 			"arch": "riscv64",
 			"parents": {
@@ -568473,7 +569209,50 @@
 		"buildId": "9adde938138f8654aae289b735065b67237b13be4b93206a89a0d9ca857f5542",
 		"build": {
 			"img": "oisupport/staging-riscv64:9adde938138f8654aae289b735065b67237b13be4b93206a89a0d9ca857f5542",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:0c934e2e497244411ea8dced8dcfba28598c08fca30294d4c558adb694c5500c",
+						"size": 2893,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:a290611b64076922f569c5accfdac6a4e4b7a8c11a603609330829f6362c93f7",
+							"org.opencontainers.image.base.name": "eclipse-temurin:17-jdk-noble",
+							"org.opencontainers.image.created": "2026-10-20T18:34:06Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:9adde938138f8654aae289b735065b67237b13be4b93206a89a0d9ca857f5542@sha256:0c934e2e497244411ea8dced8dcfba28598c08fca30294d4c558adb694c5500c",
+							"org.opencontainers.image.revision": "f924f1841ebbe72074bca8339465b21ec61876cf",
+							"org.opencontainers.image.source": "https://github.com/gradle/docker-gradle.git#f924f1841ebbe72074bca8339465b21ec61876cf:jdk17-noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/gradle",
+							"org.opencontainers.image.version": "9.8.2-jdk17-noble"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:fb5f3ef6fd1c06c108ffd607f881c9fc725df869879ad947ed7b1dddda473e94",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:9adde938138f8654aae289b735065b67237b13be4b93206a89a0d9ca857f5542@sha256:fb5f3ef6fd1c06c108ffd607f881c9fc725df869879ad947ed7b1dddda473e94",
+							"vnd.docker.reference.digest": "sha256:0c934e2e497244411ea8dced8dcfba28598c08fca30294d4c558adb694c5500c",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:9adde938138f8654aae289b735065b67237b13be4b93206a89a0d9ca857f5542@sha256:f21c5b41afd56d26ded95f47492f45d06383408fc6d9e2add55ead793896f1a5"
+				}
+			},
 			"sourceId": "d8fbfa7f42719993125fe752db588b46dc07637c40ae94f813e67babbf3c1dcb",
 			"arch": "riscv64",
 			"parents": {
