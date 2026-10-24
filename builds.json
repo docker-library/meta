@@ -336759,7 +336759,50 @@
 		"buildId": "6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5",
 		"build": {
 			"img": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+						"size": 1577,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:0171bd19a887e735f3d7897425a0590bf7f15ab44aebb111252e15344c2ffcbf",
+							"org.opencontainers.image.base.name": "buildpack-deps:trixie-curl",
+							"org.opencontainers.image.created": "2026-10-24T04:02:06Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+							"org.opencontainers.image.revision": "1f4fe499c668d9a2e1578aa8db4f0b2d14482cf5",
+							"org.opencontainers.image.source": "https://github.com/docker-library/buildpack-deps.git#1f4fe499c668d9a2e1578aa8db4f0b2d14482cf5:debian/trixie/scm",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/buildpack-deps",
+							"org.opencontainers.image.version": "trixie-scm"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:94d1f5564afd3e7dc238ae31173dfc9212107d8f152b2b676aa348637ad45949",
+						"size": 840,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:94d1f5564afd3e7dc238ae31173dfc9212107d8f152b2b676aa348637ad45949",
+							"vnd.docker.reference.digest": "sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:9f3c439ba3080602b455f08be021713ee5f1eede37ed69c385afc72d3bdf9e90"
+				}
+			},
 			"sourceId": "c36f00d51d8b556640a0e03b6d00fa1e36855549b0799d6f043af25eaa29bd10",
 			"arch": "riscv64",
 			"parents": {
@@ -337869,6 +337912,108 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"buildpack-deps:trixie-scm": {
+							"sourceId": "c36f00d51d8b556640a0e03b6d00fa1e36855549b0799d6f043af25eaa29bd10",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"4bdbac732da8a0e926c4686987d2e3a372edbfb370731ad2c6c6e65eacd3eeb9": {
+		"buildId": "4bdbac732da8a0e926c4686987d2e3a372edbfb370731ad2c6c6e65eacd3eeb9",
+		"build": {
+			"img": "oisupport/staging-riscv64:4bdbac732da8a0e926c4686987d2e3a372edbfb370731ad2c6c6e65eacd3eeb9",
+			"resolved": null,
+			"sourceId": "70f21849c93e909d76e12068d217b7591fcb70b3c08abad02eabd8789ccf48b1",
+			"arch": "riscv64",
+			"parents": {
+				"buildpack-deps:trixie-scm": "sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437"
+			},
+			"resolvedParents": {
+				"buildpack-deps:trixie-scm": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+							"size": 1577,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:0171bd19a887e735f3d7897425a0590bf7f15ab44aebb111252e15344c2ffcbf",
+								"org.opencontainers.image.base.name": "buildpack-deps:trixie-curl",
+								"org.opencontainers.image.created": "2026-10-24T04:02:06Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+								"org.opencontainers.image.revision": "1f4fe499c668d9a2e1578aa8db4f0b2d14482cf5",
+								"org.opencontainers.image.source": "https://github.com/docker-library/buildpack-deps.git#1f4fe499c668d9a2e1578aa8db4f0b2d14482cf5:debian/trixie/scm",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/buildpack-deps",
+								"org.opencontainers.image.version": "trixie-scm"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:94d1f5564afd3e7dc238ae31173dfc9212107d8f152b2b676aa348637ad45949",
+							"size": 840,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:94d1f5564afd3e7dc238ae31173dfc9212107d8f152b2b676aa348637ad45949",
+								"vnd.docker.reference.digest": "sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:9f3c439ba3080602b455f08be021713ee5f1eede37ed69c385afc72d3bdf9e90"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "70f21849c93e909d76e12068d217b7591fcb70b3c08abad02eabd8789ccf48b1",
+			"reproducibleGitChecksum": "5286a1784332f8cf7ef91dc29251776fb2d62cd66360161917b9d2c3521194a5",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/buildpack-deps.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "1f4fe499c668d9a2e1578aa8db4f0b2d14482cf5",
+					"Directory": "debian/trixie",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1706742106
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"buildpack-deps:trixie",
+						"buildpack-deps:stable",
+						"buildpack-deps:latest"
+					],
+					"archTags": [
+						"riscv64/buildpack-deps:trixie",
+						"riscv64/buildpack-deps:stable",
+						"riscv64/buildpack-deps:latest"
+					],
+					"froms": [
+						"buildpack-deps:trixie-scm"
+					],
+					"lastStageFrom": "buildpack-deps:trixie-scm",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -515507,6 +515652,120 @@
 			}
 		}
 	},
+	"32b049499e3db986765d022888d0dcdafbdeb7c94a72e70ebb0e3679666c3b06": {
+		"buildId": "32b049499e3db986765d022888d0dcdafbdeb7c94a72e70ebb0e3679666c3b06",
+		"build": {
+			"img": "oisupport/staging-riscv64:32b049499e3db986765d022888d0dcdafbdeb7c94a72e70ebb0e3679666c3b06",
+			"resolved": null,
+			"sourceId": "e6ee116e92bcaa68350bfc99b6eab0e1001c3008fd6399c213b93b98c4bddbaf",
+			"arch": "riscv64",
+			"parents": {
+				"buildpack-deps:trixie-scm": "sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437"
+			},
+			"resolvedParents": {
+				"buildpack-deps:trixie-scm": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+							"size": 1577,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:0171bd19a887e735f3d7897425a0590bf7f15ab44aebb111252e15344c2ffcbf",
+								"org.opencontainers.image.base.name": "buildpack-deps:trixie-curl",
+								"org.opencontainers.image.created": "2026-10-24T04:02:06Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+								"org.opencontainers.image.revision": "1f4fe499c668d9a2e1578aa8db4f0b2d14482cf5",
+								"org.opencontainers.image.source": "https://github.com/docker-library/buildpack-deps.git#1f4fe499c668d9a2e1578aa8db4f0b2d14482cf5:debian/trixie/scm",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/buildpack-deps",
+								"org.opencontainers.image.version": "trixie-scm"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:94d1f5564afd3e7dc238ae31173dfc9212107d8f152b2b676aa348637ad45949",
+							"size": 840,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:94d1f5564afd3e7dc238ae31173dfc9212107d8f152b2b676aa348637ad45949",
+								"vnd.docker.reference.digest": "sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:9f3c439ba3080602b455f08be021713ee5f1eede37ed69c385afc72d3bdf9e90"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "e6ee116e92bcaa68350bfc99b6eab0e1001c3008fd6399c213b93b98c4bddbaf",
+			"reproducibleGitChecksum": "c07b1549ce4240cf729c4c0c73c8fa36ddd99835b371b8f3c1dd9c08c25d9571",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/golang.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "41d9b4da70324ae7b6461ac2cc401b06719ff57d",
+					"Directory": "1.27/trixie",
+					"File": "Dockerfile",
+					"Builder": "buildkit",
+					"SOURCE_DATE_EPOCH": 1792462680
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"golang:1.27.3-trixie",
+						"golang:1.27-trixie",
+						"golang:1-trixie",
+						"golang:trixie",
+						"golang:1.27.3",
+						"golang:1.27",
+						"golang:1",
+						"golang:latest"
+					],
+					"archTags": [
+						"riscv64/golang:1.27.3-trixie",
+						"riscv64/golang:1.27-trixie",
+						"riscv64/golang:1-trixie",
+						"riscv64/golang:trixie",
+						"riscv64/golang:1.27.3",
+						"riscv64/golang:1.27",
+						"riscv64/golang:1",
+						"riscv64/golang:latest"
+					],
+					"froms": [
+						"buildpack-deps:trixie-scm",
+						"buildpack-deps:trixie-scm",
+						"buildpack-deps:trixie-scm"
+					],
+					"lastStageFrom": "buildpack-deps:trixie-scm",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
+						"os": "linux"
+					},
+					"parents": {
+						"buildpack-deps:trixie-scm": {
+							"sourceId": "c36f00d51d8b556640a0e03b6d00fa1e36855549b0799d6f043af25eaa29bd10",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"7736c874c30806d664891cd230b279ca41fc40ed768e5f0ede22df5b17285719": {
 		"buildId": "7736c874c30806d664891cd230b279ca41fc40ed768e5f0ede22df5b17285719",
 		"build": {
@@ -520050,6 +520309,112 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"buildpack-deps:trixie-scm": {
+							"sourceId": "c36f00d51d8b556640a0e03b6d00fa1e36855549b0799d6f043af25eaa29bd10",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"a55117a1e2e9aa316c3530bc104371b7f15c9dcf87924ac1cefa96d806686df3": {
+		"buildId": "a55117a1e2e9aa316c3530bc104371b7f15c9dcf87924ac1cefa96d806686df3",
+		"build": {
+			"img": "oisupport/staging-riscv64:a55117a1e2e9aa316c3530bc104371b7f15c9dcf87924ac1cefa96d806686df3",
+			"resolved": null,
+			"sourceId": "a459ebd46456d3e43eed7d590b80bdab9c768189d249a0e16ca073e4e623a759",
+			"arch": "riscv64",
+			"parents": {
+				"buildpack-deps:trixie-scm": "sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437"
+			},
+			"resolvedParents": {
+				"buildpack-deps:trixie-scm": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+							"size": 1577,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:0171bd19a887e735f3d7897425a0590bf7f15ab44aebb111252e15344c2ffcbf",
+								"org.opencontainers.image.base.name": "buildpack-deps:trixie-curl",
+								"org.opencontainers.image.created": "2026-10-24T04:02:06Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+								"org.opencontainers.image.revision": "1f4fe499c668d9a2e1578aa8db4f0b2d14482cf5",
+								"org.opencontainers.image.source": "https://github.com/docker-library/buildpack-deps.git#1f4fe499c668d9a2e1578aa8db4f0b2d14482cf5:debian/trixie/scm",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/buildpack-deps",
+								"org.opencontainers.image.version": "trixie-scm"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:94d1f5564afd3e7dc238ae31173dfc9212107d8f152b2b676aa348637ad45949",
+							"size": 840,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:94d1f5564afd3e7dc238ae31173dfc9212107d8f152b2b676aa348637ad45949",
+								"vnd.docker.reference.digest": "sha256:5edb855b8548cda696c18a39432695164ce956efa365cc46403a7b2a6fb97437",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:6462533e5b6001c8a50349f6dd907ff0339aae79e6d554319840d130c01a8fc5@sha256:9f3c439ba3080602b455f08be021713ee5f1eede37ed69c385afc72d3bdf9e90"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "a459ebd46456d3e43eed7d590b80bdab9c768189d249a0e16ca073e4e623a759",
+			"reproducibleGitChecksum": "89af611f05dc8abd06dc5ded20ac9b1cc82baf484f2ec531db240963bb9d2019",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/golang.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "650cf2f338d22da87df8c773cfc88afa26699502",
+					"Directory": "1.26/trixie",
+					"File": "Dockerfile",
+					"Builder": "buildkit",
+					"SOURCE_DATE_EPOCH": 1792462507
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"golang:1.26.10-trixie",
+						"golang:1.26-trixie",
+						"golang:1.26.10",
+						"golang:1.26"
+					],
+					"archTags": [
+						"riscv64/golang:1.26.10-trixie",
+						"riscv64/golang:1.26-trixie",
+						"riscv64/golang:1.26.10",
+						"riscv64/golang:1.26"
+					],
+					"froms": [
+						"buildpack-deps:trixie-scm",
+						"buildpack-deps:trixie-scm",
+						"buildpack-deps:trixie-scm"
+					],
+					"lastStageFrom": "buildpack-deps:trixie-scm",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
