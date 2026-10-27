@@ -115029,6 +115029,84 @@
 			}
 		}
 	},
+	"687dcc5ff25a694af6d85199fc9e8563f81844f30aba45efaba07fd30bd48d44": {
+		"buildId": "687dcc5ff25a694af6d85199fc9e8563f81844f30aba45efaba07fd30bd48d44",
+		"build": {
+			"img": "oisupport/staging-amd64:687dcc5ff25a694af6d85199fc9e8563f81844f30aba45efaba07fd30bd48d44",
+			"resolved": null,
+			"sourceId": "a22716c1ca9e8502f39ea1530da0dd0da550cd99d6887b71f88098193058d7c4",
+			"arch": "amd64",
+			"parents": {
+				"redhat/ubi9-minimal:latest": "sha256:5c9e61f364f90de936dae884069044e372a1441288203d83f40783d633244b2f"
+			},
+			"resolvedParents": {
+				"redhat/ubi9-minimal:latest": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+							"digest": "sha256:5c9e61f364f90de936dae884069044e372a1441288203d83f40783d633244b2f",
+							"size": 429,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "amd64",
+								"org.opencontainers.image.ref.name": "redhat/ubi9-minimal@sha256:5c9e61f364f90de936dae884069044e372a1441288203d83f40783d633244b2f"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "linux"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "redhat/ubi9-minimal@sha256:6f3a78179e0b30b930a186e7f68a4af52e51bb82406c9653be10bddd624e40f5"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "a22716c1ca9e8502f39ea1530da0dd0da550cd99d6887b71f88098193058d7c4",
+			"reproducibleGitChecksum": "6a61e6e23c1ce171c9a86d50b02a8e5ca929f36088429d559cb46513729935ad",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/percona/percona-docker.git",
+					"GitFetch": "refs/heads/main",
+					"GitCommit": "70f8aa3fb5bfe1d1b3459b6b7ac787e570ec577e",
+					"Directory": "percona-server-mongodb-8.3",
+					"File": "Dockerfile-dockerhub",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1793098238
+				}
+			],
+			"arches": {
+				"amd64": {
+					"tags": [
+						"percona:psmdb-8.3.13",
+						"percona:psmdb-8.3"
+					],
+					"archTags": [
+						"amd64/percona:psmdb-8.3.13",
+						"amd64/percona:psmdb-8.3"
+					],
+					"froms": [
+						"redhat/ubi9-minimal:latest"
+					],
+					"lastStageFrom": "redhat/ubi9-minimal:latest",
+					"platformString": "linux/amd64",
+					"platform": {
+						"architecture": "amd64",
+						"os": "linux"
+					},
+					"parents": {
+						"redhat/ubi9-minimal:latest": {
+							"sourceId": null,
+							"pin": "sha256:6f3a78179e0b30b930a186e7f68a4af52e51bb82406c9653be10bddd624e40f5"
+						}
+					}
+				}
+			}
+		}
+	},
 	"6962514199797983b5f4da927011fa82df2bf8cda8f34aab266cd36997dfce76": {
 		"buildId": "6962514199797983b5f4da927011fa82df2bf8cda8f34aab266cd36997dfce76",
 		"build": {
@@ -574226,7 +574304,50 @@
 		"buildId": "4ca338a9d686cdc2943ff339f5068fd17e8195aba7cca3619014498a52e8bdb0",
 		"build": {
 			"img": "oisupport/staging-ppc64le:4ca338a9d686cdc2943ff339f5068fd17e8195aba7cca3619014498a52e8bdb0",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:8a17c18aaeae7750306b04de0c4e5eb1328df67aceb6c17331201ac5dbde10bc",
+						"size": 1776,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:3a9850ae33f1aa53c3fbb8fceb4577f03e354a2c9db501001fed015b62bf5840",
+							"org.opencontainers.image.base.name": "ubuntu:24.04",
+							"org.opencontainers.image.created": "2026-10-27T19:06:29Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:4ca338a9d686cdc2943ff339f5068fd17e8195aba7cca3619014498a52e8bdb0@sha256:8a17c18aaeae7750306b04de0c4e5eb1328df67aceb6c17331201ac5dbde10bc",
+							"org.opencontainers.image.revision": "c5918c292c12ade1daad4a6c6d2a66490a6b9869",
+							"org.opencontainers.image.source": "https://github.com/ibmruntimes/semeru-containers.git#c5918c292c12ade1daad4a6c6d2a66490a6b9869:8/jdk/ubuntu/noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ibm-semeru-runtimes",
+							"org.opencontainers.image.version": "open-8.0.504.5-jdk-noble"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:f31da18b724ee7042446cc56c2988ce09f35cad52671e51d62a3de75857b6051",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:4ca338a9d686cdc2943ff339f5068fd17e8195aba7cca3619014498a52e8bdb0@sha256:f31da18b724ee7042446cc56c2988ce09f35cad52671e51d62a3de75857b6051",
+							"vnd.docker.reference.digest": "sha256:8a17c18aaeae7750306b04de0c4e5eb1328df67aceb6c17331201ac5dbde10bc",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:4ca338a9d686cdc2943ff339f5068fd17e8195aba7cca3619014498a52e8bdb0@sha256:3c413c91a3d77e255913663f572d02ee806f72015cd945eb4d5a084dad6c88a4"
+				}
+			},
 			"sourceId": "902ff6a02beb0a548e3e3d85cc658acaaf9ff4e4110a6930e24588aaafa7c7a0",
 			"arch": "ppc64le",
 			"parents": {
@@ -575766,7 +575887,50 @@
 		"buildId": "7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb",
 		"build": {
 			"img": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+						"size": 1775,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:3a9850ae33f1aa53c3fbb8fceb4577f03e354a2c9db501001fed015b62bf5840",
+							"org.opencontainers.image.base.name": "ubuntu:24.04",
+							"org.opencontainers.image.created": "2026-10-27T19:07:14Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+							"org.opencontainers.image.revision": "c5918c292c12ade1daad4a6c6d2a66490a6b9869",
+							"org.opencontainers.image.source": "https://github.com/ibmruntimes/semeru-containers.git#c5918c292c12ade1daad4a6c6d2a66490a6b9869:8/jre/ubuntu/noble",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ibm-semeru-runtimes",
+							"org.opencontainers.image.version": "open-8.0.504.5-jre-noble"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+							"vnd.docker.reference.digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:41c62f14a3ba4e38db340ee20417023c8557ef6acc6bd35b4af46f0bd1e8bb8a"
+				}
+			},
 			"sourceId": "3304178b2cd64f9e898bb96ac12dbe57c368efe8e8970ef6d1262f2c9817f5c7",
 			"arch": "ppc64le",
 			"parents": {
@@ -715955,6 +716119,104 @@
 			}
 		}
 	},
+	"0dd06b4df1a1783343835fe57aa6f4082d29020cbd938c7e9ac0d65b6edc2464": {
+		"buildId": "0dd06b4df1a1783343835fe57aa6f4082d29020cbd938c7e9ac0d65b6edc2464",
+		"build": {
+			"img": "oisupport/staging-ppc64le:0dd06b4df1a1783343835fe57aa6f4082d29020cbd938c7e9ac0d65b6edc2464",
+			"resolved": null,
+			"sourceId": "85c5d86d36106941824214dd260f7fbb50d1b120c266adb5e784a14174e59497",
+			"arch": "ppc64le",
+			"parents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753"
+			},
+			"resolvedParents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+							"size": 1775,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:3a9850ae33f1aa53c3fbb8fceb4577f03e354a2c9db501001fed015b62bf5840",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-27T19:07:14Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"org.opencontainers.image.revision": "c5918c292c12ade1daad4a6c6d2a66490a6b9869",
+								"org.opencontainers.image.source": "https://github.com/ibmruntimes/semeru-containers.git#c5918c292c12ade1daad4a6c6d2a66490a6b9869:8/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ibm-semeru-runtimes",
+								"org.opencontainers.image.version": "open-8.0.504.5-jre-noble"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+								"vnd.docker.reference.digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:41c62f14a3ba4e38db340ee20417023c8557ef6acc6bd35b4af46f0bd1e8bb8a"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "85c5d86d36106941824214dd260f7fbb50d1b120c266adb5e784a14174e59497",
+			"reproducibleGitChecksum": "10a11a4f9de07ab7dbff884b287987d50f50921e1162bf6ff50d92dbcb33b389",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/OpenLiberty/ci.docker.git",
+					"GitFetch": "refs/heads/main",
+					"GitCommit": "ac820f29a8bcf5a0ff9caa6ae764084b5207b17a",
+					"Directory": "releases/latest/beta",
+					"File": "Dockerfile.ubuntu.openjdk8",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1788892120
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"open-liberty:beta"
+					],
+					"archTags": [
+						"ppc64le/open-liberty:beta"
+					],
+					"froms": [
+						"ibm-semeru-runtimes:open-8-jre-noble"
+					],
+					"lastStageFrom": "ibm-semeru-runtimes:open-8-jre-noble",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"ibm-semeru-runtimes:open-8-jre-noble": {
+							"sourceId": "3304178b2cd64f9e898bb96ac12dbe57c368efe8e8970ef6d1262f2c9817f5c7",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"eddb412574f496b5e5048d8b8ae0974044c02049f10ee513e990e7b7bd632b4e": {
 		"buildId": "eddb412574f496b5e5048d8b8ae0974044c02049f10ee513e990e7b7bd632b4e",
 		"build": {
@@ -717389,6 +717651,117 @@
 						"architecture": "arm64",
 						"os": "linux",
 						"variant": "v8"
+					},
+					"parents": {
+						"ibm-semeru-runtimes:open-8-jre-noble": {
+							"sourceId": "3304178b2cd64f9e898bb96ac12dbe57c368efe8e8970ef6d1262f2c9817f5c7",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"1b9bbd93b8919e2ce158567d0fad81ed91d8ec7e9a3970654c21d59f584c6bc2": {
+		"buildId": "1b9bbd93b8919e2ce158567d0fad81ed91d8ec7e9a3970654c21d59f584c6bc2",
+		"build": {
+			"img": "oisupport/staging-ppc64le:1b9bbd93b8919e2ce158567d0fad81ed91d8ec7e9a3970654c21d59f584c6bc2",
+			"resolved": null,
+			"sourceId": "d9328a611d7dc1d8b401387e27ecfda19e5feb504af2a94ca3f6cb1f38766d37",
+			"arch": "ppc64le",
+			"parents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753"
+			},
+			"resolvedParents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+							"size": 1775,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:3a9850ae33f1aa53c3fbb8fceb4577f03e354a2c9db501001fed015b62bf5840",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-27T19:07:14Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"org.opencontainers.image.revision": "c5918c292c12ade1daad4a6c6d2a66490a6b9869",
+								"org.opencontainers.image.source": "https://github.com/ibmruntimes/semeru-containers.git#c5918c292c12ade1daad4a6c6d2a66490a6b9869:8/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ibm-semeru-runtimes",
+								"org.opencontainers.image.version": "open-8.0.504.5-jre-noble"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+								"vnd.docker.reference.digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:41c62f14a3ba4e38db340ee20417023c8557ef6acc6bd35b4af46f0bd1e8bb8a"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "d9328a611d7dc1d8b401387e27ecfda19e5feb504af2a94ca3f6cb1f38766d37",
+			"reproducibleGitChecksum": "01da42b579f539edd11446f1bcc89bac3de335d36e84cefe565687c73c97799b",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/OpenLiberty/ci.docker.git",
+					"GitFetch": "refs/heads/main",
+					"GitCommit": "ac820f29a8bcf5a0ff9caa6ae764084b5207b17a",
+					"Directory": "releases/latest/kernel-slim",
+					"File": "Dockerfile.ubuntu.openjdk8",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1788892120
+				},
+				{
+					"GitRepo": "https://github.com/OpenLiberty/ci.docker.git",
+					"GitFetch": "refs/heads/main",
+					"GitCommit": "ac820f29a8bcf5a0ff9caa6ae764084b5207b17a",
+					"Directory": "releases/26.0.0.9/kernel-slim",
+					"File": "Dockerfile.ubuntu.openjdk8",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1788892120
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"open-liberty:kernel-slim",
+						"open-liberty:kernel-slim-java8-openj9",
+						"open-liberty:26.0.0.9-kernel-slim-java8-openj9"
+					],
+					"archTags": [
+						"ppc64le/open-liberty:kernel-slim",
+						"ppc64le/open-liberty:kernel-slim-java8-openj9",
+						"ppc64le/open-liberty:26.0.0.9-kernel-slim-java8-openj9"
+					],
+					"froms": [
+						"ibm-semeru-runtimes:open-8-jre-noble"
+					],
+					"lastStageFrom": "ibm-semeru-runtimes:open-8-jre-noble",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
 					},
 					"parents": {
 						"ibm-semeru-runtimes:open-8-jre-noble": {
@@ -718917,6 +719290,108 @@
 			}
 		}
 	},
+	"4bdf3d9637b9fd5316911c8db9831d977f75d9ab52480e1f35a286224573000f": {
+		"buildId": "4bdf3d9637b9fd5316911c8db9831d977f75d9ab52480e1f35a286224573000f",
+		"build": {
+			"img": "oisupport/staging-ppc64le:4bdf3d9637b9fd5316911c8db9831d977f75d9ab52480e1f35a286224573000f",
+			"resolved": null,
+			"sourceId": "35514b4a64d1355fc7df64c548be61051ae64962d90c4538877f73d2bb066ef3",
+			"arch": "ppc64le",
+			"parents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753"
+			},
+			"resolvedParents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+							"size": 1775,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:3a9850ae33f1aa53c3fbb8fceb4577f03e354a2c9db501001fed015b62bf5840",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-27T19:07:14Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"org.opencontainers.image.revision": "c5918c292c12ade1daad4a6c6d2a66490a6b9869",
+								"org.opencontainers.image.source": "https://github.com/ibmruntimes/semeru-containers.git#c5918c292c12ade1daad4a6c6d2a66490a6b9869:8/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ibm-semeru-runtimes",
+								"org.opencontainers.image.version": "open-8.0.504.5-jre-noble"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+								"vnd.docker.reference.digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:41c62f14a3ba4e38db340ee20417023c8557ef6acc6bd35b4af46f0bd1e8bb8a"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "35514b4a64d1355fc7df64c548be61051ae64962d90c4538877f73d2bb066ef3",
+			"reproducibleGitChecksum": "1396e3deb5094e849d6bb47442ddf0a4e67512c60f3658fe1e5f81ca826b2034",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/OpenLiberty/ci.docker.git",
+					"GitFetch": "refs/heads/main",
+					"GitCommit": "ac820f29a8bcf5a0ff9caa6ae764084b5207b17a",
+					"Directory": "releases/latest/full",
+					"File": "Dockerfile.ubuntu.openjdk8",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1788892120
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"open-liberty:full",
+						"open-liberty:full-java8-openj9",
+						"open-liberty:latest"
+					],
+					"archTags": [
+						"ppc64le/open-liberty:full",
+						"ppc64le/open-liberty:full-java8-openj9",
+						"ppc64le/open-liberty:latest"
+					],
+					"froms": [
+						"ibm-semeru-runtimes:open-8-jre-noble"
+					],
+					"lastStageFrom": "ibm-semeru-runtimes:open-8-jre-noble",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"ibm-semeru-runtimes:open-8-jre-noble": {
+							"sourceId": "3304178b2cd64f9e898bb96ac12dbe57c368efe8e8970ef6d1262f2c9817f5c7",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"00514fec9f1933399d5809ab09f9735e6e389831c0b00c1b6b90c8c49d060019": {
 		"buildId": "00514fec9f1933399d5809ab09f9735e6e389831c0b00c1b6b90c8c49d060019",
 		"build": {
@@ -720329,6 +720804,104 @@
 						"architecture": "arm64",
 						"os": "linux",
 						"variant": "v8"
+					},
+					"parents": {
+						"ibm-semeru-runtimes:open-8-jre-noble": {
+							"sourceId": "3304178b2cd64f9e898bb96ac12dbe57c368efe8e8970ef6d1262f2c9817f5c7",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"0330766d625080d9ced296014e5f4df5113e9c37a329dc910d5afc005934eb4c": {
+		"buildId": "0330766d625080d9ced296014e5f4df5113e9c37a329dc910d5afc005934eb4c",
+		"build": {
+			"img": "oisupport/staging-ppc64le:0330766d625080d9ced296014e5f4df5113e9c37a329dc910d5afc005934eb4c",
+			"resolved": null,
+			"sourceId": "1d0477a694a59bcc964b978c16ec6a8a8c8f488bed564bd8e19ba1a33be26beb",
+			"arch": "ppc64le",
+			"parents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753"
+			},
+			"resolvedParents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+							"size": 1775,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:3a9850ae33f1aa53c3fbb8fceb4577f03e354a2c9db501001fed015b62bf5840",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-27T19:07:14Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"org.opencontainers.image.revision": "c5918c292c12ade1daad4a6c6d2a66490a6b9869",
+								"org.opencontainers.image.source": "https://github.com/ibmruntimes/semeru-containers.git#c5918c292c12ade1daad4a6c6d2a66490a6b9869:8/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ibm-semeru-runtimes",
+								"org.opencontainers.image.version": "open-8.0.504.5-jre-noble"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+								"vnd.docker.reference.digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:41c62f14a3ba4e38db340ee20417023c8557ef6acc6bd35b4af46f0bd1e8bb8a"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "1d0477a694a59bcc964b978c16ec6a8a8c8f488bed564bd8e19ba1a33be26beb",
+			"reproducibleGitChecksum": "ae22115bf4e853773f6370863df9be96460db7d4a33ddeca39a67a741ebc452a",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/OpenLiberty/ci.docker.git",
+					"GitFetch": "refs/heads/main",
+					"GitCommit": "ac820f29a8bcf5a0ff9caa6ae764084b5207b17a",
+					"Directory": "releases/26.0.0.3/kernel-slim",
+					"File": "Dockerfile.ubuntu.openjdk8",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1788892120
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"open-liberty:26.0.0.3-kernel-slim-java8-openj9"
+					],
+					"archTags": [
+						"ppc64le/open-liberty:26.0.0.3-kernel-slim-java8-openj9"
+					],
+					"froms": [
+						"ibm-semeru-runtimes:open-8-jre-noble"
+					],
+					"lastStageFrom": "ibm-semeru-runtimes:open-8-jre-noble",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
 					},
 					"parents": {
 						"ibm-semeru-runtimes:open-8-jre-noble": {
@@ -721759,6 +722332,104 @@
 			}
 		}
 	},
+	"8506d37c7efaa8bedf4d03332eaa577fe0a9d2f4774199abea5afd735398575b": {
+		"buildId": "8506d37c7efaa8bedf4d03332eaa577fe0a9d2f4774199abea5afd735398575b",
+		"build": {
+			"img": "oisupport/staging-ppc64le:8506d37c7efaa8bedf4d03332eaa577fe0a9d2f4774199abea5afd735398575b",
+			"resolved": null,
+			"sourceId": "3a0036a2a24acd35c25bf858d5eace24685e1747eee8b448b7a394a7c011c730",
+			"arch": "ppc64le",
+			"parents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753"
+			},
+			"resolvedParents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+							"size": 1775,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:3a9850ae33f1aa53c3fbb8fceb4577f03e354a2c9db501001fed015b62bf5840",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-27T19:07:14Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"org.opencontainers.image.revision": "c5918c292c12ade1daad4a6c6d2a66490a6b9869",
+								"org.opencontainers.image.source": "https://github.com/ibmruntimes/semeru-containers.git#c5918c292c12ade1daad4a6c6d2a66490a6b9869:8/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ibm-semeru-runtimes",
+								"org.opencontainers.image.version": "open-8.0.504.5-jre-noble"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+								"vnd.docker.reference.digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:41c62f14a3ba4e38db340ee20417023c8557ef6acc6bd35b4af46f0bd1e8bb8a"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "3a0036a2a24acd35c25bf858d5eace24685e1747eee8b448b7a394a7c011c730",
+			"reproducibleGitChecksum": "cad0cf3a24a61174e5a21b305c1985517d88b3e682d11fa456a26205fba6f174",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/OpenLiberty/ci.docker.git",
+					"GitFetch": "refs/heads/main",
+					"GitCommit": "ac820f29a8bcf5a0ff9caa6ae764084b5207b17a",
+					"Directory": "releases/26.0.0.3/full",
+					"File": "Dockerfile.ubuntu.openjdk8",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1788892120
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"open-liberty:26.0.0.3-full-java8-openj9"
+					],
+					"archTags": [
+						"ppc64le/open-liberty:26.0.0.3-full-java8-openj9"
+					],
+					"froms": [
+						"ibm-semeru-runtimes:open-8-jre-noble"
+					],
+					"lastStageFrom": "ibm-semeru-runtimes:open-8-jre-noble",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"ibm-semeru-runtimes:open-8-jre-noble": {
+							"sourceId": "3304178b2cd64f9e898bb96ac12dbe57c368efe8e8970ef6d1262f2c9817f5c7",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"de796f495dfde7cc580706095e49826e23cd113af10722b6ecf553f7fdf065d0": {
 		"buildId": "de796f495dfde7cc580706095e49826e23cd113af10722b6ecf553f7fdf065d0",
 		"build": {
@@ -723167,6 +723838,104 @@
 						"architecture": "arm64",
 						"os": "linux",
 						"variant": "v8"
+					},
+					"parents": {
+						"ibm-semeru-runtimes:open-8-jre-noble": {
+							"sourceId": "3304178b2cd64f9e898bb96ac12dbe57c368efe8e8970ef6d1262f2c9817f5c7",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"1d74f92dfd6aee05efc236598bf468b4df4a030f9da888ec48884f746022aae6": {
+		"buildId": "1d74f92dfd6aee05efc236598bf468b4df4a030f9da888ec48884f746022aae6",
+		"build": {
+			"img": "oisupport/staging-ppc64le:1d74f92dfd6aee05efc236598bf468b4df4a030f9da888ec48884f746022aae6",
+			"resolved": null,
+			"sourceId": "4f0df8a03ab3acd666c099757acfe7a59d28013ae5aae31bc25f7a5eac9a2011",
+			"arch": "ppc64le",
+			"parents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753"
+			},
+			"resolvedParents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+							"size": 1775,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:3a9850ae33f1aa53c3fbb8fceb4577f03e354a2c9db501001fed015b62bf5840",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-27T19:07:14Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"org.opencontainers.image.revision": "c5918c292c12ade1daad4a6c6d2a66490a6b9869",
+								"org.opencontainers.image.source": "https://github.com/ibmruntimes/semeru-containers.git#c5918c292c12ade1daad4a6c6d2a66490a6b9869:8/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ibm-semeru-runtimes",
+								"org.opencontainers.image.version": "open-8.0.504.5-jre-noble"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+								"vnd.docker.reference.digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:41c62f14a3ba4e38db340ee20417023c8557ef6acc6bd35b4af46f0bd1e8bb8a"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "4f0df8a03ab3acd666c099757acfe7a59d28013ae5aae31bc25f7a5eac9a2011",
+			"reproducibleGitChecksum": "0422b8b8eeda58fa1df42cf10ce4be2fdf3df414d787a3ea6083a186334a1eef",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/OpenLiberty/ci.docker.git",
+					"GitFetch": "refs/heads/main",
+					"GitCommit": "ac820f29a8bcf5a0ff9caa6ae764084b5207b17a",
+					"Directory": "releases/26.0.0.6/kernel-slim",
+					"File": "Dockerfile.ubuntu.openjdk8",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1788892120
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"open-liberty:26.0.0.6-kernel-slim-java8-openj9"
+					],
+					"archTags": [
+						"ppc64le/open-liberty:26.0.0.6-kernel-slim-java8-openj9"
+					],
+					"froms": [
+						"ibm-semeru-runtimes:open-8-jre-noble"
+					],
+					"lastStageFrom": "ibm-semeru-runtimes:open-8-jre-noble",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
 					},
 					"parents": {
 						"ibm-semeru-runtimes:open-8-jre-noble": {
@@ -724597,6 +725366,104 @@
 			}
 		}
 	},
+	"6fceeae17cd7f2515a529056e3752faa2b22cf25cd8565d92e165e58f2f92abd": {
+		"buildId": "6fceeae17cd7f2515a529056e3752faa2b22cf25cd8565d92e165e58f2f92abd",
+		"build": {
+			"img": "oisupport/staging-ppc64le:6fceeae17cd7f2515a529056e3752faa2b22cf25cd8565d92e165e58f2f92abd",
+			"resolved": null,
+			"sourceId": "f82f4363b2bb16de25ab692e1cfef5e96c6974dec69d9735b3fa563c15daf3d5",
+			"arch": "ppc64le",
+			"parents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753"
+			},
+			"resolvedParents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+							"size": 1775,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:3a9850ae33f1aa53c3fbb8fceb4577f03e354a2c9db501001fed015b62bf5840",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-27T19:07:14Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"org.opencontainers.image.revision": "c5918c292c12ade1daad4a6c6d2a66490a6b9869",
+								"org.opencontainers.image.source": "https://github.com/ibmruntimes/semeru-containers.git#c5918c292c12ade1daad4a6c6d2a66490a6b9869:8/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ibm-semeru-runtimes",
+								"org.opencontainers.image.version": "open-8.0.504.5-jre-noble"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+								"vnd.docker.reference.digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:41c62f14a3ba4e38db340ee20417023c8557ef6acc6bd35b4af46f0bd1e8bb8a"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "f82f4363b2bb16de25ab692e1cfef5e96c6974dec69d9735b3fa563c15daf3d5",
+			"reproducibleGitChecksum": "78a3d8fb231ef0fed2442d1b3f4456c38797a03d74ba55b51554c1e14af84857",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/OpenLiberty/ci.docker.git",
+					"GitFetch": "refs/heads/main",
+					"GitCommit": "ac820f29a8bcf5a0ff9caa6ae764084b5207b17a",
+					"Directory": "releases/26.0.0.6/full",
+					"File": "Dockerfile.ubuntu.openjdk8",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1788892120
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"open-liberty:26.0.0.6-full-java8-openj9"
+					],
+					"archTags": [
+						"ppc64le/open-liberty:26.0.0.6-full-java8-openj9"
+					],
+					"froms": [
+						"ibm-semeru-runtimes:open-8-jre-noble"
+					],
+					"lastStageFrom": "ibm-semeru-runtimes:open-8-jre-noble",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"ibm-semeru-runtimes:open-8-jre-noble": {
+							"sourceId": "3304178b2cd64f9e898bb96ac12dbe57c368efe8e8970ef6d1262f2c9817f5c7",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"5f34a72e6e687850ee49404f13218f4baba97c583f238c0657cbe655b178f017": {
 		"buildId": "5f34a72e6e687850ee49404f13218f4baba97c583f238c0657cbe655b178f017",
 		"build": {
@@ -726005,6 +726872,104 @@
 						"architecture": "arm64",
 						"os": "linux",
 						"variant": "v8"
+					},
+					"parents": {
+						"ibm-semeru-runtimes:open-8-jre-noble": {
+							"sourceId": "3304178b2cd64f9e898bb96ac12dbe57c368efe8e8970ef6d1262f2c9817f5c7",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"0653a9b784ea77b935c9f5151af193a969e3d5702e75ea07c4e899490bbf7bc2": {
+		"buildId": "0653a9b784ea77b935c9f5151af193a969e3d5702e75ea07c4e899490bbf7bc2",
+		"build": {
+			"img": "oisupport/staging-ppc64le:0653a9b784ea77b935c9f5151af193a969e3d5702e75ea07c4e899490bbf7bc2",
+			"resolved": null,
+			"sourceId": "b8f9581dd1fceaff7987c5e6e4ca17416f435fb61dddf95cc4344b85f1c7bbb2",
+			"arch": "ppc64le",
+			"parents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753"
+			},
+			"resolvedParents": {
+				"ibm-semeru-runtimes:open-8-jre-noble": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+							"size": 1775,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:3a9850ae33f1aa53c3fbb8fceb4577f03e354a2c9db501001fed015b62bf5840",
+								"org.opencontainers.image.base.name": "ubuntu:24.04",
+								"org.opencontainers.image.created": "2026-10-27T19:07:14Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"org.opencontainers.image.revision": "c5918c292c12ade1daad4a6c6d2a66490a6b9869",
+								"org.opencontainers.image.source": "https://github.com/ibmruntimes/semeru-containers.git#c5918c292c12ade1daad4a6c6d2a66490a6b9869:8/jre/ubuntu/noble",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ibm-semeru-runtimes",
+								"org.opencontainers.image.version": "open-8.0.504.5-jre-noble"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:a7f410259f9a8304d3089baa3210b5cce5d2149815d1894b41e7edd06ff13747",
+								"vnd.docker.reference.digest": "sha256:7292c2b5cd5b48e8a2a7f169d4e556690cd79f8fe3b9e04ccaa0602b7defd753",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:7889b1a64aeb68a2babd9e3086e94130d3090f1908b727304409618308168bcb@sha256:41c62f14a3ba4e38db340ee20417023c8557ef6acc6bd35b4af46f0bd1e8bb8a"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "b8f9581dd1fceaff7987c5e6e4ca17416f435fb61dddf95cc4344b85f1c7bbb2",
+			"reproducibleGitChecksum": "35cbcf92746cd8c813636e8ae63bfbe61b0fdaa41c027388c29c64933648efb1",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/OpenLiberty/ci.docker.git",
+					"GitFetch": "refs/heads/main",
+					"GitCommit": "ac820f29a8bcf5a0ff9caa6ae764084b5207b17a",
+					"Directory": "releases/26.0.0.9/full",
+					"File": "Dockerfile.ubuntu.openjdk8",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1788892120
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"open-liberty:26.0.0.9-full-java8-openj9"
+					],
+					"archTags": [
+						"ppc64le/open-liberty:26.0.0.9-full-java8-openj9"
+					],
+					"froms": [
+						"ibm-semeru-runtimes:open-8-jre-noble"
+					],
+					"lastStageFrom": "ibm-semeru-runtimes:open-8-jre-noble",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
 					},
 					"parents": {
 						"ibm-semeru-runtimes:open-8-jre-noble": {
