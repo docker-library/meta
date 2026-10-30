@@ -61819,25 +61819,392 @@
 			}
 		}
 	},
-	"e3937e05ca4da6fa1d90b3b67e871d240d666b2ef164c00079069f0ae6c6b9a2": {
-		"sourceId": "e3937e05ca4da6fa1d90b3b67e871d240d666b2ef164c00079069f0ae6c6b9a2",
-		"reproducibleGitChecksum": "02d0db06f0283f045fac64ccbf67505b17688e1c34e942d09271147204e0f464",
+	"4347015e3f87a44f6bfaf99f9eb20349fd45612e015cf9ef916d1bcd33747735": {
+		"sourceId": "4347015e3f87a44f6bfaf99f9eb20349fd45612e015cf9ef916d1bcd33747735",
+		"reproducibleGitChecksum": "075d8b6c8eee9c8187c1b205672f44ca163a036a27d59dde297c5c4efe067c27",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "8bf882086da1e3295756402a1cb2646600eb9d6d",
-				"Directory": "v3.7/windows/servercore-ltsc2025",
+				"GitCommit": "8fc594397938ab3d5385a86495719cdebc42b1f0",
+				"Directory": "v3.8/windows/servercore-ltsc2025",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1792509572
+				"SOURCE_DATE_EPOCH": 1793349771
 			}
 		],
 		"arches": {
 			"windows-amd64": {
 				"tags": [
-					"traefik:v3.7.16-windowsservercore-ltsc2025",
-					"traefik:3.7.16-windowsservercore-ltsc2025",
+					"traefik:v3.8.0-rc.1-windowsservercore-ltsc2025",
+					"traefik:3.8.0-rc.1-windowsservercore-ltsc2025",
+					"traefik:salers-windowsservercore-ltsc2025"
+				],
+				"archTags": [
+					"winamd64/traefik:v3.8.0-rc.1-windowsservercore-ltsc2025",
+					"winamd64/traefik:3.8.0-rc.1-windowsservercore-ltsc2025",
+					"winamd64/traefik:salers-windowsservercore-ltsc2025"
+				],
+				"froms": [
+					"mcr.microsoft.com/windows/servercore:ltsc2025"
+				],
+				"lastStageFrom": "mcr.microsoft.com/windows/servercore:ltsc2025",
+				"platformString": "windows/amd64",
+				"platform": {
+					"architecture": "amd64",
+					"os": "windows"
+				},
+				"parents": {
+					"mcr.microsoft.com/windows/servercore:ltsc2025": {
+						"sourceId": null,
+						"pin": "sha256:4e5730bddf049d5dd9f758a3b4e6875ecf19b5bfeee5068e07aeeb5df9c63c55"
+					}
+				}
+			}
+		}
+	},
+	"188c2cebebee60c5b4b83f87ed29d4976033d7cf0488c3d158806cd304a922bb": {
+		"sourceId": "188c2cebebee60c5b4b83f87ed29d4976033d7cf0488c3d158806cd304a922bb",
+		"reproducibleGitChecksum": "b0613c46b579b53640e87b305768916959a0002af271f1ce56bb8014641f0055",
+		"entries": [
+			{
+				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
+				"GitFetch": "refs/heads/master",
+				"GitCommit": "8fc594397938ab3d5385a86495719cdebc42b1f0",
+				"Directory": "v3.8/windows/servercore-ltsc2022",
+				"File": "Dockerfile",
+				"Builder": "",
+				"SOURCE_DATE_EPOCH": 1793349771
+			}
+		],
+		"arches": {
+			"windows-amd64": {
+				"tags": [
+					"traefik:v3.8.0-rc.1-windowsservercore-ltsc2022",
+					"traefik:3.8.0-rc.1-windowsservercore-ltsc2022",
+					"traefik:salers-windowsservercore-ltsc2022"
+				],
+				"archTags": [
+					"winamd64/traefik:v3.8.0-rc.1-windowsservercore-ltsc2022",
+					"winamd64/traefik:3.8.0-rc.1-windowsservercore-ltsc2022",
+					"winamd64/traefik:salers-windowsservercore-ltsc2022"
+				],
+				"froms": [
+					"mcr.microsoft.com/windows/servercore:ltsc2022"
+				],
+				"lastStageFrom": "mcr.microsoft.com/windows/servercore:ltsc2022",
+				"platformString": "windows/amd64",
+				"platform": {
+					"architecture": "amd64",
+					"os": "windows"
+				},
+				"parents": {
+					"mcr.microsoft.com/windows/servercore:ltsc2022": {
+						"sourceId": null,
+						"pin": "sha256:b52799a67fa596d4bddcd82ae1dab0077a84767fbc33c7342b72b53ecc71ad09"
+					}
+				}
+			}
+		}
+	},
+	"07940a41256a02c25732988a80806ce180c159a048a300318511b0d5707ba6ed": {
+		"sourceId": "07940a41256a02c25732988a80806ce180c159a048a300318511b0d5707ba6ed",
+		"reproducibleGitChecksum": "45ea343c82f8b9634caaa23b0cfecfa264da6445243c7e186d8674e75ab0826c",
+		"entries": [
+			{
+				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
+				"GitFetch": "refs/heads/master",
+				"GitCommit": "8fc594397938ab3d5385a86495719cdebc42b1f0",
+				"Directory": "v3.8/windows/nanoserver-ltsc2025",
+				"File": "Dockerfile",
+				"Builder": "",
+				"SOURCE_DATE_EPOCH": 1793349771
+			}
+		],
+		"arches": {
+			"windows-amd64": {
+				"tags": [
+					"traefik:v3.8.0-rc.1-nanoserver-ltsc2025",
+					"traefik:3.8.0-rc.1-nanoserver-ltsc2025",
+					"traefik:salers-nanoserver-ltsc2025"
+				],
+				"archTags": [
+					"winamd64/traefik:v3.8.0-rc.1-nanoserver-ltsc2025",
+					"winamd64/traefik:3.8.0-rc.1-nanoserver-ltsc2025",
+					"winamd64/traefik:salers-nanoserver-ltsc2025"
+				],
+				"froms": [
+					"mcr.microsoft.com/windows/nanoserver:ltsc2025",
+					"traefik:v3.8.0-rc.1-windowsservercore-ltsc2025"
+				],
+				"lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2025",
+				"platformString": "windows/amd64",
+				"platform": {
+					"architecture": "amd64",
+					"os": "windows"
+				},
+				"parents": {
+					"mcr.microsoft.com/windows/nanoserver:ltsc2025": {
+						"sourceId": null,
+						"pin": "sha256:05d1a7fb562f998ed3bc23b21dbd95aa26b3dd10ae921e830449e2db657f6704"
+					},
+					"traefik:v3.8.0-rc.1-windowsservercore-ltsc2025": {
+						"sourceId": "4347015e3f87a44f6bfaf99f9eb20349fd45612e015cf9ef916d1bcd33747735",
+						"pin": null
+					}
+				}
+			}
+		}
+	},
+	"64096212e3d5b03ea2102bce4fe7d54a6b253e6d728d52026395e61d23d3ee3e": {
+		"sourceId": "64096212e3d5b03ea2102bce4fe7d54a6b253e6d728d52026395e61d23d3ee3e",
+		"reproducibleGitChecksum": "c997a4109704af1c6b6493a3a6ddf9d2ad89117ed91f6c27275d18b5df29f643",
+		"entries": [
+			{
+				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
+				"GitFetch": "refs/heads/master",
+				"GitCommit": "8fc594397938ab3d5385a86495719cdebc42b1f0",
+				"Directory": "v3.8/windows/nanoserver-ltsc2022",
+				"File": "Dockerfile",
+				"Builder": "",
+				"SOURCE_DATE_EPOCH": 1793349771
+			}
+		],
+		"arches": {
+			"windows-amd64": {
+				"tags": [
+					"traefik:v3.8.0-rc.1-nanoserver-ltsc2022",
+					"traefik:3.8.0-rc.1-nanoserver-ltsc2022",
+					"traefik:salers-nanoserver-ltsc2022"
+				],
+				"archTags": [
+					"winamd64/traefik:v3.8.0-rc.1-nanoserver-ltsc2022",
+					"winamd64/traefik:3.8.0-rc.1-nanoserver-ltsc2022",
+					"winamd64/traefik:salers-nanoserver-ltsc2022"
+				],
+				"froms": [
+					"mcr.microsoft.com/windows/nanoserver:ltsc2022",
+					"traefik:v3.8.0-rc.1-windowsservercore-ltsc2022"
+				],
+				"lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2022",
+				"platformString": "windows/amd64",
+				"platform": {
+					"architecture": "amd64",
+					"os": "windows"
+				},
+				"parents": {
+					"mcr.microsoft.com/windows/nanoserver:ltsc2022": {
+						"sourceId": null,
+						"pin": "sha256:62d28cb7771b0cf1b37db2662e468dad76e7ef15ca4ef52b2ab73c102a23da98"
+					},
+					"traefik:v3.8.0-rc.1-windowsservercore-ltsc2022": {
+						"sourceId": "188c2cebebee60c5b4b83f87ed29d4976033d7cf0488c3d158806cd304a922bb",
+						"pin": null
+					}
+				}
+			}
+		}
+	},
+	"dc9bc2aa684f93506be5175438f49b2f0dc82ed447a0ea7bc50f65e3e506d3fd": {
+		"sourceId": "dc9bc2aa684f93506be5175438f49b2f0dc82ed447a0ea7bc50f65e3e506d3fd",
+		"reproducibleGitChecksum": "793eaae8f6a0ec24f50b9f5cb6c0dc5aa53064552ba1f43ed019126a12669407",
+		"entries": [
+			{
+				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
+				"GitFetch": "refs/heads/master",
+				"GitCommit": "8fc594397938ab3d5385a86495719cdebc42b1f0",
+				"Directory": "v3.8/alpine",
+				"File": "Dockerfile",
+				"Builder": "",
+				"SOURCE_DATE_EPOCH": 1793349771
+			}
+		],
+		"arches": {
+			"amd64": {
+				"tags": [
+					"traefik:v3.8.0-rc.1",
+					"traefik:3.8.0-rc.1",
+					"traefik:salers"
+				],
+				"archTags": [
+					"amd64/traefik:v3.8.0-rc.1",
+					"amd64/traefik:3.8.0-rc.1",
+					"amd64/traefik:salers"
+				],
+				"froms": [
+					"alpine:3.24"
+				],
+				"lastStageFrom": "alpine:3.24",
+				"platformString": "linux/amd64",
+				"platform": {
+					"architecture": "amd64",
+					"os": "linux"
+				},
+				"parents": {
+					"alpine:3.24": {
+						"sourceId": "7a6d021ca261d24f52acface7523e5f6480c60e44d505471debffc550c93d86c",
+						"pin": null
+					}
+				}
+			},
+			"arm32v6": {
+				"tags": [
+					"traefik:v3.8.0-rc.1",
+					"traefik:3.8.0-rc.1",
+					"traefik:salers"
+				],
+				"archTags": [
+					"arm32v6/traefik:v3.8.0-rc.1",
+					"arm32v6/traefik:3.8.0-rc.1",
+					"arm32v6/traefik:salers"
+				],
+				"froms": [
+					"alpine:3.24"
+				],
+				"lastStageFrom": "alpine:3.24",
+				"platformString": "linux/arm/v6",
+				"platform": {
+					"architecture": "arm",
+					"os": "linux",
+					"variant": "v6"
+				},
+				"parents": {
+					"alpine:3.24": {
+						"sourceId": "1fe59970087a664eeb378a2a7c60558b5c7535b813e0dc17ff0cd2851c8463c3",
+						"pin": null
+					}
+				}
+			},
+			"arm64v8": {
+				"tags": [
+					"traefik:v3.8.0-rc.1",
+					"traefik:3.8.0-rc.1",
+					"traefik:salers"
+				],
+				"archTags": [
+					"arm64v8/traefik:v3.8.0-rc.1",
+					"arm64v8/traefik:3.8.0-rc.1",
+					"arm64v8/traefik:salers"
+				],
+				"froms": [
+					"alpine:3.24"
+				],
+				"lastStageFrom": "alpine:3.24",
+				"platformString": "linux/arm64/v8",
+				"platform": {
+					"architecture": "arm64",
+					"os": "linux",
+					"variant": "v8"
+				},
+				"parents": {
+					"alpine:3.24": {
+						"sourceId": "ae9825e69225238ab0b9c79dac7444208047b767f2a1cd10276b45c271303c12",
+						"pin": null
+					}
+				}
+			},
+			"ppc64le": {
+				"tags": [
+					"traefik:v3.8.0-rc.1",
+					"traefik:3.8.0-rc.1",
+					"traefik:salers"
+				],
+				"archTags": [
+					"ppc64le/traefik:v3.8.0-rc.1",
+					"ppc64le/traefik:3.8.0-rc.1",
+					"ppc64le/traefik:salers"
+				],
+				"froms": [
+					"alpine:3.24"
+				],
+				"lastStageFrom": "alpine:3.24",
+				"platformString": "linux/ppc64le",
+				"platform": {
+					"architecture": "ppc64le",
+					"os": "linux"
+				},
+				"parents": {
+					"alpine:3.24": {
+						"sourceId": "04ea8dba4a515e5360ad17e04f2ff9b6fc37f89a1e45218217c1fca06780219c",
+						"pin": null
+					}
+				}
+			},
+			"riscv64": {
+				"tags": [
+					"traefik:v3.8.0-rc.1",
+					"traefik:3.8.0-rc.1",
+					"traefik:salers"
+				],
+				"archTags": [
+					"riscv64/traefik:v3.8.0-rc.1",
+					"riscv64/traefik:3.8.0-rc.1",
+					"riscv64/traefik:salers"
+				],
+				"froms": [
+					"alpine:3.24"
+				],
+				"lastStageFrom": "alpine:3.24",
+				"platformString": "linux/riscv64",
+				"platform": {
+					"architecture": "riscv64",
+					"os": "linux"
+				},
+				"parents": {
+					"alpine:3.24": {
+						"sourceId": "15c661503514533bf4f8104b0a66042fef777f73dd69148a0dbef6552e4be630",
+						"pin": null
+					}
+				}
+			},
+			"s390x": {
+				"tags": [
+					"traefik:v3.8.0-rc.1",
+					"traefik:3.8.0-rc.1",
+					"traefik:salers"
+				],
+				"archTags": [
+					"s390x/traefik:v3.8.0-rc.1",
+					"s390x/traefik:3.8.0-rc.1",
+					"s390x/traefik:salers"
+				],
+				"froms": [
+					"alpine:3.24"
+				],
+				"lastStageFrom": "alpine:3.24",
+				"platformString": "linux/s390x",
+				"platform": {
+					"architecture": "s390x",
+					"os": "linux"
+				},
+				"parents": {
+					"alpine:3.24": {
+						"sourceId": "c7745522068b8b0edb9ac6d03c01a8463aa51d430747ece4288be67f040fcdd7",
+						"pin": null
+					}
+				}
+			}
+		}
+	},
+	"13a020ef39d7b0ad8b05703df03b3d49eb8f6d2f48d53c5577cb819ce67d5cac": {
+		"sourceId": "13a020ef39d7b0ad8b05703df03b3d49eb8f6d2f48d53c5577cb819ce67d5cac",
+		"reproducibleGitChecksum": "0aab92f2857774172874723eddf49e37d408ddb728a077b078e1fe348e0926bd",
+		"entries": [
+			{
+				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
+				"GitFetch": "refs/heads/master",
+				"GitCommit": "f8319cffb8d0d8e7c2f5db7585de5186d60e5733",
+				"Directory": "v3.7/windows/servercore-ltsc2025",
+				"File": "Dockerfile",
+				"Builder": "",
+				"SOURCE_DATE_EPOCH": 1793349163
+			}
+		],
+		"arches": {
+			"windows-amd64": {
+				"tags": [
+					"traefik:v3.7.17-windowsservercore-ltsc2025",
+					"traefik:3.7.17-windowsservercore-ltsc2025",
 					"traefik:v3.7-windowsservercore-ltsc2025",
 					"traefik:3.7-windowsservercore-ltsc2025",
 					"traefik:langres-windowsservercore-ltsc2025",
@@ -61846,8 +62213,8 @@
 					"traefik:windowsservercore-ltsc2025"
 				],
 				"archTags": [
-					"winamd64/traefik:v3.7.16-windowsservercore-ltsc2025",
-					"winamd64/traefik:3.7.16-windowsservercore-ltsc2025",
+					"winamd64/traefik:v3.7.17-windowsservercore-ltsc2025",
+					"winamd64/traefik:3.7.17-windowsservercore-ltsc2025",
 					"winamd64/traefik:v3.7-windowsservercore-ltsc2025",
 					"winamd64/traefik:3.7-windowsservercore-ltsc2025",
 					"winamd64/traefik:langres-windowsservercore-ltsc2025",
@@ -61873,25 +62240,25 @@
 			}
 		}
 	},
-	"10a64468cdb58592a32c5506a128a79a90d7b3fc231b4507f07956b898a602ef": {
-		"sourceId": "10a64468cdb58592a32c5506a128a79a90d7b3fc231b4507f07956b898a602ef",
-		"reproducibleGitChecksum": "874ea2277b8df1de11bbe0e84b1ebc383151be9e6480dd045a49de1d4154c5d2",
+	"210519cbb038c83e022a9a009f412df62cfdc2dde824f678f8403be2d9964f88": {
+		"sourceId": "210519cbb038c83e022a9a009f412df62cfdc2dde824f678f8403be2d9964f88",
+		"reproducibleGitChecksum": "a836ebfe662e6f2199d0868012acfaf1dae1786f818f5ab98d743cb74357a364",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "8bf882086da1e3295756402a1cb2646600eb9d6d",
+				"GitCommit": "f8319cffb8d0d8e7c2f5db7585de5186d60e5733",
 				"Directory": "v3.7/windows/servercore-ltsc2022",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1792509572
+				"SOURCE_DATE_EPOCH": 1793349163
 			}
 		],
 		"arches": {
 			"windows-amd64": {
 				"tags": [
-					"traefik:v3.7.16-windowsservercore-ltsc2022",
-					"traefik:3.7.16-windowsservercore-ltsc2022",
+					"traefik:v3.7.17-windowsservercore-ltsc2022",
+					"traefik:3.7.17-windowsservercore-ltsc2022",
 					"traefik:v3.7-windowsservercore-ltsc2022",
 					"traefik:3.7-windowsservercore-ltsc2022",
 					"traefik:langres-windowsservercore-ltsc2022",
@@ -61900,8 +62267,8 @@
 					"traefik:windowsservercore-ltsc2022"
 				],
 				"archTags": [
-					"winamd64/traefik:v3.7.16-windowsservercore-ltsc2022",
-					"winamd64/traefik:3.7.16-windowsservercore-ltsc2022",
+					"winamd64/traefik:v3.7.17-windowsservercore-ltsc2022",
+					"winamd64/traefik:3.7.17-windowsservercore-ltsc2022",
 					"winamd64/traefik:v3.7-windowsservercore-ltsc2022",
 					"winamd64/traefik:3.7-windowsservercore-ltsc2022",
 					"winamd64/traefik:langres-windowsservercore-ltsc2022",
@@ -61927,25 +62294,25 @@
 			}
 		}
 	},
-	"9f17f4d30088e47673152512e579eef3e65ed8ce8d621dc0602dc73f130d1c92": {
-		"sourceId": "9f17f4d30088e47673152512e579eef3e65ed8ce8d621dc0602dc73f130d1c92",
-		"reproducibleGitChecksum": "34c3fffbf5965f1371e479937d2ade0afcff4657f1d866da996db07a123fa61b",
+	"2b90d34a20df02e5f2a1638522ce55692122396f607921a108d6a19a8e4379ce": {
+		"sourceId": "2b90d34a20df02e5f2a1638522ce55692122396f607921a108d6a19a8e4379ce",
+		"reproducibleGitChecksum": "c6e5f58bff25f0a2db9e4911c814592589f68924ad0889a58c1a9671ecaea66f",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "8bf882086da1e3295756402a1cb2646600eb9d6d",
+				"GitCommit": "f8319cffb8d0d8e7c2f5db7585de5186d60e5733",
 				"Directory": "v3.7/windows/nanoserver-ltsc2025",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1792509572
+				"SOURCE_DATE_EPOCH": 1793349163
 			}
 		],
 		"arches": {
 			"windows-amd64": {
 				"tags": [
-					"traefik:v3.7.16-nanoserver-ltsc2025",
-					"traefik:3.7.16-nanoserver-ltsc2025",
+					"traefik:v3.7.17-nanoserver-ltsc2025",
+					"traefik:3.7.17-nanoserver-ltsc2025",
 					"traefik:v3.7-nanoserver-ltsc2025",
 					"traefik:3.7-nanoserver-ltsc2025",
 					"traefik:langres-nanoserver-ltsc2025",
@@ -61954,8 +62321,8 @@
 					"traefik:nanoserver-ltsc2025"
 				],
 				"archTags": [
-					"winamd64/traefik:v3.7.16-nanoserver-ltsc2025",
-					"winamd64/traefik:3.7.16-nanoserver-ltsc2025",
+					"winamd64/traefik:v3.7.17-nanoserver-ltsc2025",
+					"winamd64/traefik:3.7.17-nanoserver-ltsc2025",
 					"winamd64/traefik:v3.7-nanoserver-ltsc2025",
 					"winamd64/traefik:3.7-nanoserver-ltsc2025",
 					"winamd64/traefik:langres-nanoserver-ltsc2025",
@@ -61965,7 +62332,7 @@
 				],
 				"froms": [
 					"mcr.microsoft.com/windows/nanoserver:ltsc2025",
-					"traefik:v3.7.16-windowsservercore-ltsc2025"
+					"traefik:v3.7.17-windowsservercore-ltsc2025"
 				],
 				"lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2025",
 				"platformString": "windows/amd64",
@@ -61978,33 +62345,33 @@
 						"sourceId": null,
 						"pin": "sha256:05d1a7fb562f998ed3bc23b21dbd95aa26b3dd10ae921e830449e2db657f6704"
 					},
-					"traefik:v3.7.16-windowsservercore-ltsc2025": {
-						"sourceId": "e3937e05ca4da6fa1d90b3b67e871d240d666b2ef164c00079069f0ae6c6b9a2",
+					"traefik:v3.7.17-windowsservercore-ltsc2025": {
+						"sourceId": "13a020ef39d7b0ad8b05703df03b3d49eb8f6d2f48d53c5577cb819ce67d5cac",
 						"pin": null
 					}
 				}
 			}
 		}
 	},
-	"a06845d6190cc6ee91492867ad52a791cd7abc0f4b677b3dfa8e2da23bf42e53": {
-		"sourceId": "a06845d6190cc6ee91492867ad52a791cd7abc0f4b677b3dfa8e2da23bf42e53",
-		"reproducibleGitChecksum": "0b102375fd806b6e41a338589c23a333001d7c6eb3aa3d2e60cd12a57266d67e",
+	"db4604b0e7aec5a236063593ae56adf9a5e5bc6267b137d3b9f9149c39521689": {
+		"sourceId": "db4604b0e7aec5a236063593ae56adf9a5e5bc6267b137d3b9f9149c39521689",
+		"reproducibleGitChecksum": "cfa7d2562ad472af18d7d20ef075eba74de437134ae74a3b7a190de94abb39a6",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "8bf882086da1e3295756402a1cb2646600eb9d6d",
+				"GitCommit": "f8319cffb8d0d8e7c2f5db7585de5186d60e5733",
 				"Directory": "v3.7/windows/nanoserver-ltsc2022",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1792509572
+				"SOURCE_DATE_EPOCH": 1793349163
 			}
 		],
 		"arches": {
 			"windows-amd64": {
 				"tags": [
-					"traefik:v3.7.16-nanoserver-ltsc2022",
-					"traefik:3.7.16-nanoserver-ltsc2022",
+					"traefik:v3.7.17-nanoserver-ltsc2022",
+					"traefik:3.7.17-nanoserver-ltsc2022",
 					"traefik:v3.7-nanoserver-ltsc2022",
 					"traefik:3.7-nanoserver-ltsc2022",
 					"traefik:langres-nanoserver-ltsc2022",
@@ -62013,8 +62380,8 @@
 					"traefik:nanoserver-ltsc2022"
 				],
 				"archTags": [
-					"winamd64/traefik:v3.7.16-nanoserver-ltsc2022",
-					"winamd64/traefik:3.7.16-nanoserver-ltsc2022",
+					"winamd64/traefik:v3.7.17-nanoserver-ltsc2022",
+					"winamd64/traefik:3.7.17-nanoserver-ltsc2022",
 					"winamd64/traefik:v3.7-nanoserver-ltsc2022",
 					"winamd64/traefik:3.7-nanoserver-ltsc2022",
 					"winamd64/traefik:langres-nanoserver-ltsc2022",
@@ -62024,7 +62391,7 @@
 				],
 				"froms": [
 					"mcr.microsoft.com/windows/nanoserver:ltsc2022",
-					"traefik:v3.7.16-windowsservercore-ltsc2022"
+					"traefik:v3.7.17-windowsservercore-ltsc2022"
 				],
 				"lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2022",
 				"platformString": "windows/amd64",
@@ -62037,33 +62404,33 @@
 						"sourceId": null,
 						"pin": "sha256:62d28cb7771b0cf1b37db2662e468dad76e7ef15ca4ef52b2ab73c102a23da98"
 					},
-					"traefik:v3.7.16-windowsservercore-ltsc2022": {
-						"sourceId": "10a64468cdb58592a32c5506a128a79a90d7b3fc231b4507f07956b898a602ef",
+					"traefik:v3.7.17-windowsservercore-ltsc2022": {
+						"sourceId": "210519cbb038c83e022a9a009f412df62cfdc2dde824f678f8403be2d9964f88",
 						"pin": null
 					}
 				}
 			}
 		}
 	},
-	"82f323fb1479bf1ae13ff79adf5f52f825e817308ccb97e24477ceb6e7382dcf": {
-		"sourceId": "82f323fb1479bf1ae13ff79adf5f52f825e817308ccb97e24477ceb6e7382dcf",
-		"reproducibleGitChecksum": "9d17ed32037bc8b71168d4254fe80e97fffe8f2dbc5e4a9c1425656cb3106c2d",
+	"e20d647e1747a439026a03cd2dda5e45714b94af1258cea430002d108d86af7e": {
+		"sourceId": "e20d647e1747a439026a03cd2dda5e45714b94af1258cea430002d108d86af7e",
+		"reproducibleGitChecksum": "05910129caf181981b7c00ced46e6ddc37c8a83072437e3d67da97fe169fdf7b",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "8bf882086da1e3295756402a1cb2646600eb9d6d",
+				"GitCommit": "f8319cffb8d0d8e7c2f5db7585de5186d60e5733",
 				"Directory": "v3.7/alpine",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1792509572
+				"SOURCE_DATE_EPOCH": 1793349163
 			}
 		],
 		"arches": {
 			"amd64": {
 				"tags": [
-					"traefik:v3.7.16",
-					"traefik:3.7.16",
+					"traefik:v3.7.17",
+					"traefik:3.7.17",
 					"traefik:v3.7",
 					"traefik:3.7",
 					"traefik:langres",
@@ -62072,8 +62439,8 @@
 					"traefik:latest"
 				],
 				"archTags": [
-					"amd64/traefik:v3.7.16",
-					"amd64/traefik:3.7.16",
+					"amd64/traefik:v3.7.17",
+					"amd64/traefik:3.7.17",
 					"amd64/traefik:v3.7",
 					"amd64/traefik:3.7",
 					"amd64/traefik:langres",
@@ -62099,8 +62466,8 @@
 			},
 			"arm32v6": {
 				"tags": [
-					"traefik:v3.7.16",
-					"traefik:3.7.16",
+					"traefik:v3.7.17",
+					"traefik:3.7.17",
 					"traefik:v3.7",
 					"traefik:3.7",
 					"traefik:langres",
@@ -62109,8 +62476,8 @@
 					"traefik:latest"
 				],
 				"archTags": [
-					"arm32v6/traefik:v3.7.16",
-					"arm32v6/traefik:3.7.16",
+					"arm32v6/traefik:v3.7.17",
+					"arm32v6/traefik:3.7.17",
 					"arm32v6/traefik:v3.7",
 					"arm32v6/traefik:3.7",
 					"arm32v6/traefik:langres",
@@ -62137,8 +62504,8 @@
 			},
 			"arm64v8": {
 				"tags": [
-					"traefik:v3.7.16",
-					"traefik:3.7.16",
+					"traefik:v3.7.17",
+					"traefik:3.7.17",
 					"traefik:v3.7",
 					"traefik:3.7",
 					"traefik:langres",
@@ -62147,8 +62514,8 @@
 					"traefik:latest"
 				],
 				"archTags": [
-					"arm64v8/traefik:v3.7.16",
-					"arm64v8/traefik:3.7.16",
+					"arm64v8/traefik:v3.7.17",
+					"arm64v8/traefik:3.7.17",
 					"arm64v8/traefik:v3.7",
 					"arm64v8/traefik:3.7",
 					"arm64v8/traefik:langres",
@@ -62175,8 +62542,8 @@
 			},
 			"ppc64le": {
 				"tags": [
-					"traefik:v3.7.16",
-					"traefik:3.7.16",
+					"traefik:v3.7.17",
+					"traefik:3.7.17",
 					"traefik:v3.7",
 					"traefik:3.7",
 					"traefik:langres",
@@ -62185,8 +62552,8 @@
 					"traefik:latest"
 				],
 				"archTags": [
-					"ppc64le/traefik:v3.7.16",
-					"ppc64le/traefik:3.7.16",
+					"ppc64le/traefik:v3.7.17",
+					"ppc64le/traefik:3.7.17",
 					"ppc64le/traefik:v3.7",
 					"ppc64le/traefik:3.7",
 					"ppc64le/traefik:langres",
@@ -62212,8 +62579,8 @@
 			},
 			"riscv64": {
 				"tags": [
-					"traefik:v3.7.16",
-					"traefik:3.7.16",
+					"traefik:v3.7.17",
+					"traefik:3.7.17",
 					"traefik:v3.7",
 					"traefik:3.7",
 					"traefik:langres",
@@ -62222,8 +62589,8 @@
 					"traefik:latest"
 				],
 				"archTags": [
-					"riscv64/traefik:v3.7.16",
-					"riscv64/traefik:3.7.16",
+					"riscv64/traefik:v3.7.17",
+					"riscv64/traefik:3.7.17",
 					"riscv64/traefik:v3.7",
 					"riscv64/traefik:3.7",
 					"riscv64/traefik:langres",
@@ -62249,8 +62616,8 @@
 			},
 			"s390x": {
 				"tags": [
-					"traefik:v3.7.16",
-					"traefik:3.7.16",
+					"traefik:v3.7.17",
+					"traefik:3.7.17",
 					"traefik:v3.7",
 					"traefik:3.7",
 					"traefik:langres",
@@ -62259,8 +62626,8 @@
 					"traefik:latest"
 				],
 				"archTags": [
-					"s390x/traefik:v3.7.16",
-					"s390x/traefik:3.7.16",
+					"s390x/traefik:v3.7.17",
+					"s390x/traefik:3.7.17",
 					"s390x/traefik:v3.7",
 					"s390x/traefik:3.7",
 					"s390x/traefik:langres",
@@ -62286,25 +62653,25 @@
 			}
 		}
 	},
-	"03edde3e67aa82d19f54a732afd456e090a4210d497211b426561bb57c413910": {
-		"sourceId": "03edde3e67aa82d19f54a732afd456e090a4210d497211b426561bb57c413910",
-		"reproducibleGitChecksum": "5e52c71fef6b733b787f693de9adee98e2436796b441864e8ec3e3d7619ef187",
+	"e97d7968d4e8480cb80fb0d31fb932e9d7f4c4ea9928bd940e2fb72f5f63231f": {
+		"sourceId": "e97d7968d4e8480cb80fb0d31fb932e9d7f4c4ea9928bd940e2fb72f5f63231f",
+		"reproducibleGitChecksum": "dda5598a46442d072b96672d1ab130599e729afd3169c31a657b72b1534921ce",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "f205779a77ef7424f431a88825eabe5a64ff4ff2",
+				"GitCommit": "029dfc3a709d2f30d3167a81920dee2e395e077e",
 				"Directory": "v2.11/windows/servercore-ltsc2025",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1792508740
+				"SOURCE_DATE_EPOCH": 1793348869
 			}
 		],
 		"arches": {
 			"windows-amd64": {
 				"tags": [
-					"traefik:v2.11.60-windowsservercore-ltsc2025",
-					"traefik:2.11.60-windowsservercore-ltsc2025",
+					"traefik:v2.11.61-windowsservercore-ltsc2025",
+					"traefik:2.11.61-windowsservercore-ltsc2025",
 					"traefik:v2.11-windowsservercore-ltsc2025",
 					"traefik:2.11-windowsservercore-ltsc2025",
 					"traefik:mimolette-windowsservercore-ltsc2025",
@@ -62312,8 +62679,8 @@
 					"traefik:2-windowsservercore-ltsc2025"
 				],
 				"archTags": [
-					"winamd64/traefik:v2.11.60-windowsservercore-ltsc2025",
-					"winamd64/traefik:2.11.60-windowsservercore-ltsc2025",
+					"winamd64/traefik:v2.11.61-windowsservercore-ltsc2025",
+					"winamd64/traefik:2.11.61-windowsservercore-ltsc2025",
 					"winamd64/traefik:v2.11-windowsservercore-ltsc2025",
 					"winamd64/traefik:2.11-windowsservercore-ltsc2025",
 					"winamd64/traefik:mimolette-windowsservercore-ltsc2025",
@@ -62338,25 +62705,25 @@
 			}
 		}
 	},
-	"6dde9c707653f3b07ffaf6edb3138fa2e960107b9d68dc3f30764eda955b9173": {
-		"sourceId": "6dde9c707653f3b07ffaf6edb3138fa2e960107b9d68dc3f30764eda955b9173",
-		"reproducibleGitChecksum": "40c6bf8d89a9ce7ed2ad34d0a5c1fd311d86bafcc7695b79add4fb5b9410800d",
+	"fc2219ca4edca2df06696898411a4e53f66dd5b3617d0120e27f93e06c992884": {
+		"sourceId": "fc2219ca4edca2df06696898411a4e53f66dd5b3617d0120e27f93e06c992884",
+		"reproducibleGitChecksum": "c2416f1ec3c62afd104c26081ee39952b36d470182281c2254d5c204a03b74ba",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "f205779a77ef7424f431a88825eabe5a64ff4ff2",
+				"GitCommit": "029dfc3a709d2f30d3167a81920dee2e395e077e",
 				"Directory": "v2.11/windows/servercore-ltsc2022",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1792508740
+				"SOURCE_DATE_EPOCH": 1793348869
 			}
 		],
 		"arches": {
 			"windows-amd64": {
 				"tags": [
-					"traefik:v2.11.60-windowsservercore-ltsc2022",
-					"traefik:2.11.60-windowsservercore-ltsc2022",
+					"traefik:v2.11.61-windowsservercore-ltsc2022",
+					"traefik:2.11.61-windowsservercore-ltsc2022",
 					"traefik:v2.11-windowsservercore-ltsc2022",
 					"traefik:2.11-windowsservercore-ltsc2022",
 					"traefik:mimolette-windowsservercore-ltsc2022",
@@ -62364,8 +62731,8 @@
 					"traefik:2-windowsservercore-ltsc2022"
 				],
 				"archTags": [
-					"winamd64/traefik:v2.11.60-windowsservercore-ltsc2022",
-					"winamd64/traefik:2.11.60-windowsservercore-ltsc2022",
+					"winamd64/traefik:v2.11.61-windowsservercore-ltsc2022",
+					"winamd64/traefik:2.11.61-windowsservercore-ltsc2022",
 					"winamd64/traefik:v2.11-windowsservercore-ltsc2022",
 					"winamd64/traefik:2.11-windowsservercore-ltsc2022",
 					"winamd64/traefik:mimolette-windowsservercore-ltsc2022",
@@ -62390,25 +62757,25 @@
 			}
 		}
 	},
-	"5d966eb5206cac06dc06971ad36bd0f6d05d8fa37249c7a7230919b1fd23047e": {
-		"sourceId": "5d966eb5206cac06dc06971ad36bd0f6d05d8fa37249c7a7230919b1fd23047e",
-		"reproducibleGitChecksum": "464641b882ea17b645b8f59d415a475835cda368f4ede4ddc7425a828a2298fc",
+	"eefea8166f22829b555c04f6f19ea80394ce35ac0f313dce855586b083d64f32": {
+		"sourceId": "eefea8166f22829b555c04f6f19ea80394ce35ac0f313dce855586b083d64f32",
+		"reproducibleGitChecksum": "1975532a06f522f2cb7c240528f32830649f482c3909ba898e7f5cc34f2d0c6f",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "f205779a77ef7424f431a88825eabe5a64ff4ff2",
+				"GitCommit": "029dfc3a709d2f30d3167a81920dee2e395e077e",
 				"Directory": "v2.11/windows/nanoserver-ltsc2025",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1792508740
+				"SOURCE_DATE_EPOCH": 1793348869
 			}
 		],
 		"arches": {
 			"windows-amd64": {
 				"tags": [
-					"traefik:v2.11.60-nanoserver-ltsc2025",
-					"traefik:2.11.60-nanoserver-ltsc2025",
+					"traefik:v2.11.61-nanoserver-ltsc2025",
+					"traefik:2.11.61-nanoserver-ltsc2025",
 					"traefik:v2.11-nanoserver-ltsc2025",
 					"traefik:2.11-nanoserver-ltsc2025",
 					"traefik:mimolette-nanoserver-ltsc2025",
@@ -62416,8 +62783,8 @@
 					"traefik:2-nanoserver-ltsc2025"
 				],
 				"archTags": [
-					"winamd64/traefik:v2.11.60-nanoserver-ltsc2025",
-					"winamd64/traefik:2.11.60-nanoserver-ltsc2025",
+					"winamd64/traefik:v2.11.61-nanoserver-ltsc2025",
+					"winamd64/traefik:2.11.61-nanoserver-ltsc2025",
 					"winamd64/traefik:v2.11-nanoserver-ltsc2025",
 					"winamd64/traefik:2.11-nanoserver-ltsc2025",
 					"winamd64/traefik:mimolette-nanoserver-ltsc2025",
@@ -62426,7 +62793,7 @@
 				],
 				"froms": [
 					"mcr.microsoft.com/windows/nanoserver:ltsc2025",
-					"traefik:v2.11.60-windowsservercore-ltsc2025"
+					"traefik:v2.11.61-windowsservercore-ltsc2025"
 				],
 				"lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2025",
 				"platformString": "windows/amd64",
@@ -62439,33 +62806,33 @@
 						"sourceId": null,
 						"pin": "sha256:05d1a7fb562f998ed3bc23b21dbd95aa26b3dd10ae921e830449e2db657f6704"
 					},
-					"traefik:v2.11.60-windowsservercore-ltsc2025": {
-						"sourceId": "03edde3e67aa82d19f54a732afd456e090a4210d497211b426561bb57c413910",
+					"traefik:v2.11.61-windowsservercore-ltsc2025": {
+						"sourceId": "e97d7968d4e8480cb80fb0d31fb932e9d7f4c4ea9928bd940e2fb72f5f63231f",
 						"pin": null
 					}
 				}
 			}
 		}
 	},
-	"67d650894a4b8bc95595069ea6193fde267d3e3ee7ad2de98d380ede309b27b9": {
-		"sourceId": "67d650894a4b8bc95595069ea6193fde267d3e3ee7ad2de98d380ede309b27b9",
-		"reproducibleGitChecksum": "a5389b08abdcc63cb3da24f5bef9fb335f0bc27820bce6fd36a90f2de8388fe9",
+	"19484ca2ca30f86e53889da5dd1e7b26f15dacba87a83d6e35c26f5ba2394d19": {
+		"sourceId": "19484ca2ca30f86e53889da5dd1e7b26f15dacba87a83d6e35c26f5ba2394d19",
+		"reproducibleGitChecksum": "362487250091e82f08d3f1b2fed01a5bd2ac5d7d31c194fc7ebea305595529da",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "f205779a77ef7424f431a88825eabe5a64ff4ff2",
+				"GitCommit": "029dfc3a709d2f30d3167a81920dee2e395e077e",
 				"Directory": "v2.11/windows/nanoserver-ltsc2022",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1792508740
+				"SOURCE_DATE_EPOCH": 1793348869
 			}
 		],
 		"arches": {
 			"windows-amd64": {
 				"tags": [
-					"traefik:v2.11.60-nanoserver-ltsc2022",
-					"traefik:2.11.60-nanoserver-ltsc2022",
+					"traefik:v2.11.61-nanoserver-ltsc2022",
+					"traefik:2.11.61-nanoserver-ltsc2022",
 					"traefik:v2.11-nanoserver-ltsc2022",
 					"traefik:2.11-nanoserver-ltsc2022",
 					"traefik:mimolette-nanoserver-ltsc2022",
@@ -62473,8 +62840,8 @@
 					"traefik:2-nanoserver-ltsc2022"
 				],
 				"archTags": [
-					"winamd64/traefik:v2.11.60-nanoserver-ltsc2022",
-					"winamd64/traefik:2.11.60-nanoserver-ltsc2022",
+					"winamd64/traefik:v2.11.61-nanoserver-ltsc2022",
+					"winamd64/traefik:2.11.61-nanoserver-ltsc2022",
 					"winamd64/traefik:v2.11-nanoserver-ltsc2022",
 					"winamd64/traefik:2.11-nanoserver-ltsc2022",
 					"winamd64/traefik:mimolette-nanoserver-ltsc2022",
@@ -62483,7 +62850,7 @@
 				],
 				"froms": [
 					"mcr.microsoft.com/windows/nanoserver:ltsc2022",
-					"traefik:v2.11.60-windowsservercore-ltsc2022"
+					"traefik:v2.11.61-windowsservercore-ltsc2022"
 				],
 				"lastStageFrom": "mcr.microsoft.com/windows/nanoserver:ltsc2022",
 				"platformString": "windows/amd64",
@@ -62496,33 +62863,33 @@
 						"sourceId": null,
 						"pin": "sha256:62d28cb7771b0cf1b37db2662e468dad76e7ef15ca4ef52b2ab73c102a23da98"
 					},
-					"traefik:v2.11.60-windowsservercore-ltsc2022": {
-						"sourceId": "6dde9c707653f3b07ffaf6edb3138fa2e960107b9d68dc3f30764eda955b9173",
+					"traefik:v2.11.61-windowsservercore-ltsc2022": {
+						"sourceId": "fc2219ca4edca2df06696898411a4e53f66dd5b3617d0120e27f93e06c992884",
 						"pin": null
 					}
 				}
 			}
 		}
 	},
-	"f0e2244bdc0c510857ef4e037c2bb9f7d0b209c0c00783fa0b4d3f3a9234c4f2": {
-		"sourceId": "f0e2244bdc0c510857ef4e037c2bb9f7d0b209c0c00783fa0b4d3f3a9234c4f2",
-		"reproducibleGitChecksum": "175a1fbd58ddf5e1c8cb671eb7243c9e5cc21c7b38c97adb4cdea226aa794171",
+	"3de823ec2ef7aab2748cc4d384c464026ec9194ba7f57cc3ffd0ce7e31954719": {
+		"sourceId": "3de823ec2ef7aab2748cc4d384c464026ec9194ba7f57cc3ffd0ce7e31954719",
+		"reproducibleGitChecksum": "7dc7d9b5a5824cf737ec4dd164924bea7019002776398ac90924e972b945f0eb",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/traefik/traefik-library-image.git",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "f205779a77ef7424f431a88825eabe5a64ff4ff2",
+				"GitCommit": "029dfc3a709d2f30d3167a81920dee2e395e077e",
 				"Directory": "v2.11/alpine",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1792508740
+				"SOURCE_DATE_EPOCH": 1793348869
 			}
 		],
 		"arches": {
 			"amd64": {
 				"tags": [
-					"traefik:v2.11.60",
-					"traefik:2.11.60",
+					"traefik:v2.11.61",
+					"traefik:2.11.61",
 					"traefik:v2.11",
 					"traefik:2.11",
 					"traefik:mimolette",
@@ -62530,8 +62897,8 @@
 					"traefik:2"
 				],
 				"archTags": [
-					"amd64/traefik:v2.11.60",
-					"amd64/traefik:2.11.60",
+					"amd64/traefik:v2.11.61",
+					"amd64/traefik:2.11.61",
 					"amd64/traefik:v2.11",
 					"amd64/traefik:2.11",
 					"amd64/traefik:mimolette",
@@ -62556,8 +62923,8 @@
 			},
 			"arm32v6": {
 				"tags": [
-					"traefik:v2.11.60",
-					"traefik:2.11.60",
+					"traefik:v2.11.61",
+					"traefik:2.11.61",
 					"traefik:v2.11",
 					"traefik:2.11",
 					"traefik:mimolette",
@@ -62565,8 +62932,8 @@
 					"traefik:2"
 				],
 				"archTags": [
-					"arm32v6/traefik:v2.11.60",
-					"arm32v6/traefik:2.11.60",
+					"arm32v6/traefik:v2.11.61",
+					"arm32v6/traefik:2.11.61",
 					"arm32v6/traefik:v2.11",
 					"arm32v6/traefik:2.11",
 					"arm32v6/traefik:mimolette",
@@ -62592,8 +62959,8 @@
 			},
 			"arm64v8": {
 				"tags": [
-					"traefik:v2.11.60",
-					"traefik:2.11.60",
+					"traefik:v2.11.61",
+					"traefik:2.11.61",
 					"traefik:v2.11",
 					"traefik:2.11",
 					"traefik:mimolette",
@@ -62601,8 +62968,8 @@
 					"traefik:2"
 				],
 				"archTags": [
-					"arm64v8/traefik:v2.11.60",
-					"arm64v8/traefik:2.11.60",
+					"arm64v8/traefik:v2.11.61",
+					"arm64v8/traefik:2.11.61",
 					"arm64v8/traefik:v2.11",
 					"arm64v8/traefik:2.11",
 					"arm64v8/traefik:mimolette",
@@ -62628,8 +62995,8 @@
 			},
 			"ppc64le": {
 				"tags": [
-					"traefik:v2.11.60",
-					"traefik:2.11.60",
+					"traefik:v2.11.61",
+					"traefik:2.11.61",
 					"traefik:v2.11",
 					"traefik:2.11",
 					"traefik:mimolette",
@@ -62637,8 +63004,8 @@
 					"traefik:2"
 				],
 				"archTags": [
-					"ppc64le/traefik:v2.11.60",
-					"ppc64le/traefik:2.11.60",
+					"ppc64le/traefik:v2.11.61",
+					"ppc64le/traefik:2.11.61",
 					"ppc64le/traefik:v2.11",
 					"ppc64le/traefik:2.11",
 					"ppc64le/traefik:mimolette",
@@ -62663,8 +63030,8 @@
 			},
 			"riscv64": {
 				"tags": [
-					"traefik:v2.11.60",
-					"traefik:2.11.60",
+					"traefik:v2.11.61",
+					"traefik:2.11.61",
 					"traefik:v2.11",
 					"traefik:2.11",
 					"traefik:mimolette",
@@ -62672,8 +63039,8 @@
 					"traefik:2"
 				],
 				"archTags": [
-					"riscv64/traefik:v2.11.60",
-					"riscv64/traefik:2.11.60",
+					"riscv64/traefik:v2.11.61",
+					"riscv64/traefik:2.11.61",
 					"riscv64/traefik:v2.11",
 					"riscv64/traefik:2.11",
 					"riscv64/traefik:mimolette",
@@ -62698,8 +63065,8 @@
 			},
 			"s390x": {
 				"tags": [
-					"traefik:v2.11.60",
-					"traefik:2.11.60",
+					"traefik:v2.11.61",
+					"traefik:2.11.61",
 					"traefik:v2.11",
 					"traefik:2.11",
 					"traefik:mimolette",
@@ -62707,8 +63074,8 @@
 					"traefik:2"
 				],
 				"archTags": [
-					"s390x/traefik:v2.11.60",
-					"s390x/traefik:2.11.60",
+					"s390x/traefik:v2.11.61",
+					"s390x/traefik:2.11.61",
 					"s390x/traefik:v2.11",
 					"s390x/traefik:2.11",
 					"s390x/traefik:mimolette",
