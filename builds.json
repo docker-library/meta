@@ -91470,7 +91470,51 @@
 		"buildId": "1daeb713cafc3dfd8c32d52031c697bcd1fb7dfdb609ee28438f8ab2316235ff",
 		"build": {
 			"img": "oisupport/staging-arm64v8:1daeb713cafc3dfd8c32d52031c697bcd1fb7dfdb609ee28438f8ab2316235ff",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:ae9a1b793c44f4e6bb3df3ff91237fc3e021be3c39b822705bd720db067d218a",
+						"size": 1903,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:8793abc479381bafd16c9d538b01c5a8dd7eef6aa10a737f2ad828ac73cb80e9",
+							"org.opencontainers.image.base.name": "alpine:3.23",
+							"org.opencontainers.image.created": "2026-11-03T00:16:41Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:1daeb713cafc3dfd8c32d52031c697bcd1fb7dfdb609ee28438f8ab2316235ff@sha256:ae9a1b793c44f4e6bb3df3ff91237fc3e021be3c39b822705bd720db067d218a",
+							"org.opencontainers.image.revision": "64496e166a772fde00df8d6be5645f9c3af673b7",
+							"org.opencontainers.image.source": "https://github.com/krakend/docker-library.git#64496e166a772fde00df8d6be5645f9c3af673b7:3.0.3",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/krakend",
+							"org.opencontainers.image.version": "3.0.3"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:d8526283791e36ccd1104ca18c85170e988ae0703a8d19795f7714427813df62",
+						"size": 567,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:1daeb713cafc3dfd8c32d52031c697bcd1fb7dfdb609ee28438f8ab2316235ff@sha256:d8526283791e36ccd1104ca18c85170e988ae0703a8d19795f7714427813df62",
+							"vnd.docker.reference.digest": "sha256:ae9a1b793c44f4e6bb3df3ff91237fc3e021be3c39b822705bd720db067d218a",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:1daeb713cafc3dfd8c32d52031c697bcd1fb7dfdb609ee28438f8ab2316235ff@sha256:1269398f425f41d5385ed2ea89d28e07bddce16f229bcb6b444a80b15c1ed50e"
+				}
+			},
 			"sourceId": "f28929ac843e0e529f35f979f9c217a37370d11c47bf3b25cf09788af8914def",
 			"arch": "arm64v8",
 			"parents": {
@@ -598382,55 +598426,12 @@
 			}
 		}
 	},
-	"a39f43ac02f0fa9f3c9a5908a2810d957265af587de3ff5794fdf9038b693b1a": {
-		"buildId": "a39f43ac02f0fa9f3c9a5908a2810d957265af587de3ff5794fdf9038b693b1a",
+	"b75233571bcafb836950fa35734997beb26799df1d3cf824c62931b2048bdd69": {
+		"buildId": "b75233571bcafb836950fa35734997beb26799df1d3cf824c62931b2048bdd69",
 		"build": {
-			"img": "oisupport/staging-amd64:a39f43ac02f0fa9f3c9a5908a2810d957265af587de3ff5794fdf9038b693b1a",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:222540c8fbe2bf6e30fc38fb22e97b7b6eaa67007e70b17895daf238df4ee1b5",
-						"size": 2314,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:a1c89a59d56245724cc8afbac1150c88385c2e7f7fd705ac988b1579ca421064",
-							"org.opencontainers.image.base.name": "buildpack-deps:bookworm-curl",
-							"org.opencontainers.image.created": "2026-10-28T02:28:06Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a39f43ac02f0fa9f3c9a5908a2810d957265af587de3ff5794fdf9038b693b1a@sha256:222540c8fbe2bf6e30fc38fb22e97b7b6eaa67007e70b17895daf238df4ee1b5",
-							"org.opencontainers.image.revision": "03c5f22dfec78fa00ef48dce091f081890bf5d26",
-							"org.opencontainers.image.source": "https://github.com/influxdata/influxdata-docker.git#03c5f22dfec78fa00ef48dce091f081890bf5d26:influxdb/1.13",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/influxdb",
-							"org.opencontainers.image.version": "1.13"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:37cbefee0fe0e292f56d85fb1bb468f913c81542534e75b5228c1e3199a8b168",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a39f43ac02f0fa9f3c9a5908a2810d957265af587de3ff5794fdf9038b693b1a@sha256:37cbefee0fe0e292f56d85fb1bb468f913c81542534e75b5228c1e3199a8b168",
-							"vnd.docker.reference.digest": "sha256:222540c8fbe2bf6e30fc38fb22e97b7b6eaa67007e70b17895daf238df4ee1b5",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a39f43ac02f0fa9f3c9a5908a2810d957265af587de3ff5794fdf9038b693b1a@sha256:8b9ed56b40d8ba78f3959f48366c10a918e52ea7ce4a1b9be5b8db078cf7856a"
-				}
-			},
-			"sourceId": "99605103e9c8cdb43292fb29fcbe77fa07dc7aac05c38d957e3c532d3560228d",
+			"img": "oisupport/staging-amd64:b75233571bcafb836950fa35734997beb26799df1d3cf824c62931b2048bdd69",
+			"resolved": null,
+			"sourceId": "887c4c3980c8bccbc96565c430c435f7da9dabed5cad3574bee897d55136e034",
 			"arch": "amd64",
 			"parents": {
 				"buildpack-deps:bookworm-curl": "sha256:a1c89a59d56245724cc8afbac1150c88385c2e7f7fd705ac988b1579ca421064"
@@ -598483,28 +598484,28 @@
 			}
 		},
 		"source": {
-			"sourceId": "99605103e9c8cdb43292fb29fcbe77fa07dc7aac05c38d957e3c532d3560228d",
-			"reproducibleGitChecksum": "cc9d58285de5c183e2b138f0234b5d6e53c6f081938c5890c6ca29c3c3ab7697",
+			"sourceId": "887c4c3980c8bccbc96565c430c435f7da9dabed5cad3574bee897d55136e034",
+			"reproducibleGitChecksum": "231bab0ecd865e78cfb398c7e4dc7384eb12e6d06af5d1917ec4a75ea0c512b0",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.13",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
 						"influxdb:1.13",
-						"influxdb:1.13.1"
+						"influxdb:1.13.2"
 					],
 					"archTags": [
 						"amd64/influxdb:1.13",
-						"amd64/influxdb:1.13.1"
+						"amd64/influxdb:1.13.2"
 					],
 					"froms": [
 						"buildpack-deps:bookworm-curl"
@@ -598525,56 +598526,12 @@
 			}
 		}
 	},
-	"ba3297dca382199fbc40aa602437fee3037baaf8948fb96a95a624c07182c9ac": {
-		"buildId": "ba3297dca382199fbc40aa602437fee3037baaf8948fb96a95a624c07182c9ac",
+	"b205f5b6b7bffd74be7b5f44752c0aab7271ce6a93105f5d26816fc087965183": {
+		"buildId": "b205f5b6b7bffd74be7b5f44752c0aab7271ce6a93105f5d26816fc087965183",
 		"build": {
-			"img": "oisupport/staging-arm64v8:ba3297dca382199fbc40aa602437fee3037baaf8948fb96a95a624c07182c9ac",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:5f2feabae1e6a627e3429befac751632de1817dd03061866c16329618ce73917",
-						"size": 2316,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:faeae109fdb76686db5e97185a2f907079e8d4ddc66533080fd38d38855a2690",
-							"org.opencontainers.image.base.name": "buildpack-deps:bookworm-curl",
-							"org.opencontainers.image.created": "2026-10-28T02:39:34Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:ba3297dca382199fbc40aa602437fee3037baaf8948fb96a95a624c07182c9ac@sha256:5f2feabae1e6a627e3429befac751632de1817dd03061866c16329618ce73917",
-							"org.opencontainers.image.revision": "03c5f22dfec78fa00ef48dce091f081890bf5d26",
-							"org.opencontainers.image.source": "https://github.com/influxdata/influxdata-docker.git#03c5f22dfec78fa00ef48dce091f081890bf5d26:influxdb/1.13",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/influxdb",
-							"org.opencontainers.image.version": "1.13"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:d43605594a080ddbd40ae956ece25737052b7c16b3e62fbf86c6eea61a704b3b",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:ba3297dca382199fbc40aa602437fee3037baaf8948fb96a95a624c07182c9ac@sha256:d43605594a080ddbd40ae956ece25737052b7c16b3e62fbf86c6eea61a704b3b",
-							"vnd.docker.reference.digest": "sha256:5f2feabae1e6a627e3429befac751632de1817dd03061866c16329618ce73917",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:ba3297dca382199fbc40aa602437fee3037baaf8948fb96a95a624c07182c9ac@sha256:e32a603f03359e78ced098d3137835536f4259de336b9c8d76fa5c2a97dd2c94"
-				}
-			},
-			"sourceId": "99605103e9c8cdb43292fb29fcbe77fa07dc7aac05c38d957e3c532d3560228d",
+			"img": "oisupport/staging-arm64v8:b205f5b6b7bffd74be7b5f44752c0aab7271ce6a93105f5d26816fc087965183",
+			"resolved": null,
+			"sourceId": "887c4c3980c8bccbc96565c430c435f7da9dabed5cad3574bee897d55136e034",
 			"arch": "arm64v8",
 			"parents": {
 				"buildpack-deps:bookworm-curl": "sha256:faeae109fdb76686db5e97185a2f907079e8d4ddc66533080fd38d38855a2690"
@@ -598628,28 +598585,28 @@
 			}
 		},
 		"source": {
-			"sourceId": "99605103e9c8cdb43292fb29fcbe77fa07dc7aac05c38d957e3c532d3560228d",
-			"reproducibleGitChecksum": "cc9d58285de5c183e2b138f0234b5d6e53c6f081938c5890c6ca29c3c3ab7697",
+			"sourceId": "887c4c3980c8bccbc96565c430c435f7da9dabed5cad3574bee897d55136e034",
+			"reproducibleGitChecksum": "231bab0ecd865e78cfb398c7e4dc7384eb12e6d06af5d1917ec4a75ea0c512b0",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.13",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
 				"arm64v8": {
 					"tags": [
 						"influxdb:1.13",
-						"influxdb:1.13.1"
+						"influxdb:1.13.2"
 					],
 					"archTags": [
 						"arm64v8/influxdb:1.13",
-						"arm64v8/influxdb:1.13.1"
+						"arm64v8/influxdb:1.13.2"
 					],
 					"froms": [
 						"buildpack-deps:bookworm-curl"
@@ -598671,55 +598628,12 @@
 			}
 		}
 	},
-	"47651989b6454318dc974caf452955ecce823a7e9cacc4a89ea88c883fd29555": {
-		"buildId": "47651989b6454318dc974caf452955ecce823a7e9cacc4a89ea88c883fd29555",
+	"2b66149324393dfac957c7b84a03916a0b9c50e6f37c52dfbab17c5c43066069": {
+		"buildId": "2b66149324393dfac957c7b84a03916a0b9c50e6f37c52dfbab17c5c43066069",
 		"build": {
-			"img": "oisupport/staging-amd64:47651989b6454318dc974caf452955ecce823a7e9cacc4a89ea88c883fd29555",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:4671e700dc0e8bdb4d6318cb0c97f91bdbf6d438a906b85315d02efcf7412955",
-						"size": 2308,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:3d67941fed5ae436b2bb9791cb3f50a252441c7706bbc5b4e738936df8ff8306",
-							"org.opencontainers.image.base.name": "alpine:3.23",
-							"org.opencontainers.image.created": "2026-10-21T21:22:33Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:47651989b6454318dc974caf452955ecce823a7e9cacc4a89ea88c883fd29555@sha256:4671e700dc0e8bdb4d6318cb0c97f91bdbf6d438a906b85315d02efcf7412955",
-							"org.opencontainers.image.revision": "03c5f22dfec78fa00ef48dce091f081890bf5d26",
-							"org.opencontainers.image.source": "https://github.com/influxdata/influxdata-docker.git#03c5f22dfec78fa00ef48dce091f081890bf5d26:influxdb/1.13/alpine",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/influxdb",
-							"org.opencontainers.image.version": "1.13-alpine"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:7f09ac9986dbe0a25fa3e2890c679a6a217442d87ac9a82f22e4286b0baa9b46",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:47651989b6454318dc974caf452955ecce823a7e9cacc4a89ea88c883fd29555@sha256:7f09ac9986dbe0a25fa3e2890c679a6a217442d87ac9a82f22e4286b0baa9b46",
-							"vnd.docker.reference.digest": "sha256:4671e700dc0e8bdb4d6318cb0c97f91bdbf6d438a906b85315d02efcf7412955",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:47651989b6454318dc974caf452955ecce823a7e9cacc4a89ea88c883fd29555@sha256:939bd43b889ce64aad51cf0901aa16d33275646218bda2239849bb9f7e5564c0"
-				}
-			},
-			"sourceId": "088970cfa191d3c9d15d136ca76d20f103858ebb9e53d19c559058a467427208",
+			"img": "oisupport/staging-amd64:2b66149324393dfac957c7b84a03916a0b9c50e6f37c52dfbab17c5c43066069",
+			"resolved": null,
+			"sourceId": "49ea4922ba390b1d566f87279d55f15e12a7bad68fdf56fb8214235629fced2f",
 			"arch": "amd64",
 			"parents": {
 				"alpine:3.23": "sha256:3d67941fed5ae436b2bb9791cb3f50a252441c7706bbc5b4e738936df8ff8306"
@@ -598771,28 +598685,28 @@
 			}
 		},
 		"source": {
-			"sourceId": "088970cfa191d3c9d15d136ca76d20f103858ebb9e53d19c559058a467427208",
-			"reproducibleGitChecksum": "b88bdb9726b7ed602bdf938f0acb4d5543cb44b96af507ab2b56311cebc42345",
+			"sourceId": "49ea4922ba390b1d566f87279d55f15e12a7bad68fdf56fb8214235629fced2f",
+			"reproducibleGitChecksum": "08ea919ba6b0f3e81d240bf7c9d4d2742c60b1ab43ac739065cf1fdec4eee23c",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.13/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
 						"influxdb:1.13-alpine",
-						"influxdb:1.13.1-alpine"
+						"influxdb:1.13.2-alpine"
 					],
 					"archTags": [
 						"amd64/influxdb:1.13-alpine",
-						"amd64/influxdb:1.13.1-alpine"
+						"amd64/influxdb:1.13.2-alpine"
 					],
 					"froms": [
 						"alpine:3.23"
@@ -598813,56 +598727,12 @@
 			}
 		}
 	},
-	"2c22a57e218e5342519f1ff6f6375748ac6679fee32ee8c21d97ad0f367ed9a5": {
-		"buildId": "2c22a57e218e5342519f1ff6f6375748ac6679fee32ee8c21d97ad0f367ed9a5",
+	"66f3f27c564b740e6d8d40be4ad99a641e09ba711d85f57078480339f55be6fa": {
+		"buildId": "66f3f27c564b740e6d8d40be4ad99a641e09ba711d85f57078480339f55be6fa",
 		"build": {
-			"img": "oisupport/staging-arm64v8:2c22a57e218e5342519f1ff6f6375748ac6679fee32ee8c21d97ad0f367ed9a5",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:becdeb6eeeafc76edbd2be813905e1cea48a4222a6f1a80129db92849aeba21f",
-						"size": 2310,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:8793abc479381bafd16c9d538b01c5a8dd7eef6aa10a737f2ad828ac73cb80e9",
-							"org.opencontainers.image.base.name": "alpine:3.23",
-							"org.opencontainers.image.created": "2026-10-21T21:22:20Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2c22a57e218e5342519f1ff6f6375748ac6679fee32ee8c21d97ad0f367ed9a5@sha256:becdeb6eeeafc76edbd2be813905e1cea48a4222a6f1a80129db92849aeba21f",
-							"org.opencontainers.image.revision": "03c5f22dfec78fa00ef48dce091f081890bf5d26",
-							"org.opencontainers.image.source": "https://github.com/influxdata/influxdata-docker.git#03c5f22dfec78fa00ef48dce091f081890bf5d26:influxdb/1.13/alpine",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/influxdb",
-							"org.opencontainers.image.version": "1.13-alpine"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:019c16967d656d5f42ec4c5db6b5fc4d54442ae4cf7b86f8f65d93704361c871",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2c22a57e218e5342519f1ff6f6375748ac6679fee32ee8c21d97ad0f367ed9a5@sha256:019c16967d656d5f42ec4c5db6b5fc4d54442ae4cf7b86f8f65d93704361c871",
-							"vnd.docker.reference.digest": "sha256:becdeb6eeeafc76edbd2be813905e1cea48a4222a6f1a80129db92849aeba21f",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2c22a57e218e5342519f1ff6f6375748ac6679fee32ee8c21d97ad0f367ed9a5@sha256:c0777f21f27d73ed42a91d9f341a7d49d7760c6a3788a62cbe018f5d441e1f7b"
-				}
-			},
-			"sourceId": "088970cfa191d3c9d15d136ca76d20f103858ebb9e53d19c559058a467427208",
+			"img": "oisupport/staging-arm64v8:66f3f27c564b740e6d8d40be4ad99a641e09ba711d85f57078480339f55be6fa",
+			"resolved": null,
+			"sourceId": "49ea4922ba390b1d566f87279d55f15e12a7bad68fdf56fb8214235629fced2f",
 			"arch": "arm64v8",
 			"parents": {
 				"alpine:3.23": "sha256:8793abc479381bafd16c9d538b01c5a8dd7eef6aa10a737f2ad828ac73cb80e9"
@@ -598915,28 +598785,28 @@
 			}
 		},
 		"source": {
-			"sourceId": "088970cfa191d3c9d15d136ca76d20f103858ebb9e53d19c559058a467427208",
-			"reproducibleGitChecksum": "b88bdb9726b7ed602bdf938f0acb4d5543cb44b96af507ab2b56311cebc42345",
+			"sourceId": "49ea4922ba390b1d566f87279d55f15e12a7bad68fdf56fb8214235629fced2f",
+			"reproducibleGitChecksum": "08ea919ba6b0f3e81d240bf7c9d4d2742c60b1ab43ac739065cf1fdec4eee23c",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.13/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
 				"arm64v8": {
 					"tags": [
 						"influxdb:1.13-alpine",
-						"influxdb:1.13.1-alpine"
+						"influxdb:1.13.2-alpine"
 					],
 					"archTags": [
 						"arm64v8/influxdb:1.13-alpine",
-						"arm64v8/influxdb:1.13.1-alpine"
+						"arm64v8/influxdb:1.13.2-alpine"
 					],
 					"froms": [
 						"alpine:3.23"
@@ -598958,55 +598828,12 @@
 			}
 		}
 	},
-	"b88fbd06e881d87b8bfeea2cd8a19fbd07d564f22930bcf878959ceeaf7377ae": {
-		"buildId": "b88fbd06e881d87b8bfeea2cd8a19fbd07d564f22930bcf878959ceeaf7377ae",
+	"975a769defc1bce0f10b5fd013e353f9ffa2fe5e9b9155944c9cf7adb796c958": {
+		"buildId": "975a769defc1bce0f10b5fd013e353f9ffa2fe5e9b9155944c9cf7adb796c958",
 		"build": {
-			"img": "oisupport/staging-amd64:b88fbd06e881d87b8bfeea2cd8a19fbd07d564f22930bcf878959ceeaf7377ae",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:c5efea3139d017d07e42e5893780c6762f30d3ab5d7af303d64a2246e64ee9a7",
-						"size": 2135,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:a1c89a59d56245724cc8afbac1150c88385c2e7f7fd705ac988b1579ca421064",
-							"org.opencontainers.image.base.name": "buildpack-deps:bookworm-curl",
-							"org.opencontainers.image.created": "2026-10-28T02:28:14Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b88fbd06e881d87b8bfeea2cd8a19fbd07d564f22930bcf878959ceeaf7377ae@sha256:c5efea3139d017d07e42e5893780c6762f30d3ab5d7af303d64a2246e64ee9a7",
-							"org.opencontainers.image.revision": "03c5f22dfec78fa00ef48dce091f081890bf5d26",
-							"org.opencontainers.image.source": "https://github.com/influxdata/influxdata-docker.git#03c5f22dfec78fa00ef48dce091f081890bf5d26:influxdb/1.13/data",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/influxdb",
-							"org.opencontainers.image.version": "1.13-data"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:87646cee0351d8696ca4f4a97bf360ed9265229d8f83605986b99653561fd1e4",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b88fbd06e881d87b8bfeea2cd8a19fbd07d564f22930bcf878959ceeaf7377ae@sha256:87646cee0351d8696ca4f4a97bf360ed9265229d8f83605986b99653561fd1e4",
-							"vnd.docker.reference.digest": "sha256:c5efea3139d017d07e42e5893780c6762f30d3ab5d7af303d64a2246e64ee9a7",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b88fbd06e881d87b8bfeea2cd8a19fbd07d564f22930bcf878959ceeaf7377ae@sha256:173b6e64b41bdecc70edcf95ec343b83983b5fed3362852bb8170e2ebddc6d81"
-				}
-			},
-			"sourceId": "ebf5f03730ab31db12766209e0e3537596f388c63daddd2ca06d337c34b17f6d",
+			"img": "oisupport/staging-amd64:975a769defc1bce0f10b5fd013e353f9ffa2fe5e9b9155944c9cf7adb796c958",
+			"resolved": null,
+			"sourceId": "a2872da2396f94f34373b0ec622988f13109800b2f63ca6c0298fa48ca5f2ba0",
 			"arch": "amd64",
 			"parents": {
 				"buildpack-deps:bookworm-curl": "sha256:a1c89a59d56245724cc8afbac1150c88385c2e7f7fd705ac988b1579ca421064"
@@ -599059,28 +598886,28 @@
 			}
 		},
 		"source": {
-			"sourceId": "ebf5f03730ab31db12766209e0e3537596f388c63daddd2ca06d337c34b17f6d",
-			"reproducibleGitChecksum": "dcbcbff725b969a8976fc9f127bd0b591fad63748c00ba6ac519dc120b610a3d",
+			"sourceId": "a2872da2396f94f34373b0ec622988f13109800b2f63ca6c0298fa48ca5f2ba0",
+			"reproducibleGitChecksum": "71fc04ad661c0ee9e61d91729dbb45d6262a3e5ebe6e2775799460f5448ce6e6",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.13/data",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
 						"influxdb:1.13-data",
-						"influxdb:1.13.1-data"
+						"influxdb:1.13.2-data"
 					],
 					"archTags": [
 						"amd64/influxdb:1.13-data",
-						"amd64/influxdb:1.13.1-data"
+						"amd64/influxdb:1.13.2-data"
 					],
 					"froms": [
 						"buildpack-deps:bookworm-curl"
@@ -599101,55 +598928,12 @@
 			}
 		}
 	},
-	"f4077fead4a04e0c6131a8fd193fa78c85f6353f817cc8a722e3808d57719020": {
-		"buildId": "f4077fead4a04e0c6131a8fd193fa78c85f6353f817cc8a722e3808d57719020",
+	"d0435b3819ba1d9e51452bca15629619ca51d1815ff042ead75fbd79041804f0": {
+		"buildId": "d0435b3819ba1d9e51452bca15629619ca51d1815ff042ead75fbd79041804f0",
 		"build": {
-			"img": "oisupport/staging-amd64:f4077fead4a04e0c6131a8fd193fa78c85f6353f817cc8a722e3808d57719020",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:ef3d2b61dbcd69e08523aa10374c2f6ea77837b0505c5a9ab97ff6b282d1c20f",
-						"size": 2130,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:3d67941fed5ae436b2bb9791cb3f50a252441c7706bbc5b4e738936df8ff8306",
-							"org.opencontainers.image.base.name": "alpine:3.23",
-							"org.opencontainers.image.created": "2026-10-21T21:22:59Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f4077fead4a04e0c6131a8fd193fa78c85f6353f817cc8a722e3808d57719020@sha256:ef3d2b61dbcd69e08523aa10374c2f6ea77837b0505c5a9ab97ff6b282d1c20f",
-							"org.opencontainers.image.revision": "03c5f22dfec78fa00ef48dce091f081890bf5d26",
-							"org.opencontainers.image.source": "https://github.com/influxdata/influxdata-docker.git#03c5f22dfec78fa00ef48dce091f081890bf5d26:influxdb/1.13/data/alpine",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/influxdb",
-							"org.opencontainers.image.version": "1.13-data-alpine"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:b4ae774be736404756f646384be2e1f97c0d2f6e48ba87d3a7203ad4ecc86631",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f4077fead4a04e0c6131a8fd193fa78c85f6353f817cc8a722e3808d57719020@sha256:b4ae774be736404756f646384be2e1f97c0d2f6e48ba87d3a7203ad4ecc86631",
-							"vnd.docker.reference.digest": "sha256:ef3d2b61dbcd69e08523aa10374c2f6ea77837b0505c5a9ab97ff6b282d1c20f",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f4077fead4a04e0c6131a8fd193fa78c85f6353f817cc8a722e3808d57719020@sha256:be38defa4d0b1bafc2ebf5305f1e0a8fdb6856093b279d4d5ee576c427f08f68"
-				}
-			},
-			"sourceId": "38c76a41f15f88fc982c3e24e8d6ee64e8d5928d90e4d05e477ea9a1018d0ce4",
+			"img": "oisupport/staging-amd64:d0435b3819ba1d9e51452bca15629619ca51d1815ff042ead75fbd79041804f0",
+			"resolved": null,
+			"sourceId": "73d44a0bd23d105dcd1d078a210f280e0252ab2b965ad929ae52544b49308e7d",
 			"arch": "amd64",
 			"parents": {
 				"alpine:3.23": "sha256:3d67941fed5ae436b2bb9791cb3f50a252441c7706bbc5b4e738936df8ff8306"
@@ -599201,28 +598985,28 @@
 			}
 		},
 		"source": {
-			"sourceId": "38c76a41f15f88fc982c3e24e8d6ee64e8d5928d90e4d05e477ea9a1018d0ce4",
-			"reproducibleGitChecksum": "398b8a32a679f5eb9400f8572b955a02533b399ea8b7bcd4f98eab8bc1a11635",
+			"sourceId": "73d44a0bd23d105dcd1d078a210f280e0252ab2b965ad929ae52544b49308e7d",
+			"reproducibleGitChecksum": "b1d5fedbbf392e2f97eac61f08575518c5c25ea4987ab7bce56ff41d5730ef2c",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.13/data/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
 						"influxdb:1.13-data-alpine",
-						"influxdb:1.13.1-data-alpine"
+						"influxdb:1.13.2-data-alpine"
 					],
 					"archTags": [
 						"amd64/influxdb:1.13-data-alpine",
-						"amd64/influxdb:1.13.1-data-alpine"
+						"amd64/influxdb:1.13.2-data-alpine"
 					],
 					"froms": [
 						"alpine:3.23"
@@ -599243,55 +599027,12 @@
 			}
 		}
 	},
-	"2a9faf0713329a305bebd642a63de15ffa6467e89e9270d4f37e473087825af0": {
-		"buildId": "2a9faf0713329a305bebd642a63de15ffa6467e89e9270d4f37e473087825af0",
+	"736f5bdcaedc5ee5f5a3c0d2db4705aae042e50dbf37245d3e3287c0995fc599": {
+		"buildId": "736f5bdcaedc5ee5f5a3c0d2db4705aae042e50dbf37245d3e3287c0995fc599",
 		"build": {
-			"img": "oisupport/staging-amd64:2a9faf0713329a305bebd642a63de15ffa6467e89e9270d4f37e473087825af0",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:4a1b1f3ed4ff388f435d52dd56e020436628d32092d40f089b33d8ae82371650",
-						"size": 1946,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:a1c89a59d56245724cc8afbac1150c88385c2e7f7fd705ac988b1579ca421064",
-							"org.opencontainers.image.base.name": "buildpack-deps:bookworm-curl",
-							"org.opencontainers.image.created": "2026-10-28T02:28:39Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:2a9faf0713329a305bebd642a63de15ffa6467e89e9270d4f37e473087825af0@sha256:4a1b1f3ed4ff388f435d52dd56e020436628d32092d40f089b33d8ae82371650",
-							"org.opencontainers.image.revision": "03c5f22dfec78fa00ef48dce091f081890bf5d26",
-							"org.opencontainers.image.source": "https://github.com/influxdata/influxdata-docker.git#03c5f22dfec78fa00ef48dce091f081890bf5d26:influxdb/1.13/meta",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/influxdb",
-							"org.opencontainers.image.version": "1.13-meta"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:cb10cb570eda763bb5f51ef9dcf9e7f99d01361e513eb917dfb5e13b09682830",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:2a9faf0713329a305bebd642a63de15ffa6467e89e9270d4f37e473087825af0@sha256:cb10cb570eda763bb5f51ef9dcf9e7f99d01361e513eb917dfb5e13b09682830",
-							"vnd.docker.reference.digest": "sha256:4a1b1f3ed4ff388f435d52dd56e020436628d32092d40f089b33d8ae82371650",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:2a9faf0713329a305bebd642a63de15ffa6467e89e9270d4f37e473087825af0@sha256:bc5d2fae69e944b4dcc1fc142e90847c01df2d4d20e95f1a7d81855a8efd8696"
-				}
-			},
-			"sourceId": "fdaebf97f510270f888a15720ecf65aaff965e35fbee2ae268558dfe880fb808",
+			"img": "oisupport/staging-amd64:736f5bdcaedc5ee5f5a3c0d2db4705aae042e50dbf37245d3e3287c0995fc599",
+			"resolved": null,
+			"sourceId": "36e7161c96b880477ee0dd98f189a5bfe2532809e06d9b2a5a21f13f31e39fc1",
 			"arch": "amd64",
 			"parents": {
 				"buildpack-deps:bookworm-curl": "sha256:a1c89a59d56245724cc8afbac1150c88385c2e7f7fd705ac988b1579ca421064"
@@ -599344,28 +599085,28 @@
 			}
 		},
 		"source": {
-			"sourceId": "fdaebf97f510270f888a15720ecf65aaff965e35fbee2ae268558dfe880fb808",
-			"reproducibleGitChecksum": "011a37d8d4c9934bb221bba491608e8b75f28a6c5b2fdc8df997fb528d378f8c",
+			"sourceId": "36e7161c96b880477ee0dd98f189a5bfe2532809e06d9b2a5a21f13f31e39fc1",
+			"reproducibleGitChecksum": "001aad4db4cd71a9ea2c6d11262bbc8a0c0fab5b2e4a2e7422569d541129e1cf",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.13/meta",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
 						"influxdb:1.13-meta",
-						"influxdb:1.13.1-meta"
+						"influxdb:1.13.2-meta"
 					],
 					"archTags": [
 						"amd64/influxdb:1.13-meta",
-						"amd64/influxdb:1.13.1-meta"
+						"amd64/influxdb:1.13.2-meta"
 					],
 					"froms": [
 						"buildpack-deps:bookworm-curl"
@@ -599386,55 +599127,12 @@
 			}
 		}
 	},
-	"5610021f1fd87fc87c90c1cd43984098625e717afc48b649480ff100da07d3b6": {
-		"buildId": "5610021f1fd87fc87c90c1cd43984098625e717afc48b649480ff100da07d3b6",
+	"b8aab40ea422096a90c26fce22a4fd55b289c7bdc943793bf41af26a8963b404": {
+		"buildId": "b8aab40ea422096a90c26fce22a4fd55b289c7bdc943793bf41af26a8963b404",
 		"build": {
-			"img": "oisupport/staging-amd64:5610021f1fd87fc87c90c1cd43984098625e717afc48b649480ff100da07d3b6",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:307f6a376be67121af49450c42ce3bb0b870a28a21ddd5fc2b8e6d8a390a884a",
-						"size": 1941,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:3d67941fed5ae436b2bb9791cb3f50a252441c7706bbc5b4e738936df8ff8306",
-							"org.opencontainers.image.base.name": "alpine:3.23",
-							"org.opencontainers.image.created": "2026-10-21T21:23:25Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5610021f1fd87fc87c90c1cd43984098625e717afc48b649480ff100da07d3b6@sha256:307f6a376be67121af49450c42ce3bb0b870a28a21ddd5fc2b8e6d8a390a884a",
-							"org.opencontainers.image.revision": "03c5f22dfec78fa00ef48dce091f081890bf5d26",
-							"org.opencontainers.image.source": "https://github.com/influxdata/influxdata-docker.git#03c5f22dfec78fa00ef48dce091f081890bf5d26:influxdb/1.13/meta/alpine",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/influxdb",
-							"org.opencontainers.image.version": "1.13-meta-alpine"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:3014e0fe2dba4224a1ac41e1427504482885c2d86f89ec6323efbe1143160322",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5610021f1fd87fc87c90c1cd43984098625e717afc48b649480ff100da07d3b6@sha256:3014e0fe2dba4224a1ac41e1427504482885c2d86f89ec6323efbe1143160322",
-							"vnd.docker.reference.digest": "sha256:307f6a376be67121af49450c42ce3bb0b870a28a21ddd5fc2b8e6d8a390a884a",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5610021f1fd87fc87c90c1cd43984098625e717afc48b649480ff100da07d3b6@sha256:c7af573a0cbcfab61ad94d5429673177ac227bef27f634dcfb896f5d4324cfb2"
-				}
-			},
-			"sourceId": "676182ac69dca98fa8cbe7cf5de54cd5232ffc4c23fe80065263fa692c8b73e1",
+			"img": "oisupport/staging-amd64:b8aab40ea422096a90c26fce22a4fd55b289c7bdc943793bf41af26a8963b404",
+			"resolved": null,
+			"sourceId": "0930a920b9ad89941652604e53f76650cdecb575305a4e118902f8b256d67eea",
 			"arch": "amd64",
 			"parents": {
 				"alpine:3.23": "sha256:3d67941fed5ae436b2bb9791cb3f50a252441c7706bbc5b4e738936df8ff8306"
@@ -599486,28 +599184,28 @@
 			}
 		},
 		"source": {
-			"sourceId": "676182ac69dca98fa8cbe7cf5de54cd5232ffc4c23fe80065263fa692c8b73e1",
-			"reproducibleGitChecksum": "e9a304470434b90ab6160fe1608a7f9d4c7a6231db0a2f169326070d9caa5176",
+			"sourceId": "0930a920b9ad89941652604e53f76650cdecb575305a4e118902f8b256d67eea",
+			"reproducibleGitChecksum": "9085dd3146a8f28f1332e237ca37cba1cc2dfe06da479fa57aca29bfa77a46f0",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.13/meta/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
 						"influxdb:1.13-meta-alpine",
-						"influxdb:1.13.1-meta-alpine"
+						"influxdb:1.13.2-meta-alpine"
 					],
 					"archTags": [
 						"amd64/influxdb:1.13-meta-alpine",
-						"amd64/influxdb:1.13.1-meta-alpine"
+						"amd64/influxdb:1.13.2-meta-alpine"
 					],
 					"froms": [
 						"alpine:3.23"
@@ -599635,11 +599333,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.12",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -599780,11 +599478,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.12",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -599923,11 +599621,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.12/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -600067,11 +599765,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.12/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -600211,11 +599909,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.12/data",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -600355,11 +600053,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.12/data/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -600500,11 +600198,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.12/meta",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -600644,11 +600342,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.12/meta/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -600789,11 +600487,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.11",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -600934,11 +600632,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.11",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -601077,11 +600775,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.11/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -601221,11 +600919,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.11/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -601365,11 +601063,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.11/data",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -601507,11 +601205,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.11/data/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -601650,11 +601348,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.11/meta",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -601792,11 +601490,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/1.11/meta/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -601934,11 +601632,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/2.8",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -602078,11 +601776,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/2.8",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -602221,11 +601919,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/2.8/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -602365,11 +602063,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/2.8/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -602508,11 +602206,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/2.9",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -602656,11 +602354,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/2.9",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -602803,11 +602501,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/2.9/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -602951,11 +602649,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/2.9/alpine",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -603098,11 +602796,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.9-core",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -603242,11 +602940,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.9-core",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -603385,11 +603083,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.9-enterprise",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -603529,11 +603227,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.9-enterprise",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -603672,11 +603370,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.10-core",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -603816,11 +603514,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.10-core",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -603959,11 +603657,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.10-enterprise",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -604103,11 +603801,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.10-enterprise",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -604246,11 +603944,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.11-core",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -604390,11 +604088,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.11-core",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -604533,11 +604231,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.11-enterprise",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -604677,11 +604375,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.11-enterprise",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -604820,11 +604518,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.12-core",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -604968,11 +604666,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.12-core",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -605115,11 +604813,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.12-enterprise",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -605263,11 +604961,11 @@
 				{
 					"GitRepo": "https://github.com/influxdata/influxdata-docker",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "2fdf0da755355141eeb74b1f6685f9bdcce50ac4",
+					"GitCommit": "c290b786bf9f698bc2b0d56c615c86d73ed59a17",
 					"Directory": "influxdb/3.12-enterprise",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793311352
+					"SOURCE_DATE_EPOCH": 1793646887
 				}
 			],
 			"arches": {
@@ -884176,7 +883874,50 @@
 		"buildId": "f254c960749d406740a483843867d40a8ae10b52a5db6fcfd3ee25864aa43887",
 		"build": {
 			"img": "oisupport/staging-amd64:f254c960749d406740a483843867d40a8ae10b52a5db6fcfd3ee25864aa43887",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:2e2dac282548a527ba735cf4d93a2848d274f8ae4dd3be563d518d059b254dd7",
+						"size": 2538,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:e0e760919dc8ee2edb89046665da66373a2cefcfdcd26e4b88f4e0b23ff04275",
+							"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:16:36Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f254c960749d406740a483843867d40a8ae10b52a5db6fcfd3ee25864aa43887@sha256:2e2dac282548a527ba735cf4d93a2848d274f8ae4dd3be563d518d059b254dd7",
+							"org.opencontainers.image.revision": "960100fd6f575e69cf07c9eb99c46ee7b5397115",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#960100fd6f575e69cf07c9eb99c46ee7b5397115:commercial-editions/developer",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.5.4-developer"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:c3d2761fa79b3920f4db80e2b7bc912dd95f116884f7266e6415d74dd52e08a3",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f254c960749d406740a483843867d40a8ae10b52a5db6fcfd3ee25864aa43887@sha256:c3d2761fa79b3920f4db80e2b7bc912dd95f116884f7266e6415d74dd52e08a3",
+							"vnd.docker.reference.digest": "sha256:2e2dac282548a527ba735cf4d93a2848d274f8ae4dd3be563d518d059b254dd7",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f254c960749d406740a483843867d40a8ae10b52a5db6fcfd3ee25864aa43887@sha256:e6f2cd671dc32482c96924d46abe28a439f75351b216c850e8a9ab0c7d192538"
+				}
+			},
 			"sourceId": "bd21ab1057efe9aefc79ca714c269269c2fa47b461b8441ecf71100fece2d93a",
 			"arch": "amd64",
 			"parents": {
@@ -884280,7 +884021,51 @@
 		"buildId": "2de0b85152517e447dad55adec5879ddf3c25de53d5f6bfdf1bf0d856ce5a48f",
 		"build": {
 			"img": "oisupport/staging-arm64v8:2de0b85152517e447dad55adec5879ddf3c25de53d5f6bfdf1bf0d856ce5a48f",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:42e3fe96938a0e760a0a9d5f69e68d54a90f200e1f45bbd0848c8c3afc285a29",
+						"size": 2540,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:0c0cc8440f5f3dc6f321502587c47bb922b99ff623440f8b85d035a220fa029e",
+							"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:17:00Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2de0b85152517e447dad55adec5879ddf3c25de53d5f6bfdf1bf0d856ce5a48f@sha256:42e3fe96938a0e760a0a9d5f69e68d54a90f200e1f45bbd0848c8c3afc285a29",
+							"org.opencontainers.image.revision": "960100fd6f575e69cf07c9eb99c46ee7b5397115",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#960100fd6f575e69cf07c9eb99c46ee7b5397115:commercial-editions/developer",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.5.4-developer"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:d024abedc5fb711a2ce201ab5e5382039b8e93dfadc038e02d8c4db003e6d21d",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2de0b85152517e447dad55adec5879ddf3c25de53d5f6bfdf1bf0d856ce5a48f@sha256:d024abedc5fb711a2ce201ab5e5382039b8e93dfadc038e02d8c4db003e6d21d",
+							"vnd.docker.reference.digest": "sha256:42e3fe96938a0e760a0a9d5f69e68d54a90f200e1f45bbd0848c8c3afc285a29",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2de0b85152517e447dad55adec5879ddf3c25de53d5f6bfdf1bf0d856ce5a48f@sha256:c959ca3e7c859bf1a041ddeef2e57a8cc4d016e4944f885be60a0a084cd44dda"
+				}
+			},
 			"sourceId": "bd21ab1057efe9aefc79ca714c269269c2fa47b461b8441ecf71100fece2d93a",
 			"arch": "arm64v8",
 			"parents": {
@@ -884386,7 +884171,50 @@
 		"buildId": "cb39464a14c333739d7736ae12c3126cab712208f2b8018bb1e5b7ed1c9c3621",
 		"build": {
 			"img": "oisupport/staging-amd64:cb39464a14c333739d7736ae12c3126cab712208f2b8018bb1e5b7ed1c9c3621",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:143695bea6d4400ecbc7c21b6341b311f812fcc41911e81550b80fa646707f5c",
+						"size": 2540,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:e0e760919dc8ee2edb89046665da66373a2cefcfdcd26e4b88f4e0b23ff04275",
+							"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:16:38Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:cb39464a14c333739d7736ae12c3126cab712208f2b8018bb1e5b7ed1c9c3621@sha256:143695bea6d4400ecbc7c21b6341b311f812fcc41911e81550b80fa646707f5c",
+							"org.opencontainers.image.revision": "960100fd6f575e69cf07c9eb99c46ee7b5397115",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#960100fd6f575e69cf07c9eb99c46ee7b5397115:commercial-editions/enterprise",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.5.4-enterprise"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:977fb1ad6fc2a4963641c6151706fbaabf24822c12cc7faea0b7044c7a856c5b",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:cb39464a14c333739d7736ae12c3126cab712208f2b8018bb1e5b7ed1c9c3621@sha256:977fb1ad6fc2a4963641c6151706fbaabf24822c12cc7faea0b7044c7a856c5b",
+							"vnd.docker.reference.digest": "sha256:143695bea6d4400ecbc7c21b6341b311f812fcc41911e81550b80fa646707f5c",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:cb39464a14c333739d7736ae12c3126cab712208f2b8018bb1e5b7ed1c9c3621@sha256:af2d318a4e07aeabfef4dd75976a52960dbde58c484df75063d93e1fb922f5d2"
+				}
+			},
 			"sourceId": "60146094b41a5f57007ba75cb1181d4dd4f57da121c9e7c11e0eb978c31e749e",
 			"arch": "amd64",
 			"parents": {
@@ -884490,7 +884318,51 @@
 		"buildId": "5163b6f62a15fb39c9693db80b0337063f72a9a333c54c374cf9b42d149000e0",
 		"build": {
 			"img": "oisupport/staging-arm64v8:5163b6f62a15fb39c9693db80b0337063f72a9a333c54c374cf9b42d149000e0",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:cd9ef3c23c48370c937ed67d289e192b43264837371cb5a955df3d15b6391a17",
+						"size": 2542,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:0c0cc8440f5f3dc6f321502587c47bb922b99ff623440f8b85d035a220fa029e",
+							"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:17:03Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5163b6f62a15fb39c9693db80b0337063f72a9a333c54c374cf9b42d149000e0@sha256:cd9ef3c23c48370c937ed67d289e192b43264837371cb5a955df3d15b6391a17",
+							"org.opencontainers.image.revision": "960100fd6f575e69cf07c9eb99c46ee7b5397115",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#960100fd6f575e69cf07c9eb99c46ee7b5397115:commercial-editions/enterprise",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.5.4-enterprise"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:9fedba6fc0f4a6ec149da732df8000faf9f72e626e0fbf5288775136773d9e2d",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5163b6f62a15fb39c9693db80b0337063f72a9a333c54c374cf9b42d149000e0@sha256:9fedba6fc0f4a6ec149da732df8000faf9f72e626e0fbf5288775136773d9e2d",
+							"vnd.docker.reference.digest": "sha256:cd9ef3c23c48370c937ed67d289e192b43264837371cb5a955df3d15b6391a17",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5163b6f62a15fb39c9693db80b0337063f72a9a333c54c374cf9b42d149000e0@sha256:ed73e312716a342d5fb89bc82a826e94e409e752c4a12a0f67d1cd414cfeced3"
+				}
+			},
 			"sourceId": "60146094b41a5f57007ba75cb1181d4dd4f57da121c9e7c11e0eb978c31e749e",
 			"arch": "arm64v8",
 			"parents": {
@@ -884596,7 +884468,50 @@
 		"buildId": "2f5daeeca7a7095d1e1d137d2e7a40e9c6f0fe5bee4ce16ae548ccf2fbee49bd",
 		"build": {
 			"img": "oisupport/staging-amd64:2f5daeeca7a7095d1e1d137d2e7a40e9c6f0fe5bee4ce16ae548ccf2fbee49bd",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:ed4dc4b39b796dab02643428fc0bd2fa7c8fba086623e01911557324ced4d06d",
+						"size": 2549,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:e0e760919dc8ee2edb89046665da66373a2cefcfdcd26e4b88f4e0b23ff04275",
+							"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:16:41Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:2f5daeeca7a7095d1e1d137d2e7a40e9c6f0fe5bee4ce16ae548ccf2fbee49bd@sha256:ed4dc4b39b796dab02643428fc0bd2fa7c8fba086623e01911557324ced4d06d",
+							"org.opencontainers.image.revision": "960100fd6f575e69cf07c9eb99c46ee7b5397115",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#960100fd6f575e69cf07c9eb99c46ee7b5397115:commercial-editions/datacenter/app",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.5.4-datacenter-app"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:8fa5e09923560a56efe899c02246730a3df548964024103cff89fcafa0c3d375",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:2f5daeeca7a7095d1e1d137d2e7a40e9c6f0fe5bee4ce16ae548ccf2fbee49bd@sha256:8fa5e09923560a56efe899c02246730a3df548964024103cff89fcafa0c3d375",
+							"vnd.docker.reference.digest": "sha256:ed4dc4b39b796dab02643428fc0bd2fa7c8fba086623e01911557324ced4d06d",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:2f5daeeca7a7095d1e1d137d2e7a40e9c6f0fe5bee4ce16ae548ccf2fbee49bd@sha256:647f3bab5b353da9098eafc5efa218bae6968449ba70aa6a87ea287b7d97a5a0"
+				}
+			},
 			"sourceId": "09be3c6ebc5b53a387350f4b53bfb33553c3412cc3f236950bc2d6de977d7797",
 			"arch": "amd64",
 			"parents": {
@@ -884700,7 +884615,51 @@
 		"buildId": "7faedc5926a5e68d603df88dd5d8629238d4000c8621732a99e3782b445bba86",
 		"build": {
 			"img": "oisupport/staging-arm64v8:7faedc5926a5e68d603df88dd5d8629238d4000c8621732a99e3782b445bba86",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:7ed30026409b63d3ad77f06e294a5d07dbb8ea7ed9c52bad5b7e7ce9a755abce",
+						"size": 2551,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:0c0cc8440f5f3dc6f321502587c47bb922b99ff623440f8b85d035a220fa029e",
+							"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:17:04Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:7faedc5926a5e68d603df88dd5d8629238d4000c8621732a99e3782b445bba86@sha256:7ed30026409b63d3ad77f06e294a5d07dbb8ea7ed9c52bad5b7e7ce9a755abce",
+							"org.opencontainers.image.revision": "960100fd6f575e69cf07c9eb99c46ee7b5397115",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#960100fd6f575e69cf07c9eb99c46ee7b5397115:commercial-editions/datacenter/app",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.5.4-datacenter-app"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:53574d1a9c108592692f427360ef3f06e63a95eb35ceda064ff32bd41b2d63f6",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:7faedc5926a5e68d603df88dd5d8629238d4000c8621732a99e3782b445bba86@sha256:53574d1a9c108592692f427360ef3f06e63a95eb35ceda064ff32bd41b2d63f6",
+							"vnd.docker.reference.digest": "sha256:7ed30026409b63d3ad77f06e294a5d07dbb8ea7ed9c52bad5b7e7ce9a755abce",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:7faedc5926a5e68d603df88dd5d8629238d4000c8621732a99e3782b445bba86@sha256:278bb237c3ba47274ec334c381cfd7ba5198189a87f2f30e9c475c930abe77a1"
+				}
+			},
 			"sourceId": "09be3c6ebc5b53a387350f4b53bfb33553c3412cc3f236950bc2d6de977d7797",
 			"arch": "arm64v8",
 			"parents": {
@@ -884806,7 +884765,50 @@
 		"buildId": "952f5b0a4a7dd1b63ccfca0988d79b84df4a171e24cc9481ea2b2a99736ead7f",
 		"build": {
 			"img": "oisupport/staging-amd64:952f5b0a4a7dd1b63ccfca0988d79b84df4a171e24cc9481ea2b2a99736ead7f",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:2ea28c8cc5f1526ffdc1357b30c20f1c0f227f781644dbe6073c95acf17d2992",
+						"size": 2555,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:e0e760919dc8ee2edb89046665da66373a2cefcfdcd26e4b88f4e0b23ff04275",
+							"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:16:46Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:952f5b0a4a7dd1b63ccfca0988d79b84df4a171e24cc9481ea2b2a99736ead7f@sha256:2ea28c8cc5f1526ffdc1357b30c20f1c0f227f781644dbe6073c95acf17d2992",
+							"org.opencontainers.image.revision": "960100fd6f575e69cf07c9eb99c46ee7b5397115",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#960100fd6f575e69cf07c9eb99c46ee7b5397115:commercial-editions/datacenter/search",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.5.4-datacenter-search"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:8d7c3a680f5895406c5633c36266d0a8941b70b940f53f334321a80325a96493",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:952f5b0a4a7dd1b63ccfca0988d79b84df4a171e24cc9481ea2b2a99736ead7f@sha256:8d7c3a680f5895406c5633c36266d0a8941b70b940f53f334321a80325a96493",
+							"vnd.docker.reference.digest": "sha256:2ea28c8cc5f1526ffdc1357b30c20f1c0f227f781644dbe6073c95acf17d2992",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:952f5b0a4a7dd1b63ccfca0988d79b84df4a171e24cc9481ea2b2a99736ead7f@sha256:9c87d9c1e6f0ef203cc6fdeeaa8c8b56cf1609632d895e38d8578083c79e4277"
+				}
+			},
 			"sourceId": "e5570989b1d72feed6ecfd6ca22268d81ae479e2f3238b28a9e3c55d3985266e",
 			"arch": "amd64",
 			"parents": {
@@ -884910,7 +884912,51 @@
 		"buildId": "20bef738ba51946e874216171f66b9ae784b0a027a5c2d04a6f40282e344492a",
 		"build": {
 			"img": "oisupport/staging-arm64v8:20bef738ba51946e874216171f66b9ae784b0a027a5c2d04a6f40282e344492a",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:a59a9c127ae971232c75478f2f4e5a7fb17e4ec48bfefc3df72cbc7a50afddeb",
+						"size": 2557,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:0c0cc8440f5f3dc6f321502587c47bb922b99ff623440f8b85d035a220fa029e",
+							"org.opencontainers.image.base.name": "eclipse-temurin:25-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:17:09Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:20bef738ba51946e874216171f66b9ae784b0a027a5c2d04a6f40282e344492a@sha256:a59a9c127ae971232c75478f2f4e5a7fb17e4ec48bfefc3df72cbc7a50afddeb",
+							"org.opencontainers.image.revision": "960100fd6f575e69cf07c9eb99c46ee7b5397115",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#960100fd6f575e69cf07c9eb99c46ee7b5397115:commercial-editions/datacenter/search",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.5.4-datacenter-search"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:bc5df80bf2a1d3bc6e7ad2aeb089cc5ae7fd37392b9084b8582d3532e84a221d",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:20bef738ba51946e874216171f66b9ae784b0a027a5c2d04a6f40282e344492a@sha256:bc5df80bf2a1d3bc6e7ad2aeb089cc5ae7fd37392b9084b8582d3532e84a221d",
+							"vnd.docker.reference.digest": "sha256:a59a9c127ae971232c75478f2f4e5a7fb17e4ec48bfefc3df72cbc7a50afddeb",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:20bef738ba51946e874216171f66b9ae784b0a027a5c2d04a6f40282e344492a@sha256:d2c7e5549827acbef59990676526b4a9a605ef4ff8e06978946b8063d8a23730"
+				}
+			},
 			"sourceId": "e5570989b1d72feed6ecfd6ca22268d81ae479e2f3238b28a9e3c55d3985266e",
 			"arch": "arm64v8",
 			"parents": {
@@ -885016,7 +885062,50 @@
 		"buildId": "a6f12a73465a492ff212d990d30a5738dc5bac6faac0a8333511ce48a20d20a6",
 		"build": {
 			"img": "oisupport/staging-amd64:a6f12a73465a492ff212d990d30a5738dc5bac6faac0a8333511ce48a20d20a6",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:00b9966de2d3905644d0c7302e4dd856cac44f59b023b2fe3dce9a9daf7677b4",
+						"size": 2540,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:37c74ad0b4ad8a5ec6c65c0f1e9bbd88486199ddd906dd04575ef7b7356e4dc2",
+							"org.opencontainers.image.base.name": "eclipse-temurin:21-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:16:51Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a6f12a73465a492ff212d990d30a5738dc5bac6faac0a8333511ce48a20d20a6@sha256:00b9966de2d3905644d0c7302e4dd856cac44f59b023b2fe3dce9a9daf7677b4",
+							"org.opencontainers.image.revision": "15362dc5fbaf558f48094730ec75d2418310547d",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#15362dc5fbaf558f48094730ec75d2418310547d:commercial-editions/developer",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.1.8-developer"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:95e7a7e36bf70573851e97a495e62135381d0c0563a5ed3a1da67127ba24a25a",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a6f12a73465a492ff212d990d30a5738dc5bac6faac0a8333511ce48a20d20a6@sha256:95e7a7e36bf70573851e97a495e62135381d0c0563a5ed3a1da67127ba24a25a",
+							"vnd.docker.reference.digest": "sha256:00b9966de2d3905644d0c7302e4dd856cac44f59b023b2fe3dce9a9daf7677b4",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a6f12a73465a492ff212d990d30a5738dc5bac6faac0a8333511ce48a20d20a6@sha256:82c5d695992720a1e408facef40b9d6b0c718457cb582e23b470874676680548"
+				}
+			},
 			"sourceId": "1e337d93b4c15031d68ec9eb76428f6b3c5bf417c24d79eabb0320d9b6ace908",
 			"arch": "amd64",
 			"parents": {
@@ -885118,7 +885207,51 @@
 		"buildId": "7b9eeaed76571ae9f0a7318022478951e530bcafb488d6271758dc095cead6ad",
 		"build": {
 			"img": "oisupport/staging-arm64v8:7b9eeaed76571ae9f0a7318022478951e530bcafb488d6271758dc095cead6ad",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:e9a9d9653f0e37a80980579d941a8b9828301fc9c4c3e757636d8d72c3351bff",
+						"size": 2542,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:3904f6b7e0da3dea83d6b55d6540194f6e77dc79521079e6124d97392e80dde4",
+							"org.opencontainers.image.base.name": "eclipse-temurin:21-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:17:10Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:7b9eeaed76571ae9f0a7318022478951e530bcafb488d6271758dc095cead6ad@sha256:e9a9d9653f0e37a80980579d941a8b9828301fc9c4c3e757636d8d72c3351bff",
+							"org.opencontainers.image.revision": "15362dc5fbaf558f48094730ec75d2418310547d",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#15362dc5fbaf558f48094730ec75d2418310547d:commercial-editions/developer",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.1.8-developer"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:df5891b03a1d74316634b691ecc465a521c3555a87de5f9fbc62cee0ce874dbc",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:7b9eeaed76571ae9f0a7318022478951e530bcafb488d6271758dc095cead6ad@sha256:df5891b03a1d74316634b691ecc465a521c3555a87de5f9fbc62cee0ce874dbc",
+							"vnd.docker.reference.digest": "sha256:e9a9d9653f0e37a80980579d941a8b9828301fc9c4c3e757636d8d72c3351bff",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:7b9eeaed76571ae9f0a7318022478951e530bcafb488d6271758dc095cead6ad@sha256:f4175d7af8b1bf3cd5b19ebd3740ce517c6212207018e3d78446cd93036a3976"
+				}
+			},
 			"sourceId": "1e337d93b4c15031d68ec9eb76428f6b3c5bf417c24d79eabb0320d9b6ace908",
 			"arch": "arm64v8",
 			"parents": {
@@ -885222,7 +885355,50 @@
 		"buildId": "bae6f337d51c5f1dabf9b9b3669f62813e700bd5bb9bd5b5acc43d109e5a2deb",
 		"build": {
 			"img": "oisupport/staging-amd64:bae6f337d51c5f1dabf9b9b3669f62813e700bd5bb9bd5b5acc43d109e5a2deb",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:63ca3447c6279c52f4e4e94ef7691537da2dcb574c1324213e094d786dc99be8",
+						"size": 2542,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:37c74ad0b4ad8a5ec6c65c0f1e9bbd88486199ddd906dd04575ef7b7356e4dc2",
+							"org.opencontainers.image.base.name": "eclipse-temurin:21-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:16:56Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:bae6f337d51c5f1dabf9b9b3669f62813e700bd5bb9bd5b5acc43d109e5a2deb@sha256:63ca3447c6279c52f4e4e94ef7691537da2dcb574c1324213e094d786dc99be8",
+							"org.opencontainers.image.revision": "15362dc5fbaf558f48094730ec75d2418310547d",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#15362dc5fbaf558f48094730ec75d2418310547d:commercial-editions/enterprise",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.1.8-enterprise"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:ed692f07988da4b14b463b7cfbda608c619d35f0dddefebf8f79af27bdf26123",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:bae6f337d51c5f1dabf9b9b3669f62813e700bd5bb9bd5b5acc43d109e5a2deb@sha256:ed692f07988da4b14b463b7cfbda608c619d35f0dddefebf8f79af27bdf26123",
+							"vnd.docker.reference.digest": "sha256:63ca3447c6279c52f4e4e94ef7691537da2dcb574c1324213e094d786dc99be8",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:bae6f337d51c5f1dabf9b9b3669f62813e700bd5bb9bd5b5acc43d109e5a2deb@sha256:51bf88b2d2bcdde84d7a939d96d4eb4bbf8fad93ab3b361b128d1e29b3d86dcd"
+				}
+			},
 			"sourceId": "13f47e34e39b81d28d273512e4f31185ab148d32e609d9091184bd3d842a7c7d",
 			"arch": "amd64",
 			"parents": {
@@ -885324,7 +885500,51 @@
 		"buildId": "eb67b7e2681d3f169a15cf032b951d862bb0e637531a54098e0297e18d7d784c",
 		"build": {
 			"img": "oisupport/staging-arm64v8:eb67b7e2681d3f169a15cf032b951d862bb0e637531a54098e0297e18d7d784c",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:4d30ffa85a53deda60e525486d35619cc99cf2ad93b1c3dbcda6781c43699d64",
+						"size": 2544,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:3904f6b7e0da3dea83d6b55d6540194f6e77dc79521079e6124d97392e80dde4",
+							"org.opencontainers.image.base.name": "eclipse-temurin:21-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:17:10Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:eb67b7e2681d3f169a15cf032b951d862bb0e637531a54098e0297e18d7d784c@sha256:4d30ffa85a53deda60e525486d35619cc99cf2ad93b1c3dbcda6781c43699d64",
+							"org.opencontainers.image.revision": "15362dc5fbaf558f48094730ec75d2418310547d",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#15362dc5fbaf558f48094730ec75d2418310547d:commercial-editions/enterprise",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.1.8-enterprise"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:985cf52b16edf1a6ce8faf019c3401a31a9d2ec257d33d74ba87f68f45332820",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:eb67b7e2681d3f169a15cf032b951d862bb0e637531a54098e0297e18d7d784c@sha256:985cf52b16edf1a6ce8faf019c3401a31a9d2ec257d33d74ba87f68f45332820",
+							"vnd.docker.reference.digest": "sha256:4d30ffa85a53deda60e525486d35619cc99cf2ad93b1c3dbcda6781c43699d64",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:eb67b7e2681d3f169a15cf032b951d862bb0e637531a54098e0297e18d7d784c@sha256:20541a50d3dff984213c484ca8a5676d8d0fc29c9a084d5f5f771826a873f9c2"
+				}
+			},
 			"sourceId": "13f47e34e39b81d28d273512e4f31185ab148d32e609d9091184bd3d842a7c7d",
 			"arch": "arm64v8",
 			"parents": {
@@ -885428,7 +885648,50 @@
 		"buildId": "a635eabba2bf826fb1e60e40799e6b146ce53572c0b51e1310e1c4fdb4eea21f",
 		"build": {
 			"img": "oisupport/staging-amd64:a635eabba2bf826fb1e60e40799e6b146ce53572c0b51e1310e1c4fdb4eea21f",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:cba26d96764b98d3b0220c0def8ec8049d5d591eb1daa3bedd2e45edc277018e",
+						"size": 2551,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:37c74ad0b4ad8a5ec6c65c0f1e9bbd88486199ddd906dd04575ef7b7356e4dc2",
+							"org.opencontainers.image.base.name": "eclipse-temurin:21-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:17:00Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a635eabba2bf826fb1e60e40799e6b146ce53572c0b51e1310e1c4fdb4eea21f@sha256:cba26d96764b98d3b0220c0def8ec8049d5d591eb1daa3bedd2e45edc277018e",
+							"org.opencontainers.image.revision": "15362dc5fbaf558f48094730ec75d2418310547d",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#15362dc5fbaf558f48094730ec75d2418310547d:commercial-editions/datacenter/app",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.1.8-datacenter-app"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:cec2badb598fabc239e7cb1f25549cc716ffb4c52c4f53b6c3499b0c34249e5b",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a635eabba2bf826fb1e60e40799e6b146ce53572c0b51e1310e1c4fdb4eea21f@sha256:cec2badb598fabc239e7cb1f25549cc716ffb4c52c4f53b6c3499b0c34249e5b",
+							"vnd.docker.reference.digest": "sha256:cba26d96764b98d3b0220c0def8ec8049d5d591eb1daa3bedd2e45edc277018e",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:a635eabba2bf826fb1e60e40799e6b146ce53572c0b51e1310e1c4fdb4eea21f@sha256:9f901902b1f2bdaa6f486f7e0116ac041b961c9a0ea88a9a734b26bc88deb4df"
+				}
+			},
 			"sourceId": "249acc548d64e9fea20fb4073b7bad6b04a9d43b33597ba4973face3729109ed",
 			"arch": "amd64",
 			"parents": {
@@ -885530,7 +885793,51 @@
 		"buildId": "3d8b77aa3ec21dd3a34878e08ea43539832a176b21b2762e18a0467a802d2aec",
 		"build": {
 			"img": "oisupport/staging-arm64v8:3d8b77aa3ec21dd3a34878e08ea43539832a176b21b2762e18a0467a802d2aec",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:ff1ad4cb6cfab502f45f91ddc6aa1771abe3680e1fda271655fc20bef29b39e7",
+						"size": 2553,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:3904f6b7e0da3dea83d6b55d6540194f6e77dc79521079e6124d97392e80dde4",
+							"org.opencontainers.image.base.name": "eclipse-temurin:21-jdk-noble",
+							"org.opencontainers.image.created": "2026-11-03T00:17:10Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:3d8b77aa3ec21dd3a34878e08ea43539832a176b21b2762e18a0467a802d2aec@sha256:ff1ad4cb6cfab502f45f91ddc6aa1771abe3680e1fda271655fc20bef29b39e7",
+							"org.opencontainers.image.revision": "15362dc5fbaf558f48094730ec75d2418310547d",
+							"org.opencontainers.image.source": "https://github.com/SonarSource/docker-sonarqube.git#15362dc5fbaf558f48094730ec75d2418310547d:commercial-editions/datacenter/app",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/sonarqube",
+							"org.opencontainers.image.version": "2026.1.8-datacenter-app"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:cc14bbf10c7f0ae17a96cbcb9fed95a9a7200affb47bb97ddf74be741623e97c",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:3d8b77aa3ec21dd3a34878e08ea43539832a176b21b2762e18a0467a802d2aec@sha256:cc14bbf10c7f0ae17a96cbcb9fed95a9a7200affb47bb97ddf74be741623e97c",
+							"vnd.docker.reference.digest": "sha256:ff1ad4cb6cfab502f45f91ddc6aa1771abe3680e1fda271655fc20bef29b39e7",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:3d8b77aa3ec21dd3a34878e08ea43539832a176b21b2762e18a0467a802d2aec@sha256:1a6fff386765f053d21a9093911e0d46f6b0ebcf8b1f065562941ef11a772a35"
+				}
+			},
 			"sourceId": "249acc548d64e9fea20fb4073b7bad6b04a9d43b33597ba4973face3729109ed",
 			"arch": "arm64v8",
 			"parents": {
@@ -1164162,7 +1164469,50 @@
 		"buildId": "4e544d4fea13f1f99eb10cf4f07b26352b9020dd7a669cac6541927ce14fb4ec",
 		"build": {
 			"img": "oisupport/staging-riscv64:4e544d4fea13f1f99eb10cf4f07b26352b9020dd7a669cac6541927ce14fb4ec",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:f3daa4e37b7f95d576d80b75ab4c257426459b0f21feaf91eb97a1d0735c1197",
+						"size": 3265,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:29af90a02b9889ba39a1c43c1e1164b9c8cd2fffe60d33c28d084481fd838bf5",
+							"org.opencontainers.image.base.name": "ruby:4.0-alpine3.23",
+							"org.opencontainers.image.created": "2026-11-02T22:55:01Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e544d4fea13f1f99eb10cf4f07b26352b9020dd7a669cac6541927ce14fb4ec@sha256:f3daa4e37b7f95d576d80b75ab4c257426459b0f21feaf91eb97a1d0735c1197",
+							"org.opencontainers.image.revision": "df0d3284a3da8a77363a086cecba5eeed7f4f1f9",
+							"org.opencontainers.image.source": "https://github.com/docker-library/redmine.git#df0d3284a3da8a77363a086cecba5eeed7f4f1f9:7.0/alpine3.23",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/redmine",
+							"org.opencontainers.image.version": "7.0.2-alpine3.23"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:45214f1e6842a2136b58f174b2224af0d993c9ae6d243fc8f432dc3c178fc6b7",
+						"size": 567,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e544d4fea13f1f99eb10cf4f07b26352b9020dd7a669cac6541927ce14fb4ec@sha256:45214f1e6842a2136b58f174b2224af0d993c9ae6d243fc8f432dc3c178fc6b7",
+							"vnd.docker.reference.digest": "sha256:f3daa4e37b7f95d576d80b75ab4c257426459b0f21feaf91eb97a1d0735c1197",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4e544d4fea13f1f99eb10cf4f07b26352b9020dd7a669cac6541927ce14fb4ec@sha256:3c223e9bd6a465f33c9aa1f48bfc5b8a3084586ac6f9f6b9e9c615b4c6cec65a"
+				}
+			},
 			"sourceId": "d5e9d8e3503a44c60865a6008e371ee690035da91a4ab155b87c36eaac5af875",
 			"arch": "riscv64",
 			"parents": {
