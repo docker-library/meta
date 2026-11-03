@@ -703465,7 +703465,50 @@
 		"buildId": "e9cf3ac723da1f964eb15aa67393df091e09da60baec7a9d914975b128cddbbe",
 		"build": {
 			"img": "oisupport/staging-riscv64:e9cf3ac723da1f964eb15aa67393df091e09da60baec7a9d914975b128cddbbe",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:613c3e3563fd5733436cf863ef1cbf5cff21e49afd91b7424e50c422487c933a",
+						"size": 5339,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:a75e5df69f15071837a9773030ffa6a905f6e2138868706874308b4906cfd0ab",
+							"org.opencontainers.image.base.name": "php:8.4-apache-trixie",
+							"org.opencontainers.image.created": "2026-11-03T20:52:38Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:e9cf3ac723da1f964eb15aa67393df091e09da60baec7a9d914975b128cddbbe@sha256:613c3e3563fd5733436cf863ef1cbf5cff21e49afd91b7424e50c422487c933a",
+							"org.opencontainers.image.revision": "7e9e152f77372845195ed28dc65569df74f582ff",
+							"org.opencontainers.image.source": "https://github.com/nextcloud/docker.git#7e9e152f77372845195ed28dc65569df74f582ff:33/apache",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/nextcloud",
+							"org.opencontainers.image.version": "33.0.10-apache"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:5f0c60d8fb7c2ea6c26bb71dec1d7d3580e7e9e4db79b945699b47517ebb919f",
+						"size": 567,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:e9cf3ac723da1f964eb15aa67393df091e09da60baec7a9d914975b128cddbbe@sha256:5f0c60d8fb7c2ea6c26bb71dec1d7d3580e7e9e4db79b945699b47517ebb919f",
+							"vnd.docker.reference.digest": "sha256:613c3e3563fd5733436cf863ef1cbf5cff21e49afd91b7424e50c422487c933a",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:e9cf3ac723da1f964eb15aa67393df091e09da60baec7a9d914975b128cddbbe@sha256:8f72597ca15feb91da645e9531ab53a525112151009c050ba1145328f2638f11"
+				}
+			},
 			"sourceId": "1260c1c6223c039be0861fae0a2c2afdeaf3b212a6bf4626b982ccd7d374decc",
 			"arch": "riscv64",
 			"parents": {
@@ -868485,55 +868528,12 @@
 			}
 		}
 	},
-	"2c4f2fdb78059e43d22e30a99dec7c3a70c8025df5337a28ee5cbb8a3e40cba1": {
-		"buildId": "2c4f2fdb78059e43d22e30a99dec7c3a70c8025df5337a28ee5cbb8a3e40cba1",
+	"a0bee468cbe1637b059e4813cf0d82c0f1ed309efee2a61335ccc8b7b0e5f8d5": {
+		"buildId": "a0bee468cbe1637b059e4813cf0d82c0f1ed309efee2a61335ccc8b7b0e5f8d5",
 		"build": {
-			"img": "oisupport/staging-amd64:2c4f2fdb78059e43d22e30a99dec7c3a70c8025df5337a28ee5cbb8a3e40cba1",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:0097cc72a939f26665ab11380e995aa9476735ec9516867e14ff5dfa8318b068",
-						"size": 1940,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:702b53c861e19913b8720993a4032b13441ed63916e123b403301423977f818f",
-							"org.opencontainers.image.base.name": "buildpack-deps:bookworm",
-							"org.opencontainers.image.created": "2026-10-28T04:38:13Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:2c4f2fdb78059e43d22e30a99dec7c3a70c8025df5337a28ee5cbb8a3e40cba1@sha256:0097cc72a939f26665ab11380e995aa9476735ec9516867e14ff5dfa8318b068",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/bookworm",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-bookworm"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:67dbf0182702245c89c1de660b6b56d09903a0ffaff2bcffb126854248032ca8",
-						"size": 842,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:2c4f2fdb78059e43d22e30a99dec7c3a70c8025df5337a28ee5cbb8a3e40cba1@sha256:67dbf0182702245c89c1de660b6b56d09903a0ffaff2bcffb126854248032ca8",
-							"vnd.docker.reference.digest": "sha256:0097cc72a939f26665ab11380e995aa9476735ec9516867e14ff5dfa8318b068",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:2c4f2fdb78059e43d22e30a99dec7c3a70c8025df5337a28ee5cbb8a3e40cba1@sha256:6f29165d22020d0bb295a9f5edf69db0fa6e4b4421ff708c74d11b2f988bf91b"
-				}
-			},
-			"sourceId": "f28622e677076f61d0a80433e79dc32d5502884828f03ececd50e356086a235a",
+			"img": "oisupport/staging-amd64:a0bee468cbe1637b059e4813cf0d82c0f1ed309efee2a61335ccc8b7b0e5f8d5",
+			"resolved": null,
+			"sourceId": "067bdf41eb52ff128583b2a9cc58794bb12579f34b841785a31d283ab70b8eb5",
 			"arch": "amd64",
 			"parents": {
 				"buildpack-deps:bookworm": "sha256:702b53c861e19913b8720993a4032b13441ed63916e123b403301423977f818f"
@@ -868586,17 +868586,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "f28622e677076f61d0a80433e79dc32d5502884828f03ececd50e356086a235a",
-			"reproducibleGitChecksum": "50e5bfb3a968fea64488447cb711057211c62adefd050101cd2f0419ad31e157",
+			"sourceId": "067bdf41eb52ff128583b2a9cc58794bb12579f34b841785a31d283ab70b8eb5",
+			"reproducibleGitChecksum": "a19e812e901ed98c1fd0948de7038a87a39c0543490bf5b7a022704abb37eaf6",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/bookworm",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -868632,56 +868632,12 @@
 			}
 		}
 	},
-	"ebcd84c1ae1e43390de7040018ad27b52de283e72e835e2543184ff088915f1a": {
-		"buildId": "ebcd84c1ae1e43390de7040018ad27b52de283e72e835e2543184ff088915f1a",
+	"7b46148f9a92b893366792c570a34c537b3df80b491b19a9015f62f6f6708328": {
+		"buildId": "7b46148f9a92b893366792c570a34c537b3df80b491b19a9015f62f6f6708328",
 		"build": {
-			"img": "oisupport/staging-arm32v7:ebcd84c1ae1e43390de7040018ad27b52de283e72e835e2543184ff088915f1a",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:4c7e2eeb005ae8d30c2e43c9ff8c00ba5e71648fe85636f4370264951739aca1",
-						"size": 1942,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm32v7",
-							"org.opencontainers.image.base.digest": "sha256:e9b5b977e0ac439d77f5b9dd6c7884ad72c69232a68bab3e0fdf10445b5ebaa6",
-							"org.opencontainers.image.base.name": "buildpack-deps:bookworm",
-							"org.opencontainers.image.created": "2026-10-28T05:47:45Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:ebcd84c1ae1e43390de7040018ad27b52de283e72e835e2543184ff088915f1a@sha256:4c7e2eeb005ae8d30c2e43c9ff8c00ba5e71648fe85636f4370264951739aca1",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/bookworm",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-bookworm"
-						},
-						"platform": {
-							"architecture": "arm",
-							"os": "linux",
-							"variant": "v7"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:e4999403efaac3a51c77b57eb553b0afb76b8dcb5f137158eb0af5e3868f0604",
-						"size": 842,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm32v7",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:ebcd84c1ae1e43390de7040018ad27b52de283e72e835e2543184ff088915f1a@sha256:e4999403efaac3a51c77b57eb553b0afb76b8dcb5f137158eb0af5e3868f0604",
-							"vnd.docker.reference.digest": "sha256:4c7e2eeb005ae8d30c2e43c9ff8c00ba5e71648fe85636f4370264951739aca1",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:ebcd84c1ae1e43390de7040018ad27b52de283e72e835e2543184ff088915f1a@sha256:c882fd5e1eba6414157063a311a6ee0ed892bc5c9a9f75f3d909e006579ca74f"
-				}
-			},
-			"sourceId": "f28622e677076f61d0a80433e79dc32d5502884828f03ececd50e356086a235a",
+			"img": "oisupport/staging-arm32v7:7b46148f9a92b893366792c570a34c537b3df80b491b19a9015f62f6f6708328",
+			"resolved": null,
+			"sourceId": "067bdf41eb52ff128583b2a9cc58794bb12579f34b841785a31d283ab70b8eb5",
 			"arch": "arm32v7",
 			"parents": {
 				"buildpack-deps:bookworm": "sha256:e9b5b977e0ac439d77f5b9dd6c7884ad72c69232a68bab3e0fdf10445b5ebaa6"
@@ -868735,17 +868691,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "f28622e677076f61d0a80433e79dc32d5502884828f03ececd50e356086a235a",
-			"reproducibleGitChecksum": "50e5bfb3a968fea64488447cb711057211c62adefd050101cd2f0419ad31e157",
+			"sourceId": "067bdf41eb52ff128583b2a9cc58794bb12579f34b841785a31d283ab70b8eb5",
+			"reproducibleGitChecksum": "a19e812e901ed98c1fd0948de7038a87a39c0543490bf5b7a022704abb37eaf6",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/bookworm",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -868782,56 +868738,12 @@
 			}
 		}
 	},
-	"166c0416e0ac0c2610e6b43dde508c28cf57fcd15d6a602593385f3af2c94b8e": {
-		"buildId": "166c0416e0ac0c2610e6b43dde508c28cf57fcd15d6a602593385f3af2c94b8e",
+	"918a9c06023f3b96a2b89a44e742b8ac3b048ae8e5d012469c5cabaafa744037": {
+		"buildId": "918a9c06023f3b96a2b89a44e742b8ac3b048ae8e5d012469c5cabaafa744037",
 		"build": {
-			"img": "oisupport/staging-arm64v8:166c0416e0ac0c2610e6b43dde508c28cf57fcd15d6a602593385f3af2c94b8e",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:a907ee6504cebdce35fa8cce0c33291a57f629b9de0fde3edd76d908d0a05b60",
-						"size": 1942,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:a868351305cd10d4356f86b88e9ac1d1988ef2790bea80c3e560fed8cc068ab5",
-							"org.opencontainers.image.base.name": "buildpack-deps:bookworm",
-							"org.opencontainers.image.created": "2026-10-28T04:41:27Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:166c0416e0ac0c2610e6b43dde508c28cf57fcd15d6a602593385f3af2c94b8e@sha256:a907ee6504cebdce35fa8cce0c33291a57f629b9de0fde3edd76d908d0a05b60",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/bookworm",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-bookworm"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:a88e26e24c010b109c799672d9fda3780ac7dcf7b97db887c3b4b8764faa75d1",
-						"size": 842,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:166c0416e0ac0c2610e6b43dde508c28cf57fcd15d6a602593385f3af2c94b8e@sha256:a88e26e24c010b109c799672d9fda3780ac7dcf7b97db887c3b4b8764faa75d1",
-							"vnd.docker.reference.digest": "sha256:a907ee6504cebdce35fa8cce0c33291a57f629b9de0fde3edd76d908d0a05b60",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:166c0416e0ac0c2610e6b43dde508c28cf57fcd15d6a602593385f3af2c94b8e@sha256:6e456423d42c84fa4dbd70ed4106f0a9f9f029e5e480fc3c1049df7149deda4e"
-				}
-			},
-			"sourceId": "f28622e677076f61d0a80433e79dc32d5502884828f03ececd50e356086a235a",
+			"img": "oisupport/staging-arm64v8:918a9c06023f3b96a2b89a44e742b8ac3b048ae8e5d012469c5cabaafa744037",
+			"resolved": null,
+			"sourceId": "067bdf41eb52ff128583b2a9cc58794bb12579f34b841785a31d283ab70b8eb5",
 			"arch": "arm64v8",
 			"parents": {
 				"buildpack-deps:bookworm": "sha256:a868351305cd10d4356f86b88e9ac1d1988ef2790bea80c3e560fed8cc068ab5"
@@ -868885,17 +868797,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "f28622e677076f61d0a80433e79dc32d5502884828f03ececd50e356086a235a",
-			"reproducibleGitChecksum": "50e5bfb3a968fea64488447cb711057211c62adefd050101cd2f0419ad31e157",
+			"sourceId": "067bdf41eb52ff128583b2a9cc58794bb12579f34b841785a31d283ab70b8eb5",
+			"reproducibleGitChecksum": "a19e812e901ed98c1fd0948de7038a87a39c0543490bf5b7a022704abb37eaf6",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/bookworm",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -868932,55 +868844,12 @@
 			}
 		}
 	},
-	"3eaa3b24f6e974bd67264dd99c72842f96c3cb48886247a2cef3a4da5a20c394": {
-		"buildId": "3eaa3b24f6e974bd67264dd99c72842f96c3cb48886247a2cef3a4da5a20c394",
+	"628dd512b34752b0431837b82bad0d8507f8f7fa4b47f1b3b8024d8a6a031b48": {
+		"buildId": "628dd512b34752b0431837b82bad0d8507f8f7fa4b47f1b3b8024d8a6a031b48",
 		"build": {
-			"img": "oisupport/staging-i386:3eaa3b24f6e974bd67264dd99c72842f96c3cb48886247a2cef3a4da5a20c394",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:222ff20f559f57b18ec530b2dadf0ac03ece0f1e2270eb5de327f87d45480570",
-						"size": 1939,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "i386",
-							"org.opencontainers.image.base.digest": "sha256:4270d76137a83fa88f875b409703eff86e001aabe85b560c58bbc180b41c1664",
-							"org.opencontainers.image.base.name": "buildpack-deps:bookworm",
-							"org.opencontainers.image.created": "2026-10-28T04:39:47Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-i386:3eaa3b24f6e974bd67264dd99c72842f96c3cb48886247a2cef3a4da5a20c394@sha256:222ff20f559f57b18ec530b2dadf0ac03ece0f1e2270eb5de327f87d45480570",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/bookworm",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-bookworm"
-						},
-						"platform": {
-							"architecture": "386",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:19bf7171fabff61cabb4eaff649b3425cc953fe4a8679b7a5bd9c77b2793c49a",
-						"size": 842,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "i386",
-							"org.opencontainers.image.ref.name": "oisupport/staging-i386:3eaa3b24f6e974bd67264dd99c72842f96c3cb48886247a2cef3a4da5a20c394@sha256:19bf7171fabff61cabb4eaff649b3425cc953fe4a8679b7a5bd9c77b2793c49a",
-							"vnd.docker.reference.digest": "sha256:222ff20f559f57b18ec530b2dadf0ac03ece0f1e2270eb5de327f87d45480570",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-i386:3eaa3b24f6e974bd67264dd99c72842f96c3cb48886247a2cef3a4da5a20c394@sha256:391f7a33653a3826b934a5b5eec9101f19de4b4116e60b6549e0acf84b96ee2d"
-				}
-			},
-			"sourceId": "f28622e677076f61d0a80433e79dc32d5502884828f03ececd50e356086a235a",
+			"img": "oisupport/staging-i386:628dd512b34752b0431837b82bad0d8507f8f7fa4b47f1b3b8024d8a6a031b48",
+			"resolved": null,
+			"sourceId": "067bdf41eb52ff128583b2a9cc58794bb12579f34b841785a31d283ab70b8eb5",
 			"arch": "i386",
 			"parents": {
 				"buildpack-deps:bookworm": "sha256:4270d76137a83fa88f875b409703eff86e001aabe85b560c58bbc180b41c1664"
@@ -869033,17 +868902,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "f28622e677076f61d0a80433e79dc32d5502884828f03ececd50e356086a235a",
-			"reproducibleGitChecksum": "50e5bfb3a968fea64488447cb711057211c62adefd050101cd2f0419ad31e157",
+			"sourceId": "067bdf41eb52ff128583b2a9cc58794bb12579f34b841785a31d283ab70b8eb5",
+			"reproducibleGitChecksum": "a19e812e901ed98c1fd0948de7038a87a39c0543490bf5b7a022704abb37eaf6",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/bookworm",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -869079,55 +868948,12 @@
 			}
 		}
 	},
-	"4829e4d0c5ad2f33b0ba30269ba2886b9e931a71a55489d346e320aa97742540": {
-		"buildId": "4829e4d0c5ad2f33b0ba30269ba2886b9e931a71a55489d346e320aa97742540",
+	"5f4ac4b4b59b580f00c49bddcfffa5c5d5d6a1a695955b390051bf2aa93cf382": {
+		"buildId": "5f4ac4b4b59b580f00c49bddcfffa5c5d5d6a1a695955b390051bf2aa93cf382",
 		"build": {
-			"img": "oisupport/staging-ppc64le:4829e4d0c5ad2f33b0ba30269ba2886b9e931a71a55489d346e320aa97742540",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:df2433004fa97c77163478ff7409f61db8c777b5c5b0eb2540fbe845d5704602",
-						"size": 1942,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.base.digest": "sha256:4bb967c3cb521f86e2d6fdc1441ed61a87269dd07ea530f1911f1635f56d489d",
-							"org.opencontainers.image.base.name": "buildpack-deps:bookworm",
-							"org.opencontainers.image.created": "2026-10-28T20:12:41Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:4829e4d0c5ad2f33b0ba30269ba2886b9e931a71a55489d346e320aa97742540@sha256:df2433004fa97c77163478ff7409f61db8c777b5c5b0eb2540fbe845d5704602",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/bookworm",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-bookworm"
-						},
-						"platform": {
-							"architecture": "ppc64le",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:6b001aa9004462c0b7a99b4c3570940d2da59759ae36e9cec9c7150ee746e23f",
-						"size": 842,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:4829e4d0c5ad2f33b0ba30269ba2886b9e931a71a55489d346e320aa97742540@sha256:6b001aa9004462c0b7a99b4c3570940d2da59759ae36e9cec9c7150ee746e23f",
-							"vnd.docker.reference.digest": "sha256:df2433004fa97c77163478ff7409f61db8c777b5c5b0eb2540fbe845d5704602",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:4829e4d0c5ad2f33b0ba30269ba2886b9e931a71a55489d346e320aa97742540@sha256:695a9edaddbe94a31f871193a411893b9c5bb400aba827c4a94e32959e95a6d3"
-				}
-			},
-			"sourceId": "f28622e677076f61d0a80433e79dc32d5502884828f03ececd50e356086a235a",
+			"img": "oisupport/staging-ppc64le:5f4ac4b4b59b580f00c49bddcfffa5c5d5d6a1a695955b390051bf2aa93cf382",
+			"resolved": null,
+			"sourceId": "067bdf41eb52ff128583b2a9cc58794bb12579f34b841785a31d283ab70b8eb5",
 			"arch": "ppc64le",
 			"parents": {
 				"buildpack-deps:bookworm": "sha256:4bb967c3cb521f86e2d6fdc1441ed61a87269dd07ea530f1911f1635f56d489d"
@@ -869180,17 +869006,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "f28622e677076f61d0a80433e79dc32d5502884828f03ececd50e356086a235a",
-			"reproducibleGitChecksum": "50e5bfb3a968fea64488447cb711057211c62adefd050101cd2f0419ad31e157",
+			"sourceId": "067bdf41eb52ff128583b2a9cc58794bb12579f34b841785a31d283ab70b8eb5",
+			"reproducibleGitChecksum": "a19e812e901ed98c1fd0948de7038a87a39c0543490bf5b7a022704abb37eaf6",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/bookworm",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -869226,55 +869052,12 @@
 			}
 		}
 	},
-	"5a960ef20ec127ab62064f9661819f8532142ca1be548bc9bbc2ba0424a9ac51": {
-		"buildId": "5a960ef20ec127ab62064f9661819f8532142ca1be548bc9bbc2ba0424a9ac51",
+	"ac44303161344470ca7f70bfcfd13dd7735998710f54fbfc2e17621e78a2d329": {
+		"buildId": "ac44303161344470ca7f70bfcfd13dd7735998710f54fbfc2e17621e78a2d329",
 		"build": {
-			"img": "oisupport/staging-amd64:5a960ef20ec127ab62064f9661819f8532142ca1be548bc9bbc2ba0424a9ac51",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:bec632fe9144b069d4a21396ca4f84f6d6c6d471ec1391cb70eb4bb1b06c547d",
-						"size": 1367,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:a3bba7dc7dbcc1f37c2856c51fc9a7fac96608f50cb87b1b4e4d8b8c85ae988e",
-							"org.opencontainers.image.base.name": "debian:bookworm-slim",
-							"org.opencontainers.image.created": "2026-10-28T02:05:17Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5a960ef20ec127ab62064f9661819f8532142ca1be548bc9bbc2ba0424a9ac51@sha256:bec632fe9144b069d4a21396ca4f84f6d6c6d471ec1391cb70eb4bb1b06c547d",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/bookworm/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-bookworm"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:894e8f87799882cbb6e27f9c174eefbd84821ab305c8cd00f7038ad22985c346",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5a960ef20ec127ab62064f9661819f8532142ca1be548bc9bbc2ba0424a9ac51@sha256:894e8f87799882cbb6e27f9c174eefbd84821ab305c8cd00f7038ad22985c346",
-							"vnd.docker.reference.digest": "sha256:bec632fe9144b069d4a21396ca4f84f6d6c6d471ec1391cb70eb4bb1b06c547d",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5a960ef20ec127ab62064f9661819f8532142ca1be548bc9bbc2ba0424a9ac51@sha256:263cd775f4210fa396e35e9e673cf348fb3bc0e45ccca09b9a0ad0f80aceba1b"
-				}
-			},
-			"sourceId": "138b3bd1a3ef1c4c60f49831ac80924a7130bce1123dee5cff69fff3ec255a64",
+			"img": "oisupport/staging-amd64:ac44303161344470ca7f70bfcfd13dd7735998710f54fbfc2e17621e78a2d329",
+			"resolved": null,
+			"sourceId": "145fcb1ac100a23c42845f21e97d51ed6079180d7bbd29380bea107c335f91fb",
 			"arch": "amd64",
 			"parents": {
 				"debian:bookworm-slim": "sha256:a3bba7dc7dbcc1f37c2856c51fc9a7fac96608f50cb87b1b4e4d8b8c85ae988e"
@@ -869326,17 +869109,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "138b3bd1a3ef1c4c60f49831ac80924a7130bce1123dee5cff69fff3ec255a64",
-			"reproducibleGitChecksum": "8b5c3d81757d670d7e878c00b6a6a10bb480abfd354ad0de8539a24d51923d17",
+			"sourceId": "145fcb1ac100a23c42845f21e97d51ed6079180d7bbd29380bea107c335f91fb",
+			"reproducibleGitChecksum": "43201ad7c6abc37d7f363a30b4310c00e0339f13a97832d1c62bf2c00218a9da",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/bookworm/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -869372,56 +869155,12 @@
 			}
 		}
 	},
-	"2b81e3419141316a1157e963f1a2df0343c8beadcb638694fe8f72226a43465d": {
-		"buildId": "2b81e3419141316a1157e963f1a2df0343c8beadcb638694fe8f72226a43465d",
+	"631303457e4d715194873df48782578697b65cd9f56ca996623abc5ce7cd088e": {
+		"buildId": "631303457e4d715194873df48782578697b65cd9f56ca996623abc5ce7cd088e",
 		"build": {
-			"img": "oisupport/staging-arm32v7:2b81e3419141316a1157e963f1a2df0343c8beadcb638694fe8f72226a43465d",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:8f354413fc462a1399dc2b3b4f4908a0a55374b872b7f00355b2edc750f7b7a7",
-						"size": 1369,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm32v7",
-							"org.opencontainers.image.base.digest": "sha256:1200543cedc12abb00287c17870c518912ec271d0ed2c31b3623841e752c5d72",
-							"org.opencontainers.image.base.name": "debian:bookworm-slim",
-							"org.opencontainers.image.created": "2026-10-28T02:56:16Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:2b81e3419141316a1157e963f1a2df0343c8beadcb638694fe8f72226a43465d@sha256:8f354413fc462a1399dc2b3b4f4908a0a55374b872b7f00355b2edc750f7b7a7",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/bookworm/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-bookworm"
-						},
-						"platform": {
-							"architecture": "arm",
-							"os": "linux",
-							"variant": "v7"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:5c0ce1004a5ae07bd1e9f20b28b36bb0e1d67b3ef9861d10a650cacb5d4c0c1b",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm32v7",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:2b81e3419141316a1157e963f1a2df0343c8beadcb638694fe8f72226a43465d@sha256:5c0ce1004a5ae07bd1e9f20b28b36bb0e1d67b3ef9861d10a650cacb5d4c0c1b",
-							"vnd.docker.reference.digest": "sha256:8f354413fc462a1399dc2b3b4f4908a0a55374b872b7f00355b2edc750f7b7a7",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:2b81e3419141316a1157e963f1a2df0343c8beadcb638694fe8f72226a43465d@sha256:0bb7f56145cde8c3d37f21bee2a3dd8ce8893cca403841677149e1cd493b43b6"
-				}
-			},
-			"sourceId": "138b3bd1a3ef1c4c60f49831ac80924a7130bce1123dee5cff69fff3ec255a64",
+			"img": "oisupport/staging-arm32v7:631303457e4d715194873df48782578697b65cd9f56ca996623abc5ce7cd088e",
+			"resolved": null,
+			"sourceId": "145fcb1ac100a23c42845f21e97d51ed6079180d7bbd29380bea107c335f91fb",
 			"arch": "arm32v7",
 			"parents": {
 				"debian:bookworm-slim": "sha256:1200543cedc12abb00287c17870c518912ec271d0ed2c31b3623841e752c5d72"
@@ -869474,17 +869213,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "138b3bd1a3ef1c4c60f49831ac80924a7130bce1123dee5cff69fff3ec255a64",
-			"reproducibleGitChecksum": "8b5c3d81757d670d7e878c00b6a6a10bb480abfd354ad0de8539a24d51923d17",
+			"sourceId": "145fcb1ac100a23c42845f21e97d51ed6079180d7bbd29380bea107c335f91fb",
+			"reproducibleGitChecksum": "43201ad7c6abc37d7f363a30b4310c00e0339f13a97832d1c62bf2c00218a9da",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/bookworm/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -869521,56 +869260,12 @@
 			}
 		}
 	},
-	"2fd5427c105a5b1be592294f8f0e7de64baab844237d8b7b918ea03fe5ee8879": {
-		"buildId": "2fd5427c105a5b1be592294f8f0e7de64baab844237d8b7b918ea03fe5ee8879",
+	"cc5d1282c0bed0fc9df1eb9048eb98aab8291b90c5f98d6721d5bf07a3a60b37": {
+		"buildId": "cc5d1282c0bed0fc9df1eb9048eb98aab8291b90c5f98d6721d5bf07a3a60b37",
 		"build": {
-			"img": "oisupport/staging-arm64v8:2fd5427c105a5b1be592294f8f0e7de64baab844237d8b7b918ea03fe5ee8879",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:efecb7694d37171c478bd45d0cc88d9acc6e7fd31d7a1a39891ed4a294d0ce6f",
-						"size": 1369,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:7ccb8b5b60c7654f5b795d94ee7d751cd0811500803f0b09cefcd555e755a55a",
-							"org.opencontainers.image.base.name": "debian:bookworm-slim",
-							"org.opencontainers.image.created": "2026-10-28T02:10:34Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2fd5427c105a5b1be592294f8f0e7de64baab844237d8b7b918ea03fe5ee8879@sha256:efecb7694d37171c478bd45d0cc88d9acc6e7fd31d7a1a39891ed4a294d0ce6f",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/bookworm/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-bookworm"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:caa255cd3e6a0edad76eea1123f8f3097b0d2714b5429ee3193ca9c457d59ce3",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2fd5427c105a5b1be592294f8f0e7de64baab844237d8b7b918ea03fe5ee8879@sha256:caa255cd3e6a0edad76eea1123f8f3097b0d2714b5429ee3193ca9c457d59ce3",
-							"vnd.docker.reference.digest": "sha256:efecb7694d37171c478bd45d0cc88d9acc6e7fd31d7a1a39891ed4a294d0ce6f",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:2fd5427c105a5b1be592294f8f0e7de64baab844237d8b7b918ea03fe5ee8879@sha256:22bfd264643cd0e0328ae28bef1a04e01150fc48d9877979155e2f4cfa665487"
-				}
-			},
-			"sourceId": "138b3bd1a3ef1c4c60f49831ac80924a7130bce1123dee5cff69fff3ec255a64",
+			"img": "oisupport/staging-arm64v8:cc5d1282c0bed0fc9df1eb9048eb98aab8291b90c5f98d6721d5bf07a3a60b37",
+			"resolved": null,
+			"sourceId": "145fcb1ac100a23c42845f21e97d51ed6079180d7bbd29380bea107c335f91fb",
 			"arch": "arm64v8",
 			"parents": {
 				"debian:bookworm-slim": "sha256:7ccb8b5b60c7654f5b795d94ee7d751cd0811500803f0b09cefcd555e755a55a"
@@ -869623,17 +869318,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "138b3bd1a3ef1c4c60f49831ac80924a7130bce1123dee5cff69fff3ec255a64",
-			"reproducibleGitChecksum": "8b5c3d81757d670d7e878c00b6a6a10bb480abfd354ad0de8539a24d51923d17",
+			"sourceId": "145fcb1ac100a23c42845f21e97d51ed6079180d7bbd29380bea107c335f91fb",
+			"reproducibleGitChecksum": "43201ad7c6abc37d7f363a30b4310c00e0339f13a97832d1c62bf2c00218a9da",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/bookworm/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -869670,55 +869365,12 @@
 			}
 		}
 	},
-	"44869c98bb278aa1a1cc3c00896a3ab9550c947437db79e623fe5efb4c21a8e5": {
-		"buildId": "44869c98bb278aa1a1cc3c00896a3ab9550c947437db79e623fe5efb4c21a8e5",
+	"fe919910fd27ec69740baf9741cfe152ed204ba6c73b4a0210c277bdbdbf0b66": {
+		"buildId": "fe919910fd27ec69740baf9741cfe152ed204ba6c73b4a0210c277bdbdbf0b66",
 		"build": {
-			"img": "oisupport/staging-i386:44869c98bb278aa1a1cc3c00896a3ab9550c947437db79e623fe5efb4c21a8e5",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:d66e0bcccda9e8b12b09cf187db078dfdae3c3573f43b3fbe96f95c46e19447e",
-						"size": 1366,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "i386",
-							"org.opencontainers.image.base.digest": "sha256:1472b213f4cb123795a81213f85cb700cdcb497f774584c727d113fb4f91f2c8",
-							"org.opencontainers.image.base.name": "debian:bookworm-slim",
-							"org.opencontainers.image.created": "2026-10-28T02:10:18Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-i386:44869c98bb278aa1a1cc3c00896a3ab9550c947437db79e623fe5efb4c21a8e5@sha256:d66e0bcccda9e8b12b09cf187db078dfdae3c3573f43b3fbe96f95c46e19447e",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/bookworm/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-bookworm"
-						},
-						"platform": {
-							"architecture": "386",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:1eb1492c655ae7f5cbd59fad1e229b08ad607b3a7936e852902057bb68584c5b",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "i386",
-							"org.opencontainers.image.ref.name": "oisupport/staging-i386:44869c98bb278aa1a1cc3c00896a3ab9550c947437db79e623fe5efb4c21a8e5@sha256:1eb1492c655ae7f5cbd59fad1e229b08ad607b3a7936e852902057bb68584c5b",
-							"vnd.docker.reference.digest": "sha256:d66e0bcccda9e8b12b09cf187db078dfdae3c3573f43b3fbe96f95c46e19447e",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-i386:44869c98bb278aa1a1cc3c00896a3ab9550c947437db79e623fe5efb4c21a8e5@sha256:0645a5a5a44f038bb6e0c324b8a1d530dcea0eee97f96ea91421864f99e76956"
-				}
-			},
-			"sourceId": "138b3bd1a3ef1c4c60f49831ac80924a7130bce1123dee5cff69fff3ec255a64",
+			"img": "oisupport/staging-i386:fe919910fd27ec69740baf9741cfe152ed204ba6c73b4a0210c277bdbdbf0b66",
+			"resolved": null,
+			"sourceId": "145fcb1ac100a23c42845f21e97d51ed6079180d7bbd29380bea107c335f91fb",
 			"arch": "i386",
 			"parents": {
 				"debian:bookworm-slim": "sha256:1472b213f4cb123795a81213f85cb700cdcb497f774584c727d113fb4f91f2c8"
@@ -869770,17 +869422,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "138b3bd1a3ef1c4c60f49831ac80924a7130bce1123dee5cff69fff3ec255a64",
-			"reproducibleGitChecksum": "8b5c3d81757d670d7e878c00b6a6a10bb480abfd354ad0de8539a24d51923d17",
+			"sourceId": "145fcb1ac100a23c42845f21e97d51ed6079180d7bbd29380bea107c335f91fb",
+			"reproducibleGitChecksum": "43201ad7c6abc37d7f363a30b4310c00e0339f13a97832d1c62bf2c00218a9da",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/bookworm/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -869816,55 +869468,12 @@
 			}
 		}
 	},
-	"d6bf72a64ecc6811f90e554f4b85815ae05ddb79fa905d6caeb8f4e92eeb3ed7": {
-		"buildId": "d6bf72a64ecc6811f90e554f4b85815ae05ddb79fa905d6caeb8f4e92eeb3ed7",
+	"53ea8bf46c4bcb3e35b3537630e415d422e0a2a56e8b8ac88c3cbfc3f8b957d3": {
+		"buildId": "53ea8bf46c4bcb3e35b3537630e415d422e0a2a56e8b8ac88c3cbfc3f8b957d3",
 		"build": {
-			"img": "oisupport/staging-ppc64le:d6bf72a64ecc6811f90e554f4b85815ae05ddb79fa905d6caeb8f4e92eeb3ed7",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:70067b4b6c0086dcb00fb8cb873082808b13a72f34db7dc6cbf9a6dcc373920c",
-						"size": 1369,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.base.digest": "sha256:197ef431a1e3c2086f70d65bf5c7d47217c2c25e8591c9a31e86a5b926077971",
-							"org.opencontainers.image.base.name": "debian:bookworm-slim",
-							"org.opencontainers.image.created": "2026-10-28T09:15:39Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d6bf72a64ecc6811f90e554f4b85815ae05ddb79fa905d6caeb8f4e92eeb3ed7@sha256:70067b4b6c0086dcb00fb8cb873082808b13a72f34db7dc6cbf9a6dcc373920c",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/bookworm/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-bookworm"
-						},
-						"platform": {
-							"architecture": "ppc64le",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:38017ba25d3b7e9eb359f6c4e6fe2e7b4101ce07c3d48aa0fc48c306c3b058d7",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d6bf72a64ecc6811f90e554f4b85815ae05ddb79fa905d6caeb8f4e92eeb3ed7@sha256:38017ba25d3b7e9eb359f6c4e6fe2e7b4101ce07c3d48aa0fc48c306c3b058d7",
-							"vnd.docker.reference.digest": "sha256:70067b4b6c0086dcb00fb8cb873082808b13a72f34db7dc6cbf9a6dcc373920c",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d6bf72a64ecc6811f90e554f4b85815ae05ddb79fa905d6caeb8f4e92eeb3ed7@sha256:2b0051ff64c229691a0bae8cc265d75f82d69009dad2af4c75eb1f758e35b818"
-				}
-			},
-			"sourceId": "138b3bd1a3ef1c4c60f49831ac80924a7130bce1123dee5cff69fff3ec255a64",
+			"img": "oisupport/staging-ppc64le:53ea8bf46c4bcb3e35b3537630e415d422e0a2a56e8b8ac88c3cbfc3f8b957d3",
+			"resolved": null,
+			"sourceId": "145fcb1ac100a23c42845f21e97d51ed6079180d7bbd29380bea107c335f91fb",
 			"arch": "ppc64le",
 			"parents": {
 				"debian:bookworm-slim": "sha256:197ef431a1e3c2086f70d65bf5c7d47217c2c25e8591c9a31e86a5b926077971"
@@ -869916,17 +869525,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "138b3bd1a3ef1c4c60f49831ac80924a7130bce1123dee5cff69fff3ec255a64",
-			"reproducibleGitChecksum": "8b5c3d81757d670d7e878c00b6a6a10bb480abfd354ad0de8539a24d51923d17",
+			"sourceId": "145fcb1ac100a23c42845f21e97d51ed6079180d7bbd29380bea107c335f91fb",
+			"reproducibleGitChecksum": "43201ad7c6abc37d7f363a30b4310c00e0339f13a97832d1c62bf2c00218a9da",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/bookworm/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -869962,55 +869571,12 @@
 			}
 		}
 	},
-	"135a18b20a3761c4cf1087788008ed50104dc27ab1e12edd97e61fb21dd36e0d": {
-		"buildId": "135a18b20a3761c4cf1087788008ed50104dc27ab1e12edd97e61fb21dd36e0d",
+	"b4db794f6867878cf7a25876850698eb91961a83e6835c938824ae89a5e0b387": {
+		"buildId": "b4db794f6867878cf7a25876850698eb91961a83e6835c938824ae89a5e0b387",
 		"build": {
-			"img": "oisupport/staging-amd64:135a18b20a3761c4cf1087788008ed50104dc27ab1e12edd97e61fb21dd36e0d",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:d841af61827b29b3efa46f5363e8f2e972b379cc0463c319e8f320d9f0c8eb0c",
-						"size": 1934,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:0766bfc10a5b87c895c6f675bb8dd09067821b4de144b047a6d029e0c366ecac",
-							"org.opencontainers.image.base.name": "buildpack-deps:trixie",
-							"org.opencontainers.image.created": "2026-10-28T04:38:57Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:135a18b20a3761c4cf1087788008ed50104dc27ab1e12edd97e61fb21dd36e0d@sha256:d841af61827b29b3efa46f5363e8f2e972b379cc0463c319e8f320d9f0c8eb0c",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-trixie"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:9b7d36f4fcf77aade5919fd1f734a65ee39ad9508f499a8b026d0c0b461ff199",
-						"size": 842,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:135a18b20a3761c4cf1087788008ed50104dc27ab1e12edd97e61fb21dd36e0d@sha256:9b7d36f4fcf77aade5919fd1f734a65ee39ad9508f499a8b026d0c0b461ff199",
-							"vnd.docker.reference.digest": "sha256:d841af61827b29b3efa46f5363e8f2e972b379cc0463c319e8f320d9f0c8eb0c",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:135a18b20a3761c4cf1087788008ed50104dc27ab1e12edd97e61fb21dd36e0d@sha256:8233870a44a190ea42a1123c0c01ea67eba7eb7173f2a851c3122c49f19926ff"
-				}
-			},
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
+			"img": "oisupport/staging-amd64:b4db794f6867878cf7a25876850698eb91961a83e6835c938824ae89a5e0b387",
+			"resolved": null,
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
 			"arch": "amd64",
 			"parents": {
 				"buildpack-deps:trixie": "sha256:0766bfc10a5b87c895c6f675bb8dd09067821b4de144b047a6d029e0c366ecac"
@@ -870063,17 +869629,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
-			"reproducibleGitChecksum": "1e9d1cd4839167acdc3bc59f1759a10c852c59e10580123378e984d5ea631ae6",
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
+			"reproducibleGitChecksum": "4a49648b0d588725b7b5376f1d550309615c271e780e8aafee482acec072b5bd",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -870117,56 +869683,12 @@
 			}
 		}
 	},
-	"2fbe9a3f2f47d2de2fce4af5f3084826ddfd5e5cb7d554c97fea33d0903cfa95": {
-		"buildId": "2fbe9a3f2f47d2de2fce4af5f3084826ddfd5e5cb7d554c97fea33d0903cfa95",
+	"3c04f76db82e1dd301ed92e3fe400cdb20e765bc4f097ec144545f95f526ab22": {
+		"buildId": "3c04f76db82e1dd301ed92e3fe400cdb20e765bc4f097ec144545f95f526ab22",
 		"build": {
-			"img": "oisupport/staging-arm32v7:2fbe9a3f2f47d2de2fce4af5f3084826ddfd5e5cb7d554c97fea33d0903cfa95",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:b7b36d9c91d3e59fc553b19dabe8b444eb30d47e6cfa01bd4a33d8fe57c4b773",
-						"size": 1936,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm32v7",
-							"org.opencontainers.image.base.digest": "sha256:319142d03dc5f5a119eedbb8fed819ea128342ff86e27e68662f994157a21b35",
-							"org.opencontainers.image.base.name": "buildpack-deps:trixie",
-							"org.opencontainers.image.created": "2026-10-28T05:48:20Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:2fbe9a3f2f47d2de2fce4af5f3084826ddfd5e5cb7d554c97fea33d0903cfa95@sha256:b7b36d9c91d3e59fc553b19dabe8b444eb30d47e6cfa01bd4a33d8fe57c4b773",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-trixie"
-						},
-						"platform": {
-							"architecture": "arm",
-							"os": "linux",
-							"variant": "v7"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:edec14341745bb44eb7a1774a991d8050f1cf48fb39af607889c4403ea70034b",
-						"size": 842,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm32v7",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:2fbe9a3f2f47d2de2fce4af5f3084826ddfd5e5cb7d554c97fea33d0903cfa95@sha256:edec14341745bb44eb7a1774a991d8050f1cf48fb39af607889c4403ea70034b",
-							"vnd.docker.reference.digest": "sha256:b7b36d9c91d3e59fc553b19dabe8b444eb30d47e6cfa01bd4a33d8fe57c4b773",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:2fbe9a3f2f47d2de2fce4af5f3084826ddfd5e5cb7d554c97fea33d0903cfa95@sha256:d046e6c960269c419ed9d24481f4509a49931a9c3fa0453c107c7d839db542d4"
-				}
-			},
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
+			"img": "oisupport/staging-arm32v7:3c04f76db82e1dd301ed92e3fe400cdb20e765bc4f097ec144545f95f526ab22",
+			"resolved": null,
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
 			"arch": "arm32v7",
 			"parents": {
 				"buildpack-deps:trixie": "sha256:319142d03dc5f5a119eedbb8fed819ea128342ff86e27e68662f994157a21b35"
@@ -870220,17 +869742,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
-			"reproducibleGitChecksum": "1e9d1cd4839167acdc3bc59f1759a10c852c59e10580123378e984d5ea631ae6",
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
+			"reproducibleGitChecksum": "4a49648b0d588725b7b5376f1d550309615c271e780e8aafee482acec072b5bd",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -870275,56 +869797,12 @@
 			}
 		}
 	},
-	"a1f91a48d282674b4e162d94cd6f4a7a6d1b46df8991e0388f3ec1be5d47b46d": {
-		"buildId": "a1f91a48d282674b4e162d94cd6f4a7a6d1b46df8991e0388f3ec1be5d47b46d",
+	"d43e4fe9728b7816f6d7956a173b62bedc3cd6379a19ff00274aa7e37110b153": {
+		"buildId": "d43e4fe9728b7816f6d7956a173b62bedc3cd6379a19ff00274aa7e37110b153",
 		"build": {
-			"img": "oisupport/staging-arm64v8:a1f91a48d282674b4e162d94cd6f4a7a6d1b46df8991e0388f3ec1be5d47b46d",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:921d0846059e80eb1723e542a5090a76a245945511e4f59ea168e461febe3baf",
-						"size": 1936,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:e95290ae09bb6aff3a9bd67b687a38c450cc256f0779da2ed9926dde4167f483",
-							"org.opencontainers.image.base.name": "buildpack-deps:trixie",
-							"org.opencontainers.image.created": "2026-10-28T04:41:44Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:a1f91a48d282674b4e162d94cd6f4a7a6d1b46df8991e0388f3ec1be5d47b46d@sha256:921d0846059e80eb1723e542a5090a76a245945511e4f59ea168e461febe3baf",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-trixie"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:3be3591cde40a8b5956214f865f5492055480a99efb7e8aecce07bf5e887e4b4",
-						"size": 842,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:a1f91a48d282674b4e162d94cd6f4a7a6d1b46df8991e0388f3ec1be5d47b46d@sha256:3be3591cde40a8b5956214f865f5492055480a99efb7e8aecce07bf5e887e4b4",
-							"vnd.docker.reference.digest": "sha256:921d0846059e80eb1723e542a5090a76a245945511e4f59ea168e461febe3baf",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:a1f91a48d282674b4e162d94cd6f4a7a6d1b46df8991e0388f3ec1be5d47b46d@sha256:827880921b92f4e62d9aab35ffaf0b7ffd7312836090ee0636c6f2de53e7927e"
-				}
-			},
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
+			"img": "oisupport/staging-arm64v8:d43e4fe9728b7816f6d7956a173b62bedc3cd6379a19ff00274aa7e37110b153",
+			"resolved": null,
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
 			"arch": "arm64v8",
 			"parents": {
 				"buildpack-deps:trixie": "sha256:e95290ae09bb6aff3a9bd67b687a38c450cc256f0779da2ed9926dde4167f483"
@@ -870378,17 +869856,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
-			"reproducibleGitChecksum": "1e9d1cd4839167acdc3bc59f1759a10c852c59e10580123378e984d5ea631ae6",
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
+			"reproducibleGitChecksum": "4a49648b0d588725b7b5376f1d550309615c271e780e8aafee482acec072b5bd",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -870433,55 +869911,12 @@
 			}
 		}
 	},
-	"92e89af66c9f22b333e359f47368814a6da8222af4b005787f139ae81601e12b": {
-		"buildId": "92e89af66c9f22b333e359f47368814a6da8222af4b005787f139ae81601e12b",
+	"a918edaaa618931624980492dda3442dfc2a6878e272fa873778f15eac98341a": {
+		"buildId": "a918edaaa618931624980492dda3442dfc2a6878e272fa873778f15eac98341a",
 		"build": {
-			"img": "oisupport/staging-i386:92e89af66c9f22b333e359f47368814a6da8222af4b005787f139ae81601e12b",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:7204e90978c1c31a2605baf6aa91d9fb6d0427064c130e8903fad6996e96a87e",
-						"size": 1933,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "i386",
-							"org.opencontainers.image.base.digest": "sha256:6e47eed5e3bf6ae60493c3067d1a807726207e60684074cb605ca439b506764a",
-							"org.opencontainers.image.base.name": "buildpack-deps:trixie",
-							"org.opencontainers.image.created": "2026-10-28T04:39:59Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-i386:92e89af66c9f22b333e359f47368814a6da8222af4b005787f139ae81601e12b@sha256:7204e90978c1c31a2605baf6aa91d9fb6d0427064c130e8903fad6996e96a87e",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-trixie"
-						},
-						"platform": {
-							"architecture": "386",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:2c505e7b3522ef3a453a7722bac9aeb8a2f2785cb3364b3dc313995316ca6fe2",
-						"size": 842,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "i386",
-							"org.opencontainers.image.ref.name": "oisupport/staging-i386:92e89af66c9f22b333e359f47368814a6da8222af4b005787f139ae81601e12b@sha256:2c505e7b3522ef3a453a7722bac9aeb8a2f2785cb3364b3dc313995316ca6fe2",
-							"vnd.docker.reference.digest": "sha256:7204e90978c1c31a2605baf6aa91d9fb6d0427064c130e8903fad6996e96a87e",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-i386:92e89af66c9f22b333e359f47368814a6da8222af4b005787f139ae81601e12b@sha256:a3f0dd48119a4ed29991958060dbc6c23d99021d5ef56d167f4cd293b0ef8a1d"
-				}
-			},
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
+			"img": "oisupport/staging-i386:a918edaaa618931624980492dda3442dfc2a6878e272fa873778f15eac98341a",
+			"resolved": null,
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
 			"arch": "i386",
 			"parents": {
 				"buildpack-deps:trixie": "sha256:6e47eed5e3bf6ae60493c3067d1a807726207e60684074cb605ca439b506764a"
@@ -870534,17 +869969,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
-			"reproducibleGitChecksum": "1e9d1cd4839167acdc3bc59f1759a10c852c59e10580123378e984d5ea631ae6",
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
+			"reproducibleGitChecksum": "4a49648b0d588725b7b5376f1d550309615c271e780e8aafee482acec072b5bd",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -870588,55 +870023,12 @@
 			}
 		}
 	},
-	"00105862f1334f80ebb7940e122153da0507e53ba914976752de5de84e1ec331": {
-		"buildId": "00105862f1334f80ebb7940e122153da0507e53ba914976752de5de84e1ec331",
+	"5c1495692be7fa9431cdd06fc5ca1455a5e00ab09f2387000552fdceab8f5f47": {
+		"buildId": "5c1495692be7fa9431cdd06fc5ca1455a5e00ab09f2387000552fdceab8f5f47",
 		"build": {
-			"img": "oisupport/staging-ppc64le:00105862f1334f80ebb7940e122153da0507e53ba914976752de5de84e1ec331",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:967334e5fd73d1a82f8e21cfc8103bdb4165033064f2d623a0825316d876d4ab",
-						"size": 1936,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.base.digest": "sha256:56d57d338aa163f591411c5af881771c6b702a290f56ffaf2cbd5cf7b1d15437",
-							"org.opencontainers.image.base.name": "buildpack-deps:trixie",
-							"org.opencontainers.image.created": "2026-10-28T20:13:40Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:00105862f1334f80ebb7940e122153da0507e53ba914976752de5de84e1ec331@sha256:967334e5fd73d1a82f8e21cfc8103bdb4165033064f2d623a0825316d876d4ab",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-trixie"
-						},
-						"platform": {
-							"architecture": "ppc64le",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:cfdde423b15262685eb5ee34d10c72e39513daf9be3bf3d7fbf7f1a90e995746",
-						"size": 842,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:00105862f1334f80ebb7940e122153da0507e53ba914976752de5de84e1ec331@sha256:cfdde423b15262685eb5ee34d10c72e39513daf9be3bf3d7fbf7f1a90e995746",
-							"vnd.docker.reference.digest": "sha256:967334e5fd73d1a82f8e21cfc8103bdb4165033064f2d623a0825316d876d4ab",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:00105862f1334f80ebb7940e122153da0507e53ba914976752de5de84e1ec331@sha256:9423728149e935222a5ee1c62fc46199504b7fd24f0f55c98527d1a5e08aa358"
-				}
-			},
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
+			"img": "oisupport/staging-ppc64le:5c1495692be7fa9431cdd06fc5ca1455a5e00ab09f2387000552fdceab8f5f47",
+			"resolved": null,
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
 			"arch": "ppc64le",
 			"parents": {
 				"buildpack-deps:trixie": "sha256:56d57d338aa163f591411c5af881771c6b702a290f56ffaf2cbd5cf7b1d15437"
@@ -870689,17 +870081,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
-			"reproducibleGitChecksum": "1e9d1cd4839167acdc3bc59f1759a10c852c59e10580123378e984d5ea631ae6",
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
+			"reproducibleGitChecksum": "4a49648b0d588725b7b5376f1d550309615c271e780e8aafee482acec072b5bd",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -870743,55 +870135,12 @@
 			}
 		}
 	},
-	"09dc6d7122f28075fc7dc7cd444bc80367ba5cbcdc23be860120c187ccaa181c": {
-		"buildId": "09dc6d7122f28075fc7dc7cd444bc80367ba5cbcdc23be860120c187ccaa181c",
+	"e2c04f854a051a1c87ced2017dc0643f4bd112f32263a38c136a4182a8c062f1": {
+		"buildId": "e2c04f854a051a1c87ced2017dc0643f4bd112f32263a38c136a4182a8c062f1",
 		"build": {
-			"img": "oisupport/staging-s390x:09dc6d7122f28075fc7dc7cd444bc80367ba5cbcdc23be860120c187ccaa181c",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:8ce7f5e1abed3590c6ed2a477ff9eab4e8bd9dbe066e0ddd09a27ec65c5ce954",
-						"size": 1934,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "s390x",
-							"org.opencontainers.image.base.digest": "sha256:7fc8f94fa0b0e062382676c1bcb8c37b1b8e11e0b02031488de94d5f93957bcb",
-							"org.opencontainers.image.base.name": "buildpack-deps:trixie",
-							"org.opencontainers.image.created": "2026-10-28T18:01:26Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-s390x:09dc6d7122f28075fc7dc7cd444bc80367ba5cbcdc23be860120c187ccaa181c@sha256:8ce7f5e1abed3590c6ed2a477ff9eab4e8bd9dbe066e0ddd09a27ec65c5ce954",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-trixie"
-						},
-						"platform": {
-							"architecture": "s390x",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:da9522ece798ee8d915a488ff752feb1808feda2cbe2281992e6ca3f74e51fd5",
-						"size": 842,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "s390x",
-							"org.opencontainers.image.ref.name": "oisupport/staging-s390x:09dc6d7122f28075fc7dc7cd444bc80367ba5cbcdc23be860120c187ccaa181c@sha256:da9522ece798ee8d915a488ff752feb1808feda2cbe2281992e6ca3f74e51fd5",
-							"vnd.docker.reference.digest": "sha256:8ce7f5e1abed3590c6ed2a477ff9eab4e8bd9dbe066e0ddd09a27ec65c5ce954",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-s390x:09dc6d7122f28075fc7dc7cd444bc80367ba5cbcdc23be860120c187ccaa181c@sha256:0e0aef8191eff93938d9a08cfe4fbfa19ab2ea530c125f6e4f7e00fdb7a934aa"
-				}
-			},
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
+			"img": "oisupport/staging-s390x:e2c04f854a051a1c87ced2017dc0643f4bd112f32263a38c136a4182a8c062f1",
+			"resolved": null,
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
 			"arch": "s390x",
 			"parents": {
 				"buildpack-deps:trixie": "sha256:7fc8f94fa0b0e062382676c1bcb8c37b1b8e11e0b02031488de94d5f93957bcb"
@@ -870844,17 +870193,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "a157acf7a9b92f81ff3a788e79ba95609a7da10efd43689dd3f33c80c76280a2",
-			"reproducibleGitChecksum": "1e9d1cd4839167acdc3bc59f1759a10c852c59e10580123378e984d5ea631ae6",
+			"sourceId": "9f9d5c57a833eb1369038e39f2a960376400e911953d2e89823f453fd0d30820",
+			"reproducibleGitChecksum": "4a49648b0d588725b7b5376f1d550309615c271e780e8aafee482acec072b5bd",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -870898,55 +870247,12 @@
 			}
 		}
 	},
-	"5c2c5882a8b82ac8f58a5336245fe9dda53f29a94b8a9c897e7c4043ea7034e1": {
-		"buildId": "5c2c5882a8b82ac8f58a5336245fe9dda53f29a94b8a9c897e7c4043ea7034e1",
+	"1ff4270824359c167c377f26e9a4eb12fc7e2aebeefe423bfddee1fefaaca42f": {
+		"buildId": "1ff4270824359c167c377f26e9a4eb12fc7e2aebeefe423bfddee1fefaaca42f",
 		"build": {
-			"img": "oisupport/staging-amd64:5c2c5882a8b82ac8f58a5336245fe9dda53f29a94b8a9c897e7c4043ea7034e1",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:11b01282eaac5ba4ab9fc503d3a4a4d5db601597ce85479ab8c29495be660670",
-						"size": 1361,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:1e1a22175fbf1b32157ddaf0219e1db4e5401fab2b94ed285add64d18587cd2d",
-							"org.opencontainers.image.base.name": "debian:trixie-slim",
-							"org.opencontainers.image.created": "2026-10-28T02:05:21Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5c2c5882a8b82ac8f58a5336245fe9dda53f29a94b8a9c897e7c4043ea7034e1@sha256:11b01282eaac5ba4ab9fc503d3a4a4d5db601597ce85479ab8c29495be660670",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-trixie"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:53765c2771852c311a89e45900322f268aa4ca0deb5bc07490ea82837e5e285c",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5c2c5882a8b82ac8f58a5336245fe9dda53f29a94b8a9c897e7c4043ea7034e1@sha256:53765c2771852c311a89e45900322f268aa4ca0deb5bc07490ea82837e5e285c",
-							"vnd.docker.reference.digest": "sha256:11b01282eaac5ba4ab9fc503d3a4a4d5db601597ce85479ab8c29495be660670",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:5c2c5882a8b82ac8f58a5336245fe9dda53f29a94b8a9c897e7c4043ea7034e1@sha256:01d0d59ec83409ec096e420e7957a3b1d385961bac3aa8e39f68782cc36eaf73"
-				}
-			},
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
+			"img": "oisupport/staging-amd64:1ff4270824359c167c377f26e9a4eb12fc7e2aebeefe423bfddee1fefaaca42f",
+			"resolved": null,
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
 			"arch": "amd64",
 			"parents": {
 				"debian:trixie-slim": "sha256:1e1a22175fbf1b32157ddaf0219e1db4e5401fab2b94ed285add64d18587cd2d"
@@ -870998,17 +870304,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
-			"reproducibleGitChecksum": "b627e44f4766b74653dbf3e857ea0e68e3949179c557bfbd2b47d8b63127697f",
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
+			"reproducibleGitChecksum": "69c6309bc78268c201dd286c091b50f1c3d1a19237246db3bd31e5b3392a69df",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -871052,56 +870358,12 @@
 			}
 		}
 	},
-	"4c556c3fb7d17a551bd914f98358c0e418706e0763314f37cb473dbd18bc053f": {
-		"buildId": "4c556c3fb7d17a551bd914f98358c0e418706e0763314f37cb473dbd18bc053f",
+	"c644d03f97b5fb3133511bcdbe2c191ceb5176fab3a527f7da4d84ea5864b246": {
+		"buildId": "c644d03f97b5fb3133511bcdbe2c191ceb5176fab3a527f7da4d84ea5864b246",
 		"build": {
-			"img": "oisupport/staging-arm32v7:4c556c3fb7d17a551bd914f98358c0e418706e0763314f37cb473dbd18bc053f",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:cbf5059e51a21c6ac9c68e2a52927c3294d231078f1c1fc18eec656fac880de4",
-						"size": 1363,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm32v7",
-							"org.opencontainers.image.base.digest": "sha256:93c6fe8a2a6593f29349f2bcf2ea7976833c59a6dd215a6808f274b2fa5e67c9",
-							"org.opencontainers.image.base.name": "debian:trixie-slim",
-							"org.opencontainers.image.created": "2026-10-28T02:56:44Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:4c556c3fb7d17a551bd914f98358c0e418706e0763314f37cb473dbd18bc053f@sha256:cbf5059e51a21c6ac9c68e2a52927c3294d231078f1c1fc18eec656fac880de4",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-trixie"
-						},
-						"platform": {
-							"architecture": "arm",
-							"os": "linux",
-							"variant": "v7"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:9190554383b4faf7ad8c53c910883f00afbc6b05be2ee661fa1d6a3091fec816",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm32v7",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:4c556c3fb7d17a551bd914f98358c0e418706e0763314f37cb473dbd18bc053f@sha256:9190554383b4faf7ad8c53c910883f00afbc6b05be2ee661fa1d6a3091fec816",
-							"vnd.docker.reference.digest": "sha256:cbf5059e51a21c6ac9c68e2a52927c3294d231078f1c1fc18eec656fac880de4",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm32v7:4c556c3fb7d17a551bd914f98358c0e418706e0763314f37cb473dbd18bc053f@sha256:ce9606ed32b071d62bb7665156519421e7177e75ceb7f0c2a925982986c2cef5"
-				}
-			},
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
+			"img": "oisupport/staging-arm32v7:c644d03f97b5fb3133511bcdbe2c191ceb5176fab3a527f7da4d84ea5864b246",
+			"resolved": null,
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
 			"arch": "arm32v7",
 			"parents": {
 				"debian:trixie-slim": "sha256:93c6fe8a2a6593f29349f2bcf2ea7976833c59a6dd215a6808f274b2fa5e67c9"
@@ -871154,17 +870416,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
-			"reproducibleGitChecksum": "b627e44f4766b74653dbf3e857ea0e68e3949179c557bfbd2b47d8b63127697f",
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
+			"reproducibleGitChecksum": "69c6309bc78268c201dd286c091b50f1c3d1a19237246db3bd31e5b3392a69df",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -871209,56 +870471,12 @@
 			}
 		}
 	},
-	"acbd2c232b2ecffc448129e86cde4ad08940b74db8a545a5ae261e0ea2cf156e": {
-		"buildId": "acbd2c232b2ecffc448129e86cde4ad08940b74db8a545a5ae261e0ea2cf156e",
+	"ed34dc24a6c1e6f733858df82d13fc0c3f9d9de936fbc89a773ecf278af7208d": {
+		"buildId": "ed34dc24a6c1e6f733858df82d13fc0c3f9d9de936fbc89a773ecf278af7208d",
 		"build": {
-			"img": "oisupport/staging-arm64v8:acbd2c232b2ecffc448129e86cde4ad08940b74db8a545a5ae261e0ea2cf156e",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:752ae176b955dd798d28b8f91a9f8cc3aed3d050fa3eb36fa877d61608d6867f",
-						"size": 1363,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:1470991b497d26788dc4d6f438bf5690c6ba0d499235d237e55f4b43caea7a75",
-							"org.opencontainers.image.base.name": "debian:trixie-slim",
-							"org.opencontainers.image.created": "2026-10-28T02:10:49Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:acbd2c232b2ecffc448129e86cde4ad08940b74db8a545a5ae261e0ea2cf156e@sha256:752ae176b955dd798d28b8f91a9f8cc3aed3d050fa3eb36fa877d61608d6867f",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-trixie"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:5499d6ac3a2ba3f56da18bc15e102ffc0f911c699d3a36bffdbd71ae0d2d168e",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:acbd2c232b2ecffc448129e86cde4ad08940b74db8a545a5ae261e0ea2cf156e@sha256:5499d6ac3a2ba3f56da18bc15e102ffc0f911c699d3a36bffdbd71ae0d2d168e",
-							"vnd.docker.reference.digest": "sha256:752ae176b955dd798d28b8f91a9f8cc3aed3d050fa3eb36fa877d61608d6867f",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:acbd2c232b2ecffc448129e86cde4ad08940b74db8a545a5ae261e0ea2cf156e@sha256:9800538564f6018df86526f03a85478f83b97548878f216bdbb219515f76d056"
-				}
-			},
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
+			"img": "oisupport/staging-arm64v8:ed34dc24a6c1e6f733858df82d13fc0c3f9d9de936fbc89a773ecf278af7208d",
+			"resolved": null,
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
 			"arch": "arm64v8",
 			"parents": {
 				"debian:trixie-slim": "sha256:1470991b497d26788dc4d6f438bf5690c6ba0d499235d237e55f4b43caea7a75"
@@ -871311,17 +870529,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
-			"reproducibleGitChecksum": "b627e44f4766b74653dbf3e857ea0e68e3949179c557bfbd2b47d8b63127697f",
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
+			"reproducibleGitChecksum": "69c6309bc78268c201dd286c091b50f1c3d1a19237246db3bd31e5b3392a69df",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -871366,55 +870584,12 @@
 			}
 		}
 	},
-	"22071a9797d0a92af18c6099e4ae7e1c7d566bfc48477261dca749f994eea4e3": {
-		"buildId": "22071a9797d0a92af18c6099e4ae7e1c7d566bfc48477261dca749f994eea4e3",
+	"e9d3f69c7ee4c12b59671dda1f0b64648e3cc775cb69ad7dc3ac5b2d66137d6f": {
+		"buildId": "e9d3f69c7ee4c12b59671dda1f0b64648e3cc775cb69ad7dc3ac5b2d66137d6f",
 		"build": {
-			"img": "oisupport/staging-i386:22071a9797d0a92af18c6099e4ae7e1c7d566bfc48477261dca749f994eea4e3",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:bb4657caef43c1f629538783c34f1087bd30192f6d321de6c137f208bb019ad4",
-						"size": 1360,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "i386",
-							"org.opencontainers.image.base.digest": "sha256:54d4782cc10f415e6c52ed7873f2b7d6498a888555ee66e45ae688efc3dda6ee",
-							"org.opencontainers.image.base.name": "debian:trixie-slim",
-							"org.opencontainers.image.created": "2026-10-28T02:10:23Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-i386:22071a9797d0a92af18c6099e4ae7e1c7d566bfc48477261dca749f994eea4e3@sha256:bb4657caef43c1f629538783c34f1087bd30192f6d321de6c137f208bb019ad4",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-trixie"
-						},
-						"platform": {
-							"architecture": "386",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:b57bf39f6be09adc761fa5b7b352f300c11078264732565725b6979d25079a6c",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "i386",
-							"org.opencontainers.image.ref.name": "oisupport/staging-i386:22071a9797d0a92af18c6099e4ae7e1c7d566bfc48477261dca749f994eea4e3@sha256:b57bf39f6be09adc761fa5b7b352f300c11078264732565725b6979d25079a6c",
-							"vnd.docker.reference.digest": "sha256:bb4657caef43c1f629538783c34f1087bd30192f6d321de6c137f208bb019ad4",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-i386:22071a9797d0a92af18c6099e4ae7e1c7d566bfc48477261dca749f994eea4e3@sha256:ba7be4c03c822c3c505c92065993fb5c9f8ff1552f97abbd7975b9fd77706c2f"
-				}
-			},
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
+			"img": "oisupport/staging-i386:e9d3f69c7ee4c12b59671dda1f0b64648e3cc775cb69ad7dc3ac5b2d66137d6f",
+			"resolved": null,
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
 			"arch": "i386",
 			"parents": {
 				"debian:trixie-slim": "sha256:54d4782cc10f415e6c52ed7873f2b7d6498a888555ee66e45ae688efc3dda6ee"
@@ -871466,17 +870641,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
-			"reproducibleGitChecksum": "b627e44f4766b74653dbf3e857ea0e68e3949179c557bfbd2b47d8b63127697f",
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
+			"reproducibleGitChecksum": "69c6309bc78268c201dd286c091b50f1c3d1a19237246db3bd31e5b3392a69df",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -871520,55 +870695,12 @@
 			}
 		}
 	},
-	"67609f755cb2bbbd3aca54affbcd81b61897d12d412b87b4d707c360c77e2687": {
-		"buildId": "67609f755cb2bbbd3aca54affbcd81b61897d12d412b87b4d707c360c77e2687",
+	"2372973414f6885588dc374532bd02c31c54c283ebb1149863dc88ec7ac81c42": {
+		"buildId": "2372973414f6885588dc374532bd02c31c54c283ebb1149863dc88ec7ac81c42",
 		"build": {
-			"img": "oisupport/staging-ppc64le:67609f755cb2bbbd3aca54affbcd81b61897d12d412b87b4d707c360c77e2687",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:b9629284918a7f487c7f4a96a89f472ecec6e4c64579663ac17810610cb61417",
-						"size": 1363,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.base.digest": "sha256:36d7020e168d5a85d1b1391efed8f4aa655cb01b750310f5021bd63836d36d27",
-							"org.opencontainers.image.base.name": "debian:trixie-slim",
-							"org.opencontainers.image.created": "2026-10-28T09:17:46Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:67609f755cb2bbbd3aca54affbcd81b61897d12d412b87b4d707c360c77e2687@sha256:b9629284918a7f487c7f4a96a89f472ecec6e4c64579663ac17810610cb61417",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-trixie"
-						},
-						"platform": {
-							"architecture": "ppc64le",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:aa8c4376e84f3a7869aa3a0f83f6ab0702c57a8f5f66118b5c31412e6905a0a6",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:67609f755cb2bbbd3aca54affbcd81b61897d12d412b87b4d707c360c77e2687@sha256:aa8c4376e84f3a7869aa3a0f83f6ab0702c57a8f5f66118b5c31412e6905a0a6",
-							"vnd.docker.reference.digest": "sha256:b9629284918a7f487c7f4a96a89f472ecec6e4c64579663ac17810610cb61417",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:67609f755cb2bbbd3aca54affbcd81b61897d12d412b87b4d707c360c77e2687@sha256:7ea2e8f8c3b76b5556b9618dc01d4d54399e378840db584f0e1b2e90403efc2b"
-				}
-			},
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
+			"img": "oisupport/staging-ppc64le:2372973414f6885588dc374532bd02c31c54c283ebb1149863dc88ec7ac81c42",
+			"resolved": null,
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
 			"arch": "ppc64le",
 			"parents": {
 				"debian:trixie-slim": "sha256:36d7020e168d5a85d1b1391efed8f4aa655cb01b750310f5021bd63836d36d27"
@@ -871620,17 +870752,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
-			"reproducibleGitChecksum": "b627e44f4766b74653dbf3e857ea0e68e3949179c557bfbd2b47d8b63127697f",
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
+			"reproducibleGitChecksum": "69c6309bc78268c201dd286c091b50f1c3d1a19237246db3bd31e5b3392a69df",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -871674,55 +870806,12 @@
 			}
 		}
 	},
-	"032e154ec2a626bda56546d9c37037c09588facf5f52338f3bcf6afdd4afd5ae": {
-		"buildId": "032e154ec2a626bda56546d9c37037c09588facf5f52338f3bcf6afdd4afd5ae",
+	"19c09667b95e5925853057f3177f18cbcdf92bc5c3448a585fa9e45fc93d9f3b": {
+		"buildId": "19c09667b95e5925853057f3177f18cbcdf92bc5c3448a585fa9e45fc93d9f3b",
 		"build": {
-			"img": "oisupport/staging-riscv64:032e154ec2a626bda56546d9c37037c09588facf5f52338f3bcf6afdd4afd5ae",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:15c7a412be35a962000d66378c6ae5e7794a9a2afb4e6dd265d93f9ea4f92840",
-						"size": 1363,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "riscv64",
-							"org.opencontainers.image.base.digest": "sha256:d2603372b44ea7e55fcc4b2f5fd667024d6f298af5af7c7474f639321570c5cc",
-							"org.opencontainers.image.base.name": "debian:trixie-slim",
-							"org.opencontainers.image.created": "2026-11-02T20:34:47Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:032e154ec2a626bda56546d9c37037c09588facf5f52338f3bcf6afdd4afd5ae@sha256:15c7a412be35a962000d66378c6ae5e7794a9a2afb4e6dd265d93f9ea4f92840",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-trixie"
-						},
-						"platform": {
-							"architecture": "riscv64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:5a02b2c413b2f56d0bccc199c3da38d0fa6294f40f171dfcef081faf6a9ccb21",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "riscv64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:032e154ec2a626bda56546d9c37037c09588facf5f52338f3bcf6afdd4afd5ae@sha256:5a02b2c413b2f56d0bccc199c3da38d0fa6294f40f171dfcef081faf6a9ccb21",
-							"vnd.docker.reference.digest": "sha256:15c7a412be35a962000d66378c6ae5e7794a9a2afb4e6dd265d93f9ea4f92840",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:032e154ec2a626bda56546d9c37037c09588facf5f52338f3bcf6afdd4afd5ae@sha256:3adebda4a7760c7e2829cb9e81c62fa1bc77b31ee723eb22dcb7e328bc803ca9"
-				}
-			},
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
+			"img": "oisupport/staging-riscv64:19c09667b95e5925853057f3177f18cbcdf92bc5c3448a585fa9e45fc93d9f3b",
+			"resolved": null,
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
 			"arch": "riscv64",
 			"parents": {
 				"debian:trixie-slim": "sha256:d2603372b44ea7e55fcc4b2f5fd667024d6f298af5af7c7474f639321570c5cc"
@@ -871774,17 +870863,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
-			"reproducibleGitChecksum": "b627e44f4766b74653dbf3e857ea0e68e3949179c557bfbd2b47d8b63127697f",
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
+			"reproducibleGitChecksum": "69c6309bc78268c201dd286c091b50f1c3d1a19237246db3bd31e5b3392a69df",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -871828,55 +870917,12 @@
 			}
 		}
 	},
-	"bd84d2404cc76ab9b0f380e080044e23faa5cfa8e6713de551b482fbbfca0b7f": {
-		"buildId": "bd84d2404cc76ab9b0f380e080044e23faa5cfa8e6713de551b482fbbfca0b7f",
+	"b9f87b45de87fc59bfaab9b71f5e7558f9ae92f875e5db887ef709d66868d41f": {
+		"buildId": "b9f87b45de87fc59bfaab9b71f5e7558f9ae92f875e5db887ef709d66868d41f",
 		"build": {
-			"img": "oisupport/staging-s390x:bd84d2404cc76ab9b0f380e080044e23faa5cfa8e6713de551b482fbbfca0b7f",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:5bf2eb782bb44558d86824eee50c2d0bb02850e3d34ae9b0f1996dafb771ddbc",
-						"size": 1361,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "s390x",
-							"org.opencontainers.image.base.digest": "sha256:b52f4830ac1fe39bb67a84fd3f71aa45ad7a151085cb2cc770dd5b789ba6669b",
-							"org.opencontainers.image.base.name": "debian:trixie-slim",
-							"org.opencontainers.image.created": "2026-10-28T03:51:59Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-s390x:bd84d2404cc76ab9b0f380e080044e23faa5cfa8e6713de551b482fbbfca0b7f@sha256:5bf2eb782bb44558d86824eee50c2d0bb02850e3d34ae9b0f1996dafb771ddbc",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/trixie/slim",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-slim-trixie"
-						},
-						"platform": {
-							"architecture": "s390x",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:02f2c571945bf29a9abee8e7d33002df7845e281ee0177ff403709e7e1a9574a",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "s390x",
-							"org.opencontainers.image.ref.name": "oisupport/staging-s390x:bd84d2404cc76ab9b0f380e080044e23faa5cfa8e6713de551b482fbbfca0b7f@sha256:02f2c571945bf29a9abee8e7d33002df7845e281ee0177ff403709e7e1a9574a",
-							"vnd.docker.reference.digest": "sha256:5bf2eb782bb44558d86824eee50c2d0bb02850e3d34ae9b0f1996dafb771ddbc",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-s390x:bd84d2404cc76ab9b0f380e080044e23faa5cfa8e6713de551b482fbbfca0b7f@sha256:c7f6b47855332f93d383408b35c000ea7de21d0c06006818322feb6f2ce55991"
-				}
-			},
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
+			"img": "oisupport/staging-s390x:b9f87b45de87fc59bfaab9b71f5e7558f9ae92f875e5db887ef709d66868d41f",
+			"resolved": null,
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
 			"arch": "s390x",
 			"parents": {
 				"debian:trixie-slim": "sha256:b52f4830ac1fe39bb67a84fd3f71aa45ad7a151085cb2cc770dd5b789ba6669b"
@@ -871928,17 +870974,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "cbbe843b12b8ba8efd76a7c895449b8ab3a0106dea729d3adc18928a0ecdb7cc",
-			"reproducibleGitChecksum": "b627e44f4766b74653dbf3e857ea0e68e3949179c557bfbd2b47d8b63127697f",
+			"sourceId": "7d6c193d4982ef8e7f29ee3881a58a2fb58ae8ecdc9be0aa37337c9164e43b26",
+			"reproducibleGitChecksum": "69c6309bc78268c201dd286c091b50f1c3d1a19237246db3bd31e5b3392a69df",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/trixie/slim",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -871982,55 +871028,12 @@
 			}
 		}
 	},
-	"c49dc4a1f1623992925080f019d25b2e18827810e38f3aa28d12ad0fc8e4bcec": {
-		"buildId": "c49dc4a1f1623992925080f019d25b2e18827810e38f3aa28d12ad0fc8e4bcec",
+	"d35004b894334e0dfc99034d6949e17737a3f5cdd14a6edee115512d66aad110": {
+		"buildId": "d35004b894334e0dfc99034d6949e17737a3f5cdd14a6edee115512d66aad110",
 		"build": {
-			"img": "oisupport/staging-amd64:c49dc4a1f1623992925080f019d25b2e18827810e38f3aa28d12ad0fc8e4bcec",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:ba93103d9e7507979218be8303628b8c44e4c9f3456e8fa7fac9ac7b5988c6cf",
-						"size": 1544,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:f765c92e59538d44c6946f8073bdbffd2e8d5916981161faed1b30aa0ef0c2c5",
-							"org.opencontainers.image.base.name": "alpine:3.21",
-							"org.opencontainers.image.created": "2026-10-21T21:51:13Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:c49dc4a1f1623992925080f019d25b2e18827810e38f3aa28d12ad0fc8e4bcec@sha256:ba93103d9e7507979218be8303628b8c44e4c9f3456e8fa7fac9ac7b5988c6cf",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.21",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.21"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:08774d75819e2eeb1772becb399dc8e0b7c7dde53fbb58e64aa74e79b9ae123c",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:c49dc4a1f1623992925080f019d25b2e18827810e38f3aa28d12ad0fc8e4bcec@sha256:08774d75819e2eeb1772becb399dc8e0b7c7dde53fbb58e64aa74e79b9ae123c",
-							"vnd.docker.reference.digest": "sha256:ba93103d9e7507979218be8303628b8c44e4c9f3456e8fa7fac9ac7b5988c6cf",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:c49dc4a1f1623992925080f019d25b2e18827810e38f3aa28d12ad0fc8e4bcec@sha256:770b7c84185948eb049e06df7cf3bfc670f51bfb13aa8162d44841517f9730f3"
-				}
-			},
-			"sourceId": "fad439d631cc37515e572a698c8dea482042e64559942b821812f62fae838f2b",
+			"img": "oisupport/staging-amd64:d35004b894334e0dfc99034d6949e17737a3f5cdd14a6edee115512d66aad110",
+			"resolved": null,
+			"sourceId": "687ba96134671d4ca29684e9dd6d4347eaa271753ab30d76b746f5a2b1789242",
 			"arch": "amd64",
 			"parents": {
 				"alpine:3.21": "sha256:f765c92e59538d44c6946f8073bdbffd2e8d5916981161faed1b30aa0ef0c2c5"
@@ -872082,17 +871085,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "fad439d631cc37515e572a698c8dea482042e64559942b821812f62fae838f2b",
-			"reproducibleGitChecksum": "427354cd8437cd1272610fa5c22439f5f8d09e53f43305f03c2d97dc32f8f709",
+			"sourceId": "687ba96134671d4ca29684e9dd6d4347eaa271753ab30d76b746f5a2b1789242",
+			"reproducibleGitChecksum": "1d4fad9a09b8a412fdaa829bc5605af354d9facbc2e3b9b62f87dc296c7079bd",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.21",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -872128,56 +871131,12 @@
 			}
 		}
 	},
-	"e752b1b7a2f631f9d278bd3cc834edcb114b5902faf0bff0d5f15dde8905e5bd": {
-		"buildId": "e752b1b7a2f631f9d278bd3cc834edcb114b5902faf0bff0d5f15dde8905e5bd",
+	"58d8d4d91d4823039eb43d510abd0fa80ce88d0e5b15b0cee51e317236d29e39": {
+		"buildId": "58d8d4d91d4823039eb43d510abd0fa80ce88d0e5b15b0cee51e317236d29e39",
 		"build": {
-			"img": "oisupport/staging-arm64v8:e752b1b7a2f631f9d278bd3cc834edcb114b5902faf0bff0d5f15dde8905e5bd",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:950949d4e3ac72fc3a01ab9f30745a09a6a2a0096b1b0301e3b6ef111bb5ff45",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:70dd3b2d5dfe6d5c0f8e750ab65fed2c3511d01c80aaaeb86476aad27a0ca985",
-							"org.opencontainers.image.base.name": "alpine:3.21",
-							"org.opencontainers.image.created": "2026-10-21T22:42:55Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:e752b1b7a2f631f9d278bd3cc834edcb114b5902faf0bff0d5f15dde8905e5bd@sha256:950949d4e3ac72fc3a01ab9f30745a09a6a2a0096b1b0301e3b6ef111bb5ff45",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.21",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.21"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:38fabd2bfe9ccf22687e76c48e04c2b37dea25ecec15f8af4283cafbbdb1e4e4",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:e752b1b7a2f631f9d278bd3cc834edcb114b5902faf0bff0d5f15dde8905e5bd@sha256:38fabd2bfe9ccf22687e76c48e04c2b37dea25ecec15f8af4283cafbbdb1e4e4",
-							"vnd.docker.reference.digest": "sha256:950949d4e3ac72fc3a01ab9f30745a09a6a2a0096b1b0301e3b6ef111bb5ff45",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:e752b1b7a2f631f9d278bd3cc834edcb114b5902faf0bff0d5f15dde8905e5bd@sha256:1692d1fd9a6d2e504c745961e2fba354d72a1b770a5496e316991dac3bc01d50"
-				}
-			},
-			"sourceId": "fad439d631cc37515e572a698c8dea482042e64559942b821812f62fae838f2b",
+			"img": "oisupport/staging-arm64v8:58d8d4d91d4823039eb43d510abd0fa80ce88d0e5b15b0cee51e317236d29e39",
+			"resolved": null,
+			"sourceId": "687ba96134671d4ca29684e9dd6d4347eaa271753ab30d76b746f5a2b1789242",
 			"arch": "arm64v8",
 			"parents": {
 				"alpine:3.21": "sha256:70dd3b2d5dfe6d5c0f8e750ab65fed2c3511d01c80aaaeb86476aad27a0ca985"
@@ -872230,17 +871189,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "fad439d631cc37515e572a698c8dea482042e64559942b821812f62fae838f2b",
-			"reproducibleGitChecksum": "427354cd8437cd1272610fa5c22439f5f8d09e53f43305f03c2d97dc32f8f709",
+			"sourceId": "687ba96134671d4ca29684e9dd6d4347eaa271753ab30d76b746f5a2b1789242",
+			"reproducibleGitChecksum": "1d4fad9a09b8a412fdaa829bc5605af354d9facbc2e3b9b62f87dc296c7079bd",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.21",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -872277,55 +871236,12 @@
 			}
 		}
 	},
-	"d2ca88fef92b97cca027340716e378a1508ee4ae8427db405212d943ca24ef85": {
-		"buildId": "d2ca88fef92b97cca027340716e378a1508ee4ae8427db405212d943ca24ef85",
+	"6155af6aa0dab7813cdd71fb92a3fb83356c6c3c7242711d1d2c9948db663a85": {
+		"buildId": "6155af6aa0dab7813cdd71fb92a3fb83356c6c3c7242711d1d2c9948db663a85",
 		"build": {
-			"img": "oisupport/staging-ppc64le:d2ca88fef92b97cca027340716e378a1508ee4ae8427db405212d943ca24ef85",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:7d77bad99380ee95f3ef60d239d98895d5762a3f26c44c58f716cd97e4530511",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.base.digest": "sha256:4b811e6afcd396a150eb47b5da6d470d8f855938921cf005e036a8fe5f3b9e38",
-							"org.opencontainers.image.base.name": "alpine:3.21",
-							"org.opencontainers.image.created": "2026-10-22T15:22:24Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d2ca88fef92b97cca027340716e378a1508ee4ae8427db405212d943ca24ef85@sha256:7d77bad99380ee95f3ef60d239d98895d5762a3f26c44c58f716cd97e4530511",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.21",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.21"
-						},
-						"platform": {
-							"architecture": "ppc64le",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:799e8bb245cdd8c00655fff52ed19f4fbb6d61e0b62369481c7428888049991f",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d2ca88fef92b97cca027340716e378a1508ee4ae8427db405212d943ca24ef85@sha256:799e8bb245cdd8c00655fff52ed19f4fbb6d61e0b62369481c7428888049991f",
-							"vnd.docker.reference.digest": "sha256:7d77bad99380ee95f3ef60d239d98895d5762a3f26c44c58f716cd97e4530511",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d2ca88fef92b97cca027340716e378a1508ee4ae8427db405212d943ca24ef85@sha256:3c580999edb78c03d57f6ae0f7f439e90cf176778548fd13265f0c6bbfb76a97"
-				}
-			},
-			"sourceId": "fad439d631cc37515e572a698c8dea482042e64559942b821812f62fae838f2b",
+			"img": "oisupport/staging-ppc64le:6155af6aa0dab7813cdd71fb92a3fb83356c6c3c7242711d1d2c9948db663a85",
+			"resolved": null,
+			"sourceId": "687ba96134671d4ca29684e9dd6d4347eaa271753ab30d76b746f5a2b1789242",
 			"arch": "ppc64le",
 			"parents": {
 				"alpine:3.21": "sha256:4b811e6afcd396a150eb47b5da6d470d8f855938921cf005e036a8fe5f3b9e38"
@@ -872377,17 +871293,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "fad439d631cc37515e572a698c8dea482042e64559942b821812f62fae838f2b",
-			"reproducibleGitChecksum": "427354cd8437cd1272610fa5c22439f5f8d09e53f43305f03c2d97dc32f8f709",
+			"sourceId": "687ba96134671d4ca29684e9dd6d4347eaa271753ab30d76b746f5a2b1789242",
+			"reproducibleGitChecksum": "1d4fad9a09b8a412fdaa829bc5605af354d9facbc2e3b9b62f87dc296c7079bd",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.21",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -872423,55 +871339,12 @@
 			}
 		}
 	},
-	"c4beb499a689c94d1d5e34717fdb60bf8b92336230da65684b5091cdac41e4ed": {
-		"buildId": "c4beb499a689c94d1d5e34717fdb60bf8b92336230da65684b5091cdac41e4ed",
+	"7b8cc044566f65e86c8cb1bff38359cafd384b2da1f6c567c8cc9016d261b94f": {
+		"buildId": "7b8cc044566f65e86c8cb1bff38359cafd384b2da1f6c567c8cc9016d261b94f",
 		"build": {
-			"img": "oisupport/staging-riscv64:c4beb499a689c94d1d5e34717fdb60bf8b92336230da65684b5091cdac41e4ed",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:59a29644423be0c36162bdc13c29f3e73d58f21553a1259df3e08e89688c2334",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "riscv64",
-							"org.opencontainers.image.base.digest": "sha256:26b8c25b92ed1d93bf1f153467beb1f81a486b42f433ebee89cf77392060a3fe",
-							"org.opencontainers.image.base.name": "alpine:3.21",
-							"org.opencontainers.image.created": "2026-10-30T08:04:02Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c4beb499a689c94d1d5e34717fdb60bf8b92336230da65684b5091cdac41e4ed@sha256:59a29644423be0c36162bdc13c29f3e73d58f21553a1259df3e08e89688c2334",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.21",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.21"
-						},
-						"platform": {
-							"architecture": "riscv64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:e9050e97955e40245c5bdab2991494259c0ddd9083e415d9cd15bf3496cf0e48",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "riscv64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c4beb499a689c94d1d5e34717fdb60bf8b92336230da65684b5091cdac41e4ed@sha256:e9050e97955e40245c5bdab2991494259c0ddd9083e415d9cd15bf3496cf0e48",
-							"vnd.docker.reference.digest": "sha256:59a29644423be0c36162bdc13c29f3e73d58f21553a1259df3e08e89688c2334",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:c4beb499a689c94d1d5e34717fdb60bf8b92336230da65684b5091cdac41e4ed@sha256:b35a421351c74c1898ff45447b07bddf9ecae77966da7528eefc5d7d4c8f83a7"
-				}
-			},
-			"sourceId": "fad439d631cc37515e572a698c8dea482042e64559942b821812f62fae838f2b",
+			"img": "oisupport/staging-riscv64:7b8cc044566f65e86c8cb1bff38359cafd384b2da1f6c567c8cc9016d261b94f",
+			"resolved": null,
+			"sourceId": "687ba96134671d4ca29684e9dd6d4347eaa271753ab30d76b746f5a2b1789242",
 			"arch": "riscv64",
 			"parents": {
 				"alpine:3.21": "sha256:26b8c25b92ed1d93bf1f153467beb1f81a486b42f433ebee89cf77392060a3fe"
@@ -872523,17 +871396,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "fad439d631cc37515e572a698c8dea482042e64559942b821812f62fae838f2b",
-			"reproducibleGitChecksum": "427354cd8437cd1272610fa5c22439f5f8d09e53f43305f03c2d97dc32f8f709",
+			"sourceId": "687ba96134671d4ca29684e9dd6d4347eaa271753ab30d76b746f5a2b1789242",
+			"reproducibleGitChecksum": "1d4fad9a09b8a412fdaa829bc5605af354d9facbc2e3b9b62f87dc296c7079bd",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.21",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -872569,55 +871442,12 @@
 			}
 		}
 	},
-	"6adea26bbef1ddc81eef901c69212db83311e2198f909d775da210bb7a3902c1": {
-		"buildId": "6adea26bbef1ddc81eef901c69212db83311e2198f909d775da210bb7a3902c1",
+	"f3ab68afdb9e404ceba60943aee6b0c69111e0524402f35426c6a474035c2234": {
+		"buildId": "f3ab68afdb9e404ceba60943aee6b0c69111e0524402f35426c6a474035c2234",
 		"build": {
-			"img": "oisupport/staging-amd64:6adea26bbef1ddc81eef901c69212db83311e2198f909d775da210bb7a3902c1",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:6d199c50733bbd8f001c28042caeae57707725bc7843596a15ea476c300a0cbb",
-						"size": 1544,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:dc92f017beea8e7f43263073d717f7bc011228c95d5312e440deb4d035bb4eec",
-							"org.opencontainers.image.base.name": "alpine:3.22",
-							"org.opencontainers.image.created": "2026-10-21T21:51:20Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:6adea26bbef1ddc81eef901c69212db83311e2198f909d775da210bb7a3902c1@sha256:6d199c50733bbd8f001c28042caeae57707725bc7843596a15ea476c300a0cbb",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.22",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.22"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:8bbac4cc5b90e962cd8b4b155d66540d5b394513cc748e711c296dcc2d9c7670",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:6adea26bbef1ddc81eef901c69212db83311e2198f909d775da210bb7a3902c1@sha256:8bbac4cc5b90e962cd8b4b155d66540d5b394513cc748e711c296dcc2d9c7670",
-							"vnd.docker.reference.digest": "sha256:6d199c50733bbd8f001c28042caeae57707725bc7843596a15ea476c300a0cbb",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:6adea26bbef1ddc81eef901c69212db83311e2198f909d775da210bb7a3902c1@sha256:b230100605ca2d9ead087f271955a8ee739d06c8e1ddde52a75ac64275fe126e"
-				}
-			},
-			"sourceId": "594a37dffa83f745c5e76212abec11f9d8a1c507a1b45c4b5bc40ff542b78802",
+			"img": "oisupport/staging-amd64:f3ab68afdb9e404ceba60943aee6b0c69111e0524402f35426c6a474035c2234",
+			"resolved": null,
+			"sourceId": "aaded40344bc51168c5c208f05b2def55420177d221daa3145418c4a40a35b1e",
 			"arch": "amd64",
 			"parents": {
 				"alpine:3.22": "sha256:dc92f017beea8e7f43263073d717f7bc011228c95d5312e440deb4d035bb4eec"
@@ -872669,17 +871499,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "594a37dffa83f745c5e76212abec11f9d8a1c507a1b45c4b5bc40ff542b78802",
-			"reproducibleGitChecksum": "3102d817ef9a39e88e5a5b09a5c5209c597be54d2bcdf3de2fe63a98ffe70dbb",
+			"sourceId": "aaded40344bc51168c5c208f05b2def55420177d221daa3145418c4a40a35b1e",
+			"reproducibleGitChecksum": "9be24f04faf2f1fa5fa4248e1fd399c4be00d6a59f21db481ca50984ea9d7730",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.22",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -872715,56 +871545,12 @@
 			}
 		}
 	},
-	"0f647ea8f1a24398a2158a28d943eda94121fce9a7c8f8b1cd0c45ba24afb038": {
-		"buildId": "0f647ea8f1a24398a2158a28d943eda94121fce9a7c8f8b1cd0c45ba24afb038",
+	"c9f05512b18f323901469bb144b2b114540da2d8e7077546c1774a36e5208768": {
+		"buildId": "c9f05512b18f323901469bb144b2b114540da2d8e7077546c1774a36e5208768",
 		"build": {
-			"img": "oisupport/staging-arm64v8:0f647ea8f1a24398a2158a28d943eda94121fce9a7c8f8b1cd0c45ba24afb038",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:39ef6a64ff29bd51e2db1bb6e3608f62803f6a13d3492dcdd2eb758d8e0b201b",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:3e07a4f627d12468155eb812785e10f2453a447c346872b47788a62437366764",
-							"org.opencontainers.image.base.name": "alpine:3.22",
-							"org.opencontainers.image.created": "2026-10-21T22:43:36Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:0f647ea8f1a24398a2158a28d943eda94121fce9a7c8f8b1cd0c45ba24afb038@sha256:39ef6a64ff29bd51e2db1bb6e3608f62803f6a13d3492dcdd2eb758d8e0b201b",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.22",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.22"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:2e14bd652373baa1009451a770e3dcd46885795011e0ba60e97a06df985b7b43",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:0f647ea8f1a24398a2158a28d943eda94121fce9a7c8f8b1cd0c45ba24afb038@sha256:2e14bd652373baa1009451a770e3dcd46885795011e0ba60e97a06df985b7b43",
-							"vnd.docker.reference.digest": "sha256:39ef6a64ff29bd51e2db1bb6e3608f62803f6a13d3492dcdd2eb758d8e0b201b",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:0f647ea8f1a24398a2158a28d943eda94121fce9a7c8f8b1cd0c45ba24afb038@sha256:b08bd6957399b386040952cd0583e6f35f1a4612eea78fb835b56c13e4fcb59d"
-				}
-			},
-			"sourceId": "594a37dffa83f745c5e76212abec11f9d8a1c507a1b45c4b5bc40ff542b78802",
+			"img": "oisupport/staging-arm64v8:c9f05512b18f323901469bb144b2b114540da2d8e7077546c1774a36e5208768",
+			"resolved": null,
+			"sourceId": "aaded40344bc51168c5c208f05b2def55420177d221daa3145418c4a40a35b1e",
 			"arch": "arm64v8",
 			"parents": {
 				"alpine:3.22": "sha256:3e07a4f627d12468155eb812785e10f2453a447c346872b47788a62437366764"
@@ -872817,17 +871603,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "594a37dffa83f745c5e76212abec11f9d8a1c507a1b45c4b5bc40ff542b78802",
-			"reproducibleGitChecksum": "3102d817ef9a39e88e5a5b09a5c5209c597be54d2bcdf3de2fe63a98ffe70dbb",
+			"sourceId": "aaded40344bc51168c5c208f05b2def55420177d221daa3145418c4a40a35b1e",
+			"reproducibleGitChecksum": "9be24f04faf2f1fa5fa4248e1fd399c4be00d6a59f21db481ca50984ea9d7730",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.22",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -872864,55 +871650,12 @@
 			}
 		}
 	},
-	"c487e384f06e69988de71c9f84496ec8882cbb5091d0c11d2d95342377d0a7af": {
-		"buildId": "c487e384f06e69988de71c9f84496ec8882cbb5091d0c11d2d95342377d0a7af",
+	"9cedbc1dfb17b330d3bb6f7ecf1d7aa9f33df7d394bc31449d89e49b21e71c07": {
+		"buildId": "9cedbc1dfb17b330d3bb6f7ecf1d7aa9f33df7d394bc31449d89e49b21e71c07",
 		"build": {
-			"img": "oisupport/staging-ppc64le:c487e384f06e69988de71c9f84496ec8882cbb5091d0c11d2d95342377d0a7af",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:e9e981870b33d752bb38072909dd019065c9aa2f06bcd911300b499d74d9f37e",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.base.digest": "sha256:380029807118f811bdc84dcea1ee5e9c76d5c978ac7a21ac5a1c2ab104335655",
-							"org.opencontainers.image.base.name": "alpine:3.22",
-							"org.opencontainers.image.created": "2026-10-22T15:22:56Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:c487e384f06e69988de71c9f84496ec8882cbb5091d0c11d2d95342377d0a7af@sha256:e9e981870b33d752bb38072909dd019065c9aa2f06bcd911300b499d74d9f37e",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.22",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.22"
-						},
-						"platform": {
-							"architecture": "ppc64le",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:7f6cbdb75556542f0228be811844651fdf95e49dc04c013144b195845aff524b",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:c487e384f06e69988de71c9f84496ec8882cbb5091d0c11d2d95342377d0a7af@sha256:7f6cbdb75556542f0228be811844651fdf95e49dc04c013144b195845aff524b",
-							"vnd.docker.reference.digest": "sha256:e9e981870b33d752bb38072909dd019065c9aa2f06bcd911300b499d74d9f37e",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:c487e384f06e69988de71c9f84496ec8882cbb5091d0c11d2d95342377d0a7af@sha256:cbfba2f545e4a43848920e19ee3c394c43aeef35521c7ce0707f98a82745dbd1"
-				}
-			},
-			"sourceId": "594a37dffa83f745c5e76212abec11f9d8a1c507a1b45c4b5bc40ff542b78802",
+			"img": "oisupport/staging-ppc64le:9cedbc1dfb17b330d3bb6f7ecf1d7aa9f33df7d394bc31449d89e49b21e71c07",
+			"resolved": null,
+			"sourceId": "aaded40344bc51168c5c208f05b2def55420177d221daa3145418c4a40a35b1e",
 			"arch": "ppc64le",
 			"parents": {
 				"alpine:3.22": "sha256:380029807118f811bdc84dcea1ee5e9c76d5c978ac7a21ac5a1c2ab104335655"
@@ -872964,17 +871707,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "594a37dffa83f745c5e76212abec11f9d8a1c507a1b45c4b5bc40ff542b78802",
-			"reproducibleGitChecksum": "3102d817ef9a39e88e5a5b09a5c5209c597be54d2bcdf3de2fe63a98ffe70dbb",
+			"sourceId": "aaded40344bc51168c5c208f05b2def55420177d221daa3145418c4a40a35b1e",
+			"reproducibleGitChecksum": "9be24f04faf2f1fa5fa4248e1fd399c4be00d6a59f21db481ca50984ea9d7730",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.22",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -873010,55 +871753,12 @@
 			}
 		}
 	},
-	"77d999a7003195e5fd50a7642ad137f5d41ce99895581fdb5bfcb03b7a1b6a0b": {
-		"buildId": "77d999a7003195e5fd50a7642ad137f5d41ce99895581fdb5bfcb03b7a1b6a0b",
+	"ad46ddc85aaaa169ed384eef16615c28c5ef70b3d4fda31e9de0d3b1a36ed0ae": {
+		"buildId": "ad46ddc85aaaa169ed384eef16615c28c5ef70b3d4fda31e9de0d3b1a36ed0ae",
 		"build": {
-			"img": "oisupport/staging-riscv64:77d999a7003195e5fd50a7642ad137f5d41ce99895581fdb5bfcb03b7a1b6a0b",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:a3c1abe018c4a41bbd55b8db0f33e160b31ad1249b12b9e3bb6d61131f29e33d",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "riscv64",
-							"org.opencontainers.image.base.digest": "sha256:f1741b288dd710ea85e722f65dbb33d476eb965b7ec94062606352ee9624e557",
-							"org.opencontainers.image.base.name": "alpine:3.22",
-							"org.opencontainers.image.created": "2026-10-30T08:15:01Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:77d999a7003195e5fd50a7642ad137f5d41ce99895581fdb5bfcb03b7a1b6a0b@sha256:a3c1abe018c4a41bbd55b8db0f33e160b31ad1249b12b9e3bb6d61131f29e33d",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.22",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.22"
-						},
-						"platform": {
-							"architecture": "riscv64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:b4f2e6d06025c8f637948aca7a6f5a03858e0a4aef61bf5e654ce996ce323187",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "riscv64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:77d999a7003195e5fd50a7642ad137f5d41ce99895581fdb5bfcb03b7a1b6a0b@sha256:b4f2e6d06025c8f637948aca7a6f5a03858e0a4aef61bf5e654ce996ce323187",
-							"vnd.docker.reference.digest": "sha256:a3c1abe018c4a41bbd55b8db0f33e160b31ad1249b12b9e3bb6d61131f29e33d",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:77d999a7003195e5fd50a7642ad137f5d41ce99895581fdb5bfcb03b7a1b6a0b@sha256:c5e57cbd27e872fe50fb771238ee9fb310bfe88e3ab82e57cf0917d43ee93ebe"
-				}
-			},
-			"sourceId": "594a37dffa83f745c5e76212abec11f9d8a1c507a1b45c4b5bc40ff542b78802",
+			"img": "oisupport/staging-riscv64:ad46ddc85aaaa169ed384eef16615c28c5ef70b3d4fda31e9de0d3b1a36ed0ae",
+			"resolved": null,
+			"sourceId": "aaded40344bc51168c5c208f05b2def55420177d221daa3145418c4a40a35b1e",
 			"arch": "riscv64",
 			"parents": {
 				"alpine:3.22": "sha256:f1741b288dd710ea85e722f65dbb33d476eb965b7ec94062606352ee9624e557"
@@ -873110,17 +871810,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "594a37dffa83f745c5e76212abec11f9d8a1c507a1b45c4b5bc40ff542b78802",
-			"reproducibleGitChecksum": "3102d817ef9a39e88e5a5b09a5c5209c597be54d2bcdf3de2fe63a98ffe70dbb",
+			"sourceId": "aaded40344bc51168c5c208f05b2def55420177d221daa3145418c4a40a35b1e",
+			"reproducibleGitChecksum": "9be24f04faf2f1fa5fa4248e1fd399c4be00d6a59f21db481ca50984ea9d7730",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.22",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -873156,55 +871856,12 @@
 			}
 		}
 	},
-	"f33c7a3c50c60b9f3487918dec83fea1afb2348ad51cae50813a821886a9181d": {
-		"buildId": "f33c7a3c50c60b9f3487918dec83fea1afb2348ad51cae50813a821886a9181d",
+	"2d64b0f0d10bc1a668394d384dcf418b37b6f1f625f8b14f0ce3441cffc8d717": {
+		"buildId": "2d64b0f0d10bc1a668394d384dcf418b37b6f1f625f8b14f0ce3441cffc8d717",
 		"build": {
-			"img": "oisupport/staging-amd64:f33c7a3c50c60b9f3487918dec83fea1afb2348ad51cae50813a821886a9181d",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:1479334948f53a0db1d1c020ef7d28e35218194a4e66521f88272b92431710f8",
-						"size": 1544,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:3d67941fed5ae436b2bb9791cb3f50a252441c7706bbc5b4e738936df8ff8306",
-							"org.opencontainers.image.base.name": "alpine:3.23",
-							"org.opencontainers.image.created": "2026-10-21T21:51:38Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f33c7a3c50c60b9f3487918dec83fea1afb2348ad51cae50813a821886a9181d@sha256:1479334948f53a0db1d1c020ef7d28e35218194a4e66521f88272b92431710f8",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.23",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.23"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:8520125c88fa2f114e1bb3ccdff370d59576569346b7f9d5a710ee6939488c77",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f33c7a3c50c60b9f3487918dec83fea1afb2348ad51cae50813a821886a9181d@sha256:8520125c88fa2f114e1bb3ccdff370d59576569346b7f9d5a710ee6939488c77",
-							"vnd.docker.reference.digest": "sha256:1479334948f53a0db1d1c020ef7d28e35218194a4e66521f88272b92431710f8",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f33c7a3c50c60b9f3487918dec83fea1afb2348ad51cae50813a821886a9181d@sha256:54d87dcd6b372a280e090fcfc8e82fa4b3406184fee8488f080bc085cfaba106"
-				}
-			},
-			"sourceId": "306d23aa7f7b776e4e26b16446853a73986c43166a73ff44bc9fee1b49b6ff3b",
+			"img": "oisupport/staging-amd64:2d64b0f0d10bc1a668394d384dcf418b37b6f1f625f8b14f0ce3441cffc8d717",
+			"resolved": null,
+			"sourceId": "95b96218a3ff838604d5388570d8296ecd5593187e0e1ceedb9279296e40ffe1",
 			"arch": "amd64",
 			"parents": {
 				"alpine:3.23": "sha256:3d67941fed5ae436b2bb9791cb3f50a252441c7706bbc5b4e738936df8ff8306"
@@ -873256,17 +871913,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "306d23aa7f7b776e4e26b16446853a73986c43166a73ff44bc9fee1b49b6ff3b",
-			"reproducibleGitChecksum": "257387b08264c2af070b648c9640db2ca224c4f6db5d92754fec2b1a084ebd48",
+			"sourceId": "95b96218a3ff838604d5388570d8296ecd5593187e0e1ceedb9279296e40ffe1",
+			"reproducibleGitChecksum": "ee9e99fd6e497cfbe4b6ba989d77b0d7c015949a058041f9cfcb4a5e5753a90d",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.23",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -873302,56 +871959,12 @@
 			}
 		}
 	},
-	"9781c932e9dcb471811bff9d670f429fa2e0f89429b8efa7214be08a18a5cfb4": {
-		"buildId": "9781c932e9dcb471811bff9d670f429fa2e0f89429b8efa7214be08a18a5cfb4",
+	"9be13840626d504a15b6accbdc3484342ef2174b5537e06ae3e796fef14b4350": {
+		"buildId": "9be13840626d504a15b6accbdc3484342ef2174b5537e06ae3e796fef14b4350",
 		"build": {
-			"img": "oisupport/staging-arm64v8:9781c932e9dcb471811bff9d670f429fa2e0f89429b8efa7214be08a18a5cfb4",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:4712422c348f1a457ece99ad4c3a64305460494daea88da8b7495505b431230d",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:8793abc479381bafd16c9d538b01c5a8dd7eef6aa10a737f2ad828ac73cb80e9",
-							"org.opencontainers.image.base.name": "alpine:3.23",
-							"org.opencontainers.image.created": "2026-10-21T22:43:46Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:9781c932e9dcb471811bff9d670f429fa2e0f89429b8efa7214be08a18a5cfb4@sha256:4712422c348f1a457ece99ad4c3a64305460494daea88da8b7495505b431230d",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.23",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.23"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:8748716660fb36558cfca325bc8d79b77c09cdba0ea562fe9763e8983b5ab2d5",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:9781c932e9dcb471811bff9d670f429fa2e0f89429b8efa7214be08a18a5cfb4@sha256:8748716660fb36558cfca325bc8d79b77c09cdba0ea562fe9763e8983b5ab2d5",
-							"vnd.docker.reference.digest": "sha256:4712422c348f1a457ece99ad4c3a64305460494daea88da8b7495505b431230d",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:9781c932e9dcb471811bff9d670f429fa2e0f89429b8efa7214be08a18a5cfb4@sha256:cbdcd29edf585dc9d59070b69de941604d58a26e063e9d625230ad8f40b2d9a2"
-				}
-			},
-			"sourceId": "306d23aa7f7b776e4e26b16446853a73986c43166a73ff44bc9fee1b49b6ff3b",
+			"img": "oisupport/staging-arm64v8:9be13840626d504a15b6accbdc3484342ef2174b5537e06ae3e796fef14b4350",
+			"resolved": null,
+			"sourceId": "95b96218a3ff838604d5388570d8296ecd5593187e0e1ceedb9279296e40ffe1",
 			"arch": "arm64v8",
 			"parents": {
 				"alpine:3.23": "sha256:8793abc479381bafd16c9d538b01c5a8dd7eef6aa10a737f2ad828ac73cb80e9"
@@ -873404,17 +872017,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "306d23aa7f7b776e4e26b16446853a73986c43166a73ff44bc9fee1b49b6ff3b",
-			"reproducibleGitChecksum": "257387b08264c2af070b648c9640db2ca224c4f6db5d92754fec2b1a084ebd48",
+			"sourceId": "95b96218a3ff838604d5388570d8296ecd5593187e0e1ceedb9279296e40ffe1",
+			"reproducibleGitChecksum": "ee9e99fd6e497cfbe4b6ba989d77b0d7c015949a058041f9cfcb4a5e5753a90d",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.23",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -873451,55 +872064,12 @@
 			}
 		}
 	},
-	"bf88d7187896ee2233cad9f464192d14d1b3da85cd5ec299007bc83cf95f1837": {
-		"buildId": "bf88d7187896ee2233cad9f464192d14d1b3da85cd5ec299007bc83cf95f1837",
+	"30027fa4daf107220a10f1a7bcee78b17915c59d041dd512e3b99617125327de": {
+		"buildId": "30027fa4daf107220a10f1a7bcee78b17915c59d041dd512e3b99617125327de",
 		"build": {
-			"img": "oisupport/staging-ppc64le:bf88d7187896ee2233cad9f464192d14d1b3da85cd5ec299007bc83cf95f1837",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:e65abbbb72560d638ddb25e63620b3d5feb35f5d2b39a4df615d2e38b03a81e6",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.base.digest": "sha256:cc3ef1f3240a22b1ca85da8f019b288bdfbecac4b06ce7fe8146be26ec6954e0",
-							"org.opencontainers.image.base.name": "alpine:3.23",
-							"org.opencontainers.image.created": "2026-10-22T15:24:41Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:bf88d7187896ee2233cad9f464192d14d1b3da85cd5ec299007bc83cf95f1837@sha256:e65abbbb72560d638ddb25e63620b3d5feb35f5d2b39a4df615d2e38b03a81e6",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.23",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.23"
-						},
-						"platform": {
-							"architecture": "ppc64le",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:119bcf215b5bca9b6d108766edc04e3a6a261ae10080b19a4425e62ac31146ec",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:bf88d7187896ee2233cad9f464192d14d1b3da85cd5ec299007bc83cf95f1837@sha256:119bcf215b5bca9b6d108766edc04e3a6a261ae10080b19a4425e62ac31146ec",
-							"vnd.docker.reference.digest": "sha256:e65abbbb72560d638ddb25e63620b3d5feb35f5d2b39a4df615d2e38b03a81e6",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:bf88d7187896ee2233cad9f464192d14d1b3da85cd5ec299007bc83cf95f1837@sha256:66b4fc424834616660d113925131cc2fcef369b21b470937ea6e3bd0e776a1f9"
-				}
-			},
-			"sourceId": "306d23aa7f7b776e4e26b16446853a73986c43166a73ff44bc9fee1b49b6ff3b",
+			"img": "oisupport/staging-ppc64le:30027fa4daf107220a10f1a7bcee78b17915c59d041dd512e3b99617125327de",
+			"resolved": null,
+			"sourceId": "95b96218a3ff838604d5388570d8296ecd5593187e0e1ceedb9279296e40ffe1",
 			"arch": "ppc64le",
 			"parents": {
 				"alpine:3.23": "sha256:cc3ef1f3240a22b1ca85da8f019b288bdfbecac4b06ce7fe8146be26ec6954e0"
@@ -873551,17 +872121,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "306d23aa7f7b776e4e26b16446853a73986c43166a73ff44bc9fee1b49b6ff3b",
-			"reproducibleGitChecksum": "257387b08264c2af070b648c9640db2ca224c4f6db5d92754fec2b1a084ebd48",
+			"sourceId": "95b96218a3ff838604d5388570d8296ecd5593187e0e1ceedb9279296e40ffe1",
+			"reproducibleGitChecksum": "ee9e99fd6e497cfbe4b6ba989d77b0d7c015949a058041f9cfcb4a5e5753a90d",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.23",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -873597,55 +872167,12 @@
 			}
 		}
 	},
-	"2171f0ee7a285f58d7c6761d02bc0bb66beabdbeec799e85c656f20568061ff7": {
-		"buildId": "2171f0ee7a285f58d7c6761d02bc0bb66beabdbeec799e85c656f20568061ff7",
+	"9cc85b1240e7bfe4bc725be5f8897fce8ed9572f5c2dd826771d69bae7234bd9": {
+		"buildId": "9cc85b1240e7bfe4bc725be5f8897fce8ed9572f5c2dd826771d69bae7234bd9",
 		"build": {
-			"img": "oisupport/staging-riscv64:2171f0ee7a285f58d7c6761d02bc0bb66beabdbeec799e85c656f20568061ff7",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:7c5748ffc431f1338549135bfbbd3c63775362a78afeebe4f8a807b46b72957a",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "riscv64",
-							"org.opencontainers.image.base.digest": "sha256:1e12543f1917ce880153fe6ebc3494b3e139b33245e6b62d3d53cae6c0c9da96",
-							"org.opencontainers.image.base.name": "alpine:3.23",
-							"org.opencontainers.image.created": "2026-10-30T08:25:39Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:2171f0ee7a285f58d7c6761d02bc0bb66beabdbeec799e85c656f20568061ff7@sha256:7c5748ffc431f1338549135bfbbd3c63775362a78afeebe4f8a807b46b72957a",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.23",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.23"
-						},
-						"platform": {
-							"architecture": "riscv64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:e5f1c9c391e831959f9f27aafa9bf1ed9c06b877d6501339d4ae2fc6bf0b1080",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "riscv64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:2171f0ee7a285f58d7c6761d02bc0bb66beabdbeec799e85c656f20568061ff7@sha256:e5f1c9c391e831959f9f27aafa9bf1ed9c06b877d6501339d4ae2fc6bf0b1080",
-							"vnd.docker.reference.digest": "sha256:7c5748ffc431f1338549135bfbbd3c63775362a78afeebe4f8a807b46b72957a",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:2171f0ee7a285f58d7c6761d02bc0bb66beabdbeec799e85c656f20568061ff7@sha256:594d0341d03cb9b317349a14560b1de4b53f0afe38803f8ca921ec0ef0341b0f"
-				}
-			},
-			"sourceId": "306d23aa7f7b776e4e26b16446853a73986c43166a73ff44bc9fee1b49b6ff3b",
+			"img": "oisupport/staging-riscv64:9cc85b1240e7bfe4bc725be5f8897fce8ed9572f5c2dd826771d69bae7234bd9",
+			"resolved": null,
+			"sourceId": "95b96218a3ff838604d5388570d8296ecd5593187e0e1ceedb9279296e40ffe1",
 			"arch": "riscv64",
 			"parents": {
 				"alpine:3.23": "sha256:1e12543f1917ce880153fe6ebc3494b3e139b33245e6b62d3d53cae6c0c9da96"
@@ -873697,17 +872224,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "306d23aa7f7b776e4e26b16446853a73986c43166a73ff44bc9fee1b49b6ff3b",
-			"reproducibleGitChecksum": "257387b08264c2af070b648c9640db2ca224c4f6db5d92754fec2b1a084ebd48",
+			"sourceId": "95b96218a3ff838604d5388570d8296ecd5593187e0e1ceedb9279296e40ffe1",
+			"reproducibleGitChecksum": "ee9e99fd6e497cfbe4b6ba989d77b0d7c015949a058041f9cfcb4a5e5753a90d",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.23",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -873743,55 +872270,12 @@
 			}
 		}
 	},
-	"311e87b632c1641806ff9b439df01c97e4ea48a47594c5af5b65fd387ac300b0": {
-		"buildId": "311e87b632c1641806ff9b439df01c97e4ea48a47594c5af5b65fd387ac300b0",
+	"8231db53073e871428d3c71f166fc7af04e08dd84a7273160604dff493494189": {
+		"buildId": "8231db53073e871428d3c71f166fc7af04e08dd84a7273160604dff493494189",
 		"build": {
-			"img": "oisupport/staging-amd64:311e87b632c1641806ff9b439df01c97e4ea48a47594c5af5b65fd387ac300b0",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:e15c563b25397d4172f34ebe50b3715bb9509c59e537ff58d48902571387b881",
-						"size": 1544,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:c26612752c78b18faacd63c7d50f4592c2e7b0f25e0e20e82bd74e465c57ab0d",
-							"org.opencontainers.image.base.name": "alpine:3.24",
-							"org.opencontainers.image.created": "2026-10-21T23:02:08Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:311e87b632c1641806ff9b439df01c97e4ea48a47594c5af5b65fd387ac300b0@sha256:e15c563b25397d4172f34ebe50b3715bb9509c59e537ff58d48902571387b881",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.24",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.24"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:026dce2d8f9d5d6ce0784e20d88678d7bbab377fcc6609be00fbbb4398513f4e",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:311e87b632c1641806ff9b439df01c97e4ea48a47594c5af5b65fd387ac300b0@sha256:026dce2d8f9d5d6ce0784e20d88678d7bbab377fcc6609be00fbbb4398513f4e",
-							"vnd.docker.reference.digest": "sha256:e15c563b25397d4172f34ebe50b3715bb9509c59e537ff58d48902571387b881",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:311e87b632c1641806ff9b439df01c97e4ea48a47594c5af5b65fd387ac300b0@sha256:1b8a91f4af929ff0199115351c83f2533d7659cae6ece838c35adf57dafc7676"
-				}
-			},
-			"sourceId": "0dcccdff3d7e67655a9bd8bf77298746e1b2af14ef643e9cc7bb29163f2332dd",
+			"img": "oisupport/staging-amd64:8231db53073e871428d3c71f166fc7af04e08dd84a7273160604dff493494189",
+			"resolved": null,
+			"sourceId": "da349ddc0a0a9f437111dc5fe1b28753fa2a05fb461a209a3db064bb70fa896b",
 			"arch": "amd64",
 			"parents": {
 				"alpine:3.24": "sha256:c26612752c78b18faacd63c7d50f4592c2e7b0f25e0e20e82bd74e465c57ab0d"
@@ -873843,17 +872327,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "0dcccdff3d7e67655a9bd8bf77298746e1b2af14ef643e9cc7bb29163f2332dd",
-			"reproducibleGitChecksum": "2b48056b74d506b3ffddf625c64828a8c2a5342f1d44c1497ad3d16306bb93c6",
+			"sourceId": "da349ddc0a0a9f437111dc5fe1b28753fa2a05fb461a209a3db064bb70fa896b",
+			"reproducibleGitChecksum": "26243ec95dc1e98de748e390548e3c28b268dac8a310ca36db26ed64f1db0d4c",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.24",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -873897,56 +872381,12 @@
 			}
 		}
 	},
-	"5e7bd363caef02e20b97ba92dcbcbd6c9aceb8a2c149eb217729ef5caec5890b": {
-		"buildId": "5e7bd363caef02e20b97ba92dcbcbd6c9aceb8a2c149eb217729ef5caec5890b",
+	"1b0f47abde954c3aaf435ee6a6bb47e4de51c06ad5667b8001376ef03a51d183": {
+		"buildId": "1b0f47abde954c3aaf435ee6a6bb47e4de51c06ad5667b8001376ef03a51d183",
 		"build": {
-			"img": "oisupport/staging-arm64v8:5e7bd363caef02e20b97ba92dcbcbd6c9aceb8a2c149eb217729ef5caec5890b",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:0b2ef4b4ea95161640894b861d82c58a7ef14cc625b07cc923bfc23784d98561",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:e311ae748be7f56ae5cba304bc488f0786df68ee507513f654a5cc8597cffb42",
-							"org.opencontainers.image.base.name": "alpine:3.24",
-							"org.opencontainers.image.created": "2026-10-21T23:29:31Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5e7bd363caef02e20b97ba92dcbcbd6c9aceb8a2c149eb217729ef5caec5890b@sha256:0b2ef4b4ea95161640894b861d82c58a7ef14cc625b07cc923bfc23784d98561",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.24",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.24"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:7ec0884b2bfcfc6b7e7e56e22296a44e2ddbe0152f83cfaebaee0d3580d676f9",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5e7bd363caef02e20b97ba92dcbcbd6c9aceb8a2c149eb217729ef5caec5890b@sha256:7ec0884b2bfcfc6b7e7e56e22296a44e2ddbe0152f83cfaebaee0d3580d676f9",
-							"vnd.docker.reference.digest": "sha256:0b2ef4b4ea95161640894b861d82c58a7ef14cc625b07cc923bfc23784d98561",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:5e7bd363caef02e20b97ba92dcbcbd6c9aceb8a2c149eb217729ef5caec5890b@sha256:f652b28d17a1275271806be2add9e28269cd83266db44a1876231e9473d46d67"
-				}
-			},
-			"sourceId": "0dcccdff3d7e67655a9bd8bf77298746e1b2af14ef643e9cc7bb29163f2332dd",
+			"img": "oisupport/staging-arm64v8:1b0f47abde954c3aaf435ee6a6bb47e4de51c06ad5667b8001376ef03a51d183",
+			"resolved": null,
+			"sourceId": "da349ddc0a0a9f437111dc5fe1b28753fa2a05fb461a209a3db064bb70fa896b",
 			"arch": "arm64v8",
 			"parents": {
 				"alpine:3.24": "sha256:e311ae748be7f56ae5cba304bc488f0786df68ee507513f654a5cc8597cffb42"
@@ -873999,17 +872439,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "0dcccdff3d7e67655a9bd8bf77298746e1b2af14ef643e9cc7bb29163f2332dd",
-			"reproducibleGitChecksum": "2b48056b74d506b3ffddf625c64828a8c2a5342f1d44c1497ad3d16306bb93c6",
+			"sourceId": "da349ddc0a0a9f437111dc5fe1b28753fa2a05fb461a209a3db064bb70fa896b",
+			"reproducibleGitChecksum": "26243ec95dc1e98de748e390548e3c28b268dac8a310ca36db26ed64f1db0d4c",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.24",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -874054,55 +872494,12 @@
 			}
 		}
 	},
-	"19573f0c6c9af6c624c70fe70f7b37e96a4d959e6ed6305019051fa717fa0327": {
-		"buildId": "19573f0c6c9af6c624c70fe70f7b37e96a4d959e6ed6305019051fa717fa0327",
+	"8fc5c84d8f53f83d6f2369f9d1012bf2ed81230bd195157c669cf76063f3530b": {
+		"buildId": "8fc5c84d8f53f83d6f2369f9d1012bf2ed81230bd195157c669cf76063f3530b",
 		"build": {
-			"img": "oisupport/staging-ppc64le:19573f0c6c9af6c624c70fe70f7b37e96a4d959e6ed6305019051fa717fa0327",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:52766875a5df43548b523d45326189095b0b5f7bc07b1fac984d3a2a781934b8",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.base.digest": "sha256:8603c585662f0dcd519f4838a40ea3ef98542466848021ffd3c7b7979896362a",
-							"org.opencontainers.image.base.name": "alpine:3.24",
-							"org.opencontainers.image.created": "2026-10-22T15:25:44Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:19573f0c6c9af6c624c70fe70f7b37e96a4d959e6ed6305019051fa717fa0327@sha256:52766875a5df43548b523d45326189095b0b5f7bc07b1fac984d3a2a781934b8",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.24",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.24"
-						},
-						"platform": {
-							"architecture": "ppc64le",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:2ae8f2ff0f5568914e73cb3f5fc7804284eee3bfa19ae5ff2fecfef63ee8afa2",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:19573f0c6c9af6c624c70fe70f7b37e96a4d959e6ed6305019051fa717fa0327@sha256:2ae8f2ff0f5568914e73cb3f5fc7804284eee3bfa19ae5ff2fecfef63ee8afa2",
-							"vnd.docker.reference.digest": "sha256:52766875a5df43548b523d45326189095b0b5f7bc07b1fac984d3a2a781934b8",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:19573f0c6c9af6c624c70fe70f7b37e96a4d959e6ed6305019051fa717fa0327@sha256:5b8dad104f105fc503b6d00963aa6e69e54b9d88aceb6dd9821625d7690e4f7f"
-				}
-			},
-			"sourceId": "0dcccdff3d7e67655a9bd8bf77298746e1b2af14ef643e9cc7bb29163f2332dd",
+			"img": "oisupport/staging-ppc64le:8fc5c84d8f53f83d6f2369f9d1012bf2ed81230bd195157c669cf76063f3530b",
+			"resolved": null,
+			"sourceId": "da349ddc0a0a9f437111dc5fe1b28753fa2a05fb461a209a3db064bb70fa896b",
 			"arch": "ppc64le",
 			"parents": {
 				"alpine:3.24": "sha256:8603c585662f0dcd519f4838a40ea3ef98542466848021ffd3c7b7979896362a"
@@ -874154,17 +872551,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "0dcccdff3d7e67655a9bd8bf77298746e1b2af14ef643e9cc7bb29163f2332dd",
-			"reproducibleGitChecksum": "2b48056b74d506b3ffddf625c64828a8c2a5342f1d44c1497ad3d16306bb93c6",
+			"sourceId": "da349ddc0a0a9f437111dc5fe1b28753fa2a05fb461a209a3db064bb70fa896b",
+			"reproducibleGitChecksum": "26243ec95dc1e98de748e390548e3c28b268dac8a310ca36db26ed64f1db0d4c",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.24",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
@@ -874208,55 +872605,12 @@
 			}
 		}
 	},
-	"68553882c1adbe2fd53a8cfc0deec95576e9816baa0e2ae6d888ef9eb145f4cb": {
-		"buildId": "68553882c1adbe2fd53a8cfc0deec95576e9816baa0e2ae6d888ef9eb145f4cb",
+	"7d0dcd23c9b2c302dc89879530715a8a6bca43f17cb6a2c0c87bc458fca07efa": {
+		"buildId": "7d0dcd23c9b2c302dc89879530715a8a6bca43f17cb6a2c0c87bc458fca07efa",
 		"build": {
-			"img": "oisupport/staging-riscv64:68553882c1adbe2fd53a8cfc0deec95576e9816baa0e2ae6d888ef9eb145f4cb",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:f627954c4fbbfc8153d942c16223dfe7a984f904cfcd93eb987efc7c2c4f2076",
-						"size": 1546,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "riscv64",
-							"org.opencontainers.image.base.digest": "sha256:4451fbe20381b2a23da80f7a6f68f30f3ff0ff2f4a4a074505a52bd46423fb39",
-							"org.opencontainers.image.base.name": "alpine:3.24",
-							"org.opencontainers.image.created": "2026-10-30T08:36:25Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:68553882c1adbe2fd53a8cfc0deec95576e9816baa0e2ae6d888ef9eb145f4cb@sha256:f627954c4fbbfc8153d942c16223dfe7a984f904cfcd93eb987efc7c2c4f2076",
-							"org.opencontainers.image.revision": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
-							"org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust.git#de3b3171ec576fd91eb8e28d3d37fa117b135fcb:stable/alpine3.24",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rust",
-							"org.opencontainers.image.version": "1-alpine3.24"
-						},
-						"platform": {
-							"architecture": "riscv64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:45be1ef1cc93f9ab76c105490d98eaf4c92806da805532fa97de541e838e729b",
-						"size": 841,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "riscv64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:68553882c1adbe2fd53a8cfc0deec95576e9816baa0e2ae6d888ef9eb145f4cb@sha256:45be1ef1cc93f9ab76c105490d98eaf4c92806da805532fa97de541e838e729b",
-							"vnd.docker.reference.digest": "sha256:f627954c4fbbfc8153d942c16223dfe7a984f904cfcd93eb987efc7c2c4f2076",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:68553882c1adbe2fd53a8cfc0deec95576e9816baa0e2ae6d888ef9eb145f4cb@sha256:fb87994446eb8a0a396720a8edc3e8759cb3ea9ab5aa987efc6c4f0ffdbea070"
-				}
-			},
-			"sourceId": "0dcccdff3d7e67655a9bd8bf77298746e1b2af14ef643e9cc7bb29163f2332dd",
+			"img": "oisupport/staging-riscv64:7d0dcd23c9b2c302dc89879530715a8a6bca43f17cb6a2c0c87bc458fca07efa",
+			"resolved": null,
+			"sourceId": "da349ddc0a0a9f437111dc5fe1b28753fa2a05fb461a209a3db064bb70fa896b",
 			"arch": "riscv64",
 			"parents": {
 				"alpine:3.24": "sha256:4451fbe20381b2a23da80f7a6f68f30f3ff0ff2f4a4a074505a52bd46423fb39"
@@ -874308,17 +872662,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "0dcccdff3d7e67655a9bd8bf77298746e1b2af14ef643e9cc7bb29163f2332dd",
-			"reproducibleGitChecksum": "2b48056b74d506b3ffddf625c64828a8c2a5342f1d44c1497ad3d16306bb93c6",
+			"sourceId": "da349ddc0a0a9f437111dc5fe1b28753fa2a05fb461a209a3db064bb70fa896b",
+			"reproducibleGitChecksum": "26243ec95dc1e98de748e390548e3c28b268dac8a310ca36db26ed64f1db0d4c",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rust-lang/docker-rust.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "de3b3171ec576fd91eb8e28d3d37fa117b135fcb",
+					"GitCommit": "f6c59bee4a6e34a154c2122895ecd7833507f705",
 					"Directory": "stable/alpine3.24",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1792585447
+					"SOURCE_DATE_EPOCH": 1793734356
 				}
 			],
 			"arches": {
