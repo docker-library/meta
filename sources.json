@@ -64086,18 +64086,27 @@
 			}
 		}
 	},
-	"5de42432168e258950757c48627efdb2db29790fd51efd378e93b847916329a5": {
-		"sourceId": "5de42432168e258950757c48627efdb2db29790fd51efd378e93b847916329a5",
-		"reproducibleGitChecksum": "08d8e1f7125429caf134d63c6d8d772a23e8d221b4e1e59f7088165c71497423",
+	"b4376d387c1d813acca54b8c1b7285487ed8a9db8d38e6493d022e461a4d9327": {
+		"sourceId": "b4376d387c1d813acca54b8c1b7285487ed8a9db8d38e6493d022e461a4d9327",
+		"reproducibleGitChecksum": "53fc5451d32ca2b76a7d1fde8662ba927ba5406634c3b3ad5f3a7193142f15da",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/varnish/docker-varnish.git",
 				"GitFetch": "refs/heads/main",
-				"GitCommit": "e22ef74d6d17c811709290e58844caf90e34a3db",
+				"GitCommit": "c92a4a8c429093f26b6370e3e417e9bf5709426f",
 				"Directory": "fresh/debian",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1790194236
+				"SOURCE_DATE_EPOCH": 1793748641
+			},
+			{
+				"GitRepo": "https://github.com/varnish/docker-varnish.git",
+				"GitFetch": "refs/heads/main",
+				"GitCommit": "cef3cc6aef8841c9d104f8f9d94320933ec93146",
+				"Directory": "stable/debian",
+				"File": "Dockerfile",
+				"Builder": "",
+				"SOURCE_DATE_EPOCH": 1793750729
 			}
 		],
 		"arches": {
@@ -64108,7 +64117,8 @@
 					"varnish:9.1.0-2",
 					"varnish:9.1.0",
 					"varnish:9.1",
-					"varnish:9"
+					"varnish:9",
+					"varnish:stable"
 				],
 				"archTags": [
 					"amd64/varnish:fresh",
@@ -64116,7 +64126,8 @@
 					"amd64/varnish:9.1.0-2",
 					"amd64/varnish:9.1.0",
 					"amd64/varnish:9.1",
-					"amd64/varnish:9"
+					"amd64/varnish:9",
+					"amd64/varnish:stable"
 				],
 				"froms": [
 					"debian:trixie-slim"
@@ -64141,7 +64152,8 @@
 					"varnish:9.1.0-2",
 					"varnish:9.1.0",
 					"varnish:9.1",
-					"varnish:9"
+					"varnish:9",
+					"varnish:stable"
 				],
 				"archTags": [
 					"arm64v8/varnish:fresh",
@@ -64149,7 +64161,8 @@
 					"arm64v8/varnish:9.1.0-2",
 					"arm64v8/varnish:9.1.0",
 					"arm64v8/varnish:9.1",
-					"arm64v8/varnish:9"
+					"arm64v8/varnish:9",
+					"arm64v8/varnish:stable"
 				],
 				"froms": [
 					"debian:trixie-slim"
@@ -64240,86 +64253,6 @@
 				"parents": {
 					"debian:trixie-slim": {
 						"sourceId": "773b93c557dfffeab763a17bd97ef0135146d502cda9a86d6657c2e2e93ddec5",
-						"pin": null
-					}
-				}
-			}
-		}
-	},
-	"6059c295748496d74fcd030ff7dbe405b87375caa68349eb3acd7376a1e084fb": {
-		"sourceId": "6059c295748496d74fcd030ff7dbe405b87375caa68349eb3acd7376a1e084fb",
-		"reproducibleGitChecksum": "b7adcd010ef6391865df25f353fd3b703b9652a264e25eeea58d454166ebce7c",
-		"entries": [
-			{
-				"GitRepo": "https://github.com/varnish/docker-varnish.git",
-				"GitFetch": "refs/heads/main",
-				"GitCommit": "c9eabe6cdbfbf5f5c2ee9959f42d926cbcc234c1",
-				"Directory": "stable/debian",
-				"File": "Dockerfile",
-				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1779203866
-			}
-		],
-		"arches": {
-			"amd64": {
-				"tags": [
-					"varnish:stable",
-					"varnish:6.0.18-1",
-					"varnish:6.0.18",
-					"varnish:6.0",
-					"varnish:6"
-				],
-				"archTags": [
-					"amd64/varnish:stable",
-					"amd64/varnish:6.0.18-1",
-					"amd64/varnish:6.0.18",
-					"amd64/varnish:6.0",
-					"amd64/varnish:6"
-				],
-				"froms": [
-					"debian:bookworm-slim"
-				],
-				"lastStageFrom": "debian:bookworm-slim",
-				"platformString": "linux/amd64",
-				"platform": {
-					"architecture": "amd64",
-					"os": "linux"
-				},
-				"parents": {
-					"debian:bookworm-slim": {
-						"sourceId": "0556852f676f06c6e2987f91e8a62a444e81f8f32b46caa1371c84aaf698cf09",
-						"pin": null
-					}
-				}
-			},
-			"arm64v8": {
-				"tags": [
-					"varnish:stable",
-					"varnish:6.0.18-1",
-					"varnish:6.0.18",
-					"varnish:6.0",
-					"varnish:6"
-				],
-				"archTags": [
-					"arm64v8/varnish:stable",
-					"arm64v8/varnish:6.0.18-1",
-					"arm64v8/varnish:6.0.18",
-					"arm64v8/varnish:6.0",
-					"arm64v8/varnish:6"
-				],
-				"froms": [
-					"debian:bookworm-slim"
-				],
-				"lastStageFrom": "debian:bookworm-slim",
-				"platformString": "linux/arm64/v8",
-				"platform": {
-					"architecture": "arm64",
-					"os": "linux",
-					"variant": "v8"
-				},
-				"parents": {
-					"debian:bookworm-slim": {
-						"sourceId": "440fb3d96ddb5625418ba02998ae16050d66ecdfab2fe905c3561f884ed2c159",
 						"pin": null
 					}
 				}
