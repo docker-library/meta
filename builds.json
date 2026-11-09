@@ -22011,7 +22011,50 @@
 		"buildId": "3d76be34ec867c9631c4d69bb2128bbc1957cedec6c5f0292e9376e4af867e23",
 		"build": {
 			"img": "oisupport/staging-riscv64:3d76be34ec867c9631c4d69bb2128bbc1957cedec6c5f0292e9376e4af867e23",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:657fc46df72dbc73300c49bb9e7cf27315c6fb59a7ce93b7f6e58ce41a272dad",
+						"size": 1704,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:83dbecfdac58e324392811b60f0810be7f05f8ba16c8ab27fbd2fc71b7c3f680",
+							"org.opencontainers.image.base.name": "alpine:3.22",
+							"org.opencontainers.image.created": "2026-11-09T22:11:44Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:3d76be34ec867c9631c4d69bb2128bbc1957cedec6c5f0292e9376e4af867e23@sha256:657fc46df72dbc73300c49bb9e7cf27315c6fb59a7ce93b7f6e58ce41a272dad",
+							"org.opencontainers.image.revision": "77e400b36b508fd5927dafa9d2905ddc8935bf6e",
+							"org.opencontainers.image.source": "https://github.com/tianon/docker-bash.git#77e400b36b508fd5927dafa9d2905ddc8935bf6e:4.0",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/bash",
+							"org.opencontainers.image.version": "4.0.44"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:850bd62ceed92bd6a93e58853424e869e5b0cb31d56169b08e8822dec28295f9",
+						"size": 840,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:3d76be34ec867c9631c4d69bb2128bbc1957cedec6c5f0292e9376e4af867e23@sha256:850bd62ceed92bd6a93e58853424e869e5b0cb31d56169b08e8822dec28295f9",
+							"vnd.docker.reference.digest": "sha256:657fc46df72dbc73300c49bb9e7cf27315c6fb59a7ce93b7f6e58ce41a272dad",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:3d76be34ec867c9631c4d69bb2128bbc1957cedec6c5f0292e9376e4af867e23@sha256:f3929a72cbd8a2f9bbc9eb0724ee5d03d548f307cd5a82b45a12d3fb2a8d1c40"
+				}
+			},
 			"sourceId": "36011ac20f21e7d9a1d6affe31695398b882b584f86f30c524199d7cfd609f47",
 			"arch": "riscv64",
 			"parents": {
@@ -115192,81 +115235,39 @@
 			}
 		}
 	},
-	"0e649722c026a3d51a02ced85c05c675e32f6c0eb14daa7dc5f325c8f780ca51": {
-		"buildId": "0e649722c026a3d51a02ced85c05c675e32f6c0eb14daa7dc5f325c8f780ca51",
+	"a47312368dc1e6d1a2df56019bb1cbf4e603146507c5ef0d639c2f16b6c73ecc": {
+		"buildId": "a47312368dc1e6d1a2df56019bb1cbf4e603146507c5ef0d639c2f16b6c73ecc",
 		"build": {
-			"img": "oisupport/staging-amd64:0e649722c026a3d51a02ced85c05c675e32f6c0eb14daa7dc5f325c8f780ca51",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:1a1358b8e7db32123e8a20dd0e274331d5d9d1f8d9cae194a3969d623034d49f",
-						"size": 1021,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2026-11-02T20:16:55Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:0e649722c026a3d51a02ced85c05c675e32f6c0eb14daa7dc5f325c8f780ca51@sha256:1a1358b8e7db32123e8a20dd0e274331d5d9d1f8d9cae194a3969d623034d49f",
-							"org.opencontainers.image.revision": "e4f95f029e4f8e308d279de57fb89647d294b278",
-							"org.opencontainers.image.source": "https://github.com/vmware/photon-docker-image.git#e4f95f029e4f8e308d279de57fb89647d294b278:docker",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/photon",
-							"org.opencontainers.image.version": "4.0"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:02eeada12e25f77723177bfa38b3f908abfba86faff9b9752bb10fe8f559a7b8",
-						"size": 839,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:0e649722c026a3d51a02ced85c05c675e32f6c0eb14daa7dc5f325c8f780ca51@sha256:02eeada12e25f77723177bfa38b3f908abfba86faff9b9752bb10fe8f559a7b8",
-							"vnd.docker.reference.digest": "sha256:1a1358b8e7db32123e8a20dd0e274331d5d9d1f8d9cae194a3969d623034d49f",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:0e649722c026a3d51a02ced85c05c675e32f6c0eb14daa7dc5f325c8f780ca51@sha256:a73c12f3fddda384b7c4c31cbb2dbd388334a91b46a096d243e1f0654f0b1d7d"
-				}
-			},
-			"sourceId": "421beef7726db0b3f887dfab1d2c8a2904e7c84effee5c7d83ea3dce724aed78",
+			"img": "oisupport/staging-amd64:a47312368dc1e6d1a2df56019bb1cbf4e603146507c5ef0d639c2f16b6c73ecc",
+			"resolved": null,
+			"sourceId": "9530109db9e3a52d18aaeb43f6ab621734d9da0cfed5b16cf6099af5f8de7e38",
 			"arch": "amd64",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "421beef7726db0b3f887dfab1d2c8a2904e7c84effee5c7d83ea3dce724aed78",
-			"reproducibleGitChecksum": "146da5d578ecb3d3116ec70718b0fbe0c5d6156a7c25c3baaa2e35f123cdfbf2",
+			"sourceId": "9530109db9e3a52d18aaeb43f6ab621734d9da0cfed5b16cf6099af5f8de7e38",
+			"reproducibleGitChecksum": "1458aab5455a858e3f93bbcdc44b9c5449bb320b9a98c2b4418e043a9e98e19a",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/vmware/photon-docker-image.git",
-					"GitFetch": "refs/heads/x86_64/4.0-20261101",
-					"GitCommit": "e4f95f029e4f8e308d279de57fb89647d294b278",
+					"GitFetch": "refs/heads/x86_64/4.0-20261108",
+					"GitCommit": "b9e3adbfe48e610dc65f3c801f62760aaf3a25fe",
 					"Directory": "docker",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793529613
+					"SOURCE_DATE_EPOCH": 1794134377
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
 						"photon:4.0",
-						"photon:4.0-20261101"
+						"photon:4.0-20261108"
 					],
 					"archTags": [
 						"amd64/photon:4.0",
-						"amd64/photon:4.0-20261101"
+						"amd64/photon:4.0-20261108"
 					],
 					"froms": [
 						"scratch"
@@ -115287,82 +115288,39 @@
 			}
 		}
 	},
-	"252e5a66400da908887d9efdf956d84f4520622c887286ff90a1f0406ef054c0": {
-		"buildId": "252e5a66400da908887d9efdf956d84f4520622c887286ff90a1f0406ef054c0",
+	"bd4b241eaf61335cb7e71779d2081b94f2626a2a1928e8226622438fef23049c": {
+		"buildId": "bd4b241eaf61335cb7e71779d2081b94f2626a2a1928e8226622438fef23049c",
 		"build": {
-			"img": "oisupport/staging-arm64v8:252e5a66400da908887d9efdf956d84f4520622c887286ff90a1f0406ef054c0",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:6fe1a79e66bc3f6f2e611b09e3bd653915123929b53970495697c04130783ef7",
-						"size": 1023,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2026-11-02T20:15:59Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:252e5a66400da908887d9efdf956d84f4520622c887286ff90a1f0406ef054c0@sha256:6fe1a79e66bc3f6f2e611b09e3bd653915123929b53970495697c04130783ef7",
-							"org.opencontainers.image.revision": "f0d0eae5ee7f2f8d377e0a87ef2018b410527c52",
-							"org.opencontainers.image.source": "https://github.com/vmware/photon-docker-image.git#f0d0eae5ee7f2f8d377e0a87ef2018b410527c52:docker",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/photon",
-							"org.opencontainers.image.version": "4.0"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:c319f7d1318f59a8f0a0c5fb2507ec819f805cda764d9d981ddfd4db2bffd6ff",
-						"size": 839,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:252e5a66400da908887d9efdf956d84f4520622c887286ff90a1f0406ef054c0@sha256:c319f7d1318f59a8f0a0c5fb2507ec819f805cda764d9d981ddfd4db2bffd6ff",
-							"vnd.docker.reference.digest": "sha256:6fe1a79e66bc3f6f2e611b09e3bd653915123929b53970495697c04130783ef7",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:252e5a66400da908887d9efdf956d84f4520622c887286ff90a1f0406ef054c0@sha256:ad95f196456305d206a78f5122b729ac96d7bd0fd2a16521c3047e16f3e80dcc"
-				}
-			},
-			"sourceId": "35dd769a8c08dbb476fb64e215fd21ae3997f83df25f119b8152c373731783a4",
+			"img": "oisupport/staging-arm64v8:bd4b241eaf61335cb7e71779d2081b94f2626a2a1928e8226622438fef23049c",
+			"resolved": null,
+			"sourceId": "a1ac68948e66b15015d6aa88c0d4586916b0a37e2f9304955befc23ede7a9c08",
 			"arch": "arm64v8",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "35dd769a8c08dbb476fb64e215fd21ae3997f83df25f119b8152c373731783a4",
-			"reproducibleGitChecksum": "2251c3d8fb75c8a037176d4fac8e2972502a557c2b3efc0338f4fcc1248a5d70",
+			"sourceId": "a1ac68948e66b15015d6aa88c0d4586916b0a37e2f9304955befc23ede7a9c08",
+			"reproducibleGitChecksum": "546723920bee32e377c707bb5618c7a43cb5ae899d1ba30c8aa1299ace278771",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/vmware/photon-docker-image.git",
-					"GitFetch": "refs/heads/aarch64/4.0-20261101",
-					"GitCommit": "f0d0eae5ee7f2f8d377e0a87ef2018b410527c52",
+					"GitFetch": "refs/heads/aarch64/4.0-20261108",
+					"GitCommit": "2cf2850011d911944cf6bd0c802eca816e6098d6",
 					"Directory": "docker",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793529728
+					"SOURCE_DATE_EPOCH": 1794134490
 				}
 			],
 			"arches": {
 				"arm64v8": {
 					"tags": [
 						"photon:4.0",
-						"photon:4.0-20261101"
+						"photon:4.0-20261108"
 					],
 					"archTags": [
 						"arm64v8/photon:4.0",
-						"arm64v8/photon:4.0-20261101"
+						"arm64v8/photon:4.0-20261108"
 					],
 					"froms": [
 						"scratch"
