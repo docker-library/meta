@@ -266970,82 +266970,602 @@
 			}
 		}
 	},
-	"109f61bb9d87fc78aa2d5248fa82c1b88e4f7dc858923cf2ac101cbcc1af8329": {
-		"buildId": "109f61bb9d87fc78aa2d5248fa82c1b88e4f7dc858923cf2ac101cbcc1af8329",
+	"df0529a7f6b8ac4976952f08d64679a549fb3694b3939e860d6cc437f3b83345": {
+		"buildId": "df0529a7f6b8ac4976952f08d64679a549fb3694b3939e860d6cc437f3b83345",
 		"build": {
-			"img": "oisupport/staging-amd64:109f61bb9d87fc78aa2d5248fa82c1b88e4f7dc858923cf2ac101cbcc1af8329",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:d644d203142cd5b54ad2a83a203e1dee68af2229f8fe32f52a30c6e1d3c3a9e0",
-						"size": 1040,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-29T19:58:36Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:109f61bb9d87fc78aa2d5248fa82c1b88e4f7dc858923cf2ac101cbcc1af8329@sha256:d644d203142cd5b54ad2a83a203e1dee68af2229f8fe32f52a30c6e1d3c3a9e0",
-							"org.opencontainers.image.revision": "53416a9aaea6ac6ded18c2047d51e26983160faf",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#53416a9aaea6ac6ded18c2047d51e26983160faf:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "9.3.20231119"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:78986106f7017ddc7e79983d8050ece7b2bfe0293c3385d47f6fa29998942221",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:109f61bb9d87fc78aa2d5248fa82c1b88e4f7dc858923cf2ac101cbcc1af8329@sha256:78986106f7017ddc7e79983d8050ece7b2bfe0293c3385d47f6fa29998942221",
-							"vnd.docker.reference.digest": "sha256:d644d203142cd5b54ad2a83a203e1dee68af2229f8fe32f52a30c6e1d3c3a9e0",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:109f61bb9d87fc78aa2d5248fa82c1b88e4f7dc858923cf2ac101cbcc1af8329@sha256:97b9ea6562a5c8176286f81ff44ee1a7c276b616ee9fe5dd7cdb289329b668be"
-				}
-			},
-			"sourceId": "0f8241a817018cd219a8aeff21ecc765ae279ccb8f417e53693cb3d2bd3f7996",
+			"img": "oisupport/staging-amd64:df0529a7f6b8ac4976952f08d64679a549fb3694b3939e860d6cc437f3b83345",
+			"resolved": null,
+			"sourceId": "a46fbd31b16ca33049a8e5a75f610b823d81b3c558dd81c4c34e470f02b35f02",
 			"arch": "amd64",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "0f8241a817018cd219a8aeff21ecc765ae279ccb8f417e53693cb3d2bd3f7996",
-			"reproducibleGitChecksum": "89ecb77338919ca2784a227ba21bf3887ab6f59a59bb58f171f1abf21d1ff871",
+			"sourceId": "a46fbd31b16ca33049a8e5a75f610b823d81b3c558dd81c4c34e470f02b35f02",
+			"reproducibleGitChecksum": "9f5bea02dc600740fe9f055a47be5c3e1c8b188f35c6bb9e1b569d5e3ff130f4",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-9.3.20231119-Base-x86_64",
-					"GitCommit": "53416a9aaea6ac6ded18c2047d51e26983160faf",
+					"GitFetch": "refs/heads/Rocky-10.3.20261112-Base-x86_64",
+					"GitCommit": "e97a0074c037152e4950ac634fdd224d621f582c",
 					"Directory": ".",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1701202138
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794812050
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
-						"rockylinux:9.3.20231119",
-						"rockylinux:9.3",
+						"rockylinux:10.3.20261112",
+						"rockylinux:10.3",
+						"rockylinux:10",
+						"rockylinux:latest"
+					],
+					"archTags": [
+						"amd64/rockylinux:10.3.20261112",
+						"amd64/rockylinux:10.3",
+						"amd64/rockylinux:10",
+						"amd64/rockylinux:latest"
+					],
+					"froms": [
+						"scratch"
+					],
+					"lastStageFrom": "scratch",
+					"platformString": "linux/amd64",
+					"platform": {
+						"architecture": "amd64",
+						"os": "linux"
+					},
+					"parents": {
+						"scratch": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"f5b3a3b8ac8c545b077c45901027fcdef3b18e4dd876aa74073b6811f9325b72": {
+		"buildId": "f5b3a3b8ac8c545b077c45901027fcdef3b18e4dd876aa74073b6811f9325b72",
+		"build": {
+			"img": "oisupport/staging-arm64v8:f5b3a3b8ac8c545b077c45901027fcdef3b18e4dd876aa74073b6811f9325b72",
+			"resolved": null,
+			"sourceId": "197ca7bc39e28b7e4539390bae964874521e103e0c9f387c206686439458eda3",
+			"arch": "arm64v8",
+			"parents": {},
+			"resolvedParents": {}
+		},
+		"source": {
+			"sourceId": "197ca7bc39e28b7e4539390bae964874521e103e0c9f387c206686439458eda3",
+			"reproducibleGitChecksum": "136fe85cb2e7779beb40c45769f9f902ffd13c98baa5d6565d21a18a1e2337e3",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
+					"GitFetch": "refs/heads/Rocky-10.3.20261112-Base-aarch64",
+					"GitCommit": "71cd9a3855e4cf26669306f7c67054dba4fd8bff",
+					"Directory": ".",
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794812061
+				}
+			],
+			"arches": {
+				"arm64v8": {
+					"tags": [
+						"rockylinux:10.3.20261112",
+						"rockylinux:10.3",
+						"rockylinux:10",
+						"rockylinux:latest"
+					],
+					"archTags": [
+						"arm64v8/rockylinux:10.3.20261112",
+						"arm64v8/rockylinux:10.3",
+						"arm64v8/rockylinux:10",
+						"arm64v8/rockylinux:latest"
+					],
+					"froms": [
+						"scratch"
+					],
+					"lastStageFrom": "scratch",
+					"platformString": "linux/arm64/v8",
+					"platform": {
+						"architecture": "arm64",
+						"os": "linux",
+						"variant": "v8"
+					},
+					"parents": {
+						"scratch": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"bc34ce395be6f34fedcc2adfa752d2b0cde63d2a7b1a1505e3b43397818a1c05": {
+		"buildId": "bc34ce395be6f34fedcc2adfa752d2b0cde63d2a7b1a1505e3b43397818a1c05",
+		"build": {
+			"img": "oisupport/staging-ppc64le:bc34ce395be6f34fedcc2adfa752d2b0cde63d2a7b1a1505e3b43397818a1c05",
+			"resolved": null,
+			"sourceId": "eeccedf6d937d58dafd285bd789fb33e2d7b1bfc8d62f27eb25de098d302a532",
+			"arch": "ppc64le",
+			"parents": {},
+			"resolvedParents": {}
+		},
+		"source": {
+			"sourceId": "eeccedf6d937d58dafd285bd789fb33e2d7b1bfc8d62f27eb25de098d302a532",
+			"reproducibleGitChecksum": "0bedeaf257da9d0bc6a3982a29a50cb4a72ac33e51da0f8c6413998afc98fe76",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
+					"GitFetch": "refs/heads/Rocky-10.3.20261112-Base-ppc64le",
+					"GitCommit": "d3ebc20d57fdd203a94cf9bf197a86ff83fd3fed",
+					"Directory": ".",
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794812137
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"rockylinux:10.3.20261112",
+						"rockylinux:10.3",
+						"rockylinux:10",
+						"rockylinux:latest"
+					],
+					"archTags": [
+						"ppc64le/rockylinux:10.3.20261112",
+						"ppc64le/rockylinux:10.3",
+						"ppc64le/rockylinux:10",
+						"ppc64le/rockylinux:latest"
+					],
+					"froms": [
+						"scratch"
+					],
+					"lastStageFrom": "scratch",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"scratch": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"d3cff3a204b25100078131a9139757b360ce561f7b6f5b33110ed4cfd359a0e8": {
+		"buildId": "d3cff3a204b25100078131a9139757b360ce561f7b6f5b33110ed4cfd359a0e8",
+		"build": {
+			"img": "oisupport/staging-riscv64:d3cff3a204b25100078131a9139757b360ce561f7b6f5b33110ed4cfd359a0e8",
+			"resolved": null,
+			"sourceId": "294f7014143872900be2028b8abc0e41ffecb57e0ee4e69489009eefc7232649",
+			"arch": "riscv64",
+			"parents": {},
+			"resolvedParents": {}
+		},
+		"source": {
+			"sourceId": "294f7014143872900be2028b8abc0e41ffecb57e0ee4e69489009eefc7232649",
+			"reproducibleGitChecksum": "ed2edb1c04ac60fe080afe6ea53a927461cdf995bbd81d60af19b8adf7bf2025",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
+					"GitFetch": "refs/heads/Rocky-10.3.20261112-Base-riscv64",
+					"GitCommit": "e65440da10ccbff8d1c24f17ef9567aaa984f7ca",
+					"Directory": ".",
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794812146
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"rockylinux:10.3.20261112",
+						"rockylinux:10.3",
+						"rockylinux:10",
+						"rockylinux:latest"
+					],
+					"archTags": [
+						"riscv64/rockylinux:10.3.20261112",
+						"riscv64/rockylinux:10.3",
+						"riscv64/rockylinux:10",
+						"riscv64/rockylinux:latest"
+					],
+					"froms": [
+						"scratch"
+					],
+					"lastStageFrom": "scratch",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
+						"os": "linux"
+					},
+					"parents": {
+						"scratch": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"b12b2ac7395ac4207c44306b6a35201bc1589ce2bb70f97c9ad7f265bd4cdb5c": {
+		"buildId": "b12b2ac7395ac4207c44306b6a35201bc1589ce2bb70f97c9ad7f265bd4cdb5c",
+		"build": {
+			"img": "oisupport/staging-s390x:b12b2ac7395ac4207c44306b6a35201bc1589ce2bb70f97c9ad7f265bd4cdb5c",
+			"resolved": null,
+			"sourceId": "ecab022ed6045cb70f00ab95857b7738b3605ba9f4880578640baf6eb64eda45",
+			"arch": "s390x",
+			"parents": {},
+			"resolvedParents": {}
+		},
+		"source": {
+			"sourceId": "ecab022ed6045cb70f00ab95857b7738b3605ba9f4880578640baf6eb64eda45",
+			"reproducibleGitChecksum": "adc129115dcc9e8033777011c380c55743ac843a26f2bd61c7e7ecb4385ff5f4",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
+					"GitFetch": "refs/heads/Rocky-10.3.20261112-Base-s390x",
+					"GitCommit": "2d438d2e6bec5bcaee3ac51a53f9cc430a72279b",
+					"Directory": ".",
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794812153
+				}
+			],
+			"arches": {
+				"s390x": {
+					"tags": [
+						"rockylinux:10.3.20261112",
+						"rockylinux:10.3",
+						"rockylinux:10",
+						"rockylinux:latest"
+					],
+					"archTags": [
+						"s390x/rockylinux:10.3.20261112",
+						"s390x/rockylinux:10.3",
+						"s390x/rockylinux:10",
+						"s390x/rockylinux:latest"
+					],
+					"froms": [
+						"scratch"
+					],
+					"lastStageFrom": "scratch",
+					"platformString": "linux/s390x",
+					"platform": {
+						"architecture": "s390x",
+						"os": "linux"
+					},
+					"parents": {
+						"scratch": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"f6c808fd96155838a260c79fe60a67cc59c1b578effb0ed737482127373fa263": {
+		"buildId": "f6c808fd96155838a260c79fe60a67cc59c1b578effb0ed737482127373fa263",
+		"build": {
+			"img": "oisupport/staging-amd64:f6c808fd96155838a260c79fe60a67cc59c1b578effb0ed737482127373fa263",
+			"resolved": null,
+			"sourceId": "d14430d0913c59cfa227510e5a66daff6d81973572dc90a3511c9629e6300812",
+			"arch": "amd64",
+			"parents": {},
+			"resolvedParents": {}
+		},
+		"source": {
+			"sourceId": "d14430d0913c59cfa227510e5a66daff6d81973572dc90a3511c9629e6300812",
+			"reproducibleGitChecksum": "80508c59ca9052c22d354192d6843a64e13352f91a9cf526bffcd61f1b0fef45",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
+					"GitFetch": "refs/heads/Rocky-10.3.20261112-Minimal-x86_64",
+					"GitCommit": "14e1052600daaf146ad8036405fdedf2384dc5e2",
+					"Directory": ".",
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794812006
+				}
+			],
+			"arches": {
+				"amd64": {
+					"tags": [
+						"rockylinux:10.3.20261112-minimal",
+						"rockylinux:10.3-minimal",
+						"rockylinux:10-minimal"
+					],
+					"archTags": [
+						"amd64/rockylinux:10.3.20261112-minimal",
+						"amd64/rockylinux:10.3-minimal",
+						"amd64/rockylinux:10-minimal"
+					],
+					"froms": [
+						"scratch"
+					],
+					"lastStageFrom": "scratch",
+					"platformString": "linux/amd64",
+					"platform": {
+						"architecture": "amd64",
+						"os": "linux"
+					},
+					"parents": {
+						"scratch": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"18dea2a415d638a2a1a2ef5e0dab2dd3b034a903815910375b4feb8efcb8723e": {
+		"buildId": "18dea2a415d638a2a1a2ef5e0dab2dd3b034a903815910375b4feb8efcb8723e",
+		"build": {
+			"img": "oisupport/staging-arm64v8:18dea2a415d638a2a1a2ef5e0dab2dd3b034a903815910375b4feb8efcb8723e",
+			"resolved": null,
+			"sourceId": "71348e6307d5b81dc06b4db6a6bbe767f50e7fa053a443587b8862a3213397b7",
+			"arch": "arm64v8",
+			"parents": {},
+			"resolvedParents": {}
+		},
+		"source": {
+			"sourceId": "71348e6307d5b81dc06b4db6a6bbe767f50e7fa053a443587b8862a3213397b7",
+			"reproducibleGitChecksum": "543489d61e78bfdf29c2ca87a6b8f284acea847b35e15c65cfcdbb1da533cff8",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
+					"GitFetch": "refs/heads/Rocky-10.3.20261112-Minimal-aarch64",
+					"GitCommit": "f1a8562daa1469b384e20d1a5b939aa2564732a8",
+					"Directory": ".",
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794812075
+				}
+			],
+			"arches": {
+				"arm64v8": {
+					"tags": [
+						"rockylinux:10.3.20261112-minimal",
+						"rockylinux:10.3-minimal",
+						"rockylinux:10-minimal"
+					],
+					"archTags": [
+						"arm64v8/rockylinux:10.3.20261112-minimal",
+						"arm64v8/rockylinux:10.3-minimal",
+						"arm64v8/rockylinux:10-minimal"
+					],
+					"froms": [
+						"scratch"
+					],
+					"lastStageFrom": "scratch",
+					"platformString": "linux/arm64/v8",
+					"platform": {
+						"architecture": "arm64",
+						"os": "linux",
+						"variant": "v8"
+					},
+					"parents": {
+						"scratch": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"540f272b1e8ca7b1b645dbe1aa52e45853e4efa5924d6c96ee8fc5f56d91004a": {
+		"buildId": "540f272b1e8ca7b1b645dbe1aa52e45853e4efa5924d6c96ee8fc5f56d91004a",
+		"build": {
+			"img": "oisupport/staging-ppc64le:540f272b1e8ca7b1b645dbe1aa52e45853e4efa5924d6c96ee8fc5f56d91004a",
+			"resolved": null,
+			"sourceId": "b48fb904f80e5d2864d9a08ee2e71eff9387d569ab5947642374fabe9585a684",
+			"arch": "ppc64le",
+			"parents": {},
+			"resolvedParents": {}
+		},
+		"source": {
+			"sourceId": "b48fb904f80e5d2864d9a08ee2e71eff9387d569ab5947642374fabe9585a684",
+			"reproducibleGitChecksum": "a388cf53e62529a11b9208bbcb30036b63bfd84994074d5e01fac68c6aa3be95",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
+					"GitFetch": "refs/heads/Rocky-10.3.20261112-Minimal-ppc64le",
+					"GitCommit": "d11dd41b3d65c73459097653ea6b580c31a3540e",
+					"Directory": ".",
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794812136
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"rockylinux:10.3.20261112-minimal",
+						"rockylinux:10.3-minimal",
+						"rockylinux:10-minimal"
+					],
+					"archTags": [
+						"ppc64le/rockylinux:10.3.20261112-minimal",
+						"ppc64le/rockylinux:10.3-minimal",
+						"ppc64le/rockylinux:10-minimal"
+					],
+					"froms": [
+						"scratch"
+					],
+					"lastStageFrom": "scratch",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"scratch": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"f46dd6dbeee9a3152aa46fa04ebdef6440e67f89cf2b126d357cd57b2ed6cdb4": {
+		"buildId": "f46dd6dbeee9a3152aa46fa04ebdef6440e67f89cf2b126d357cd57b2ed6cdb4",
+		"build": {
+			"img": "oisupport/staging-riscv64:f46dd6dbeee9a3152aa46fa04ebdef6440e67f89cf2b126d357cd57b2ed6cdb4",
+			"resolved": null,
+			"sourceId": "1296ea4495cc3562c67958e32f1a8c2ccf0722dca4b7b64480d8169e2c3f3fa6",
+			"arch": "riscv64",
+			"parents": {},
+			"resolvedParents": {}
+		},
+		"source": {
+			"sourceId": "1296ea4495cc3562c67958e32f1a8c2ccf0722dca4b7b64480d8169e2c3f3fa6",
+			"reproducibleGitChecksum": "d39e5727c396f0e627e46140900b0f95189640dfe475876b77b4d4f5c709510f",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
+					"GitFetch": "refs/heads/Rocky-10.3.20261112-Minimal-riscv64",
+					"GitCommit": "0e8ecef2a77d7cdaae5ed3c9a74d57b05c253fe1",
+					"Directory": ".",
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794812160
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"rockylinux:10.3.20261112-minimal",
+						"rockylinux:10.3-minimal",
+						"rockylinux:10-minimal"
+					],
+					"archTags": [
+						"riscv64/rockylinux:10.3.20261112-minimal",
+						"riscv64/rockylinux:10.3-minimal",
+						"riscv64/rockylinux:10-minimal"
+					],
+					"froms": [
+						"scratch"
+					],
+					"lastStageFrom": "scratch",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
+						"os": "linux"
+					},
+					"parents": {
+						"scratch": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"1e21f81922f781b9a89a528f1c06af61e363f11f749bd18e1c7e76c46b91a1dd": {
+		"buildId": "1e21f81922f781b9a89a528f1c06af61e363f11f749bd18e1c7e76c46b91a1dd",
+		"build": {
+			"img": "oisupport/staging-s390x:1e21f81922f781b9a89a528f1c06af61e363f11f749bd18e1c7e76c46b91a1dd",
+			"resolved": null,
+			"sourceId": "03d9c21c1dba3af84b292a15a6580e5d435cd3dba351446cdf16711360d15fce",
+			"arch": "s390x",
+			"parents": {},
+			"resolvedParents": {}
+		},
+		"source": {
+			"sourceId": "03d9c21c1dba3af84b292a15a6580e5d435cd3dba351446cdf16711360d15fce",
+			"reproducibleGitChecksum": "501e8e6389025982d7f10af6549bec6f3994eefdca3a329fab5fbe80c4852260",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
+					"GitFetch": "refs/heads/Rocky-10.3.20261112-Minimal-s390x",
+					"GitCommit": "13a25c8598475dcc7b7ea418a1f50f78706d5c99",
+					"Directory": ".",
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794812135
+				}
+			],
+			"arches": {
+				"s390x": {
+					"tags": [
+						"rockylinux:10.3.20261112-minimal",
+						"rockylinux:10.3-minimal",
+						"rockylinux:10-minimal"
+					],
+					"archTags": [
+						"s390x/rockylinux:10.3.20261112-minimal",
+						"s390x/rockylinux:10.3-minimal",
+						"s390x/rockylinux:10-minimal"
+					],
+					"froms": [
+						"scratch"
+					],
+					"lastStageFrom": "scratch",
+					"platformString": "linux/s390x",
+					"platform": {
+						"architecture": "s390x",
+						"os": "linux"
+					},
+					"parents": {
+						"scratch": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"ce5deb6117f9e5f2641b066f5a06f959d1c8b1347da403b0dbba8249093545f4": {
+		"buildId": "ce5deb6117f9e5f2641b066f5a06f959d1c8b1347da403b0dbba8249093545f4",
+		"build": {
+			"img": "oisupport/staging-amd64:ce5deb6117f9e5f2641b066f5a06f959d1c8b1347da403b0dbba8249093545f4",
+			"resolved": null,
+			"sourceId": "7884ed0d2bdb5c71cc8853d3e894d5bb5e52109eb2d680868825d5789b35926b",
+			"arch": "amd64",
+			"parents": {},
+			"resolvedParents": {}
+		},
+		"source": {
+			"sourceId": "7884ed0d2bdb5c71cc8853d3e894d5bb5e52109eb2d680868825d5789b35926b",
+			"reproducibleGitChecksum": "8ed53d76367a31f751caf03bb09c9030c540dbd1662e601499a4b13c71b07106",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
+					"GitFetch": "refs/heads/Rocky-9.9.20261112-Base-x86_64",
+					"GitCommit": "411d43c7f31cda939bedd8de3ef2bcc1110bb8f9",
+					"Directory": ".",
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794811852
+				}
+			],
+			"arches": {
+				"amd64": {
+					"tags": [
+						"rockylinux:9.9.20261112",
+						"rockylinux:9.9",
 						"rockylinux:9"
 					],
 					"archTags": [
-						"amd64/rockylinux:9.3.20231119",
-						"amd64/rockylinux:9.3",
+						"amd64/rockylinux:9.9.20261112",
+						"amd64/rockylinux:9.9",
 						"amd64/rockylinux:9"
 					],
 					"froms": [
@@ -267067,83 +267587,40 @@
 			}
 		}
 	},
-	"045479fede0bc2f560afab85a3584b8beb5176ac2a9ef4f9d88b0861e1914af8": {
-		"buildId": "045479fede0bc2f560afab85a3584b8beb5176ac2a9ef4f9d88b0861e1914af8",
+	"45754582b82eaed59221bd81449c7613a4f6c6273d51e009dde45a941135fc7d": {
+		"buildId": "45754582b82eaed59221bd81449c7613a4f6c6273d51e009dde45a941135fc7d",
 		"build": {
-			"img": "oisupport/staging-arm64v8:045479fede0bc2f560afab85a3584b8beb5176ac2a9ef4f9d88b0861e1914af8",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:370b6bd1851d5023c5c673535c85cdc5c1d8a59416ad83380a8db7ce3691bd45",
-						"size": 1042,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-30T02:32:17Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:045479fede0bc2f560afab85a3584b8beb5176ac2a9ef4f9d88b0861e1914af8@sha256:370b6bd1851d5023c5c673535c85cdc5c1d8a59416ad83380a8db7ce3691bd45",
-							"org.opencontainers.image.revision": "29d1766aa469897f6690547364d45d352cbe7ae6",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#29d1766aa469897f6690547364d45d352cbe7ae6:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "9.3.20231119"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:7d89a0c429c31867143174013dcf6966651fd2e1d0aba2da71b930895527a9fc",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:045479fede0bc2f560afab85a3584b8beb5176ac2a9ef4f9d88b0861e1914af8@sha256:7d89a0c429c31867143174013dcf6966651fd2e1d0aba2da71b930895527a9fc",
-							"vnd.docker.reference.digest": "sha256:370b6bd1851d5023c5c673535c85cdc5c1d8a59416ad83380a8db7ce3691bd45",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:045479fede0bc2f560afab85a3584b8beb5176ac2a9ef4f9d88b0861e1914af8@sha256:a58158a9f5c3e09785f77c13fe13c3b6c74c6e03a79b1084e8a32dbb01df6114"
-				}
-			},
-			"sourceId": "3205e4f14d167095e7a45699f522b4b34a22dd4b5ede5b1f1aec7384cd069d0a",
+			"img": "oisupport/staging-arm64v8:45754582b82eaed59221bd81449c7613a4f6c6273d51e009dde45a941135fc7d",
+			"resolved": null,
+			"sourceId": "8b70e817ffb000f7afce966e199a45d5ad648a91e136848291ecbc40b1249505",
 			"arch": "arm64v8",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "3205e4f14d167095e7a45699f522b4b34a22dd4b5ede5b1f1aec7384cd069d0a",
-			"reproducibleGitChecksum": "3b4f92b1302d309923c26ada330c5cc4b0034908f63b5d67be7a4ddfbebcb2de",
+			"sourceId": "8b70e817ffb000f7afce966e199a45d5ad648a91e136848291ecbc40b1249505",
+			"reproducibleGitChecksum": "43d1b062c180647c08587041147bafd5a24c47a920c93d1e35279e2e914dd685",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-9.3.20231119-Base-aarch64",
-					"GitCommit": "29d1766aa469897f6690547364d45d352cbe7ae6",
+					"GitFetch": "refs/heads/Rocky-9.9.20261112-Base-aarch64",
+					"GitCommit": "8de5a85baf5d22d448122c13bdd9007c8159b3c0",
 					"Directory": ".",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1701200516
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794811846
 				}
 			],
 			"arches": {
 				"arm64v8": {
 					"tags": [
-						"rockylinux:9.3.20231119",
-						"rockylinux:9.3",
+						"rockylinux:9.9.20261112",
+						"rockylinux:9.9",
 						"rockylinux:9"
 					],
 					"archTags": [
-						"arm64v8/rockylinux:9.3.20231119",
-						"arm64v8/rockylinux:9.3",
+						"arm64v8/rockylinux:9.9.20261112",
+						"arm64v8/rockylinux:9.9",
 						"arm64v8/rockylinux:9"
 					],
 					"froms": [
@@ -267166,82 +267643,40 @@
 			}
 		}
 	},
-	"9ca27e14eece6973d5691ac91c0f3cf268c51f7480115ca0269eee5a7309ad92": {
-		"buildId": "9ca27e14eece6973d5691ac91c0f3cf268c51f7480115ca0269eee5a7309ad92",
+	"74c21a08d7b85023e2974e4167b7457a28bc4bdd61e0f10cd4b2cc24a953d666": {
+		"buildId": "74c21a08d7b85023e2974e4167b7457a28bc4bdd61e0f10cd4b2cc24a953d666",
 		"build": {
-			"img": "oisupport/staging-ppc64le:9ca27e14eece6973d5691ac91c0f3cf268c51f7480115ca0269eee5a7309ad92",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:ce9ebd372d980bb3938b01cbf62b5031440757b8dd2fda7960aaf4743497783c",
-						"size": 1042,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-29T20:37:30Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:9ca27e14eece6973d5691ac91c0f3cf268c51f7480115ca0269eee5a7309ad92@sha256:ce9ebd372d980bb3938b01cbf62b5031440757b8dd2fda7960aaf4743497783c",
-							"org.opencontainers.image.revision": "20d0ef4cd07c7b5b368b846f1f154db280ea8e4c",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#20d0ef4cd07c7b5b368b846f1f154db280ea8e4c:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "9.3.20231119"
-						},
-						"platform": {
-							"architecture": "ppc64le",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:939b7f52dc8f7607731e080ba085ca6b6847297674ce8aa6a6677cfeaaae9d70",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:9ca27e14eece6973d5691ac91c0f3cf268c51f7480115ca0269eee5a7309ad92@sha256:939b7f52dc8f7607731e080ba085ca6b6847297674ce8aa6a6677cfeaaae9d70",
-							"vnd.docker.reference.digest": "sha256:ce9ebd372d980bb3938b01cbf62b5031440757b8dd2fda7960aaf4743497783c",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:9ca27e14eece6973d5691ac91c0f3cf268c51f7480115ca0269eee5a7309ad92@sha256:f233134fcc4b44481b0e6136b1867ba99c5275b9ae1d19f77ce6b7e682b78708"
-				}
-			},
-			"sourceId": "f1c2d01b21abf80f5ddc74ae89252defb1276917e1cd2379fcdad5fb5918c487",
+			"img": "oisupport/staging-ppc64le:74c21a08d7b85023e2974e4167b7457a28bc4bdd61e0f10cd4b2cc24a953d666",
+			"resolved": null,
+			"sourceId": "805d1db748f1e05a72d058b884d072cf86666b8297e6d30c41b7e94d8f60206a",
 			"arch": "ppc64le",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "f1c2d01b21abf80f5ddc74ae89252defb1276917e1cd2379fcdad5fb5918c487",
-			"reproducibleGitChecksum": "2b04ac65053ecd8e110b99b9d67020a7a9dc0957c2dfb3d64dca2e30ef3804be",
+			"sourceId": "805d1db748f1e05a72d058b884d072cf86666b8297e6d30c41b7e94d8f60206a",
+			"reproducibleGitChecksum": "6761db07358f047abf9f4e7be6053c02de8f282d154ba7976f0a56191c3d7414",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-9.3.20231119-Base-ppc64le",
-					"GitCommit": "20d0ef4cd07c7b5b368b846f1f154db280ea8e4c",
+					"GitFetch": "refs/heads/Rocky-9.9.20261112-Base-ppc64le",
+					"GitCommit": "ed44b4aff68a136a9fe6c8a6af6eeab684e9fb40",
 					"Directory": ".",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1701201803
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794811951
 				}
 			],
 			"arches": {
 				"ppc64le": {
 					"tags": [
-						"rockylinux:9.3.20231119",
-						"rockylinux:9.3",
+						"rockylinux:9.9.20261112",
+						"rockylinux:9.9",
 						"rockylinux:9"
 					],
 					"archTags": [
-						"ppc64le/rockylinux:9.3.20231119",
-						"ppc64le/rockylinux:9.3",
+						"ppc64le/rockylinux:9.9.20261112",
+						"ppc64le/rockylinux:9.9",
 						"ppc64le/rockylinux:9"
 					],
 					"froms": [
@@ -267263,82 +267698,40 @@
 			}
 		}
 	},
-	"27a7194c28a8e5fcb8111fd8ad15092054b4bd1a39eb2169d54c46c9d3cf79de": {
-		"buildId": "27a7194c28a8e5fcb8111fd8ad15092054b4bd1a39eb2169d54c46c9d3cf79de",
+	"911b9f136616721dfdbc0ef20cf510a87a5bc1ba9a0512d71974f2e2ef416011": {
+		"buildId": "911b9f136616721dfdbc0ef20cf510a87a5bc1ba9a0512d71974f2e2ef416011",
 		"build": {
-			"img": "oisupport/staging-s390x:27a7194c28a8e5fcb8111fd8ad15092054b4bd1a39eb2169d54c46c9d3cf79de",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:d56c6336b563626b3fdc291ad7a4b2ae4e4e9d257f258cc2561478c3cca47d6c",
-						"size": 1040,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "s390x",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-29T20:13:38Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-s390x:27a7194c28a8e5fcb8111fd8ad15092054b4bd1a39eb2169d54c46c9d3cf79de@sha256:d56c6336b563626b3fdc291ad7a4b2ae4e4e9d257f258cc2561478c3cca47d6c",
-							"org.opencontainers.image.revision": "7581889c773c12e32ee0e46e627a7c66f20463bd",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#7581889c773c12e32ee0e46e627a7c66f20463bd:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "9.3.20231119"
-						},
-						"platform": {
-							"architecture": "s390x",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:68498654d50940737d2b37132e9d585af900a15fb59c47dffcc4fb9f84ee2bcc",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "s390x",
-							"org.opencontainers.image.ref.name": "oisupport/staging-s390x:27a7194c28a8e5fcb8111fd8ad15092054b4bd1a39eb2169d54c46c9d3cf79de@sha256:68498654d50940737d2b37132e9d585af900a15fb59c47dffcc4fb9f84ee2bcc",
-							"vnd.docker.reference.digest": "sha256:d56c6336b563626b3fdc291ad7a4b2ae4e4e9d257f258cc2561478c3cca47d6c",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-s390x:27a7194c28a8e5fcb8111fd8ad15092054b4bd1a39eb2169d54c46c9d3cf79de@sha256:69d45420f452327271958fdeb4af4b925414110f595515e74a29794f6801d148"
-				}
-			},
-			"sourceId": "b781c27df3714c293e769b9b405f15b49e3fa2f30540da12547173ac65fd52da",
+			"img": "oisupport/staging-s390x:911b9f136616721dfdbc0ef20cf510a87a5bc1ba9a0512d71974f2e2ef416011",
+			"resolved": null,
+			"sourceId": "0384a79dd55afc352d872f94a80e011da0ca632f589ebbe34a197b734cded1ff",
 			"arch": "s390x",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "b781c27df3714c293e769b9b405f15b49e3fa2f30540da12547173ac65fd52da",
-			"reproducibleGitChecksum": "31d7455e8c895079593ab33565458281428e98deab17902bf0bfca01e5560ee8",
+			"sourceId": "0384a79dd55afc352d872f94a80e011da0ca632f589ebbe34a197b734cded1ff",
+			"reproducibleGitChecksum": "7644aa8466ee0f42d6a5d6ce329d3e8acc6588e361df9ff4dcf0e2b33bc888db",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-9.3.20231119-Base-s390x",
-					"GitCommit": "7581889c773c12e32ee0e46e627a7c66f20463bd",
+					"GitFetch": "refs/heads/Rocky-9.9.20261112-Base-s390x",
+					"GitCommit": "77f728cf80e38b09503aa17ee1b7f3333f7a5bc2",
 					"Directory": ".",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1701201978
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794811981
 				}
 			],
 			"arches": {
 				"s390x": {
 					"tags": [
-						"rockylinux:9.3.20231119",
-						"rockylinux:9.3",
+						"rockylinux:9.9.20261112",
+						"rockylinux:9.9",
 						"rockylinux:9"
 					],
 					"archTags": [
-						"s390x/rockylinux:9.3.20231119",
-						"s390x/rockylinux:9.3",
+						"s390x/rockylinux:9.9.20261112",
+						"s390x/rockylinux:9.9",
 						"s390x/rockylinux:9"
 					],
 					"froms": [
@@ -267360,82 +267753,40 @@
 			}
 		}
 	},
-	"939c5ee2bc2655ee97ce3c0a2566237a5f2b887e7b227118ab8f258d82e86cdd": {
-		"buildId": "939c5ee2bc2655ee97ce3c0a2566237a5f2b887e7b227118ab8f258d82e86cdd",
+	"94591e5915e27656e09c0659ea1df32759554b72f63d644e7cfb7c17b5a71ec1": {
+		"buildId": "94591e5915e27656e09c0659ea1df32759554b72f63d644e7cfb7c17b5a71ec1",
 		"build": {
-			"img": "oisupport/staging-amd64:939c5ee2bc2655ee97ce3c0a2566237a5f2b887e7b227118ab8f258d82e86cdd",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:197b1569a8e5d46de75412cfd80b88a437d25bb2a5338dc82d5421d835245ec7",
-						"size": 1048,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-29T19:58:36Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:939c5ee2bc2655ee97ce3c0a2566237a5f2b887e7b227118ab8f258d82e86cdd@sha256:197b1569a8e5d46de75412cfd80b88a437d25bb2a5338dc82d5421d835245ec7",
-							"org.opencontainers.image.revision": "e784104b999a1ff6b66cb0aeee0408fb030c840b",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#e784104b999a1ff6b66cb0aeee0408fb030c840b:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "9.3.20231119-minimal"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:928b7501e9961a0df8b3036e7014507d55a40a3598116a2777999b125c3259e3",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:939c5ee2bc2655ee97ce3c0a2566237a5f2b887e7b227118ab8f258d82e86cdd@sha256:928b7501e9961a0df8b3036e7014507d55a40a3598116a2777999b125c3259e3",
-							"vnd.docker.reference.digest": "sha256:197b1569a8e5d46de75412cfd80b88a437d25bb2a5338dc82d5421d835245ec7",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:939c5ee2bc2655ee97ce3c0a2566237a5f2b887e7b227118ab8f258d82e86cdd@sha256:f14682c7c7c8f4d0c4e0911855637e8e10ef078bb9cf8757000f6a6964836193"
-				}
-			},
-			"sourceId": "27e30b69fb53b762df7f82aa54036a95cddb311c977b5e9fc040916be4704095",
+			"img": "oisupport/staging-amd64:94591e5915e27656e09c0659ea1df32759554b72f63d644e7cfb7c17b5a71ec1",
+			"resolved": null,
+			"sourceId": "894cba1f4568243f7c650223fb4e1260440ede21b865b376c1f937ad6d594a40",
 			"arch": "amd64",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "27e30b69fb53b762df7f82aa54036a95cddb311c977b5e9fc040916be4704095",
-			"reproducibleGitChecksum": "9f7edef2b0a6f4d103eff7123b05e1b9e0f64f49a9608dc1a3dad496037cfa5e",
+			"sourceId": "894cba1f4568243f7c650223fb4e1260440ede21b865b376c1f937ad6d594a40",
+			"reproducibleGitChecksum": "d04735fa6e7af8cddc428ecbd04d3e32a23096b79b527c0ec486598e2f1f46ee",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-9.3.20231119-Minimal-x86_64",
-					"GitCommit": "e784104b999a1ff6b66cb0aeee0408fb030c840b",
+					"GitFetch": "refs/heads/Rocky-9.9.20261112-Minimal-x86_64",
+					"GitCommit": "7c4576898bc0addd63f98e887d5899df984ceb17",
 					"Directory": ".",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1701201550
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794811828
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
-						"rockylinux:9.3.20231119-minimal",
-						"rockylinux:9.3-minimal",
+						"rockylinux:9.9.20261112-minimal",
+						"rockylinux:9.9-minimal",
 						"rockylinux:9-minimal"
 					],
 					"archTags": [
-						"amd64/rockylinux:9.3.20231119-minimal",
-						"amd64/rockylinux:9.3-minimal",
+						"amd64/rockylinux:9.9.20261112-minimal",
+						"amd64/rockylinux:9.9-minimal",
 						"amd64/rockylinux:9-minimal"
 					],
 					"froms": [
@@ -267457,83 +267808,40 @@
 			}
 		}
 	},
-	"3ed218da3ce3dd1d3d56bb75681ed665dfa0c9d184f71d7fc0188edbb422701b": {
-		"buildId": "3ed218da3ce3dd1d3d56bb75681ed665dfa0c9d184f71d7fc0188edbb422701b",
+	"9ac3cd669c74827946b22f5084fd5454a235252ed36e81e139f453469e5a7384": {
+		"buildId": "9ac3cd669c74827946b22f5084fd5454a235252ed36e81e139f453469e5a7384",
 		"build": {
-			"img": "oisupport/staging-arm64v8:3ed218da3ce3dd1d3d56bb75681ed665dfa0c9d184f71d7fc0188edbb422701b",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:99a073e7e92dc4cd2882c9418936bdd1c2298279c5af0f3642261286e135f6c7",
-						"size": 1050,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-30T02:35:22Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:3ed218da3ce3dd1d3d56bb75681ed665dfa0c9d184f71d7fc0188edbb422701b@sha256:99a073e7e92dc4cd2882c9418936bdd1c2298279c5af0f3642261286e135f6c7",
-							"org.opencontainers.image.revision": "0b10d7d7a8ba867de715441b52c591880480bc94",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#0b10d7d7a8ba867de715441b52c591880480bc94:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "9.3.20231119-minimal"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:e0958a3c21072bab6b2df8cc5b8d8d9fc6ec1c7429d74b7305495512064c19c4",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:3ed218da3ce3dd1d3d56bb75681ed665dfa0c9d184f71d7fc0188edbb422701b@sha256:e0958a3c21072bab6b2df8cc5b8d8d9fc6ec1c7429d74b7305495512064c19c4",
-							"vnd.docker.reference.digest": "sha256:99a073e7e92dc4cd2882c9418936bdd1c2298279c5af0f3642261286e135f6c7",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:3ed218da3ce3dd1d3d56bb75681ed665dfa0c9d184f71d7fc0188edbb422701b@sha256:c998ecb3bff6253471545ec12b35048da7c749346eab04a5184828feb9aff428"
-				}
-			},
-			"sourceId": "5690868ea437c41b3cc14df3b44fb6a2247aacfea121f95b7a3ef624e7da71a0",
+			"img": "oisupport/staging-arm64v8:9ac3cd669c74827946b22f5084fd5454a235252ed36e81e139f453469e5a7384",
+			"resolved": null,
+			"sourceId": "7665a6a7c2cd9a5d3a696eae4168f09c18f2bf7012c6af40a1afb92a9472ece1",
 			"arch": "arm64v8",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "5690868ea437c41b3cc14df3b44fb6a2247aacfea121f95b7a3ef624e7da71a0",
-			"reproducibleGitChecksum": "bc3ea58c41a2b45b9d1ccf8e17f575f85d81c12b4e12b87ea6669829ab11de18",
+			"sourceId": "7665a6a7c2cd9a5d3a696eae4168f09c18f2bf7012c6af40a1afb92a9472ece1",
+			"reproducibleGitChecksum": "b50b1b570f55fabd6cf720b7b37159d65440e864e70ab559c0783d82e03365ba",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-9.3.20231119-Minimal-aarch64",
-					"GitCommit": "0b10d7d7a8ba867de715441b52c591880480bc94",
+					"GitFetch": "refs/heads/Rocky-9.9.20261112-Minimal-aarch64",
+					"GitCommit": "b3d87a64749a08a6518ae7d4238fcc70a8f96b18",
 					"Directory": ".",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1701201673
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794811783
 				}
 			],
 			"arches": {
 				"arm64v8": {
 					"tags": [
-						"rockylinux:9.3.20231119-minimal",
-						"rockylinux:9.3-minimal",
+						"rockylinux:9.9.20261112-minimal",
+						"rockylinux:9.9-minimal",
 						"rockylinux:9-minimal"
 					],
 					"archTags": [
-						"arm64v8/rockylinux:9.3.20231119-minimal",
-						"arm64v8/rockylinux:9.3-minimal",
+						"arm64v8/rockylinux:9.9.20261112-minimal",
+						"arm64v8/rockylinux:9.9-minimal",
 						"arm64v8/rockylinux:9-minimal"
 					],
 					"froms": [
@@ -267556,82 +267864,40 @@
 			}
 		}
 	},
-	"0aa50e4f1554a29fb361385c27c21d385423f2d0ccc45b1ff3ffb987af69a639": {
-		"buildId": "0aa50e4f1554a29fb361385c27c21d385423f2d0ccc45b1ff3ffb987af69a639",
+	"22ee16dfa600524c4fb92380369d127dc87074bf8232db83c161f86de75b4803": {
+		"buildId": "22ee16dfa600524c4fb92380369d127dc87074bf8232db83c161f86de75b4803",
 		"build": {
-			"img": "oisupport/staging-ppc64le:0aa50e4f1554a29fb361385c27c21d385423f2d0ccc45b1ff3ffb987af69a639",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:8297c76cfae4717033cb7b9c0184395d582194823fb11c30ad1376ce808eff97",
-						"size": 1050,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-29T20:40:40Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:0aa50e4f1554a29fb361385c27c21d385423f2d0ccc45b1ff3ffb987af69a639@sha256:8297c76cfae4717033cb7b9c0184395d582194823fb11c30ad1376ce808eff97",
-							"org.opencontainers.image.revision": "13770ec44b35cbe9af2296d0d50edc31a343e4f6",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#13770ec44b35cbe9af2296d0d50edc31a343e4f6:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "9.3.20231119-minimal"
-						},
-						"platform": {
-							"architecture": "ppc64le",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:95f96f1481b875cc851805c8bcc3d2d08d4d763def6ad46454b738b0c1d1adc8",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "ppc64le",
-							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:0aa50e4f1554a29fb361385c27c21d385423f2d0ccc45b1ff3ffb987af69a639@sha256:95f96f1481b875cc851805c8bcc3d2d08d4d763def6ad46454b738b0c1d1adc8",
-							"vnd.docker.reference.digest": "sha256:8297c76cfae4717033cb7b9c0184395d582194823fb11c30ad1376ce808eff97",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:0aa50e4f1554a29fb361385c27c21d385423f2d0ccc45b1ff3ffb987af69a639@sha256:2c81c20c3a99138db08d8ef986141f9e6d5c6dcbcda7f7634018867f983ea1f9"
-				}
-			},
-			"sourceId": "7c3e1f3336e0976670c67f8bc0dc4cf7b0a223720d0792468dbf92b292993b4d",
+			"img": "oisupport/staging-ppc64le:22ee16dfa600524c4fb92380369d127dc87074bf8232db83c161f86de75b4803",
+			"resolved": null,
+			"sourceId": "a4a23976f246b6134e2ecdabfc6ec074d11fb62d360d5a0d946b9b824480ceb6",
 			"arch": "ppc64le",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "7c3e1f3336e0976670c67f8bc0dc4cf7b0a223720d0792468dbf92b292993b4d",
-			"reproducibleGitChecksum": "c8af2472bb2d65e9dc928f25c3f89db108cc5d45932ceb86baaa747b88b2d5f5",
+			"sourceId": "a4a23976f246b6134e2ecdabfc6ec074d11fb62d360d5a0d946b9b824480ceb6",
+			"reproducibleGitChecksum": "bde2d1d2df9d29f0dbeeb6692c3a743a78e18b52168f376b22462670a389d88d",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-9.3.20231119-Minimal-ppc64le",
-					"GitCommit": "13770ec44b35cbe9af2296d0d50edc31a343e4f6",
+					"GitFetch": "refs/heads/Rocky-9.9.20261112-Minimal-ppc64le",
+					"GitCommit": "cd5075d25017b836b5a515b8798952459bd697f1",
 					"Directory": ".",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1701201854
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794811914
 				}
 			],
 			"arches": {
 				"ppc64le": {
 					"tags": [
-						"rockylinux:9.3.20231119-minimal",
-						"rockylinux:9.3-minimal",
+						"rockylinux:9.9.20261112-minimal",
+						"rockylinux:9.9-minimal",
 						"rockylinux:9-minimal"
 					],
 					"archTags": [
-						"ppc64le/rockylinux:9.3.20231119-minimal",
-						"ppc64le/rockylinux:9.3-minimal",
+						"ppc64le/rockylinux:9.9.20261112-minimal",
+						"ppc64le/rockylinux:9.9-minimal",
 						"ppc64le/rockylinux:9-minimal"
 					],
 					"froms": [
@@ -267653,82 +267919,40 @@
 			}
 		}
 	},
-	"527766cf7343c7322af807e44636e30bf340fd57ff250c487220a1cc59830382": {
-		"buildId": "527766cf7343c7322af807e44636e30bf340fd57ff250c487220a1cc59830382",
+	"9aaa1f0e6d362ae99a2daf195c9729854c26a6220286178853e8343dbd258824": {
+		"buildId": "9aaa1f0e6d362ae99a2daf195c9729854c26a6220286178853e8343dbd258824",
 		"build": {
-			"img": "oisupport/staging-s390x:527766cf7343c7322af807e44636e30bf340fd57ff250c487220a1cc59830382",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:e41f007105b19e5847541e4ad09e56c7d6cdd261af4e3a4512c8807eb7012e59",
-						"size": 1048,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "s390x",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-29T20:16:18Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-s390x:527766cf7343c7322af807e44636e30bf340fd57ff250c487220a1cc59830382@sha256:e41f007105b19e5847541e4ad09e56c7d6cdd261af4e3a4512c8807eb7012e59",
-							"org.opencontainers.image.revision": "af021ed5bf828c0abd26761a8df31b6d578c9498",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#af021ed5bf828c0abd26761a8df31b6d578c9498:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "9.3.20231119-minimal"
-						},
-						"platform": {
-							"architecture": "s390x",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:96ee6c67aa070a3e27708dcc16ec8f93e31383794150b0572509db63bbdf1067",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "s390x",
-							"org.opencontainers.image.ref.name": "oisupport/staging-s390x:527766cf7343c7322af807e44636e30bf340fd57ff250c487220a1cc59830382@sha256:96ee6c67aa070a3e27708dcc16ec8f93e31383794150b0572509db63bbdf1067",
-							"vnd.docker.reference.digest": "sha256:e41f007105b19e5847541e4ad09e56c7d6cdd261af4e3a4512c8807eb7012e59",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-s390x:527766cf7343c7322af807e44636e30bf340fd57ff250c487220a1cc59830382@sha256:209eefc9ab7dcdda9083d79b234d9575e5a5c3f52abd4fe0e8f5750410bb7473"
-				}
-			},
-			"sourceId": "d1a4474d1103c8e3a6e4785174e5a230860ed217d3ad0a459fcead45a934a03d",
+			"img": "oisupport/staging-s390x:9aaa1f0e6d362ae99a2daf195c9729854c26a6220286178853e8343dbd258824",
+			"resolved": null,
+			"sourceId": "b89782b3ecb8468863057f5846ca69c3f3039c165c0940f1600da6dd9bedc3a3",
 			"arch": "s390x",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "d1a4474d1103c8e3a6e4785174e5a230860ed217d3ad0a459fcead45a934a03d",
-			"reproducibleGitChecksum": "efd9bfcd8759a8496654b21946e297801770f6d1508acfaa0de46d07d45f0e48",
+			"sourceId": "b89782b3ecb8468863057f5846ca69c3f3039c165c0940f1600da6dd9bedc3a3",
+			"reproducibleGitChecksum": "1b053ca58aefa546ecc436b793ecd2e830f752b28fbaa04bd5fc0d21d0774bb6",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-9.3.20231119-Minimal-s390x",
-					"GitCommit": "af021ed5bf828c0abd26761a8df31b6d578c9498",
+					"GitFetch": "refs/heads/Rocky-9.9.20261112-Minimal-s390x",
+					"GitCommit": "696ffd08b631eeac3d8c2b69b58289b41bbce50b",
 					"Directory": ".",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1701202019
+					"File": "index.json",
+					"Builder": "oci-import",
+					"SOURCE_DATE_EPOCH": 1794811927
 				}
 			],
 			"arches": {
 				"s390x": {
 					"tags": [
-						"rockylinux:9.3.20231119-minimal",
-						"rockylinux:9.3-minimal",
+						"rockylinux:9.9.20261112-minimal",
+						"rockylinux:9.9-minimal",
 						"rockylinux:9-minimal"
 					],
 					"archTags": [
-						"s390x/rockylinux:9.3.20231119-minimal",
-						"s390x/rockylinux:9.3-minimal",
+						"s390x/rockylinux:9.9.20261112-minimal",
+						"s390x/rockylinux:9.9-minimal",
 						"s390x/rockylinux:9-minimal"
 					],
 					"froms": [
@@ -267750,82 +267974,40 @@
 			}
 		}
 	},
-	"f1465c3e3cf50e904921cdee3107834109926c1b9fb935c1b73bc1f9936718f5": {
-		"buildId": "f1465c3e3cf50e904921cdee3107834109926c1b9fb935c1b73bc1f9936718f5",
+	"f2d8b363d7a06fee1a9d85218e38004b10ea19d0a1eb557b070f7fdd05465fb5": {
+		"buildId": "f2d8b363d7a06fee1a9d85218e38004b10ea19d0a1eb557b070f7fdd05465fb5",
 		"build": {
-			"img": "oisupport/staging-amd64:f1465c3e3cf50e904921cdee3107834109926c1b9fb935c1b73bc1f9936718f5",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:2d05a9266523bbf24f33ebc3a9832e4d5fd74b973c220f2204ca802286aa275d",
-						"size": 1040,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-29T19:58:36Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f1465c3e3cf50e904921cdee3107834109926c1b9fb935c1b73bc1f9936718f5@sha256:2d05a9266523bbf24f33ebc3a9832e4d5fd74b973c220f2204ca802286aa275d",
-							"org.opencontainers.image.revision": "2085c6419637bf970a532888141569c5865ae61f",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#2085c6419637bf970a532888141569c5865ae61f:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "8.9.20231119"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:be82294fef3bc98ea6d90d4ff52f9b0cf7203abd47bbc108dc033b72715de5d9",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f1465c3e3cf50e904921cdee3107834109926c1b9fb935c1b73bc1f9936718f5@sha256:be82294fef3bc98ea6d90d4ff52f9b0cf7203abd47bbc108dc033b72715de5d9",
-							"vnd.docker.reference.digest": "sha256:2d05a9266523bbf24f33ebc3a9832e4d5fd74b973c220f2204ca802286aa275d",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:f1465c3e3cf50e904921cdee3107834109926c1b9fb935c1b73bc1f9936718f5@sha256:8c297d608b017d9664bf22803ccb78c8ae56ac213cab02a432abc106b950c6ca"
-				}
-			},
-			"sourceId": "27f2a011d15e9b162e2a53acf6c6bcee57124cb1fd87ce62eae38c4afe310497",
+			"img": "oisupport/staging-amd64:f2d8b363d7a06fee1a9d85218e38004b10ea19d0a1eb557b070f7fdd05465fb5",
+			"resolved": null,
+			"sourceId": "4b73eacdd4bc9773726b6f568539513dd672e8c20b503fba036ecefec2cf1e8b",
 			"arch": "amd64",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "27f2a011d15e9b162e2a53acf6c6bcee57124cb1fd87ce62eae38c4afe310497",
-			"reproducibleGitChecksum": "40e71d1fe49ed419681e64c9cc70c76cf8ed4702fcaed1f3bed3015428d31d38",
+			"sourceId": "4b73eacdd4bc9773726b6f568539513dd672e8c20b503fba036ecefec2cf1e8b",
+			"reproducibleGitChecksum": "6f4f6a42c3c4c396185c7bd653f0a307367e196d01cd2c727b433e355930fb58",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-8.9.20231119-Base-x86_64",
-					"GitCommit": "2085c6419637bf970a532888141569c5865ae61f",
+					"GitFetch": "refs/heads/Rocky-8.10.20240528-Base-x86_64",
+					"GitCommit": "a344458c7c810d02f7a1ee370ed065160caa9ed7",
 					"Directory": ".",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1700850157
+					"SOURCE_DATE_EPOCH": 1717431223
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
-						"rockylinux:8.9.20231119",
-						"rockylinux:8.9",
+						"rockylinux:8.10.20240528",
+						"rockylinux:8.10",
 						"rockylinux:8"
 					],
 					"archTags": [
-						"amd64/rockylinux:8.9.20231119",
-						"amd64/rockylinux:8.9",
+						"amd64/rockylinux:8.10.20240528",
+						"amd64/rockylinux:8.10",
 						"amd64/rockylinux:8"
 					],
 					"froms": [
@@ -267847,83 +268029,40 @@
 			}
 		}
 	},
-	"ea93245890923003893f8bbf223778ba0ba72a4a03888fb28e9d090f34340dd3": {
-		"buildId": "ea93245890923003893f8bbf223778ba0ba72a4a03888fb28e9d090f34340dd3",
+	"785a75494b6eb565907266d30c4b02c1e656aa6cbc621a4f08ebdd0d90a56321": {
+		"buildId": "785a75494b6eb565907266d30c4b02c1e656aa6cbc621a4f08ebdd0d90a56321",
 		"build": {
-			"img": "oisupport/staging-arm64v8:ea93245890923003893f8bbf223778ba0ba72a4a03888fb28e9d090f34340dd3",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:3c2d0ce12bf79fc5ff05e43b1000e30ff062dc89405525f3307cbff71661f1a0",
-						"size": 1042,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-30T02:35:47Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:ea93245890923003893f8bbf223778ba0ba72a4a03888fb28e9d090f34340dd3@sha256:3c2d0ce12bf79fc5ff05e43b1000e30ff062dc89405525f3307cbff71661f1a0",
-							"org.opencontainers.image.revision": "94d578e7e1eeaf0591657eff018929928e0bfdfc",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#94d578e7e1eeaf0591657eff018929928e0bfdfc:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "8.9.20231119"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:5dbfe9dfad144a238d5f3090ebad49873350946bf4d7ac8ede57d067ed80336f",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:ea93245890923003893f8bbf223778ba0ba72a4a03888fb28e9d090f34340dd3@sha256:5dbfe9dfad144a238d5f3090ebad49873350946bf4d7ac8ede57d067ed80336f",
-							"vnd.docker.reference.digest": "sha256:3c2d0ce12bf79fc5ff05e43b1000e30ff062dc89405525f3307cbff71661f1a0",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:ea93245890923003893f8bbf223778ba0ba72a4a03888fb28e9d090f34340dd3@sha256:beb48fa0603c901109e20fbd3a0fe671742990c3d3a990262aec6aa1b77424b4"
-				}
-			},
-			"sourceId": "8921166f75066d712355a169c99e2f499b66c262ae818a181a79b95907d527a0",
+			"img": "oisupport/staging-arm64v8:785a75494b6eb565907266d30c4b02c1e656aa6cbc621a4f08ebdd0d90a56321",
+			"resolved": null,
+			"sourceId": "3800c5e674f4df35e96fc56529bb85e8fd64af05da1e1075e39c1fc0c0b23873",
 			"arch": "arm64v8",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "8921166f75066d712355a169c99e2f499b66c262ae818a181a79b95907d527a0",
-			"reproducibleGitChecksum": "3b1f67acad4aa03677671395de87aede465e5a7557d61370ed10274853a12245",
+			"sourceId": "3800c5e674f4df35e96fc56529bb85e8fd64af05da1e1075e39c1fc0c0b23873",
+			"reproducibleGitChecksum": "b7979477550e7f1036b93bc9b8fe5ff163fee7845f776713cb40802eb47f02a7",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-8.9.20231119-Base-aarch64",
-					"GitCommit": "94d578e7e1eeaf0591657eff018929928e0bfdfc",
+					"GitFetch": "refs/heads/Rocky-8.10.20240528-Base-aarch64",
+					"GitCommit": "d8ca4fe65ca52d5c26b5a51f580c6d1e50962778",
 					"Directory": ".",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1700850653
+					"SOURCE_DATE_EPOCH": 1717431037
 				}
 			],
 			"arches": {
 				"arm64v8": {
 					"tags": [
-						"rockylinux:8.9.20231119",
-						"rockylinux:8.9",
+						"rockylinux:8.10.20240528",
+						"rockylinux:8.10",
 						"rockylinux:8"
 					],
 					"archTags": [
-						"arm64v8/rockylinux:8.9.20231119",
-						"arm64v8/rockylinux:8.9",
+						"arm64v8/rockylinux:8.10.20240528",
+						"arm64v8/rockylinux:8.10",
 						"arm64v8/rockylinux:8"
 					],
 					"froms": [
@@ -267946,82 +268085,40 @@
 			}
 		}
 	},
-	"b8352a01b10f090630b84552965b5736fb3893af01d44a6878963d4d6e52fb43": {
-		"buildId": "b8352a01b10f090630b84552965b5736fb3893af01d44a6878963d4d6e52fb43",
+	"187a03244ed23ee3029fe4283bcf63315f86af82e868d4376df4c4f7b39ef635": {
+		"buildId": "187a03244ed23ee3029fe4283bcf63315f86af82e868d4376df4c4f7b39ef635",
 		"build": {
-			"img": "oisupport/staging-amd64:b8352a01b10f090630b84552965b5736fb3893af01d44a6878963d4d6e52fb43",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:29a6dc56405a7a07ba473645d5599808ff0fd0710d362e134bac18c8dbcf34d0",
-						"size": 1048,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-29T19:58:36Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b8352a01b10f090630b84552965b5736fb3893af01d44a6878963d4d6e52fb43@sha256:29a6dc56405a7a07ba473645d5599808ff0fd0710d362e134bac18c8dbcf34d0",
-							"org.opencontainers.image.revision": "6d81e6b46e052158df83357c569c8a6773a81e78",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#6d81e6b46e052158df83357c569c8a6773a81e78:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "8.9.20231119-minimal"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:3088b78d1583f032b826e623f559a9fca744bbb4054901609dba3278e11d6523",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b8352a01b10f090630b84552965b5736fb3893af01d44a6878963d4d6e52fb43@sha256:3088b78d1583f032b826e623f559a9fca744bbb4054901609dba3278e11d6523",
-							"vnd.docker.reference.digest": "sha256:29a6dc56405a7a07ba473645d5599808ff0fd0710d362e134bac18c8dbcf34d0",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b8352a01b10f090630b84552965b5736fb3893af01d44a6878963d4d6e52fb43@sha256:617a69daab4f8bb7e55df0ee333f2599671505d5e5ee1b20358ac15b87a3bd61"
-				}
-			},
-			"sourceId": "cdca86bdd208812a8e0f0e216a1b8f8d54fbf5e339a315f9f69eedfe0d190ccc",
+			"img": "oisupport/staging-amd64:187a03244ed23ee3029fe4283bcf63315f86af82e868d4376df4c4f7b39ef635",
+			"resolved": null,
+			"sourceId": "d16ae9306cbd767c6cc4204827600508d81752aa97f8f421cdd1a3b8b9961739",
 			"arch": "amd64",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "cdca86bdd208812a8e0f0e216a1b8f8d54fbf5e339a315f9f69eedfe0d190ccc",
-			"reproducibleGitChecksum": "9c579276287aabee87da0c838e44c76a23a86fce024ca74741ef513f7ff614e7",
+			"sourceId": "d16ae9306cbd767c6cc4204827600508d81752aa97f8f421cdd1a3b8b9961739",
+			"reproducibleGitChecksum": "7d19078793f2f591bbbd81540fa7ad129e4eecdb8731f88c406f952b0c3b33f3",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-8.9.20231119-Minimal-x86_64",
-					"GitCommit": "6d81e6b46e052158df83357c569c8a6773a81e78",
+					"GitFetch": "refs/heads/Rocky-8.10.20240528-Minimal-x86_64",
+					"GitCommit": "27400c231e2095ac005f2e14b86eeb79dd147912",
 					"Directory": ".",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1700850244
+					"SOURCE_DATE_EPOCH": 1717431266
 				}
 			],
 			"arches": {
 				"amd64": {
 					"tags": [
-						"rockylinux:8.9.20231119-minimal",
-						"rockylinux:8.9-minimal",
+						"rockylinux:8.10.20240528-minimal",
+						"rockylinux:8.10-minimal",
 						"rockylinux:8-minimal"
 					],
 					"archTags": [
-						"amd64/rockylinux:8.9.20231119-minimal",
-						"amd64/rockylinux:8.9-minimal",
+						"amd64/rockylinux:8.10.20240528-minimal",
+						"amd64/rockylinux:8.10-minimal",
 						"amd64/rockylinux:8-minimal"
 					],
 					"froms": [
@@ -268043,83 +268140,40 @@
 			}
 		}
 	},
-	"333b0b245d0bef269fb1aaf037d17a0b7c3f906a5e37799341272a3617f1ea2d": {
-		"buildId": "333b0b245d0bef269fb1aaf037d17a0b7c3f906a5e37799341272a3617f1ea2d",
+	"6cc22c6908239ed227ad2084a35c2bddb2306c6218a3ffb89e2ceee2b5da3a5f": {
+		"buildId": "6cc22c6908239ed227ad2084a35c2bddb2306c6218a3ffb89e2ceee2b5da3a5f",
 		"build": {
-			"img": "oisupport/staging-arm64v8:333b0b245d0bef269fb1aaf037d17a0b7c3f906a5e37799341272a3617f1ea2d",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:dacf3bece96fb40edabfb9412674969c411cbe28a19bb7a60da12e0b5cf4a662",
-						"size": 1050,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.name": "scratch",
-							"org.opencontainers.image.created": "2024-05-30T02:36:19Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:333b0b245d0bef269fb1aaf037d17a0b7c3f906a5e37799341272a3617f1ea2d@sha256:dacf3bece96fb40edabfb9412674969c411cbe28a19bb7a60da12e0b5cf4a662",
-							"org.opencontainers.image.revision": "cc181de9168465f9e9e2fbddd5a0f8e1a89cddfc",
-							"org.opencontainers.image.source": "https://github.com/rocky-linux/sig-cloud-instance-images.git#cc181de9168465f9e9e2fbddd5a0f8e1a89cddfc:.",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/rockylinux",
-							"org.opencontainers.image.version": "8.9.20231119-minimal"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:dd4ea4c62bda83fc005f97034a643b20a00c01c5ee32918fd873320314c754cc",
-						"size": 840,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:333b0b245d0bef269fb1aaf037d17a0b7c3f906a5e37799341272a3617f1ea2d@sha256:dd4ea4c62bda83fc005f97034a643b20a00c01c5ee32918fd873320314c754cc",
-							"vnd.docker.reference.digest": "sha256:dacf3bece96fb40edabfb9412674969c411cbe28a19bb7a60da12e0b5cf4a662",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:333b0b245d0bef269fb1aaf037d17a0b7c3f906a5e37799341272a3617f1ea2d@sha256:e3e848d6fecedb0c8c0e2fe02e36c6362df308ba622b86adf02219ab675b83dd"
-				}
-			},
-			"sourceId": "5fbe20b9666cb84ed298fe942c562dd734a881e8cef80c26e517b2a4948f0ee7",
+			"img": "oisupport/staging-arm64v8:6cc22c6908239ed227ad2084a35c2bddb2306c6218a3ffb89e2ceee2b5da3a5f",
+			"resolved": null,
+			"sourceId": "34262fd6d474ea25682398fb63fbf0bdee636b708a93c5644e12338d4ec502f3",
 			"arch": "arm64v8",
 			"parents": {},
 			"resolvedParents": {}
 		},
 		"source": {
-			"sourceId": "5fbe20b9666cb84ed298fe942c562dd734a881e8cef80c26e517b2a4948f0ee7",
-			"reproducibleGitChecksum": "d8cff853a6d092337b461b26e889c38187d056766fa7d2c169feaac0d08402c3",
+			"sourceId": "34262fd6d474ea25682398fb63fbf0bdee636b708a93c5644e12338d4ec502f3",
+			"reproducibleGitChecksum": "b41eced4ed65838d250580157b1661751a84185e5bde1040d0228bb0eb0186c1",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/rocky-linux/sig-cloud-instance-images.git",
-					"GitFetch": "refs/heads/Rocky-8.9.20231119-Minimal-aarch64",
-					"GitCommit": "cc181de9168465f9e9e2fbddd5a0f8e1a89cddfc",
+					"GitFetch": "refs/heads/Rocky-8.10.20240528-Minimal-aarch64",
+					"GitCommit": "360b8f7691db8eaebf715013dccdf05d8efe239a",
 					"Directory": ".",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1700850522
+					"SOURCE_DATE_EPOCH": 1717431073
 				}
 			],
 			"arches": {
 				"arm64v8": {
 					"tags": [
-						"rockylinux:8.9.20231119-minimal",
-						"rockylinux:8.9-minimal",
+						"rockylinux:8.10.20240528-minimal",
+						"rockylinux:8.10-minimal",
 						"rockylinux:8-minimal"
 					],
 					"archTags": [
-						"arm64v8/rockylinux:8.9.20231119-minimal",
-						"arm64v8/rockylinux:8.9-minimal",
+						"arm64v8/rockylinux:8.10.20240528-minimal",
+						"arm64v8/rockylinux:8.10-minimal",
 						"arm64v8/rockylinux:8-minimal"
 					],
 					"froms": [
@@ -835305,7 +835359,50 @@
 		"buildId": "9d1ebbe2c34742bd6e90d5aeaa22190b2cf8fb5e6a7e72424c9c7c763850a5a1",
 		"build": {
 			"img": "oisupport/staging-riscv64:9d1ebbe2c34742bd6e90d5aeaa22190b2cf8fb5e6a7e72424c9c7c763850a5a1",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:40faf48702e2c14abb2dc8f4b7c9b2d075db9a5e1e51bfb0bbad1f5dccb17ea7",
+						"size": 2322,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:40b5c369903defe20b5cf643bfb5737974b26d01680462acd609112dbc40158a",
+							"org.opencontainers.image.base.name": "buildpack-deps:trixie",
+							"org.opencontainers.image.created": "2026-11-17T04:24:12Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:9d1ebbe2c34742bd6e90d5aeaa22190b2cf8fb5e6a7e72424c9c7c763850a5a1@sha256:40faf48702e2c14abb2dc8f4b7c9b2d075db9a5e1e51bfb0bbad1f5dccb17ea7",
+							"org.opencontainers.image.revision": "01dcc3d31fcd879f9af36e097bd96328a457f4bd",
+							"org.opencontainers.image.source": "https://github.com/docker-library/python.git#01dcc3d31fcd879f9af36e097bd96328a457f4bd:3.14/trixie",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/python",
+							"org.opencontainers.image.version": "3.14.10-trixie"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:86858f3434082435eeb45654b7f2f38d82ad93f509eaba1c2a4e69466a088678",
+						"size": 842,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:9d1ebbe2c34742bd6e90d5aeaa22190b2cf8fb5e6a7e72424c9c7c763850a5a1@sha256:86858f3434082435eeb45654b7f2f38d82ad93f509eaba1c2a4e69466a088678",
+							"vnd.docker.reference.digest": "sha256:40faf48702e2c14abb2dc8f4b7c9b2d075db9a5e1e51bfb0bbad1f5dccb17ea7",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:9d1ebbe2c34742bd6e90d5aeaa22190b2cf8fb5e6a7e72424c9c7c763850a5a1@sha256:40dbd5416e6707ad538713952829e4bbf0c8eb4f65e30cb43419f8fe12d4f368"
+				}
+			},
 			"sourceId": "87e9006c1ada7d7a8c52cf6741587c520063c5f9fe5015762b3d5d683953e5c0",
 			"arch": "riscv64",
 			"parents": {
