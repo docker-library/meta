@@ -662397,7 +662397,50 @@
 		"buildId": "4282043d943cc2af7c9aaa69f5aed9d2f5706381da0fafe2baf951821ca2679e",
 		"build": {
 			"img": "oisupport/staging-riscv64:4282043d943cc2af7c9aaa69f5aed9d2f5706381da0fafe2baf951821ca2679e",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:e6314cc3cbfc1bcaf88c3daf2b71964b38a63a9d6946d229f6b9e57f520acab0",
+						"size": 4805,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:395a8df36573cdc7feba81ca9690e2a54804aada5f3b18f0586fa2c83ae39d7b",
+							"org.opencontainers.image.base.name": "php:8.5-apache-trixie",
+							"org.opencontainers.image.created": "2026-11-19T08:51:27Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4282043d943cc2af7c9aaa69f5aed9d2f5706381da0fafe2baf951821ca2679e@sha256:e6314cc3cbfc1bcaf88c3daf2b71964b38a63a9d6946d229f6b9e57f520acab0",
+							"org.opencontainers.image.revision": "327d05a9f11f806acfbd6d86c22d5824fd97dc45",
+							"org.opencontainers.image.source": "https://github.com/joomla-docker/docker-joomla.git#327d05a9f11f806acfbd6d86c22d5824fd97dc45:images/6.2/stable/php8.5/apache",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/joomla",
+							"org.opencontainers.image.version": "6.2.0-php8.5-apache"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:a6d394bb468dc766832ceebb80d409c5c7ffb65e93d5855e6fc21dd9dd0c6851",
+						"size": 567,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4282043d943cc2af7c9aaa69f5aed9d2f5706381da0fafe2baf951821ca2679e@sha256:a6d394bb468dc766832ceebb80d409c5c7ffb65e93d5855e6fc21dd9dd0c6851",
+							"vnd.docker.reference.digest": "sha256:e6314cc3cbfc1bcaf88c3daf2b71964b38a63a9d6946d229f6b9e57f520acab0",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4282043d943cc2af7c9aaa69f5aed9d2f5706381da0fafe2baf951821ca2679e@sha256:7fdadee0a64d42918404d851e649c53648d41098da14140da31ca957d1c9da76"
+				}
+			},
 			"sourceId": "e50333f35141ad5b2c5d06b509f36c222ed1ac8903b2dd0c5e2bcd354ce74946",
 			"arch": "riscv64",
 			"parents": {
@@ -663523,6 +663566,110 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"joomla:6.2.0-php8.5-apache": {
+							"sourceId": "e50333f35141ad5b2c5d06b509f36c222ed1ac8903b2dd0c5e2bcd354ce74946",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"15d06d15b8c53c14e0c5b8af89307575270a231e80920579414659772af2f147": {
+		"buildId": "15d06d15b8c53c14e0c5b8af89307575270a231e80920579414659772af2f147",
+		"build": {
+			"img": "oisupport/staging-riscv64:15d06d15b8c53c14e0c5b8af89307575270a231e80920579414659772af2f147",
+			"resolved": null,
+			"sourceId": "42437e025409021a22603fd4417942446655c30a2cfc95f5f5133d89fd561fff",
+			"arch": "riscv64",
+			"parents": {
+				"joomla:6.2.0-php8.5-apache": "sha256:e6314cc3cbfc1bcaf88c3daf2b71964b38a63a9d6946d229f6b9e57f520acab0"
+			},
+			"resolvedParents": {
+				"joomla:6.2.0-php8.5-apache": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:e6314cc3cbfc1bcaf88c3daf2b71964b38a63a9d6946d229f6b9e57f520acab0",
+							"size": 4805,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:395a8df36573cdc7feba81ca9690e2a54804aada5f3b18f0586fa2c83ae39d7b",
+								"org.opencontainers.image.base.name": "php:8.5-apache-trixie",
+								"org.opencontainers.image.created": "2026-11-19T08:51:27Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4282043d943cc2af7c9aaa69f5aed9d2f5706381da0fafe2baf951821ca2679e@sha256:e6314cc3cbfc1bcaf88c3daf2b71964b38a63a9d6946d229f6b9e57f520acab0",
+								"org.opencontainers.image.revision": "327d05a9f11f806acfbd6d86c22d5824fd97dc45",
+								"org.opencontainers.image.source": "https://github.com/joomla-docker/docker-joomla.git#327d05a9f11f806acfbd6d86c22d5824fd97dc45:images/6.2/stable/php8.5/apache",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/joomla",
+								"org.opencontainers.image.version": "6.2.0-php8.5-apache"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:a6d394bb468dc766832ceebb80d409c5c7ffb65e93d5855e6fc21dd9dd0c6851",
+							"size": 567,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4282043d943cc2af7c9aaa69f5aed9d2f5706381da0fafe2baf951821ca2679e@sha256:a6d394bb468dc766832ceebb80d409c5c7ffb65e93d5855e6fc21dd9dd0c6851",
+								"vnd.docker.reference.digest": "sha256:e6314cc3cbfc1bcaf88c3daf2b71964b38a63a9d6946d229f6b9e57f520acab0",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:4282043d943cc2af7c9aaa69f5aed9d2f5706381da0fafe2baf951821ca2679e@sha256:7fdadee0a64d42918404d851e649c53648d41098da14140da31ca957d1c9da76"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "42437e025409021a22603fd4417942446655c30a2cfc95f5f5133d89fd561fff",
+			"reproducibleGitChecksum": "4fd10d52210c88195ec0754ec72482f2c6f8ffb77e7fbfef73431578c0fad4d9",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/joomla-docker/docker-joomla.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "327d05a9f11f806acfbd6d86c22d5824fd97dc45",
+					"Directory": "images/6.2/stable/php8.5/apache-dev",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1794425964
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"joomla:6.2.0-php8.5-apache-dev",
+						"joomla:6.2-php8.5-apache-dev",
+						"joomla:6-php8.5-apache-dev",
+						"joomla:php8.5-apache-dev"
+					],
+					"archTags": [
+						"riscv64/joomla:6.2.0-php8.5-apache-dev",
+						"riscv64/joomla:6.2-php8.5-apache-dev",
+						"riscv64/joomla:6-php8.5-apache-dev",
+						"riscv64/joomla:php8.5-apache-dev"
+					],
+					"froms": [
+						"joomla:6.2.0-php8.5-apache"
+					],
+					"lastStageFrom": "joomla:6.2.0-php8.5-apache",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
