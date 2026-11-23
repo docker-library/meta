@@ -355720,55 +355720,12 @@
 			}
 		}
 	},
-	"b8cd37ef8c1d25a8e6e468c31a872a2f1b6d887827c0acdf606c7616ca887d8c": {
-		"buildId": "b8cd37ef8c1d25a8e6e468c31a872a2f1b6d887827c0acdf606c7616ca887d8c",
+	"ba6fc20f47d40720bc359c1a6ad186db615efa040b011177bc22731017cce7ec": {
+		"buildId": "ba6fc20f47d40720bc359c1a6ad186db615efa040b011177bc22731017cce7ec",
 		"build": {
-			"img": "oisupport/staging-amd64:b8cd37ef8c1d25a8e6e468c31a872a2f1b6d887827c0acdf606c7616ca887d8c",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:c6ecf6b06fc3caebcce0945689470c4db5251df253b0f3359959204a91bea48f",
-						"size": 2492,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:b682e31336cc8e0a73ed91ab32b7a95e32591c5ff09994490a20accf9b3600f9",
-							"org.opencontainers.image.base.name": "ubuntu:22.04",
-							"org.opencontainers.image.created": "2026-11-20T03:09:33Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b8cd37ef8c1d25a8e6e468c31a872a2f1b6d887827c0acdf606c7616ca887d8c@sha256:c6ecf6b06fc3caebcce0945689470c4db5251df253b0f3359959204a91bea48f",
-							"org.opencontainers.image.revision": "76465b5d7bedbd2c802d802a79806395fa8de866",
-							"org.opencontainers.image.source": "https://github.com/ClickHouse/docker-library.git#76465b5d7bedbd2c802d802a79806395fa8de866:server/26.10.3.7",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/clickhouse",
-							"org.opencontainers.image.version": "latest"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:fbe46e1f141aca83b2f7a767a6dcf93a0d9cf40161d4d794a4d095172e76b4f4",
-						"size": 567,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b8cd37ef8c1d25a8e6e468c31a872a2f1b6d887827c0acdf606c7616ca887d8c@sha256:fbe46e1f141aca83b2f7a767a6dcf93a0d9cf40161d4d794a4d095172e76b4f4",
-							"vnd.docker.reference.digest": "sha256:c6ecf6b06fc3caebcce0945689470c4db5251df253b0f3359959204a91bea48f",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:b8cd37ef8c1d25a8e6e468c31a872a2f1b6d887827c0acdf606c7616ca887d8c@sha256:2d6665add711a13b0fc0c789d97307dcb4c573995167485f2eac6661b107d958"
-				}
-			},
-			"sourceId": "d2438a87f8caef6770ad1380eef0cc7cda02e07888571e2069da59bd5081e025",
+			"img": "oisupport/staging-amd64:ba6fc20f47d40720bc359c1a6ad186db615efa040b011177bc22731017cce7ec",
+			"resolved": null,
+			"sourceId": "44f147a54a847bb77c6194dce8c19418fa58a8a6a21cae0b2a4bc576a31a5e12",
 			"arch": "amd64",
 			"parents": {
 				"ubuntu:22.04": "sha256:b682e31336cc8e0a73ed91ab32b7a95e32591c5ff09994490a20accf9b3600f9"
@@ -355820,17 +355777,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "d2438a87f8caef6770ad1380eef0cc7cda02e07888571e2069da59bd5081e025",
-			"reproducibleGitChecksum": "f39cb8045c737acd14f59a342ae7c75b597af38131b4a76159f453e3142e8e3f",
+			"sourceId": "44f147a54a847bb77c6194dce8c19418fa58a8a6a21cae0b2a4bc576a31a5e12",
+			"reproducibleGitChecksum": "b3b150dc6534ce5d11f8ee49cb5e64f9011def360530cbe8b136dbbb16c5d10b",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/ClickHouse/docker-library.git",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "76465b5d7bedbd2c802d802a79806395fa8de866",
-					"Directory": "server/26.10.3.7",
+					"GitCommit": "e71823d3454575435461c717aaf7902dbcfc3b4c",
+					"Directory": "server/26.10.11.12",
 					"File": "Dockerfile.ubuntu",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793041907
+					"SOURCE_DATE_EPOCH": 1795444903
 				}
 			],
 			"arches": {
@@ -355840,20 +355797,20 @@
 						"clickhouse:jammy",
 						"clickhouse:26.10",
 						"clickhouse:26.10-jammy",
-						"clickhouse:26.10.3",
-						"clickhouse:26.10.3-jammy",
-						"clickhouse:26.10.3.7",
-						"clickhouse:26.10.3.7-jammy"
+						"clickhouse:26.10.11",
+						"clickhouse:26.10.11-jammy",
+						"clickhouse:26.10.11.12",
+						"clickhouse:26.10.11.12-jammy"
 					],
 					"archTags": [
 						"amd64/clickhouse:latest",
 						"amd64/clickhouse:jammy",
 						"amd64/clickhouse:26.10",
 						"amd64/clickhouse:26.10-jammy",
-						"amd64/clickhouse:26.10.3",
-						"amd64/clickhouse:26.10.3-jammy",
-						"amd64/clickhouse:26.10.3.7",
-						"amd64/clickhouse:26.10.3.7-jammy"
+						"amd64/clickhouse:26.10.11",
+						"amd64/clickhouse:26.10.11-jammy",
+						"amd64/clickhouse:26.10.11.12",
+						"amd64/clickhouse:26.10.11.12-jammy"
 					],
 					"froms": [
 						"ubuntu:22.04"
@@ -355874,56 +355831,12 @@
 			}
 		}
 	},
-	"c0d26f5c55bd3db7f9b5a16537e136dfbeb99703bdad0e2c609e055058dfe437": {
-		"buildId": "c0d26f5c55bd3db7f9b5a16537e136dfbeb99703bdad0e2c609e055058dfe437",
+	"b723808dbbf2cd2293cadf113d4ef047cb332d6367fa77a25c6527d35d2e6037": {
+		"buildId": "b723808dbbf2cd2293cadf113d4ef047cb332d6367fa77a25c6527d35d2e6037",
 		"build": {
-			"img": "oisupport/staging-arm64v8:c0d26f5c55bd3db7f9b5a16537e136dfbeb99703bdad0e2c609e055058dfe437",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:242aa0514e8b64dc08bb852a818a4766a8a11a94aaffbbddedf73c287b862d23",
-						"size": 2494,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:2926e8e6ef0b816e19849e33ccc728c72b921a428286e6595d52fa92c5716626",
-							"org.opencontainers.image.base.name": "ubuntu:22.04",
-							"org.opencontainers.image.created": "2026-11-20T03:09:34Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:c0d26f5c55bd3db7f9b5a16537e136dfbeb99703bdad0e2c609e055058dfe437@sha256:242aa0514e8b64dc08bb852a818a4766a8a11a94aaffbbddedf73c287b862d23",
-							"org.opencontainers.image.revision": "76465b5d7bedbd2c802d802a79806395fa8de866",
-							"org.opencontainers.image.source": "https://github.com/ClickHouse/docker-library.git#76465b5d7bedbd2c802d802a79806395fa8de866:server/26.10.3.7",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/clickhouse",
-							"org.opencontainers.image.version": "latest"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:159d68396d6e50c79f8c860e64215a91ccaccb816cfff4937af7d5737e76b12a",
-						"size": 567,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:c0d26f5c55bd3db7f9b5a16537e136dfbeb99703bdad0e2c609e055058dfe437@sha256:159d68396d6e50c79f8c860e64215a91ccaccb816cfff4937af7d5737e76b12a",
-							"vnd.docker.reference.digest": "sha256:242aa0514e8b64dc08bb852a818a4766a8a11a94aaffbbddedf73c287b862d23",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:c0d26f5c55bd3db7f9b5a16537e136dfbeb99703bdad0e2c609e055058dfe437@sha256:eadcf1df963e6e359ed7c6dfa11359c387da4b91651531f62098e161a263ddf6"
-				}
-			},
-			"sourceId": "d2438a87f8caef6770ad1380eef0cc7cda02e07888571e2069da59bd5081e025",
+			"img": "oisupport/staging-arm64v8:b723808dbbf2cd2293cadf113d4ef047cb332d6367fa77a25c6527d35d2e6037",
+			"resolved": null,
+			"sourceId": "44f147a54a847bb77c6194dce8c19418fa58a8a6a21cae0b2a4bc576a31a5e12",
 			"arch": "arm64v8",
 			"parents": {
 				"ubuntu:22.04": "sha256:2926e8e6ef0b816e19849e33ccc728c72b921a428286e6595d52fa92c5716626"
@@ -355976,17 +355889,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "d2438a87f8caef6770ad1380eef0cc7cda02e07888571e2069da59bd5081e025",
-			"reproducibleGitChecksum": "f39cb8045c737acd14f59a342ae7c75b597af38131b4a76159f453e3142e8e3f",
+			"sourceId": "44f147a54a847bb77c6194dce8c19418fa58a8a6a21cae0b2a4bc576a31a5e12",
+			"reproducibleGitChecksum": "b3b150dc6534ce5d11f8ee49cb5e64f9011def360530cbe8b136dbbb16c5d10b",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/ClickHouse/docker-library.git",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "76465b5d7bedbd2c802d802a79806395fa8de866",
-					"Directory": "server/26.10.3.7",
+					"GitCommit": "e71823d3454575435461c717aaf7902dbcfc3b4c",
+					"Directory": "server/26.10.11.12",
 					"File": "Dockerfile.ubuntu",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793041907
+					"SOURCE_DATE_EPOCH": 1795444903
 				}
 			],
 			"arches": {
@@ -355996,20 +355909,20 @@
 						"clickhouse:jammy",
 						"clickhouse:26.10",
 						"clickhouse:26.10-jammy",
-						"clickhouse:26.10.3",
-						"clickhouse:26.10.3-jammy",
-						"clickhouse:26.10.3.7",
-						"clickhouse:26.10.3.7-jammy"
+						"clickhouse:26.10.11",
+						"clickhouse:26.10.11-jammy",
+						"clickhouse:26.10.11.12",
+						"clickhouse:26.10.11.12-jammy"
 					],
 					"archTags": [
 						"arm64v8/clickhouse:latest",
 						"arm64v8/clickhouse:jammy",
 						"arm64v8/clickhouse:26.10",
 						"arm64v8/clickhouse:26.10-jammy",
-						"arm64v8/clickhouse:26.10.3",
-						"arm64v8/clickhouse:26.10.3-jammy",
-						"arm64v8/clickhouse:26.10.3.7",
-						"arm64v8/clickhouse:26.10.3.7-jammy"
+						"arm64v8/clickhouse:26.10.11",
+						"arm64v8/clickhouse:26.10.11-jammy",
+						"arm64v8/clickhouse:26.10.11.12",
+						"arm64v8/clickhouse:26.10.11.12-jammy"
 					],
 					"froms": [
 						"ubuntu:22.04"
@@ -356031,55 +355944,12 @@
 			}
 		}
 	},
-	"0c0eedf165a2b4683081443fc5dac89973a3e74384fc3bc611de4cde4191f6a2": {
-		"buildId": "0c0eedf165a2b4683081443fc5dac89973a3e74384fc3bc611de4cde4191f6a2",
+	"bffc7f52744ce29aa210a0492098513f0301935157fa5c812d214884def4b6ca": {
+		"buildId": "bffc7f52744ce29aa210a0492098513f0301935157fa5c812d214884def4b6ca",
 		"build": {
-			"img": "oisupport/staging-amd64:0c0eedf165a2b4683081443fc5dac89973a3e74384fc3bc611de4cde4191f6a2",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:5a14cfd8c738c349741c8a2ff72a9c9a23844cc3d0cba2a8d319830837f39a69",
-						"size": 2490,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:b682e31336cc8e0a73ed91ab32b7a95e32591c5ff09994490a20accf9b3600f9",
-							"org.opencontainers.image.base.name": "ubuntu:22.04",
-							"org.opencontainers.image.created": "2026-11-20T03:09:34Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:0c0eedf165a2b4683081443fc5dac89973a3e74384fc3bc611de4cde4191f6a2@sha256:5a14cfd8c738c349741c8a2ff72a9c9a23844cc3d0cba2a8d319830837f39a69",
-							"org.opencontainers.image.revision": "76465b5d7bedbd2c802d802a79806395fa8de866",
-							"org.opencontainers.image.source": "https://github.com/ClickHouse/docker-library.git#76465b5d7bedbd2c802d802a79806395fa8de866:server/26.9.27.3",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/clickhouse",
-							"org.opencontainers.image.version": "26.9"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:b64fff70af30db2272510d8a191cc746b62955cb75c86821b0570c0c3fcf992c",
-						"size": 567,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:0c0eedf165a2b4683081443fc5dac89973a3e74384fc3bc611de4cde4191f6a2@sha256:b64fff70af30db2272510d8a191cc746b62955cb75c86821b0570c0c3fcf992c",
-							"vnd.docker.reference.digest": "sha256:5a14cfd8c738c349741c8a2ff72a9c9a23844cc3d0cba2a8d319830837f39a69",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:0c0eedf165a2b4683081443fc5dac89973a3e74384fc3bc611de4cde4191f6a2@sha256:a6b4bb790dcadb271a78df4e3227712493345e48efdf9e516bee10f978e9944e"
-				}
-			},
-			"sourceId": "e7e4696afeb55dd4463afd06307185aaea73584a4b8a324a9013d6a9def55671",
+			"img": "oisupport/staging-amd64:bffc7f52744ce29aa210a0492098513f0301935157fa5c812d214884def4b6ca",
+			"resolved": null,
+			"sourceId": "0828424acd4d54d3e6a8a0f8378b6b8730ffaea411de4f05fe600df883d1a3b9",
 			"arch": "amd64",
 			"parents": {
 				"ubuntu:22.04": "sha256:b682e31336cc8e0a73ed91ab32b7a95e32591c5ff09994490a20accf9b3600f9"
@@ -356131,17 +356001,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "e7e4696afeb55dd4463afd06307185aaea73584a4b8a324a9013d6a9def55671",
-			"reproducibleGitChecksum": "58d8e290ce585ca9a14e053faa761fd37d997edd334d4444c63b4f30cd6c9150",
+			"sourceId": "0828424acd4d54d3e6a8a0f8378b6b8730ffaea411de4f05fe600df883d1a3b9",
+			"reproducibleGitChecksum": "db8b1cadd400dfd16afc858b34a3a7d26016b886b051188f996e7534451f8ee8",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/ClickHouse/docker-library.git",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "76465b5d7bedbd2c802d802a79806395fa8de866",
-					"Directory": "server/26.9.27.3",
+					"GitCommit": "e71823d3454575435461c717aaf7902dbcfc3b4c",
+					"Directory": "server/26.9.36.3",
 					"File": "Dockerfile.ubuntu",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793041907
+					"SOURCE_DATE_EPOCH": 1795444903
 				}
 			],
 			"arches": {
@@ -356149,18 +356019,18 @@
 					"tags": [
 						"clickhouse:26.9",
 						"clickhouse:26.9-jammy",
-						"clickhouse:26.9.27",
-						"clickhouse:26.9.27-jammy",
-						"clickhouse:26.9.27.3",
-						"clickhouse:26.9.27.3-jammy"
+						"clickhouse:26.9.36",
+						"clickhouse:26.9.36-jammy",
+						"clickhouse:26.9.36.3",
+						"clickhouse:26.9.36.3-jammy"
 					],
 					"archTags": [
 						"amd64/clickhouse:26.9",
 						"amd64/clickhouse:26.9-jammy",
-						"amd64/clickhouse:26.9.27",
-						"amd64/clickhouse:26.9.27-jammy",
-						"amd64/clickhouse:26.9.27.3",
-						"amd64/clickhouse:26.9.27.3-jammy"
+						"amd64/clickhouse:26.9.36",
+						"amd64/clickhouse:26.9.36-jammy",
+						"amd64/clickhouse:26.9.36.3",
+						"amd64/clickhouse:26.9.36.3-jammy"
 					],
 					"froms": [
 						"ubuntu:22.04"
@@ -356181,56 +356051,12 @@
 			}
 		}
 	},
-	"cd4d4682e8fb60fef70b51f31730f45004663e3e6ab0cd4a4c9946b4f51b8ae7": {
-		"buildId": "cd4d4682e8fb60fef70b51f31730f45004663e3e6ab0cd4a4c9946b4f51b8ae7",
+	"f86cf15ee07eba5668ef97a65dee45acb75a8a9b4d05cec311ed0d238da71f66": {
+		"buildId": "f86cf15ee07eba5668ef97a65dee45acb75a8a9b4d05cec311ed0d238da71f66",
 		"build": {
-			"img": "oisupport/staging-arm64v8:cd4d4682e8fb60fef70b51f31730f45004663e3e6ab0cd4a4c9946b4f51b8ae7",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:67af4e158f805a280315ee210d2ea2b90586e952282e4567ec7e52334c753253",
-						"size": 2492,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:2926e8e6ef0b816e19849e33ccc728c72b921a428286e6595d52fa92c5716626",
-							"org.opencontainers.image.base.name": "ubuntu:22.04",
-							"org.opencontainers.image.created": "2026-11-20T03:09:35Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:cd4d4682e8fb60fef70b51f31730f45004663e3e6ab0cd4a4c9946b4f51b8ae7@sha256:67af4e158f805a280315ee210d2ea2b90586e952282e4567ec7e52334c753253",
-							"org.opencontainers.image.revision": "76465b5d7bedbd2c802d802a79806395fa8de866",
-							"org.opencontainers.image.source": "https://github.com/ClickHouse/docker-library.git#76465b5d7bedbd2c802d802a79806395fa8de866:server/26.9.27.3",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/clickhouse",
-							"org.opencontainers.image.version": "26.9"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:7b42acf25e677831e3e526a664873dd01909dc44fac0a604587f495f8a612c64",
-						"size": 567,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:cd4d4682e8fb60fef70b51f31730f45004663e3e6ab0cd4a4c9946b4f51b8ae7@sha256:7b42acf25e677831e3e526a664873dd01909dc44fac0a604587f495f8a612c64",
-							"vnd.docker.reference.digest": "sha256:67af4e158f805a280315ee210d2ea2b90586e952282e4567ec7e52334c753253",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:cd4d4682e8fb60fef70b51f31730f45004663e3e6ab0cd4a4c9946b4f51b8ae7@sha256:aa423fac2adc927d73676d71aa79410dc9f9afb0b356e6ffce5b66f83e3d89c7"
-				}
-			},
-			"sourceId": "e7e4696afeb55dd4463afd06307185aaea73584a4b8a324a9013d6a9def55671",
+			"img": "oisupport/staging-arm64v8:f86cf15ee07eba5668ef97a65dee45acb75a8a9b4d05cec311ed0d238da71f66",
+			"resolved": null,
+			"sourceId": "0828424acd4d54d3e6a8a0f8378b6b8730ffaea411de4f05fe600df883d1a3b9",
 			"arch": "arm64v8",
 			"parents": {
 				"ubuntu:22.04": "sha256:2926e8e6ef0b816e19849e33ccc728c72b921a428286e6595d52fa92c5716626"
@@ -356283,17 +356109,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "e7e4696afeb55dd4463afd06307185aaea73584a4b8a324a9013d6a9def55671",
-			"reproducibleGitChecksum": "58d8e290ce585ca9a14e053faa761fd37d997edd334d4444c63b4f30cd6c9150",
+			"sourceId": "0828424acd4d54d3e6a8a0f8378b6b8730ffaea411de4f05fe600df883d1a3b9",
+			"reproducibleGitChecksum": "db8b1cadd400dfd16afc858b34a3a7d26016b886b051188f996e7534451f8ee8",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/ClickHouse/docker-library.git",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "76465b5d7bedbd2c802d802a79806395fa8de866",
-					"Directory": "server/26.9.27.3",
+					"GitCommit": "e71823d3454575435461c717aaf7902dbcfc3b4c",
+					"Directory": "server/26.9.36.3",
 					"File": "Dockerfile.ubuntu",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793041907
+					"SOURCE_DATE_EPOCH": 1795444903
 				}
 			],
 			"arches": {
@@ -356301,18 +356127,18 @@
 					"tags": [
 						"clickhouse:26.9",
 						"clickhouse:26.9-jammy",
-						"clickhouse:26.9.27",
-						"clickhouse:26.9.27-jammy",
-						"clickhouse:26.9.27.3",
-						"clickhouse:26.9.27.3-jammy"
+						"clickhouse:26.9.36",
+						"clickhouse:26.9.36-jammy",
+						"clickhouse:26.9.36.3",
+						"clickhouse:26.9.36.3-jammy"
 					],
 					"archTags": [
 						"arm64v8/clickhouse:26.9",
 						"arm64v8/clickhouse:26.9-jammy",
-						"arm64v8/clickhouse:26.9.27",
-						"arm64v8/clickhouse:26.9.27-jammy",
-						"arm64v8/clickhouse:26.9.27.3",
-						"arm64v8/clickhouse:26.9.27.3-jammy"
+						"arm64v8/clickhouse:26.9.36",
+						"arm64v8/clickhouse:26.9.36-jammy",
+						"arm64v8/clickhouse:26.9.36.3",
+						"arm64v8/clickhouse:26.9.36.3-jammy"
 					],
 					"froms": [
 						"ubuntu:22.04"
@@ -356334,55 +356160,12 @@
 			}
 		}
 	},
-	"28956fba5dfb16d641c803e328c8da1725895d10dbe1f1938e2fe4fe4a895537": {
-		"buildId": "28956fba5dfb16d641c803e328c8da1725895d10dbe1f1938e2fe4fe4a895537",
+	"e421fa70a4e15fe86a1029a337046180e8994d42360e2da1b93adebbc8b04565": {
+		"buildId": "e421fa70a4e15fe86a1029a337046180e8994d42360e2da1b93adebbc8b04565",
 		"build": {
-			"img": "oisupport/staging-amd64:28956fba5dfb16d641c803e328c8da1725895d10dbe1f1938e2fe4fe4a895537",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:ed8543de8a3cbff12af6c6823f723995a77e03d363e702c7d638952e16536527",
-						"size": 2489,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:b682e31336cc8e0a73ed91ab32b7a95e32591c5ff09994490a20accf9b3600f9",
-							"org.opencontainers.image.base.name": "ubuntu:22.04",
-							"org.opencontainers.image.created": "2026-11-20T03:09:41Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:28956fba5dfb16d641c803e328c8da1725895d10dbe1f1938e2fe4fe4a895537@sha256:ed8543de8a3cbff12af6c6823f723995a77e03d363e702c7d638952e16536527",
-							"org.opencontainers.image.revision": "76465b5d7bedbd2c802d802a79806395fa8de866",
-							"org.opencontainers.image.source": "https://github.com/ClickHouse/docker-library.git#76465b5d7bedbd2c802d802a79806395fa8de866:server/26.8.36.3",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/clickhouse",
-							"org.opencontainers.image.version": "lts"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:4d042d8218fe1f3c9ac3d64b1f111f4b3cc6055500b08ce1163e9a2d87e4bd79",
-						"size": 567,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:28956fba5dfb16d641c803e328c8da1725895d10dbe1f1938e2fe4fe4a895537@sha256:4d042d8218fe1f3c9ac3d64b1f111f4b3cc6055500b08ce1163e9a2d87e4bd79",
-							"vnd.docker.reference.digest": "sha256:ed8543de8a3cbff12af6c6823f723995a77e03d363e702c7d638952e16536527",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:28956fba5dfb16d641c803e328c8da1725895d10dbe1f1938e2fe4fe4a895537@sha256:40b45e59d55fc224681c688424778b414b5d5bd5c483f0229ea89f56e951baf8"
-				}
-			},
-			"sourceId": "d10ecafe769a2c988a1853511863a88bb488356cf547b54370d4a6e87c8cb84c",
+			"img": "oisupport/staging-amd64:e421fa70a4e15fe86a1029a337046180e8994d42360e2da1b93adebbc8b04565",
+			"resolved": null,
+			"sourceId": "43b72a035ca3d29a1bf11f301561466841253c6de5c8e6009fb8450f934a30fc",
 			"arch": "amd64",
 			"parents": {
 				"ubuntu:22.04": "sha256:b682e31336cc8e0a73ed91ab32b7a95e32591c5ff09994490a20accf9b3600f9"
@@ -356434,17 +356217,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "d10ecafe769a2c988a1853511863a88bb488356cf547b54370d4a6e87c8cb84c",
-			"reproducibleGitChecksum": "26eed20613a72f057765417728b6532c217e4ddeef0a1769a11cb63b3b48a1ea",
+			"sourceId": "43b72a035ca3d29a1bf11f301561466841253c6de5c8e6009fb8450f934a30fc",
+			"reproducibleGitChecksum": "1cc8ccabf53dcd5c7be738d1b6efa5295b9abbd7300577f9c8e0b1f5b06cca08",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/ClickHouse/docker-library.git",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "76465b5d7bedbd2c802d802a79806395fa8de866",
-					"Directory": "server/26.8.36.3",
+					"GitCommit": "e71823d3454575435461c717aaf7902dbcfc3b4c",
+					"Directory": "server/26.8.44.3",
 					"File": "Dockerfile.ubuntu",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793041907
+					"SOURCE_DATE_EPOCH": 1795444903
 				}
 			],
 			"arches": {
@@ -356454,20 +356237,20 @@
 						"clickhouse:lts-jammy",
 						"clickhouse:26.8",
 						"clickhouse:26.8-jammy",
-						"clickhouse:26.8.36",
-						"clickhouse:26.8.36-jammy",
-						"clickhouse:26.8.36.3",
-						"clickhouse:26.8.36.3-jammy"
+						"clickhouse:26.8.44",
+						"clickhouse:26.8.44-jammy",
+						"clickhouse:26.8.44.3",
+						"clickhouse:26.8.44.3-jammy"
 					],
 					"archTags": [
 						"amd64/clickhouse:lts",
 						"amd64/clickhouse:lts-jammy",
 						"amd64/clickhouse:26.8",
 						"amd64/clickhouse:26.8-jammy",
-						"amd64/clickhouse:26.8.36",
-						"amd64/clickhouse:26.8.36-jammy",
-						"amd64/clickhouse:26.8.36.3",
-						"amd64/clickhouse:26.8.36.3-jammy"
+						"amd64/clickhouse:26.8.44",
+						"amd64/clickhouse:26.8.44-jammy",
+						"amd64/clickhouse:26.8.44.3",
+						"amd64/clickhouse:26.8.44.3-jammy"
 					],
 					"froms": [
 						"ubuntu:22.04"
@@ -356488,56 +356271,12 @@
 			}
 		}
 	},
-	"de5ca29eb551f008cad9d19e6d2130e7dba8eb5acdbeefc351cd07f97f9cebc2": {
-		"buildId": "de5ca29eb551f008cad9d19e6d2130e7dba8eb5acdbeefc351cd07f97f9cebc2",
+	"3a183810c4149e68a46d71055a0df41e885da6a6ec1077b73d468aab4538be55": {
+		"buildId": "3a183810c4149e68a46d71055a0df41e885da6a6ec1077b73d468aab4538be55",
 		"build": {
-			"img": "oisupport/staging-arm64v8:de5ca29eb551f008cad9d19e6d2130e7dba8eb5acdbeefc351cd07f97f9cebc2",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:0c64dbab46bae23cd06a239331f75e1640f988d9e317051137d22233e1acabaf",
-						"size": 2491,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:2926e8e6ef0b816e19849e33ccc728c72b921a428286e6595d52fa92c5716626",
-							"org.opencontainers.image.base.name": "ubuntu:22.04",
-							"org.opencontainers.image.created": "2026-11-20T03:09:46Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:de5ca29eb551f008cad9d19e6d2130e7dba8eb5acdbeefc351cd07f97f9cebc2@sha256:0c64dbab46bae23cd06a239331f75e1640f988d9e317051137d22233e1acabaf",
-							"org.opencontainers.image.revision": "76465b5d7bedbd2c802d802a79806395fa8de866",
-							"org.opencontainers.image.source": "https://github.com/ClickHouse/docker-library.git#76465b5d7bedbd2c802d802a79806395fa8de866:server/26.8.36.3",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/clickhouse",
-							"org.opencontainers.image.version": "lts"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:b86c2169a469edd97892ef6d302f9dda74f480575f3eb886fa79b011e9ca603f",
-						"size": 567,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:de5ca29eb551f008cad9d19e6d2130e7dba8eb5acdbeefc351cd07f97f9cebc2@sha256:b86c2169a469edd97892ef6d302f9dda74f480575f3eb886fa79b011e9ca603f",
-							"vnd.docker.reference.digest": "sha256:0c64dbab46bae23cd06a239331f75e1640f988d9e317051137d22233e1acabaf",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:de5ca29eb551f008cad9d19e6d2130e7dba8eb5acdbeefc351cd07f97f9cebc2@sha256:c525744b3188803c8823b5aeea3f547fd91d884915950d7f0335a737668988ae"
-				}
-			},
-			"sourceId": "d10ecafe769a2c988a1853511863a88bb488356cf547b54370d4a6e87c8cb84c",
+			"img": "oisupport/staging-arm64v8:3a183810c4149e68a46d71055a0df41e885da6a6ec1077b73d468aab4538be55",
+			"resolved": null,
+			"sourceId": "43b72a035ca3d29a1bf11f301561466841253c6de5c8e6009fb8450f934a30fc",
 			"arch": "arm64v8",
 			"parents": {
 				"ubuntu:22.04": "sha256:2926e8e6ef0b816e19849e33ccc728c72b921a428286e6595d52fa92c5716626"
@@ -356590,17 +356329,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "d10ecafe769a2c988a1853511863a88bb488356cf547b54370d4a6e87c8cb84c",
-			"reproducibleGitChecksum": "26eed20613a72f057765417728b6532c217e4ddeef0a1769a11cb63b3b48a1ea",
+			"sourceId": "43b72a035ca3d29a1bf11f301561466841253c6de5c8e6009fb8450f934a30fc",
+			"reproducibleGitChecksum": "1cc8ccabf53dcd5c7be738d1b6efa5295b9abbd7300577f9c8e0b1f5b06cca08",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/ClickHouse/docker-library.git",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "76465b5d7bedbd2c802d802a79806395fa8de866",
-					"Directory": "server/26.8.36.3",
+					"GitCommit": "e71823d3454575435461c717aaf7902dbcfc3b4c",
+					"Directory": "server/26.8.44.3",
 					"File": "Dockerfile.ubuntu",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793041907
+					"SOURCE_DATE_EPOCH": 1795444903
 				}
 			],
 			"arches": {
@@ -356610,20 +356349,20 @@
 						"clickhouse:lts-jammy",
 						"clickhouse:26.8",
 						"clickhouse:26.8-jammy",
-						"clickhouse:26.8.36",
-						"clickhouse:26.8.36-jammy",
-						"clickhouse:26.8.36.3",
-						"clickhouse:26.8.36.3-jammy"
+						"clickhouse:26.8.44",
+						"clickhouse:26.8.44-jammy",
+						"clickhouse:26.8.44.3",
+						"clickhouse:26.8.44.3-jammy"
 					],
 					"archTags": [
 						"arm64v8/clickhouse:lts",
 						"arm64v8/clickhouse:lts-jammy",
 						"arm64v8/clickhouse:26.8",
 						"arm64v8/clickhouse:26.8-jammy",
-						"arm64v8/clickhouse:26.8.36",
-						"arm64v8/clickhouse:26.8.36-jammy",
-						"arm64v8/clickhouse:26.8.36.3",
-						"arm64v8/clickhouse:26.8.36.3-jammy"
+						"arm64v8/clickhouse:26.8.44",
+						"arm64v8/clickhouse:26.8.44-jammy",
+						"arm64v8/clickhouse:26.8.44.3",
+						"arm64v8/clickhouse:26.8.44.3-jammy"
 					],
 					"froms": [
 						"ubuntu:22.04"
@@ -356645,55 +356384,12 @@
 			}
 		}
 	},
-	"52b4852cdbca0e86fce5a375ffbcf6cc92830d2e2be081751eeea166fbc6b799": {
-		"buildId": "52b4852cdbca0e86fce5a375ffbcf6cc92830d2e2be081751eeea166fbc6b799",
+	"408811ccd485b42e2ba08386443c82e0a79081d794fdc6b81c2e0c7a18e9f26a": {
+		"buildId": "408811ccd485b42e2ba08386443c82e0a79081d794fdc6b81c2e0c7a18e9f26a",
 		"build": {
-			"img": "oisupport/staging-amd64:52b4852cdbca0e86fce5a375ffbcf6cc92830d2e2be081751eeea166fbc6b799",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:709e02609195f84ceb74b88a507b1d07d777eb3732d917891f500a1084afb55c",
-						"size": 2490,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.base.digest": "sha256:b682e31336cc8e0a73ed91ab32b7a95e32591c5ff09994490a20accf9b3600f9",
-							"org.opencontainers.image.base.name": "ubuntu:22.04",
-							"org.opencontainers.image.created": "2026-11-20T03:09:42Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:52b4852cdbca0e86fce5a375ffbcf6cc92830d2e2be081751eeea166fbc6b799@sha256:709e02609195f84ceb74b88a507b1d07d777eb3732d917891f500a1084afb55c",
-							"org.opencontainers.image.revision": "76465b5d7bedbd2c802d802a79806395fa8de866",
-							"org.opencontainers.image.source": "https://github.com/ClickHouse/docker-library.git#76465b5d7bedbd2c802d802a79806395fa8de866:server/26.3.62.3",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/clickhouse",
-							"org.opencontainers.image.version": "26.3"
-						},
-						"platform": {
-							"architecture": "amd64",
-							"os": "linux"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:63fde4f0fa3cb401b7d96626976fd7503a91d40951f489f642d2b0cd3bc72942",
-						"size": 567,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "amd64",
-							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:52b4852cdbca0e86fce5a375ffbcf6cc92830d2e2be081751eeea166fbc6b799@sha256:63fde4f0fa3cb401b7d96626976fd7503a91d40951f489f642d2b0cd3bc72942",
-							"vnd.docker.reference.digest": "sha256:709e02609195f84ceb74b88a507b1d07d777eb3732d917891f500a1084afb55c",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:52b4852cdbca0e86fce5a375ffbcf6cc92830d2e2be081751eeea166fbc6b799@sha256:32ab3be1821f3a09454c0158a7b8f6c5d15b9890cf8cbc5bef7c07bdd0b959c7"
-				}
-			},
-			"sourceId": "aa712f91d1783295c799abe672b07c839e053d72744f7a2b068baa7d1c82ca11",
+			"img": "oisupport/staging-amd64:408811ccd485b42e2ba08386443c82e0a79081d794fdc6b81c2e0c7a18e9f26a",
+			"resolved": null,
+			"sourceId": "e33ff8ea89877cc0b0159f9869fc73b31bed1354fa0cff8a9e0cce4ca97ecc85",
 			"arch": "amd64",
 			"parents": {
 				"ubuntu:22.04": "sha256:b682e31336cc8e0a73ed91ab32b7a95e32591c5ff09994490a20accf9b3600f9"
@@ -356745,17 +356441,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "aa712f91d1783295c799abe672b07c839e053d72744f7a2b068baa7d1c82ca11",
-			"reproducibleGitChecksum": "5db169651b8fb50909db30a0134414da0a6f48740c56ab2a912b05db2be9bdf0",
+			"sourceId": "e33ff8ea89877cc0b0159f9869fc73b31bed1354fa0cff8a9e0cce4ca97ecc85",
+			"reproducibleGitChecksum": "7c99dbafad46761f5a6966c9614ad4771790fea56cb37177c3be0f0edcf7ba8d",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/ClickHouse/docker-library.git",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "76465b5d7bedbd2c802d802a79806395fa8de866",
-					"Directory": "server/26.3.62.3",
+					"GitCommit": "e71823d3454575435461c717aaf7902dbcfc3b4c",
+					"Directory": "server/26.3.69.4",
 					"File": "Dockerfile.ubuntu",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793041907
+					"SOURCE_DATE_EPOCH": 1795444903
 				}
 			],
 			"arches": {
@@ -356763,18 +356459,18 @@
 					"tags": [
 						"clickhouse:26.3",
 						"clickhouse:26.3-jammy",
-						"clickhouse:26.3.62",
-						"clickhouse:26.3.62-jammy",
-						"clickhouse:26.3.62.3",
-						"clickhouse:26.3.62.3-jammy"
+						"clickhouse:26.3.69",
+						"clickhouse:26.3.69-jammy",
+						"clickhouse:26.3.69.4",
+						"clickhouse:26.3.69.4-jammy"
 					],
 					"archTags": [
 						"amd64/clickhouse:26.3",
 						"amd64/clickhouse:26.3-jammy",
-						"amd64/clickhouse:26.3.62",
-						"amd64/clickhouse:26.3.62-jammy",
-						"amd64/clickhouse:26.3.62.3",
-						"amd64/clickhouse:26.3.62.3-jammy"
+						"amd64/clickhouse:26.3.69",
+						"amd64/clickhouse:26.3.69-jammy",
+						"amd64/clickhouse:26.3.69.4",
+						"amd64/clickhouse:26.3.69.4-jammy"
 					],
 					"froms": [
 						"ubuntu:22.04"
@@ -356795,56 +356491,12 @@
 			}
 		}
 	},
-	"de05db10aa7464b554a4d05eaeb792fd62f6099211c4fc0c080dba99445169e2": {
-		"buildId": "de05db10aa7464b554a4d05eaeb792fd62f6099211c4fc0c080dba99445169e2",
+	"26f9a11dd200b4c391fc926faa088bc40de6112862fcf0d38fecbed3f95c6787": {
+		"buildId": "26f9a11dd200b4c391fc926faa088bc40de6112862fcf0d38fecbed3f95c6787",
 		"build": {
-			"img": "oisupport/staging-arm64v8:de05db10aa7464b554a4d05eaeb792fd62f6099211c4fc0c080dba99445169e2",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:55fe56d9613977793c7eb093924244f71264d83df055a7883423d8ee40dab009",
-						"size": 2492,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:2926e8e6ef0b816e19849e33ccc728c72b921a428286e6595d52fa92c5716626",
-							"org.opencontainers.image.base.name": "ubuntu:22.04",
-							"org.opencontainers.image.created": "2026-11-20T03:09:47Z",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:de05db10aa7464b554a4d05eaeb792fd62f6099211c4fc0c080dba99445169e2@sha256:55fe56d9613977793c7eb093924244f71264d83df055a7883423d8ee40dab009",
-							"org.opencontainers.image.revision": "76465b5d7bedbd2c802d802a79806395fa8de866",
-							"org.opencontainers.image.source": "https://github.com/ClickHouse/docker-library.git#76465b5d7bedbd2c802d802a79806395fa8de866:server/26.3.62.3",
-							"org.opencontainers.image.url": "https://hub.docker.com/_/clickhouse",
-							"org.opencontainers.image.version": "26.3"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:f78813a240e23449f5d00f6c9088712361446b7c25c5a367563b16a06aea5770",
-						"size": 567,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:de05db10aa7464b554a4d05eaeb792fd62f6099211c4fc0c080dba99445169e2@sha256:f78813a240e23449f5d00f6c9088712361446b7c25c5a367563b16a06aea5770",
-							"vnd.docker.reference.digest": "sha256:55fe56d9613977793c7eb093924244f71264d83df055a7883423d8ee40dab009",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					}
-				],
-				"annotations": {
-					"org.opencontainers.image.ref.name": "oisupport/staging-arm64v8:de05db10aa7464b554a4d05eaeb792fd62f6099211c4fc0c080dba99445169e2@sha256:8f49f551ef3cb4a92ea6f362f3567bf7a127ee69f23642d927e799b56d25c9a8"
-				}
-			},
-			"sourceId": "aa712f91d1783295c799abe672b07c839e053d72744f7a2b068baa7d1c82ca11",
+			"img": "oisupport/staging-arm64v8:26f9a11dd200b4c391fc926faa088bc40de6112862fcf0d38fecbed3f95c6787",
+			"resolved": null,
+			"sourceId": "e33ff8ea89877cc0b0159f9869fc73b31bed1354fa0cff8a9e0cce4ca97ecc85",
 			"arch": "arm64v8",
 			"parents": {
 				"ubuntu:22.04": "sha256:2926e8e6ef0b816e19849e33ccc728c72b921a428286e6595d52fa92c5716626"
@@ -356897,17 +356549,17 @@
 			}
 		},
 		"source": {
-			"sourceId": "aa712f91d1783295c799abe672b07c839e053d72744f7a2b068baa7d1c82ca11",
-			"reproducibleGitChecksum": "5db169651b8fb50909db30a0134414da0a6f48740c56ab2a912b05db2be9bdf0",
+			"sourceId": "e33ff8ea89877cc0b0159f9869fc73b31bed1354fa0cff8a9e0cce4ca97ecc85",
+			"reproducibleGitChecksum": "7c99dbafad46761f5a6966c9614ad4771790fea56cb37177c3be0f0edcf7ba8d",
 			"entries": [
 				{
 					"GitRepo": "https://github.com/ClickHouse/docker-library.git",
 					"GitFetch": "refs/heads/main",
-					"GitCommit": "76465b5d7bedbd2c802d802a79806395fa8de866",
-					"Directory": "server/26.3.62.3",
+					"GitCommit": "e71823d3454575435461c717aaf7902dbcfc3b4c",
+					"Directory": "server/26.3.69.4",
 					"File": "Dockerfile.ubuntu",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1793041907
+					"SOURCE_DATE_EPOCH": 1795444903
 				}
 			],
 			"arches": {
@@ -356915,18 +356567,18 @@
 					"tags": [
 						"clickhouse:26.3",
 						"clickhouse:26.3-jammy",
-						"clickhouse:26.3.62",
-						"clickhouse:26.3.62-jammy",
-						"clickhouse:26.3.62.3",
-						"clickhouse:26.3.62.3-jammy"
+						"clickhouse:26.3.69",
+						"clickhouse:26.3.69-jammy",
+						"clickhouse:26.3.69.4",
+						"clickhouse:26.3.69.4-jammy"
 					],
 					"archTags": [
 						"arm64v8/clickhouse:26.3",
 						"arm64v8/clickhouse:26.3-jammy",
-						"arm64v8/clickhouse:26.3.62",
-						"arm64v8/clickhouse:26.3.62-jammy",
-						"arm64v8/clickhouse:26.3.62.3",
-						"arm64v8/clickhouse:26.3.62.3-jammy"
+						"arm64v8/clickhouse:26.3.69",
+						"arm64v8/clickhouse:26.3.69-jammy",
+						"arm64v8/clickhouse:26.3.69.4",
+						"arm64v8/clickhouse:26.3.69.4-jammy"
 					],
 					"froms": [
 						"ubuntu:22.04"
@@ -827325,7 +826977,50 @@
 		"buildId": "358c2b12634b3d1b0833604d799aad9ec06c5236bf441824c8e1be00d8d81c8b",
 		"build": {
 			"img": "oisupport/staging-amd64:358c2b12634b3d1b0833604d799aad9ec06c5236bf441824c8e1be00d8d81c8b",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:65e415242804b615f861655e042c5db34738010e4a515b95fefabc340dd2929c",
+						"size": 2683,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:60587baa7c895cf438d44f691e4ac8248b36c13b26be77332f874bebb3a64201",
+							"org.opencontainers.image.base.name": "node:24-trixie-slim",
+							"org.opencontainers.image.created": "2026-11-23T19:22:53Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:358c2b12634b3d1b0833604d799aad9ec06c5236bf441824c8e1be00d8d81c8b@sha256:65e415242804b615f861655e042c5db34738010e4a515b95fefabc340dd2929c",
+							"org.opencontainers.image.revision": "ad21fe99681d38683aa4362559a3715d10fb5e78",
+							"org.opencontainers.image.source": "https://github.com/RocketChat/Docker.Official.Image.git#ad21fe99681d38683aa4362559a3715d10fb5e78:9.0",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/rocket.chat",
+							"org.opencontainers.image.version": "9.0.0"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:9b8475d6a4db04160c3cf11e5d193bc9572da7cafc3ebf0e8c4b05d17969b7d6",
+						"size": 567,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:358c2b12634b3d1b0833604d799aad9ec06c5236bf441824c8e1be00d8d81c8b@sha256:9b8475d6a4db04160c3cf11e5d193bc9572da7cafc3ebf0e8c4b05d17969b7d6",
+							"vnd.docker.reference.digest": "sha256:65e415242804b615f861655e042c5db34738010e4a515b95fefabc340dd2929c",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:358c2b12634b3d1b0833604d799aad9ec06c5236bf441824c8e1be00d8d81c8b@sha256:96df084aaa9d5534d219af9bad62e756c93fb4752c50f0b69c9a2558346aec2a"
+				}
+			},
 			"sourceId": "8d9752e7c4fdab065fc9891c2c840f59ec0750eda16c771bf694032661a7542a",
 			"arch": "amd64",
 			"parents": {
@@ -827713,7 +827408,50 @@
 		"buildId": "42dcb1c8c8b2e0f8e2d465ed2ac9b10d30e1cef63f2405ba57e4ecc8ae70166d",
 		"build": {
 			"img": "oisupport/staging-amd64:42dcb1c8c8b2e0f8e2d465ed2ac9b10d30e1cef63f2405ba57e4ecc8ae70166d",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:7c764a93d5ac501bd9115bcdc15669d28f56575c91f853a1206124f3cc5c5dd6",
+						"size": 2878,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.base.digest": "sha256:47725aca53d3295ec2d3be8f62726599b3033cc262edc2c7e429909b3ac599fc",
+							"org.opencontainers.image.base.name": "node:22-bookworm-slim",
+							"org.opencontainers.image.created": "2026-11-23T19:24:54Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:42dcb1c8c8b2e0f8e2d465ed2ac9b10d30e1cef63f2405ba57e4ecc8ae70166d@sha256:7c764a93d5ac501bd9115bcdc15669d28f56575c91f853a1206124f3cc5c5dd6",
+							"org.opencontainers.image.revision": "ad21fe99681d38683aa4362559a3715d10fb5e78",
+							"org.opencontainers.image.source": "https://github.com/RocketChat/Docker.Official.Image.git#ad21fe99681d38683aa4362559a3715d10fb5e78:8.7",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/rocket.chat",
+							"org.opencontainers.image.version": "8.7.2"
+						},
+						"platform": {
+							"architecture": "amd64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:fbdd64c096d088450a90fed49fb5faaa7731fe7e69a4812c56f7782f624ced4e",
+						"size": 567,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "amd64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-amd64:42dcb1c8c8b2e0f8e2d465ed2ac9b10d30e1cef63f2405ba57e4ecc8ae70166d@sha256:fbdd64c096d088450a90fed49fb5faaa7731fe7e69a4812c56f7782f624ced4e",
+							"vnd.docker.reference.digest": "sha256:7c764a93d5ac501bd9115bcdc15669d28f56575c91f853a1206124f3cc5c5dd6",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-amd64:42dcb1c8c8b2e0f8e2d465ed2ac9b10d30e1cef63f2405ba57e4ecc8ae70166d@sha256:22c3a19740fa022fbbb552c8d70b41c29f4e38ec41f84fb22cc61c9620c4a32a"
+				}
+			},
 			"sourceId": "3c52eb6c87d8effa8bbbd532acbc03fe1a068eaaeecf7d624ca6ad32105053b8",
 			"arch": "amd64",
 			"parents": {
