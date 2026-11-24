@@ -616415,7 +616415,50 @@
 		"buildId": "8fd589e47de693182d826d4aa7be9715aa73e987c06d94facb7175781dd61a63",
 		"build": {
 			"img": "oisupport/staging-riscv64:8fd589e47de693182d826d4aa7be9715aa73e987c06d94facb7175781dd61a63",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:84bfb11281277c66f7c2d2f6b4b75e4df7d523c18bf465184ba826415d6bcfd2",
+						"size": 4244,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:e16bdd8fe1a6ceb103b4d2b8b993612879d9afe71b885ebb8f2e6595d85a7b5f",
+							"org.opencontainers.image.base.name": "php:8.5-fpm-alpine3.24",
+							"org.opencontainers.image.created": "2026-11-24T11:05:31Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:8fd589e47de693182d826d4aa7be9715aa73e987c06d94facb7175781dd61a63@sha256:84bfb11281277c66f7c2d2f6b4b75e4df7d523c18bf465184ba826415d6bcfd2",
+							"org.opencontainers.image.revision": "327d05a9f11f806acfbd6d86c22d5824fd97dc45",
+							"org.opencontainers.image.source": "https://github.com/joomla-docker/docker-joomla.git#327d05a9f11f806acfbd6d86c22d5824fd97dc45:images/6.2/stable/php8.5/fpm-alpine",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/joomla",
+							"org.opencontainers.image.version": "6.2.0-php8.5-fpm-alpine"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:fba61567548e6e68492df924734dbcbbb78771ccf62d84c60b2cd1a139eec9f5",
+						"size": 567,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:8fd589e47de693182d826d4aa7be9715aa73e987c06d94facb7175781dd61a63@sha256:fba61567548e6e68492df924734dbcbbb78771ccf62d84c60b2cd1a139eec9f5",
+							"vnd.docker.reference.digest": "sha256:84bfb11281277c66f7c2d2f6b4b75e4df7d523c18bf465184ba826415d6bcfd2",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:8fd589e47de693182d826d4aa7be9715aa73e987c06d94facb7175781dd61a63@sha256:2e13bcf6dbe724800f3ec82791c5da4b131665bb9d2432b758993712aec9003c"
+				}
+			},
 			"sourceId": "66be398d05283df000bdf40fd9af112c7cd30d67dba4065e1709673fff40b766",
 			"arch": "riscv64",
 			"parents": {
@@ -617541,6 +617584,110 @@
 					"platformString": "linux/ppc64le",
 					"platform": {
 						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"joomla:6.2.0-php8.5-fpm-alpine": {
+							"sourceId": "66be398d05283df000bdf40fd9af112c7cd30d67dba4065e1709673fff40b766",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"7270575f7eb76e04b093a025057a4452db48de6e2e5f63497f09fe1e6e9eb21f": {
+		"buildId": "7270575f7eb76e04b093a025057a4452db48de6e2e5f63497f09fe1e6e9eb21f",
+		"build": {
+			"img": "oisupport/staging-riscv64:7270575f7eb76e04b093a025057a4452db48de6e2e5f63497f09fe1e6e9eb21f",
+			"resolved": null,
+			"sourceId": "1e26ae6e33142bbce92d2629702ddb0efd178dac8626729956221046a46cb7f3",
+			"arch": "riscv64",
+			"parents": {
+				"joomla:6.2.0-php8.5-fpm-alpine": "sha256:84bfb11281277c66f7c2d2f6b4b75e4df7d523c18bf465184ba826415d6bcfd2"
+			},
+			"resolvedParents": {
+				"joomla:6.2.0-php8.5-fpm-alpine": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:84bfb11281277c66f7c2d2f6b4b75e4df7d523c18bf465184ba826415d6bcfd2",
+							"size": 4244,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.base.digest": "sha256:e16bdd8fe1a6ceb103b4d2b8b993612879d9afe71b885ebb8f2e6595d85a7b5f",
+								"org.opencontainers.image.base.name": "php:8.5-fpm-alpine3.24",
+								"org.opencontainers.image.created": "2026-11-24T11:05:31Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:8fd589e47de693182d826d4aa7be9715aa73e987c06d94facb7175781dd61a63@sha256:84bfb11281277c66f7c2d2f6b4b75e4df7d523c18bf465184ba826415d6bcfd2",
+								"org.opencontainers.image.revision": "327d05a9f11f806acfbd6d86c22d5824fd97dc45",
+								"org.opencontainers.image.source": "https://github.com/joomla-docker/docker-joomla.git#327d05a9f11f806acfbd6d86c22d5824fd97dc45:images/6.2/stable/php8.5/fpm-alpine",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/joomla",
+								"org.opencontainers.image.version": "6.2.0-php8.5-fpm-alpine"
+							},
+							"platform": {
+								"architecture": "riscv64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:fba61567548e6e68492df924734dbcbbb78771ccf62d84c60b2cd1a139eec9f5",
+							"size": 567,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "riscv64",
+								"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:8fd589e47de693182d826d4aa7be9715aa73e987c06d94facb7175781dd61a63@sha256:fba61567548e6e68492df924734dbcbbb78771ccf62d84c60b2cd1a139eec9f5",
+								"vnd.docker.reference.digest": "sha256:84bfb11281277c66f7c2d2f6b4b75e4df7d523c18bf465184ba826415d6bcfd2",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:8fd589e47de693182d826d4aa7be9715aa73e987c06d94facb7175781dd61a63@sha256:2e13bcf6dbe724800f3ec82791c5da4b131665bb9d2432b758993712aec9003c"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "1e26ae6e33142bbce92d2629702ddb0efd178dac8626729956221046a46cb7f3",
+			"reproducibleGitChecksum": "5c7f82df742adbd75e68cefc78359118aecb5b093afe6f0f50ae80fa9f31da8c",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/joomla-docker/docker-joomla.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "9206c613f0bb1e07130f036a579f07e1f85757e9",
+					"Directory": "images/6.2/stable/php8.5/fpm-alpine-dev",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1793314346
+				}
+			],
+			"arches": {
+				"riscv64": {
+					"tags": [
+						"joomla:6.2.0-php8.5-fpm-alpine-dev",
+						"joomla:6.2-php8.5-fpm-alpine-dev",
+						"joomla:6-php8.5-fpm-alpine-dev",
+						"joomla:php8.5-fpm-alpine-dev"
+					],
+					"archTags": [
+						"riscv64/joomla:6.2.0-php8.5-fpm-alpine-dev",
+						"riscv64/joomla:6.2-php8.5-fpm-alpine-dev",
+						"riscv64/joomla:6-php8.5-fpm-alpine-dev",
+						"riscv64/joomla:php8.5-fpm-alpine-dev"
+					],
+					"froms": [
+						"joomla:6.2.0-php8.5-fpm-alpine"
+					],
+					"lastStageFrom": "joomla:6.2.0-php8.5-fpm-alpine",
+					"platformString": "linux/riscv64",
+					"platform": {
+						"architecture": "riscv64",
 						"os": "linux"
 					},
 					"parents": {
@@ -624562,7 +624709,50 @@
 		"buildId": "8a9a861121b0d9c4276ecfdee3c8e3c990117ada4059a0cb773f369a18631305",
 		"build": {
 			"img": "oisupport/staging-riscv64:8a9a861121b0d9c4276ecfdee3c8e3c990117ada4059a0cb773f369a18631305",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:f37325ed99567fc92859e0eb562f546e3db5b2b762472941dd37c3f21be3a2f6",
+						"size": 4435,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:12de09dd3cb9b0c7e712ddd313d9fe6ffdc93e558243d68e64e7b3435685a748",
+							"org.opencontainers.image.base.name": "php:8.3-fpm-alpine3.24",
+							"org.opencontainers.image.created": "2026-11-24T11:43:28Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:8a9a861121b0d9c4276ecfdee3c8e3c990117ada4059a0cb773f369a18631305@sha256:f37325ed99567fc92859e0eb562f546e3db5b2b762472941dd37c3f21be3a2f6",
+							"org.opencontainers.image.revision": "327d05a9f11f806acfbd6d86c22d5824fd97dc45",
+							"org.opencontainers.image.source": "https://github.com/joomla-docker/docker-joomla.git#327d05a9f11f806acfbd6d86c22d5824fd97dc45:images/5.4/stable/php8.3/fpm-alpine",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/joomla",
+							"org.opencontainers.image.version": "5.4.10-php8.3-fpm-alpine"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:d56f07b56f5335f230362443b1f5568c04714aedc86068f5492dac8ffcab7eda",
+						"size": 567,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:8a9a861121b0d9c4276ecfdee3c8e3c990117ada4059a0cb773f369a18631305@sha256:d56f07b56f5335f230362443b1f5568c04714aedc86068f5492dac8ffcab7eda",
+							"vnd.docker.reference.digest": "sha256:f37325ed99567fc92859e0eb562f546e3db5b2b762472941dd37c3f21be3a2f6",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:8a9a861121b0d9c4276ecfdee3c8e3c990117ada4059a0cb773f369a18631305@sha256:51dbf9dc151e2a7be63e304c311d81adec6b8dea214f144ad897ecb29c1e5b92"
+				}
+			},
 			"sourceId": "8626c1e472830f0226c0ff4bbe98a8afe55e6750e38f2422577bbe79ddd97439",
 			"arch": "riscv64",
 			"parents": {
@@ -652183,7 +652373,50 @@
 		"buildId": "d7b47c9a0be5ca4dec05b819bccefd67eeb0db4333e7ace3a89df6d7bf1ce2fb",
 		"build": {
 			"img": "oisupport/staging-riscv64:d7b47c9a0be5ca4dec05b819bccefd67eeb0db4333e7ace3a89df6d7bf1ce2fb",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:5b437c4e8dbb6e29767622d57a1bf1e691f67bcbba002623ca7256f0045b7ec5",
+						"size": 4198,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.base.digest": "sha256:ea32c412ae6d602087a785eb8b7578a867735993e439cb8d8acac45e2507b092",
+							"org.opencontainers.image.base.name": "php:8.4-fpm-alpine",
+							"org.opencontainers.image.created": "2026-11-24T11:45:19Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d7b47c9a0be5ca4dec05b819bccefd67eeb0db4333e7ace3a89df6d7bf1ce2fb@sha256:5b437c4e8dbb6e29767622d57a1bf1e691f67bcbba002623ca7256f0045b7ec5",
+							"org.opencontainers.image.revision": "633baa9c26d3d0a0929b9317856f935ed23fa723",
+							"org.opencontainers.image.source": "https://github.com/matomo-org/docker.git#633baa9c26d3d0a0929b9317856f935ed23fa723:fpm-alpine",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/matomo",
+							"org.opencontainers.image.version": "6.0.0-fpm-alpine"
+						},
+						"platform": {
+							"architecture": "riscv64",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:7ddedd66ee6fb9331dfc4da8411a338c9a9c820e9fd68d648a2a04bb34e5a448",
+						"size": 567,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "riscv64",
+							"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d7b47c9a0be5ca4dec05b819bccefd67eeb0db4333e7ace3a89df6d7bf1ce2fb@sha256:7ddedd66ee6fb9331dfc4da8411a338c9a9c820e9fd68d648a2a04bb34e5a448",
+							"vnd.docker.reference.digest": "sha256:5b437c4e8dbb6e29767622d57a1bf1e691f67bcbba002623ca7256f0045b7ec5",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-riscv64:d7b47c9a0be5ca4dec05b819bccefd67eeb0db4333e7ace3a89df6d7bf1ce2fb@sha256:780fca4ae33050dcdca77025f597e490746ae594cd1fcc826aaad86a567955ad"
+				}
+			},
 			"sourceId": "b293e2c2a95c59b6a38f389e64fc8cafe1ee51e7350e7d6ac9fe09ec683b23ed",
 			"arch": "riscv64",
 			"parents": {
@@ -781923,7 +782156,50 @@
 		"buildId": "69b0004cb6964ea9adb183dda3c93cd17672297a1e9822d40929f1e5123f60f9",
 		"build": {
 			"img": "oisupport/staging-ppc64le:69b0004cb6964ea9adb183dda3c93cd17672297a1e9822d40929f1e5123f60f9",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:3ffa743a8b454331e155e725fc1012276799c9d9a2bd1766185f6b354d3f7216",
+						"size": 1754,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:dde4bb1221f3e1a6e34c1eb2b07ad58323eb7b078cbe4851c6a42d1ea9e6b3bb",
+							"org.opencontainers.image.base.name": "debian:bookworm-slim",
+							"org.opencontainers.image.created": "2026-11-24T10:27:03Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:69b0004cb6964ea9adb183dda3c93cd17672297a1e9822d40929f1e5123f60f9@sha256:3ffa743a8b454331e155e725fc1012276799c9d9a2bd1766185f6b354d3f7216",
+							"org.opencontainers.image.revision": "152874b138f0b1c4699fbdcb52b174608cfbfff5",
+							"org.opencontainers.image.source": "https://github.com/docker-library/python.git#152874b138f0b1c4699fbdcb52b174608cfbfff5:3.13/slim-bookworm",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/python",
+							"org.opencontainers.image.version": "3.13.18-slim-bookworm"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:e70e6523c8a3a736526ce4deda236f43168e58e22b5e19f3a8bf21788b8c4834",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:69b0004cb6964ea9adb183dda3c93cd17672297a1e9822d40929f1e5123f60f9@sha256:e70e6523c8a3a736526ce4deda236f43168e58e22b5e19f3a8bf21788b8c4834",
+							"vnd.docker.reference.digest": "sha256:3ffa743a8b454331e155e725fc1012276799c9d9a2bd1766185f6b354d3f7216",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:69b0004cb6964ea9adb183dda3c93cd17672297a1e9822d40929f1e5123f60f9@sha256:f853a89c750b5951005e3db9505066286ecff53a04351045aaf46ac26550c702"
+				}
+			},
 			"sourceId": "5f7b32b98bbf74aac68ce864ae2bc75dd99a989921fd4bbc2025424d9bf28191",
 			"arch": "ppc64le",
 			"parents": {
@@ -787521,7 +787797,50 @@
 		"buildId": "121fab318fcb52ec877ea8097212e6116e56dee62481472edf06eb63f556d124",
 		"build": {
 			"img": "oisupport/staging-ppc64le:121fab318fcb52ec877ea8097212e6116e56dee62481472edf06eb63f556d124",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:0ce15704ec4edf24b18fd9de814f794a62bd39960b0e1558411f5ac3a9682779",
+						"size": 1754,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:dde4bb1221f3e1a6e34c1eb2b07ad58323eb7b078cbe4851c6a42d1ea9e6b3bb",
+							"org.opencontainers.image.base.name": "debian:bookworm-slim",
+							"org.opencontainers.image.created": "2026-11-24T11:02:37Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:121fab318fcb52ec877ea8097212e6116e56dee62481472edf06eb63f556d124@sha256:0ce15704ec4edf24b18fd9de814f794a62bd39960b0e1558411f5ac3a9682779",
+							"org.opencontainers.image.revision": "3d7e95597e56a415d9e4abc0f15877e005d2cb2e",
+							"org.opencontainers.image.source": "https://github.com/docker-library/python.git#3d7e95597e56a415d9e4abc0f15877e005d2cb2e:3.12/slim-bookworm",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/python",
+							"org.opencontainers.image.version": "3.12.16-slim-bookworm"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:74e0fdd22673526c9e9e60238475f0b9f2ba642d1ba90a0def1ccc8bad26ecf7",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:121fab318fcb52ec877ea8097212e6116e56dee62481472edf06eb63f556d124@sha256:74e0fdd22673526c9e9e60238475f0b9f2ba642d1ba90a0def1ccc8bad26ecf7",
+							"vnd.docker.reference.digest": "sha256:0ce15704ec4edf24b18fd9de814f794a62bd39960b0e1558411f5ac3a9682779",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:121fab318fcb52ec877ea8097212e6116e56dee62481472edf06eb63f556d124@sha256:45d5a1d55b3ae14a3a17ae41c327996de2b032390465b5147b115894548648b3"
+				}
+			},
 			"sourceId": "162d454bf9ff272558e2f75d872caea6f710c13c4a1e086e74d5727d1e379a89",
 			"arch": "ppc64le",
 			"parents": {
@@ -791572,7 +791891,50 @@
 		"buildId": "8c29bd7e46e48181846fc53af52caed7473692f65efb8234e685e3a58c0ea64c",
 		"build": {
 			"img": "oisupport/staging-ppc64le:8c29bd7e46e48181846fc53af52caed7473692f65efb8234e685e3a58c0ea64c",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:b2e45d33d734ecc1b590681639d3996c37e41d48201c59a0488a2060dab4b96e",
+						"size": 1748,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:01ada93b3941d87b838c0fac715e9cf2d595592dc4fc670afcb12bcd535ad754",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-11-24T11:10:42Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8c29bd7e46e48181846fc53af52caed7473692f65efb8234e685e3a58c0ea64c@sha256:b2e45d33d734ecc1b590681639d3996c37e41d48201c59a0488a2060dab4b96e",
+							"org.opencontainers.image.revision": "83054588043b3a7ac1ce8324c9242164b632beb9",
+							"org.opencontainers.image.source": "https://github.com/docker-library/python.git#83054588043b3a7ac1ce8324c9242164b632beb9:3.11/slim-trixie",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/python",
+							"org.opencontainers.image.version": "3.11.18-slim-trixie"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:200b3c1b9173061910c2b23e70b218cde65acda0938e62762e4afbe2b4fd8d3e",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8c29bd7e46e48181846fc53af52caed7473692f65efb8234e685e3a58c0ea64c@sha256:200b3c1b9173061910c2b23e70b218cde65acda0938e62762e4afbe2b4fd8d3e",
+							"vnd.docker.reference.digest": "sha256:b2e45d33d734ecc1b590681639d3996c37e41d48201c59a0488a2060dab4b96e",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8c29bd7e46e48181846fc53af52caed7473692f65efb8234e685e3a58c0ea64c@sha256:71acf8aabe8e767af32cdcf264f310dda04f96ada149a151802d1c7d231b9a61"
+				}
+			},
 			"sourceId": "dcef3bcae0b794f063d1c7f5e9c1a412e4a5d8d53ca331fe056b17ef144b5f5c",
 			"arch": "ppc64le",
 			"parents": {
@@ -793076,7 +793438,50 @@
 		"buildId": "9f5f8ca15c89deb4e797e1703e3125fee4fe7e56c675bba6884a75793ac6ce80",
 		"build": {
 			"img": "oisupport/staging-ppc64le:9f5f8ca15c89deb4e797e1703e3125fee4fe7e56c675bba6884a75793ac6ce80",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:e9b54da8b556e285f1c8cd76266a9dd5ec8d106893d34dea91d956699be9a169",
+						"size": 1754,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:dde4bb1221f3e1a6e34c1eb2b07ad58323eb7b078cbe4851c6a42d1ea9e6b3bb",
+							"org.opencontainers.image.base.name": "debian:bookworm-slim",
+							"org.opencontainers.image.created": "2026-11-24T11:32:25Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:9f5f8ca15c89deb4e797e1703e3125fee4fe7e56c675bba6884a75793ac6ce80@sha256:e9b54da8b556e285f1c8cd76266a9dd5ec8d106893d34dea91d956699be9a169",
+							"org.opencontainers.image.revision": "83054588043b3a7ac1ce8324c9242164b632beb9",
+							"org.opencontainers.image.source": "https://github.com/docker-library/python.git#83054588043b3a7ac1ce8324c9242164b632beb9:3.11/slim-bookworm",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/python",
+							"org.opencontainers.image.version": "3.11.18-slim-bookworm"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:0a19ac725d01ca3aed4234b8a5e11f37f965d29eb7abdff66ebefb9972e6d596",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:9f5f8ca15c89deb4e797e1703e3125fee4fe7e56c675bba6884a75793ac6ce80@sha256:0a19ac725d01ca3aed4234b8a5e11f37f965d29eb7abdff66ebefb9972e6d596",
+							"vnd.docker.reference.digest": "sha256:e9b54da8b556e285f1c8cd76266a9dd5ec8d106893d34dea91d956699be9a169",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:9f5f8ca15c89deb4e797e1703e3125fee4fe7e56c675bba6884a75793ac6ce80@sha256:4f125043ad3c2a797afe0a83f200b6a8ce6fdaf6dd9db819295fc661bb91745e"
+				}
+			},
 			"sourceId": "4c14d6e2664aed64711dfabfc2942526eabf37567d71edcd616f9acd299ec5c0",
 			"arch": "ppc64le",
 			"parents": {
@@ -822349,7 +822754,50 @@
 		"buildId": "d917dc5061c4eb8e94a416c9671f68eb2e323f0baf53f2966e50e9c6e5b2c203",
 		"build": {
 			"img": "oisupport/staging-ppc64le:d917dc5061c4eb8e94a416c9671f68eb2e323f0baf53f2966e50e9c6e5b2c203",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:74ba67a148c648db189e74157191b29e67c97e832fcdce8c45a0bc7f1849d28f",
+						"size": 1941,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:01ada93b3941d87b838c0fac715e9cf2d595592dc4fc670afcb12bcd535ad754",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-11-24T11:37:04Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d917dc5061c4eb8e94a416c9671f68eb2e323f0baf53f2966e50e9c6e5b2c203@sha256:74ba67a148c648db189e74157191b29e67c97e832fcdce8c45a0bc7f1849d28f",
+							"org.opencontainers.image.revision": "cb7ae85544be1bfc8c349790d260cee36743320f",
+							"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#cb7ae85544be1bfc8c349790d260cee36743320f:4.1-rc/slim-trixie",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+							"org.opencontainers.image.version": "4.1.0-preview1-slim-trixie"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:ca52c3ced2dd26746e683bed0900dabe8a11718b678bcdfb97b9e5fcec868389",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d917dc5061c4eb8e94a416c9671f68eb2e323f0baf53f2966e50e9c6e5b2c203@sha256:ca52c3ced2dd26746e683bed0900dabe8a11718b678bcdfb97b9e5fcec868389",
+							"vnd.docker.reference.digest": "sha256:74ba67a148c648db189e74157191b29e67c97e832fcdce8c45a0bc7f1849d28f",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d917dc5061c4eb8e94a416c9671f68eb2e323f0baf53f2966e50e9c6e5b2c203@sha256:b61a4e0e056f0cf0f2726f5e55032a0187f55b6985a005ff2edf078e0f45711b"
+				}
+			},
 			"sourceId": "91388d2c354b4b7e4887fff269dd695492c01a0fa528aa2c9fabd8c3229091ab",
 			"arch": "ppc64le",
 			"parents": {
@@ -823853,7 +824301,50 @@
 		"buildId": "f6a714f8420a4f0d1d10c005edad0067ebf7a5fbd23df7ba206dc5db45ffb245",
 		"build": {
 			"img": "oisupport/staging-ppc64le:f6a714f8420a4f0d1d10c005edad0067ebf7a5fbd23df7ba206dc5db45ffb245",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:f0b4bb1b673c89f572f563307a7d6856548cfe6ad7e7135520d0bfad74365674",
+						"size": 1947,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:dde4bb1221f3e1a6e34c1eb2b07ad58323eb7b078cbe4851c6a42d1ea9e6b3bb",
+							"org.opencontainers.image.base.name": "debian:bookworm-slim",
+							"org.opencontainers.image.created": "2026-11-24T11:43:54Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:f6a714f8420a4f0d1d10c005edad0067ebf7a5fbd23df7ba206dc5db45ffb245@sha256:f0b4bb1b673c89f572f563307a7d6856548cfe6ad7e7135520d0bfad74365674",
+							"org.opencontainers.image.revision": "cb7ae85544be1bfc8c349790d260cee36743320f",
+							"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#cb7ae85544be1bfc8c349790d260cee36743320f:4.1-rc/slim-bookworm",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+							"org.opencontainers.image.version": "4.1.0-preview1-slim-bookworm"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:3e78664694c4cbccd9493826ac84fe917f7392d252dfc71e31c1f5ec182b93bb",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:f6a714f8420a4f0d1d10c005edad0067ebf7a5fbd23df7ba206dc5db45ffb245@sha256:3e78664694c4cbccd9493826ac84fe917f7392d252dfc71e31c1f5ec182b93bb",
+							"vnd.docker.reference.digest": "sha256:f0b4bb1b673c89f572f563307a7d6856548cfe6ad7e7135520d0bfad74365674",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:f6a714f8420a4f0d1d10c005edad0067ebf7a5fbd23df7ba206dc5db45ffb245@sha256:e7eaba3a1756e9cc3665f3a0fec595dd0c4fccfb471af04a2d09c86c75d4b255"
+				}
+			},
 			"sourceId": "4bbcd48cc7aebe559ffe5db282accbe2781f7cb7f875ad29063fd25ef898ad7a",
 			"arch": "ppc64le",
 			"parents": {
@@ -827992,7 +828483,50 @@
 		"buildId": "d496c1e5fc5b9597035baa921747d117dccb1d10fa1d2a9671f1cec5cfc1b8e9",
 		"build": {
 			"img": "oisupport/staging-ppc64le:d496c1e5fc5b9597035baa921747d117dccb1d10fa1d2a9671f1cec5cfc1b8e9",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:9f810b463d643a555adb92e2beb745afcb737e0a517bba32622c19f9506bc817",
+						"size": 1930,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:01ada93b3941d87b838c0fac715e9cf2d595592dc4fc670afcb12bcd535ad754",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-11-24T11:50:23Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d496c1e5fc5b9597035baa921747d117dccb1d10fa1d2a9671f1cec5cfc1b8e9@sha256:9f810b463d643a555adb92e2beb745afcb737e0a517bba32622c19f9506bc817",
+							"org.opencontainers.image.revision": "9c4fe994a013eba757c5b33eb7bf6132214ea611",
+							"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#9c4fe994a013eba757c5b33eb7bf6132214ea611:4.0/slim-trixie",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+							"org.opencontainers.image.version": "4.0.10-slim-trixie"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:92f80af7f53d3929b4c7c2063095f62ab6d46372b5b3dfe106d48dae37c9ee5d",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d496c1e5fc5b9597035baa921747d117dccb1d10fa1d2a9671f1cec5cfc1b8e9@sha256:92f80af7f53d3929b4c7c2063095f62ab6d46372b5b3dfe106d48dae37c9ee5d",
+							"vnd.docker.reference.digest": "sha256:9f810b463d643a555adb92e2beb745afcb737e0a517bba32622c19f9506bc817",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d496c1e5fc5b9597035baa921747d117dccb1d10fa1d2a9671f1cec5cfc1b8e9@sha256:9a1f95aefec4d1ea66cbf193a9cec08600dad37852cc792052b1bc2d01df5b65"
+				}
+			},
 			"sourceId": "b5e7819b3aadaabe16784d57bd2d215797bb118b48919d7361d5ddf7d4c026c5",
 			"arch": "ppc64le",
 			"parents": {
@@ -829552,7 +830086,50 @@
 		"buildId": "98262e471df6dfb91215f1383acf75906a7203b747fa76a61f973cc365afd737",
 		"build": {
 			"img": "oisupport/staging-ppc64le:98262e471df6dfb91215f1383acf75906a7203b747fa76a61f973cc365afd737",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:e86c8d47752e1d796cc0a641a86d281e33a2b8bfd108e4331ef195ce73cd882a",
+						"size": 1936,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:dde4bb1221f3e1a6e34c1eb2b07ad58323eb7b078cbe4851c6a42d1ea9e6b3bb",
+							"org.opencontainers.image.base.name": "debian:bookworm-slim",
+							"org.opencontainers.image.created": "2026-11-24T11:55:31Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:98262e471df6dfb91215f1383acf75906a7203b747fa76a61f973cc365afd737@sha256:e86c8d47752e1d796cc0a641a86d281e33a2b8bfd108e4331ef195ce73cd882a",
+							"org.opencontainers.image.revision": "9c4fe994a013eba757c5b33eb7bf6132214ea611",
+							"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#9c4fe994a013eba757c5b33eb7bf6132214ea611:4.0/slim-bookworm",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+							"org.opencontainers.image.version": "4.0.10-slim-bookworm"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:8c168a2e8dc47987048c4c398f42a9b7112a7a24f95bb7d9397346833b7016cc",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:98262e471df6dfb91215f1383acf75906a7203b747fa76a61f973cc365afd737@sha256:8c168a2e8dc47987048c4c398f42a9b7112a7a24f95bb7d9397346833b7016cc",
+							"vnd.docker.reference.digest": "sha256:e86c8d47752e1d796cc0a641a86d281e33a2b8bfd108e4331ef195ce73cd882a",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:98262e471df6dfb91215f1383acf75906a7203b747fa76a61f973cc365afd737@sha256:fd4564d0018b4107fd57a441afa4476bf4b7c3b6776a105974f34692c81f9644"
+				}
+			},
 			"sourceId": "56617c23a472f0991a963e5583b58d3a13fc08b8ef4ad3e1fa4b5d902409ce93",
 			"arch": "ppc64le",
 			"parents": {
@@ -833704,7 +834281,50 @@
 		"buildId": "8f7c8b77c307ec41ee440444fe92c0aa87c19d2c11f3a38730abbd3ea71c2dc9",
 		"build": {
 			"img": "oisupport/staging-ppc64le:8f7c8b77c307ec41ee440444fe92c0aa87c19d2c11f3a38730abbd3ea71c2dc9",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:968e557e1a7789300caeb9a4491def9f780b0ffe36d6686596d993b8e1aaab17",
+						"size": 1930,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:01ada93b3941d87b838c0fac715e9cf2d595592dc4fc670afcb12bcd535ad754",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-11-24T11:55:48Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8f7c8b77c307ec41ee440444fe92c0aa87c19d2c11f3a38730abbd3ea71c2dc9@sha256:968e557e1a7789300caeb9a4491def9f780b0ffe36d6686596d993b8e1aaab17",
+							"org.opencontainers.image.revision": "5987de907860fc09fa7161c88276e0744babf8c6",
+							"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#5987de907860fc09fa7161c88276e0744babf8c6:3.4/slim-trixie",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+							"org.opencontainers.image.version": "3.4.13-slim-trixie"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:ab538cbed46aeaaa74d01b97f8598a5ee6a526717b884af4841b3fb60dc5436c",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8f7c8b77c307ec41ee440444fe92c0aa87c19d2c11f3a38730abbd3ea71c2dc9@sha256:ab538cbed46aeaaa74d01b97f8598a5ee6a526717b884af4841b3fb60dc5436c",
+							"vnd.docker.reference.digest": "sha256:968e557e1a7789300caeb9a4491def9f780b0ffe36d6686596d993b8e1aaab17",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8f7c8b77c307ec41ee440444fe92c0aa87c19d2c11f3a38730abbd3ea71c2dc9@sha256:2cd5f840e742997c7baa7548ab7c53684f0fc0542e98e8eb14e9f90be545b6ce"
+				}
+			},
 			"sourceId": "aa662ccd9a89556148360e6f2b13ed9655ab212c8342c703d4851f0c2d1af35e",
 			"arch": "ppc64le",
 			"parents": {
@@ -835236,7 +835856,50 @@
 		"buildId": "5ae81278ceef592c1beddbc420447e82face41c3329ad7e63c069cbf83b974f5",
 		"build": {
 			"img": "oisupport/staging-ppc64le:5ae81278ceef592c1beddbc420447e82face41c3329ad7e63c069cbf83b974f5",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:2ec7c393d6556a05a8be59864e70d25a1b818ce2ee8de66845d001be6345404e",
+						"size": 1936,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:dde4bb1221f3e1a6e34c1eb2b07ad58323eb7b078cbe4851c6a42d1ea9e6b3bb",
+							"org.opencontainers.image.base.name": "debian:bookworm-slim",
+							"org.opencontainers.image.created": "2026-11-24T12:01:13Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:5ae81278ceef592c1beddbc420447e82face41c3329ad7e63c069cbf83b974f5@sha256:2ec7c393d6556a05a8be59864e70d25a1b818ce2ee8de66845d001be6345404e",
+							"org.opencontainers.image.revision": "5987de907860fc09fa7161c88276e0744babf8c6",
+							"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#5987de907860fc09fa7161c88276e0744babf8c6:3.4/slim-bookworm",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+							"org.opencontainers.image.version": "3.4.13-slim-bookworm"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:6018981ef3a7f10358ce3b74db0af4e2f1d784605308101eabf3885b98cb777e",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:5ae81278ceef592c1beddbc420447e82face41c3329ad7e63c069cbf83b974f5@sha256:6018981ef3a7f10358ce3b74db0af4e2f1d784605308101eabf3885b98cb777e",
+							"vnd.docker.reference.digest": "sha256:2ec7c393d6556a05a8be59864e70d25a1b818ce2ee8de66845d001be6345404e",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:5ae81278ceef592c1beddbc420447e82face41c3329ad7e63c069cbf83b974f5@sha256:c99a16a1c2d4ece0d02bca09565259f0bf43a5aa727187da0828bfdc72949727"
+				}
+			},
 			"sourceId": "c611ff5e531b926011a99ae6f4bc91355ea70104d76fbeb00cf4c76fa5526134",
 			"arch": "ppc64le",
 			"parents": {
@@ -839294,7 +839957,50 @@
 		"buildId": "e4b7b1c5864dcdb725b061fff987468e74622a106504f52f2314069f7cc7cff1",
 		"build": {
 			"img": "oisupport/staging-ppc64le:e4b7b1c5864dcdb725b061fff987468e74622a106504f52f2314069f7cc7cff1",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:688f9db1bb51fbfc9149dd2021d21d0f8e920fb5d7668984cf1570c86b1e0b58",
+						"size": 1930,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.base.digest": "sha256:01ada93b3941d87b838c0fac715e9cf2d595592dc4fc670afcb12bcd535ad754",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-11-24T12:01:32Z",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:e4b7b1c5864dcdb725b061fff987468e74622a106504f52f2314069f7cc7cff1@sha256:688f9db1bb51fbfc9149dd2021d21d0f8e920fb5d7668984cf1570c86b1e0b58",
+							"org.opencontainers.image.revision": "398563132dc75e8b8cb6607c43251b9da5958127",
+							"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#398563132dc75e8b8cb6607c43251b9da5958127:3.3/slim-trixie",
+							"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+							"org.opencontainers.image.version": "3.3.14-slim-trixie"
+						},
+						"platform": {
+							"architecture": "ppc64le",
+							"os": "linux"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:3790620370b20868b07b285cfc04f220a82ea343fddb53bd03b0c9d9b20a21cf",
+						"size": 841,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "ppc64le",
+							"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:e4b7b1c5864dcdb725b061fff987468e74622a106504f52f2314069f7cc7cff1@sha256:3790620370b20868b07b285cfc04f220a82ea343fddb53bd03b0c9d9b20a21cf",
+							"vnd.docker.reference.digest": "sha256:688f9db1bb51fbfc9149dd2021d21d0f8e920fb5d7668984cf1570c86b1e0b58",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					}
+				],
+				"annotations": {
+					"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:e4b7b1c5864dcdb725b061fff987468e74622a106504f52f2314069f7cc7cff1@sha256:081881fc83dedb70fa7c747097e7391a3f102c5a4e8e787c9616e12c31e24fdb"
+				}
+			},
 			"sourceId": "fc09c7d3ec9945b8e67ad16c859442810162ae0139537845a973a493de5725d1",
 			"arch": "ppc64le",
 			"parents": {
@@ -1050328,6 +1051034,112 @@
 			}
 		}
 	},
+	"f04483426a22c1bdc66aebb1a0e56948c831c47a8bd10bfb1981d3276afd541d": {
+		"buildId": "f04483426a22c1bdc66aebb1a0e56948c831c47a8bd10bfb1981d3276afd541d",
+		"build": {
+			"img": "oisupport/staging-ppc64le:f04483426a22c1bdc66aebb1a0e56948c831c47a8bd10bfb1981d3276afd541d",
+			"resolved": null,
+			"sourceId": "6f96c2d0308b6c7c1b21d9bfd1c865c2530dd33548bf3b51eb565fd09f86d695",
+			"arch": "ppc64le",
+			"parents": {
+				"ruby:3.4-slim": "sha256:968e557e1a7789300caeb9a4491def9f780b0ffe36d6686596d993b8e1aaab17"
+			},
+			"resolvedParents": {
+				"ruby:3.4-slim": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:968e557e1a7789300caeb9a4491def9f780b0ffe36d6686596d993b8e1aaab17",
+							"size": 1930,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:01ada93b3941d87b838c0fac715e9cf2d595592dc4fc670afcb12bcd535ad754",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-24T11:55:48Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8f7c8b77c307ec41ee440444fe92c0aa87c19d2c11f3a38730abbd3ea71c2dc9@sha256:968e557e1a7789300caeb9a4491def9f780b0ffe36d6686596d993b8e1aaab17",
+								"org.opencontainers.image.revision": "5987de907860fc09fa7161c88276e0744babf8c6",
+								"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#5987de907860fc09fa7161c88276e0744babf8c6:3.4/slim-trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+								"org.opencontainers.image.version": "3.4.13-slim-trixie"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:ab538cbed46aeaaa74d01b97f8598a5ee6a526717b884af4841b3fb60dc5436c",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8f7c8b77c307ec41ee440444fe92c0aa87c19d2c11f3a38730abbd3ea71c2dc9@sha256:ab538cbed46aeaaa74d01b97f8598a5ee6a526717b884af4841b3fb60dc5436c",
+								"vnd.docker.reference.digest": "sha256:968e557e1a7789300caeb9a4491def9f780b0ffe36d6686596d993b8e1aaab17",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8f7c8b77c307ec41ee440444fe92c0aa87c19d2c11f3a38730abbd3ea71c2dc9@sha256:2cd5f840e742997c7baa7548ab7c53684f0fc0542e98e8eb14e9f90be545b6ce"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "6f96c2d0308b6c7c1b21d9bfd1c865c2530dd33548bf3b51eb565fd09f86d695",
+			"reproducibleGitChecksum": "1d7bc37e0e8afbec015aeaba91f91f084470784001712554869782c563a15d75",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/fluent/fluentd-docker-image.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "f3b08877723cc4b5985c70d38ce3c322322248c3",
+					"Directory": "v1.19/debian",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1791182195
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"fluentd:v1.19.4-debian-1.0",
+						"fluentd:v1.19-debian-1",
+						"fluentd:v1.19.4-1.0",
+						"fluentd:v1.19-1",
+						"fluentd:latest"
+					],
+					"archTags": [
+						"ppc64le/fluentd:v1.19.4-debian-1.0",
+						"ppc64le/fluentd:v1.19-debian-1",
+						"ppc64le/fluentd:v1.19.4-1.0",
+						"ppc64le/fluentd:v1.19-1",
+						"ppc64le/fluentd:latest"
+					],
+					"froms": [
+						"ruby:3.4-slim"
+					],
+					"lastStageFrom": "ruby:3.4-slim",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"ruby:3.4-slim": {
+							"sourceId": "aa662ccd9a89556148360e6f2b13ed9655ab212c8342c703d4851f0c2d1af35e",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"5ab0043b879851a1162064b2ab333beadde485ef6cd2737e6988d91b8e9e2f90": {
 		"buildId": "5ab0043b879851a1162064b2ab333beadde485ef6cd2737e6988d91b8e9e2f90",
 		"build": {
@@ -1065265,6 +1066077,110 @@
 			}
 		}
 	},
+	"f2b449cb45a6dff7c14196e8a280007e064887b27211dfb62cca45c8a76e578a": {
+		"buildId": "f2b449cb45a6dff7c14196e8a280007e064887b27211dfb62cca45c8a76e578a",
+		"build": {
+			"img": "oisupport/staging-ppc64le:f2b449cb45a6dff7c14196e8a280007e064887b27211dfb62cca45c8a76e578a",
+			"resolved": null,
+			"sourceId": "4d93973d41ed42f636b5b7a6403a831a256115f2239f9271fb7c2eb83ed4814d",
+			"arch": "ppc64le",
+			"parents": {
+				"python:3.13-slim-bookworm": "sha256:3ffa743a8b454331e155e725fc1012276799c9d9a2bd1766185f6b354d3f7216"
+			},
+			"resolvedParents": {
+				"python:3.13-slim-bookworm": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:3ffa743a8b454331e155e725fc1012276799c9d9a2bd1766185f6b354d3f7216",
+							"size": 1754,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:dde4bb1221f3e1a6e34c1eb2b07ad58323eb7b078cbe4851c6a42d1ea9e6b3bb",
+								"org.opencontainers.image.base.name": "debian:bookworm-slim",
+								"org.opencontainers.image.created": "2026-11-24T10:27:03Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:69b0004cb6964ea9adb183dda3c93cd17672297a1e9822d40929f1e5123f60f9@sha256:3ffa743a8b454331e155e725fc1012276799c9d9a2bd1766185f6b354d3f7216",
+								"org.opencontainers.image.revision": "152874b138f0b1c4699fbdcb52b174608cfbfff5",
+								"org.opencontainers.image.source": "https://github.com/docker-library/python.git#152874b138f0b1c4699fbdcb52b174608cfbfff5:3.13/slim-bookworm",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/python",
+								"org.opencontainers.image.version": "3.13.18-slim-bookworm"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:e70e6523c8a3a736526ce4deda236f43168e58e22b5e19f3a8bf21788b8c4834",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:69b0004cb6964ea9adb183dda3c93cd17672297a1e9822d40929f1e5123f60f9@sha256:e70e6523c8a3a736526ce4deda236f43168e58e22b5e19f3a8bf21788b8c4834",
+								"vnd.docker.reference.digest": "sha256:3ffa743a8b454331e155e725fc1012276799c9d9a2bd1766185f6b354d3f7216",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:69b0004cb6964ea9adb183dda3c93cd17672297a1e9822d40929f1e5123f60f9@sha256:f853a89c750b5951005e3db9505066286ecff53a04351045aaf46ac26550c702"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "4d93973d41ed42f636b5b7a6403a831a256115f2239f9271fb7c2eb83ed4814d",
+			"reproducibleGitChecksum": "c46de215340048071f58f232b7da06a85f1dc4f762997b73643aeef7e4561a75",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/hylang/docker-hylang.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "59fdcc65e422ba95a3933449f9391dadcdf46ba9",
+					"Directory": "latest/python3.13-bookworm",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1793051770
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"hylang:1.3.1-python3.13-bookworm",
+						"hylang:1.3-python3.13-bookworm",
+						"hylang:1-python3.13-bookworm",
+						"hylang:python3.13-bookworm"
+					],
+					"archTags": [
+						"ppc64le/hylang:1.3.1-python3.13-bookworm",
+						"ppc64le/hylang:1.3-python3.13-bookworm",
+						"ppc64le/hylang:1-python3.13-bookworm",
+						"ppc64le/hylang:python3.13-bookworm"
+					],
+					"froms": [
+						"python:3.13-slim-bookworm"
+					],
+					"lastStageFrom": "python:3.13-slim-bookworm",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"python:3.13-slim-bookworm": {
+							"sourceId": "5f7b32b98bbf74aac68ce864ae2bc75dd99a989921fd4bbc2025424d9bf28191",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"8b91d7440d6786c44c15f99dae615eb11ef9b1144b78ae7208efb5e71a86dd0a": {
 		"buildId": "8b91d7440d6786c44c15f99dae615eb11ef9b1144b78ae7208efb5e71a86dd0a",
 		"build": {
@@ -1069344,6 +1070260,110 @@
 			}
 		}
 	},
+	"2d314f066baed11c5dde9b6bf498443273a28c39928ebb19b32960089290955a": {
+		"buildId": "2d314f066baed11c5dde9b6bf498443273a28c39928ebb19b32960089290955a",
+		"build": {
+			"img": "oisupport/staging-ppc64le:2d314f066baed11c5dde9b6bf498443273a28c39928ebb19b32960089290955a",
+			"resolved": null,
+			"sourceId": "6e97accdb10ec14b88c895c0ceee6d3b0b329ea2e342f121e6e32207c8d928c3",
+			"arch": "ppc64le",
+			"parents": {
+				"python:3.12-slim-bookworm": "sha256:0ce15704ec4edf24b18fd9de814f794a62bd39960b0e1558411f5ac3a9682779"
+			},
+			"resolvedParents": {
+				"python:3.12-slim-bookworm": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:0ce15704ec4edf24b18fd9de814f794a62bd39960b0e1558411f5ac3a9682779",
+							"size": 1754,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:dde4bb1221f3e1a6e34c1eb2b07ad58323eb7b078cbe4851c6a42d1ea9e6b3bb",
+								"org.opencontainers.image.base.name": "debian:bookworm-slim",
+								"org.opencontainers.image.created": "2026-11-24T11:02:37Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:121fab318fcb52ec877ea8097212e6116e56dee62481472edf06eb63f556d124@sha256:0ce15704ec4edf24b18fd9de814f794a62bd39960b0e1558411f5ac3a9682779",
+								"org.opencontainers.image.revision": "3d7e95597e56a415d9e4abc0f15877e005d2cb2e",
+								"org.opencontainers.image.source": "https://github.com/docker-library/python.git#3d7e95597e56a415d9e4abc0f15877e005d2cb2e:3.12/slim-bookworm",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/python",
+								"org.opencontainers.image.version": "3.12.16-slim-bookworm"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:74e0fdd22673526c9e9e60238475f0b9f2ba642d1ba90a0def1ccc8bad26ecf7",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:121fab318fcb52ec877ea8097212e6116e56dee62481472edf06eb63f556d124@sha256:74e0fdd22673526c9e9e60238475f0b9f2ba642d1ba90a0def1ccc8bad26ecf7",
+								"vnd.docker.reference.digest": "sha256:0ce15704ec4edf24b18fd9de814f794a62bd39960b0e1558411f5ac3a9682779",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:121fab318fcb52ec877ea8097212e6116e56dee62481472edf06eb63f556d124@sha256:45d5a1d55b3ae14a3a17ae41c327996de2b032390465b5147b115894548648b3"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "6e97accdb10ec14b88c895c0ceee6d3b0b329ea2e342f121e6e32207c8d928c3",
+			"reproducibleGitChecksum": "6799eaddeba555bbf5ae435ba64de94a3b7ce33ef9dd7a28cd128cf113f1f0e5",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/hylang/docker-hylang.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "59fdcc65e422ba95a3933449f9391dadcdf46ba9",
+					"Directory": "latest/python3.12-bookworm",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1793051770
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"hylang:1.3.1-python3.12-bookworm",
+						"hylang:1.3-python3.12-bookworm",
+						"hylang:1-python3.12-bookworm",
+						"hylang:python3.12-bookworm"
+					],
+					"archTags": [
+						"ppc64le/hylang:1.3.1-python3.12-bookworm",
+						"ppc64le/hylang:1.3-python3.12-bookworm",
+						"ppc64le/hylang:1-python3.12-bookworm",
+						"ppc64le/hylang:python3.12-bookworm"
+					],
+					"froms": [
+						"python:3.12-slim-bookworm"
+					],
+					"lastStageFrom": "python:3.12-slim-bookworm",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"python:3.12-slim-bookworm": {
+							"sourceId": "162d454bf9ff272558e2f75d872caea6f710c13c4a1e086e74d5727d1e379a89",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"3019535a6a2c7b39519ae3a251418499b54c44f6c0282bd7abdc352d83628e1b": {
 		"buildId": "3019535a6a2c7b39519ae3a251418499b54c44f6c0282bd7abdc352d83628e1b",
 		"build": {
@@ -1072562,6 +1073582,118 @@
 			}
 		}
 	},
+	"13e3858088646fee5c927d6dd41785e3e5eeff5ee651ead494471abf6a162e69": {
+		"buildId": "13e3858088646fee5c927d6dd41785e3e5eeff5ee651ead494471abf6a162e69",
+		"build": {
+			"img": "oisupport/staging-ppc64le:13e3858088646fee5c927d6dd41785e3e5eeff5ee651ead494471abf6a162e69",
+			"resolved": null,
+			"sourceId": "aa0cf9e11d74676a85d63dbf566f857eed4b599c82d4fedcba8763be290115cd",
+			"arch": "ppc64le",
+			"parents": {
+				"python:3.11-slim-trixie": "sha256:b2e45d33d734ecc1b590681639d3996c37e41d48201c59a0488a2060dab4b96e"
+			},
+			"resolvedParents": {
+				"python:3.11-slim-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:b2e45d33d734ecc1b590681639d3996c37e41d48201c59a0488a2060dab4b96e",
+							"size": 1748,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:01ada93b3941d87b838c0fac715e9cf2d595592dc4fc670afcb12bcd535ad754",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-24T11:10:42Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8c29bd7e46e48181846fc53af52caed7473692f65efb8234e685e3a58c0ea64c@sha256:b2e45d33d734ecc1b590681639d3996c37e41d48201c59a0488a2060dab4b96e",
+								"org.opencontainers.image.revision": "83054588043b3a7ac1ce8324c9242164b632beb9",
+								"org.opencontainers.image.source": "https://github.com/docker-library/python.git#83054588043b3a7ac1ce8324c9242164b632beb9:3.11/slim-trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/python",
+								"org.opencontainers.image.version": "3.11.18-slim-trixie"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:200b3c1b9173061910c2b23e70b218cde65acda0938e62762e4afbe2b4fd8d3e",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8c29bd7e46e48181846fc53af52caed7473692f65efb8234e685e3a58c0ea64c@sha256:200b3c1b9173061910c2b23e70b218cde65acda0938e62762e4afbe2b4fd8d3e",
+								"vnd.docker.reference.digest": "sha256:b2e45d33d734ecc1b590681639d3996c37e41d48201c59a0488a2060dab4b96e",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8c29bd7e46e48181846fc53af52caed7473692f65efb8234e685e3a58c0ea64c@sha256:71acf8aabe8e767af32cdcf264f310dda04f96ada149a151802d1c7d231b9a61"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "aa0cf9e11d74676a85d63dbf566f857eed4b599c82d4fedcba8763be290115cd",
+			"reproducibleGitChecksum": "ce924245373241935ee8f60c2ba7bf62d5e199317fb774899223b623176b6b3e",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/hylang/docker-hylang.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "59fdcc65e422ba95a3933449f9391dadcdf46ba9",
+					"Directory": "latest/python3.11-trixie",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1793051770
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"hylang:1.3.1-python3.11-trixie",
+						"hylang:1.3-python3.11-trixie",
+						"hylang:1-python3.11-trixie",
+						"hylang:python3.11-trixie",
+						"hylang:1.3.1-python3.11",
+						"hylang:1.3-python3.11",
+						"hylang:1-python3.11",
+						"hylang:python3.11"
+					],
+					"archTags": [
+						"ppc64le/hylang:1.3.1-python3.11-trixie",
+						"ppc64le/hylang:1.3-python3.11-trixie",
+						"ppc64le/hylang:1-python3.11-trixie",
+						"ppc64le/hylang:python3.11-trixie",
+						"ppc64le/hylang:1.3.1-python3.11",
+						"ppc64le/hylang:1.3-python3.11",
+						"ppc64le/hylang:1-python3.11",
+						"ppc64le/hylang:python3.11"
+					],
+					"froms": [
+						"python:3.11-slim-trixie"
+					],
+					"lastStageFrom": "python:3.11-slim-trixie",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"python:3.11-slim-trixie": {
+							"sourceId": "dcef3bcae0b794f063d1c7f5e9c1a412e4a5d8d53ca331fe056b17ef144b5f5c",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"e221ba8c4fc5db75ce3a3860277781da3abbbe71e117fc961db1a0a674bed004": {
 		"buildId": "e221ba8c4fc5db75ce3a3860277781da3abbbe71e117fc961db1a0a674bed004",
 		"build": {
@@ -1073299,6 +1074431,110 @@
 					"platformString": "linux/386",
 					"platform": {
 						"architecture": "386",
+						"os": "linux"
+					},
+					"parents": {
+						"python:3.11-slim-bookworm": {
+							"sourceId": "4c14d6e2664aed64711dfabfc2942526eabf37567d71edcd616f9acd299ec5c0",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"5fc8c8a9ebc96891caade89eb655dc0365af3eaacf1171ac4f3498d134a0d862": {
+		"buildId": "5fc8c8a9ebc96891caade89eb655dc0365af3eaacf1171ac4f3498d134a0d862",
+		"build": {
+			"img": "oisupport/staging-ppc64le:5fc8c8a9ebc96891caade89eb655dc0365af3eaacf1171ac4f3498d134a0d862",
+			"resolved": null,
+			"sourceId": "60ef68f57b2181cc0fc1dd3013201c471065b0bf823b43f3f90d07b1337f2037",
+			"arch": "ppc64le",
+			"parents": {
+				"python:3.11-slim-bookworm": "sha256:e9b54da8b556e285f1c8cd76266a9dd5ec8d106893d34dea91d956699be9a169"
+			},
+			"resolvedParents": {
+				"python:3.11-slim-bookworm": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:e9b54da8b556e285f1c8cd76266a9dd5ec8d106893d34dea91d956699be9a169",
+							"size": 1754,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:dde4bb1221f3e1a6e34c1eb2b07ad58323eb7b078cbe4851c6a42d1ea9e6b3bb",
+								"org.opencontainers.image.base.name": "debian:bookworm-slim",
+								"org.opencontainers.image.created": "2026-11-24T11:32:25Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:9f5f8ca15c89deb4e797e1703e3125fee4fe7e56c675bba6884a75793ac6ce80@sha256:e9b54da8b556e285f1c8cd76266a9dd5ec8d106893d34dea91d956699be9a169",
+								"org.opencontainers.image.revision": "83054588043b3a7ac1ce8324c9242164b632beb9",
+								"org.opencontainers.image.source": "https://github.com/docker-library/python.git#83054588043b3a7ac1ce8324c9242164b632beb9:3.11/slim-bookworm",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/python",
+								"org.opencontainers.image.version": "3.11.18-slim-bookworm"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:0a19ac725d01ca3aed4234b8a5e11f37f965d29eb7abdff66ebefb9972e6d596",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:9f5f8ca15c89deb4e797e1703e3125fee4fe7e56c675bba6884a75793ac6ce80@sha256:0a19ac725d01ca3aed4234b8a5e11f37f965d29eb7abdff66ebefb9972e6d596",
+								"vnd.docker.reference.digest": "sha256:e9b54da8b556e285f1c8cd76266a9dd5ec8d106893d34dea91d956699be9a169",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:9f5f8ca15c89deb4e797e1703e3125fee4fe7e56c675bba6884a75793ac6ce80@sha256:4f125043ad3c2a797afe0a83f200b6a8ce6fdaf6dd9db819295fc661bb91745e"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "60ef68f57b2181cc0fc1dd3013201c471065b0bf823b43f3f90d07b1337f2037",
+			"reproducibleGitChecksum": "3c6b238743cf76572546ed451de7f0dcc7696525b7582a86b462589bc248c710",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/hylang/docker-hylang.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "59fdcc65e422ba95a3933449f9391dadcdf46ba9",
+					"Directory": "latest/python3.11-bookworm",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1793051770
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"hylang:1.3.1-python3.11-bookworm",
+						"hylang:1.3-python3.11-bookworm",
+						"hylang:1-python3.11-bookworm",
+						"hylang:python3.11-bookworm"
+					],
+					"archTags": [
+						"ppc64le/hylang:1.3.1-python3.11-bookworm",
+						"ppc64le/hylang:1.3-python3.11-bookworm",
+						"ppc64le/hylang:1-python3.11-bookworm",
+						"ppc64le/hylang:python3.11-bookworm"
+					],
+					"froms": [
+						"python:3.11-slim-bookworm"
+					],
+					"lastStageFrom": "python:3.11-slim-bookworm",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
 						"os": "linux"
 					},
 					"parents": {
@@ -1105103,6 +1106339,118 @@
 			}
 		}
 	},
+	"66fdf67d756cffce5f53d3932b80a00717f982845a7c2f12951c34f8b0cbb9d1": {
+		"buildId": "66fdf67d756cffce5f53d3932b80a00717f982845a7c2f12951c34f8b0cbb9d1",
+		"build": {
+			"img": "oisupport/staging-ppc64le:66fdf67d756cffce5f53d3932b80a00717f982845a7c2f12951c34f8b0cbb9d1",
+			"resolved": null,
+			"sourceId": "bed798a46630156d1360827eab179b9449e4e17e253b76828110ffba0ed2a7f8",
+			"arch": "ppc64le",
+			"parents": {
+				"ruby:4.0-slim-trixie": "sha256:9f810b463d643a555adb92e2beb745afcb737e0a517bba32622c19f9506bc817"
+			},
+			"resolvedParents": {
+				"ruby:4.0-slim-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:9f810b463d643a555adb92e2beb745afcb737e0a517bba32622c19f9506bc817",
+							"size": 1930,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:01ada93b3941d87b838c0fac715e9cf2d595592dc4fc670afcb12bcd535ad754",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-24T11:50:23Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d496c1e5fc5b9597035baa921747d117dccb1d10fa1d2a9671f1cec5cfc1b8e9@sha256:9f810b463d643a555adb92e2beb745afcb737e0a517bba32622c19f9506bc817",
+								"org.opencontainers.image.revision": "9c4fe994a013eba757c5b33eb7bf6132214ea611",
+								"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#9c4fe994a013eba757c5b33eb7bf6132214ea611:4.0/slim-trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+								"org.opencontainers.image.version": "4.0.10-slim-trixie"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:92f80af7f53d3929b4c7c2063095f62ab6d46372b5b3dfe106d48dae37c9ee5d",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d496c1e5fc5b9597035baa921747d117dccb1d10fa1d2a9671f1cec5cfc1b8e9@sha256:92f80af7f53d3929b4c7c2063095f62ab6d46372b5b3dfe106d48dae37c9ee5d",
+								"vnd.docker.reference.digest": "sha256:9f810b463d643a555adb92e2beb745afcb737e0a517bba32622c19f9506bc817",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:d496c1e5fc5b9597035baa921747d117dccb1d10fa1d2a9671f1cec5cfc1b8e9@sha256:9a1f95aefec4d1ea66cbf193a9cec08600dad37852cc792052b1bc2d01df5b65"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "bed798a46630156d1360827eab179b9449e4e17e253b76828110ffba0ed2a7f8",
+			"reproducibleGitChecksum": "6bfd118938fe3990ecc65ee9da721756b49e27dd151433c9e6b6b56ea3eae0cb",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/redmine.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "49a27f29f1d214a4226af75b55578e36d3474c4c",
+					"Directory": "7.0/trixie",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1793584563
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"redmine:7.0.3",
+						"redmine:7.0",
+						"redmine:7",
+						"redmine:latest",
+						"redmine:7.0.3-trixie",
+						"redmine:7.0-trixie",
+						"redmine:7-trixie",
+						"redmine:trixie"
+					],
+					"archTags": [
+						"ppc64le/redmine:7.0.3",
+						"ppc64le/redmine:7.0",
+						"ppc64le/redmine:7",
+						"ppc64le/redmine:latest",
+						"ppc64le/redmine:7.0.3-trixie",
+						"ppc64le/redmine:7.0-trixie",
+						"ppc64le/redmine:7-trixie",
+						"ppc64le/redmine:trixie"
+					],
+					"froms": [
+						"ruby:4.0-slim-trixie"
+					],
+					"lastStageFrom": "ruby:4.0-slim-trixie",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
+						"os": "linux"
+					},
+					"parents": {
+						"ruby:4.0-slim-trixie": {
+							"sourceId": "b5e7819b3aadaabe16784d57bd2d215797bb118b48919d7361d5ddf7d4c026c5",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"0039a875f1fb2c3c8e100541ed033f6c1971ffed5fdcf403516b6bf590501b8a": {
 		"buildId": "0039a875f1fb2c3c8e100541ed033f6c1971ffed5fdcf403516b6bf590501b8a",
 		"build": {
@@ -1107633,6 +1108981,114 @@
 					"platformString": "linux/386",
 					"platform": {
 						"architecture": "386",
+						"os": "linux"
+					},
+					"parents": {
+						"ruby:3.4-slim-trixie": {
+							"sourceId": "aa662ccd9a89556148360e6f2b13ed9655ab212c8342c703d4851f0c2d1af35e",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"b90d893eb108e69b3159653659d336f4c92727b26b5d0e7fd465907bda3be9ac": {
+		"buildId": "b90d893eb108e69b3159653659d336f4c92727b26b5d0e7fd465907bda3be9ac",
+		"build": {
+			"img": "oisupport/staging-ppc64le:b90d893eb108e69b3159653659d336f4c92727b26b5d0e7fd465907bda3be9ac",
+			"resolved": null,
+			"sourceId": "ca86875933a44f1d04b6c6d6e11786d19121cbc20e4a60672832b516c9fcfef3",
+			"arch": "ppc64le",
+			"parents": {
+				"ruby:3.4-slim-trixie": "sha256:968e557e1a7789300caeb9a4491def9f780b0ffe36d6686596d993b8e1aaab17"
+			},
+			"resolvedParents": {
+				"ruby:3.4-slim-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:968e557e1a7789300caeb9a4491def9f780b0ffe36d6686596d993b8e1aaab17",
+							"size": 1930,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:01ada93b3941d87b838c0fac715e9cf2d595592dc4fc670afcb12bcd535ad754",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-24T11:55:48Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8f7c8b77c307ec41ee440444fe92c0aa87c19d2c11f3a38730abbd3ea71c2dc9@sha256:968e557e1a7789300caeb9a4491def9f780b0ffe36d6686596d993b8e1aaab17",
+								"org.opencontainers.image.revision": "5987de907860fc09fa7161c88276e0744babf8c6",
+								"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#5987de907860fc09fa7161c88276e0744babf8c6:3.4/slim-trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+								"org.opencontainers.image.version": "3.4.13-slim-trixie"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:ab538cbed46aeaaa74d01b97f8598a5ee6a526717b884af4841b3fb60dc5436c",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8f7c8b77c307ec41ee440444fe92c0aa87c19d2c11f3a38730abbd3ea71c2dc9@sha256:ab538cbed46aeaaa74d01b97f8598a5ee6a526717b884af4841b3fb60dc5436c",
+								"vnd.docker.reference.digest": "sha256:968e557e1a7789300caeb9a4491def9f780b0ffe36d6686596d993b8e1aaab17",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:8f7c8b77c307ec41ee440444fe92c0aa87c19d2c11f3a38730abbd3ea71c2dc9@sha256:2cd5f840e742997c7baa7548ab7c53684f0fc0542e98e8eb14e9f90be545b6ce"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "ca86875933a44f1d04b6c6d6e11786d19121cbc20e4a60672832b516c9fcfef3",
+			"reproducibleGitChecksum": "e3a162db70d1449388b03a2b4333200332a90017e4ac56810795b5895f0ccfbe",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/redmine.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "2629db055bd4efe7c2ded28bac1e8b0f35aacfbc",
+					"Directory": "6.1/trixie",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1793583820
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"redmine:6.1.6",
+						"redmine:6.1",
+						"redmine:6",
+						"redmine:6.1.6-trixie",
+						"redmine:6.1-trixie",
+						"redmine:6-trixie"
+					],
+					"archTags": [
+						"ppc64le/redmine:6.1.6",
+						"ppc64le/redmine:6.1",
+						"ppc64le/redmine:6",
+						"ppc64le/redmine:6.1.6-trixie",
+						"ppc64le/redmine:6.1-trixie",
+						"ppc64le/redmine:6-trixie"
+					],
+					"froms": [
+						"ruby:3.4-slim-trixie"
+					],
+					"lastStageFrom": "ruby:3.4-slim-trixie",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
 						"os": "linux"
 					},
 					"parents": {
@@ -1110711,6 +1112167,110 @@
 					"platformString": "linux/386",
 					"platform": {
 						"architecture": "386",
+						"os": "linux"
+					},
+					"parents": {
+						"ruby:3.3-slim-trixie": {
+							"sourceId": "fc09c7d3ec9945b8e67ad16c859442810162ae0139537845a973a493de5725d1",
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"c1774ae16bbbfd3b80d09c2eb83ffff22630975b24de46727a096aef9fcd9dc9": {
+		"buildId": "c1774ae16bbbfd3b80d09c2eb83ffff22630975b24de46727a096aef9fcd9dc9",
+		"build": {
+			"img": "oisupport/staging-ppc64le:c1774ae16bbbfd3b80d09c2eb83ffff22630975b24de46727a096aef9fcd9dc9",
+			"resolved": null,
+			"sourceId": "8ed77c29b31483478a5ef2a3ea34323b6b8a6cd5c124173f41ecac2b878935b2",
+			"arch": "ppc64le",
+			"parents": {
+				"ruby:3.3-slim-trixie": "sha256:688f9db1bb51fbfc9149dd2021d21d0f8e920fb5d7668984cf1570c86b1e0b58"
+			},
+			"resolvedParents": {
+				"ruby:3.3-slim-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:688f9db1bb51fbfc9149dd2021d21d0f8e920fb5d7668984cf1570c86b1e0b58",
+							"size": 1930,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.base.digest": "sha256:01ada93b3941d87b838c0fac715e9cf2d595592dc4fc670afcb12bcd535ad754",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-24T12:01:32Z",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:e4b7b1c5864dcdb725b061fff987468e74622a106504f52f2314069f7cc7cff1@sha256:688f9db1bb51fbfc9149dd2021d21d0f8e920fb5d7668984cf1570c86b1e0b58",
+								"org.opencontainers.image.revision": "398563132dc75e8b8cb6607c43251b9da5958127",
+								"org.opencontainers.image.source": "https://github.com/docker-library/ruby.git#398563132dc75e8b8cb6607c43251b9da5958127:3.3/slim-trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/ruby",
+								"org.opencontainers.image.version": "3.3.14-slim-trixie"
+							},
+							"platform": {
+								"architecture": "ppc64le",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:3790620370b20868b07b285cfc04f220a82ea343fddb53bd03b0c9d9b20a21cf",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "ppc64le",
+								"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:e4b7b1c5864dcdb725b061fff987468e74622a106504f52f2314069f7cc7cff1@sha256:3790620370b20868b07b285cfc04f220a82ea343fddb53bd03b0c9d9b20a21cf",
+								"vnd.docker.reference.digest": "sha256:688f9db1bb51fbfc9149dd2021d21d0f8e920fb5d7668984cf1570c86b1e0b58",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "oisupport/staging-ppc64le:e4b7b1c5864dcdb725b061fff987468e74622a106504f52f2314069f7cc7cff1@sha256:081881fc83dedb70fa7c747097e7391a3f102c5a4e8e787c9616e12c31e24fdb"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "8ed77c29b31483478a5ef2a3ea34323b6b8a6cd5c124173f41ecac2b878935b2",
+			"reproducibleGitChecksum": "97588bfccf88f6218485dff33ba3548ed7b3fe35c300a1697a42d3ee76c71f03",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/docker-library/redmine.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "ec4c2901fc12059c6c488553f07335110bc87d78",
+					"Directory": "6.0/trixie",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1793582770
+				}
+			],
+			"arches": {
+				"ppc64le": {
+					"tags": [
+						"redmine:6.0.12",
+						"redmine:6.0",
+						"redmine:6.0.12-trixie",
+						"redmine:6.0-trixie"
+					],
+					"archTags": [
+						"ppc64le/redmine:6.0.12",
+						"ppc64le/redmine:6.0",
+						"ppc64le/redmine:6.0.12-trixie",
+						"ppc64le/redmine:6.0-trixie"
+					],
+					"froms": [
+						"ruby:3.3-slim-trixie"
+					],
+					"lastStageFrom": "ruby:3.3-slim-trixie",
+					"platformString": "linux/ppc64le",
+					"platform": {
+						"architecture": "ppc64le",
 						"os": "linux"
 					},
 					"parents": {
